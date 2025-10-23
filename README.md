@@ -1,3 +1,9 @@
+# (UPDATE) 자동 환경 구성
+# setup.bat 파일을 터미널에서 실행하면 환경구성을 자동으로 수행함
+.\setup.bat
+
+
+
 # 초기 폴더 구조
 GameFolder/
 ├─ public/
