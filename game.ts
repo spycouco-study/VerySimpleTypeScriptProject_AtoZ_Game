@@ -4,7 +4,7 @@ interface GameState {
   IsActive: boolean;
 }
 
-costst outputEl = document.getElementById("alphabet-display") as HTMLElement;
+const outputEl = document.getElementById("alphabet-display") as HTMLElement;
 
 const State: GameState = {
   AlphabetSet: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
