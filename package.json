@@ -1,0 +1,26 @@
+{
+  "name": "gamefolder",
+  "version": "1.0.0",
+  "description": ".\\setup.bat",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spycouco-study/VerySimpleTypeScriptProject_AtoZ_Game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spycouco-study/VerySimpleTypeScriptProject_AtoZ_Game/issues"
+  },
+  "homepage": "https://github.com/spycouco-study/VerySimpleTypeScriptProject_AtoZ_Game#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "typescript": "^5.9.3"
+  }
+}
