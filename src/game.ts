@@ -26,6 +26,21 @@ let score: number = 0;
 let changingDirection: boolean = false;
 let gameInterval: number;
 
+// preload apple image (use public/assets/apple.png as primary)
+;(function preloadApple(){
+    const img = new Image();
+    (window as any).appleImageLoaded = false;
+    (window as any).appleImageError = false;
+    img.onload = () => { (window as any).appleImageLoaded = true; };
+    img.onerror = () => { (window as any).appleImageError = true; console.error('apple.png failed to load for', img.src); };
+    // try the standard static path first
+    // use full absolute URL (protocol + host) to avoid relative/origin issues
+    const absUrl = (typeof window !== 'undefined' && window.location) ? (window.location.protocol + '//' + window.location.host + '/assets/apple.png') : '/assets/apple.png';
+    img.src = absUrl;
+    console.log('preloading apple from', img.src);
+    (window as any).appleImage = img;
+})();
+
 // 게임 초기화
 function initializeGame(): void {
     // 뱀 초기 위치 (가운데에서 시작)
@@ -126,6 +141,18 @@ function placeFood(): void {
 
 // 음식 그리기
 function drawFood(): void {
+    if (!ctx) return;
+    const img = (window as any).appleImage as HTMLImageElement | undefined;
+    const imgLoaded = (window as any).appleImageLoaded === true;
+    const imgError = (window as any).appleImageError === true;
+    if (img && imgLoaded && !imgError && img.naturalWidth > 0) {
+        try {
+            ctx.drawImage(img, food.x, food.y, TILE_SIZE, TILE_SIZE);
+            return;
+        } catch (e) {
+            console.warn('drawImage error, fallback to rect', e);
+        }
+    }
     ctx.fillStyle = 'red';
     ctx.strokeStyle = 'darkred';
     ctx.fillRect(food.x, food.y, TILE_SIZE, TILE_SIZE);
