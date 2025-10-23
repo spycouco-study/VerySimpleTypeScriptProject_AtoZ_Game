@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+
+# npm lock file
+package-lock.json
+
+# package.json (user requested to ignore)
+package.json
+
+# Optional: TypeScript build output
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/

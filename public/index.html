@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>Alphabet Sequencer</title>
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; text-align: center; margin-top: 100px; }
-    #alphabet-display { font-size: 80px; font-weight: bold; color: #333; margin-top: 40px; }
-    .done { color: #0078d7; font-size: 48px; }
-  </style>
+    <meta charset="UTF-8">
+    <title>TypeScript 뱀 게임</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Alphabet Sequencer</h1>
-  <p>아무 키나 누르면 다음 알파벳이 표시됩니다.</p>
-  <div id="alphabet-display"></div>
-
-  <!-- 서버에서 컴파일된 JS를 바로 로드 -->
-  <script src="/game.js"></script>
-</body>
+    <h1>🐍 TypeScript 뱀 게임 🍎</h1>
+    <canvas id="gameCanvas" width="500" height="500"></canvas>
+    <div id="score">점수: 0</div>
+    <script src="game.js"></script>
+    </body>
 </html>
