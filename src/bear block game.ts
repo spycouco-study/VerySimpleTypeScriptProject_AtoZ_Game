@@ -79,9 +79,11 @@ const backImage = new Image();
 backImage.src = "./assets/back.png";
 // 배경 음악 객체 추가
 let bgm: HTMLAudioElement;
+// 블록 깨짐 효과음 객체 추가
+let brickHitSound: HTMLAudioElement;
+
 // BGM이 사용자 상호작용 후 재생되었는지 확인하는 플래그
 let bgmPlayedAfterInteraction = false;
-
 const spriteWidth = 222; // 666 / 3
 const spriteHeight = 222; // 원본 이미지 높이
 // 프레임 정의 (sourceX, sourceY, sourceWidth, sourceHeight)
@@ -186,6 +188,9 @@ function collisionDetection() {
                     dy = -dy;
                     b.status = 0; // 일반 벽돌은 깨지지만 점수만 오름 (승리 조건 아님)
                     score++;
+                    // **블록 깨짐 효과음 재생**
+                    brickHitSound.currentTime = 0; // 사운드를 처음으로 되감기
+                    brickHitSound.play().catch(e => console.warn("Brick hit sound failed to play:", e));
                 }
             }
         }
@@ -209,6 +214,9 @@ function collisionDetection() {
             // 보스 블록 깨짐 처리
             bossStatus = 0;
             score += 100; // 보스 격파 보너스 점수
+            // **보스 블록 깨짐 효과음 재생**
+            brickHitSound.currentTime = 0; // 사운드를 처음으로 되감기
+            brickHitSound.play().catch(e => console.warn("Boss hit sound failed to play:", e));
             // **승리 조건**: 보스 블록이 깨지면 승리
             alert("BOSS DOWN! YOU WIN!");
             document.location.reload();
@@ -252,7 +260,6 @@ function checkPaddleCollision() {
         }
     }
 }
-
 // 사용자 상호작용 후 BGM 재생을 시도하는 함수
 function tryPlayBgmAfterInteraction() {
     if (!bgmPlayedAfterInteraction) {
@@ -268,7 +275,6 @@ function tryPlayBgmAfterInteraction() {
         });
     }
 }
-
 // --- 모든 이미지 로드 완료를 기다리는 로직 ---
 let imagesLoadedCount = 0;
 const totalImages = 3; // bearSprite, honeySprite, backImage
@@ -290,6 +296,11 @@ function imageLoaded() {
                 console.log("Waiting for user interaction to play BGM...");
             }
         });
+
+        // **블록 깨짐 효과음 초기화**
+        brickHitSound = new Audio('assets/eat.mp3');
+        brickHitSound.volume = 0.7; // 적절한 볼륨 설정
+
         draw();
     }
 }
