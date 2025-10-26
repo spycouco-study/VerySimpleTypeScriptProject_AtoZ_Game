@@ -2,7 +2,7 @@ class BubbleMatchGame {
     private canvas: HTMLCanvasElement;
     private ctx: CanvasRenderingContext2D;
     private grid: number[][]; // 방울 색상을 저장하는 2D 배열 (숫자로 색상 인덱스 표현)
-    private GRID_SIZE: number = 7; // 그리드 크기 (5x5에서 7x7으로 변경)
+    private GRID_SIZE: number = 7; // 그리드 크기 (4x4에서 7x7으로 변경)
     private CELL_SIZE: number; // 각 셀의 크기
     private COLORS: string[] = ['red', 'blue', 'green', 'purple', 'orange', 'yellow']; // 사용 가능한 6가지 색상
     private EMPTY_CELL: number = -1; // 빈 셀을 나타내는 값
@@ -10,6 +10,13 @@ class BubbleMatchGame {
     private selectedBubble: { row: number, col: number } | null = null; // 선택된 방울의 좌표
     private isProcessing: boolean = false; // 매치 처리, 방울 낙하, 리필 등의 작업 중인지 여부 (중복 클릭 방지)
     private isGameOver: boolean = false; // 게임 오버 상태인지 여부 (새로 추가됨)
+    private gameOverReason: string = ''; // 게임 오버 원인을 저장할 새 속성
+    private gameStarted: boolean = false; // 게임 시작 여부를 나타내는 새 속성
+    // --- 새로운 상태바 및 시간 제한 관련 속성 ---
+    private statusBarHeight: number = 40; // 상태바의 높이 (픽셀)
+    private gameDuration: number = 60; // 게임 시간 제한 (초) - 1분으로 변경 (이전 120초)
+    private timeRemaining: number; // 남은 시간 (초)
+    private timerInterval: number | null = null; // setInterval ID를 저장할 변
     // --- 애셋 관련 새 속성 ---
     private spriteSheet: HTMLImageElement | null = null;
     private SPRITE_SHEET_PATH: string = 'assets/animals.png';
@@ -29,9 +36,16 @@ class BubbleMatchGame {
     private animationStartTime: number | null = null;
     private animationDuration: number = 250; // 방울 이동 애니메이션 지속 시간 (ms)
     private isAnimatingMovement: boolean = false; // 방울 이동 애니메이션 중인지 여부
-    private animatingPops: { color: number, x: number, y: number }[] = [];
-    private popStartTime: number | null = null;
+    // 변경: animatingPops에 startTime 속성 추가
+    private animatingPops: { color: number, x: number, y: number, startTime: number }[] = [];
+    // private popStartTime: number | null = null; // 이제 각 방울이 개별 startTime을 가질 것이므로 필요 없음
     private popDuration: number = 200; // 방울 터지는 애니메이션 지속 시간 (ms)
+    // 새로 추가된 방울 터짐 효과 스프라이트 관련 속성
+    private popEffectSpriteSheet: HTMLImageElement | null = null;
+    private POP_EFFECT_SPRITE_PATH: string = 'assets/bubble_effect.png';
+    private POP_EFFECT_FRAME_WIDTH: number; // 동적으로 계산될 예정 (1535 / 5 = 307)
+    private POP_EFFECT_FRAME_HEIGHT: number = 305;
+    private POP_EFFECT_NUM_FRAMES: number = 5; // 1535px 너비에 5개 프레임 가정
     // --- 애니메이션 관련 끝 ---
     constructor(canvasId: string) {
         this.canvas = document.getElementById(canvasId) as HTMLCanvasElement;
@@ -41,26 +55,93 @@ class BubbleMatchGame {
         }
         this.ctx = this.canvas.getContext('2d')!;
         this.canvas.width = 600;
-        this.canvas.height = 600;
+        this.canvas.height = 600 + this.statusBarHeight; // 캔버스 높이에 상태바 높이 추가
         this.CELL_SIZE = this.canvas.width / this.GRID_SIZE; // GRID_SIZE 변경에 따라 CELL_SIZE 자동 조정
-        // 애셋 로딩 후 게임 초기화 및 시작
+        this.timeRemaining = this.gameDuration; // 남은 시간 초기화
+        // 애셋 로딩 후 게임 초기화 및 시작 (이제 바로 시작하지 않고 시작 화면을 그림)
         this.loadAssets().then(() => {
-            this.initializeGrid();
-            // 초기 그리드 상태를 한 번 그립니다. (자동 폭발 전)
-            this.draw();
-            // 게임 시작 시 바로 터지는 방울들을 처리합니다.
-            this._startInitialMatchProcessing();
-            this.attachEventListeners();
-            console.log("게임이 시작되었습니다! 방울을 클릭하여 플레이하세요.");
+            this.drawStartScreen(); // 애셋 로딩 완료 후 시작 화면을 그립니다.
+            console.log("애셋 로딩 완료. '게임시작' 버튼을 눌러 게임을 시작하세요.");
         }).catch(error => {
             console.error("애셋 로딩 실패:", error);
             // 애셋 로딩 실패 시 폴백 (스프라이트/음악 없이 게임 진행)
-            this.initializeGrid();
-            this.draw(); // 폴백: 원형 방울로 그립니다.
-            this._startInitialMatchProcessing();
-            this.attachEventListeners();
+            // 즉시 게임을 시작하지 않고 시작 화면을 그립니다.
+            this.drawStartScreen(); // 폴백 시에도 시작 화면을 그립니다.
             alert("애셋 로딩에 실패했습니다. 스프라이트 및 배경 음악/효과음 없이 게임이 시작됩니다.");
         });
+        this.attachEventListeners(); // 이벤트 리스너는 게임 시작 전부터 활성화되어야 합니다.
+    }
+    /**
+     * (새로 추가됨)
+     * 게임 시작 전 화면에 '게임시작' 버튼 등을 그립니다.
+     */
+    private drawStartScreen(): void {
+        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        // 배경 이미지 (옵션)
+        if (this.backgroundImage) {
+            this.ctx.globalAlpha = 1.0; // 시작 화면에서는 완전한 투명도로
+            this.ctx.drawImage(this.backgroundImage, 0, 0, this.canvas.width, this.canvas.height);
+        } else {
+            this.ctx.fillStyle = '#1a1a1a'; // 어두운 배경
+            this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+        }
+        this.ctx.fillStyle = 'white';
+        this.ctx.font = 'bold 48px Arial';
+        this.ctx.textAlign = 'center';
+        this.ctx.textBaseline = 'middle';
+        this.ctx.fillText('Bubble Match!', this.canvas.width / 2, this.canvas.height / 2 - 50);
+        // '게임시작' 버튼 영역 (텍스트 + 배경)
+        const buttonText = '게임시작';
+        const buttonWidth = 200;
+        const buttonHeight = 60;
+        // 캔버스 중앙에 버튼 위치 조정
+        const buttonX = this.canvas.width / 2 - buttonWidth / 2;
+        const buttonY = this.canvas.height / 2 + 20;
+        this.ctx.fillStyle = '#4CAF50'; // 버튼 배경색
+        this.ctx.fillRect(buttonX, buttonY, buttonWidth, buttonHeight);
+        this.ctx.strokeStyle = '#388E3C'; // 버튼 테두리
+        this.ctx.lineWidth = 3;
+        this.ctx.strokeRect(buttonX, buttonY, buttonWidth, buttonHeight);
+        this.ctx.fillStyle = 'white';
+        this.ctx.font = 'bold 30px Arial';
+        this.ctx.fillText(buttonText, this.canvas.width / 2, buttonY + buttonHeight / 2);
+    }
+    /**
+     * (새로 추가됨)
+     * 게임 시작 버튼 클릭 시 호출되어 실제 게임을 시작합니다.
+     * 게임이 다시 시작될 때도 호출될 수 있도록 수정됩니다.
+     */
+    private async startGame(): Promise<void> {
+        // 기존: if (this.gameStarted) return; // 이미 시작되었으면 다시 시작하지 않음
+        // 수정: 이 플래그는 게임의 라이프사이클을 관리하는 데 사용되므로,
+        // 새로 시작할 때는 항상 true로 설정하고 기존 상태를 초기화합니다.
+        this.gameStarted = true; // 게임 시작 (또는 다시 시작)
+        this.score = 0; // 점수 초기화
+        this.timeRemaining = this.gameDuration; // 시간 초기화
+        this.isGameOver = false; // 게임 오버 상태 초기화
+        this.gameOverReason = ''; // 게임 오버 사유 초기화
+        this.selectedBubble = null; // 선택된 방울 초기화
+        // 타이머가 이미 실행 중이면 중지 (새 게임 시작 시)
+        if (this.timerInterval !== null) {
+            clearInterval(this.timerInterval);
+            this.timerInterval = null;
+        }
+        // BGM이 재생 중이면 멈추고 처음으로 되감기 (새 게임 시작 시)
+        if (this.audioBGM) {
+            this.audioBGM.pause();
+            this.audioBGM.currentTime = 0;
+        }
+        this.initializeGrid(); // 그리드 초기화
+        this.draw(); // 초기 그리드 상태를 한 번 그립니다. (바로 위에 상태바가 표시됨)
+        await this._startInitialMatchProcessing(); // 게임 시작 시 자동으로 터지는 매치 처리
+        this.startTimer(); // 게임 시작과 함께 타이머 시작
+        console.log("게임이 시작되었습니다! 방울을 클릭하여 플레이하세요.");
+        // 배경 음악 재생 시도 (사용자 클릭 이벤트 내에서 호출되므로 자동재생 가능성 높음)
+        if (this.audioBGM && this.audioBGM.paused) {
+            this.audioBGM.play().catch(e => {
+                console.warn("BGM 재생 시도 실패:", e);
+            });
+        }
     }
     /**
      * 게임에 필요한 이미지 및 오디오 애셋을 미리 로드합니다.
@@ -68,7 +149,8 @@ class BubbleMatchGame {
     private loadAssets(): Promise<void> {
         return new Promise((resolve, reject) => {
             let loadedCount = 0;
-            const totalAssets = 4; // spriteSheet, audioBGM, audioEat, backgroundImage (3 -> 4로 변경)
+            // totalAssets 수를 5로 변경: spriteSheet, audioBGM, audioEat, backgroundImage, popEffectSpriteSheet
+            const totalAssets = 5; 
             const assetLoaded = () => {
                 loadedCount++;
                 if (loadedCount === totalAssets) {
@@ -114,6 +196,19 @@ class BubbleMatchGame {
                 assetLoaded(); // 경고 후에도 진행 (애셋 로드 카운트)
             };
             this.backgroundImage.src = this.BACKGROUND_IMAGE_PATH;
+            // 방울 터짐 효과 스프라이트 시트 로드 (새로 추가됨)
+            this.popEffectSpriteSheet = new Image();
+            this.popEffectSpriteSheet.onload = () => {
+                this.POP_EFFECT_FRAME_WIDTH = this.popEffectSpriteSheet!.width / this.POP_EFFECT_NUM_FRAMES;
+                assetLoaded();
+            };
+            this.popEffectSpriteSheet.onerror = () => {
+                console.error(`방울 터짐 효과 스프라이트 시트 로딩 실패: ${this.POP_EFFECT_SPRITE_PATH}`);
+                // 이 애셋이 필수가 아닐 경우 resolve 대신 reject를 발생시키지 않을 수 있음
+                // 여기서는 로딩 실패 시 에러를 반환합니다.
+                reject(`Failed to load ${this.POP_EFFECT_SPRITE_PATH}`);
+            };
+            this.popEffectSpriteSheet.src = this.POP_EFFECT_SPRITE_PATH;
         });
     }
     /**
@@ -160,25 +255,55 @@ class BubbleMatchGame {
     /**
      * 캔버스 클릭 이벤트 핸들러입니다.
      * 방울 선택 및 교환 로직을 처리합니다.
+     * 게임 시작 전 '게임시작' 버튼과 게임 오버 후 '새 게임' 버튼 클릭도 처리합니다.
      */
     private handleCanvasClick(event: MouseEvent): void {
         // 브라우저의 자동 재생 정책으로 인해 배경 음악이 아직 재생되지 않았다면,
-        // 사용자 클릭 이벤트 발생 시 재생을 시도합니다.
-        if (this.audioBGM && this.audioBGM.paused) {
+        // 사용자 클릭 이벤트 발생 시 재생을 시도합니다. (startGame()에서도 시도하지만, 혹시 몰라 한 번 더 시도)
+        // 이 부분은 게임이 이미 시작되었고 게임 오버 상태가 아닐 때만 의미가 있습니다.
+        if (this.audioBGM && this.audioBGM.paused && this.gameStarted && !this.isGameOver) {
             this.audioBGM.play().catch(e => {
                 console.warn("사용자 클릭으로 배경 음악 재생 시도 실패:", e);
             });
         }
-        // 게임 처리, 애니메이션 중이거나 게임 오버 상태이면 클릭 무시
-        if (this.isProcessing || this.isAnimatingMovement || this.animatingPops.length > 0 || this.isGameOver) {
-            console.log("게임 처리 또는 애니메이션 중이거나 게임 오버 상태입니다. 잠시 기다려주세요.");
-            return;
-        }
         const rect = this.canvas.getBoundingClientRect();
         const mouseX = event.clientX - rect.left;
         const mouseY = event.clientY - rect.top;
+        // --- 게임 오버 상태일 때 '새 게임' 버튼 클릭 처리 ---
+        if (this.isGameOver) {
+            const buttonWidth = 200;
+            const buttonHeight = 60;
+            const buttonX = this.canvas.width / 2 - buttonWidth / 2;
+            const buttonY = (this.canvas.height + this.statusBarHeight) / 2 + 100; // draw()와 동일한 위치
+            if (mouseX >= buttonX && mouseX <= buttonX + buttonWidth &&
+                mouseY >= buttonY && mouseY <= buttonY + buttonHeight) {
+                console.log("'새 게임' 버튼 클릭됨.");
+                this.startGame(); // 새 게임 시작
+            }
+            return; // 게임 오버 상태에서는 다른 클릭 이벤트를 처리하지 않습니다.
+        }
+        // --- 게임 시작 전 '게임시작' 버튼 클릭 처리 ---
+        if (!this.gameStarted) {
+            // '게임시작' 버튼 영역 확인 (drawStartScreen()과 동일한 계산)
+            const buttonWidth = 200;
+            const buttonHeight = 60;
+            const buttonX = this.canvas.width / 2 - buttonWidth / 2;
+            const buttonY = this.canvas.height / 2 + 20;
+            if (mouseX >= buttonX && mouseX <= buttonX + buttonWidth &&
+                mouseY >= buttonY && mouseY <= buttonY + buttonHeight) {
+                this.startGame(); // 버튼 클릭 시 게임 시작
+            }
+            return; // 게임이 시작되지 않았으면 더 이상 진행하지 않음
+        }
+        // --- 게임 플레이 중인 경우 (isGameOver = false, gameStarted = true) ---
+        // 처리 또는 애니메이션 중이면 클릭 무시
+        if (this.isProcessing || this.isAnimatingMovement || this.animatingPops.length > 0) {
+            console.log("게임 처리 또는 애니메이션 중입니다. 잠시 기다려주세요.");
+            return;
+        }
+        let mouseYAdjusted = mouseY - this.statusBarHeight;
         const col = Math.floor(mouseX / this.CELL_SIZE);
-        const row = Math.floor(mouseY / this.CELL_SIZE);
+        const row = Math.floor(mouseYAdjusted / this.CELL_SIZE);
         if (row < 0 || row >= this.GRID_SIZE || col < 0 || col >= this.GRID_SIZE) {
             this.selectedBubble = null;
             this.draw();
@@ -206,14 +331,39 @@ class BubbleMatchGame {
     /**
      * 게임 화면을 그립니다. (배경, 방울, 선택 하이라이트, 점수)
      * @param movementProgress 현재 이동 애니메이션 진행률 (0~1). 기본값 1 (정지 상태).
-     * @param popProgress 현재 터지는 애니메이션 진행률 (0~1). 기본값 0 (터지지 않음).
+     * // @param popProgress 현재 터지는 애니메이션 진행률 (0~1). 기본값 0 (터지지 않음). -> 개별 방울에서 계산하므로 이 매개변수는 삭제
      */
-    private draw(movementProgress: number = 1, popProgress: number = 0): void {
+    private draw(movementProgress: number = 1): void { // popProgress 매개변수 삭제
+        // 게임이 시작되지 않았다면 시작 화면을 그립니다. (맨 처음 게임 시작 전 상태)
+        if (!this.gameStarted) {
+            this.drawStartScreen();
+            return;
+        }
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-        // 배경 이미지 그리기 (새로 추가됨)
+        // --- 상태바 그리기 ---
+        this.ctx.fillStyle = '#333'; // 상태바 배경색
+        this.ctx.fillRect(0, 0, this.canvas.width, this.statusBarHeight);
+        // 점수 표시 (상태바 내)
+        this.ctx.fillStyle = 'white';
+        this.ctx.font = '20px Arial';
+        this.ctx.textAlign = 'left';
+        this.ctx.textBaseline = 'middle'; // 텍스트를 세로 중앙에 배치
+        this.ctx.fillText(`점수: ${this.score}`, 10, this.statusBarHeight / 2);
+        // 시간 표시 (상태바 내)
+        const minutes = Math.floor(this.timeRemaining / 60);
+        const seconds = this.timeRemaining % 60;
+        const timeText = `시간: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        this.ctx.textAlign = 'right';
+        // 시간이 10초 이하일 경우 빨간색으로 표시
+        this.ctx.fillStyle = this.timeRemaining <= 10 && this.timeRemaining > 0 ? 'red' : 'white'; 
+        this.ctx.fillText(timeText, this.canvas.width - 10, this.statusBarHeight / 2);
+        this.ctx.textAlign = 'left'; // 기본 정렬로 되돌림
+        // --- 게임 영역 그리기 (모든 Y 좌표에 statusBarHeight 오프셋 적용) ---
+        // 배경 이미지 그리기
         if (this.backgroundImage) {
-            this.ctx.globalAlpha = 0.3; // 배경 이미지 투명도 30% 설정 (0.5 -> 0.7 -> 0.3로 변경)
-            this.ctx.drawImage(this.backgroundImage, 0, 0, this.canvas.width, this.canvas.height);
+            this.ctx.globalAlpha = 0.3; // 배경 이미지 투명도 30% 설정
+            // drawImage의 y 좌표 및 height 조정
+            this.ctx.drawImage(this.backgroundImage, 0, this.statusBarHeight, this.canvas.width, this.canvas.height - this.statusBarHeight);
             this.ctx.globalAlpha = 1.0; // 다른 요소들을 위해 투명도 원복
         }
         // 그리드 라인 그리기
@@ -221,14 +371,16 @@ class BubbleMatchGame {
             for (let c = 0; c < this.GRID_SIZE; c++) {
                 this.ctx.strokeStyle = '#ccc';
                 this.ctx.lineWidth = 0.5;
-                this.ctx.strokeRect(c * this.CELL_SIZE, r * this.CELL_SIZE, this.CELL_SIZE, this.CELL_SIZE);
+                // Y 좌표에 statusBarHeight 추가
+                this.ctx.strokeRect(c * this.CELL_SIZE, r * this.CELL_SIZE + this.statusBarHeight, this.CELL_SIZE, this.CELL_SIZE);
             }
         }
         // 이동 애니메이션 중인 방울들의 목표 좌표를 추적하여 정적 방울 그리기에서 제외
         const movingTargetCoords = new Set<string>();
         if (this.isAnimatingMovement) {
             for (const move of this.animationQueue) {
-                const targetR = Math.round(move.targetY / this.CELL_SIZE); // 부동소수점 오차 방지를 위해 반올림
+                // 목표 Y 픽셀 좌표에서 statusBarHeight를 뺀 값으로 행 계산
+                const targetR = Math.round((move.targetY - this.statusBarHeight) / this.CELL_SIZE);
                 const targetC = Math.round(move.targetX / this.CELL_SIZE);
                 movingTargetCoords.add(`${targetR},${targetC}`);
             }
@@ -239,7 +391,7 @@ class BubbleMatchGame {
                 const bubbleColorIndex = this.grid[r][c]; // this.grid는 항상 최종 상태를 반영
                 if (bubbleColorIndex !== this.EMPTY_CELL && !movingTargetCoords.has(`${r},${c}`)) {
                     const x = c * this.CELL_SIZE;
-                    const y = r * this.CELL_SIZE;
+                    const y = r * this.CELL_SIZE + this.statusBarHeight; // Y 좌표에 statusBarHeight 추가
                     // FIX: isSelected가 'boolean | null' 타입이 될 수 있으므로, 명시적으로 boolean으로 변환
                     const isSelected: boolean = !!(this.selectedBubble && this.selectedBubble.row === r && this.selectedBubble.col === c);
                     this.drawBubble(bubbleColorIndex, x, y, isSelected);
@@ -254,31 +406,47 @@ class BubbleMatchGame {
                 this.drawBubble(bubble.color, currentX, currentY, false); // 이동 중에는 선택 하이라이트 없음
             }
         }
-        // 3. 터지는 애니메이션 중인 방울 그리기 (가장 위에 그려짐)
-        if (this.animatingPops.length > 0) {
-            for (const popBubble of this.animatingPops) {
-                this.drawPoppingBubble(popBubble.color, popBubble.x, popBubble.y, popProgress);
+        // 3. 터지는 애니메이션 중인 방울 그리기 (가장 위에 그려짐) - 이제 개별 progress 사용
+        // 이 루프에서 drawBubbleFade와 drawPopEffectSprite를 모두 호출
+        const currentTime = performance.now();
+        for (const popBubble of this.animatingPops) {
+            const popProgress = Math.min(1, (currentTime - popBubble.startTime) / this.popDuration);
+            if (popProgress < 1) { // 애니메이션이 아직 끝나지 않았다면
+                this.drawBubbleFade(popBubble.color, popBubble.x, popBubble.y, popProgress);
+                this.drawPopEffectSprite(popBubble.x, popBubble.y, popProgress);
             }
         }
-        // 점수 표시
-        this.ctx.fillStyle = 'white';
-        this.ctx.font = '20px Arial';
-        this.ctx.textAlign = 'left';
-        this.ctx.textBaseline = 'top';
-        this.ctx.fillText(`점수: ${this.score}`, 10, 10);
-        // 게임 오버 오버레이 (새로 추가됨)
+        // 게임 오버 오버레이 (시간 초과 또는 더 이상 움직일 수 없을 때 표시)
         if (this.isGameOver) {
             this.ctx.fillStyle = 'rgba(0, 0, 0, 0.7)'; // 반투명 검은색 오버레이
-            this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+            // Y 좌표 및 높이 조정
+            this.ctx.fillRect(0, this.statusBarHeight, this.canvas.width, this.canvas.height - this.statusBarHeight);
             this.ctx.fillStyle = 'white';
             this.ctx.font = 'bold 48px Arial';
             this.ctx.textAlign = 'center';
             this.ctx.textBaseline = 'middle';
-            this.ctx.fillText('Game Over!', this.canvas.width / 2, this.canvas.height / 2 - 30);
+            // 텍스트 Y 좌표 조정: (캔버스 총 높이 + 상태바 높이) / 2 - 30 (중앙에 가깝게)
+            this.ctx.fillText('Game Over!', this.canvas.width / 2, (this.canvas.height + this.statusBarHeight) / 2 - 30);
             this.ctx.font = '24px Arial';
-            this.ctx.fillText('No more moves possible.', this.canvas.width / 2, this.canvas.height / 2 + 20);
-            this.ctx.fillText(`Final Score: ${this.score}`, this.canvas.width / 2, this.canvas.height / 2 + 60);
-        }
+            // 게임 오버 원인 표시
+            this.ctx.fillText(this.gameOverReason, this.canvas.width / 2, (this.canvas.height + this.statusBarHeight) / 2 + 20);
+            this.ctx.fillText(`Final Score: ${this.score}`, this.canvas.width / 2, (this.canvas.height + this.statusBarHeight) / 2 + 60);
+            // --- '새 게임' 버튼 추가 ---
+            const buttonText = '새 게임';
+            const buttonWidth = 200;
+            const buttonHeight = 60;
+            const buttonX = this.canvas.width / 2 - buttonWidth / 2;
+            const buttonY = (this.canvas.height + this.statusBarHeight) / 2 + 100; // 게임 오버 텍스트 아래에 위치
+            this.ctx.fillStyle = '#4CAF50'; // 버튼 배경색
+            this.ctx.fillRect(buttonX, buttonY, buttonWidth, buttonHeight);
+            this.ctx.strokeStyle = '#388E3C'; // 버튼 테두리
+            this.ctx.lineWidth = 3;
+            this.ctx.strokeRect(buttonX, buttonY, buttonWidth, buttonHeight);
+            this.ctx.fillStyle = 'white';
+            this.ctx.font = 'bold 30px Arial';
+            this.ctx.fillText(buttonText, this.canvas.width / 2, buttonY + buttonHeight / 2);
+        } 
+        // 기존 '더 이상 움직일 수 없습니다!' 경고 메시지 로직은 `endGame()`에서 `isGameOver`를 설정하므로 제거됩니다.
     }
     /**
      * 단일 방울을 그리는 헬퍼 함수 (스프라이트 적용)
@@ -334,10 +502,11 @@ class BubbleMatchGame {
         }
     }
     /**
-     * 터지는 애니메이션 중인 단일 방울을 그리는 헬퍼 함수 (스프라이트 적용)
+     * 터지는 애니메이션 중인 단일 방울의 사라지는 모습을 그리는 헬퍼 함수 (스프라이트 적용)
      * progress가 0이면 완전한 상태, 1이면 완전히 사라진 상태
+     * (기존 drawPoppingBubble 함수가 drawBubbleFade로 이름 변경됨)
      */
-    private drawPoppingBubble(colorIndex: number, x: number, y: number, progress: number): void {
+    private drawBubbleFade(colorIndex: number, x: number, y: number, progress: number): void {
         const opacity = 1 - progress; // 투명도: 1에서 0으로 감소
         const scale = 1 - progress * 0.5; // 크기: 1에서 0.5로 감소 (절반 크기까지 줄어듦)
         if (opacity <= 0 || scale <= 0) return; // 완전히 사라지면 그리지 않음
@@ -381,12 +550,50 @@ class BubbleMatchGame {
         this.ctx.restore();
     }
     /**
+     * 터지는 방울 위에 재생되는 효과 스프라이트를 그리는 헬퍼 함수
+     * progress는 0에서 1까지 진행되며, 효과의 프레임과 크기, 투명도에 영향을 줍니다.
+     */
+    private drawPopEffectSprite(x: number, y: number, progress: number): void {
+        // 효과 스프라이트 시트가 로드되지 않았거나 애니메이션이 완료되면 그리지 않음
+        if (!this.popEffectSpriteSheet || progress >= 1) return;
+        // 현재 애니메이션 프레임 인덱스 계산
+        const currentFrameIndex = Math.min(
+            this.POP_EFFECT_NUM_FRAMES - 1,
+            Math.floor(progress * this.POP_EFFECT_NUM_FRAMES)
+        );
+        const sx = currentFrameIndex * this.POP_EFFECT_FRAME_WIDTH;
+        const sy = 0; // 가정: 모든 프레임이 첫 번째 행에 있음
+        // 효과 스프라이트의 크기 및 위치 조정 (방울 중앙에 오도록)
+        // 예를 들어, 방울 크기보다 약간 작게 시작하여 커지면서 퍼져나가는 효과
+        const initialEffectSize = this.CELL_SIZE * 0.8; // 방울보다 약간 작게 시작
+        const maxEffectSize = this.CELL_SIZE * 1.5; // 최대 크기 (방울의 1.5배)
+        const currentEffectSize = initialEffectSize + (maxEffectSize - initialEffectSize) * progress;
+        const offsetX = (this.CELL_SIZE - currentEffectSize) / 2;
+        const offsetY = (this.CELL_SIZE - currentEffectSize) / 2;
+        const alpha = 1 - progress; // 효과는 진행될수록 투명해짐
+        this.ctx.save();
+        this.ctx.globalAlpha = alpha; // 투명도 적용
+        this.ctx.drawImage(
+            this.popEffectSpriteSheet,
+            sx,
+            sy,
+            this.POP_EFFECT_FRAME_WIDTH,
+            this.POP_EFFECT_FRAME_HEIGHT,
+            x + offsetX,
+            y + offsetY,
+            currentEffectSize,
+            currentEffectSize
+        );
+        this.ctx.restore();
+    }
+    /**
      * 그리드 좌표를 캔버스 픽셀 좌표로 변환합니다.
+     * 상태바 높이를 고려하여 Y 좌표를 조정합니다.
      */
     private getCanvasCoords(row: number, col: number): { x: number, y: number } {
         return {
             x: col * this.CELL_SIZE,
-            y: row * this.CELL_SIZE
+            y: row * this.CELL_SIZE + this.statusBarHeight // Y 좌표에 statusBarHeight 추가
         };
     }
     /**
@@ -402,15 +609,10 @@ class BubbleMatchGame {
                 console.warn("BGM 자동 재생이 차단되었습니다. 사용자 클릭 시 재생을 시도합니다.", e);
             });
         }
-        const initialMatchesProcessed = await this._processMatchesCycle(); // 매치 처리 시작
-        if (initialMatchesProcessed) {
-            console.log("초기 매치가 성공적으로 처리되었습니다.");
-        } else {
-            console.log("초기 그리드에 즉시 터질 매치가 없었습니다.");
-        }
+        await this._processMatchesCycle(); // 매치 처리 시작
         this.isProcessing = false; // 처리 완료 후 사용자 입력 허용
         this.draw(); // 최종 상태를 그립니다.
-        this.checkGameOver(); // 초기 세팅 후 게임 오버 조건 확인
+        this.endGame(); // 수정: 초기 그리드 처리 후 게임 오버 조건을 확인합니다.
     }
     /**
      * 매치를 찾아 제거하고, 중력을 적용하며, 리필하는 일련의 과정을 매치가 없을 때까지 반복합니다.
@@ -478,15 +680,13 @@ class BubbleMatchGame {
             await this.animateMovement(revertMovements); // 되돌리는 애니메이션 실행
             this.isProcessing = false;
             this.draw(); // 최종 상태 그리기
-            // 되돌린 후에도 게임 오버 확인이 필요할 수 있으나, 일반적으로 매치가 없으면 게임 오버로 이어지지 않으므로 여기서는 생략.
-            // (즉, 유효한 움직임을 시도한 것이 아니므로 게임 오버 조건 검사를 하지 않음)
             return;
         }
         // 5. 매치가 있는 경우, 연쇄 반응 처리
         await this._processMatchesCycle(); // _processMatchesCycle 내부에서 점수 업데이트 및 연쇄 반응 모두 처리
         this.isProcessing = false; // 모든 처리가 완료되면 플래그 해제
         this.draw(); // 모든 연쇄 반응이 끝난 후 최종 화면을 그립니다.
-        this.checkGameOver(); // (새로 추가됨) 모든 턴이 끝난 후 게임 종료 조건을 확인합니다.
+        this.endGame(); // 모든 턴이 끝난 후 게임 종료 조건을 확인합니다.
     }
     /**
      * 현재 그리드에서 3개 이상의 방울이 수평 또는 수직으로 일치하는 모든 매치를 찾아 반환합니다.
@@ -569,8 +769,8 @@ class BubbleMatchGame {
                     } while (this.hasMatchAt(r, c, tempGrid)); // 임시 그리드 상태를 기반으로 매치 확인
                     // 새로운 방울은 화면 상단 밖에서 떨어져 내려오는 것으로 간주
                     const targetCoords = this.getCanvasCoords(r, c);
-                    // 시작 Y 위치를 캔버스 위로 설정하여 떨어지는 애니메이션 생성
-                    const startY = -this.CELL_SIZE * (r + 1); // 더 위에서 시작하여 더 길게 떨어지는 느낌
+                    // 시작 Y 위치를 캔버스 위로 설정하여 떨어지는 애니메이션 생성 (상태바 높이 포함)
+                    const startY = -this.CELL_SIZE * (r + 1) + this.statusBarHeight; 
                     movements.push({ color: newColor, startX: targetCoords.x, startY: startY, targetX: targetCoords.x, targetY: targetCoords.y });
                 }
             }
@@ -609,7 +809,7 @@ class BubbleMatchGame {
     /**
      * 매치되어 제거되는 방울들의 터지는 애니메이션을 수행합니다.
      */
-    private animatePop(removedBubbles: typeof this.animatingPops): Promise<void> {
+    private animatePop(removedBubbles: { color: number, x: number, y: number }[]): Promise<void> {
         if (removedBubbles.length === 0) {
             this.draw();
             return Promise.resolve();
@@ -620,19 +820,25 @@ class BubbleMatchGame {
             this.audioEat.currentTime = 0; // 효과음을 처음부터 재생
             this.audioEat.play().catch(e => console.warn("효과음 재생 실패:", e));
         }
-        this.animatingPops = removedBubbles;
-        this.popStartTime = performance.now();
+        // 기존 animatingPops에 startTime 추가
+        this.animatingPops = removedBubbles.map(bubble => ({ ...bubble, startTime: performance.now() }));
+        // this.popStartTime = performance.now(); // 이제 각 방울이 개별 startTime을 가질 것이므로 이 줄은 필요 없음.
         return new Promise(resolve => {
             const animatePopLoop = () => {
                 const currentTime = performance.now();
-                const progress = Math.min(1, (currentTime - this.popStartTime!) / this.popDuration);
-                // draw 함수가 이동 애니메이션과 터지는 애니메이션을 동시에 처리할 수 있도록,
-                // 이 시점에는 이동 애니메이션이 없으므로 movementProgress는 1, popProgress는 현재 진행률을 전달
-                this.draw(1, progress);
-                if (progress < 1) {
+                // 완료되지 않은 애니메이션만 유지
+                this.animatingPops = this.animatingPops.filter(popBubble => {
+                    const progress = (currentTime - popBubble.startTime) / this.popDuration;
+                    return progress < 1;
+                });
+                // draw 함수를 호출하여 현재 애니메이션 프레임을 그립니다.
+                // 이동 애니메이션은 없고, popProgress는 drawBubbleFade/drawPopEffectSprite에서 개별적으로 계산합니다.
+                this.draw(1); 
+                if (this.animatingPops.length > 0) {
                     requestAnimationFrame(animatePopLoop);
                 } else {
-                    this.animatingPops = []; // 터지는 방울 목록 비우기
+                    // 모든 방울 터짐 애니메이션 완료
+                    // this.animatingPops = []; // 필터링으로 이미 비워짐
                     this.draw(); // 최종 정지 상태를 그립니다.
                     resolve();
                 }
@@ -646,6 +852,29 @@ class BubbleMatchGame {
      */
     private delay(ms: number): Promise<void> {
         return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    /**
+     * (새로 추가됨)
+     * 게임 타이머를 시작합니다.
+     */
+    private startTimer(): void {
+        if (this.timerInterval !== null) {
+            clearInterval(this.timerInterval);
+        }
+        this.timerInterval = setInterval(() => {
+            if (this.isGameOver) { // 게임 오버 상태면 타이머 중지
+                clearInterval(this.timerInterval!);
+                this.timerInterval = null;
+                return;
+            }
+            this.timeRemaining--;
+            this.draw(); // 매 초 화면 업데이트
+            if (this.timeRemaining <= 0) {
+                clearInterval(this.timerInterval!);
+                this.timerInterval = null;
+                this.endGame(true); // 시간 초과로 인한 게임 오버 처리
+            }
+        }, 1000) as unknown as number; // setInterval의 반환 값 타입 추론 오류 방지
     }
     /**
      * (새로 추가됨)
@@ -668,10 +897,6 @@ class BubbleMatchGame {
                     // 유효한 그리드 범위 내에 있는지 확인
                     if (nr >= 0 && nr < this.GRID_SIZE && nc >= 0 && nc < this.GRID_SIZE) {
                         const adjacentColor = tempGrid[nr][nc];
-                        // 최적화: 동일한 색상의 방울을 교환하는 것은 새로운 매치를 생성하지 않으므로 건너뜁니다.
-                        if (currentColor === adjacentColor) {
-                            continue;
-                        }
                         // 가상의 교환 수행
                         [tempGrid[r][c], tempGrid[nr][nc]] = [adjacentColor, currentColor];
                         // 가상의 그리드에서 매치 확인
@@ -679,29 +904,44 @@ class BubbleMatchGame {
                         // 가상의 교환 되돌리기 (다음 시뮬레이션을 위해 그리드 상태 복원)
                         [tempGrid[r][c], tempGrid[nr][nc]] = [currentColor, adjacentColor];
                         if (matches.size > 0) {
-                            console.log(`[DEBUG] canMakeMove: 가능한 움직임 발견! (${r},${c})와 (${nr},${nc}) 교환 시 매치 생성.`);
-                            console.log(`[DEBUG] 생성될 매치 좌표:`, Array.from(matches));
+                            // console.log(`[DEBUG] canMakeMove: 가능한 움직임 발견! (${r},${c})와 (${nr},${nc}) 교환 시 매치 생성.`);
+                            // console.log(`[DEBUG] 생성될 매치 좌표:`, Array.from(matches));
                             return true; // 가능한 움직임을 찾았습니다.
                         }
                     }
                 }
             }
         }
-        console.log(`[DEBUG] canMakeMove: 가능한 움직임이 없습니다. 게임 오버 조건 충족.`);
+        // console.log(`[DEBUG] canMakeMove: 가능한 움직임이 없습니다. 게임 오버 조건 충족.`);
         return false; // 가능한 움직임이 없습니다.
     }
     /**
      * (새로 추가됨)
      * 게임 오버 조건을 확인하고, 게임 오버 시 상태를 업데이트합니다.
+     * @param timedOut 시간 제한으로 게임 오버가 발생했는지 여부
      */
-    private checkGameOver(): void {
-        if (!this.canMakeMove()) {
-            this.isGameOver = true;
-            console.log("Game Over! No more moves possible.");
-            this.draw(); // 게임 오버 메시지를 표시하기 위해 화면을 다시 그립니다.
+    private endGame(timedOut: boolean = false): void {
+        if (this.isGameOver) return; // 이미 게임 오버 상태면 중복 처리 방지
+        // 게임 오버 원인을 먼저 판단
+        if (timedOut) {
+            this.gameOverReason = "Time's Up!";
+        } else if (!this.canMakeMove()) {
+            this.gameOverReason = "No More Moves!";
         } else {
+            // 게임 오버 조건에 해당하지 않는 경우
             console.log("게임 오버 조건이 아닙니다. 가능한 움직임이 있습니다.");
+            return;
         }
+        // 게임 오버 상태로 진입
+        this.isGameOver = true;
+        console.log(`Game Over! Reason: ${this.gameOverReason}`);
+        // 타이머 중지
+        if (this.timerInterval !== null) {
+            clearInterval(this.timerInterval);
+            this.timerInterval = null;
+        }
+        // 게임 오버 오버레이를 표시하기 위해 화면 업데이트
+        this.draw();
     }
 }
 // DOM이 완전히 로드된 후 게임을 초기화합니다.
