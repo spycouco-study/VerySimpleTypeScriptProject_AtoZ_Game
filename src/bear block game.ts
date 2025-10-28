@@ -1,3 +1,5 @@
+// export {};
+
 // // Brick Breaker Game (block breaker) - TypeScript 단일 파일
 // // HTML에 <canvas id="game" width="480" height="320"></canvas> 필요
 // const canvas = document.getElementById("gameCanvas") as HTMLCanvasElement;

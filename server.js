@@ -19,6 +19,11 @@ function compileTS() {
   const tsCode = fs.readFileSync(tsFilePath, "utf-8");
   const jsCode = ts.transpileModule(tsCode, {
     compilerOptions: {
+      target: ts.ScriptTarget.ES2015,
+      module: ts.ModuleKind.None,
+      isolatedModules: true,
+    },
+    compilerOptions: {
       target: ts.ScriptTarget.ES2020,
       module: ts.ModuleKind.None,
       strict: true,

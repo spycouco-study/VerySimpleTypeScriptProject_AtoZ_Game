@@ -1,5 +1,4 @@
 export {};
-
 interface GameEntity {
     x: number;
     y: number;
@@ -281,16 +280,16 @@ class BubbleEffect implements GameEffect {
 // --- 추가 끝 ---
 class Game {
     private canvas: HTMLCanvasElement;
-    private ctx: CanvasRenderingContext2D;
-    private player: Player;
+    private ctx!: CanvasRenderingContext2D; // 확실한 할당 어설션 추가
+    private player!: Player; // 확실한 할당 어설션 추가
     private obstacles: Obstacle[] = [];
     private enemies: Enemy[] = [];
-    private goal: Goal;
+    private goal!: Goal; // 확실한 할당 어설션 추가
     private scrollOffset: number = 0;
     private gameSpeed: number = 3; // 게임 스크롤 속도
     private GRAVITY: number = 0.5;
     private JUMP_STRENGTH: number = 12;
-    private GROUND_Y: number;
+    private GROUND_Y!: number; // 확실한 할당 어설션 추가
     private gameStarted: boolean = false;
     private gameOver: boolean = false;
     private gameWon: boolean = false;
@@ -313,7 +312,7 @@ class Game {
     private MIN_ENEMY_GAP: number = 150; // 적 사이 최소 간격 (기존 400 -> 150으로 감소)
     private MAX_ENEMY_GAP: number = 300; // 적 사이 최대 간격 (기존 800 -> 300으로 감소)
     // <<< 이펙트 관련 속성 추가 시작 >>>
-    private bubbleEffectImage: HTMLImageElement;
+    private bubbleEffectImage!: HTMLImageElement; // 확실한 할당 어설션 추가
     private bubbleEffectLoaded: boolean = false;
     private activeEffects: BubbleEffect[] = []; // 현재 활성화된 버블 이펙트들을 저장할 배열
     // <<< 이펙트 관련 속성 추가 끝 >>>
