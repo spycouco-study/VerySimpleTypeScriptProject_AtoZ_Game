@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename);
 
 app.use(express.static(path.join(__dirname, "public")));
 
-const tsFilePath = path.join(__dirname, "src", "bubble game.ts");
+const tsFilePath = path.join(__dirname, "src", "run game.ts");
 
 function compileTS() {
   const tsCode = fs.readFileSync(tsFilePath, "utf-8");
