@@ -13,22 +13,26 @@ const __dirname = path.dirname(__filename);
 
 app.use(express.static(path.join(__dirname, "public")));
 
-const tsFilePath = path.join(__dirname, "src", "run game.ts");
+const tsFilePath = path.join(__dirname, "src", "bear block game.ts");
 
 function compileTS() {
   const tsCode = fs.readFileSync(tsFilePath, "utf-8");
-  const jsCode = ts.transpileModule(tsCode, {
+  const configFile = ts.readConfigFile("tsconfig.json", ts.sys.readFile);
+  const parsedConfig = ts.parseJsonConfigFileContent(configFile.config, ts.sys, "./");
+  
+  const compiledCode = ts.transpileModule(tsCode, {
     compilerOptions: {
-      target: ts.ScriptTarget.ES2015,
+      ...parsedConfig.options,
       module: ts.ModuleKind.None,
-      isolatedModules: true,
-    },
-    compilerOptions: {
-      target: ts.ScriptTarget.ES2020,
-      module: ts.ModuleKind.None,
-      strict: true,
-    },
+      isolatedModules: true
+    }
   }).outputText;
+
+  // IIFE로 게임 코드 감싸기
+  const jsCode = `(function() {
+    ${compiledCode}
+  })();`;
+  
   return jsCode;
 }
 

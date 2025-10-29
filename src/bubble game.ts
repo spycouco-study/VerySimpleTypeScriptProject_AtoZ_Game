@@ -1,9 +1,16 @@
+// type BubbleMovement = {
+//     color: number;
+//     startX: number;
+//     startY: number;
+//     targetX: number;
+//     targetY: number;
+// };
 // class BubbleMatchGame {
 //     private canvas: HTMLCanvasElement;
-//     private ctx: CanvasRenderingContext2D;
-//     private grid: number[][]; // 방울 색상을 저장하는 2D 배열 (숫자로 색상 인덱스 표현)
+//     private ctx!: CanvasRenderingContext2D; // definite assignment assertion 추가
+//     private grid!: number[][]; // definite assignment assertion 추가
 //     private GRID_SIZE: number = 7; // 그리드 크기 (4x4에서 7x7으로 변경)
-//     private CELL_SIZE: number; // 각 셀의 크기
+//     private CELL_SIZE!: number; // definite assignment assertion 추가
 //     private COLORS: string[] = ['red', 'blue', 'green', 'purple', 'orange', 'yellow']; // 사용 가능한 6가지 색상
 //     private EMPTY_CELL: number = -1; // 빈 셀을 나타내는 값
 //     private score: number = 0; // 현재 점수
@@ -15,7 +22,7 @@
 //     // --- 새로운 상태바 및 시간 제한 관련 속성 ---
 //     private statusBarHeight: number = 40; // 상태바의 높이 (픽셀)
 //     private gameDuration: number = 60; // 게임 시간 제한 (초) - 1분으로 변경 (이전 120초)
-//     private timeRemaining: number; // 남은 시간 (초)
+//     private timeRemaining!: number; // definite assignment assertion 추가
 //     private timerInterval: number | null = null; // setInterval ID를 저장할 변
 //     // --- 애셋 관련 새 속성 ---
 //     private spriteSheet: HTMLImageElement | null = null;
@@ -24,7 +31,7 @@
 //     private SPRITE_HEIGHT: number = 250; // animals.png 내 개별 스프라이트의 세로 크기 (가정) - **수정됨**
 //     private spriteMap: { sx: number, sy: number }[] = []; // 각 colorIndex에 해당하는 스프라이트 시트 내 시작 X, Y 좌표
 //     private audioBGM: HTMLAudioElement | null = null;
-//     private audioEat: HTMLAudioElement | null = null;
+//     private audioEat: HTMLAudioElement | null = null; // <-- HTMLAUdioElement 오타 수정
 //     private BGM_PATH: string = 'assets/bgm.mp3';
 //     private EAT_SFX_PATH: string = 'assets/eat.mp3';
 //     // --- 배경 이미지 관련 새 속성 ---
@@ -32,7 +39,7 @@
 //     private BACKGROUND_IMAGE_PATH: string = 'assets/back.png'; // 배경 이미지 경로
 //     // --- 애셋 관련 끝 ---
 //     // --- 애니메이션 관련 새 속성 ---
-//     private animationQueue: { color: number, startX: number, startY: number, targetX: number, targetY: number }[] = [];
+//     private animationQueue: BubbleMovement[] = []; // BubbleMovement 타입 적용
 //     private animationStartTime: number | null = null;
 //     private animationDuration: number = 250; // 방울 이동 애니메이션 지속 시간 (ms)
 //     private isAnimatingMovement: boolean = false; // 방울 이동 애니메이션 중인지 여부
@@ -43,7 +50,7 @@
 //     // 새로 추가된 방울 터짐 효과 스프라이트 관련 속성
 //     private popEffectSpriteSheet: HTMLImageElement | null = null;
 //     private POP_EFFECT_SPRITE_PATH: string = 'assets/bubble_effect.png';
-//     private POP_EFFECT_FRAME_WIDTH: number; // 동적으로 계산될 예정 (1535 / 5 = 307)
+//     private POP_EFFECT_FRAME_WIDTH!: number; // definite assignment assertion 추가
 //     private POP_EFFECT_FRAME_HEIGHT: number = 305;
 //     private POP_EFFECT_NUM_FRAMES: number = 5; // 1535px 너비에 5개 프레임 가정
 //     // --- 애니메이션 관련 끝 ---
@@ -62,8 +69,8 @@
 //         this.loadAssets().then(() => {
 //             this.drawStartScreen(); // 애셋 로딩 완료 후 시작 화면을 그립니다.
 //             console.log("애셋 로딩 완료. '게임시작' 버튼을 눌러 게임을 시작하세요.");
-//         }).catch(error => {
-//             console.error("애셋 로딩 실패:", error);
+//         }).catch((e: unknown) => { // <-- 'e' 매개변수 타입 지정
+//             console.error("애셋 로딩 실패:", e);
 //             // 애셋 로딩 실패 시 폴백 (스프라이트/음악 없이 게임 진행)
 //             // 즉시 게임을 시작하지 않고 시작 화면을 그립니다.
 //             this.drawStartScreen(); // 폴백 시에도 시작 화면을 그립니다.
@@ -138,7 +145,7 @@
 //         console.log("게임이 시작되었습니다! 방울을 클릭하여 플레이하세요.");
 //         // 배경 음악 재생 시도 (사용자 클릭 이벤트 내에서 호출되므로 자동재생 가능성 높음)
 //         if (this.audioBGM && this.audioBGM.paused) {
-//             this.audioBGM.play().catch(e => {
+//             this.audioBGM.play().catch((e: unknown) => { // <-- 'e' 매개변수 타입 지정
 //                 console.warn("BGM 재생 시도 실패:", e);
 //             });
 //         }
@@ -262,7 +269,7 @@
 //         // 사용자 클릭 이벤트 발생 시 재생을 시도합니다. (startGame()에서도 시도하지만, 혹시 몰라 한 번 더 시도)
 //         // 이 부분은 게임이 이미 시작되었고 게임 오버 상태가 아닐 때만 의미가 있습니다.
 //         if (this.audioBGM && this.audioBGM.paused && this.gameStarted && !this.isGameOver) {
-//             this.audioBGM.play().catch(e => {
+//             this.audioBGM.play().catch((e: unknown) => { // <-- 'e' 매개변수 타입 지정
 //                 console.warn("사용자 클릭으로 배경 음악 재생 시도 실패:", e);
 //             });
 //         }
@@ -605,7 +612,7 @@
 //         console.log("게임 시작 시 초기 매치 처리 중...");
 //         // 배경 음악이 준비되었다면 재생 시도 (브라우저 정책으로 실패할 수 있음)
 //         if (this.audioBGM) {
-//             this.audioBGM.play().catch(e => {
+//             this.audioBGM.play().catch((e: unknown) => { // <-- 'e' 매개변수 타입 지정
 //                 console.warn("BGM 자동 재생이 차단되었습니다. 사용자 클릭 시 재생을 시도합니다.", e);
 //             });
 //         }
@@ -656,7 +663,7 @@
 //         const coords1 = this.getCanvasCoords(r1, c1);
 //         const coords2 = this.getCanvasCoords(r2, c2);
 //         // 1. 방울 교환 애니메이션을 위한 움직임 정보 생성
-//         const swapMovements = [
+//         const swapMovements: BubbleMovement[] = [ // BubbleMovement 타입 적용
 //             { color: color1, startX: coords1.x, startY: coords1.y, targetX: coords2.x, targetY: coords2.y },
 //             { color: color2, startX: coords2.x, startY: coords2.y, targetX: coords1.x, targetY: coords1.y }
 //         ];
@@ -670,7 +677,7 @@
 //         if (matches.size === 0) {
 //             // 매치가 없는 경우, 방울을 원래대로 되돌리고 턴을 종료합니다.
 //             // 되돌리는 애니메이션을 위한 움직임 정보 생성
-//             const revertMovements = [
+//             const revertMovements: BubbleMovement[] = [ // BubbleMovement 타입 적용
 //                 { color: color1, startX: coords2.x, startY: coords2.y, targetX: coords1.x, targetY: coords1.y },
 //                 { color: color2, startX: coords1.x, startY: coords1.y, targetX: coords2.x, targetY: coords2.y }
 //             ];
@@ -736,8 +743,8 @@
 //      * 중력 적용 및 빈 공간 리필에 따른 방울들의 움직임과 최종 그리드 상태를 계산합니다.
 //      * 이 함수는 실제 `this.grid`를 변경하지 않고, 변경될 내용을 반환합니다.
 //      */
-//     private calculateGravityAndRefillChanges(): { movements: typeof this.animationQueue, finalGridState: number[][] } {
-//         const movements: typeof this.animationQueue = [];
+//     private calculateGravityAndRefillChanges(): { movements: BubbleMovement[], finalGridState: number[][] } { // 타입 명확화
+//         const movements: BubbleMovement[] = []; // BubbleMovement 타입 적용
 //         const tempGrid = Array.from(this.grid.map(row => Array.from(row))); // 현재 그리드의 복사본 (임시 작업용)
 //         // 1. 중력 적용 계산
 //         for (let c = 0; c < this.GRID_SIZE; c++) { // 각 열에 대해
@@ -780,7 +787,7 @@
 //     /**
 //      * 방울의 움직임을 애니메이션합니다.
 //      */
-//     private animateMovement(movements: typeof this.animationQueue): Promise<void> {
+//     private animateMovement(movements: BubbleMovement[]): Promise<void> { // BubbleMovement 타입 적용
 //         if (movements.length === 0) {
 //             this.draw(); // 최종 정지 상태를 그립니다.
 //             return Promise.resolve();
@@ -818,7 +825,7 @@
 //         if (this.audioEat) {
 //             // 한 번의 터지는 애니메이션에 하나의 효과음 재생
 //             this.audioEat.currentTime = 0; // 효과음을 처음부터 재생
-//             this.audioEat.play().catch(e => console.warn("효과음 재생 실패:", e));
+//             this.audioEat.play().catch((e: unknown) => console.warn("효과음 재생 실패:", e)); // <-- 'e' 매개변수 타입 지정
 //         }
 //         // 기존 animatingPops에 startTime 추가
 //         this.animatingPops = removedBubbles.map(bubble => ({ ...bubble, startTime: performance.now() }));

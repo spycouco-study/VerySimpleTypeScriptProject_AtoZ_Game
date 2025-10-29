@@ -45,3 +45,8 @@ node server.js
 
 # 서버접속(로컬포트 8080 접속 예)
 http://localhost:8080
+
+
+
+# 터미널에서 ts코드 오류 검사
+npx tsc --project ./tsconfig.json --noEmit
