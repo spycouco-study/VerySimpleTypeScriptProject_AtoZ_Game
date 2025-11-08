@@ -7,7 +7,7 @@ interface GameEntity {
     isColliding(other: GameEntity, scrollOffset: number): boolean;
 }
 // 플레이어 클래스
-class Player implements GameEntity {
+class Player_ implements GameEntity {
     x: number;
     y: number;
     width: number = 40;
@@ -280,7 +280,7 @@ class BubbleEffect implements GameEffect {
 class Game {
     private canvas: HTMLCanvasElement;
     private ctx!: CanvasRenderingContext2D; // 확실한 할당 어설션 추가
-    private player!: Player; // 확실한 할당 어설션 추가
+    private player!: Player_; // 확실한 할당 어설션 추가
     private obstacles: Obstacle[] = [];
     private enemies: Enemy[] = [];
     private goal!: Goal; // 확실한 할당 어설션 추가
@@ -326,7 +326,7 @@ class Game {
         this.canvas.width = 800;
         this.canvas.height = 400;
         this.GROUND_Y = this.canvas.height - 40; // 바닥의 Y 좌표
-        this.player = new Player(this.canvas.width / 4, this.GROUND_Y - 60); // 플레이어 초기 위치
+        this.player = new Player_(this.canvas.width / 4, this.GROUND_Y - 60); // 플레이어 초기 위치
         this.setupLevel();
         // --- 추가 시작 ---
         this.generateClouds(); // 구름 생성
@@ -431,7 +431,7 @@ class Game {
     }
     private resetGame() {
         this.scrollOffset = 0;
-        this.player = new Player(this.canvas.width / 4, this.GROUND_Y - 60);
+        this.player = new Player_(this.canvas.width / 4, this.GROUND_Y - 60);
         this.setupLevel(); // 레벨 초기화 (장애물, 적 다시 생성)
         // --- 추가 시작 ---
         this.generateClouds(); // 구름도 다시 생성

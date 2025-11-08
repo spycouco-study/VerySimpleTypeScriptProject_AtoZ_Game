@@ -5,12 +5,15 @@ interface Choice {
     effect: { affectionChange: number; nextDialogueIndex: number };
 }
 interface DialogueLine {
+    id: number; // ✨ 추가: 대화 라인 고유 인덱스 (수정 용이성을 위해)
     speaker: string;
     text: string;
     choices?: Choice[]; // 선택지는 선택 사항
     autoEffect?: { affectionChange?: number; nextDialogueIndex?: number; };
     // ✨ 수정: 엘라의 부재를 인덱스 대신 플래그로 관리
-    isEllaAbsent?: boolean; 
+    isEllaAbsent?: boolean;
+    // ✨ 추가: 장소 구분을 위한 속성
+    location?: string;
 }
 
 enum GameState {
@@ -42,25 +45,71 @@ let playerName: string = "플레이어";
 
 // ✨ 삭제: PLAYER_MONOLOGUES_WHERE_ELLA_IS_ABSENT 상수 제거 (JSON 파일에서 관리)
 
-// 배경 이미지 로딩
-const backgroundImage = new Image();
-backgroundImage.src = 'back.png';
-let isBackgroundLoaded = false;
-backgroundImage.onload = () => {
-    isBackgroundLoaded = true;
-    updateAndDraw(); 
+// ✨ 수정: 배경 이미지 로딩을 여러 개로 관리
+interface LoadedBackground {
+    img: HTMLImageElement;
+    isLoaded: boolean;
+}
+const backgroundImages: { [key: string]: LoadedBackground } = {};
+const BACKGROUND_ASSETS: { [key: string]: string } = {
+    "park": 'background_park.png',
+    "cafe": 'background_cafe.png',
+    "exhibition": 'background_exhibition.png',
+    "park_evening": 'background_park_evening.png' // ✨ 추가: 저녁 공원 배경
 };
+let allBackgroundsLoaded: boolean = false; // 모든 배경 이미지가 로드되었는지 확인하는 플래그
+let loadedBackgroundCount: number = 0;
+const totalBackgroundCount: number = Object.keys(BACKGROUND_ASSETS).length;
+
+function loadAllBackgroundImages() {
+    for (const key in BACKGROUND_ASSETS) {
+        const img = new Image();
+        img.src = BACKGROUND_ASSETS[key];
+        backgroundImages[key] = { img: img, isLoaded: false };
+        img.onload = () => {
+            backgroundImages[key].isLoaded = true;
+            loadedBackgroundCount++;
+            if (loadedBackgroundCount === totalBackgroundCount) {
+                allBackgroundsLoaded = true;
+                checkAllAssetsLoaded(); // 모든 자산 로딩 완료 확인
+            }
+            updateAndDraw();
+        };
+        img.onerror = () => {
+            console.error(`Failed to load background image: ${BACKGROUND_ASSETS[key]}`);
+            backgroundImages[key].isLoaded = true; // 에러라도 로딩 완료로 처리하여 게임 진행은 되도록
+            loadedBackgroundCount++;
+            if (loadedBackgroundCount === totalBackgroundCount) {
+                allBackgroundsLoaded = true;
+                checkAllAssetsLoaded();
+            }
+            updateAndDraw();
+        };
+    }
+}
+
 // 여주인공 이미지 로딩 추가
 const girlImage = new Image();
 girlImage.src = 'girl.png';
 let isGirlImageLoaded = false;
 girlImage.onload = () => {
     isGirlImageLoaded = true;
-    updateAndDraw(); 
+    checkAllAssetsLoaded(); // 모든 자산 로딩 완료 확인
+    updateAndDraw();
 };
 
 // ✨ 수정: 대화 스크립트 변수를 빈 배열로 초기화하고 로딩 함수 추가
 let dialogueScript: DialogueLine[] = [];
+let isDialogueDataLoaded: boolean = false; // 대화 데이터 로드 여부 플래그
+
+// ✨ 추가: 모든 필요한 자산 (배경 이미지, 여주인공 이미지, JSON 데이터) 로딩 완료를 확인하는 함수
+function checkAllAssetsLoaded() {
+    if (allBackgroundsLoaded && isGirlImageLoaded && isDialogueDataLoaded) {
+        currentGameState = GameState.START_SCREEN;
+        console.log("모든 게임 자산 로딩 완료!");
+        updateAndDraw();
+    }
+}
 
 // ✨ 추가: JSON 데이터를 비동기적으로 불러오는 함수
 async function loadGameData() {
@@ -71,17 +120,14 @@ async function loadGameData() {
         }
         const data: DialogueLine[] = await response.json();
         dialogueScript = data;
-        
+        isDialogueDataLoaded = true; // 데이터 로딩 완료
         console.log("스크립트 데이터 로딩 완료!");
-        
-        // 데이터 로딩 완료 후 시작 화면으로 전환
-        currentGameState = GameState.START_SCREEN; 
+        checkAllAssetsLoaded(); // 모든 자산 로딩 완료 확인
     } catch (error) {
         console.error("데이터 로딩 실패:", error);
-        // 로딩 실패 시 에러 화면 표시 등의 추가 로직이 필요할 수 있습니다.
-        currentGameState = GameState.ENDING; // 임시로 엔딩 화면으로 보내 에러 메시지 표시
+        currentGameState = GameState.ENDING; // 로딩 실패 시 엔딩 화면으로
+        updateAndDraw();
     }
-    updateAndDraw(); // 데이터 로드 완료 후 화면 갱신
 }
 
 
@@ -129,10 +175,11 @@ function isClickInside(clickX: number, clickY: number, elementX: number, element
            clickY >= elementY && clickY <= elementY + elementHeight;
 }
 
-// 배경 이미지를 그리거나 로딩 중일 때 대체 배경을 그리는 헬퍼 함수
-function drawBackgroundImage() {
-    if (isBackgroundLoaded) {
-        ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+// ✨ 수정: 특정 장소의 배경 이미지를 그리는 헬퍼 함수
+function drawSpecificBackground(locationName: string) {
+    const bg = backgroundImages[locationName];
+    if (bg && bg.isLoaded) {
+        ctx.drawImage(bg.img, 0, 0, canvas.width, canvas.height);
     } else {
         // 이미지가 로드되지 않았을 경우 기본 배경색 사용
         ctx.fillStyle = '#ADD8E6'; // 연한 파란색 배경 (기존 시작 화면 색상)
@@ -141,24 +188,39 @@ function drawBackgroundImage() {
         ctx.font = '24px Arial';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText('Loading background...', canvas.width / 2, canvas.height / 2);
+        if (bg) {
+            ctx.fillText(`Loading ${locationName} background...`, canvas.width / 2, canvas.height / 2);
+        } else {
+            ctx.fillText(`Background asset not defined for: ${locationName}`, canvas.width / 2, canvas.height / 2);
+        }
     }
 }
 
 // ====== 그리기 함수 ======
 function drawLoadingScreen() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawBackgroundImage(); // 배경 이미지 그리기
+    ctx.fillStyle = '#333'; // 어두운 배경
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = 'white';
     ctx.font = '40px Arial';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText('게임 데이터를 불러오는 중...', canvas.width / 2, canvas.height / 2);
+
+    // 로딩 진행 상황 표시
+    let loadingMessage = "";
+    if (!allBackgroundsLoaded) loadingMessage += "배경 이미지 로딩 중... ";
+    if (!isGirlImageLoaded) loadingMessage += "캐릭터 이미지 로딩 중... ";
+    if (!isDialogueDataLoaded) loadingMessage += "대화 스크립트 로딩 중... ";
+    if (loadingMessage) {
+        ctx.font = '20px Arial';
+        ctx.fillText(loadingMessage.trim(), canvas.width / 2, canvas.height / 2 + 50);
+    }
 }
 
 function drawStartScreen() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawBackgroundImage(); // 배경 이미지 그리기
+    drawSpecificBackground("park"); // 시작 화면은 공원 배경
     ctx.fillStyle = 'white';
     ctx.font = '40px Arial';
     ctx.textAlign = 'center';
@@ -170,10 +232,9 @@ function drawStartScreen() {
 
 function drawDialogueScreen() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawBackgroundImage(); // 배경 이미지 그리기
 
     // 데이터가 없으면 로딩 화면으로 돌아감 (안전 장치)
-    if (dialogueScript.length === 0) { 
+    if (dialogueScript.length === 0 || !isDialogueDataLoaded) {
         currentGameState = GameState.LOADING;
         drawLoadingScreen();
         return;
@@ -185,6 +246,9 @@ function drawDialogueScreen() {
         drawEndingScreen();
         return;
     }
+    
+    // ✨ 수정: 현재 대화 라인의 location에 따라 배경 그리기
+    drawSpecificBackground(currentLine.location || "park"); // location이 없으면 기본 'park' 사용
     
     // 여주인공 이미지 그리기 로직 수정 ✨
     // speaker가 비어있지 않고, isEllaAbsent 플래그가 true가 아닐 때만 표시
@@ -248,7 +312,9 @@ function drawChoiceScreen() {
 
 function drawEndingScreen() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawBackgroundImage(); // 배경 이미지 그리기
+    // ✨ 수정: 엔딩 화면도 `park_evening` 배경으로 통일하거나, 상황에 맞게
+    // 여기서는 기본 `park`를 유지합니다. 특정 엔딩에 따라 배경을 변경할 수도 있습니다.
+    drawSpecificBackground("park"); 
     
     // 로딩 실패 시 에러 메시지
     if (dialogueScript.length === 0 && currentGameState === GameState.ENDING) {
@@ -256,7 +322,7 @@ function drawEndingScreen() {
         ctx.font = '36px Arial';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText("데이터 로딩에 실패했습니다. 'dialogue.json' 파일을 확인해주세요.", canvas.width / 2, canvas.height / 2);
+        ctx.fillText("데이터 로딩에 실패했습니다. 'data.json' 파일을 확인해주세요.", canvas.width / 2, canvas.height / 2);
         return;
     }
 
@@ -309,7 +375,8 @@ function handleClick(event: MouseEvent) {
         case GameState.LOADING: // 로딩 중에는 클릭 무시
             return; 
         case GameState.START_SCREEN: 
-            const inputName = prompt("당신의 이름을 입력해주세요:", "플레이어");
+            // 기본 이름을 '주인공'으로 변경
+            const inputName = prompt("당신의 이름을 입력해주세요:", "주인공");
             if (inputName !== null && inputName.trim() !== "") {
                 playerName = inputName.trim();
             } else {
@@ -383,5 +450,6 @@ function handleClick(event: MouseEvent) {
 // 이벤트 리스너 등록
 canvas.addEventListener('click', handleClick);
 
-// ✨ 수정: 초기 화면 그리기 대신 데이터 로딩 함수 호출
-loadGameData();
+// ✨ 수정: 초기 자산 로딩 함수 호출
+loadAllBackgroundImages(); // 배경 이미지 로딩 시작
+loadGameData(); // 게임 데이터 로딩 시작
