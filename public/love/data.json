@@ -1,0 +1,440 @@
+[
+    {
+        "id": 0,
+        "speaker": "나",
+        "text": "음... 여기가 그 유명한 공원인가. 오랜만에 한가한 주말이네.",
+        "isEllaAbsent": true,
+        "location": "park"
+    },
+    {
+        "id": 1,
+        "speaker": "엘라",
+        "text": "어머, 실례합니다. 혹시 이 근처에 분위기 좋은 카페 아세요? 지도를 봐도 잘 모르겠어서요.",
+        "location": "park"
+    },
+    {
+        "id": 2,
+        "speaker": "나",
+        "text": "네, 저기 길 건너편에 아기자기하고 조용한 카페가 하나 있어요. 제가 가는 길이라 안내해 드릴 수 있는데...",
+        "location": "park"
+    },
+    {
+        "id": 3,
+        "speaker": "엘라",
+        "text": "정말요? 다행이다! 고마워요! 아, 제 이름은 엘라예요. 당신은...?",
+        "location": "park"
+    },
+    {
+        "id": 4,
+        "speaker": "나",
+        "text": "아, 저는 [플레이어 이름]이라고 합니다. 반갑습니다, 엘라 씨.",
+        "location": "park"
+    },
+    {
+        "id": 5,
+        "speaker": "엘라",
+        "text": "반가워요, [플레이어 이름]님! 혹시 지금 바쁘지 않으시면, 그 카페에서 저랑 같이 커피 한 잔 하실래요? 저 혼자라 좀 심심했거든요.",
+        "location": "park",
+        "choices": [
+            {
+                "text": "네, 좋아요! 저도 마침 목이 말랐어요.",
+                "effect": {
+                    "affectionChange": 15,
+                    "nextDialogueIndex": 6
+                }
+            },
+            {
+                "text": "죄송하지만, 다음에요. 오늘은 좀 바빠서...",
+                "effect": {
+                    "affectionChange": -10,
+                    "nextDialogueIndex": 30
+                }
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "speaker": "엘라",
+        "text": "앗, 정말요? 다행이다! [플레이어 이름]님 덕분에 혼자서 헤매지 않겠네요.",
+        "location": "cafe"
+    },
+    {
+        "id": 7,
+        "speaker": "나",
+        "text": "천만에요. 저도 좋은 시간을 보낼 것 같아요.",
+        "location": "cafe"
+    },
+    {
+        "id": 8,
+        "speaker": "엘라",
+        "text": "이곳 분위기 정말 좋네요! [플레이어 이름]님 덕분에 좋은 곳 알아가요.",
+        "location": "cafe"
+    },
+    {
+        "id": 9,
+        "speaker": "나",
+        "text": "엘라 씨는 어떤 종류의 커피를 좋아하세요? 저는 개인적으로 산미 있는 아메리카노를 즐겨 마셔요.",
+        "location": "cafe",
+        "choices": [
+            {
+                "text": "저도 아메리카노요. 깔끔한 맛이 좋죠.",
+                "effect": {
+                    "affectionChange": 5,
+                    "nextDialogueIndex": 10
+                }
+            },
+            {
+                "text": "저는 달콤한 라떼나 카푸치노를 좋아해요.",
+                "effect": {
+                    "affectionChange": 0,
+                    "nextDialogueIndex": 11
+                }
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "speaker": "엘라",
+        "text": "어머, 정말요? 저도 가끔 아메리카노를 마시는데, 취향이 비슷하시네요! 뭔가 통하는 기분인데요?",
+        "location": "cafe",
+        "autoEffect": {
+            "affectionChange": 5,
+            "nextDialogueIndex": 12
+        }
+    },
+    {
+        "id": 11,
+        "speaker": "엘라",
+        "text": "아, 그렇군요! 저는 달콤한 라떼를 주로 마시는데, 아메리카노도 매력이 있죠. 다음에 한 번 도전해봐야겠네요.",
+        "location": "cafe",
+        "autoEffect": {
+            "affectionChange": 0,
+            "nextDialogueIndex": 12
+        }
+    },
+    {
+        "id": 12,
+        "speaker": "나",
+        "text": "엘라 씨는 주말에 주로 뭘 하면서 보내세요? 이렇게 카페에 오시는 걸 좋아하시나 봐요.",
+        "location": "cafe"
+    },
+    {
+        "id": 13,
+        "speaker": "엘라",
+        "text": "네, 저는 카페에서 책 읽는 걸 좋아해요. 그리고 가끔은 전시회 구경도 가고요. [플레이어 이름]님은요?",
+        "location": "cafe"
+    },
+    {
+        "id": 14,
+        "speaker": "나",
+        "text": "음... 저는 주로 새로운 장소를 탐험하거나, 가끔은 사진을 찍으러 다니곤 해요.",
+        "location": "cafe",
+        "choices": [
+            {
+                "text": "사진이요? 어떤 사진을 주로 찍으세요?",
+                "effect": {
+                    "affectionChange": 10,
+                    "nextDialogueIndex": 15
+                }
+            },
+            {
+                "text": "저도 책 읽는 걸 좋아해요. 요즘 읽으시는 책 있으세요?",
+                "effect": {
+                    "affectionChange": 5,
+                    "nextDialogueIndex": 16
+                }
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "speaker": "엘라",
+        "text": "와, 사진이라니 멋지네요! 저는 풍경 사진이나 거리 스냅 사진을 좋아해요. [플레이어 이름]님은요?",
+        "location": "cafe",
+        "autoEffect": {
+            "affectionChange": 5,
+            "nextDialogueIndex": 17
+        }
+    },
+    {
+        "id": 16,
+        "speaker": "엘라",
+        "text": "요즘은 좀 감성적인 소설을 읽고 있어요. [플레이어 이름]님도 혹시 그런 장르 좋아하세요? 다음에 추천해 드릴게요!",
+        "location": "cafe",
+        "autoEffect": {
+            "affectionChange": 0,
+            "nextDialogueIndex": 17
+        }
+    },
+    {
+        "id": 17,
+        "speaker": "엘라",
+        "text": "어, 저기 보니까 작은 미술 전시회 포스터가 있네요! 마침 제가 가보려던 곳인데... 혹시 [플레이어 이름]님도 미술 좋아하세요?",
+        "location": "cafe"
+    },
+    {
+        "id": 18,
+        "speaker": "엘라",
+        "text": "혹시 괜찮으시면, 저랑 같이 전시회 구경 가실래요? 여기서 멀지 않아요.",
+        "location": "cafe",
+        "choices": [
+            {
+                "text": "좋아요! 마침 저도 흥미가 있었어요.",
+                "effect": {
+                    "affectionChange": 15,
+                    "nextDialogueIndex": 19
+                }
+            },
+            {
+                "text": "음... 오늘은 이만 헤어져야 할 것 같아요.",
+                "effect": {
+                    "affectionChange": -5,
+                    "nextDialogueIndex": 35
+                }
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "speaker": "나",
+        "text": "전시회는 오랜만인데, 엘라 씨 덕분에 좋은 구경하겠네요.",
+        "location": "exhibition"
+    },
+    {
+        "id": 20,
+        "speaker": "엘라",
+        "text": "저야말로 [플레이어 이름]님 덕분에 덜 심심하네요! 저 작품 좀 보세요, 정말 신비롭지 않아요?",
+        "location": "exhibition"
+    },
+    {
+        "id": 21,
+        "speaker": "나",
+        "text": "그러게요. 작가의 의도가 궁금해지네요.",
+        "location": "exhibition"
+    },
+    {
+        "id": 22,
+        "speaker": "엘라",
+        "text": "어머! 제가 뭘 떨어뜨렸나 봐요... 아, 핸드폰이네요!",
+        "location": "exhibition"
+    },
+    {
+        "id": 23,
+        "speaker": "나",
+        "text": "괜찮으세요? 제가 주워 드릴게요.",
+        "location": "exhibition",
+        "choices": [
+            {
+                "text": "얼른 핸드폰을 주워 건넨다.",
+                "effect": {
+                    "affectionChange": 10,
+                    "nextDialogueIndex": 24
+                }
+            },
+            {
+                "text": "괜찮으신지 먼저 묻는다.",
+                "effect": {
+                    "affectionChange": 5,
+                    "nextDialogueIndex": 25
+                }
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "speaker": "엘라",
+        "text": "고마워요, [플레이어 이름]님! 덕분에 큰일 날 뻔했어요. 섬세하게 챙겨주셔서 감동이에요.",
+        "location": "exhibition",
+        "autoEffect": {
+            "affectionChange": 5,
+            "nextDialogueIndex": 26
+        }
+    },
+    {
+        "id": 25,
+        "speaker": "엘라",
+        "text": "네, 괜찮아요! 걱정해주셔서 고마워요, [플레이어 이름]님. 저의 덜렁거리는 모습까지 보게 되네요.",
+        "location": "exhibition",
+        "autoEffect": {
+            "affectionChange": 0,
+            "nextDialogueIndex": 26
+        }
+    },
+    {
+        "id": 26,
+        "speaker": "나",
+        "text": "별말씀을요. 다행히 액정은 괜찮아 보이네요.",
+        "location": "exhibition"
+    },
+    {
+        "id": 27,
+        "speaker": "엘라",
+        "text": "정말 [플레이어 이름]님 덕분에 오늘 하루가 더 즐거운 것 같아요. 시간이 벌써 이렇게 됐다니 아쉽네요.",
+        "location": "exhibition"
+    },
+    {
+        "id": 28,
+        "speaker": "나",
+        "text": "그러게요. 저도 엘라 씨 덕분에 뜻깊은 시간이었어요.",
+        "location": "exhibition"
+    },
+    {
+        "id": 29,
+        "speaker": "엘라",
+        "text": "음... 혹시 다음에 또 만날 수 있을까요? 제 연락처 여기 있어요.",
+        "location": "exhibition",
+        "choices": [
+            {
+                "text": "네, 좋아요! 저도 엘라 씨와 더 알아가고 싶어요. 제 연락처도 드릴게요.",
+                "effect": {
+                    "affectionChange": 20,
+                    "nextDialogueIndex": 40
+                }
+            },
+            {
+                "text": "생각해볼게요. 오늘 즐거웠어요.",
+                "effect": {
+                    "affectionChange": 0,
+                    "nextDialogueIndex": 43
+                }
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "speaker": "엘라",
+        "text": "아, 그러시군요. 아쉽지만 어쩔 수 없죠. 다음에 기회가 되면 꼭 만나요.",
+        "location": "park"
+    },
+    {
+        "id": 31,
+        "speaker": "나",
+        "text": "네, 다음에 꼭! (엘라의 표정에서 아쉬움이 묻어나는 것 같다...)",
+        "isEllaAbsent": true,
+        "location": "park"
+    },
+    {
+        "id": 32,
+        "speaker": "",
+        "text": "엘라와의 짧은 만남이 끝났다. 왠지 모를 아쉬움이 남는다...",
+        "location": "park"
+    },
+    {
+        "id": 33,
+        "speaker": "",
+        "text": "시간이 흘러...",
+        "location": "park",
+        "autoEffect": {
+            "nextDialogueIndex": 52
+        }
+    },
+    {
+        "id": 34,
+        "speaker": "엘라",
+        "text": "아, 그러시군요. 알겠습니다. 그럼 다음에 기회가 되면...",
+        "location": "park"
+    },
+    {
+        "id": 35,
+        "speaker": "나",
+        "text": "(엘라의 표정이 조금 어두워진 것 같다.) 네, 오늘 즐거웠어요.",
+        "isEllaAbsent": true,
+        "location": "park"
+    },
+    {
+        "id": 36,
+        "speaker": "",
+        "text": "엘라와의 만남이 아쉽게 마무리되었다. 다음을 기약할 수 있을까...",
+        "location": "park"
+    },
+    {
+        "id": 37,
+        "speaker": "",
+        "text": "시간이 흘러...",
+        "location": "park",
+        "autoEffect": {
+            "nextDialogueIndex": 52
+        }
+    },
+    {
+        "id": 38,
+        "speaker": "엘라",
+        "text": "네! 좋아요! 제 연락처 여기 있어요. 조만간 다시 만나요, [플레이어 이름]님!",
+        "location": "park"
+    },
+    {
+        "id": 39,
+        "speaker": "나",
+        "text": "네, 엘라 씨! 조심히 가세요. (설레는 마음으로 연락처를 저장한다.)",
+        "location": "park"
+    },
+    {
+        "id": 40,
+        "speaker": "",
+        "text": "아름다운 만남의 시작을 예감하며...",
+        "location": "park",
+        "autoEffect": {
+            "nextDialogueIndex": 52
+        }
+    },
+    {
+        "id": 41,
+        "speaker": "나",
+        "text": "(엘라에게 연락처를 받지 않고 헤어진 후, 며칠이 지났다. 그녀의 표정이 자꾸 마음에 걸린다...)",
+        "isEllaAbsent": true,
+        "location": "park"
+    },
+    {
+        "id": 42,
+        "speaker": "나",
+        "text": "(어느 날 저녁, 우연히 그녀와 처음 만났던 공원에서 다시 마주쳤다. 해가 지고 있었다.)",
+        "isEllaAbsent": true,
+        "location": "park_evening"
+    },
+    {
+        "id": 43,
+        "speaker": "엘라",
+        "text": "[플레이어 이름]님... 여기서 다시 보게 될 줄은 몰랐네요. 저도 가끔 이 공원에 오곤 했거든요.",
+        "location": "park_evening"
+    },
+    {
+        "id": 44,
+        "speaker": "나",
+        "text": "엘라 씨... 저도요. 혹시 이야기 좀 할 수 있을까요?",
+        "location": "park_evening"
+    },
+    {
+        "id": 45,
+        "speaker": "엘라",
+        "text": "네... 우리 사이에 뭔가 어색한 기류가 흐르고 있다는 걸 알아요. 솔직히 저번에 [플레이어 이름]님이 그렇게 말씀하셨을 때, 많이 실망했어요.",
+        "location": "park_evening"
+    },
+    {
+        "id": 46,
+        "speaker": "나",
+        "text": "미안해요... 제가 너무 서툴렀던 것 같아요. 하지만 저희는... 어쩌면 서로에게 조금 다른 기대를 하고 있었던 걸지도 모르겠어요.",
+        "location": "park_evening"
+    },
+    {
+        "id": 47,
+        "speaker": "엘라",
+        "text": "맞아요... 저도 그렇게 느껴요. 이젠 서로의 길을 가는 게 맞겠죠. 오늘... 정말 고마웠어요.",
+        "location": "park_evening"
+    },
+    {
+        "id": 48,
+        "speaker": "나",
+        "text": "엘라 씨도... 그동안 즐거웠어요. 행복하세요.",
+        "isEllaAbsent": true,
+        "location": "park_evening"
+    },
+    {
+        "id": 49,
+        "speaker": "",
+        "text": "엘라와의 짧았던 인연이 저녁 노을처럼 아쉽게 저물었다...",
+        "location": "park_evening",
+        "autoEffect": {
+            "nextDialogueIndex": 52
+        }
+    }
+]
