@@ -1,0 +1,140 @@
+{
+  "gameSettings": {
+    "gameDurationDays": 10,
+    "startingMoney": 500,
+    "startingCharm": 20,
+    "startingIntellect": 20,
+    "startingKindness": 20,
+    "startEvent": "intro"
+  },
+  "playerStats": ["charm", "intellect", "kindness", "money"],
+  "npcs": [
+    {
+      "id": "celebrity_a",
+      "name": "아이돌 채은",
+      "description": "떠오르는 신인 아이돌, 밝고 긍정적입니다.",
+      "initialAffection": 0,
+      "sprite": "chaeeun_normal",
+      "dialogueColors": { "text": "#E0FFFF", "name": "#87CEEB" },
+      "preferences": {
+        "gift": "flower_bouquet",
+        "topic": "music"
+      }
+    },
+    {
+      "id": "celebrity_b",
+      "name": "배우 지훈",
+      "description": "차분하고 지적인 배우, 예술을 사랑합니다.",
+      "initialAffection": 0,
+      "sprite": "jihun_normal",
+      "dialogueColors": { "text": "#FFE4E1", "name": "#FF6347" },
+      "preferences": {
+        "gift": "art_book",
+        "topic": "art"
+      }
+    }
+  ],
+  "dialogueEvents": {
+    "intro": {
+      "type": "dialogue",
+      "background": "office_bg",
+      "text": "당신은 신생 기획사 매니저입니다. 신인 연예인들과의 관계를 발전시켜 성공적인 커리어를 만드세요! 당신의 선택이 중요합니다.",
+      "choices": [
+        { "text": "매니저 시작!", "nextEvent": "day_start" }
+      ]
+    },
+    "day_start": {
+      "type": "dialogue",
+      "text": "새로운 하루가 시작되었습니다. 오늘 하루 누구와 시간을 보낼까요?",
+      "choices": [
+        { "text": "채은에게 연락하기", "nextEvent": "meet_chaeeun" },
+        { "text": "지훈에게 연락하기", "nextEvent": "meet_jihun" },
+        { "text": "혼자 능력 개발", "nextEvent": "self_improvement" }
+      ]
+    },
+    "meet_chaeeun": {
+      "type": "dialogue",
+      "npcId": "celebrity_a",
+      "background": "cafe_bg",
+      "text": "매니저님 안녕하세요! 오늘은 매니저님 덕분에 스케줄이 비어서 너무 좋아요! 혹시 저랑 같이 카페에 갈래요?",
+      "choices": [
+        { "text": "칭찬하며 동행하기 (+5 애정)", "effect": { "celebrity_a_affection": 5 }, "nextEvent": "chaeeun_talk_1" },
+        { "text": "바쁘다고 하고 스케줄 논의 (-5 애정)", "effect": { "celebrity_a_affection": -5 }, "nextEvent": "chaeeun_talk_2" }
+      ]
+    },
+    "chaeeun_talk_1": {
+      "type": "dialogue",
+      "npcId": "celebrity_a",
+      "background": "cafe_bg",
+      "text": "정말요? 매니저님 최고! 오늘은 매니저님 덕분에 행복한 하루가 될 것 같아요!",
+      "choices": [ { "text": "다음", "nextEvent": "day_end" } ]
+    },
+    "chaeeun_talk_2": {
+      "type": "dialogue",
+      "npcId": "celebrity_a",
+      "background": "cafe_bg",
+      "text": "네... 매니저님 말이 맞아요. 하지만 조금 서운하네요. 다음엔 같이 가요...",
+      "choices": [ { "text": "다음", "nextEvent": "day_end" } ]
+    },
+    "meet_jihun": {
+      "type": "dialogue",
+      "npcId": "celebrity_b",
+      "background": "art_gallery_bg",
+      "text": "오랜만이네요. 오늘 새로 오픈한 미술관에 왔습니다. 이 그림에 대해 매니저님은 어떻게 생각하세요?",
+      "choices": [
+        { "text": "심오한 표현이라 답하기 (+5 애정, +2 지성)", "effect": { "celebrity_b_affection": 5, "intellect": 2 }, "nextEvent": "jihun_talk_1" },
+        { "text": "그냥 좋다고 답하기 (-5 애정)", "effect": { "celebrity_b_affection": -5 }, "nextEvent": "jihun_talk_2" }
+      ]
+    },
+    "jihun_talk_1": {
+      "type": "dialogue",
+      "npcId": "celebrity_b",
+      "background": "art_gallery_bg",
+      "text": "역시 매니저님은 통찰력이 있으시네요. 저와 통하는군요. 좋은 의견 감사합니다.",
+      "choices": [ { "text": "다음", "nextEvent": "day_end" } ]
+    },
+    "jihun_talk_2": {
+      "type": "dialogue",
+      "npcId": "celebrity_b",
+      "background": "art_gallery_bg",
+      "text": "흐음... 그렇군요. 저는 좀 다르게 생각했습니다. 조금 아쉽네요.",
+      "choices": [ { "text": "다음", "nextEvent": "day_end" } ]
+    },
+    "self_improvement": {
+      "type": "dialogue",
+      "text": "오늘 하루는 자기계발에 힘썼습니다. 당신의 매력, 지성, 친절이 모두 향상되었습니다!",
+      "effect": { "charm": 5, "intellect": 5, "kindness": 5 },
+      "choices": [ { "text": "다음", "nextEvent": "day_end" } ]
+    },
+    "day_end": {
+      "type": "dialogue",
+      "text": "하루가 저물었습니다.",
+      "choices": [ { "text": "다음 날로", "nextEvent": "advance_day" } ]
+    },
+    "game_over_time": {
+      "type": "dialogue",
+      "text": "모든 날이 지났습니다. 당신의 연예계 커리어는...",
+      "choices": [ { "text": "결과 보기", "nextEvent": "show_ending" } ]
+    },
+    "show_ending": {
+      "type": "ending",
+      "text": "결과를 계산합니다..."
+    }
+  },
+  "assets": {
+    "images": [
+      { "name": "office_bg", "path": "assets/office_bg.png", "width": 1280, "height": 720 },
+      { "name": "cafe_bg", "path": "assets/cafe_bg.png", "width": 1280, "height": 720 },
+      { "name": "art_gallery_bg", "path": "assets/art_gallery_bg.png", "width": 1280, "height": 720 },
+      { "name": "chaeeun_normal", "path": "assets/chaeeun_normal.png", "width": 500, "height": 800 },
+      { "name": "jihun_normal", "path": "assets/jihun_normal.png", "width": 500, "height": 800 },
+      { "name": "button_bg", "path": "assets/button_bg.png", "width": 200, "height": 50 }
+    ],
+    "sounds": [
+      { "name": "bgm_main", "path": "assets/bgm_main.mp3", "duration_seconds": 60.0, "volume": 0.5, "loop": true },
+      { "name": "sfx_click", "path": "assets/sfx_click.mp3", "duration_seconds": 0.5, "volume": 1.0, "loop": false },
+      { "name": "sfx_positive", "path": "assets/sfx_positive.mp3", "duration_seconds": 1.0, "volume": 0.8, "loop": false },
+      { "name": "sfx_negative", "path": "assets/sfx_negative.mp3", "duration_seconds": 1.0, "volume": 0.8, "loop": false }
+    ]
+  }
+}

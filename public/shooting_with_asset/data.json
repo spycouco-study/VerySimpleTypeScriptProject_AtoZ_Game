@@ -1,0 +1,67 @@
+{
+  "canvas": {
+    "width": 480,
+    "height": 720
+  },
+  "game": {
+    "scrollSpeed": 100,
+    "enemySpawnInterval": 1200,
+    "initialPlayerHealth": 3
+  },
+  "assets": {
+    "images": [
+      { "name": "player", "path": "assets/player.png" },
+      { "name": "playerBullet", "path": "assets/player_bullet.png" },
+      { "name": "enemy1", "path": "assets/enemy1.png" },
+      { "name": "enemy2", "path": "assets/enemy2.png" },
+      { "name": "enemyBullet", "path": "assets/enemy_bullet.png" },
+      { "name": "background", "path": "assets/background.png" }
+    ]
+  },
+  "player": {
+    "imageName": "player",
+    "speed": 250,
+    "fireRate": 150,
+    "bulletType": "playerBullet"
+  },
+  "bullets": {
+    "playerBullet": {
+      "imageName": "playerBullet",
+      "width": 10,
+      "height": 20,
+      "speed": 400,
+      "damage": 1
+    },
+    "enemyBullet": {
+      "imageName": "enemyBullet",
+      "width": 8,
+      "height": 16,
+      "speed": 200,
+      "damage": 1
+    }
+  },
+  "enemies": [
+    {
+      "name": "basic_enemy",
+      "imageName": "enemy1",
+      "health": 2,
+      "speed": 50,
+      "collisionDamage": 1,
+      "scoreValue": 10,
+      "fireRate": 2000,
+      "bulletType": "enemyBullet",
+      "spawnChance": 0.7
+    },
+    {
+      "name": "strong_enemy",
+      "imageName": "enemy2",
+      "health": 5,
+      "speed": 70,
+      "collisionDamage": 2,
+      "scoreValue": 30,
+      "fireRate": 1500,
+      "bulletType": "enemyBullet",
+      "spawnChance": 0.3
+    }
+  ]
+}
