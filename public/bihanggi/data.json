@@ -1,0 +1,37 @@
+{
+    "game": {
+        "canvasWidth": 800,
+        "canvasHeight": 600,
+        "scrollSpeed": 100,
+        "playerSpeed": 250,
+        "playerFireRate": 5,
+        "playerBulletSpeed": 400,
+        "playerHealth": 3,
+        "playerBulletDamage": 1,
+        "enemySpawnInterval": 1.5,
+        "enemySpeed": 100,
+        "enemyHealth": 1,
+        "enemyScoreValue": 100,
+        "enemyBulletSpeed": 200,
+        "enemyFireRate": 1.0,
+        "enemyFireChance": 0.5,
+        "maxEnemies": 5,
+        "levelDuration": 60,
+        "backgroundSpeedMultiplier": 1.5
+    },
+    "assets": {
+        "images": [
+            { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+            { "name": "player_bullet", "path": "assets/player_bullet.png", "width": 10, "height": 20 },
+            { "name": "enemy", "path": "assets/enemy.png", "width": 64, "height": 64 },
+            { "name": "enemy_bullet", "path": "assets/enemy_bullet.png", "width": 10, "height": 20 },
+            { "name": "background", "path": "assets/background.png", "width": 800, "height": 1200 }
+        ],
+        "sounds": [
+            { "name": "player_shoot", "path": "assets/player_shoot.mp3", "volume": 0.3 },
+            { "name": "enemy_hit", "path": "assets/enemy_hit.mp3", "volume": 0.5 },
+            { "name": "game_over", "path": "assets/game_over.mp3", "volume": 0.8 },
+            { "name": "bgm", "path": "assets/bgm.mp3", "volume": 0.2, "loop": true }
+        ]
+    }
+}

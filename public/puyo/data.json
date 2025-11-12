@@ -1,0 +1,45 @@
+{
+    "game": {
+        "boardWidth": 6,
+        "boardHeight": 12,
+        "hiddenRows": 2,
+        "cellSize": 45,
+        "puyoColors": ["red", "green", "blue", "yellow", "purple"],
+        "gravitySpeed": 3,
+        "fallAcceleration": 10,
+        "resolutionFallSpeed": 20.0,
+        "minMatchCount": 4,
+        "chainBonusMultiplier": 2,
+        "scorePerPuyo": 10,
+        "titleScreenText": "PUYO PUYO!",
+        "startPromptText": "Press SPACE to Start",
+        "gameOverText": "GAME OVER!",
+        "gameOverPromptText": "Press SPACE to Restart",
+        "nextPuyoPreviewCount": 3,
+        "uiPanelWidthCells": 4
+    },
+    "keys": {
+        "moveLeft": "ArrowLeft",
+        "moveRight": "ArrowRight",
+        "moveDown": "ArrowDown",
+        "rotateLeft": "ArrowUp",
+        "rotateRight": "KeyX",
+        "startGame": "Space",
+        "hardDrop": "Space"
+    },
+    "assets": {
+        "images": [
+            { "name": "background", "path": "assets/background.png", "width": 480, "height": 720 },
+            { "name": "puyo_red", "path": "assets/puyo_red.png", "width": 40, "height": 40 },
+            { "name": "puyo_green", "path": "assets/puyo_green.png", "width": 40, "height": 40 },
+            { "name": "puyo_blue", "path": "assets/puyo_blue.png", "width": 40, "height": 40 },
+            { "name": "puyo_yellow", "path": "assets/puyo_yellow.png", "width": 40, "height": 40 },
+            { "name": "puyo_purple", "path": "assets/puyo_purple.png", "width": 40, "height": 40 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "volume": 0.3, "loop": true },
+            { "name": "match_sfx", "path": "assets/match_sfx.mp3", "volume": 0.7, "loop": false },
+            { "name": "chain_sfx", "path": "assets/chain_sfx.mp3", "volume": 0.8, "loop": false }
+        ]
+    }
+}
