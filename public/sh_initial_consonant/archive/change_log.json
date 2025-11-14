@@ -1,0 +1,28 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-14T20:47:41.011984",
+            "summary": "",
+            "is_latest": false,
+            "is_current": true
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-14T20:56:57.522268",
+            "summary": "실제로 존재하는 단어를 기준으로 문제가 나왔으면 좋겠어. 단어를 100개정도로 실제로 있는 문제로 나오게해줘.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-2",
+            "parent": "v1-1",
+            "timestamp": "2025-11-14T21:00:17.120492",
+            "summary": "현재 초성에만 맞게 아무 단어나 쓰면 정답으로 인정되는데 실제 단어가 아니면 틀리는게 맞는거 같아.",
+            "is_latest": true,
+            "is_current": false
+        }
+    ]
+}
