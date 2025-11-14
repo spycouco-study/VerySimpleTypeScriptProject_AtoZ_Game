@@ -1,0 +1,20 @@
+{
+    "chat": [
+        {
+            "from": "user",
+            "text": "간단한 뱀게임 만들어줘"
+        },
+        {
+            "from": "bot",
+            "text": "< game.ts : 수정 O >\n< data.json : 수정 O >\n요청하신 원칙에 따라 하나의 TypeScript 파일과 하나의 JSON 데이터 파일로 구동되는 간단한 뱀 게임을 구현했습니다.\n\n**game.ts (핵심 로직):**\n*   **게임 상태 관리:** `GameState` 열거형을 사용하여 `Title`, `Playing`, `GameOver` 세 가지 상태를 전환합니다.\n*   **에셋 로딩:** `AssetLoader` 클래스를 구현하여 `data.json`에 정의된 모든 이미지와 사운드 파일을 비동기적으로 로드합니다. 이미지 로딩이 완료된 후에 게임이 시작됩니다.\n*   **게임 루프:** `setInterval`을 사용하여 `snakeSpeedMs` 간격으로 `gameTick()` 함수를 호출하여 뱀의 이동, 충돌 감지, 점수 계산, 음식 생성 등의 게임 로직을 처리합니다.\n*   **그리기:** `draw()` 함수는 현재 게임 상태에 따라 타이틀 화면, 게임 플레이 화면, 게임 오버 화면을 캔버스에 그립니다. 모든 시각 오브젝트는 `data.json`의 `tileSize`에 맞춰 로드된 이미지를 스케일링하여 그립니다. 이미지가 로드되지 않았을 경우를 대비하여 색상으로 그리는 폴백 처리가 되어 있습니다.\n*   **입력 처리:** `keydown` 이벤트를 감지하여 뱀의 방향을 제어하고, 스페이스 바를 통해 게임을 시작하거나 재시작합니다. 뱀의 180도 회전을 방지하고, 입력이 다음 프레임에 적용되도록 `newDirection` 버퍼링 로직을 사용합니다.\n*   **사운드:** 배경 음악은 반복 재생되며, 음식 획득 및 게임 오버 시 효과음이 재생됩니다. 효과음은 겹쳐서 재생될 수 있도록 새로운 `Audio` 인스턴스를 생성하여 사용합니다.\n\n**data.json (게임 데이터):**\n*   **게임 설정:** 캔버스 크기, 타일 크기, 뱀 속도, 초기 길이, 음식당 점수 등 게임의 모든 밸런스 및 설정 값을 포함합니다.\n*   **색상 및 텍스트:** 배경, 텍스트 색상, 타이틀, 시작/종료 메시지 등의 모든 UI 요소를 정의합니다.\n*   **에셋 정보:** `assets` 필드에 게임에 사용되는 모든 이미지(`snake_head.png`, `snake_body.png`, `apple.png`)와 사운드(`bgm.mp3`, `eat.mp3`, `gameover.mp3`)의 이름, 경로, 크기(이미지), 볼륨, 루프 여부(사운드)를 명시하여 비개발자가 쉽게 수정하고 확장할 수 있도록 했습니다.\n\n**사용 방법:**\n1.  `game.ts` 파일을 TypeScript 컴파일러(예: `tsc game.ts`)를 사용하여 JavaScript로 컴파일합니다.\n2.  `data.json` 파일과 `assets` 폴더(내부에는 `snake_head.png`, `snake_body.png`, `apple.png`, `bgm.mp3`, `eat.mp3`, `gameover.mp3` 파일이 포함되어야 합니다)를 컴파일된 JavaScript 파일과 같은 루트 디렉토리에 배치합니다.\n3.  아래와 같은 HTML 파일을 생성하고 `<canvas id=\"gameCanvas\">` 요소를 추가한 후 컴파일된 JavaScript 파일을 로드합니다.\n    ```html\n    <!DOCTYPE html>\n    <html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <title>Simple Snake Game</title>\n        <style>\n            body { margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #333; }\n            canvas { border: 2px solid #555; background-color: #2c3e50; }\n        </style>\n    </head>\n    <body>\n        <canvas id=\"gameCanvas\"></canvas>\n        <script src=\"game.js\"></script> <!-- game.ts 컴파일 결과 -->\n    </body>\n    </html>\n    ```\n4.  웹 브라우저에서 HTML 파일을 열어 게임을 실행합니다.\n\n이 구현은 요청하신 모든 원칙을 준수하며, 명확한 데이터 분리 및 모듈화를 통해 비개발자도 쉽게 게임 설정을 변경할 수 있도록 디자인되었습니다."
+        },
+        {
+            "from": "user",
+            "text": "게임화면의 너비를 600으로 수정해줘."
+        },
+        {
+            "from": "bot",
+            "text": "< game.ts : 수정 X >\n< data.json : 수정 O >\ndata.json 파일의 game.canvasWidth 값을 600으로 수정했습니다. game.ts 코드는 data.json에서 설정 값을 읽어오기 때문에 별도의 수정이 필요하지 않습니다."
+        }
+    ]
+}

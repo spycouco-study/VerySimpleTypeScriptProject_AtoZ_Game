@@ -1,0 +1,30 @@
+{
+  "gameSettings": {
+    "gridSize": 20,
+    "cellSize": 25,
+    "backgroundColor": "#333333",
+    "snakeHeadColor": "#FF0000",
+    "snakeBodyColor": "#00FF00",
+    "foodColor": "#FF0000",
+    "initialSnakeLength": 3,
+    "movementIntervalMs": 150,
+    "scorePerFood": 10,
+    "startMessage": "Press Enter to start",
+    "gameOverMessage": "GAME OVER",
+    "pauseMessage": "PAUSE",
+    "fontColor": "#FFFFFF",
+    "fontSize": "30px Arial"
+  },
+  "assets": {
+    "images": [
+      { "name": "snakeHead", "path": "assets/snake_head.png", "width": 25, "height": 25 },
+      { "name": "snakeBody", "path": "assets/snake_body.png", "width": 25, "height": 25 },
+      { "name": "food", "path": "assets/food.png", "width": 25, "height": 25 }
+    ],
+    "sounds": [
+      { "name": "eatFood", "path": "assets/eat_food.mp3", "duration_seconds": 0.2, "volume": 1.0 },
+      { "name": "gameOver", "path": "assets/game_over.mp3", "duration_seconds": 1.0, "volume": 1.0 },
+      { "name": "backgroundMusic", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 }
+    ]
+  }
+}

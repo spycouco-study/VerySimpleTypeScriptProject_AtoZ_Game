@@ -1,0 +1,40 @@
+{
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "backgroundColor": "#e0f7fa",
+    "roundTimeSeconds": 15,
+    "initialLives": 3,
+    "chosungLength": 2,
+    "fontSettings": {
+        "title": { "font": "bold 60px 'Malgun Gothic', '맑은 고딕', sans-serif", "color": "#212529", "shadowColor": "rgba(0,0,0,0.2)", "shadowBlur": 8, "shadowOffsetX": 3, "shadowOffsetY": 3 },
+        "chosung": { "font": "bold 90px 'Malgun Gothic', '맑은 고딕', sans-serif", "color": "#007bff", "shadowColor": "rgba(0,0,0,0.15)", "shadowBlur": 6, "shadowOffsetX": 2, "shadowOffsetY": 2 },
+        "timer": { "font": "bold 36px 'Malgun Gothic', '맑은 고딕', sans-serif", "color": "#dc3545", "shadowColor": "rgba(0,0,0,0.1)", "shadowBlur": 4, "shadowOffsetX": 1, "shadowOffsetY": 1 },
+        "lives": { "font": "bold 36px 'Malgun Gothic', '맑은 고딕', sans-serif", "color": "#28a745", "shadowColor": "rgba(0,0,0,0.1)", "shadowBlur": 4, "shadowOffsetX": 1, "shadowOffsetY": 1 },
+        "inputPrompt": { "font": "24px 'Malgun Gothic', '맑은 고딕', sans-serif", "color": "#6c757d" },
+        "gameOver": { "font": "bold 60px 'Malgun Gothic', '맑은 고딕', sans-serif", "color": "#dc3545", "shadowColor": "rgba(0,0,0,0.2)", "shadowBlur": 8, "shadowOffsetX": 3, "shadowOffsetY": 3 },
+        "instruction": { "font": "24px 'Malgun Gothic', '맑은 고딕', sans-serif", "color": "#495057", "shadowColor": "rgba(0,0,0,0.1)", "shadowBlur": 3, "shadowOffsetX": 1, "shadowOffsetY": 1 }
+    },
+    "uiPositions": {
+        "chosung": { "x": 400, "y": 200 },
+        "timer": { "x": 750, "y": 60 },
+        "lives": { "x": 50, "y": 60 },
+        "inputField": { "width": 400, "height": 60, "bottomOffset": 40 },
+        "titleText": { "x": 400, "y": 250 },
+        "titleInstruction": { "x": 400, "y": 350 },
+        "gameOverText": { "x": 400, "y": 250 },
+        "gameOverInstruction": { "x": 400, "y": 400 },
+        "lifeHeartImage": { "xOffset": 0, "yOffset": -10, "width": 40, "height": 40 }
+    },
+    "assets": {
+        "images": [
+            { "name": "heart", "path": "assets/heart.png", "width": 40, "height": 40 },
+            { "name": "background", "path": "assets/background.png", "width": 800, "height": 600 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3, "loop": true },
+            { "name": "correct", "path": "assets/correct.mp3", "duration_seconds": 0.5, "volume": 0.8 },
+            { "name": "wrong", "path": "assets/wrong.mp3", "duration_seconds": 0.8, "volume": 0.8 },
+            { "name": "gameOver", "path": "assets/gameOver.mp3", "duration_seconds": 1.5, "volume": 0.7 }
+        ]
+    }
+}

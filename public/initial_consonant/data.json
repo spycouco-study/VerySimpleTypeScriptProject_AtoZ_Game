@@ -1,0 +1,41 @@
+{
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "backgroundColor": "#282c34",
+    "timerDurationSeconds": 15,
+    "initialLives": 3,
+    "lifeIconWidth": 40,
+    "lifeIconHeight": 40,
+    "consonants": [
+        "ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"
+    ],
+    "ui": {
+        "titleText": "초성 게임",
+        "startPrompt": "화면을 클릭하여 시작",
+        "gameOverText": "게임 오버!",
+        "finalScoreText": "최종 점수:",
+        "restartPrompt": "클릭하여 다시 시작",
+        "초성Font": "bold 80px 'Malgun Gothic', 'Arial'",
+        "timerFont": "bold 40px 'Malgun Gothic', 'Arial'",
+        "livesFont": "24px 'Malgun Gothic', 'Arial'",
+        "scoreFont": "24px 'Malgun Gothic', 'Arial'",
+        "defaultFont": "30px 'Malgun Gothic', 'Arial'",
+        "timerCriticalColor": "red",
+        "defaultTextColor": "white",
+        "gameOverTextColor": "red",
+        "초성Color": "yellow"
+    },
+    "assets": {
+        "images": [
+            { "name": "background", "path": "assets/background.png", "width": 800, "height": 600 },
+            { "name": "life_icon", "path": "assets/heart.png", "width": 64, "height": 64 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.5 },
+            { "name": "correct", "path": "assets/correct.mp3", "duration_seconds": 1.0, "volume": 0.7 },
+            { "name": "incorrect", "path": "assets/incorrect.mp3", "duration_seconds": 1.0, "volume": 0.7 },
+            { "name": "gameover", "path": "assets/gameover.mp3", "duration_seconds": 3.0, "volume": 1.0 },
+            { "name": "timeout", "path": "assets/timeout.mp3", "duration_seconds": 1.0, "volume": 0.8 }
+        ]
+    }
+}

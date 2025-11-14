@@ -1,0 +1,92 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-14T14:50:01.624865",
+    "summary": "",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "eat_food.mp3",
+            "path": "assets/eat_food.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "food.png",
+            "path": "assets/food.png",
+            "type": "Add"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "snake_body.png",
+            "path": "assets/snake_body.png",
+            "type": "Add"
+        },
+        {
+            "name": "snake_head.png",
+            "path": "assets/snake_head.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "3ff4c26cab01644cfd55126d685bf4375264ba37e7feb1232c070070a4e4c62a",
+            "size": 1104,
+            "mtime": 1763099398.0270388
+        },
+        "game.ts": {
+            "hash": "a4c89c83f773f323a3cbdeb6aad5919f9271a7a5435278d7cf3f89a37043bc0c",
+            "size": 15169,
+            "mtime": 1763099397.897614
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1761211729.270481
+        },
+        "assets/eat_food.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/food.png": {
+            "hash": "1f5cc565ab4f882d648071f5524dbb7f063d5f68b22647456819604d7096ce73",
+            "size": 316,
+            "mtime": 1763099397.9873333
+        },
+        "assets/game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/snake_body.png": {
+            "hash": "dc9b04143f007d9e461aacdd71c27723c08b96a41c354a1de6977f8ab78b6efc",
+            "size": 348,
+            "mtime": 1763099397.9873333
+        },
+        "assets/snake_head.png": {
+            "hash": "58625cd3b9b61ae03c3270356a1803c75cb62d38762fd5bbe216bcc103c1201d",
+            "size": 326,
+            "mtime": 1763099397.9873333
+        }
+    }
+}

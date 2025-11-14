@@ -1,0 +1,38 @@
+{
+    "canvasWidth": 600,
+    "canvasHeight": 600,
+    "gridSize": 30,
+    "initialSnakeLength": 4,
+    "initialSpeedMs": 150,
+    "foodSpawnAttempts": 100,
+    "wallCollision": "gameOver",
+    "selfCollision": true,
+
+    "colors": {
+        "background": "#333333",
+        "snakeHead": "#00FF00",
+        "snakeBody": "#00CC00",
+        "food": "#FF0000",
+        "text": "#FFFFFF"
+    },
+
+    "text": {
+        "title": "스네이크!! GAME!!",
+        "pressSpaceToStart": "Press SPACE to Start / Restart",
+        "gameOver": "GAME OVER!",
+        "scorePrefix": "Score: "
+    },
+
+    "assets": {
+        "images": [
+            { "name": "snakeHead", "path": "assets/snake_head.png", "width": 64, "height": 64 },
+            { "name": "snakeBody", "path": "assets/snake_body.png", "width": 64, "height": 64 },
+            { "name": "food", "path": "assets/food.png", "width": 64, "height": 64 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "volume": 0.3, "duration_seconds": 60.0 },
+            { "name": "eat", "path": "assets/eat_sound.mp3", "volume": 0.6, "duration_seconds": 0.5 },
+            { "name": "gameOver", "path": "assets/game_over_sound.mp3", "volume": 0.8, "duration_seconds": 2.0 }
+        ]
+    }
+}

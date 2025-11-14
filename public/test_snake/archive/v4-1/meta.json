@@ -1,0 +1,103 @@
+{
+    "version": "v4-1",
+    "parent": "v3-1",
+    "timestamp": "2025-11-12T22:14:46.531834",
+    "summary": "",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "eat_sound.mp3",
+            "path": "assets/eat_sound.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "food.png",
+            "path": "assets/food.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game_over_sound.mp3",
+            "path": "assets/game_over_sound.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_body.png",
+            "path": "assets/snake_body.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_head.png",
+            "path": "assets/snake_head.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "af2cc91618caa31d056f6200ffe2498e317ed3a254e96c28f619dcd6ff4ad37e",
+            "size": 1298,
+            "mtime": 1762953284.882342
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1761399375.5725453
+        },
+        "game.ts": {
+            "hash": "60bca568ab9841c66157eee5cc83e8e80afa4568805185727a3ecf65ef2da5e7",
+            "size": 18372,
+            "mtime": 1762953284.8813424
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1761211729.270481
+        },
+        "assets/eat_sound.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/food.png": {
+            "hash": "1c78c6230abc829958d402dafc143974ecf73cb6abbf105ddfafc43ecff0f949",
+            "size": 421,
+            "mtime": 1762951297.000517
+        },
+        "assets/game_over_sound.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/snake_body.png": {
+            "hash": "92e51b76562c1fa273879c44079a05e9ad04bd33f11e93cb452cebe0bcfd5371",
+            "size": 680,
+            "mtime": 1762951296.9985168
+        },
+        "assets/snake_head.png": {
+            "hash": "9051bd0ab11d2a49fc4f292d644e4ae93bc74d70818e8cbd27d4a58588452d05",
+            "size": 708,
+            "mtime": 1762951296.9944687
+        }
+    }
+}

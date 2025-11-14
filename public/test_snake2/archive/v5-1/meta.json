@@ -1,0 +1,103 @@
+{
+    "version": "v5-1",
+    "parent": "v4-1",
+    "timestamp": "2025-11-14T11:57:46.556456",
+    "summary": "",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v2-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "apple.png",
+            "path": "assets/apple.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "eat.mp3",
+            "path": "assets/eat.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "gameover.mp3",
+            "path": "assets/gameover.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_body.png",
+            "path": "assets/snake_body.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_head.png",
+            "path": "assets/snake_head.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "8373834c57b60ee574aadcd76c3327b1e604b7640b458f4f3a525e8f7682ff26",
+            "size": 1702,
+            "mtime": 1763089066.4909885
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763083448.631395
+        },
+        "game.ts": {
+            "hash": "ff565751181e355aa3f0f29f243336885d53b1d83db6ca2e67dc2e163b00993e",
+            "size": 14389,
+            "mtime": 1763083448.6319027
+        },
+        "assets/apple.png": {
+            "hash": "02abf825094daac0672dacbcd3722f272eb9c8354bc43c5e1e85b13b490fd21f",
+            "size": 331,
+            "mtime": 1763083448.6319027
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763083448.637741
+        },
+        "assets/eat.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763083448.6422482
+        },
+        "assets/gameover.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763083448.6460452
+        },
+        "assets/snake_body.png": {
+            "hash": "5cfc89eafc8952e1970f7428b910c271689fa9d8423cbc4501e8a5d1fb999be8",
+            "size": 406,
+            "mtime": 1763083448.6480298
+        },
+        "assets/snake_head.png": {
+            "hash": "5582eea52da29f6baa15508daab4e337ec5cd6f721e90353a625d52f7b1a5675",
+            "size": 404,
+            "mtime": 1763083448.6480298
+        }
+    }
+}
