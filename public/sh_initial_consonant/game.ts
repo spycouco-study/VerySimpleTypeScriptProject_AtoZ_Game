@@ -1,3 +1,182 @@
+interface AssetImage {
+    name: string;
+    path: string;
+    width: number;
+    height: number;
+}
+
+interface AssetSound {
+    name: string;
+    path: string;
+    duration_seconds: number;
+    volume: number;
+    loop?: boolean;
+}
+
+interface FontSetting {
+    font: string;
+    color: string;
+    shadowColor?: string;
+    shadowBlur?: number;
+    shadowOffsetX?: number;
+    shadowOffsetY?: number;
+}
+
+interface UIBottomOffset {
+    width: number;
+    height: number;
+    bottomOffset: number;
+}
+
+interface UIPosition {
+    x: number;
+    y: number;
+}
+
+interface LifeHeartImageConfig {
+    xOffset: number;
+    yOffset: number;
+    width: number;
+    height: number;
+}
+
+interface GameConfig {
+    canvasWidth: number;
+    canvasHeight: number;
+    backgroundColor: string;
+    roundTimeSeconds: number;
+    initialLives: number;
+    chosungLength: number;
+    wordList: string[];
+    fontSettings: {
+        title: FontSetting;
+        chosung: FontSetting;
+        timer: FontSetting;
+        lives: FontSetting;
+        inputPrompt: FontSetting;
+        gameOver: FontSetting;
+        instruction: FontSetting;
+        gameWon: FontSetting; // Added for game won screen
+    };
+    uiPositions: {
+        chosung: UIPosition;
+        timer: UIPosition;
+        lives: UIPosition;
+        inputField: UIBottomOffset;
+        titleText: UIPosition;
+        titleInstruction: UIPosition;
+        gameOverText: UIPosition;
+        gameOverInstruction: UIPosition;
+        lifeHeartImage: LifeHeartImageConfig;
+    };
+    assets: {
+        images: AssetImage[];
+        sounds: AssetSound[];
+    };
+}
+
+const CHOSUNG_MAP = [
+    'ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 'ㅅ',
+    'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'
+];
+
+function extractWordChosungs(word: string): string {
+    let chosungs = '';
+    for (let i = 0; i < word.length; i++) {
+        const charCode = word.charCodeAt(i);
+        if (charCode >= 0xAC00 && charCode <= 0xD7A3) { // Check if it's a Korean Hangul syllable
+            const HANGUL_BASE = 0xAC00;
+            const CHOSUNG_INTERVAL = 588; // (21 Jungseong * 28 Jongseong)
+            const chosungIndex = Math.floor((charCode - HANGUL_BASE) / CHOSUNG_INTERVAL);
+            chosungs += CHOSUNG_MAP[chosungIndex];
+        } else {
+            chosungs += word[i];
+        }
+    }
+    return chosungs;
+}
+
+class AssetManager {
+    private images = new Map<string, HTMLImageElement>();
+    private sounds = new Map<string, HTMLAudioElement>();
+    private loadedCount = 0;
+    private totalCount = 0;
+
+    async loadAssets(configAssets: { images: AssetImage[]; sounds: AssetSound[] }): Promise<void> {
+        this.totalCount = configAssets.images.length + configAssets.sounds.length;
+        this.loadedCount = 0;
+
+        const imagePromises = configAssets.images.map(asset => this.loadImage(asset));
+        const soundPromises = configAssets.sounds.map(asset => this.loadSound(asset));
+
+        await Promise.allSettled([...imagePromises, ...soundPromises]);
+        console.log('All assets load attempts complete.');
+    }
+
+    private loadImage(asset: AssetImage): Promise<void> {
+        return new Promise((resolve) => {
+            const img = new Image();
+            img.onload = () => {
+                this.images.set(asset.name, img);
+                this.loadedCount++;
+                resolve();
+            };
+            img.onerror = () => {
+                console.warn(`Failed to load image: ${asset.path}`);
+                this.loadedCount++;
+                resolve();
+            };
+            img.src = asset.path;
+        });
+    }
+
+    private loadSound(asset: AssetSound): Promise<void> {
+        return new Promise((resolve) => {
+            const audio = new Audio();
+            audio.oncanplaythrough = () => {
+                this.sounds.set(asset.name, audio);
+                audio.volume = asset.volume;
+                audio.loop = asset.loop || false; // Set loop property on the original Audio element
+                this.loadedCount++;
+                resolve();
+            };
+            audio.onerror = () => {
+                console.warn(`Failed to load sound: ${asset.path}`);
+                this.loadedCount++;
+                resolve();
+            };
+            audio.src = asset.path;
+            audio.load();
+        });
+    }
+
+    getImage(name: string): HTMLImageElement | undefined {
+        return this.images.get(name);
+    }
+
+    getSound(name: string): HTMLAudioElement | undefined {
+        const original = this.sounds.get(name);
+        if (original) {
+            if (original.loop) {
+                return original;
+            } else {
+                const clone = original.cloneNode(true) as HTMLAudioElement;
+                clone.volume = original.volume;
+                clone.loop = original.loop;
+                return clone;
+            }
+        }
+        return undefined;
+    }
+}
+
+enum GameState {
+    TITLE,
+    PLAYING,
+    GAME_OVER, // Player lost all lives
+    GAME_WON   // Player guessed all unique words
+}
+
 class Game {
     private canvas: HTMLCanvasElement;
     private ctx: CanvasRenderingContext2D;
@@ -12,11 +191,11 @@ class Game {
     private currentChosung: string = '';
     private currentRoundTime: number = 0;
     private lives: number = 0;
-    private usedWords: Set<string> = new Set(); // Stores words that have been *correctly entered*
+    private usedWords: Set<string> = new Set(); // Words correctly submitted by player
     private score: number = 0;
 
-    private availableProblemWords: string[] = []; // Stores words from config.wordList not yet presented as problems
-    private validWords: Set<string> = new Set(); // Stores all words from config.wordList for quick lookup
+    private availableProblemWords: string[] = []; // Words available to be presented as chosung problems
+    private validWordsSet: Set<string> = new Set(); // All words from config.wordList for quick lookup
 
     constructor(canvasId: string) {
         this.canvas = document.getElementById(canvasId) as HTMLCanvasElement;
@@ -54,14 +233,13 @@ class Game {
             boxShadow: '0 6px 15px rgba(0,0,0,0.2)',
             outline: 'none',
             fontFamily: "'Malgun Gothic', '맑은 고딕', sans-serif",
-            transition: 'all 0.3s ease', // Smooth transitions for visual effects
+            transition: 'all 0.3s ease',
         });
         document.body.appendChild(input);
 
-        // Add focus/blur styles for visual feedback
         input.addEventListener('focus', () => {
             input.style.boxShadow = '0 0 0 0.2rem rgba(0, 123, 255, 0.25), 0 6px 15px rgba(0,0,0,0.2)';
-            input.style.transform = 'scale(1.02)'; // Slight scale effect
+            input.style.transform = 'scale(1.02)';
         });
         input.addEventListener('blur', () => {
             input.style.boxShadow = '0 6px 15px rgba(0,0,0,0.2)';
@@ -79,16 +257,15 @@ class Game {
             this.canvas.width = this.config.canvasWidth;
             this.canvas.height = this.config.canvasHeight;
 
-            // Apply styling to the canvas element itself for a frame effect
             this.canvas.style.border = '4px solid #343a40';
             this.canvas.style.borderRadius = '10px';
             this.canvas.style.boxShadow = '0 10px 20px rgba(0,0,0,0.3)';
             this.canvas.style.display = 'block';
-            this.canvas.style.margin = '50px auto'; // Centers the canvas horizontally on the page
+            this.canvas.style.margin = '50px auto';
 
             await this.assetManager.loadAssets(this.config.assets);
             this.initGame();
-            this.gameLoop(0); // Start the game loop
+            this.gameLoop(0);
         } catch (error) {
             console.error('Failed to load game configuration or assets:', error);
             this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
@@ -106,22 +283,19 @@ class Game {
         this.currentChosung = '';
         this.currentRoundTime = 0;
 
-        // Initialize and shuffle the word list for problems
+        // Initialize available problem words with all words from the config
         this.availableProblemWords = [...this.config.wordList];
         this.shuffleArray(this.availableProblemWords);
 
-        // Populate validWords set for efficient lookup
-        this.validWords = new Set(this.config.wordList);
+        // Initialize set for quick validity checks and win condition
+        this.validWordsSet = new Set(this.config.wordList);
 
-        // Position and size input field based on config
         const inputConfig = this.config.uiPositions.inputField;
         const inputWidth = inputConfig.width;
         const inputHeight = inputConfig.height;
 
-        // Get canvas position relative to viewport
         const canvasRect = this.canvas.getBoundingClientRect();
 
-        // Calculate input field's position relative to the canvas's actual position
         const inputLeft = canvasRect.left + (canvasRect.width - inputWidth) / 2;
         const inputTop = canvasRect.top + canvasRect.height - inputHeight - inputConfig.bottomOffset;
 
@@ -130,7 +304,7 @@ class Game {
             height: `${inputHeight}px`,
             left: `${inputLeft}px`,
             top: `${inputTop}px`,
-            lineHeight: `${inputHeight}px` // Vertically center text in input field
+            lineHeight: `${inputHeight}px`
         });
     }
 
@@ -156,7 +330,7 @@ class Game {
                 break;
             case GameState.TITLE:
             case GameState.GAME_OVER:
-                // Only pause BGM if it's currently playing, to avoid errors on initial load
+            case GameState.GAME_WON: // Added GAME_WON
                 this.playBGM(false); 
                 break;
         }
@@ -175,16 +349,17 @@ class Game {
             case GameState.GAME_OVER:
                 this.drawGameOverScreen();
                 break;
+            case GameState.GAME_WON: // Added GAME_WON render
+                this.drawGameWonScreen();
+                break;
         }
     }
 
-    // Modified drawText to support canvas shadows
     private drawText(text: string, x: number, y: number, fontConfig: { font: string; color: string; shadowColor?: string; shadowBlur?: number; shadowOffsetX?: number; shadowOffsetY?: number; }, align: CanvasTextAlign = 'center', baseline: CanvasTextBaseline = 'middle'): void {
         this.ctx.font = fontConfig.font;
         this.ctx.textAlign = align;
         this.ctx.textBaseline = baseline;
 
-        // Apply shadow if configured
         if (fontConfig.shadowColor) {
             this.ctx.shadowColor = fontConfig.shadowColor;
             this.ctx.shadowBlur = fontConfig.shadowBlur !== undefined ? fontConfig.shadowBlur : 5;
@@ -195,7 +370,6 @@ class Game {
         this.ctx.fillStyle = fontConfig.color;
         this.ctx.fillText(text, x, y);
 
-        // Reset shadow properties after drawing to prevent affecting other elements
         this.ctx.shadowColor = 'transparent';
         this.ctx.shadowBlur = 0;
         this.ctx.shadowOffsetX = 0;
@@ -212,7 +386,6 @@ class Game {
         }
     }
 
-    // New method to draw the game background
     private drawBackground(): void {
         const bgImage = this.assetManager.getImage('background');
         if (bgImage) {
@@ -224,50 +397,57 @@ class Game {
     }
 
     private drawTitleScreen(): void {
-        this.drawBackground(); // Draw background first
+        this.drawBackground();
         const { uiPositions, fontSettings } = this.config;
         this.drawText('초성 게임', uiPositions.titleText.x, uiPositions.titleText.y, fontSettings.title);
         this.drawText('아무 곳이나 클릭하여 시작하세요', uiPositions.titleInstruction.x, uiPositions.titleInstruction.y, fontSettings.instruction);
     }
 
     private drawPlayingScreen(): void {
-        this.drawBackground(); // Draw background first
+        this.drawBackground();
         const { uiPositions, fontSettings, initialLives } = this.config;
 
-        // Chosung
         this.drawText(this.currentChosung, uiPositions.chosung.x, uiPositions.chosung.y, fontSettings.chosung);
 
-        // Timer
         const timeRemaining = Math.max(0, Math.floor(this.currentRoundTime));
         this.drawText(`시간: ${timeRemaining}`, uiPositions.timer.x, uiPositions.timer.y, fontSettings.timer, 'right');
 
-        // Lives
         const livesTextX = uiPositions.lives.x;
         const livesTextY = uiPositions.lives.y;
         
         const heartConfig = uiPositions.lifeHeartImage;
         for (let i = 0; i < initialLives; i++) {
-            // Increased spacing between hearts for better visual separation
             const heartX = livesTextX + heartConfig.xOffset + (i * (heartConfig.width + 10));
             const heartY = livesTextY + heartConfig.yOffset;
             if (i < this.lives) {
                 this.drawImageScaled('heart', heartX, heartY, heartConfig.width, heartConfig.height);
             }
         }
+        // Display score or words remaining if needed
+        this.drawText(`점수: ${this.score} (${this.usedWords.size}/${this.validWordsSet.size})`, livesTextX, livesTextY + 60, fontSettings.instruction, 'left');
     }
 
     private drawGameOverScreen(): void {
-        this.drawBackground(); // Draw background first
+        this.drawBackground();
         const { uiPositions, fontSettings } = this.config;
         this.drawText('게임 오버!', uiPositions.gameOverText.x, uiPositions.gameOverText.y, fontSettings.gameOver);
-        this.drawText(`점수: ${this.score} 단어`, uiPositions.gameOverText.x, uiPositions.gameOverText.y + 70, fontSettings.instruction);
+        this.drawText(`최종 점수: ${this.score} 단어`, uiPositions.gameOverText.x, uiPositions.gameOverText.y + 70, fontSettings.instruction);
         this.drawText('다시 시작하려면 아무 곳이나 클릭하세요', uiPositions.gameOverInstruction.x, uiPositions.gameOverInstruction.y + 100, fontSettings.instruction);
+    }
+
+    private drawGameWonScreen(): void {
+        this.drawBackground();
+        const { uiPositions, fontSettings } = this.config;
+        this.drawText('축하합니다!', uiPositions.gameOverText.x, uiPositions.gameOverText.y - 40, fontSettings.gameWon);
+        this.drawText('모든 단어를 맞췄습니다!', uiPositions.gameOverText.x, uiPositions.gameOverText.y + 20, fontSettings.instruction);
+        this.drawText(`최종 점수: ${this.score} 단어`, uiPositions.gameOverText.x, uiPositions.gameOverText.y + 90, fontSettings.instruction);
+        this.drawText('다시 시작하려면 아무 곳이나 클릭하세요', uiPositions.gameOverInstruction.x, uiPositions.gameOverInstruction.y + 150, fontSettings.instruction);
     }
 
     private handleCanvasClick = (event: MouseEvent) => {
         if (this.gameState === GameState.TITLE) {
             this.startGame();
-        } else if (this.gameState === GameState.GAME_OVER) {
+        } else if (this.gameState === GameState.GAME_OVER || this.gameState === GameState.GAME_WON) { // Modified to include GAME_WON
             this.resetGame();
         }
     };
@@ -280,10 +460,9 @@ class Game {
         }
     };
 
-    private playSound(name: string, loop: boolean = false): void {
+    private playSound(name: string): void {
         const audio = this.assetManager.getSound(name);
         if (audio) {
-            audio.loop = loop;
             audio.currentTime = 0;
             audio.play().catch(e => console.warn(`Error playing sound ${name}:`, e));
         }
@@ -292,12 +471,15 @@ class Game {
     private playBGM(play: boolean): void {
         const bgm = this.assetManager.getSound('bgm');
         if (bgm) {
-            if (play && bgm.paused) {
-                bgm.loop = true;
-                bgm.play().catch(e => console.warn("BGM playback failed:", e));
-            } else if (!play && !bgm.paused) {
-                bgm.pause();
-                bgm.currentTime = 0;
+            if (play) {
+                if (bgm.paused) {
+                    bgm.play().catch(e => console.warn("BGM playback failed:", e));
+                }
+            } else {
+                if (!bgm.paused) {
+                    bgm.pause();
+                    bgm.currentTime = 0;
+                }
             }
         }
     }
@@ -306,41 +488,39 @@ class Game {
         this.gameState = GameState.PLAYING;
         this.lives = this.config.initialLives;
         this.score = 0;
-        this.usedWords.clear();
+        this.usedWords.clear(); // Clear used words for a new game
         this.inputField.style.display = 'block';
         this.inputField.focus();
-        // Reinitialize problem words and start a new round
         this.availableProblemWords = [...this.config.wordList];
         this.shuffleArray(this.availableProblemWords);
-        this.validWords = new Set(this.config.wordList); // Ensure validWords is fresh
         this.newRound();
         this.playBGM(true);
     }
 
     private resetGame(): void {
         this.gameState = GameState.TITLE;
-        this.initGame(); // Re-initializes all game state including word lists
+        this.initGame(); // Re-initialize game state including clearing usedWords
         this.inputField.style.display = 'none';
         this.playBGM(false);
     }
 
     private newRound(): void {
         if (this.availableProblemWords.length === 0) {
-            // All words used as problems, reshuffle the list for continuous play
+            // All words have been presented as *problems*. Re-shuffle for more rounds.
             this.availableProblemWords = [...this.config.wordList];
             this.shuffleArray(this.availableProblemWords);
-            this.usedWords.clear(); // Clear answered words as problems will now repeat
-            console.log('All problem words used. Reshuffling word list and clearing used answers.');
+            // IMPORTANT CHANGE: Do NOT clear `this.usedWords` here.
+            // `usedWords` tracks all unique words answered by the player across the entire game session.
+            console.log('All problem words used as problems once. Reshuffling word list for new problems.');
         }
 
-        const problemWord = this.availableProblemWords.pop(); // Get a word from the shuffled list
+        const problemWord = this.availableProblemWords.pop(); // Pop to ensure problems don't immediately repeat
         if (problemWord) {
             const fullChosung = extractWordChosungs(problemWord);
-            // Use config.chosungLength to determine how many characters of the chosung to display
             this.currentChosung = fullChosung.substring(0, this.config.chosungLength);
         } else {
-            // This case should ideally not be reached if availableProblemWords is handled correctly
-            this.currentChosung = '초성 없음'; // Fallback
+            // This case should ideally not happen if availableProblemWords is always re-populated
+            this.currentChosung = '초성 없음';
             console.error('No problem word available!');
         }
         
@@ -350,24 +530,37 @@ class Game {
     private checkAnswer(word: string): void {
         if (!word) {
             this.loseLife('wrong');
-            this.newRound(); // Start new round after incorrect answer
+            this.newRound();
+            return;
+        }
+
+        const isValidWord = this.validWordsSet.has(word);
+        if (!isValidWord) {
+            this.loseLife('wrong');
+            this.newRound();
             return;
         }
 
         const extractedChosung = extractWordChosungs(word);
 
         const isChosungMatch = extractedChosung.startsWith(this.currentChosung);
-        const isDuplicate = this.usedWords.has(word);
-        const isRealWord = this.validWords.has(word); // Check if the word is in the predefined list
+        const isDuplicate = this.usedWords.has(word); // Check if this specific word was already successfully answered
 
-        if (isChosungMatch && !isDuplicate && isRealWord) {
+        if (isChosungMatch && !isDuplicate) {
             this.usedWords.add(word);
             this.score++;
             this.playSound('correct');
+            
+            // Check for win condition after a successful answer
+            if (this.usedWords.size === this.validWordsSet.size) {
+                this.endGame(true); // Player won!
+                return; // Game has ended, no need for newRound
+            }
+
             this.newRound();
         } else {
             this.loseLife('wrong');
-            this.newRound(); // Start new round after incorrect answer
+            this.newRound();
         }
     }
 
@@ -375,18 +568,18 @@ class Game {
         this.lives--;
         this.playSound(soundName);
         if (this.lives <= 0) {
-            this.endGame();
+            this.endGame(false); // Player lost
         }
     }
 
-    private endGame(): void {
-        this.gameState = GameState.GAME_OVER;
+    // Modified endGame to accept a `won` parameter
+    private endGame(won: boolean = false): void {
+        this.gameState = won ? GameState.GAME_WON : GameState.GAME_OVER;
         this.inputField.style.display = 'none';
-        this.playSound('gameOver');
+        this.playSound(won ? 'gameWin' : 'gameOver'); // Play specific win/lose sound
         this.playBGM(false);
     }
 
-    // Helper function to shuffle an array
     private shuffleArray<T>(array: T[]): void {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -394,3 +587,8 @@ class Game {
         }
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const game = new Game('gameCanvas');
+    game.loadGame();
+});

@@ -1,0 +1,84 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-16T00:38:17.982330",
+            "summary": "킹오파(The King of Fighters)와 같은 스타일의 격투 게임을 만들어주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-16T00:50:35.084589",
+            "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-11-16T00:55:06.986720",
+            "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-11-16T00:55:35.893482",
+            "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-11-16T00:58:41.719304",
+            "summary": "방어 키를 추가해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v6-1",
+            "parent": "v5-1",
+            "timestamp": "2025-11-16T00:59:34.686883",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-1",
+            "parent": "v6-1",
+            "timestamp": "2025-11-16T01:03:12.457802",
+            "summary": "방어 키를 눌렀을 때 데미지를 더 크게 입는 현상이 있습니다. 방어 키를 누르면 데미지가 없거나 적게 들어오도록 게임 시스템을 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v8-1",
+            "parent": "v7-1",
+            "timestamp": "2025-11-16T01:05:22.564122",
+            "summary": "게임 오버 시 누가 이겼는지 표시해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v9-1",
+            "parent": "v8-1",
+            "timestamp": "2025-11-16T01:17:15.831412",
+            "summary": "공격키를 계속 누르고 있을 때 연속 공격이 들어가지 않고, 키를 눌렀을 때만 공격이 들어가도록 변경해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v9-2",
+            "parent": "v8-1",
+            "timestamp": "2025-11-16T01:22:45.743320",
+            "summary": "공격키를 계속 누르고 있을 때 연속으로 공격이 들어가지 않고, 키를 눌렀을 때만 공격이 들어가도록 수정해 주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

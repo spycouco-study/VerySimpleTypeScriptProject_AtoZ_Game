@@ -15,7 +15,17 @@
         "운동", "웃음", "음악", "의자", "이불", "이름", "이야기", "자동차", "자전거", "잠",
         "장난감", "저녁", "전화", "점심", "정류장", "지구", "지하철", "지갑", "집", "책",
         "축구", "친구", "카페", "컴퓨터", "키보드", "택시", "학교", "하늘", "하루", "학원",
-        "학생", "한국", "행복", "휴식", "회사", "회의", "컵", "펜", "공책", "필통"
+        "학생", "한국", "행복", "휴식", "회사", "회의", "컵", "펜", "공책", "필통",
+        "가구", "가수", "가을", "갈비", "감자", "갑자기", "강", "개나리", "거울", "거짓말",
+        "건강", "건물", "걷다", "결혼", "경찰", "계절", "계획", "고기", "고민", "곳",
+        "골목", "곰", "공", "공룡", "공항", "과거", "과학", "관광", "교실", "교통",
+        "구두", "국가", "국물", "군인", "귤", "귀", "그녀", "극장", "금요일", "기차",
+        "길", "꿈", "나이", "날씨", "남편", "낮", "냉면", "농구", "농장", "높다",
+        "늦다", "다리", "다이어트", "다정하다", "달리다", "담요", "당근", "대화", "대학생", "대학교",
+        "덕분", "도움", "도로", "독서", "돼지", "드라마", "등산", "딸기", "라면", "라디오",
+        "렌터카", "로봇", "마음", "마스크", "마지막", "만들다", "만나다", "말", "맛있다", "맥주",
+        "메뉴", "모두", "모임", "목소리", "목요일", "몽골", "무겁다", "문", "문화", "묻다",
+        "미술", "믿음", "바구니", "바지", "반찬", "발", "방", "방송", "배", "배우"
     ],
     "fontSettings": {
         "title": { "font": "bold 60px 'Malgun Gothic', '맑은 고딕', sans-serif", "color": "#212529", "shadowColor": "rgba(0,0,0,0.2)", "shadowBlur": 8, "shadowOffsetX": 3, "shadowOffsetY": 3 },
@@ -24,7 +34,8 @@
         "lives": { "font": "bold 36px 'Malgun Gothic', '맑은 고딕', sans-serif", "color": "#28a745", "shadowColor": "rgba(0,0,0,0.1)", "shadowBlur": 4, "shadowOffsetX": 1, "shadowOffsetY": 1 },
         "inputPrompt": { "font": "24px 'Malgun Gothic', '맑은 고딕', sans-serif", "color": "#6c757d" },
         "gameOver": { "font": "bold 60px 'Malgun Gothic', '맑은 고딕', sans-serif", "color": "#dc3545", "shadowColor": "rgba(0,0,0,0.2)", "shadowBlur": 8, "shadowOffsetX": 3, "shadowOffsetY": 3 },
-        "instruction": { "font": "24px 'Malgun Gothic', '맑은 고딕', sans-serif", "color": "#495057", "shadowColor": "rgba(0,0,0,0.1)", "shadowBlur": 3, "shadowOffsetX": 1, "shadowOffsetY": 1 }
+        "instruction": { "font": "24px 'Malgun Gothic', '맑은 고딕', sans-serif", "color": "#495057", "shadowColor": "rgba(0,0,0,0.1)", "shadowBlur": 3, "shadowOffsetX": 1, "shadowOffsetY": 1 },
+        "gameWon": { "font": "bold 60px 'Malgun Gothic', '맑은 고딕', sans-serif", "color": "#28a745", "shadowColor": "rgba(0,0,0,0.2)", "shadowBlur": 8, "shadowOffsetX": 3, "shadowOffsetY": 3 }
     },
     "uiPositions": {
         "chosung": { "x": 400, "y": 200 },
@@ -46,7 +57,8 @@
             { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3, "loop": true },
             { "name": "correct", "path": "assets/correct.mp3", "duration_seconds": 0.5, "volume": 0.8 },
             { "name": "wrong", "path": "assets/wrong.mp3", "duration_seconds": 0.8, "volume": 0.8 },
-            { "name": "gameOver", "path": "assets/gameOver.mp3", "duration_seconds": 1.5, "volume": 0.7 }
+            { "name": "gameOver", "path": "assets/gameOver.mp3", "duration_seconds": 1.5, "volume": 0.7 },
+            { "name": "gameWin", "path": "assets/gameWin.mp3", "duration_seconds": 2.0, "volume": 0.7 }
         ]
     }
 }

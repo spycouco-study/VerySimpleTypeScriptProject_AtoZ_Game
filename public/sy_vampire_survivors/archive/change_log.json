@@ -109,6 +109,30 @@
             "parent": "v11-1",
             "timestamp": "2025-11-14T20:20:12.068220",
             "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v13-1",
+            "parent": "v12-1",
+            "timestamp": "2025-11-15T20:25:30.955991",
+            "summary": "레벨이 올라갈때 마다 지금보다 적이 조금 더 많이 나왔으면 좋겠어. 점진적으로. 지금은 레벨이 올라갈때마다 공격 능력이 향상되는 것에 비해 적의 숫자나 레벨이 너무 난이도가 쉬워.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v14-1",
+            "parent": "v13-1",
+            "timestamp": "2025-11-15T21:21:31.479359",
+            "summary": "현재 레벨이 올라갈때마다 플레이어의 이동 스피드가 빨라지고 있나요? 알려주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v15-1",
+            "parent": "v14-1",
+            "timestamp": "2025-11-15T23:49:05.682436",
+            "summary": "레벨업 시 사용하는 키를 Enter에서 Space바로 변경해주세요.",
             "is_latest": true,
             "is_current": true
         }

@@ -46,9 +46,15 @@ interface GameData {
         size: number; // Drawing size for the gem sprite (also used for collision)
     };
     gameplay: {
-        enemySpawnInterval: number; // in seconds
+        baseEnemySpawnInterval: number; // in seconds - RENAMED
+        spawnIntervalReductionFactorPerLevel: number; // NEW: Multiplier to reduce spawn interval per level (e.g., 0.98 for 2% faster)
+        minEnemySpawnInterval: number; // NEW: Minimum possible spawn interval
         initialEnemyCount: number;
-        maxEnemies: number;
+        baseMaxEnemies: number; // RENAMED
+        maxEnemiesIncreasePerLevel: number; // NEW: How many max enemies increase per player level
+        enemyHealthScalePerLevel: number; // NEW: Percentage increase in enemy health per player level
+        enemySpeedScalePerLevel: number; // NEW: Percentage increase in enemy speed per player level
+        enemyDamageScalePerLevel: number; // NEW: Percentage increase in enemy damage per player level
         levelUpExpMultiplier: number; // How much next level exp increases
         attackSpeedIncreasePerLevel: number; // Percentage reduction in attack cooldown per level (e.g., 0.02 for 2%)
     };
@@ -96,7 +102,7 @@ interface Player extends GameObject {
 interface Enemy extends GameObject {
     id: number;
     health: number;
-    maxHealth: number;
+    maxHealth: number; // Keep max health for health bar drawing
     speed: number;
     damage: number;
     assetName: string;
@@ -152,6 +158,10 @@ let gameTimer = 0; // In seconds
 
 let cameraX: number = 0; // NEW: X-coordinate of the camera's top-left corner in world space
 let cameraY: number = 0; // NEW: Y-coordinate of the camera's top-left corner in world space
+
+// NEW: Dynamic gameplay values based on player level
+let currentEffectiveMaxEnemies: number;
+let currentEffectiveEnemySpawnInterval: number;
 
 // --- Asset Loading ---
 async function loadGameData(): Promise<void> {
@@ -219,7 +229,7 @@ function initGame(): void {
         keysPressed[e.key.toLowerCase()] = true; // Use toLowerCase for case-insensitivity
         if (gameState === GameState.TITLE || gameState === GameState.GAME_OVER) {
             startNewGame();
-        } else if (gameState === GameState.LEVEL_UP && e.key === 'Enter') {
+        } else if (gameState === GameState.LEVEL_UP && e.key.toLowerCase() === ' ') { // Changed 'Enter' to 'Spacebar'
             // For simplicity, automatically apply the first level up option
             if (gameData.ui.levelUpOptions.length > 0) {
                 applyLevelUpEffect(gameData.ui.levelUpOptions[0]);
@@ -280,12 +290,16 @@ function startNewGame(): void {
     enemyIdCounter = 0;
     gameTimer = 0;
 
+    // NEW: Initialize dynamic gameplay values based on data and starting level (level 1)
+    currentEffectiveMaxEnemies = gameData.gameplay.baseMaxEnemies;
+    currentEffectiveEnemySpawnInterval = gameData.gameplay.baseEnemySpawnInterval;
+
     // Initialize camera position based on player's starting position
     updateCamera();
 
-    // Populate initial enemies
+    // Populate initial enemies (these do not scale with player level 1, as (player.level - 1) * scale is 0)
     for (let i = 0; i < gameData.gameplay.initialEnemyCount; i++) {
-        spawnSingleEnemy(true); // Spawn initially within map bounds
+        spawnSingleEnemy(true); // Spawn initially within camera view, around player
     }
 
     stopAllSounds(); // Stop any previous BGM or SFX
@@ -472,8 +486,8 @@ function updateProjectiles(dt: number): void {
         proj.y += proj.vy * dt;
         proj.lifetime -= dt;
 
-        // Remove if lifetime expires or goes off-screen (relative to camera view)
-        if (proj.lifetime <= 0 || !isWithinBounds(proj.x, proj.y, proj.size)) {
+        // Remove if lifetime expires. Projectiles despawn after lifetime, not necessarily when off-screen.
+        if (proj.lifetime <= 0) {
             projectiles.splice(i, 1);
         }
     }
@@ -511,7 +525,8 @@ function updateExperienceGems(dt: number): void {
 
 function spawnEnemies(dt: number): void {
     lastEnemySpawnTime += dt;
-    if (lastEnemySpawnTime >= gameData.gameplay.enemySpawnInterval && enemies.length < gameData.gameplay.maxEnemies) {
+    // Use dynamic effective spawn interval and max enemies
+    if (lastEnemySpawnTime >= currentEffectiveEnemySpawnInterval && enemies.length < currentEffectiveMaxEnemies) {
         lastEnemySpawnTime = 0;
         spawnSingleEnemy(false); // Spawn continuously off-screen (relative to camera view)
     }
@@ -525,9 +540,9 @@ function spawnSingleEnemy(initialSpawn: boolean): void {
     const spawnPadding = 50; // Distance off-screen for regular spawns
 
     if (initialSpawn) {
-        // For initial enemies, spawn them somewhat centered on the screen, but within the larger map
-        x = Math.random() * (gameData.canvas.mapWidth - enemyTypeConfig.size) + enemyTypeConfig.size / 2;
-        y = Math.random() * (gameData.canvas.mapHeight - enemyTypeConfig.size) + enemyTypeConfig.size / 2;
+        // For initial enemies, spawn them somewhat centered on the screen, around the player
+        x = player.x + (Math.random() - 0.5) * canvas.width * 0.8;
+        y = player.y + (Math.random() - 0.5) * canvas.height * 0.8;
     } else {
         // For continuous spawns, spawn completely off-screen *relative to the current camera view*
         const side = Math.floor(Math.random() * 4); // 0:top, 1:right, 2:bottom, 3:left
@@ -552,22 +567,29 @@ function spawnSingleEnemy(initialSpawn: boolean): void {
             default: // Should not happen
                 x = 0; y = 0;
         }
-
-        // Clamp the spawn position to ensure it's still within the overall map boundaries
-        x = Math.max(enemyTypeConfig.size / 2, Math.min(gameData.canvas.mapWidth - enemyTypeConfig.size / 2, x));
-        y = Math.max(enemyTypeConfig.size / 2, Math.min(gameData.canvas.mapHeight - enemyTypeConfig.size / 2, y));
     }
+
+    // Clamp the spawn position to ensure it's still within the overall map boundaries
+    x = Math.max(enemyTypeConfig.size / 2, Math.min(gameData.canvas.mapWidth - enemyTypeConfig.size / 2, x));
+    y = Math.max(enemyTypeConfig.size / 2, Math.min(gameData.canvas.mapHeight - enemyTypeConfig.size / 2, y));
+
+    // NEW: Apply level scaling to enemy stats based on player's current level
+    // Level 1 has a factor of 0, Level 2 has 1, etc.
+    const levelFactor = player.level - 1;
+    const healthScale = 1 + levelFactor * gameData.gameplay.enemyHealthScalePerLevel;
+    const speedScale = 1 + levelFactor * gameData.gameplay.enemySpeedScalePerLevel;
+    const damageScale = 1 + levelFactor * gameData.gameplay.enemyDamageScalePerLevel;
 
     enemies.push({
         id: enemyIdCounter++,
         x: x,
         y: y,
-        health: enemyTypeConfig.maxHealth,
-        maxHealth: enemyTypeConfig.maxHealth,
-        speed: enemyTypeConfig.speed,
-        damage: enemyTypeConfig.damage,
+        health: enemyTypeConfig.maxHealth * healthScale,
+        maxHealth: enemyTypeConfig.maxHealth * healthScale, // Max health also needs to scale for health bar drawing
+        speed: enemyTypeConfig.speed * speedScale,
+        damage: enemyTypeConfig.damage * damageScale,
         assetName: enemyTypeConfig.assetName,
-        expReward: enemyTypeConfig.expReward,
+        expReward: enemyTypeConfig.expReward, // Experience reward can also scale if desired
         size: enemyTypeConfig.size, // Enemy still uses 'size'
     });
 }
@@ -617,7 +639,8 @@ function checkCollisions(): void {
         const enemy = enemies[i];
         if (isColliding(player, enemy)) {
             player.health -= enemy.damage * deltaTime; // Apply damage over time
-            playSound('player_hit'); // Play hit sound when player takes damage
+            // For now, playing hit sound repeatedly during collision is too noisy.
+            // A cooldown or dedicated 'player_damaged' event could be used.
             if (player.health <= 0) {
                 gameState = GameState.GAME_OVER;
                 stopAllSounds(); // Stop BGM on game over
@@ -674,6 +697,16 @@ function playerLevelUp(): void {
         player.numberOfAttacks++;
         console.log(`Player leveled up to ${player.level}! Number of attacks increased to ${player.numberOfAttacks}.`);
     }
+
+    // USER REQUEST: Dynamically adjust enemy spawning and difficulty
+    // 1. Increase max enemies allowed based on player level
+    currentEffectiveMaxEnemies = gameData.gameplay.baseMaxEnemies + (player.level - 1) * gameData.gameplay.maxEnemiesIncreasePerLevel;
+    // 2. Decrease enemy spawn interval (spawn faster) based on player level
+    // Using Math.pow for multiplicative reduction per level.
+    currentEffectiveEnemySpawnInterval = Math.max(
+        gameData.gameplay.minEnemySpawnInterval,
+        gameData.gameplay.baseEnemySpawnInterval * Math.pow(gameData.gameplay.spawnIntervalReductionFactorPerLevel, player.level - 1)
+    );
 
     // Transition to LEVEL_UP state to pause and display choices
     gameState = GameState.LEVEL_UP;
@@ -758,8 +791,8 @@ function drawGameplay(): void {
     for (const enemy of enemies) {
         // Enemies still use a single 'size' for both drawing and collision (square sprite assumption)
         drawSprite(enemy.assetName, enemy.x, enemy.y, enemy.size, enemy.size);
-        // Optional: Draw enemy health bar - would also need camera offset
-        // drawHealthBar(enemy.x - cameraX, enemy.y - enemy.size / 2 - 10 - cameraY, enemy.size, 5, enemy.health, enemy.maxHealth, 'red', 'darkred');
+        // Draw enemy health bar
+        drawHealthBar(enemy.x - cameraX, enemy.y - enemy.size / 2 - 10 - cameraY, enemy.size, 5, enemy.health, enemy.maxHealth, 'red', 'darkred');
     }
 
     // Draw projectiles
@@ -774,6 +807,18 @@ function drawGameplay(): void {
         drawSprite(gem.assetName, gem.x, gem.y, gem.size, gem.size);
     }
 }
+
+// Helper function to draw a health bar
+function drawHealthBar(x: number, y: number, width: number, height: number, currentHealth: number, maxHealth: number, fillColor: string, bgColor: string): void {
+    ctx.fillStyle = bgColor;
+    ctx.fillRect(x - width / 2, y, width, height);
+    ctx.fillStyle = fillColor;
+    ctx.fillRect(x - width / 2, y, (currentHealth / maxHealth) * width, height);
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = 1;
+    ctx.strokeRect(x - width / 2, y, width, height);
+}
+
 
 function drawUI(): void {
     ctx.font = `18px ${gameData.ui.font}`;
@@ -814,6 +859,11 @@ function drawUI(): void {
     // Game Timer
     ctx.textAlign = 'right';
     ctx.fillText(`Time: ${Math.floor(gameTimer / 60).toString().padStart(2, '0')}:${Math.floor(gameTimer % 60).toString().padStart(2, '0')}`, canvas.width - 10, 30);
+
+    // Display current enemy count and spawn interval for debugging/info
+    ctx.textAlign = 'right';
+    ctx.fillText(`Enemies: ${enemies.length} / ${Math.floor(currentEffectiveMaxEnemies)}`, canvas.width - 10, 60);
+    ctx.fillText(`Spawn Interval: ${currentEffectiveEnemySpawnInterval.toFixed(2)}s`, canvas.width - 10, 90);
 }
 
 function drawLevelUpScreen(): void {
@@ -829,7 +879,8 @@ function drawLevelUpScreen(): void {
     if (gameData.ui.levelUpOptions.length > 0) {
         // Display the first option (for simplicity in this basic version)
         const option = gameData.ui.levelUpOptions[0];
-        ctx.fillText(`[Enter] ${option.name}: ${option.description}`, canvas.width / 2, canvas.height / 2);
+        // Updated text to reflect Spacebar
+        ctx.fillText(`[Spacebar] ${option.name}: ${option.description}`, canvas.width / 2, canvas.height / 2);
     } else {
         ctx.fillText('No upgrades available.', canvas.width / 2, canvas.height / 2);
     }

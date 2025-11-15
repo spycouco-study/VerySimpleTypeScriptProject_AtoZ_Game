@@ -66,9 +66,15 @@
         "size": 20
     },
     "gameplay": {
-        "enemySpawnInterval": 2,
+        "baseEnemySpawnInterval": 2.0,
+        "spawnIntervalReductionFactorPerLevel": 0.96,
+        "minEnemySpawnInterval": 0.5,
         "initialEnemyCount": 5,
-        "maxEnemies": 50,
+        "baseMaxEnemies": 30,
+        "maxEnemiesIncreasePerLevel": 5,
+        "enemyHealthScalePerLevel": 0.1,
+        "enemySpeedScalePerLevel": 0.03,
+        "enemyDamageScalePerLevel": 0.07,
         "levelUpExpMultiplier": 1.5,
         "attackSpeedIncreasePerLevel": 0.03
     },
@@ -139,7 +145,8 @@
                 "width": 16,
                 "height": 16
             }
-        ],
+        ]
+        ,
         "sounds": [
             {
                 "name": "bgm",
