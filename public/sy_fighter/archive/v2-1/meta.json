@@ -1,0 +1,153 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-11-16T00:50:35.081938",
+    "summary": "",
+    "chat": {},
+    "changes": [
+        {
+            "name": "iori_sprites.png",
+            "path": "assets/iori_sprites.png",
+            "type": "Add"
+        },
+        {
+            "name": "kyo_sprites.png",
+            "path": "assets/kyo_sprites.png",
+            "type": "Add"
+        },
+        {
+            "name": "stage_bg.png",
+            "path": "assets/stage_bg.png",
+            "type": "Add"
+        },
+        {
+            "name": "title_bg.png",
+            "path": "assets/title_bg.png",
+            "type": "Add"
+        },
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_game.mp3",
+            "path": "assets/bgm_game.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_title.mp3",
+            "path": "assets/bgm_title.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_game_over.mp3",
+            "path": "assets/sfx_game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_hit.mp3",
+            "path": "assets/sfx_hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_jump.mp3",
+            "path": "assets/sfx_jump.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_kick.mp3",
+            "path": "assets/sfx_kick.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_punch.mp3",
+            "path": "assets/sfx_punch.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "69baaffde83acbde3eb95a2dcaf76b08ab9393ca4b02e80f0dba96ac983dcda9",
+            "size": 8329,
+            "mtime": 1763221835.0201793
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1761399375.5725453
+        },
+        "game.ts": {
+            "hash": "ce6630d5cec269479a8fcc3db08cc62aecf46349b85164bf0358a9d9c54b1e39",
+            "size": 32538,
+            "mtime": 1763221093.2222836
+        },
+        "assets/bgm_game.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1761211729.270481
+        },
+        "assets/bgm_title.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1761211729.270481
+        },
+        "assets/iori_sprites.png": {
+            "hash": "ab21b7c424e8a5b6664f56b70576faf2cffe7ee4bca32f8a7dd5da77d9d86df9",
+            "size": 494,
+            "mtime": 1762856580.7362056
+        },
+        "assets/kyo_sprites.png": {
+            "hash": "f5a6e2709e833a21fbc2d7239e1006f14a6a97a8163905271f3917d86d13c3b7",
+            "size": 429,
+            "mtime": 1762856580.73218
+        },
+        "assets/sfx_game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/sfx_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/sfx_jump.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/sfx_kick.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/sfx_punch.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/stage_bg.png": {
+            "hash": "d30cd0b50b7ee188b55550963279accf67a30bcae7e32027b44e8991c035d57b",
+            "size": 1122910,
+            "mtime": 1761282804.267462
+        },
+        "assets/title_bg.png": {
+            "hash": "c92f9192cc136ed856cb232b2195625b98c31c2b64af59fbfcaf25e2f95dce90",
+            "size": 3590,
+            "mtime": 1762856580.7093084
+        }
+    }
+}

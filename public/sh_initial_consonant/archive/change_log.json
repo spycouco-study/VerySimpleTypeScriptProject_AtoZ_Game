@@ -1,0 +1,60 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-14T20:47:41.011984",
+            "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-14T20:56:57.522268",
+            "summary": "실제로 존재하는 단어를 기준으로 문제가 나왔으면 좋겠어. 단어를 100개정도로 실제로 있는 문제로 나오게해줘.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-2",
+            "parent": "v1-1",
+            "timestamp": "2025-11-14T21:00:17.120492",
+            "summary": "현재 초성에만 맞게 아무 단어나 쓰면 정답으로 인정되는데 실제 단어가 아니면 틀리는게 맞는거 같아.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-3",
+            "parent": "v1-1",
+            "timestamp": "2025-11-15T14:06:02.867039",
+            "summary": "현재 초성에만 맞게 아무 단어나 쓰면 정답으로 인정되는데 실제 단어가 아니면 틀리는게 맞는거 같아.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-4",
+            "parent": "v1-1",
+            "timestamp": "2025-11-15T14:09:04.794067",
+            "summary": "현재 초성에만 맞게 아무 단어나 쓰면 정답으로 인정되는데 실제로 존재하는 단어가 아니면 틀리게 해줘.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-4",
+            "timestamp": "2025-11-15T14:15:34.300627",
+            "summary": "현재 게임이 종료되도 bgm 음악이 계속나오고 다음게임이 시작되면 bgm이 또 재생되서 겹치게 들리는데 게임이 종료되면 음악도 종료되게 해줘.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-11-15T14:19:31.696336",
+            "summary": "단어 리스트를 100개정도 더 늘려줘. 그리고 지금 이미 나왔던 단어는 안나오게 되어있는거야 아니면 이미 나왔던 단어도 다시나오게 되어 있는거야? 그리고 모든 단어를 맞추면 게임이 종료되게 되어 있는거야? 알려줘.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

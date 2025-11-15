@@ -1,0 +1,62 @@
+{
+  "game": {
+    "canvasWidth": 800,
+    "canvasHeight": 400,
+    "groundHeight": 50,
+    "gravity": 900,
+    "obstacleSpawnIntervalMin": 1.5,
+    "obstacleSpawnIntervalMax": 3.0,
+    "scorePerSecond": 10,
+    "playerScreenXRatio": 0.35,
+    "stompScore": 50,
+    "minObstacleGap": 150
+  },
+  "player": {
+    "width": 64,
+    "height": 64,
+    "startX": 100,
+    "jumpForce": 600,
+    "animationSpeed": 0.1,
+    "moveSpeed": 200,
+    "maxJumps": 2,
+    "spriteFrames": [
+      { "x": 0, "y": 0, "width": 64, "height": 64 },
+      { "x": 64, "y": 0, "width": 64, "height": 64 },
+      { "x": 128, "y": 0, "width": 64, "height": 64 },
+      { "x": 192, "y": 0, "width": 64, "height": 64 }
+    ]
+  },
+  "obstacles": [
+    {
+      "name": "cactus_small",
+      "width": 32,
+      "height": 64,
+      "sprite": { "x": 0, "y": 0, "width": 32, "height": 64 }
+    },
+    {
+      "name": "cactus_large",
+      "width": 48,
+      "height": 96,
+      "sprite": { "x": 32, "y": 0, "width": 48, "height": 96 }
+    },
+    {
+      "name": "pipe",
+      "width": 64,
+      "height": 80,
+      "sprite": { "x": 80, "y": 0, "width": 64, "height": 80 }
+    }
+  ],
+  "assets": {
+    "images": [
+      { "name": "player", "path": "assets/player_spritesheet.png", "width": 256, "height": 64 },
+      { "name": "obstacles", "path": "assets/obstacles_spritesheet.png", "width": 144, "height": 100 },
+      { "name": "background", "path": "assets/background.png", "width": 800, "height": 200 },
+      { "name": "ground", "path": "assets/ground.png", "width": 50, "height": 50 }
+    ],
+    "sounds": [
+      { "name": "jump", "path": "assets/jump.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+      { "name": "hit", "path": "assets/hit.mp3", "duration_seconds": 1.0, "volume": 0.8 },
+      { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 120.0, "volume": 0.3 }
+    ]
+  }
+}

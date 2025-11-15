@@ -1,0 +1,202 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-14T20:50:29.142222",
+    "summary": "",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "spec.md",
+            "path": "spec.md",
+            "type": "Add"
+        },
+        {
+            "name": "bgm_main.mp3",
+            "path": "assets/bgm_main.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "item_can.png",
+            "path": "assets/item_can.png",
+            "type": "Add"
+        },
+        {
+            "name": "item_newspaper.png",
+            "path": "assets/item_newspaper.png",
+            "type": "Add"
+        },
+        {
+            "name": "item_plastic_bottle.png",
+            "path": "assets/item_plastic_bottle.png",
+            "type": "Add"
+        },
+        {
+            "name": "monster_player_robot_1.png",
+            "path": "assets/monster_player_robot_1.png",
+            "type": "Add"
+        },
+        {
+            "name": "monster_wild_rusty_robot.png",
+            "path": "assets/monster_wild_rusty_robot.png",
+            "type": "Add"
+        },
+        {
+            "name": "monster_wild_trash_drone.png",
+            "path": "assets/monster_wild_trash_drone.png",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_collect.mp3",
+            "path": "assets/sfx_collect.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_combine.mp3",
+            "path": "assets/sfx_combine.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_defeat.mp3",
+            "path": "assets/sfx_defeat.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_hit.mp3",
+            "path": "assets/sfx_hit.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_levelup.mp3",
+            "path": "assets/sfx_levelup.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "tile_grass.png",
+            "path": "assets/tile_grass.png",
+            "type": "Add"
+        },
+        {
+            "name": "tile_wall.png",
+            "path": "assets/tile_wall.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "ccf9d1b8050c2c0e3ea88e71a0500ecea2e9d24a33b4949bae0db55a637e3010",
+            "size": 5459,
+            "mtime": 1762693502.1385849
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1761399375.5725453
+        },
+        "game.ts": {
+            "hash": "961eabd95c7946a7c0520b19d2f20b266fc394a732133a2448c804ddaaa782c0",
+            "size": 44756,
+            "mtime": 1762693596.1110353
+        },
+        "spec.md": {
+            "hash": "5df686f3e50390e71c79f15bbbed8bcdbc3a25c6a5b918814b5e6161c9edbb15",
+            "size": 4843,
+            "mtime": 1762689544.7886245
+        },
+        "assets/bgm_main.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1761211729.270481
+        },
+        "assets/item_can.png": {
+            "hash": "17902fe3f9c28878a82578cc307c2f7571a946ba2c3305eefb04a1ef6b9b58ce",
+            "size": 497,
+            "mtime": 1762690811.3624353
+        },
+        "assets/item_newspaper.png": {
+            "hash": "76a1b5e1579068f6eb82748a30ddaa89ec287443a79062bdfb4c54153109fbde",
+            "size": 552,
+            "mtime": 1762690811.3583217
+        },
+        "assets/item_plastic_bottle.png": {
+            "hash": "d355500fb22d4a7c342f887f7a70e986c585d4076369ba02b65a49f781706014",
+            "size": 399,
+            "mtime": 1762690811.353317
+        },
+        "assets/monster_player_robot_1.png": {
+            "hash": "ddf7977a0f5459a6a3609a1ed73a75f3e12d8e8619de696703e21418c367cf36",
+            "size": 564,
+            "mtime": 1762690811.3644376
+        },
+        "assets/monster_wild_rusty_robot.png": {
+            "hash": "705d552acd97c6e4efc8272faed387e4310be411f5f370056955225a83797397",
+            "size": 477,
+            "mtime": 1762690811.366436
+        },
+        "assets/monster_wild_trash_drone.png": {
+            "hash": "51fccfed9233bc12cab34f2e4fa343f9a6d40d80d6d0ccc8e40cf7c500c49119",
+            "size": 572,
+            "mtime": 1762690811.36847
+        },
+        "assets/player.png": {
+            "hash": "6b3311e6b43cb14f01e7ddb4815acd72dbedd670fcaffd8d2f9079e32651d46a",
+            "size": 565,
+            "mtime": 1762690811.344792
+        },
+        "assets/sfx_collect.mp3": {
+            "hash": "55b11a9db569c7b8aed8e339ff0186b33157f947e1437f4ec198e2837938feeb",
+            "size": 112970,
+            "mtime": 1761748721.30821
+        },
+        "assets/sfx_combine.mp3": {
+            "hash": "55b11a9db569c7b8aed8e339ff0186b33157f947e1437f4ec198e2837938feeb",
+            "size": 112970,
+            "mtime": 1761748721.30821
+        },
+        "assets/sfx_defeat.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/sfx_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/sfx_levelup.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/tile_grass.png": {
+            "hash": "1b5719a6e496d0e13aa0b0ea8e826a8f47e316a03d528e9231ac0ed33667ac56",
+            "size": 733,
+            "mtime": 1762690811.3477893
+        },
+        "assets/tile_wall.png": {
+            "hash": "ee764ac78581d7d9ffc407a141d89c2b9c7fa7008b0426f586854505bdb6f178",
+            "size": 609,
+            "mtime": 1762690811.3497896
+        }
+    }
+}

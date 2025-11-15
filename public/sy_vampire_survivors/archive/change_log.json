@@ -1,0 +1,140 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-14T19:20:23.429754",
+            "summary": "vampire survivors같은 게임을 만들어주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-14T19:21:48.866135",
+            "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-11-14T19:22:08.378931",
+            "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-11-14T19:25:48.059351",
+            "summary": "레벨이 올라가면 공격 속도도 빨라지게 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-11-14T19:33:30.648890",
+            "summary": "레벨이 짝수 레벨이 됐을때는 공격 개수도 하나씩 올려줘",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v6-1",
+            "parent": "v5-1",
+            "timestamp": "2025-11-14T19:35:03.985113",
+            "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-1",
+            "parent": "v6-1",
+            "timestamp": "2025-11-14T19:36:50.089032",
+            "summary": "레벨이 짝수 레벨이 됐을때 공격 개수가 하나씩 올라갔으면 좋겠는데 지금 그렇게 동작을 안하는 것 같아.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v8-1",
+            "parent": "v7-1",
+            "timestamp": "2025-11-14T19:39:44.952517",
+            "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-2",
+            "parent": "v6-1",
+            "timestamp": "2025-11-14T19:44:39.085145",
+            "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v8-2",
+            "parent": "v7-2",
+            "timestamp": "2025-11-14T19:48:33.833007",
+            "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v9-1",
+            "parent": "v8-2",
+            "timestamp": "2025-11-14T20:01:19.219067",
+            "summary": "지금은 레벨이 2의 배수가 되면 공격 개수가 하나씩 증가하는데, 레벨이 3의 배수가 됐을 때 공격 개수가 하나씩 증가하도록 수정했으면 좋겠어.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v10-1",
+            "parent": "v9-1",
+            "timestamp": "2025-11-14T20:08:57.584381",
+            "summary": "맵이 화면보다 더 넓어서 플레이어가 더 넓게 돌아다닐 수 있었으면 좋겠어.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v11-1",
+            "parent": "v10-1",
+            "timestamp": "2025-11-14T20:19:18.905761",
+            "summary": "player의 표시 비율을 8:12로 변경해줘.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v12-1",
+            "parent": "v11-1",
+            "timestamp": "2025-11-14T20:20:12.068220",
+            "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v13-1",
+            "parent": "v12-1",
+            "timestamp": "2025-11-15T20:25:30.955991",
+            "summary": "레벨이 올라갈때 마다 지금보다 적이 조금 더 많이 나왔으면 좋겠어. 점진적으로. 지금은 레벨이 올라갈때마다 공격 능력이 향상되는 것에 비해 적의 숫자나 레벨이 너무 난이도가 쉬워.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v14-1",
+            "parent": "v13-1",
+            "timestamp": "2025-11-15T21:21:31.479359",
+            "summary": "현재 레벨이 올라갈때마다 플레이어의 이동 스피드가 빨라지고 있나요? 알려주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v15-1",
+            "parent": "v14-1",
+            "timestamp": "2025-11-15T23:49:05.682436",
+            "summary": "레벨업 시 사용하는 키를 Enter에서 Space바로 변경해주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

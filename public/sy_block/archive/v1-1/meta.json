@@ -1,0 +1,192 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-14T20:48:22.529080",
+    "summary": "",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "spec.md",
+            "path": "spec.md",
+            "type": "Add"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "type": "Add"
+        },
+        {
+            "name": "ball.png",
+            "path": "assets/ball.png",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "bounce_paddle.mp3",
+            "path": "assets/bounce_paddle.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "bounce_wall.mp3",
+            "path": "assets/bounce_wall.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "brick1.png",
+            "path": "assets/brick1.png",
+            "type": "Add"
+        },
+        {
+            "name": "brick2.png",
+            "path": "assets/brick2.png",
+            "type": "Add"
+        },
+        {
+            "name": "brick_break.mp3",
+            "path": "assets/brick_break.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "brick_broken.png",
+            "path": "assets/brick_broken.png",
+            "type": "Add"
+        },
+        {
+            "name": "brick_hit.mp3",
+            "path": "assets/brick_hit.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "game_win.mp3",
+            "path": "assets/game_win.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "lose_life.mp3",
+            "path": "assets/lose_life.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "paddle.png",
+            "path": "assets/paddle.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "ceb4d022b8a6c62934c43baf26ece4fe63c0c9a1e929712ad771820ce6f89f1e",
+            "size": 2518,
+            "mtime": 1762856637.499242
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1761399375.5725453
+        },
+        "game.ts": {
+            "hash": "7a58c94c6985d44a9a1278439b52fcd40a1ec85b194b73b25e99cd7ec1b1dbdb",
+            "size": 24597,
+            "mtime": 1762856637.499242
+        },
+        "spec.md": {
+            "hash": "2e398751f228fa89dece43392ac1f8cabfca3bd369e7814d428e20707e958cb1",
+            "size": 2204,
+            "mtime": 1762858560.338576
+        },
+        "assets/background.png": {
+            "hash": "c92f9192cc136ed856cb232b2195625b98c31c2b64af59fbfcaf25e2f95dce90",
+            "size": 3590,
+            "mtime": 1762856580.7093084
+        },
+        "assets/ball.png": {
+            "hash": "ef4f19bd73c35066bb76a468160bc343fb1cd0e07516cd47a288366414d3890c",
+            "size": 239,
+            "mtime": 1762856580.7241395
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1761211729.270481
+        },
+        "assets/bounce_paddle.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/bounce_wall.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/brick1.png": {
+            "hash": "f5a6e2709e833a21fbc2d7239e1006f14a6a97a8163905271f3917d86d13c3b7",
+            "size": 429,
+            "mtime": 1762856580.73218
+        },
+        "assets/brick2.png": {
+            "hash": "ab21b7c424e8a5b6664f56b70576faf2cffe7ee4bca32f8a7dd5da77d9d86df9",
+            "size": 494,
+            "mtime": 1762856580.7362056
+        },
+        "assets/brick_break.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/brick_broken.png": {
+            "hash": "3151727ce6626ff4729441528d9586f6e49e4f71d8830e9002ec808caf23b12b",
+            "size": 529,
+            "mtime": 1762856580.7398686
+        },
+        "assets/brick_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/game_win.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/lose_life.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/paddle.png": {
+            "hash": "6868c47e7c3ee662e373691de35f447cbbc374201ff9988427ccd7cba5bc4e32",
+            "size": 493,
+            "mtime": 1762856580.7221303
+        }
+    }
+}

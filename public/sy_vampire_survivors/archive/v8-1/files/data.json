@@ -1,0 +1,179 @@
+{
+    "canvas": {
+        "width": 900,
+        "height": 600
+    },
+    "player": {
+        "speed": 150,
+        "maxHealth": 100,
+        "baseDamage": 10,
+        "attackCooldown": 0.5,
+        "projectileSpeed": 300,
+        "projectileLifetime": 2,
+        "assetName": "player",
+        "weaponAsset": "player_bullet",
+        "expGemAttractRadius": 100,
+        "expBarWidth": 200,
+        "expBarHeight": 15,
+        "healthBarWidth": 150,
+        "healthBarHeight": 20,
+        "playerSize": 50,
+        "baseNumberOfAttacks": 1,
+        "attackSpreadAngle": 30
+    },
+    "enemies": [
+        {
+            "name": "slime",
+            "assetName": "enemy_slime",
+            "maxHealth": 30,
+            "speed": 50,
+            "damage": 5,
+            "expReward": 10,
+            "spawnRateWeight": 0.6,
+            "size": 40
+        },
+        {
+            "name": "bat",
+            "assetName": "enemy_bat",
+            "maxHealth": 50,
+            "speed": 70,
+            "damage": 7,
+            "expReward": 15,
+            "spawnRateWeight": 0.3,
+            "size": 50
+        },
+        {
+            "name": "golem",
+            "assetName": "enemy_golem",
+            "maxHealth": 150,
+            "speed": 30,
+            "damage": 10,
+            "expReward": 50,
+            "spawnRateWeight": 0.1,
+            "size": 70
+        }
+    ],
+    "projectiles": {
+        "assetName": "player_bullet",
+        "size": 20
+    },
+    "experienceGems": {
+        "assetName": "exp_gem",
+        "baseValue": 10,
+        "size": 20
+    },
+    "gameplay": {
+        "enemySpawnInterval": 2,
+        "initialEnemyCount": 5,
+        "maxEnemies": 50,
+        "levelUpExpMultiplier": 1.5,
+        "attackSpeedIncreasePerLevel": 0.03
+    },
+    "ui": {
+        "font": "Arial",
+        "textColor": "white",
+        "titleScreenText": "Press any key or click to start!",
+        "gameOverText": "GAME OVER!",
+        "levelUpText": "LEVEL UP!",
+        "levelUpOptions": [
+            {
+                "name": "Increase Speed",
+                "description": "Moves 0.5 units faster",
+                "effect": "player.speed += 50;"
+            },
+            {
+                "name": "Increase Damage",
+                "description": "Deals 5 more damage",
+                "effect": "player.damage += 5;"
+            },
+            {
+                "name": "Heal & Max HP",
+                "description": "Restores health and increases max HP by 10",
+                "effect": "player.maxHealth += 10; player.health = player.maxHealth;"
+            },
+            {
+                "name": "Faster Attacks",
+                "description": "Attack cooldown reduced by 10%",
+                "effect": "player.attackCooldown *= 0.9;"
+            }
+        ]
+    },
+    "assets": {
+        "images": [
+            {
+                "name": "player",
+                "path": "assets/player.png",
+                "width": 64,
+                "height": 64
+            },
+            {
+                "name": "enemy_slime",
+                "path": "assets/enemy_slime.png",
+                "width": 64,
+                "height": 64
+            },
+            {
+                "name": "enemy_bat",
+                "path": "assets/enemy_bat.png",
+                "width": 64,
+                "height": 64
+            },
+            {
+                "name": "enemy_golem",
+                "path": "assets/enemy_golem.png",
+                "width": 64,
+                "height": 64
+            },
+            {
+                "name": "player_bullet",
+                "path": "assets/player_bullet.png",
+                "width": 10,
+                "height": 20
+            },
+            {
+                "name": "exp_gem",
+                "path": "assets/exp_gem.png",
+                "width": 16,
+                "height": 16
+            }
+        ],
+        "sounds": [
+            {
+                "name": "bgm",
+                "path": "assets/bgm.mp3",
+                "duration_seconds": 60,
+                "volume": 0.3
+            },
+            {
+                "name": "shoot",
+                "path": "assets/shoot.mp3",
+                "duration_seconds": 0.5,
+                "volume": 0.7
+            },
+            {
+                "name": "enemy_hit",
+                "path": "assets/enemy_hit.mp3",
+                "duration_seconds": 0.3,
+                "volume": 0.5
+            },
+            {
+                "name": "player_hit",
+                "path": "assets/player_hit.mp3",
+                "duration_seconds": 0.3,
+                "volume": 0.7
+            },
+            {
+                "name": "level_up",
+                "path": "assets/level_up.mp3",
+                "duration_seconds": 1,
+                "volume": 0.8
+            },
+            {
+                "name": "gem_collect",
+                "path": "assets/gem_collect.mp3",
+                "duration_seconds": 0.2,
+                "volume": 0.6
+            }
+        ]
+    }
+}

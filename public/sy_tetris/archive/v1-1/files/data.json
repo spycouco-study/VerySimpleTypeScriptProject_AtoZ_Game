@@ -1,0 +1,69 @@
+{
+    "gameSettings": {
+        "canvasWidth": 800,
+        "canvasHeight": 600,
+        "gridWidth": 10,
+        "gridHeight": 20,
+        "blockSize": 30,
+        "initialDropIntervalMs": 1000,
+        "levelUpLines": 10,
+        "dropIntervalDecreaseFactor": 0.85,
+        "scorePerLine": 100,
+        "scorePerDoubleLine": 300,
+        "scorePerTripleLine": 500,
+        "scorePerTetris": 800,
+        "softDropScorePerBlock": 1,
+        "hardDropScorePerBlock": 2
+    },
+    "colors": {
+        "backgroundColor": "#1a1a1a",
+        "gridLineColor": "#333333",
+        "textColor": "#FFFFFF"
+    },
+    "tetrominoes": [
+        { "name": "I", "color": "cyan", "texture": "block_cyan", "shape": [ [0,0,0,0], [1,1,1,1], [0,0,0,0], [0,0,0,0] ] },
+        { "name": "J", "color": "blue", "texture": "block_blue", "shape": [ [1,0,0], [1,1,1], [0,0,0] ] },
+        { "name": "L", "color": "orange", "texture": "block_orange", "shape": [ [0,0,1], [1,1,1], [0,0,0] ] },
+        { "name": "O", "color": "yellow", "texture": "block_yellow", "shape": [ [1,1], [1,1] ] },
+        { "name": "S", "color": "green", "texture": "block_green", "shape": [ [0,1,1], [1,1,0], [0,0,0] ] },
+        { "name": "T", "color": "purple", "texture": "block_purple", "shape": [ [0,1,0], [1,1,1], [0,0,0] ] },
+        { "name": "Z", "color": "red", "texture": "block_red", "shape": [ [1,1,0], [0,1,1], [0,0,0] ] }
+    ],
+    "textContents": {
+        "titleScreen": {
+            "title": "TETRIS",
+            "pressKey": "Press ENTER to Start"
+        },
+        "gameOverScreen": {
+            "gameOver": "GAME OVER",
+            "score": "SCORE: ",
+            "pressKey": "Press ENTER to Restart"
+        },
+        "ui": {
+            "score": "SCORE:",
+            "level": "LEVEL:",
+            "next": "NEXT:"
+        }
+    },
+    "assets": {
+        "images": [
+            { "name": "background", "path": "assets/background.png", "width": 800, "height": 600 },
+            { "name": "title_logo", "path": "assets/title_logo.png", "width": 400, "height": 150 },
+            { "name": "block_cyan", "path": "assets/block_cyan.png", "width": 30, "height": 30 },
+            { "name": "block_blue", "path": "assets/block_blue.png", "width": 30, "height": 30 },
+            { "name": "block_orange", "path": "assets/block_orange.png", "width": 30, "height": 30 },
+            { "name": "block_yellow", "path": "assets/block_yellow.png", "width": 30, "height": 30 },
+            { "name": "block_green", "path": "assets/block_green.png", "width": 30, "height": 30 },
+            { "name": "block_purple", "path": "assets/block_purple.png", "width": 30, "height": 30 },
+            { "name": "block_red", "path": "assets/block_red.png", "width": 30, "height": 30 },
+            { "name": "grid_tile", "path": "assets/grid_tile.png", "width": 30, "height": 30 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 120.0, "volume": 0.3 },
+            { "name": "drop", "path": "assets/drop.mp3", "duration_seconds": 0.1, "volume": 0.7 },
+            { "name": "line_clear", "path": "assets/line_clear.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+            { "name": "game_over", "path": "assets/game_over.mp3", "duration_seconds": 2.0, "volume": 0.7 },
+            { "name": "rotate", "path": "assets/rotate.mp3", "duration_seconds": 0.1, "volume": 0.7 }
+        ]
+    }
+}

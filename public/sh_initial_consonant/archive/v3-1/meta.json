@@ -1,0 +1,103 @@
+{
+    "version": "v3-1",
+    "parent": "v2-4",
+    "timestamp": "2025-11-15T14:15:34.293720",
+    "summary": "현재 게임이 종료되도 bgm 음악이 계속나오고 다음게임이 시작되면 bgm이 또 재생되서 겹치게 들리는데 게임이 종료되면 음악도 종료되게 해줘.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "correct.mp3",
+            "path": "assets/correct.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "gameOver.mp3",
+            "path": "assets/gameOver.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "heart.png",
+            "path": "assets/heart.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "wrong.mp3",
+            "path": "assets/wrong.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "5accb61c5c44447a6635b216c361a44f66cba8145e09d1a8e933642bb8c71424",
+            "size": 3863,
+            "mtime": 1763183730.0190682
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763183267.1763046
+        },
+        "game.ts": {
+            "hash": "40c32acc92ec57b041b9b21c438dbde09721c30512e0c36652fedc6def9df1d5",
+            "size": 19561,
+            "mtime": 1763183730.0092962
+        },
+        "assets/background.png": {
+            "hash": "5499d20d88cefba20c9776cdb0b4e1068840976ecaf30f134f3f34d5dae7cb7b",
+            "size": 3572,
+            "mtime": 1763183267.1828668
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763183267.1949322
+        },
+        "assets/correct.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763183267.1969385
+        },
+        "assets/gameOver.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763183267.2009509
+        },
+        "assets/heart.png": {
+            "hash": "cfd1bdd9f8e9b320de67299fdaa7e68a88139839b26269b1e9a338da273c43bb",
+            "size": 436,
+            "mtime": 1763183267.20498
+        },
+        "assets/wrong.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763183267.2064867
+        }
+    }
+}
