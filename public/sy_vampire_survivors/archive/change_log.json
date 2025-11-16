@@ -133,6 +133,302 @@
             "parent": "v14-1",
             "timestamp": "2025-11-15T23:49:05.682436",
             "summary": "레벨업 시 사용하는 키를 Enter에서 Space바로 변경해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v16-1",
+            "parent": "v15-1",
+            "timestamp": "2025-11-16T02:02:14.786174",
+            "summary": "게임 배경 이미지 에셋을 추가해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v17-1",
+            "parent": "v16-1",
+            "timestamp": "2025-11-16T13:37:54.178815",
+            "summary": "타이틀에 표시되는 텍스트를 'Zombie Survivors'로 바꿔줘",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v18-1",
+            "parent": "v17-1",
+            "timestamp": "2025-11-16T14:04:50.739223",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v19-1",
+            "parent": "v18-1",
+            "timestamp": "2025-11-16T14:11:04.178847",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v20-1",
+            "parent": "v19-1",
+            "timestamp": "2025-11-16T15:38:11.525174",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v21-1",
+            "parent": "v20-1",
+            "timestamp": "2025-11-16T15:39:28.683017",
+            "summary": "player_bullet.png파일을 다른 파일로 교체 했씁니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v22-1",
+            "parent": "v21-1",
+            "timestamp": "2025-11-16T15:45:39.747050",
+            "summary": "player_bullet.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v23-1",
+            "parent": "v22-1",
+            "timestamp": "2025-11-16T15:48:20.671742",
+            "summary": "게임에 나오는 각 유닛들의 그림자가 있었으면 좋겠습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v24-1",
+            "parent": "v23-1",
+            "timestamp": "2025-11-16T15:50:19.469771",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v25-1",
+            "parent": "v24-1",
+            "timestamp": "2025-11-16T15:55:16.640751",
+            "summary": "exp_gem.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v26-1",
+            "parent": "v25-1",
+            "timestamp": "2025-11-16T15:55:26.279394",
+            "summary": "player_bullet.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v27-1",
+            "parent": "v26-1",
+            "timestamp": "2025-11-16T15:59:23.478381",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v28-1",
+            "parent": "v27-1",
+            "timestamp": "2025-11-16T16:00:18.959851",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v29-1",
+            "parent": "v28-1",
+            "timestamp": "2025-11-16T16:00:52.017317",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v30-1",
+            "parent": "v29-1",
+            "timestamp": "2025-11-16T16:20:58.314835",
+            "summary": "level_up.mp3파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v31-1",
+            "parent": "v30-1",
+            "timestamp": "2025-11-16T16:22:38.359626",
+            "summary": "shoot.mp3파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v32-1",
+            "parent": "v31-1",
+            "timestamp": "2025-11-16T16:24:39.672243",
+            "summary": "bgm.mp3파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v33-1",
+            "parent": "v32-1",
+            "timestamp": "2025-11-16T16:34:23.833789",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v34-1",
+            "parent": "v33-1",
+            "timestamp": "2025-11-16T16:37:41.979939",
+            "summary": "게임의 타이틀 이미지를 하나 만들어줘.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v35-1",
+            "parent": "v34-1",
+            "timestamp": "2025-11-16T16:38:55.730810",
+            "summary": "title_screen_image.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v36-1",
+            "parent": "v35-1",
+            "timestamp": "2025-11-16T16:41:53.949681",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v37-1",
+            "parent": "v36-1",
+            "timestamp": "2025-11-16T16:44:15.825335",
+            "summary": "플레이어의 체력 및 경험치 게이지 디자인을 개선하여 더 예쁘게 만들어 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v38-1",
+            "parent": "v37-1",
+            "timestamp": "2025-11-16T16:46:08.065924",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v39-1",
+            "parent": "v38-1",
+            "timestamp": "2025-11-16T16:49:03.301819",
+            "summary": "레벨이 증가할 때마다 현재보다 적들이 조금 더 많이 등장하도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v40-1",
+            "parent": "v39-1",
+            "timestamp": "2025-11-16T16:56:57.838656",
+            "summary": "레벨이 올라갈 때마다 증가하는 적의 수를 늘려주세요.\n경험치 코인을 획득할 수 있는 제한 시간을 10초로 설정해주세요.\n경험치 코인이 제한 시간 10초에 임박하면 깜빡이다가 사라지게 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v40-2",
+            "parent": "v39-1",
+            "timestamp": "2025-11-16T17:00:20.008817",
+            "summary": "레벨이 올라갈 때마다 증가하는 적의 수를 늘려주세요.\n경험치 코인을 먹을 수 있는 제한 시간을 10초로 설정해주세요.\n경험치 코인이 제한 시간 10초에 임박하면 깜빡이다가 없어지도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v41-1",
+            "parent": "v40-2",
+            "timestamp": "2025-11-16T17:03:05.076985",
+            "summary": "게임 오버되었을 때 재생되는 음악을 추가해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v42-1",
+            "parent": "v41-1",
+            "timestamp": "2025-11-16T17:03:20.526774",
+            "summary": "game_over.mp3파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v43-1",
+            "parent": "v42-1",
+            "timestamp": "2025-11-16T17:15:52.440061",
+            "summary": "아이템이 가끔씩 나왔으면 좋겠습니다.\n두 가지 아이템을 추가해 주세요.\n첫 번째 아이템은 '자석'입니다. 이 아이템은 일정 시간 동안 평소보다 멀리 있는 경험치도 당겨서 획득할 수 있는 기능을 가집니다.\n두 번째 아이템은 '필살기'입니다. 이 아이템은 일정 시간 동안 방사형으로 모든 방향으로 공격이 발사되는 기능을 가집니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v44-1",
+            "parent": "v43-1",
+            "timestamp": "2025-11-16T17:20:39.202531",
+            "summary": "아이템이 너무 자주 나오는 것 같아. 조금 더 가끔씩 나왔으면 좋겠어.\n방사형 공격하는 아이템이 너무 강한 것 같아.\n방사형으로 하되 공격이 나가는 주기가 지금보다는 길었으면 좋겠어.\n너무 연속적으로 공격이 많이 나가.\n방사형 공격은 지속 시간도 지금보다는 짧았으면 좋겠어.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v45-1",
+            "parent": "v44-1",
+            "timestamp": "2025-11-16T17:31:53.913275",
+            "summary": "아이템이 랜덤으로 아무곳에나 생성되는게 아니라 적을 잡았을때 가끔씩 나오는 방식이 더 좋을 것 같아.\n일정정도 체력을 회복시켜주는 아이템도 추가해줘.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v46-1",
+            "parent": "v45-1",
+            "timestamp": "2025-11-16T17:35:05.397568",
+            "summary": "적 처치 시 아이템 드롭 빈도를 현재보다 낮게 조절해 주세요.\n아이템 획득 방식을 일반 경험치 코인처럼 자동으로 끌어당겨져 획득되도록 변경해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v47-1",
+            "parent": "v46-1",
+            "timestamp": "2025-11-16T17:38:44.122835",
+            "summary": "item_health_potion.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v48-1",
+            "parent": "v47-1",
+            "timestamp": "2025-11-16T17:38:55.508583",
+            "summary": "item_magnet.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v49-1",
+            "parent": "v48-1",
+            "timestamp": "2025-11-16T17:39:02.675242",
+            "summary": "item_special_attack.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v50-1",
+            "parent": "v49-1",
+            "timestamp": "2025-11-16T17:46:38.781644",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v51-1",
+            "parent": "v50-1",
+            "timestamp": "2025-11-16T18:00:09.350801",
+            "summary": "게임 데이터 수정",
             "is_latest": true,
             "is_current": true
         }

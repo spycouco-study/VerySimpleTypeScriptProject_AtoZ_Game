@@ -41,7 +41,7 @@ function compileTS(file_path) {
 
 app.get("/game.js", (req, res) => {
     try {
-        const url =  req.get("referer");
+        const url = req.get("referer");
         let filename = fileURLToPath(import.meta.url);
         let dirname = path.dirname(filename);
         let endPath = path.join("public", url.split("/").at(-2));
@@ -49,7 +49,14 @@ app.get("/game.js", (req, res) => {
 
         console.log("컴파일 경로:", file_path);
         const jsCode = compileTS(file_path);
+
+        res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate, proxy-revalidate");
+        res.setHeader("Pragma", "no-cache");
+        res.setHeader("Expires", "0");
+        res.setHeader("Surrogate-Control", "no-store");
+
         res.type("application/javascript").send(jsCode);
+
     } catch (err) {
         console.error("컴파일 오류:", err);
         res.status(500).send(`console.error("컴파일 오류:", "${err.message}")`);
