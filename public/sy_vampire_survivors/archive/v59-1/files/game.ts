@@ -27,7 +27,6 @@ interface GameData {
         baseNumberOfAttacks: number; // Initial number of projectiles fired per attack
         attackSpreadAngle: number; // Total spread angle in degrees for multiple projectiles
         specialAttackBaseFireRate: number; // NEW: How often special attack fires when active
-        hitSoundCooldownDuration: number; // NEW: Duration for player hit sound cooldown
     };
     enemies: Array<{
         name: string;
@@ -159,7 +158,6 @@ interface Player extends GameObject {
     isSpecialAttacking: boolean;        // Flag to indicate if special attack is active
     specialAttackFireCooldown: number; // For controlling radial attack fire rate
     specialAttackBaseFireRate: number; // For special attack fire rate in data.json
-    hitSoundCooldown: number; // NEW: Cooldown for player_hit sound
 }
 
 interface Enemy extends GameObject {
@@ -232,7 +230,6 @@ let lastEnemySpawnTime = 0;
 // REMOVED: let lastItemSpawnTime = 0; // NEW: Timer for item spawning
 let enemyIdCounter = 0;
 let gameTimer = 0; // In seconds
-let finalSurvivalTime: number = 0; // MODIFIED: Stores the game time when GAME_OVER state is reached.
 
 let cameraX: number = 0; // NEW: X-coordinate of the camera's top-left corner in world space
 let cameraY: number = 0; // NEW: Y-coordinate of the camera's top-left corner in world space
@@ -367,7 +364,6 @@ function startNewGame(): void {
         isSpecialAttacking: false,
         specialAttackFireCooldown: 0, // Ready to fire initially
         specialAttackBaseFireRate: gameData.player.specialAttackBaseFireRate,
-        hitSoundCooldown: 0, // NEW: Initialize to 0, ready to play sound
     };
 
     // Clear entities
@@ -381,7 +377,6 @@ function startNewGame(): void {
     // REMOVED: lastItemSpawnTime = 0; // NEW: Reset item spawn timer
     enemyIdCounter = 0;
     gameTimer = 0; // Reset game timer on new game
-    finalSurvivalTime = 0; // MODIFIED: Reset final survival time on new game
 
     // NEW: Initialize dynamic gameplay values based on data and starting level (level 1)
     currentEffectiveMaxEnemies = gameData.gameplay.baseMaxEnemies;
@@ -440,8 +435,7 @@ function gameLoop(currentTime: DOMHighResTimeStamp): void {
 
 // --- Update Logic ---
 function update(dt: number): void {
-    // MODIFIED: gameTimer always updates for title screen blinking and general game time
-    gameTimer += dt;
+    gameTimer += dt; // MODIFIED: Moved outside the if block so it updates in all states, allowing title screen blinking
 
     if (gameState === GameState.PLAYING) {
         updatePlayer(dt);
@@ -454,7 +448,7 @@ function update(dt: number): void {
         spawnEnemies(dt);
         // REMOVED: spawnItems(dt) function as items now drop from enemies
     }
-    // Other states (TITLE, LEVEL_UP, GAME_OVER) do not update game logic or timer (except for the general gameTimer)
+    // Other states (TITLE, LEVEL_UP, GAME_OVER) do not update game logic or timer
 }
 
 function updatePlayer(dt: number): void {
@@ -481,11 +475,6 @@ function updatePlayer(dt: number): void {
     // Using player.size for boundary checks, consistent with collision detection
     player.x = Math.max(player.size / 2, Math.min(gameData.canvas.mapWidth - player.size / 2, player.x));
     player.y = Math.max(player.size / 2, Math.min(gameData.canvas.mapHeight - player.size / 2, player.y));
-
-    // NEW: Decrement player hit sound cooldown
-    if (player.hitSoundCooldown > 0) {
-        player.hitSoundCooldown -= dt;
-    }
 
     // NEW: Update item effect timers
     if (player.magnetEffectTimer > 0) {
@@ -872,15 +861,7 @@ function checkCollisions(): void {
             player.health -= enemy.damage * deltaTime; // Apply damage over time
             // For now, playing hit sound repeatedly during collision is too noisy.
             // A cooldown or dedicated 'player_damaged' event could be used.
-            // NEW: Play player_hit sound with cooldown
-            if (player.hitSoundCooldown <= 0) {
-                playSound('player_hit');
-                player.hitSoundCooldown = gameData.player.hitSoundCooldownDuration;
-            }
-
             if (player.health <= 0) {
-                // MODIFIED: Store the game time when game over happens
-                finalSurvivalTime = gameTimer;
                 gameState = GameState.GAME_OVER;
                 stopAllSounds(); // Stop BGM on game over
                 playBGM('game_over_music'); // Play game over music
@@ -1338,9 +1319,8 @@ function drawGameOverScreen(): void {
     ctx.font = `bold 48px ${gameData.ui.font}`;
     ctx.fillText(gameData.ui.gameOverText, canvas.width / 2, canvas.height / 2 - 50);
 
-    // MODIFIED: Display finalSurvivalTime instead of gameTimer
     ctx.font = `24px ${gameData.ui.font}`;
-    ctx.fillText(`You survived for: ${Math.floor(finalSurvivalTime / 60).toString().padStart(2, '0')}:${Math.floor(finalSurvivalTime % 60).toString().padStart(2, '0')}`, canvas.width / 2, canvas.height / 2 + 20);
+    ctx.fillText(`You survived for: ${Math.floor(gameTimer / 60).toString().padStart(2, '0')}:${Math.floor(gameTimer % 60).toString().padStart(2, '0')}`, canvas.width / 2, canvas.height / 2 + 20);
     ctx.fillText('Press Spacebar to restart.', canvas.width / 2, canvas.height / 2 + 60);
 }
 

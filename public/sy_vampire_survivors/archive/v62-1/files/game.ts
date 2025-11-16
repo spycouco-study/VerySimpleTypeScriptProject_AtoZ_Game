@@ -27,7 +27,6 @@ interface GameData {
         baseNumberOfAttacks: number; // Initial number of projectiles fired per attack
         attackSpreadAngle: number; // Total spread angle in degrees for multiple projectiles
         specialAttackBaseFireRate: number; // NEW: How often special attack fires when active
-        hitSoundCooldownDuration: number; // NEW: Duration for player hit sound cooldown
     };
     enemies: Array<{
         name: string;
@@ -159,7 +158,6 @@ interface Player extends GameObject {
     isSpecialAttacking: boolean;        // Flag to indicate if special attack is active
     specialAttackFireCooldown: number; // For controlling radial attack fire rate
     specialAttackBaseFireRate: number; // For special attack fire rate in data.json
-    hitSoundCooldown: number; // NEW: Cooldown for player_hit sound
 }
 
 interface Enemy extends GameObject {
@@ -367,7 +365,6 @@ function startNewGame(): void {
         isSpecialAttacking: false,
         specialAttackFireCooldown: 0, // Ready to fire initially
         specialAttackBaseFireRate: gameData.player.specialAttackBaseFireRate,
-        hitSoundCooldown: 0, // NEW: Initialize to 0, ready to play sound
     };
 
     // Clear entities
@@ -481,11 +478,6 @@ function updatePlayer(dt: number): void {
     // Using player.size for boundary checks, consistent with collision detection
     player.x = Math.max(player.size / 2, Math.min(gameData.canvas.mapWidth - player.size / 2, player.x));
     player.y = Math.max(player.size / 2, Math.min(gameData.canvas.mapHeight - player.size / 2, player.y));
-
-    // NEW: Decrement player hit sound cooldown
-    if (player.hitSoundCooldown > 0) {
-        player.hitSoundCooldown -= dt;
-    }
 
     // NEW: Update item effect timers
     if (player.magnetEffectTimer > 0) {
@@ -872,12 +864,6 @@ function checkCollisions(): void {
             player.health -= enemy.damage * deltaTime; // Apply damage over time
             // For now, playing hit sound repeatedly during collision is too noisy.
             // A cooldown or dedicated 'player_damaged' event could be used.
-            // NEW: Play player_hit sound with cooldown
-            if (player.hitSoundCooldown <= 0) {
-                playSound('player_hit');
-                player.hitSoundCooldown = gameData.player.hitSoundCooldownDuration;
-            }
-
             if (player.health <= 0) {
                 // MODIFIED: Store the game time when game over happens
                 finalSurvivalTime = gameTimer;

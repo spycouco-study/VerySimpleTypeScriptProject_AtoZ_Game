@@ -17,7 +17,19 @@ const __endPath = path.join("public");
 // const tsFilePath = path.join(__dirname, __endPath, "game.ts");
 
 // public 폴더에서 정적 파일 제공 (index.html, assets 등)
-app.use(express.static(path.join(__dirname, __endPath)));
+//app.use(express.static(path.join(__dirname, __endPath)));
+// app.use(express.static(path.join(__dirname, __endPath), {
+//     setHeaders: (res, path) => {
+//         res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+//     }
+// }));
+app.use(express.static(path.join(__dirname, __endPath), {
+  setHeaders: (res) => {
+    res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+    res.setHeader("Pragma", "no-cache");
+    res.setHeader("Expires", "0");
+  }
+}));
 
 function compileTS(file_path) {
     const tsCode = fs.readFileSync(file_path, "utf-8");

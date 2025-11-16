@@ -20,8 +20,7 @@
         "playerDrawHeight": 60,
         "baseNumberOfAttacks": 1,
         "attackSpreadAngle": 30,
-        "specialAttackBaseFireRate": 0.2,
-        "hitSoundCooldownDuration": 0.5
+        "specialAttackBaseFireRate": 0.2
     },
     "enemies": [
         {

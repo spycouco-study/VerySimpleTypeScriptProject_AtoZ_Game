@@ -7,7 +7,7 @@
         "backgroundImage": "background"
     },
     "player": {
-        "speed": 90,
+        "speed": 100,
         "maxHealth": 100,
         "baseDamage": 10,
         "attackCooldown": 0.5,
@@ -20,8 +20,7 @@
         "playerDrawHeight": 60,
         "baseNumberOfAttacks": 1,
         "attackSpreadAngle": 30,
-        "specialAttackBaseFireRate": 0.2,
-        "hitSoundCooldownDuration": 0.5
+        "specialAttackBaseFireRate": 0.2
     },
     "enemies": [
         {
@@ -74,7 +73,7 @@
             "size": 30,
             "effectDuration": 30,
             "effectValue": 250,
-            "spawnRateWeight": 0.08,
+            "spawnRateWeight": 0.07,
             "totalLifetime": 15
         },
         {
@@ -83,7 +82,7 @@
             "size": 30,
             "effectDuration": 4,
             "effectValue": 15,
-            "spawnRateWeight": 0.08,
+            "spawnRateWeight": 0.07,
             "totalLifetime": 15
         },
         {
@@ -92,7 +91,7 @@
             "size": 30,
             "effectDuration": 0,
             "effectValue": 30,
-            "spawnRateWeight": 0.08,
+            "spawnRateWeight": 0.07,
             "totalLifetime": 15
         }
     ],
@@ -114,7 +113,7 @@
     "ui": {
         "font": "Arial",
         "textColor": "white",
-        "gameTitleText": "",
+        "gameTitleText": "Vampire Survivor Clone",
         "titleScreenText": "Press any key to start",
         "gameOverText": "GAME OVER!",
         "levelUpText": "LEVEL UP!",
@@ -122,7 +121,7 @@
             {
                 "name": "Increase Speed",
                 "description": "Moves 5 units faster",
-                "effect": "player.speed += 4;"
+                "effect": "player.speed += 5;"
             },
             {
                 "name": "Increase Damage",
@@ -142,7 +141,7 @@
         ],
         "titleScreenImage": "title_screen_image",
         "titleScreenTextYOffsetFromBottom": 80,
-        "titleScreenBlinkFrequency": 2,
+        "titleScreenBlinkFrequency": 1,
         "healthBar": {
             "width": 150,
             "height": 20,

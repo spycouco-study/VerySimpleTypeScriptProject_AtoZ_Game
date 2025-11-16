@@ -21,7 +21,7 @@
         "baseNumberOfAttacks": 1,
         "attackSpreadAngle": 30,
         "specialAttackBaseFireRate": 0.2,
-        "hitSoundCooldownDuration": 0.5
+        "hitSoundCooldownDuration": 0.3
     },
     "enemies": [
         {

@@ -429,6 +429,166 @@
             "parent": "v50-1",
             "timestamp": "2025-11-16T18:00:09.350801",
             "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v52-1",
+            "parent": "v51-1",
+            "timestamp": "2025-11-16T18:48:24.017929",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v53-1",
+            "parent": "v52-1",
+            "timestamp": "2025-11-16T19:03:28.317604",
+            "summary": "title_screen_image.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v54-1",
+            "parent": "v53-1",
+            "timestamp": "2025-11-16T19:06:07.239972",
+            "summary": "타이틀 화면에서 'Press any key to start' 문구를 화면 하단으로 배치해주세요.\n'Press any key to start' 문구를 천천히 깜빡이도록 구현해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v54-2",
+            "parent": "v53-1",
+            "timestamp": "2025-11-16T19:08:23.930975",
+            "summary": "타이틀 화면에서 'Press any key to start' 문구를 화면 하단으로 배치해주세요.\n'Press any key to start' 문구를 천천히 깜빡이도록 구현해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v55-1",
+            "parent": "v54-2",
+            "timestamp": "2025-11-16T19:08:58.732780",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v56-1",
+            "parent": "v55-1",
+            "timestamp": "2025-11-16T19:15:49.304221",
+            "summary": "게임오버가 됐을 때 새 게임을 시작하려면 스페이스바를 눌러야 하도록 수정해주세요.\n게임오버가 됐는데도 시간이 계속 올라가는 버그를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v56-2",
+            "parent": "v55-1",
+            "timestamp": "2025-11-16T19:27:00.341547",
+            "summary": "게임 오버 시 새 게임을 시작하기 위해 스페이스바를 누르도록 수정해주세요.\n게임 오버가 되었을 때 시간이 계속 올라가는 버그를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v57-1",
+            "parent": "v56-2",
+            "timestamp": "2025-11-16T19:28:15.654048",
+            "summary": "타이틀 화면에서 'Press any key to start' 문구가 천천히 깜빡이도록 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v58-1",
+            "parent": "v57-1",
+            "timestamp": "2025-11-16T19:29:48.872225",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v59-1",
+            "parent": "v58-1",
+            "timestamp": "2025-11-16T19:31:30.164428",
+            "summary": "현재 타이틀 화면에서 'Press any key to start' 문구가 깜빡이지 않습니다. 해당 문구가 천천히 깜빡이도록 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v60-1",
+            "parent": "v59-1",
+            "timestamp": "2025-11-16T19:32:03.261989",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v61-1",
+            "parent": "v60-1",
+            "timestamp": "2025-11-16T19:32:13.553987",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v62-1",
+            "parent": "v61-1",
+            "timestamp": "2025-11-16T19:54:22.868927",
+            "summary": "게임오버 시 생존 시간이 더 이상 증가하지 않도록 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v63-1",
+            "parent": "v62-1",
+            "timestamp": "2025-11-16T19:57:28.418732",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v64-1",
+            "parent": "v63-1",
+            "timestamp": "2025-11-16T19:59:19.906078",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v65-1",
+            "parent": "v64-1",
+            "timestamp": "2025-11-16T20:25:01.606685",
+            "summary": "player_hit.mp3파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v66-1",
+            "parent": "v65-1",
+            "timestamp": "2025-11-16T20:31:51.005471",
+            "summary": "enemy_hit.mp3파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v67-1",
+            "parent": "v66-1",
+            "timestamp": "2025-11-16T20:35:30.099832",
+            "summary": "enemy_hit.mp3파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v68-1",
+            "parent": "v67-1",
+            "timestamp": "2025-11-16T20:42:01.492764",
+            "summary": "플레이어가 공격 당할 때 'player_hit.mp3'를 재생해 주세요.\n매 공격 시마다 재생하는 대신, 반복적으로 공격 당하는 상황에서도 'player_hit.mp3'가 너무 자주 재생되지 않도록 재생 주기를 두고 제어해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v69-1",
+            "parent": "v68-1",
+            "timestamp": "2025-11-16T20:42:51.896197",
+            "summary": "게임 데이터 수정",
             "is_latest": true,
             "is_current": true
         }
