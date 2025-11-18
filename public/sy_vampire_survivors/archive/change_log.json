@@ -589,8 +589,32 @@
             "parent": "v68-1",
             "timestamp": "2025-11-16T20:42:51.896197",
             "summary": "게임 데이터 수정",
-            "is_latest": true,
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v70-1",
+            "parent": "v69-1",
+            "timestamp": "2025-11-17T14:25:13.311650",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v71-1",
+            "parent": "v70-1",
+            "timestamp": "2025-11-17T14:25:35.108261",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
             "is_current": true
+        },
+        {
+            "version": "v7-3",
+            "parent": "v6-1",
+            "timestamp": "2025-11-18T11:31:32.796381",
+            "summary": "enemy_slime.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": true,
+            "is_current": false
         }
     ]
 }

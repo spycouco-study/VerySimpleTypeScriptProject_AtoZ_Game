@@ -1,0 +1,183 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-11-18T14:08:48.031020",
+    "summary": "이전 페이지를 볼 수 있는 뒤로가기 버튼이 있었으면 좋겠어.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "alparka_logo.png",
+            "path": "assets/alparka_logo.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "arcade_ui.png",
+            "path": "assets/arcade_ui.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background_main.png",
+            "path": "assets/background_main.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_loop.mp3",
+            "path": "assets/bgm_loop.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "click_sfx.mp4",
+            "path": "assets/click_sfx.mp4",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "core_idea_illustration.png",
+            "path": "assets/core_idea_illustration.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "data_table_icon.png",
+            "path": "assets/data_table_icon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "expected_effect_icon.png",
+            "path": "assets/expected_effect_icon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player_ui.png",
+            "path": "assets/player_ui.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "purpose_illustration.png",
+            "path": "assets/purpose_illustration.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "studio_ui.png",
+            "path": "assets/studio_ui.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "team_members.png",
+            "path": "assets/team_members.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "tech_stack_diagram.png",
+            "path": "assets/tech_stack_diagram.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "type_sfx.mp4",
+            "path": "assets/type_sfx.mp4",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "2f4bdbcd111ba4f2701c37576b35e02d308b0dba1e20bff4d0e0b48a9dbf0cda",
+            "size": 10914,
+            "mtime": 1763442527.7487216
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763347007.4116573
+        },
+        "game.ts": {
+            "hash": "0ba2ea5d5ac53b9a6919f13cc66b52de21c8233bcca6036c1646f673b0dd551a",
+            "size": 23573,
+            "mtime": 1763442527.1265275
+        },
+        "assets/alparka_logo.png": {
+            "hash": "5d79926d12fe8422bf33e2127d6767bc17ce568ed24088725694e58d9f9e43da",
+            "size": 1446,
+            "mtime": 1763435796.7429576
+        },
+        "assets/arcade_ui.png": {
+            "hash": "f4731e811acd6919effffbdb00de2dc7c51d2f5c0a5d765ad944ae42f0d93439",
+            "size": 3059,
+            "mtime": 1763435796.8136485
+        },
+        "assets/background_main.png": {
+            "hash": "af1d89098bc8e7a558e32ebef59c1778cda58a4c48e2c95626f97ddb4c23877b",
+            "size": 9560,
+            "mtime": 1763435796.7376187
+        },
+        "assets/bgm_loop.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347007.4590375
+        },
+        "assets/click_sfx.mp4": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/core_idea_illustration.png": {
+            "hash": "91c40b69016b7daae7d137c9059f2b87315db2f00f3fd3695b549019aafe25c7",
+            "size": 2503,
+            "mtime": 1763435796.7693112
+        },
+        "assets/data_table_icon.png": {
+            "hash": "8dc16076411f900321ab6162e823ea47337fabd89876769b6aad6e118e8dc4ab",
+            "size": 1704,
+            "mtime": 1763435796.7602193
+        },
+        "assets/expected_effect_icon.png": {
+            "hash": "a70632750ef451ffcfeeef0dfe646a411c63d4510f4e81de8494b76687b48e99",
+            "size": 1879,
+            "mtime": 1763435796.8410792
+        },
+        "assets/player_ui.png": {
+            "hash": "6e8b219fb1527c6d7487c77f208ab81c6bb8643a9906b9e1140be8b4b27b5c40",
+            "size": 3053,
+            "mtime": 1763435796.833056
+        },
+        "assets/purpose_illustration.png": {
+            "hash": "bdbcc35d9e908fd7f166e53684fd3f10030fe48c292ae2034c4312c859e75d62",
+            "size": 2486,
+            "mtime": 1763435796.7778642
+        },
+        "assets/studio_ui.png": {
+            "hash": "30cb0c0d5e188f2f58542dcfe1837e8e8bae81b09a8c7293d008d184a7249bb7",
+            "size": 2962,
+            "mtime": 1763435796.8062148
+        },
+        "assets/team_members.png": {
+            "hash": "029a2f70312067363d209c5256f09f741c50343169db6a536038addb4eaad2d4",
+            "size": 2586,
+            "mtime": 1763435796.7532284
+        },
+        "assets/tech_stack_diagram.png": {
+            "hash": "1919076b97044ce29c8e0a8d107fc70d2c1cf90acb97d043c10e23a870ebe2bc",
+            "size": 3128,
+            "mtime": 1763435796.7933333
+        },
+        "assets/type_sfx.mp4": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        }
+    }
+}
