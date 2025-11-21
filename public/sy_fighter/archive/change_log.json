@@ -77,6 +77,14 @@
             "parent": "v8-1",
             "timestamp": "2025-11-16T01:22:45.743320",
             "summary": "공격키를 계속 누르고 있을 때 연속으로 공격이 들어가지 않고, 키를 눌렀을 때만 공격이 들어가도록 수정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v10-1",
+            "parent": "v9-2",
+            "timestamp": "2025-11-19T19:50:27.665069",
+            "summary": "game.js 생성",
             "is_latest": true,
             "is_current": true
         }

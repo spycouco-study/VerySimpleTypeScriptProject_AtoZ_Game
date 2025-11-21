@@ -1,0 +1,12 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-20T22:59:36.190651",
+            "summary": "공을 튀길 수도 있고 굴릴 수도 있는 간단한 3D 게임을 만들어주세요.\n물리적인 충돌과 탄성을 구현해주세요.\n마우스로 카메라 시점을 조정할 수 있게 해주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

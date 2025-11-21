@@ -1,0 +1,52 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-19T19:42:59.929803",
+    "summary": "game.js 생성",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "ad39cdda26d992849c53d418fa0baa6db22a91d0a10ec12decef549d3b6e0d79",
+            "size": 583,
+            "mtime": 1763347039.108739
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763347039.108739
+        },
+        "game.js": {
+            "hash": "9e9904fd294600319cb38058419e820635a6497d4e37d472a0227ea23b03a870",
+            "size": 19099,
+            "mtime": 1763547954.8074293
+        },
+        "game.ts": {
+            "hash": "434b50671ebe893aac17b73ee6ed94c52aec55b2b0e6d05f44f71649531e8a39",
+            "size": 21696,
+            "mtime": 1763347039.108739
+        }
+    }
+}

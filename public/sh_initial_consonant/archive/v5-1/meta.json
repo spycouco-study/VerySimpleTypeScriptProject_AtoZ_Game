@@ -1,0 +1,123 @@
+{
+    "version": "v5-1",
+    "parent": "v4-1",
+    "timestamp": "2025-11-19T19:50:26.990977",
+    "summary": "game.js 생성",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "correct.mp3",
+            "path": "assets/correct.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "gameOver.mp3",
+            "path": "assets/gameOver.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "gameWin.mp3",
+            "path": "assets/gameWin.mp3",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "heart.png",
+            "path": "assets/heart.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "wrong.mp3",
+            "path": "assets/wrong.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "a6e9781bd07502ce8bd9c1cedd27c0d82ddcad156bf827267b0a922787ed5878",
+            "size": 5287,
+            "mtime": 1763461680.1666746
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763461680.2015495
+        },
+        "game.js": {
+            "hash": "905105a24a02e042762b0f6f8d80373e32049d50a657365ee78a77b528c19656",
+            "size": 19065,
+            "mtime": 1763547967.5048392
+        },
+        "game.ts": {
+            "hash": "cbdcd6f96c5ce358fa4c04a6d950fb0fd2d9d6e4027c5be361f245fbbf736842",
+            "size": 22226,
+            "mtime": 1763461680.2570627
+        },
+        "assets/background.png": {
+            "hash": "5499d20d88cefba20c9776cdb0b4e1068840976ecaf30f134f3f34d5dae7cb7b",
+            "size": 3572,
+            "mtime": 1763461680.2768514
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763461680.3215733
+        },
+        "assets/correct.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763461680.3569202
+        },
+        "assets/gameOver.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763461680.3832524
+        },
+        "assets/gameWin.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763461680.4187572
+        },
+        "assets/heart.png": {
+            "hash": "cfd1bdd9f8e9b320de67299fdaa7e68a88139839b26269b1e9a338da273c43bb",
+            "size": 436,
+            "mtime": 1763461680.435005
+        },
+        "assets/wrong.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763461680.4688194
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-11-19T19:50:26.760135",
+    "summary": "game.js 생성",
+    "chat": {},
+    "changes": [],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "spec.md",
+            "path": "spec.md",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "size": 2,
+            "mtime": 1763347039.2666326
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763347039.2706335
+        },
+        "game.js": {
+            "hash": "c8ebf03cc9e28f85b756f56b78f66111a38c8bc94bd8806a4f143e0ebcb3b046",
+            "size": 23453,
+            "mtime": 1763547961.6582453
+        },
+        "game.ts": {
+            "hash": "481e7e7cefaf8b4c5b0ac294bf985993148004825073befbaf0443b3920b348a",
+            "size": 26273,
+            "mtime": 1763347039.2736354
+        },
+        "spec.md": {
+            "hash": "63bb1873f5cc461c3ae408a0ed9767e363373827b28d21371b10af9dce463b20",
+            "size": 5696,
+            "mtime": 1763347039.2780957
+        }
+    }
+}

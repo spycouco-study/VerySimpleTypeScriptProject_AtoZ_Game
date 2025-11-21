@@ -76,6 +76,7 @@ let loadedImages: Map<string, HTMLImageElement> = new Map();
 let loadedSounds: Map<string, HTMLAudioElement> = new Map();
 let bgm: HTMLAudioElement | null = null;
 let currentSceneIndex: number = 0;
+let sceneHistory: number[] = []; // Stores indices of previous scenes for back navigation
 let displayedTextIndex: number = 0;
 let currentLineCharIndex: number = 0;
 let typingTimer: number = 0;
@@ -85,9 +86,14 @@ let mouseX: number = 0;
 let mouseY: number = 0;
 let mouseClicked: boolean = false;
 let hoveredButton: Choice | null = null;
+let backButtonHovered: boolean = false; // To track hover state for the back button
 let lastTypeSoundTime: number = 0;
 
 const TYPE_SOUND_INTERVAL = 0.05;
+const BACK_BUTTON_X = 70; // X-coordinate for the back button
+const BACK_BUTTON_Y = 70; // Y-coordinate for the back button
+const BACK_BUTTON_WIDTH = 120;
+const BACK_BUTTON_HEIGHT = 40;
 
 function loadImage(asset: ImageAsset): Promise<void> {
     return new Promise((resolve, reject) => {
@@ -171,8 +177,15 @@ async function init() {
             currentGameState = GameState.PRESENTATION;
             playSFX("click_sfx");
             resetSceneState();
+            // No history to push here, as it's the very first scene.
         } else if (currentGameState === GameState.PRESENTATION) {
-            handlePresentationClick();
+            // Check for back button click first
+            if (sceneHistory.length > 0 && mouseX >= BACK_BUTTON_X && mouseX <= BACK_BUTTON_X + BACK_BUTTON_WIDTH &&
+                mouseY >= BACK_BUTTON_Y && mouseY <= BACK_BUTTON_Y + BACK_BUTTON_HEIGHT) {
+                handleBackButton();
+            } else {
+                handlePresentationClick();
+            }
         }
     });
 
@@ -194,6 +207,17 @@ function playSFX(name: string, forcePlay: boolean = false) {
     }
 }
 
+function handleBackButton() {
+    if (sceneHistory.length > 0) {
+        playSFX("click_sfx");
+        const previousSceneIndex = sceneHistory.pop();
+        if (previousSceneIndex !== undefined) {
+            currentSceneIndex = previousSceneIndex;
+            resetSceneState();
+        }
+    }
+}
+
 function handlePresentationClick() {
     const currentScene = gameData.scenes[currentSceneIndex];
 
@@ -201,6 +225,7 @@ function handlePresentationClick() {
         playSFX("click_sfx");
         const targetScene = gameData.scenes.find(s => s.id === hoveredButton!.target_scene_id);
         if (targetScene) {
+            sceneHistory.push(currentSceneIndex); // Push current scene BEFORE navigating
             currentSceneIndex = gameData.scenes.indexOf(targetScene);
             resetSceneState();
             return;
@@ -229,6 +254,7 @@ function handlePresentationClick() {
                 const nextSceneId = currentScene.next_scene;
                 const nextScene = gameData.scenes.find(s => s.id === nextSceneId);
                 if (nextScene) {
+                    sceneHistory.push(currentSceneIndex); // Push current scene BEFORE navigating
                     currentSceneIndex = gameData.scenes.indexOf(nextScene);
                     resetSceneState();
                 } else {
@@ -248,6 +274,7 @@ function resetSceneState() {
     currentLineCharIndex = 0;
     typingTimer = 0;
     hoveredButton = null;
+    backButtonHovered = false; // Reset back button hover state
     lastTypeSoundTime = 0;
 }
 
@@ -300,6 +327,15 @@ function updatePresentation(deltaTime: number) {
                 hoveredButton = choice;
                 break;
             }
+        }
+    }
+
+    // Back button hover logic
+    backButtonHovered = false;
+    if (sceneHistory.length > 0) { // Only enable hover if history exists
+        if (mouseX >= BACK_BUTTON_X && mouseX <= BACK_BUTTON_X + BACK_BUTTON_WIDTH &&
+            mouseY >= BACK_BUTTON_Y && mouseY <= BACK_BUTTON_Y + BACK_BUTTON_HEIGHT) {
+            backButtonHovered = true;
         }
     }
 }
@@ -515,6 +551,11 @@ function renderPresentationScene() {
         ctx.shadowBlur = 0;
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
+    }
+
+    // Render back button if history exists
+    if (sceneHistory.length > 0) {
+        renderButton("뒤로가기", BACK_BUTTON_X, BACK_BUTTON_Y, BACK_BUTTON_WIDTH, BACK_BUTTON_HEIGHT, backButtonHovered);
     }
 }
 

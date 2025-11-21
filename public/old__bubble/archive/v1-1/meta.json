@@ -1,0 +1,92 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-19T19:42:59.894006",
+    "summary": "game.js 생성",
+    "chat": {},
+    "changes": [
+        {
+            "name": "animals.png",
+            "path": "animals.png",
+            "type": "Add"
+        },
+        {
+            "name": "back.png",
+            "path": "back.png",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "bubble_effect.png",
+            "path": "bubble_effect.png",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "Pop.mp3",
+            "path": "Pop.mp3",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "animals.png": {
+            "hash": "62c5e93a1d699a1199f0c038666da91544e0b92fdb92f75fff0755f40655e3af",
+            "size": 290259,
+            "mtime": 1763347039.0048165
+        },
+        "back.png": {
+            "hash": "d30cd0b50b7ee188b55550963279accf67a30bcae7e32027b44e8991c035d57b",
+            "size": 1122910,
+            "mtime": 1763347039.0138113
+        },
+        "bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347039.0931716
+        },
+        "bubble_effect.png": {
+            "hash": "db0b5f4c9e8a24c00d7fabb3d62a5e34398218883afcb654d67bfe7b01f7b752",
+            "size": 218126,
+            "mtime": 1763347039.0987997
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763347039.1028185
+        },
+        "game.js": {
+            "hash": "e592baa02d310a7f229a8ceab33a09b93524344168daa7eaf1615bd767b2182e",
+            "size": 50693,
+            "mtime": 1763547952.993812
+        },
+        "game.ts": {
+            "hash": "98e8cfa03c46905d73ec5dbde617a9ec70bb2670a43d776536d4a807d241623f",
+            "size": 54470,
+            "mtime": 1763347039.1048298
+        },
+        "Pop.mp3": {
+            "hash": "55b11a9db569c7b8aed8e339ff0186b33157f947e1437f4ec198e2837938feeb",
+            "size": 112970,
+            "mtime": 1763347039.0018132
+        }
+    }
+}

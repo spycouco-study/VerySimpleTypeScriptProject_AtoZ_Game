@@ -229,6 +229,14 @@
             "parent": "v5-3",
             "timestamp": "2025-11-14T12:14:14.290670",
             "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-4",
+            "parent": "v6-2",
+            "timestamp": "2025-11-19T19:50:28.620551",
+            "summary": "game.js 생성",
             "is_latest": true,
             "is_current": true
         }

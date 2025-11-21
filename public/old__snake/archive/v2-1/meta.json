@@ -1,0 +1,102 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-11-19T19:50:26.842206",
+    "summary": "game.js 생성",
+    "chat": {},
+    "changes": [],
+    "no_changes": [
+        {
+            "name": "apple.png",
+            "path": "apple.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "body.png",
+            "path": "body.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "eat.mp3",
+            "path": "eat.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "head.png",
+            "path": "head.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "tail.png",
+            "path": "tail.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "apple.png": {
+            "hash": "8aa1ffa9d21aa9f129e793fda5985df2aefc70249dae11fce293c2e6ada5e277",
+            "size": 27841,
+            "mtime": 1763347039.2818003
+        },
+        "bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347039.349052
+        },
+        "body.png": {
+            "hash": "8e15f54e85c88276097e50bcda84b54ca721c50fad7a94d67816272fa10e456d",
+            "size": 811393,
+            "mtime": 1763347039.3570678
+        },
+        "eat.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347039.360174
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763347039.3641722
+        },
+        "game.js": {
+            "hash": "41ad24f4e0920fc1daad0bc7caf8ff50745888d45ec0fc5590e92a570eaf894a",
+            "size": 12933,
+            "mtime": 1763547963.6837862
+        },
+        "game.ts": {
+            "hash": "6856fc64b0da6b90601a9ef3eb955e44e1376de9d03a32add008cafc153ee071",
+            "size": 13725,
+            "mtime": 1763347039.366174
+        },
+        "head.png": {
+            "hash": "2dd779fc335e931fa4619525f9958b0705ce6270164ff6e9ec98a470dc15b833",
+            "size": 822752,
+            "mtime": 1763347039.372173
+        },
+        "tail.png": {
+            "hash": "035b3f5b581d53e195878b7b5223fe5fc8142716548339c0397423098c37361f",
+            "size": 878187,
+            "mtime": 1763347039.3862162
+        }
+    }
+}

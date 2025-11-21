@@ -53,6 +53,14 @@
             "parent": "v3-1",
             "timestamp": "2025-11-15T14:19:31.696336",
             "summary": "단어 리스트를 100개정도 더 늘려줘. 그리고 지금 이미 나왔던 단어는 안나오게 되어있는거야 아니면 이미 나왔던 단어도 다시나오게 되어 있는거야? 그리고 모든 단어를 맞추면 게임이 종료되게 되어 있는거야? 알려줘.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-11-19T19:50:26.994013",
+            "summary": "game.js 생성",
             "is_latest": true,
             "is_current": true
         }

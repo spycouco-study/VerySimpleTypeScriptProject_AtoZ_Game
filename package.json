@@ -20,7 +20,12 @@
   "homepage": "https://github.com/spycouco-study/VerySimpleTypeScriptProject_AtoZ_Game#readme",
   "dependencies": {
     "body-parser": "^2.2.0",
+    "cannon-es": "^0.20.0",
     "express": "^5.1.0",
+    "three": "^0.181.2",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/three": "^0.181.0"
   }
 }

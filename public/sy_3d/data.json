@@ -1,0 +1,33 @@
+{
+    "gameSettings": {
+        "canvasWidth": 800,
+        "canvasHeight": 600,
+        "gravity": [0.0, -9.8, 0.0],
+        "groundY": -2.0,
+        "ballRadius": 1.5,
+        "ballMass": 1.0,
+        "elasticity": 0.7,
+        "frictionCoefficient": 0.1,
+        "initialLaunchForce": 15.0,
+        "cameraDistance": 20.0,
+        "cameraSensitivity": 0.3,
+        "titleScreenText": "Press SPACE to Start. Use mouse (left click + drag) to rotate camera. Press R to reset ball. Press SPACE again to apply force.",
+        "ballColor": [1.0, 1.0, 1.0, 1.0],
+        "groundColor": [1.0, 1.0, 1.0, 1.0],
+        "lightDirection": [-0.5, -1.0, -0.5],
+        "ambientLightColor": [0.3, 0.3, 0.3],
+        "diffuseLightColor": [0.7, 0.7, 0.7],
+        "ballTextureName": "ball_texture",
+        "groundTextureName": "ground_texture"
+    },
+    "assets": {
+        "images": [
+            { "name": "ball_texture", "path": "assets/ball.png", "width": 128, "height": 128 },
+            { "name": "ground_texture", "path": "assets/ground.png", "width": 256, "height": 256 }
+        ],
+        "sounds": [
+            { "name": "bounce_sfx", "path": "assets/bounce.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 120.0, "volume": 0.3 }
+        ]
+    }
+}
