@@ -1,0 +1,23 @@
+{
+  "name": "Sample 3D Game",
+  "type": "3d",
+  "description": "A 3D game with physics and collectibles",
+  "author": "System",
+  "createdAt": "2025-11-21T00:00:00.000Z",
+  "playerSpeed": 7,
+  "jumpVelocity": 8,
+  "gameTitle": "Collectible World",
+  "startButtonText": "Start Game",
+  "assets": {
+    "images": [
+      { "name": "ground_texture", "path": "assets/ground.png", "width": 1024, "height": 1024 },
+      { "name": "player_texture", "path": "assets/player.png", "width": 128, "height": 256 },
+      { "name": "collectible_texture", "path": "assets/collectible.png", "width": 64, "height": 64 },
+      { "name": "obstacle_texture", "path": "assets/obstacle.png", "width": 128, "height": 128 }
+    ],
+    "sounds": [
+      { "name": "background_music", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.5 },
+      { "name": "collect_sound", "path": "assets/effect.mp3", "duration_seconds": 1.0, "volume": 1.0 }
+    ]
+  }
+}

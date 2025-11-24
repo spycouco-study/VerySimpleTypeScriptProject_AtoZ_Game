@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alparka!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+  </head>
+  <body>
+    <div id="gameContainer">
+      <h2>알아서 만들어 주는 AI 놀이공원, Alparka!</h2>
+      <canvas id="gameCanvas" width="1080" height="720"></canvas>
+    </div>
+    <script defer>
+      const SERVER_URL = "http://localhost:8000/client-error";
+
+      // 🌟 원래 함수들을 전역적으로 백업
+      const originalConsoleLog = window.console.log;
+      const originalConsoleError = window.console.error;
+      const originalConsoleWarn = window.console.warn;
+
+      // 🔥 배치 수집 설정
+      const BATCH_CONFIG = {
+        collectionWindow: 5000, // 첫 에러 후 5초 동안만 수집
+      };
+
+      // 📦 에러 수집 상태
+      let errorSet = new Set(); // 중복 제거용 (errorKey 저장)
+      let errorList = []; // 실제 에러 데이터 저장
+      let collectionTimer = null; // 수집 종료 타이머
+      let isCollecting = false; // 수집 중인지 여부
+
+      // 🔥 에러 고유 키 생성 (동일 에러 판별용)
+      function getErrorKey(errorData) {
+        const { type, message, source, lineno, colno, stack } = errorData;
+        const stackHash =
+          stack && stack !== "N/A"
+            ? stack.split("\n").slice(0, 3).join("|")
+            : "";
+        return `${type}:${message}:${stackHash}`;
+      }
+
+      // 📤 수집 완료 후 전송
+      function sendCollectedErrors() {
+        if (errorList.length === 0) return;
+
+        const errorsToSend = [...errorList];
+
+        // 상태 초기화
+        errorSet.clear();
+        errorList = [];
+        isCollecting = false;
+        collectionTimer = null;
+
+        // 배치 데이터 생성
+        const batchData = {
+          type: "error-batch",
+          game_version: "1.0.1",
+          collected_at: new Date().toISOString(),
+          error_count: errorsToSend.length,
+          errors: errorsToSend,
+        };
+
+        originalConsoleLog.call(
+          window.console,
+          `%c📦 에러 수집 완료 - ${errorsToSend.length}종류 전송`,
+          "color: blue; font-weight: bold; font-size: 14px;",
+          batchData
+        );
+
+        // 부모 페이지로 전송
+        try {
+          window.parent.postMessage(
+            {
+              source: "alparka-game-iframe",
+              type: "error-batch",
+              payload: batchData,
+            },
+            "*"
+          );
+        } catch (e) {
+          originalConsoleWarn.call(
+            window.console,
+            "🚨 부모 창으로 메시지 전송 실패:",
+            e
+          );
+        }
+
+        // 서버 전송
+        fetch(SERVER_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(batchData),
+        }).catch((err) => {
+          originalConsoleError.call(window.console, "❌ 배치 전송 실패:", err);
+        });
+      }
+
+      // 📝 에러 수집
+      function collectError(data) {
+        data.time = new Date().toISOString();
+        data.game_version = "1.0.1";
+
+        const errorKey = getErrorKey(data);
+
+        // 이미 수집된 에러인지 확인
+        if (errorSet.has(errorKey)) {
+          originalConsoleLog.call(
+            window.console,
+            `%c🔄 중복 에러 무시 [수집 중: ${errorList.length}종류]`,
+            "color: gray; font-style: italic;",
+            data.message
+          );
+          return;
+        }
+
+        // 새로운 에러 추가
+        errorSet.add(errorKey);
+        errorList.push(data);
+
+        // 타입별 콘솔 출력
+        const style = "color: orange; font-weight: bold;";
+        switch (data.type) {
+          case "console-error":
+            originalConsoleError.call(
+              window.console,
+              `%c📥 콘솔 에러 수집 [${errorList.length}종류]`,
+              style,
+              data.message
+            );
+            break;
+          case "js-error":
+            originalConsoleError.call(
+              window.console,
+              `%c💥 JS 에러 수집 [${errorList.length}종류]`,
+              style,
+              data.message
+            );
+            break;
+          case "unhandledrejection":
+            originalConsoleError.call(
+              window.console,
+              `%c⚠️ Promise 에러 수집 [${errorList.length}종류]`,
+              style,
+              data.message
+            );
+            break;
+          default:
+            originalConsoleLog.call(
+              window.console,
+              `%cℹ️ ${data.type} 수집 [${errorList.length}종류]`,
+              style,
+              data.message
+            );
+        }
+
+        // 🎯 첫 번째 에러일 경우 수집 시작
+        if (!isCollecting) {
+          isCollecting = true;
+          originalConsoleLog.call(
+            window.console,
+            `%c⏱️ 에러 수집 시작 - ${
+              BATCH_CONFIG.collectionWindow / 1000
+            }초 후 전송`,
+            "color: green; font-weight: bold;"
+          );
+
+          collectionTimer = setTimeout(() => {
+            sendCollectedErrors();
+          }, BATCH_CONFIG.collectionWindow);
+        }
+      }
+
+      // 🔥 JS 런타임 에러
+      window.onerror = function (message, source, lineno, colno, error) {
+        collectError({
+          type: "js-error",
+          message: String(message),
+          source: source || "unknown",
+          lineno: lineno || 0,
+          colno: colno || 0,
+          stack: error ? error.stack : "N/A",
+        });
+        return false;
+      };
+
+      // 🔥 Promise rejection 에러
+      window.addEventListener("unhandledrejection", function (event) {
+        collectError({
+          type: "unhandledrejection",
+          message: event.reason ? String(event.reason) : "Promise rejected",
+          source: "promise",
+          lineno: 0,
+          colno: 0,
+          stack:
+            event.reason && event.reason.stack ? event.reason.stack : "N/A",
+        });
+      });
+
+      // 🔥 리소스 로드 에러
+      window.addEventListener(
+        "error",
+        function (event) {
+          if (event.target !== window) {
+            collectError({
+              type: "resource-error",
+              message: `Failed to load: ${event.target.tagName}`,
+              source: event.target.src || event.target.href || "unknown",
+              lineno: 0,
+              colno: 0,
+              stack: "N/A",
+            });
+          }
+        },
+        true
+      );
+
+      // 🔥 console.error 오버라이드
+      window.console.error = function (...args) {
+        originalConsoleError.apply(window.console, args);
+
+        const message = args
+          .map((arg) => {
+            if (typeof arg === "object" && arg !== null) {
+              try {
+                return JSON.stringify(arg);
+              } catch {
+                return String(arg);
+              }
+            }
+            return String(arg);
+          })
+          .join(" ");
+
+        collectError({
+          type: "console-error",
+          message: message,
+          source: "console.error",
+          lineno: 0,
+          colno: 0,
+          stack: "N/A",
+        });
+      };
+
+      // 🔥 console.warn 오버라이드 (중요한 것만)
+      window.console.warn = function (...args) {
+        originalConsoleWarn.apply(window.console, args);
+
+        const message = args
+          .map((arg) => {
+            if (typeof arg === "object" && arg !== null) {
+              try {
+                return JSON.stringify(arg);
+              } catch {
+                return String(arg);
+              }
+            }
+            return String(arg);
+          })
+          .join(" ");
+
+        const criticalKeywords = [
+          "deprecated",
+          "memory",
+          "performance",
+          "leak",
+          "failed",
+        ];
+        const isCritical = criticalKeywords.some((keyword) =>
+          message.toLowerCase().includes(keyword)
+        );
+
+        if (isCritical) {
+          collectError({
+            type: "console-warn-critical",
+            message: message,
+            source: "console.warn",
+            lineno: 0,
+            colno: 0,
+            stack: "N/A",
+          });
+        }
+      };
+
+      // 🔥 SecurityError 감지
+      window.addEventListener("securitypolicyviolation", function (event) {
+        collectError({
+          type: "security-error",
+          message: `CSP violation: ${event.violatedDirective}`,
+          source: event.sourceFile || "unknown",
+          lineno: event.lineNumber || 0,
+          colno: event.columnNumber || 0,
+          stack: "N/A",
+        });
+      });
+
+      // 🔥 requestAnimationFrame 에러 감지
+      const originalRAF = window.requestAnimationFrame;
+
+      window.requestAnimationFrame = function (callback) {
+        return originalRAF.call(window, function (time) {
+          try {
+            callback(time);
+          } catch (error) {
+            collectError({
+              type: "raf-error",
+              message: error.message || String(error),
+              source: "requestAnimationFrame",
+              lineno: 0,
+              colno: 0,
+              stack: error.stack || "N/A",
+            });
+          }
+        });
+      };
+
+      // 🚪 페이지 언로드 시 남은 에러 전송
+      window.addEventListener("beforeunload", function () {
+        if (errorList.length > 0) {
+          const batchData = {
+            type: "error-batch-final",
+            game_version: "1.0.1",
+            collected_at: new Date().toISOString(),
+            error_count: errorList.length,
+            errors: errorList,
+          };
+
+          navigator.sendBeacon(SERVER_URL, JSON.stringify(batchData));
+        }
+      });
+
+      // 🎯 페이지 숨김 시에도 전송 (모바일 대응)
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden && errorList.length > 0) {
+          sendCollectedErrors();
+        }
+      });
+    </script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+          "three/": "https://cdn.jsdelivr.net/npm/three@0.160.0/",
+          "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+          "cannon-es": "https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js"
+        }
+      }
+    </script>
+
+    <script type="module" src="game.js"></script>
+  </body>
+</html>

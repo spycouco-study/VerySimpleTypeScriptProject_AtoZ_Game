@@ -1,0 +1,44 @@
+{
+    "player": {
+        "radius": 1.0,
+        "speed": 10.0,
+        "jumpForce": 8.0,
+        "maxJumps": 1
+    },
+    "camera": {
+        "distance": 15.0,
+        "height": 10.0
+    },
+    "ground": {
+        "width": 100.0,
+        "depth": 100.0
+    },
+    "collectibles": {
+        "count": 15,
+        "radius": 0.5,
+        "spawnArea": 40.0
+    },
+    "obstacles": {
+        "count": 10,
+        "minSize": 1.0,
+        "maxSize": 3.0,
+        "spawnArea": 40.0
+    },
+    "gravity": -9.82,
+    "colors": {
+        "background": "#87CEEB",
+        "text": "#FFFFFF"
+    },
+    "assets": {
+        "images": [
+            { "name": "player_texture", "path": "assets/player_texture.png", "width": 64, "height": 64 },
+            { "name": "collectible_texture", "path": "assets/collectible_texture.png", "width": 32, "height": 32 },
+            { "name": "ground_texture", "path": "assets/ground_texture.png", "width": 128, "height": 128 },
+            { "name": "obstacle_texture", "path": "assets/obstacle_texture.png", "width": 64, "height": 64 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 },
+            { "name": "collect_sfx", "path": "assets/collect_sfx.mp3", "duration_seconds": 0.5, "volume": 0.8 }
+        ]
+    }
+}

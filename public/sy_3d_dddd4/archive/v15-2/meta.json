@@ -1,0 +1,103 @@
+{
+    "version": "v15-2",
+    "parent": "v14-1",
+    "timestamp": "2025-11-22T23:07:06.047591",
+    "summary": "게임 데이터 수정",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "last_version": "v14-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v14-1"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "ground.png",
+            "path": "assets/ground.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "step.mp3",
+            "path": "assets/step.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "62ae4a1f929ad3d3e6ef199ec9ee745a4b9e4036b9d6df5b9184c11a9e730d27",
+            "size": 1252,
+            "mtime": 1763820425.7728693
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763820414.1033485
+        },
+        "game.js": {
+            "hash": "d26f8e95d60eabd5953e3091bd1bcfddab72e6535253f9d864bfacd941000d55",
+            "size": 60830,
+            "mtime": 1763820414.1392262
+        },
+        "game.ts": {
+            "hash": "cf210f79ceb8eb24d21c7b48c0c96e20862c198dfed37aeb4a319acc81a352fe",
+            "size": 25227,
+            "mtime": 1763820414.1682549
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763820414.1737678
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763820414.197411
+        },
+        "assets/ground.png": {
+            "hash": "2e10b226de2b517e9472846a97cd3f17ddf83e6363692ba596216b6746cd5299",
+            "size": 1490,
+            "mtime": 1763820414.202939
+        },
+        "assets/player.png": {
+            "hash": "ffcd252a24829dcf49f1ed8c046f0e241e605817e4a9d335e0f955249f120fc1",
+            "size": 788,
+            "mtime": 1763820414.207939
+        },
+        "assets/step.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763820414.2226062
+        }
+    }
+}

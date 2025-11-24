@@ -25,7 +25,7 @@ GameFolder/
 ├─ README.md
 └─ server.js
 
-npm install express body-parser typescript
+npm install express cors esbuild body-parser typescript three cannon-es
 
 GameFolder/
 ├─ node_modules/

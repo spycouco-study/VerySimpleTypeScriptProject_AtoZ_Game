@@ -1,0 +1,152 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-22T19:07:05.034229",
+    "summary": "간단한 3D FPS 게임을 만들어주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "crosshair.png",
+            "path": "assets/crosshair.png",
+            "type": "Add"
+        },
+        {
+            "name": "enemy.png",
+            "path": "assets/enemy.png",
+            "type": "Add"
+        },
+        {
+            "name": "floor_texture.png",
+            "path": "assets/floor_texture.png",
+            "type": "Add"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "hit.mp3",
+            "path": "assets/hit.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "player_bullet.png",
+            "path": "assets/player_bullet.png",
+            "type": "Add"
+        },
+        {
+            "name": "shoot.mp3",
+            "path": "assets/shoot.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "wall_texture.png",
+            "path": "assets/wall_texture.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "8810e82ae438ce81ec0682d7532ae6eb2c8f50cd7f860211c644d8acb765ed34",
+            "size": 1863,
+            "mtime": 1763806014.550811
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "8622e69cc2a4a0befa91f65c5b2a8f781b43920954667463fd73001db9ecba0e",
+            "size": 118399,
+            "mtime": 1763806024.621392
+        },
+        "game.ts": {
+            "hash": "47001302fa609d59edf797d8d8c699dd4372cd163908a067b49602ab1dceb8d7",
+            "size": 42941,
+            "mtime": 1763806014.5306182
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763796545.4310448
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347007.4590375
+        },
+        "assets/crosshair.png": {
+            "hash": "c5d8aea1d78deddd623dabfba5b1a72639cfdb4a212322152f8dfe31dc7a5d4c",
+            "size": 508,
+            "mtime": 1763805887.712919
+        },
+        "assets/enemy.png": {
+            "hash": "393f3b4e203c16538e01f00c2acb7fa76409c1a19a7a3a049949f52fe37b32a6",
+            "size": 578,
+            "mtime": 1763805887.7042046
+        },
+        "assets/floor_texture.png": {
+            "hash": "91f6b9babca87b7eea77a0a325c687916e74b3862c670e0b0da2ab1da5c827bb",
+            "size": 2521,
+            "mtime": 1763805887.7274628
+        },
+        "assets/game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/player_bullet.png": {
+            "hash": "b97090bdc5393426c5df8c654d942364eac675c05668a047c3178bd0bfbcfe93",
+            "size": 154,
+            "mtime": 1763805887.697749
+        },
+        "assets/shoot.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/wall_texture.png": {
+            "hash": "c5f07923169b438023961f18c6f058247eb4d90d432c48b703a34443c238431e",
+            "size": 2545,
+            "mtime": 1763805887.7470088
+        }
+    }
+}
