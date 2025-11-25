@@ -485,6 +485,14 @@
             "parent": "v47-2",
             "timestamp": "2025-11-24T15:09:46.852934",
             "summary": "enemy.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v47-3",
+            "parent": "v46-2",
+            "timestamp": "2025-11-25T14:22:56.607323",
+            "summary": "런타임 오류 'Uncaught TypeError: Cannot read properties of undefined (reading 'mass')'를 수정해주세요. 이 오류는 'http://localhost:8080/sy_3d_dddd4/game.js' 파일의 207번째 줄에서 발생했습니다.",
             "is_latest": true,
             "is_current": false
         }

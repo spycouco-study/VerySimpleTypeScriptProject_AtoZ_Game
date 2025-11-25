@@ -1,0 +1,113 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-11-24T20:22:34.256896",
+    "summary": "게임의 배경색을 회색으로 변경해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "eat_food.mp3",
+            "path": "assets/eat_food.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "food.png",
+            "path": "assets/food.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_body.png",
+            "path": "assets/snake_body.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_head.png",
+            "path": "assets/snake_head.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "3042866c5707bc6caf009bd5488c7f939601e85628d5c4a9efc4c8fd3c45ab97",
+            "size": 945,
+            "mtime": 1763983347.9045465
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "fb10b81b2d97de454a21cc8f89320161c95e00edccddc914f2e26ac241ac96ff",
+            "size": 43914,
+            "mtime": 1763983354.024479
+        },
+        "game.ts": {
+            "hash": "f58e907f946104aeaf6a22de3ed06fe1e4632c3478da068d55cc438951789e55",
+            "size": 14979,
+            "mtime": 1763983347.809386
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347007.4590375
+        },
+        "assets/eat_food.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/food.png": {
+            "hash": "8327c83554ca280bea7ba05efb42c341f02d286e166f93bea75e2b859b80c1e2",
+            "size": 297,
+            "mtime": 1763983120.7535725
+        },
+        "assets/game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/snake_body.png": {
+            "hash": "a648bb890bb2a48ecc89f6d3151f0c54459c07fcde04a5da2b9c839809656751",
+            "size": 301,
+            "mtime": 1763983120.7431233
+        },
+        "assets/snake_head.png": {
+            "hash": "a344801d028bdb78e26d2a00e75330fac237250f07707e7297f1dd51705b6451",
+            "size": 288,
+            "mtime": 1763983120.7431233
+        }
+    }
+}
