@@ -367,8 +367,8 @@ class Game {
             // Check if playerBody is involved in the contact
             if (bodyA === this.playerBody || bodyB === this.playerBody) {
                 const otherBody = bodyA === this.playerBody ? bodyB : bodyA;
-                // Check if the other body is static (mass = 0), which includes ground and placed objects
-                if (otherBody.mass === 0) {
+                // FIX: Added null/undefined check for otherBody to prevent 'Cannot read properties of undefined (reading 'mass')'
+                if (otherBody && otherBody.mass === 0) {
                     this.numContactsWithStaticSurfaces++;
                 }
             }
@@ -380,7 +380,8 @@ class Game {
 
             if (bodyA === this.playerBody || bodyB === this.playerBody) {
                 const otherBody = bodyA === this.playerBody ? bodyB : bodyA;
-                if (otherBody.mass === 0) {
+                // FIX: Added null/undefined check for otherBody to prevent 'Cannot read properties of undefined (reading 'mass')'
+                if (otherBody && otherBody.mass === 0) {
                     this.numContactsWithStaticSurfaces = Math.max(0, this.numContactsWithStaticSurfaces - 1); // Ensure it doesn't go below 0
                 }
             }
