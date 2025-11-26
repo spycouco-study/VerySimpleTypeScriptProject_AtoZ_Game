@@ -21,6 +21,6 @@ ENV PORT=8080
 EXPOSE 8080
 
 # 애플리케이션 실행(배포용)
-#CMD ["npm", "start"]
-# 애플리케이션 실행(개발용)
-CMD ["npm", "run", "dev"]
+CMD ["npm", "start"]
+# 애플리케이션 실행(개발용)(그런데 기존에도 굳이 재실행 필요 없었음)
+#CMD ["npm", "run", "dev"]
