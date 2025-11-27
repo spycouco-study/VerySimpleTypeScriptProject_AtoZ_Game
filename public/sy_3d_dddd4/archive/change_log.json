@@ -462,7 +462,7 @@
             "timestamp": "2025-11-23T02:52:08.210919",
             "summary": "적이 플레이어와 접촉한 상태에서 총알로 죽일 때 런타임 에러가 발생하지 않도록 수정해주세요.",
             "is_latest": false,
-            "is_current": true
+            "is_current": false
         },
         {
             "version": "v47-1",
@@ -493,8 +493,56 @@
             "parent": "v46-2",
             "timestamp": "2025-11-25T14:22:56.607323",
             "summary": "런타임 오류 'Uncaught TypeError: Cannot read properties of undefined (reading 'mass')'를 수정해주세요. 이 오류는 'http://localhost:8080/sy_3d_dddd4/game.js' 파일의 207번째 줄에서 발생했습니다.",
-            "is_latest": true,
+            "is_latest": false,
             "is_current": false
+        },
+        {
+            "version": "v48-2",
+            "parent": "v47-3",
+            "timestamp": "2025-11-26T16:50:01.334764",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v49-1",
+            "parent": "v48-2",
+            "timestamp": "2025-11-26T16:52:08.603782",
+            "summary": "게임 화면이 현재 우측 하단으로 밀려있으니, 화면 중앙에 위치하도록 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v50-1",
+            "parent": "v49-1",
+            "timestamp": "2025-11-26T16:56:25.879975",
+            "summary": "처음 나오는 타이틀 화면(wasd+mouse look 3d game 메시지가 써있는)은 화면 중앙에 위치해 있는데, 게임 화면은 거기에서 살짝 벗어나서 우측 하단으로 살짝 밀려있습니다. 게임 화면의 배치를 수정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v48-3",
+            "parent": "v47-3",
+            "timestamp": "2025-11-26T17:02:18.337857",
+            "summary": "enemy.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v49-2",
+            "parent": "v48-3",
+            "timestamp": "2025-11-26T19:00:30.666888",
+            "summary": "box.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v50-2",
+            "parent": "v49-2",
+            "timestamp": "2025-11-26T14:56:55.867169",
+            "summary": "bullet.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": true,
+            "is_current": true
         }
     ]
 }
