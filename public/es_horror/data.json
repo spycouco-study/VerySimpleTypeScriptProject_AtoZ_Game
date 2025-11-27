@@ -1,0 +1,38 @@
+{
+    "assets": {
+        "images": [
+            { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+            { "name": "obstacle", "path": "assets/obstacle.png", "width": 32, "height": 32 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 },
+            { "name": "gameOverEffect", "path": "assets/gameOver.mp3", "duration_seconds": 2.0, "volume": 0.7 }
+        ]
+    },
+    "gameSettings": {
+        "canvasWidth": 800,
+        "canvasHeight": 600,
+        "playerSpeed": 250,
+        "playerWidth": 60,
+        "playerHeight": 60,
+        "obstacleSpawnInterval": 1500,
+        "obstacleMinSpeed": 80,
+        "obstacleMaxSpeed": 150,
+        "obstacleMinSize": 40,
+        "obstacleMaxSize": 80,
+        "scoreIncrement": 10,
+        "titleScreenText": "Dodge the Blocks!",
+        "pressSpaceText": "Press Space to Start",
+        "gameOverScreenText": "Game Over!",
+        "titleScreenFont": "48px Arial, sans-serif",
+        "scoreFont": "24px Arial, sans-serif",
+        "gameOverFont": "48px Arial, sans-serif",
+        "titleScreenTextColor": "#FFFFFF",
+        "scoreTextColor": "#FFFFFF",
+        "gameOverTextColor": "#FF0000",
+        "playerImageName": "player",
+        "obstacleImageName": "obstacle",
+        "bgmSoundName": "bgm",
+        "gameOverSoundName": "gameOverEffect"
+    }
+}
