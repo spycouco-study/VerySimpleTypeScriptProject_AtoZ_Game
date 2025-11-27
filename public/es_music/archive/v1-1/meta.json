@@ -1,0 +1,112 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-26T10:25:20.671242",
+    "summary": "간단한 리듬 게임을 만들어주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "hit.mp3",
+            "path": "assets/hit.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "hitzone.png",
+            "path": "assets/hitzone.png",
+            "type": "Add"
+        },
+        {
+            "name": "miss.mp3",
+            "path": "assets/miss.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "note.png",
+            "path": "assets/note.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "b384c128a09f866a4998b3e9839a12bb7337792258543ace7b8c2c50c4554f6b",
+            "size": 2889,
+            "mtime": 1764120279.982996
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "5b9771f0fcb20a185c2c3edc962ac286f57011357b1873f0a842f1bd67a5ecb1",
+            "size": 59614,
+            "mtime": 1764120320.492982
+        },
+        "game.ts": {
+            "hash": "7dae8dc87a1cf9d626aa0dc1476b749fdb91afab95a039d68a58dc16dd76f7d2",
+            "size": 22019,
+            "mtime": 1764120317.1822271
+        },
+        "assets/background.png": {
+            "hash": "c92f9192cc136ed856cb232b2195625b98c31c2b64af59fbfcaf25e2f95dce90",
+            "size": 3590,
+            "mtime": 1764120279.9569304
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/hitzone.png": {
+            "hash": "314dcc55915dfe49f198e6f9de213ee989355ab8735d9640172a1a1d3a233bc2",
+            "size": 410,
+            "mtime": 1764120279.963452
+        },
+        "assets/miss.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/note.png": {
+            "hash": "c83538ae150406612dbd290ffa6080ffac9ec8737590bab7b1c3ed957bb336f1",
+            "size": 379,
+            "mtime": 1764120279.9604514
+        }
+    }
+}

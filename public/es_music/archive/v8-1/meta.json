@@ -1,0 +1,113 @@
+{
+    "version": "v8-1",
+    "parent": "v7-1",
+    "timestamp": "2025-11-26T10:50:13.879459",
+    "summary": "게임에서 정답을 맞추지 못하면 점수가 차감되도록 해주세요.\n점수가 마이너스가 되면 게임이 종료되도록 해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v6-1"
+        },
+        {
+            "name": "hit.mp3",
+            "path": "assets/hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "hitzone.png",
+            "path": "assets/hitzone.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "miss.mp3",
+            "path": "assets/miss.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "note.png",
+            "path": "assets/note.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "1fdc7fd78960da283280d1d0f9ce2a79b9b78c01b8f7a61580fd40206675925d",
+            "size": 46064,
+            "mtime": 1764121809.9620867
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "0e647e891994b1bd6af71eb2a585e83d5e9a3f7a9b3256075d7bdbe3cb3a5719",
+            "size": 60262,
+            "mtime": 1764121813.7422626
+        },
+        "game.ts": {
+            "hash": "dcffda6dce61dd8590ce6e2d921fc33907c1ab934518dd1cb72459af9d2c91ec",
+            "size": 22317,
+            "mtime": 1764121809.9480762
+        },
+        "assets/background.png": {
+            "hash": "c92f9192cc136ed856cb232b2195625b98c31c2b64af59fbfcaf25e2f95dce90",
+            "size": 3590,
+            "mtime": 1764120279.9569304
+        },
+        "assets/bgm.mp3": {
+            "hash": "dd16d6480357955aca5f05b9338fdd4961955d5100d7852fe70b67f0d94ec6d4",
+            "size": 8697029,
+            "mtime": 1764121395.7311954
+        },
+        "assets/hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/hitzone.png": {
+            "hash": "314dcc55915dfe49f198e6f9de213ee989355ab8735d9640172a1a1d3a233bc2",
+            "size": 410,
+            "mtime": 1764120279.963452
+        },
+        "assets/miss.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/note.png": {
+            "hash": "c83538ae150406612dbd290ffa6080ffac9ec8737590bab7b1c3ed957bb336f1",
+            "size": 379,
+            "mtime": 1764120279.9604514
+        }
+    }
+}

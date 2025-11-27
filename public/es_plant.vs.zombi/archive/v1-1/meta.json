@@ -1,0 +1,252 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-26T19:13:47.143903",
+    "summary": "Plant vs Zombie 스타일의 게임을 만들어 주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "basic_zombie.png",
+            "path": "assets/basic_zombie.png",
+            "type": "Add"
+        },
+        {
+            "name": "bgm_game.mp3",
+            "path": "assets/bgm_game.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "bgm_game_over.mp3",
+            "path": "assets/bgm_game_over.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "bgm_title.mp3",
+            "path": "assets/bgm_title.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "error.mp3",
+            "path": "assets/error.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "game_background.png",
+            "path": "assets/game_background.png",
+            "type": "Add"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "game_over_background.png",
+            "path": "assets/game_over_background.png",
+            "type": "Add"
+        },
+        {
+            "name": "pea_projectile.png",
+            "path": "assets/pea_projectile.png",
+            "type": "Add"
+        },
+        {
+            "name": "pea_shooter_plant.png",
+            "path": "assets/pea_shooter_plant.png",
+            "type": "Add"
+        },
+        {
+            "name": "plant_place.mp3",
+            "path": "assets/plant_place.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "shoot.mp3",
+            "path": "assets/shoot.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sun_collect.mp3",
+            "path": "assets/sun_collect.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sun_icon.png",
+            "path": "assets/sun_icon.png",
+            "type": "Add"
+        },
+        {
+            "name": "sun_producer_plant.png",
+            "path": "assets/sun_producer_plant.png",
+            "type": "Add"
+        },
+        {
+            "name": "title_background.png",
+            "path": "assets/title_background.png",
+            "type": "Add"
+        },
+        {
+            "name": "ui_click.mp3",
+            "path": "assets/ui_click.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "zombie_attack.mp3",
+            "path": "assets/zombie_attack.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "zombie_die.mp3",
+            "path": "assets/zombie_die.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "zombie_hit.mp3",
+            "path": "assets/zombie_hit.mp3",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "dfbfe99108f206c78cabb6bc0e169e257b3a92b34e792888a61605c9f04e480a",
+            "size": 4367,
+            "mtime": 1764152022.6621163
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "2589383156a2a260cd4dc544bc3bf3d2adffb1c4f5b21d562158236d7db55fd0",
+            "size": 92806,
+            "mtime": 1764152026.8464742
+        },
+        "game.ts": {
+            "hash": "a631367e80ce4bc95deb562c8f273dbe4221f4319c0c25d3bbeaec18a93e5c64",
+            "size": 32789,
+            "mtime": 1764152022.5521088
+        },
+        "assets/basic_zombie.png": {
+            "hash": "c9d28e4c2e4ded1d0a1f2a28c3eabd096117d718b952ce3cb1eb5c659ac0bb53",
+            "size": 980,
+            "mtime": 1764152022.5995936
+        },
+        "assets/bgm_game.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/bgm_game_over.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/bgm_title.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/error.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/game_background.png": {
+            "hash": "b4fe2a60dd84ff04b158a670fa9cab1654fd1e742dd5ab7a5488d64d4f403d4b",
+            "size": 3959,
+            "mtime": 1764152022.588749
+        },
+        "assets/game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/game_over_background.png": {
+            "hash": "68daa94bc3053834a1ff739d2605d931690dc7820e0dcdd1b880b0d7e348d721",
+            "size": 4378,
+            "mtime": 1764152022.579761
+        },
+        "assets/pea_projectile.png": {
+            "hash": "4368fe18e1f7c84410233d71b9d00a07498e0427f96a396a7d8fe6f95bc09bef",
+            "size": 381,
+            "mtime": 1764152022.6025958
+        },
+        "assets/pea_shooter_plant.png": {
+            "hash": "93ed94067b5cb4a97bf8fe7a5128e7d023c78efab632f963b8c094cfa9a55f1c",
+            "size": 887,
+            "mtime": 1764152022.5965807
+        },
+        "assets/plant_place.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/shoot.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/sun_collect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/sun_icon.png": {
+            "hash": "70abc430d49b35eb314d4397fee614e436285e274d1856330a1d5041c88adcdc",
+            "size": 578,
+            "mtime": 1764152022.5907521
+        },
+        "assets/sun_producer_plant.png": {
+            "hash": "86531d58968b1f3d9ccd6b796d2051d7ad9482142a4e25a4c2e27991e875054c",
+            "size": 799,
+            "mtime": 1764152022.5940263
+        },
+        "assets/title_background.png": {
+            "hash": "31f93ee39507c39b2d13f78f78dd6dbbb1648cea04dafb984390e8dba58ed1a7",
+            "size": 4176,
+            "mtime": 1764152022.5710783
+        },
+        "assets/ui_click.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/zombie_attack.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/zombie_die.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/zombie_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        }
+    }
+}
