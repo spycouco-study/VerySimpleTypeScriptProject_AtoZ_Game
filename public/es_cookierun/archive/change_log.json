@@ -21,6 +21,14 @@
             "parent": "v2-1",
             "timestamp": "2025-11-27T14:48:51.566555",
             "summary": "쿠키런 이미지를 생성해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-11-27T15:02:18.935792",
+            "summary": "쿠키런 같은 이미지 만들어줘",
             "is_latest": true,
             "is_current": true
         }
