@@ -4,7 +4,6 @@
   "gridSize": 1,
   "snakeSpeed": 5,
   "initialSnakeLength": 3,
-  "numberOfFoodItems": 2,
   "wallThickness": 0.5,
   "cameraFOV": 75,
   "cameraNear": 0.1,

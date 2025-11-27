@@ -9,7 +9,6 @@ interface GameConfig {
   gridSize: number; // Size of each grid cell in world units
   snakeSpeed: number; // How many grid cells per second the snake moves
   initialSnakeLength: number;
-  numberOfFoodItems: number; // 추가: 게임 내 먹이의 개수
   wallThickness: number; // Thickness of the walls in world units
   cameraFOV: number;
   cameraNear: number;
@@ -59,7 +58,7 @@ const game: {
   controls: OrbitControls | null; // OrbitControls 추가
   cannonWorld: CANNON.World | null;
   snake: { mesh: THREE.Mesh; body: CANNON.Body }[];
-  food: { mesh: THREE.Mesh; body: CANNON.Body }[]; // 변경: 단일 먹이에서 먹이 배열로 변경
+  food: { mesh: THREE.Mesh | null; body: CANNON.Body | null };
   direction: THREE.Vector3;
   nextDirection: THREE.Vector3;
   score: number;
@@ -84,7 +83,7 @@ const game: {
   controls: null, // 초기화
   cannonWorld: null,
   snake: [],
-  food: [], // 초기화: 빈 배열로 시작
+  food: { mesh: null, body: null },
   direction: new THREE.Vector3(1, 0, 0), // Initial direction: East (positive X)
   nextDirection: new THREE.Vector3(1, 0, 0),
   score: 0,
@@ -461,22 +460,33 @@ function createSnakeSegment(
   return { mesh, body };
 }
 
-// 단일 먹이를 생성하고 game.food 배열에 추가하는 함수
-function addFoodItem(): void {
-  if (!game.data || !game.scene || !game.cannonWorld) {
-    throw new Error("Game not initialized for adding food.");
+function generateFood(): void {
+  if (!game.data || !game.scene || !game.cannonWorld) return;
+
+  // Remove old food if it exists
+  if (game.food.mesh) {
+    game.scene.remove(game.food.mesh);
+    game.food.mesh.geometry.dispose();
+    (game.food.mesh.material as THREE.Material).dispose();
+    game.food.mesh = null;
+  }
+  if (game.food.body) {
+    game.cannonWorld.removeBody(game.food.body);
+    game.food.body = null;
   }
 
+  const worldSize = game.data.gridSize * 20;
+  const halfWorldSize = worldSize / 2;
   const size = game.data.gridSize;
   let foodPosition: THREE.Vector3;
-  let collisionDetected: boolean;
+  let collisionWithSnake: boolean;
 
   do {
-    collisionDetected = false;
-    // Generate random grid position within bounds
+    collisionWithSnake = false;
+    // Generate random grid position within bounds (excluding wall thickness area)
     const numCells = 20; // Assuming 20x20 grid
-    const randX = Math.floor(Math.random() * numCells) - numCells / 2;
-    const randZ = Math.floor(Math.random() * numCells) - numCells / 2;
+    const randX = Math.floor(Math.random() * numCells) - numCells / 2; // -10 to 9
+    const randZ = Math.floor(Math.random() * numCells) - numCells / 2; // -10 to 9
 
     foodPosition = new THREE.Vector3(
       randX * size + size / 2, // Center of the grid cell
@@ -487,21 +497,12 @@ function addFoodItem(): void {
     // Check for collision with snake
     for (const segment of game.snake) {
       if (segment.mesh.position.distanceTo(foodPosition) < size * 0.9) {
-        collisionDetected = true;
+        // Check if positions are very close
+        collisionWithSnake = true;
         break;
       }
     }
-    if (collisionDetected) continue;
-
-    // Check for collision with other existing food items
-    for (const existingFood of game.food) {
-        if (existingFood.mesh.position.distanceTo(foodPosition) < size * 0.9) {
-            collisionDetected = true;
-            break;
-        }
-    }
-
-  } while (collisionDetected);
+  } while (collisionWithSnake);
 
   const texture = game.assets.textures["food"];
   const material = new THREE.MeshLambertMaterial({
@@ -513,6 +514,7 @@ function addFoodItem(): void {
   mesh.position.copy(foodPosition);
   mesh.castShadow = true;
   game.scene.add(mesh);
+  game.food.mesh = mesh;
 
   const shape = new CANNON.Sphere(size / 2);
   const body = new CANNON.Body({ mass: 0.1 }); // Small mass so it can be 'eaten'
@@ -521,19 +523,7 @@ function addFoodItem(): void {
     new CANNON.Vec3(foodPosition.x, foodPosition.y, foodPosition.z)
   );
   game.cannonWorld.addBody(body);
-
-  game.food.push({ mesh, body }); // 배열에 추가
-}
-
-// 모든 먹이 아이템을 제거하는 함수
-function clearAllFood(): void {
-  game.food.forEach(f => {
-    game.scene?.remove(f.mesh);
-    f.mesh.geometry.dispose();
-    (f.mesh.material as THREE.Material).dispose();
-    game.cannonWorld?.removeBody(f.body);
-  });
-  game.food = []; // 배열 초기화
+  game.food.body = body;
 }
 
 function playSound(name: string): void {
@@ -564,7 +554,16 @@ function resetGame(): void {
   });
   game.snake = [];
 
-  clearAllFood(); // 모든 먹이 제거
+  if (game.food.mesh) {
+    game.scene.remove(game.food.mesh);
+    game.food.mesh.geometry.dispose();
+    (game.food.mesh.material as THREE.Material).dispose();
+    game.food.mesh = null;
+  }
+  if (game.food.body) {
+    game.cannonWorld.removeBody(game.food.body);
+    game.food.body = null;
+  }
 
   // Initial snake position (e.g., center of the playable area)
   const initialPos = new THREE.Vector3(0, 0, 0);
@@ -583,11 +582,7 @@ function resetGame(): void {
   game.nextDirection.set(1, 0, 0);
   game.score = 0;
   updateScoreUI();
-  
-  // 데이터에 설정된 개수만큼 먹이 생성
-  for (let i = 0; i < game.data.numberOfFoodItems; i++) {
-      addFoodItem();
-  }
+  generateFood();
 }
 
 function startGame(): void {
@@ -688,8 +683,8 @@ function update(deltaTime: number): void {
 
     game.direction.copy(game.nextDirection); // Apply buffered direction
 
-    // 이동하기 전 꼬리 위치 저장 (새로운 세그먼트를 추가할 위치)
-    const tailPreviousPosition = game.snake[game.snake.length - 1].mesh.position.clone();
+    // Store current head position before moving
+    const oldHeadPosition = game.snake[0].mesh.position.clone();
 
     // Calculate new head position
     const head = game.snake[0];
@@ -743,37 +738,29 @@ function update(deltaTime: number): void {
       new CANNON.Vec3(newHeadPosition.x, newHeadPosition.y, newHeadPosition.z)
     );
 
-    // Food collision - iterate through all food items
-    let foodEatenIndex: number | null = null;
-    for (let i = 0; i < game.food.length; i++) {
-        const foodItem = game.food[i];
-        if (
-            newHeadPosition.distanceTo(foodItem.mesh.position) <
-            game.data.gridSize * 0.9
-        ) {
-            foodEatenIndex = i; // 먹힌 먹이의 인덱스 저장
-            break;
-        }
-    }
-
-    if (foodEatenIndex !== null) {
+    // Food collision
+    if (
+      game.food.mesh &&
+      newHeadPosition.distanceTo(game.food.mesh.position) <
+        game.data.gridSize * 0.9
+    ) {
       playSound("eat_food");
       game.score++;
       updateScoreUI();
 
-      // 먹힌 먹이 제거
-      const eatenFood = game.food[foodEatenIndex];
-      game.scene?.remove(eatenFood.mesh);
-      eatenFood.mesh.geometry.dispose();
-      (eatenFood.mesh.material as THREE.Material).dispose();
-      game.cannonWorld?.removeBody(eatenFood.body);
-      game.food.splice(foodEatenIndex, 1); // 배열에서 제거
+      // Add new segment at the old tail's position (the position of the segment that was moved from by the last segment)
+      // The segment that was at game.snake[game.snake.length - 1] before the move now needs a new one behind it.
+      // The oldHeadPosition (which is now effectively the position of the first body segment)
+      // is not suitable for the new segment. Instead, the last segment's *previous* position
+      // (before it moved) is the correct spot. But since we just moved everything,
+      // the new segment should actually occupy the `oldHeadPosition`'s last position.
+      // A simpler approach: create the new segment at the position of the last segment *after* the move.
+      // This makes the snake grow from its tail in the direction it was moving.
+      const lastSegmentCurrentPos =
+        game.snake[game.snake.length - 1].mesh.position.clone();
+      game.snake.push(createSnakeSegment(lastSegmentCurrentPos, false));
 
-      // Add new segment at the previous tail position
-      game.snake.push(createSnakeSegment(tailPreviousPosition, false));
-
-      // 먹힌 먹이를 대체할 새 먹이 생성
-      addFoodItem();
+      generateFood();
     }
   }
 

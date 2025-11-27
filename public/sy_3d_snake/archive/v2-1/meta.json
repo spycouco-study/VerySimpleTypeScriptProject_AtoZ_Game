@@ -1,0 +1,138 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-11-27T04:27:40.258303",
+    "summary": "게임 제목을 '3D 뱀게임'으로 변경해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "type": "Delete"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "eat.mp3",
+            "path": "assets/eat.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "food.png",
+            "path": "assets/food.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_body.png",
+            "path": "assets/snake_body.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_head.png",
+            "path": "assets/snake_head.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "start_game.mp3",
+            "path": "assets/start_game.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "wall_texture.png",
+            "path": "assets/wall_texture.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "5d9d3d127028d380afac54b4d034a7df387d38b484764c3e8a077326376aa612",
+            "size": 1246,
+            "mtime": 1764217652.7544672
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764216503.486715
+        },
+        "game.js": {
+            "hash": "fe1a3cc1e14dd0f6a793bad413501f5d758325fb4464ac5c95f919c007a1cfed",
+            "size": 69879,
+            "mtime": 1764217659.2967541
+        },
+        "game.ts": {
+            "hash": "9b1076cc912896133091866fc35a148003d69fb20457e4448abc6bc40a3d781d",
+            "size": 25421,
+            "mtime": 1764217652.6929505
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764216503.9514055
+        },
+        "assets/eat.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764216504.0134804
+        },
+        "assets/food.png": {
+            "hash": "9336cd7521b272d273d3c4caf210c8ae03fa42d7926a61509d1e6bed094b6056",
+            "size": 424,
+            "mtime": 1764216504.0801332
+        },
+        "assets/game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764216504.1737244
+        },
+        "assets/snake_body.png": {
+            "hash": "4b43005280e0fc90f06876c04db2e2305c2565cf72fa86101851a73d9d383f49",
+            "size": 921,
+            "mtime": 1764216504.25976
+        },
+        "assets/snake_head.png": {
+            "hash": "42e488dd551923aee85328d776a22adc648c371909597eace13522ab2c795197",
+            "size": 728,
+            "mtime": 1764216504.3332684
+        },
+        "assets/start_game.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764216504.4128695
+        },
+        "assets/wall_texture.png": {
+            "hash": "5a12433ec31df5a7efdab25a67f4a2e71547414b14bbd3bb217d7d4077bf6036",
+            "size": 964,
+            "mtime": 1764216504.4908857
+        }
+    }
+}
