@@ -1,0 +1,20 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-28T01:08:51.196784",
+            "summary": "낚시게임을 만들 겁니다.\n처음에 스페이스바를 길게 누르면서 낚시대의 각도를 조절해서 낚시대를 던지는 기능을 추가해 주세요.\n물고기가 낚시대를 물면 스페이스바를 연타하면서 물고기와 겨뤄서 잡는 게임 플레이를 구현해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-28T01:16:51.971638",
+            "summary": "obstacle1.png 파일을 사용하여 게임에 장애물을 생성해주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

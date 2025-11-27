@@ -1,0 +1,122 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-11-28T01:16:51.964639",
+    "summary": "obstacle1.png 파일을 사용하여 게임에 장애물을 생성해주세요.",
+    "chat": {},
+    "changes": [],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "hit.mp3",
+            "path": "assets/hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "obstacle1.png",
+            "path": "assets/obstacle1.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "obstacle2.png",
+            "path": "assets/obstacle2.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "obstacle3.png",
+            "path": "assets/obstacle3.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "a4dc681d845cab1c29b0e967ffa5d658d7ed4c6fff9625fa5f37049e6a5074f6",
+            "size": 2091,
+            "mtime": 1764260208.41322
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "1e66e96d0ff70149bdddbeb5037f54e729993a24bebc78db616d35ee584b9f92",
+            "size": 44044,
+            "mtime": 1764260211.8129299
+        },
+        "game.ts": {
+            "hash": "a87b526a596c5a8e79edb6883638fa27da3ebef16adbec763a1767a1fecaca72",
+            "size": 15514,
+            "mtime": 1764259547.5796485
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/obstacle1.png": {
+            "hash": "e48849f6811b2adaeda9fe9b5d381568ebde3e060d978d7c93bed39a9b75c170",
+            "size": 884,
+            "mtime": 1764260139.4957058
+        },
+        "assets/obstacle2.png": {
+            "hash": "5dc9c0536b06b46fb5077dfce09a42d12d1f4ef854bb73018c5964ea2290266e",
+            "size": 988,
+            "mtime": 1764260139.4957058
+        },
+        "assets/obstacle3.png": {
+            "hash": "74693558304d81ec7a613a5254bfe34ae322db364564b379afbc55f0543a47ae",
+            "size": 932,
+            "mtime": 1764260139.4957058
+        },
+        "assets/player.png": {
+            "hash": "7ea168b50d465ff78b5464ce52c875ace15343d562746227d8c26cf3eebba003",
+            "size": 730,
+            "mtime": 1764260139.5074847
+        }
+    }
+}

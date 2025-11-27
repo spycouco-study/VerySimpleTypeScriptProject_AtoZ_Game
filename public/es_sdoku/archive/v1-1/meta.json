@@ -1,0 +1,122 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-28T02:02:20.269514",
+    "summary": "스도쿠 게임을 만들어줘",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "bullet.png",
+            "path": "assets/bullet.png",
+            "type": "Add"
+        },
+        {
+            "name": "enemy.png",
+            "path": "assets/enemy.png",
+            "type": "Add"
+        },
+        {
+            "name": "explosion.mp3",
+            "path": "assets/explosion.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        },
+        {
+            "name": "shoot.mp3",
+            "path": "assets/shoot.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "start_sound.mp3",
+            "path": "assets/start_sound.mp3",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "f3db33cdacf1a44bc591d07a55069b7fdbdb48ab6d73552781508ae0c4cecb3a",
+            "size": 1218,
+            "mtime": 1764262934.9445343
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "197699e2b4de950b94c91ed47e95b105b80b34c343e69058b0adcbd3b8885a66",
+            "size": 25526,
+            "mtime": 1764262939.9258614
+        },
+        "game.ts": {
+            "hash": "04d9d35e8b687b29a968b7d938a14c4b72a0c33fb86626fe4813616f8b131b5e",
+            "size": 9453,
+            "mtime": 1764262744.3383071
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/bullet.png": {
+            "hash": "6baed517ebeac60ff87e96fa9afc443b57118bc58e852b521bf2e43c9dad2b81",
+            "size": 86,
+            "mtime": 1764262934.899772
+        },
+        "assets/enemy.png": {
+            "hash": "b57e82e6a6e84a9d2f4b374a34d303634d3c5ee67e7476e542517d364a58dc2f",
+            "size": 655,
+            "mtime": 1764262871.334632
+        },
+        "assets/explosion.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/player.png": {
+            "hash": "56973c3a9d9b8e8af26a892dc621a0730841ace6dfe2dcd2524f800a6a257258",
+            "size": 732,
+            "mtime": 1764262807.7602193
+        },
+        "assets/shoot.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/start_sound.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        }
+    }
+}
