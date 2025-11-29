@@ -402,7 +402,7 @@ class Player extends GameObject {
     takeDamage(amount: number) {
         if (this.hitInvincibilityTimer <= 0) {
             this.health -= amount;
-            this.hitInvincibilityTimer = this.hitInvincibilityDuration;
+            this.hitInvincibilityTimer = this.gameSettings.player.hitInvincibilityDuration; // Use gameSettings for duration
         }
     }
 
@@ -431,11 +431,10 @@ class ParallaxBackground extends GameObject {
         // Check if the first image has scrolled off-screen
         if (this.x + this.width <= 0) {
             this.x += this.width; // Move it to the right of the second image to create a loop
-            // To ensure seamlessness if gameSpeed is high and frame rate low,
-            // we might need to adjust by another width if it jumps too far
-            if (this.x + this.width <= 0) {
-                this.x += this.width;
-            }
+            // The redundant nested check has been removed:
+            // if (this.x + this.width <= 0) {
+            //     this.x += this.width;
+            // }
         }
     }
 
@@ -444,6 +443,7 @@ class ParallaxBackground extends GameObject {
         ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
         ctx.drawImage(this.image, this.x + this.width, this.y, this.width, this.height);
         // If the scaled image width is less than canvas width, draw a third for full coverage
+        // This condition correctly prevents drawing a third image when this.width equals canvasWidth
         if (this.width < this.canvasWidth && this.x + 2 * this.width <= this.canvasWidth + (this.speed * 10)) { // Small buffer for smooth loop
              ctx.drawImage(this.image, this.x + 2 * this.width, this.y, this.width, this.height);
         }
