@@ -1,0 +1,12 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-28T14:27:36.249171",
+            "summary": "사과게임을 만들어줘",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

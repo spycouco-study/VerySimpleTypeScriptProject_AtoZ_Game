@@ -13,8 +13,7 @@
             "hitInvincibilityDuration": 2.0,
             "groundOffsetY": -10,
             "maxJumps": 2,
-            "runAnimationSpeed": 0.2,
-            "runAnimationFrames": ["cookie_run_1", "cookie_run_2"]
+            "runAnimationSpeed": 0.2
         },
         "obstacle": {
             "width": 60,
