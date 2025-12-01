@@ -1,0 +1,76 @@
+{
+    "gameConfig": {
+        "tileSize": 64,
+        "playerSpeed": 0.15,
+        "playerMaxHealth": 1,
+        "balloonFuseTimeMs": 2500,
+        "explosionDurationMs": 500,
+        "initialExplosionRange": 1,
+        "initialMaxBalloons": 1,
+        "enemyCount": 2,
+        "enemySpeed": 0.1,
+        "itemSpawnChance": 0.5,
+        "levelWidth": 15,
+        "levelHeight": 11,
+        "titleScreenText": "WATER BOMB ARENA",
+        "gameOverText": "GAME OVER!",
+        "winText": "YOU WIN!",
+        "titleBGM": "bgm_title",
+        "gameBGM": "bgm_game",
+        "assets": {
+            "images": [
+                { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+                { "name": "enemy", "path": "assets/enemy.png", "width": 64, "height": 64 },
+                { "name": "block_solid", "path": "assets/block_solid.png", "width": 64, "height": 64 },
+                { "name": "block_breakable", "path": "assets/block_breakable.png", "width": 64, "height": 64 },
+                { "name": "water_balloon", "path": "assets/water_balloon.png", "width": 64, "height": 64 },
+                { "name": "explosion_center", "path": "assets/explosion_center.png", "width": 64, "height": 64 },
+                { "name": "explosion_horizontal", "path": "assets/explosion_horizontal.png", "width": 64, "height": 64 },
+                { "name": "explosion_horizontal_end", "path": "assets/explosion_horizontal_end.png", "width": 64, "height": 64 },
+                { "name": "explosion_vertical", "path": "assets/explosion_vertical.png", "width": 64, "height": 64 },
+                { "name": "explosion_vertical_end", "path": "assets/explosion_vertical_end.png", "width": 64, "height": 64 },
+                { "name": "item_range_up", "path": "assets/item_range_up.png", "width": 64, "height": 64 },
+                { "name": "item_max_balloon_up", "path": "assets/item_max_balloon_up.png", "width": 64, "height": 64 },
+                { "name": "item_speed_up", "path": "assets/item_speed_up.png", "width": 64, "height": 64 },
+                { "name": "background", "path": "assets/background.png", "width": 64, "height": 64 }
+            ],
+            "sounds": [
+                { "name": "bgm_title", "path": "assets/title_bgm.mp3", "duration_seconds": 30.0, "volume": 0.3 },
+                { "name": "bgm_game", "path": "assets/game_bgm.mp3", "duration_seconds": 60.0, "volume": 0.2 },
+                { "name": "sfx_place_balloon", "path": "assets/place_balloon.mp3", "duration_seconds": 0.5, "volume": 0.5 },
+                { "name": "sfx_explosion", "path": "assets/explosion.mp3", "duration_seconds": 1.0, "volume": 0.6 },
+                { "name": "sfx_item_pickup", "path": "assets/item_pickup.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+                { "name": "sfx_player_death", "path": "assets/player_death.mp3", "duration_seconds": 1.5, "volume": 0.8 },
+                { "name": "sfx_enemy_death", "path": "assets/enemy_death.mp3", "duration_seconds": 1.0, "volume": 0.6 }
+            ]
+        },
+        "mapLayouts": [
+            [
+                [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,0,1,2,1,2,1,2,1,2,1,2,1,0,1],
+                [1,0,2,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,0,1,0,1,2,1,2,1,2,1,0,1,0,1],
+                [1,0,2,0,2,0,0,0,0,0,0,0,0,0,1],
+                [1,0,1,0,1,2,1,2,1,2,1,0,1,0,1],
+                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,0,1,2,1,2,1,2,1,2,1,2,1,0,1],
+                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+            ],
+            [
+                [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,0,1,2,1,2,1,0,1,2,1,2,1,0,1],
+                [1,0,2,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,0,1,0,1,0,1,2,1,0,1,0,1,0,1],
+                [1,0,2,0,2,0,0,0,0,0,0,0,0,0,1],
+                [1,0,1,0,1,0,1,2,1,0,1,0,1,0,1],
+                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,0,1,2,1,2,1,0,1,2,1,2,1,0,1],
+                [1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+            ]
+        ]
+    }
+}

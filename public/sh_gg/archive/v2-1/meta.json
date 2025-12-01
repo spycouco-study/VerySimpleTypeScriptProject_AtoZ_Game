@@ -1,0 +1,253 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-11-18T16:18:45.382888",
+    "summary": "게임이 Enter 키를 눌렀을 때 시작되도록 수정해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "type": "Add"
+        },
+        {
+            "name": "block_breakable.png",
+            "path": "assets/block_breakable.png",
+            "type": "Add"
+        },
+        {
+            "name": "block_solid.png",
+            "path": "assets/block_solid.png",
+            "type": "Add"
+        },
+        {
+            "name": "enemy.png",
+            "path": "assets/enemy.png",
+            "type": "Add"
+        },
+        {
+            "name": "enemy_death.mp3",
+            "path": "assets/enemy_death.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "explosion.mp3",
+            "path": "assets/explosion.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "explosion_center.png",
+            "path": "assets/explosion_center.png",
+            "type": "Add"
+        },
+        {
+            "name": "explosion_horizontal.png",
+            "path": "assets/explosion_horizontal.png",
+            "type": "Add"
+        },
+        {
+            "name": "explosion_horizontal_end.png",
+            "path": "assets/explosion_horizontal_end.png",
+            "type": "Add"
+        },
+        {
+            "name": "explosion_vertical.png",
+            "path": "assets/explosion_vertical.png",
+            "type": "Add"
+        },
+        {
+            "name": "explosion_vertical_end.png",
+            "path": "assets/explosion_vertical_end.png",
+            "type": "Add"
+        },
+        {
+            "name": "game_bgm.mp3",
+            "path": "assets/game_bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "item_max_balloon_up.png",
+            "path": "assets/item_max_balloon_up.png",
+            "type": "Add"
+        },
+        {
+            "name": "item_pickup.mp3",
+            "path": "assets/item_pickup.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "item_range_up.png",
+            "path": "assets/item_range_up.png",
+            "type": "Add"
+        },
+        {
+            "name": "item_speed_up.png",
+            "path": "assets/item_speed_up.png",
+            "type": "Add"
+        },
+        {
+            "name": "place_balloon.mp3",
+            "path": "assets/place_balloon.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_death.mp3",
+            "path": "assets/player_death.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "title_bgm.mp3",
+            "path": "assets/title_bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "water_balloon.png",
+            "path": "assets/water_balloon.png",
+            "type": "Add"
+        },
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "3e28ba9a7f439a6520e70d9e0d2f84eaa3ad980517851273acc48229b83f7e9d",
+            "size": 4312,
+            "mtime": 1763450323.1881366
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763445575.5299747
+        },
+        "game.ts": {
+            "hash": "9889343ca47abe1385df48dab5cad93794b3ef42f63d9b55ab9348342c09feb8",
+            "size": 57879,
+            "mtime": 1763450323.028963
+        },
+        "assets/background.png": {
+            "hash": "8cc7cb8e017db0c1cbba40f78f256894552ef819d714a486ca857b5b6a8441e3",
+            "size": 854,
+            "mtime": 1763450323.1542237
+        },
+        "assets/block_breakable.png": {
+            "hash": "6c68526485f2e70d885f53bd468a91b7963a2d8aa2ab4ca0385eba7a1f31be92",
+            "size": 806,
+            "mtime": 1763450323.1094894
+        },
+        "assets/block_solid.png": {
+            "hash": "d4ce5d75f797bdfdf5ee62c3b034cca687008a3f24d9733d30ca29bfa2ab7328",
+            "size": 761,
+            "mtime": 1763450323.104293
+        },
+        "assets/enemy.png": {
+            "hash": "c2f8c7e8298d370b41446965b07c2de1a994347505fb6298deaefb67c65c7cfa",
+            "size": 555,
+            "mtime": 1763450323.0892916
+        },
+        "assets/enemy_death.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/explosion.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/explosion_center.png": {
+            "hash": "dcaf1e804b6bbf9bda526455c82cc5fbf219bc312d0abb4f41b0263e263f380e",
+            "size": 822,
+            "mtime": 1763450323.1193695
+        },
+        "assets/explosion_horizontal.png": {
+            "hash": "da5236d5bc63e5c38eec607c8884ad4bf0e9676a4dfd295f338070d18f07f343",
+            "size": 693,
+            "mtime": 1763450323.1250923
+        },
+        "assets/explosion_horizontal_end.png": {
+            "hash": "0a7b5cb7e92ade68bd94e8226f551c76476ce439d10d96d3db9881dbaa4b5174",
+            "size": 614,
+            "mtime": 1763450323.1315129
+        },
+        "assets/explosion_vertical.png": {
+            "hash": "77134cacdfa2c14f6283f95d1c5748ccfcb85bbd2f07be16b0341232fdda5402",
+            "size": 888,
+            "mtime": 1763450323.1324928
+        },
+        "assets/explosion_vertical_end.png": {
+            "hash": "a1545df980765fddb9a9595af14044535843dfcaa5e718dcd1201905315cf983",
+            "size": 869,
+            "mtime": 1763450323.1387029
+        },
+        "assets/game_bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763445575.5841365
+        },
+        "assets/item_max_balloon_up.png": {
+            "hash": "0d6fdd60424c3e8510169b3c763476554372879cee07fda222aa20e92bc2c0db",
+            "size": 713,
+            "mtime": 1763450323.1473484
+        },
+        "assets/item_pickup.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/item_range_up.png": {
+            "hash": "6f7c9eec67caa34b2d6b13249a42401c2bf43b88558cda0cc100189ecb475af4",
+            "size": 783,
+            "mtime": 1763450323.1444817
+        },
+        "assets/item_speed_up.png": {
+            "hash": "fd0bc3824e1f044f87cca56e55fa201991e07b71058e2695cda7716543846353",
+            "size": 730,
+            "mtime": 1763450323.1473484
+        },
+        "assets/place_balloon.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/player.png": {
+            "hash": "dff6e6568ffb657eee775f2818bfe18b6a5432ced214f4398a701046e2e07303",
+            "size": 604,
+            "mtime": 1763450323.0892916
+        },
+        "assets/player_death.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/title_bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763445575.5841365
+        },
+        "assets/water_balloon.png": {
+            "hash": "c04d2874e0201da56816994efa9a6833463554edd00b5eeebe7fc109f439dff7",
+            "size": 819,
+            "mtime": 1763450323.1114676
+        }
+    }
+}
