@@ -1,0 +1,122 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-28T02:24:10.881188",
+    "summary": "토끼와 거북이가 경주하는 게임을 만들어 주세요.\n사용자의 캐릭터는 거북이가 되게 해주세요.\n게임의 목표는 토끼와 경주하여 이기는 것으로 설정해 주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "bullet.png",
+            "path": "assets/bullet.png",
+            "type": "Add"
+        },
+        {
+            "name": "enemy.png",
+            "path": "assets/enemy.png",
+            "type": "Add"
+        },
+        {
+            "name": "hit.mp3",
+            "path": "assets/hit.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        },
+        {
+            "name": "shoot.mp3",
+            "path": "assets/shoot.mp3",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "d4dfba711c150da2eadb63f3047463d2c25010f9d2d962ed1b54c463955c0f82",
+            "size": 1631,
+            "mtime": 1764264245.996394
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "71c0384ce48fb6acdf8bf111312f3749da34464db07203ca9862cfb40fe63705",
+            "size": 50576,
+            "mtime": 1764264250.6475408
+        },
+        "game.ts": {
+            "hash": "d3a0f48aba08403d50ecba9d3ec320dfcff738675fdf05a79d8fc9fb3f7bcfb1",
+            "size": 17813,
+            "mtime": 1764264017.693987
+        },
+        "assets/background.png": {
+            "hash": "c88656e3a540d188cb3a6a1793f0c047c1411060187177f607aff3bccc4d4896",
+            "size": 88175,
+            "mtime": 1764264050.8472228
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/bullet.png": {
+            "hash": "1521c5aebb87aa3b90bda9630211a0e7f283afc41fb3f58ef2f375e16aedbe1a",
+            "size": 61062,
+            "mtime": 1764264245.971058
+        },
+        "assets/enemy.png": {
+            "hash": "fd03138148816fed1ae8352639343e5d81a211562b2e0822b8f278ad71d3824b",
+            "size": 262844,
+            "mtime": 1764264133.7423587
+        },
+        "assets/hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/player.png": {
+            "hash": "366f04a98eb21b2cb45720c02c05637bbab51c138b4bf33b46336d58b7066dff",
+            "size": 126811,
+            "mtime": 1764264093.2973115
+        },
+        "assets/shoot.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        }
+    }
+}

@@ -1,6 +1,7 @@
 {
   "name": "verysimpletypescriptproject_atoz_game",
   "version": "1.0.0",
+  "type": "module",
   "description": ".\\setup.bat",
   "main": "server.js",
   "scripts": {
@@ -14,14 +15,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/spycouco-study/VerySimpleTypeScriptProject_AtoZ_Game/issues"
   },
   "homepage": "https://github.com/spycouco-study/VerySimpleTypeScriptProject_AtoZ_Game#readme",
   "dependencies": {
     "@types/three": "^0.181.0",
-    "body-parser": "^2.2.0",
+    "body-parser": "^2.2.1",
     "cannon-es": "^0.20.0",
     "cors": "^2.8.5",
     "esbuild": "^0.27.0",

@@ -1,0 +1,46 @@
+{
+    "gameSettings": {
+        "canvasWidth": 800,
+        "canvasHeight": 600,
+        "backgroundColor": "#1a1a2e",
+        "titleText": "ASTRO SHOOTER",
+        "startPromptText": "Press SPACE or Click to Start",
+        "gameOverText": "GAME OVER!",
+        "restartPromptText": "Press R to Restart",
+        "player": {
+            "width": 50,
+            "height": 50,
+            "speed": 300,
+            "fireRateMs": 200,
+            "health": 3
+        },
+        "bullet": {
+            "width": 10,
+            "height": 20,
+            "speed": 500,
+            "damage": 1
+        },
+        "enemy": {
+            "width": 40,
+            "height": 40,
+            "speed": 100,
+            "spawnIntervalMs": 1000,
+            "health": 1,
+            "scoreValue": 10
+        },
+        "gameFont": "24px Arial"
+    },
+    "assets": {
+        "images": [
+            { "name": "background", "path": "assets/background.png", "width": 800, "height": 600 },
+            { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+            { "name": "enemy", "path": "assets/enemy.png", "width": 32, "height": 32 },
+            { "name": "bullet", "path": "assets/bullet.png", "width": 10, "height": 20 }
+        ],
+        "sounds": [
+            { "name": "shoot", "path": "assets/shoot.mp3", "duration_seconds": 0.2, "volume": 0.5 },
+            { "name": "hit", "path": "assets/hit.mp3", "duration_seconds": 0.1, "volume": 0.7 },
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 120.0, "volume": 0.3 }
+        ]
+    }
+}

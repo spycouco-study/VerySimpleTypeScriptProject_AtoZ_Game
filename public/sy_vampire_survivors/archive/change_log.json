@@ -686,7 +686,7 @@
             "timestamp": "2025-11-19T20:00:39.179141",
             "summary": "",
             "is_latest": false,
-            "is_current": false
+            "is_current": true
         },
         {
             "version": "v77-1",
@@ -694,7 +694,7 @@
             "timestamp": "2025-11-19T20:00:59.081362",
             "summary": "",
             "is_latest": true,
-            "is_current": true
+            "is_current": false
         }
     ]
 }

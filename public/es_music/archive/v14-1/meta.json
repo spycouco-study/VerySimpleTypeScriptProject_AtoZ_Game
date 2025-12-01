@@ -1,0 +1,123 @@
+{
+    "version": "v14-1",
+    "parent": "v13-1",
+    "timestamp": "2025-11-26T11:25:08.001773",
+    "summary": "bgm.mp3 파일을 분석하여 게임 플레이에 사용될 노트를 자동으로 생성해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "last_version": "v11-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v11-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v10-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v6-1"
+        },
+        {
+            "name": "hit.mp3",
+            "path": "assets/hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "hitzone.png",
+            "path": "assets/hitzone.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "miss.mp3",
+            "path": "assets/miss.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "new_bgm.mp3",
+            "path": "assets/new_bgm.mp3",
+            "last_version": "v13-1"
+        },
+        {
+            "name": "note.png",
+            "path": "assets/note.png",
+            "last_version": "v9-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "7efb38110efddf211dbaea5c18d962771bc0a4e8e62f794dd8f4f0c1ab408afb",
+            "size": 5367,
+            "mtime": 1764123904.4566128
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "6e68d20f490d5964be4caf7e06d8ae30e29842bd713992d210823f05d390efb7",
+            "size": 72840,
+            "mtime": 1764123907.8404374
+        },
+        "game.ts": {
+            "hash": "a59992b6d89ef1d514b902691c1b881bdfc4c44ee553e6cd1e755338a0eaeefe",
+            "size": 27814,
+            "mtime": 1764122845.023642
+        },
+        "assets/background.png": {
+            "hash": "d4b5d1b1b2c527c659cd704492fd2222e1f1d7482af0c3ae8722e99b76409065",
+            "size": 4145,
+            "mtime": 1764122353.5049102
+        },
+        "assets/bgm.mp3": {
+            "hash": "dd16d6480357955aca5f05b9338fdd4961955d5100d7852fe70b67f0d94ec6d4",
+            "size": 8697029,
+            "mtime": 1764121395.7311954
+        },
+        "assets/hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/hitzone.png": {
+            "hash": "314dcc55915dfe49f198e6f9de213ee989355ab8735d9640172a1a1d3a233bc2",
+            "size": 410,
+            "mtime": 1764120279.963452
+        },
+        "assets/miss.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/new_bgm.mp3": {
+            "hash": "5ede413e15763ca581dc0e00fe1ba8b1ce7ec6a7ba92dbabad21a1cd0660638a",
+            "size": 5778131,
+            "mtime": 1764123610.7824485
+        },
+        "assets/note.png": {
+            "hash": "69faaaf9e512816bb452d90d66f390c79906d22d97c841bc70b32a39a2a24edd",
+            "size": 144391,
+            "mtime": 1764122241.4603071
+        }
+    }
+}

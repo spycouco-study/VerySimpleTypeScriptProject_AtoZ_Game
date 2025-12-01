@@ -1,0 +1,65 @@
+/* 1. HTML 및 Body 설정: 화면 전체 채우기 및 중앙 정렬 */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  /* 스크롤바 방지 */
+  overflow: hidden;
+  /* 캔버스 주변 배경색 */
+  background-color: #322738;
+}
+
+body {
+  /* ... (기존 설정 유지) ... */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 2. 컨테이너 설정: 비율 유지하며 전체 스케일링 (핵심 수정) */
+#gameContainer {
+  max-width: 100vw;
+  /* ************* 핵심 변경: 캔버스가 잘리는 양만큼 높이 제약을 해제 ************* */
+  /* h2가 차지하는 공간(대략 2vw 폰트 크기 + 여백)을 100vh에 더하여 공간 확보 */
+  /* 여기서는 h2의 높이를 flex-shrink: 0;으로 고정하고, 캔버스가 줄어들도록 합니다. */
+  max-height: 100vh;
+
+  min-width: 0;
+  min-height: 0;
+
+  /* ... (다른 속성 유지) ... */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+/* 3. 캔버스 설정: 캔버스가 유연하게 축소되도록 설정 */
+#gameCanvas {
+  flex-grow: 1;
+  min-height: 0;
+
+  /* ************* 추가: object-fit을 사용하여 캔버스 영역 내에서 비율 유지 ************* */
+  /* Flexbox가 공간을 할당한 후, 캔버스 자신이 할당된 공간 내에서 비율을 지키도록 합니다. */
+  object-fit: contain;
+
+  /* aspect-ratio는 제거합니다. (object-fit이 처리) */
+
+  width: 100%;
+  height: 100%; /* flex-grow가 작동하므로 height: 100%로 설정 */
+  /* background-color: #333; */
+  margin: 1vw 1vh;
+}
+
+/* 4. 제목 스타일 */
+#gameContainer h2 {
+  font-size: 2vw;
+  text-align: center;
+  flex-shrink: 0;
+  color: white;
+  margin: 1vh 0; /* 제목의 상하 여백도 vh로 설정하여 유동적으로 만듭니다. */
+}

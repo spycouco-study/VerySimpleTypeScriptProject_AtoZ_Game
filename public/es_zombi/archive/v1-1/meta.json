@@ -1,0 +1,132 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-28T02:43:41.285075",
+    "summary": "game.ts(365,44): error TS2339: Property 'isOffscreen' does not exist on type 'Enemy'.\n",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "enemy.png",
+            "path": "assets/enemy.png",
+            "type": "Add"
+        },
+        {
+            "name": "enemy_bullet.png",
+            "path": "assets/enemy_bullet.png",
+            "type": "Add"
+        },
+        {
+            "name": "enemy_hit.mp3",
+            "path": "assets/enemy_hit.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_bullet.png",
+            "path": "assets/player_bullet.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_hit.mp3",
+            "path": "assets/player_hit.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "player_shoot.mp3",
+            "path": "assets/player_shoot.mp3",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "a1143a3bdb84d54e5c24c1e1be77fec31c588912c4e34edeab60506987e2da7a",
+            "size": 1856,
+            "mtime": 1764265412.2502482
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "c3b45b1fd936892854783966b133b121f710d9ddc7a7cf8bcba81e823cd209a1",
+            "size": 59555,
+            "mtime": 1764265420.943744
+        },
+        "game.ts": {
+            "hash": "ebc88b9f78cfcf6b632a28dc5f7542625f79c6ba11010c159b9fb426204401ea",
+            "size": 21463,
+            "mtime": 1764265412.2429018
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/enemy.png": {
+            "hash": "afbe3397368f6c720a44c25e5a0aaee8ab988f194b75bae35e55a02696341af5",
+            "size": 207751,
+            "mtime": 1764265285.0732334
+        },
+        "assets/enemy_bullet.png": {
+            "hash": "7e0a834fa5d99738ba5cb8f6bcc3754509ac1f8d67562cad13de4d1116bb1059",
+            "size": 94617,
+            "mtime": 1764265356.76731
+        },
+        "assets/enemy_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/player.png": {
+            "hash": "bfc60d8eff7231350242223fae044ae68991ccee1a5e7857adc33697e1121727",
+            "size": 132380,
+            "mtime": 1764265248.5652888
+        },
+        "assets/player_bullet.png": {
+            "hash": "498851e65135892d7715bf3d87a00855b91abaed3a00bd9166109b9a3dcb2f18",
+            "size": 158125,
+            "mtime": 1764265318.6577377
+        },
+        "assets/player_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/player_shoot.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        }
+    }
+}

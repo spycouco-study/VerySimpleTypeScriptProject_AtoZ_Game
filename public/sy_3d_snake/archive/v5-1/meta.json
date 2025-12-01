@@ -1,0 +1,143 @@
+{
+    "version": "v5-1",
+    "parent": "v4-3",
+    "timestamp": "2025-11-27T05:45:47.315688",
+    "summary": "게임 생성 중 'OrbitControls'에서 'enableDDamping' 속성이 존재하지 않는다는 오류가 발생합니다. 오류 메시지에서 제안하는 대로 'enableDamping'으로 속성 이름을 수정하여 문제를 해결해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts.bak",
+            "path": "game.ts.bak",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v2-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "eat.mp3",
+            "path": "assets/eat.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "food.png",
+            "path": "assets/food.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_body.png",
+            "path": "assets/snake_body.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_head.png",
+            "path": "assets/snake_head.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "start_game.mp3",
+            "path": "assets/start_game.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "wall_texture.png",
+            "path": "assets/wall_texture.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "5d9d3d127028d380afac54b4d034a7df387d38b484764c3e8a077326376aa612",
+            "size": 1246,
+            "mtime": 1764221639.242543
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764221595.0718384
+        },
+        "game.js": {
+            "hash": "fd548e38f03e957b57b399c2caa007e2e7031a6b8fcbcdc51ae96f18b2df585f",
+            "size": 73654,
+            "mtime": 1764222345.6925845
+        },
+        "game.ts": {
+            "hash": "d5cdf9b29b413188b07ba2f5c2caa1092f09faf3df8221e6c535abd1ab8fcacb",
+            "size": 25774,
+            "mtime": 1764222339.738361
+        },
+        "game.ts.bak": {
+            "hash": "d9587f8df62b3b3ec0e4f0011add204a6077239b8bcd2ca3603ecdf2820206b3",
+            "size": 25773,
+            "mtime": 1764222339.63831
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764221595.4637647
+        },
+        "assets/eat.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764221595.5294223
+        },
+        "assets/food.png": {
+            "hash": "9336cd7521b272d273d3c4caf210c8ae03fa42d7926a61509d1e6bed094b6056",
+            "size": 424,
+            "mtime": 1764221595.601856
+        },
+        "assets/game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764221595.683009
+        },
+        "assets/snake_body.png": {
+            "hash": "4b43005280e0fc90f06876c04db2e2305c2565cf72fa86101851a73d9d383f49",
+            "size": 921,
+            "mtime": 1764221595.9414532
+        },
+        "assets/snake_head.png": {
+            "hash": "42e488dd551923aee85328d776a22adc648c371909597eace13522ab2c795197",
+            "size": 728,
+            "mtime": 1764221596.0844355
+        },
+        "assets/start_game.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764221596.1652522
+        },
+        "assets/wall_texture.png": {
+            "hash": "5a12433ec31df5a7efdab25a67f4a2e71547414b14bbd3bb217d7d4077bf6036",
+            "size": 964,
+            "mtime": 1764221596.2410316
+        }
+    }
+}

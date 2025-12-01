@@ -1,0 +1,95 @@
+{
+    "gameSettings": {
+        "canvasWidth": 624,
+        "canvasHeight": 528,
+        "tileSize": 48,
+        "playerSpeed": 2.5,
+        "bombDelay": 2.5,
+        "explosionDuration": 0.5,
+        "explosionRange": 2,
+        "initialPlayerLives": 3,
+        "powerUpDropChance": 0.3,
+        "enemySpeed": 1.5,
+        "enemyMovementInterval": 1.5,
+        "enemyDeathAnimationDuration": 0.75
+    },
+    "playerSettings": {
+        "snapThreshold": 0.2,
+        "snapStrengthFactor": 0.5
+    },
+    "assets": {
+        "images": [
+            { "name": "title_screen", "path": "assets/title_screen.png", "width": 624, "height": 528 },
+            { "name": "player", "path": "assets/player.png", "width": 48, "height": 48 },
+            { "name": "block_indestructible", "path": "assets/block_indestructible.png", "width": 48, "height": 48 },
+            { "name": "block_destructible", "path": "assets/block_destructible.png", "width": 48, "height": 48 },
+            { "name": "bomb", "path": "assets/bomb.png", "width": 48, "height": 48 },
+            { "name": "explosion_center", "path": "assets/explosion_center.png", "width": 48, "height": 48 },
+            { "name": "explosion_horizontal", "path": "assets/explosion_horizontal.png", "width": 48, "height": 48 },
+            { "name": "explosion_vertical", "path": "assets/explosion_vertical.png", "width": 48, "height": 48 },
+            { "name": "explosion_end_up", "path": "assets/explosion_end_up.png", "width": 48, "height": 48 },
+            { "name": "explosion_end_down", "path": "assets/explosion_end_down.png", "width": 48, "height": 48 },
+            { "name": "explosion_end_left", "path": "assets/explosion_end_left.png", "width": 48, "height": 48 },
+            { "name": "explosion_end_right", "path": "assets/explosion_end_right.png", "width": 48, "height": 48 },
+            { "name": "enemy", "path": "assets/enemy.png", "width": 48, "height": 48 },
+            { "name": "powerup_bomb", "path": "assets/powerup_bomb.png", "width": 48, "height": 48 },
+            { "name": "powerup_range", "path": "assets/powerup_range.png", "width": 48, "height": 48 },
+            { "name": "powerup_speed", "path": "assets/powerup_speed.png", "width": 48, "height": 48 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.5 },
+            { "name": "sfx_bomb_place", "path": "assets/bomb_place.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+            { "name": "sfx_explosion", "path": "assets/explosion.mp3", "duration_seconds": 1.0, "volume": 0.8 },
+            { "name": "sfx_powerup", "path": "assets/powerup.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+            { "name": "sfx_player_hit", "path": "assets/player_hit.mp3", "duration_seconds": 0.7, "volume": 0.8 },
+            { "name": "sfx_game_over", "path": "assets/game_over.mp3", "duration_seconds": 3.0, "volume": 0.9 },
+            { "name": "sfx_level_complete", "path": "assets/level_complete.mp3", "duration_seconds": 2.0, "volume": 0.9 },
+            { "name": "sfx_enemy_death", "path": "assets/enemy_death.mp3", "duration_seconds": 0.5, "volume": 0.7 }
+        ]
+    },
+    "levels": [
+        {
+            "mapTiles": [
+                [1,1,1,1,1,1,1,1,1,1,1,1,1],
+                [1,0,0,2,0,2,0,2,0,2,0,0,1],
+                [1,0,1,2,1,2,1,2,1,2,1,0,1],
+                [1,2,2,0,0,0,0,0,0,0,0,0,1],
+                [1,0,1,0,1,0,1,0,1,0,1,0,1],
+                [1,2,0,0,0,0,0,0,0,0,0,0,1],
+                [1,0,1,0,1,0,1,0,1,0,1,0,1],
+                [1,0,0,0,0,0,0,0,0,0,2,0,1],
+                [1,0,1,0,1,0,1,0,1,0,1,0,1],
+                [1,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,1,1,1,1,1,1,1,1,1,1,1,1]
+            ],
+            "playerSpawn": { "x": 1, "y": 9 },
+            "enemySpawns": [
+                { "x": 11, "y": 5 },
+                { "x": 5, "y": 1 },
+                { "x": 7, "y": 3 }
+            ]
+        },
+        {
+            "mapTiles": [
+                [1,1,1,1,1,1,1,1,1,1,1,1,1],
+                [1,0,2,2,0,2,0,2,0,2,2,0,1],
+                [1,2,1,0,1,0,1,0,1,0,1,2,1],
+                [1,0,2,0,2,0,0,0,0,2,0,0,1],
+                [1,0,1,0,1,2,1,2,1,0,1,0,1],
+                [1,0,0,0,0,0,0,0,0,0,0,0,1],
+                [1,0,1,0,1,2,1,2,1,0,1,0,1],
+                [1,0,0,0,0,0,0,0,0,2,0,0,1],
+                [1,2,1,0,1,0,1,0,1,0,1,2,1],
+                [1,0,2,2,0,2,0,2,0,2,2,0,1],
+                [1,1,1,1,1,1,1,1,1,1,1,1,1]
+            ],
+            "playerSpawn": { "x": 1, "y": 1 },
+            "enemySpawns": [
+                { "x": 11, "y": 9 },
+                { "x": 1, "y": 9 },
+                { "x": 11, "y": 1 },
+                { "x": 6, "y": 5 }
+            ]
+        }
+    ]
+}

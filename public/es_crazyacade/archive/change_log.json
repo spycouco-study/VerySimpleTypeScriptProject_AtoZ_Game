@@ -1,0 +1,236 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-18T15:48:51.916662",
+            "summary": "크레이지아케이드와 관련된 게임을 생성해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-18T16:13:33.367614",
+            "summary": "게임 재생을 할 수가 없어",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-11-18T16:19:58.130918",
+            "summary": "bomb.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-11-18T16:23:43.883591",
+            "summary": "게임 내 움직임(무빙)이 불편하니 더 편안하게 움직일 수 있도록 개선해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-11-18T16:27:04.646648",
+            "summary": "게임 내에서 무언가가 움직이다가 사라지는 동작을 추가하거나 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v6-1",
+            "parent": "v5-1",
+            "timestamp": "2025-11-18T16:27:21.416238",
+            "summary": "bomb.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-1",
+            "parent": "v6-1",
+            "timestamp": "2025-11-18T16:37:15.896057",
+            "summary": "player.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v8-1",
+            "parent": "v7-1",
+            "timestamp": "2025-11-18T16:37:23.513161",
+            "summary": "player.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v9-1",
+            "parent": "v8-1",
+            "timestamp": "2025-11-18T16:42:27.876274",
+            "summary": "플레이어가 화면에서 사라지지 않도록 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v10-1",
+            "parent": "v9-1",
+            "timestamp": "2025-11-18T16:42:44.489841",
+            "summary": "block_destructible.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v11-1",
+            "parent": "v10-1",
+            "timestamp": "2025-11-18T16:42:53.471100",
+            "summary": "block_indestructible.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-2",
+            "parent": "v3-1",
+            "timestamp": "2025-11-18T16:49:33.334486",
+            "summary": "block_destructible.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-2",
+            "parent": "v4-2",
+            "timestamp": "2025-11-18T16:49:43.199545",
+            "summary": "block_indestructible.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v6-2",
+            "parent": "v5-2",
+            "timestamp": "2025-11-18T16:54:01.829754",
+            "summary": "게임 내 움직임(무빙)을 더 자연스럽게 개선해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-2",
+            "parent": "v6-2",
+            "timestamp": "2025-11-18T17:13:49.021013",
+            "summary": "길이 뚫려 있는데도 이동이 안 되는 버그를 수정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v8-2",
+            "parent": "v7-2",
+            "timestamp": "2025-11-18T17:13:49.411680",
+            "summary": "player.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v9-2",
+            "parent": "v8-2",
+            "timestamp": "2025-11-18T17:14:14.045114",
+            "summary": "enemy.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v10-2",
+            "parent": "v9-2",
+            "timestamp": "2025-11-18T17:14:32.036042",
+            "summary": "powerup_bomb.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v11-2",
+            "parent": "v10-2",
+            "timestamp": "2025-11-18T17:14:51.288956",
+            "summary": "powerup_range.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v12-1",
+            "parent": "v11-2",
+            "timestamp": "2025-11-18T17:15:02.769455",
+            "summary": "powerup_speed.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v13-1",
+            "parent": "v12-1",
+            "timestamp": "2025-11-18T17:15:15.990392",
+            "summary": "powerup_bomb.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v14-1",
+            "parent": "v13-1",
+            "timestamp": "2025-11-18T17:16:53.082422",
+            "summary": "title_screen.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v15-1",
+            "parent": "v14-1",
+            "timestamp": "2025-11-18T17:18:00.442854",
+            "summary": "bomb.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v16-1",
+            "parent": "v15-1",
+            "timestamp": "2025-11-18T17:18:13.566150",
+            "summary": "block_indestructible.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v17-1",
+            "parent": "v16-1",
+            "timestamp": "2025-11-18T17:19:32.376192",
+            "summary": "이동 중에 길이 막혔습니다. 이 상황을 게임에 반영하여 스토리를 진행해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v18-1",
+            "parent": "v17-1",
+            "timestamp": "2025-11-18T17:22:27.963772",
+            "summary": "player.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v19-1",
+            "parent": "v18-1",
+            "timestamp": "2025-11-20T16:44:45.363361",
+            "summary": "게임에서 움직이다가 갑자기 멈춰서 더 이상 움직일 수 없는 문제가 발생합니다. 이 현상을 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v20-1",
+            "parent": "v19-1",
+            "timestamp": "2025-11-20T17:45:19.608314",
+            "summary": "사용자가 '크레이지 아케이드 - Web Version' 게임의 전체 HTML, CSS, JavaScript 코드를 제공했습니다. 이 코드를 기반으로 게임을 생성하거나 실행해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v21-1",
+            "parent": "v20-1",
+            "timestamp": "2025-11-20T18:20:24.504580",
+            "summary": "물풍선을 쏜 후 움직일 수 없는 현재 문제에 대한 해결책으로, 다른 유사한 게임의 코드를 참고하여 게임을 수정해 주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

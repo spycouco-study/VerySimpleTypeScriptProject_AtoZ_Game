@@ -1,0 +1,34 @@
+{
+  "canvasWidth": 800,
+  "canvasHeight": 600,
+  "titleScreenText": "끝말잇기 게임",
+  "startPromptText": "아무 곳이나 클릭해서 시작!",
+  "gameOverText": "게임 오버! 점수: ",
+  "restartPromptText": "다시 시작하려면 클릭하세요.",
+  "fontFamily": "맑은 고딕, Malgun Gothic, sans-serif",
+  "textColor": "#FFFFFF",
+  "backgroundColor": "#333333",
+  "inputBoxColor": "#555555",
+  "inputTextColor": "#EEEEEE",
+  "errorTextColor": "#FF5555",
+  "correctTextColor": "#55FF55",
+  "wordList": [
+    "바나나", "나비", "비행기", "기차", "차", "자동차", "동물", "물고기", "기린", "린스",
+    "스위치", "치약", "약속", "속도", "도토리", "리본", "본부", "부엌", "엌", "컴퓨터",
+    "터널", "널빤지", "지금", "금요일", "일요일", "요가", "가방", "방귀", "귀걸이", "이사",
+    "사랑", "랑데부", "부추", "추석", "석탄", "탄산", "산책", "책상", "상자", "자전거",
+    "거울", "울타리", "리듬", "덤불", "불꽃", "꽃다발", "발자국", "국화", "화분", "분수",
+    "수박", "박수", "수수께끼", "끼니", "니켈", "켈리", "리코더", "더위", "위성", "성공"
+  ],
+  "initialWord": "사과",
+  "assets": {
+    "images": [
+      { "name": "background", "path": "assets/background.png", "width": 800, "height": 600 }
+    ],
+    "sounds": [
+      { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 },
+      { "name": "correct", "path": "assets/correct.mp3", "duration_seconds": 0.5, "volume": 0.8 },
+      { "name": "incorrect", "path": "assets/incorrect.mp3", "duration_seconds": 0.5, "volume": 0.8 }
+    ]
+  }
+}

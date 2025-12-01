@@ -1,0 +1,93 @@
+{
+    "version": "v3-1",
+    "parent": "v2-1",
+    "timestamp": "2025-11-27T14:23:20.152432",
+    "summary": "입력창에 한글이 안 나와서 게임을 만들거나 수정할 수 없습니다. 한글 입력이 가능하도록 앱 기능을 수정해 주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "correct.mp3",
+            "path": "assets/correct.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "incorrect.mp3",
+            "path": "assets/incorrect.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "53ffeab9b8ad5c29acc8a2fcf26138df5f9ac151794947714cac73e3dfc96569",
+            "size": 1712,
+            "mtime": 1764210183.6420157
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "4de700fbddf2c38be50220b636b60bee991b502005e3c7e33e8b42389384690a",
+            "size": 49249,
+            "mtime": 1764220999.8753734
+        },
+        "game.ts": {
+            "hash": "f62ae3dd3672fd0dae69ebe0f8669b140b332bde1b775f90627d4c84fb414353",
+            "size": 16955,
+            "mtime": 1764220994.6172233
+        },
+        "assets/background.png": {
+            "hash": "c92f9192cc136ed856cb232b2195625b98c31c2b64af59fbfcaf25e2f95dce90",
+            "size": 3590,
+            "mtime": 1764210183.61508
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/correct.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/incorrect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        }
+    }
+}

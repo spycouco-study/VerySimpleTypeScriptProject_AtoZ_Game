@@ -1,0 +1,113 @@
+{
+    "version": "v11-1",
+    "parent": "v10-1",
+    "timestamp": "2025-11-26T11:07:29.145524",
+    "summary": "사용자는 리듬 게임을 만들고자 합니다.\n게임에 사용할 트랙은 '10cm – 봄이 좋냐??'입니다.\n게임의 BPM은 94로 설정합니다.\n게임의 박자표기는 4/4입니다.\n게임의 장르는 팝/어쿠스틱이며, 킥과 스네어가 명확하지 않아 보컬과 기타 스트로크를 주요 판정 기준으로 삼습니다.\n노트 생성 규칙으로 기본 박자는 1/4 비트 단위로 생성합니다.\n후렴구에서는 1/8 및 1/16 subdivision을 사용합니다.\n노트는 보컬의 주요 syllable, 기타 스트로크, 드럼 히트를 우선 매핑합니다.\n판정 기준으로 Perfect는 ±25ms로 설정합니다.\n판정 기준으로 Great는 ±50ms로 설정합니다.\n판정 기준으로 Good은 ±90ms로 설정합니다.\n판정 기준으로 Miss는 90ms 초과 시 발생합니다.\n콤보는 Miss 판정에서만 끊깁니다.\nEasy 난이도는 1/4 비트 위주로 구성하며 보컬 후렴에 집중합니다.\nNormal 난이도는 1/4 비트와 1/8 비트를 섞고 기타 스트럼을 반영합니다.\nHard 난이도는 1/16 비트를 간헐적으로 사용하며 보컬 강세와 악기 싱크를 반영합니다.\n노트 타입으로 탭(Tap)은 단일 입력으로 정의합니다.\n노트 타입으로 홀드(Hold)는 기타 스트로크 지속 구간에 사용합니다.\n노트 타입으로 슬라이드(Slide)는 후렴 멜로디의 상행/하행 파트에 사용합니다.\nUI/UX는 판정선을 하단 중앙에 고정합니다.\n타격 타이밍은 사운드 기준 600ms 이전부터 접근하도록 설정합니다.\n싱크의 첫 downbeat 기준 BeatOffset은 0ms로 설정합니다.\n실제 곡 분석 후 오프셋 보정이 필요합니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v10-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v6-1"
+        },
+        {
+            "name": "hit.mp3",
+            "path": "assets/hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "hitzone.png",
+            "path": "assets/hitzone.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "miss.mp3",
+            "path": "assets/miss.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "note.png",
+            "path": "assets/note.png",
+            "last_version": "v9-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "b4805a1cb141ab0a23aa672bdf62e5852a7c87eb023c5cc1d54a71589365aa21",
+            "size": 62878,
+            "mtime": 1764122751.8423905
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "6e68d20f490d5964be4caf7e06d8ae30e29842bd713992d210823f05d390efb7",
+            "size": 72840,
+            "mtime": 1764122848.9190948
+        },
+        "game.ts": {
+            "hash": "a59992b6d89ef1d514b902691c1b881bdfc4c44ee553e6cd1e755338a0eaeefe",
+            "size": 27814,
+            "mtime": 1764122845.023642
+        },
+        "assets/background.png": {
+            "hash": "d4b5d1b1b2c527c659cd704492fd2222e1f1d7482af0c3ae8722e99b76409065",
+            "size": 4145,
+            "mtime": 1764122353.5049102
+        },
+        "assets/bgm.mp3": {
+            "hash": "dd16d6480357955aca5f05b9338fdd4961955d5100d7852fe70b67f0d94ec6d4",
+            "size": 8697029,
+            "mtime": 1764121395.7311954
+        },
+        "assets/hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/hitzone.png": {
+            "hash": "314dcc55915dfe49f198e6f9de213ee989355ab8735d9640172a1a1d3a233bc2",
+            "size": 410,
+            "mtime": 1764120279.963452
+        },
+        "assets/miss.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/note.png": {
+            "hash": "69faaaf9e512816bb452d90d66f390c79906d22d97c841bc70b32a39a2a24edd",
+            "size": 144391,
+            "mtime": 1764122241.4603071
+        }
+    }
+}

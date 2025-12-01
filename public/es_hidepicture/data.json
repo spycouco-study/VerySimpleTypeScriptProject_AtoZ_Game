@@ -1,0 +1,32 @@
+{
+    "assets": {
+        "images": [
+            { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+            { "name": "collectible", "path": "assets/collectible.png", "width": 32, "height": 32 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.5 },
+            { "name": "collect", "path": "assets/collect.mp3", "duration_seconds": 0.5, "volume": 0.8 },
+            { "name": "miss", "path": "assets/miss.mp3", "duration_seconds": 0.8, "volume": 0.8 }
+        ]
+    },
+    "gameSettings": {
+        "canvasWidth": 800,
+        "canvasHeight": 600,
+        "playerSpeed": 250,
+        "playerWidth": 60,
+        "playerHeight": 60,
+        "initialLives": 3,
+        "collectibleSpeedMin": 100,
+        "collectibleSpeedMax": 200,
+        "collectibleWidth": 40,
+        "collectibleHeight": 40,
+        "collectibleSpawnIntervalMin": 800,
+        "collectibleSpawnIntervalMax": 1800,
+        "scorePerCollectible": 10,
+        "titleScreenText": "떨어지는 아이템 수집\n← A D →로 이동, SPACE로 시작",
+        "gameOverScreenText": "게임 오버!\n최종 점수: {score}\nSPACE로 재시작",
+        "fontFamily": "Arial",
+        "textColor": "#FFFFFF"
+    }
+}

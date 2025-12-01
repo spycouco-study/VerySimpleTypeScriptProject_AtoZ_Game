@@ -1,0 +1,60 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-27T11:23:10.970348",
+            "summary": "끝말잇기 게임을 만들어주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-27T11:30:38.630624",
+            "summary": "게임 진행을 위해 입력창에서 한글 입력이 가능하도록 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-11-27T14:23:20.155818",
+            "summary": "입력창에 한글이 안 나와서 게임을 만들거나 수정할 수 없습니다. 한글 입력이 가능하도록 앱 기능을 수정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-11-27T14:25:59.797904",
+            "summary": "게임 생성 시 입력된 내용이 지워지지 않는 문제를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-11-27T14:26:55.653138",
+            "summary": "알맞은 단어를 입력해도 게임오버가 되지 않도록 게임의 로직을 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v6-1",
+            "parent": "v5-1",
+            "timestamp": "2025-11-27T14:29:24.728956",
+            "summary": "끝말잇기는 단어의 마지막 글자를 이어서 다음 단어를 만드는 게임입니다.\n예시로, '사과'의 마지막 글자인 '과'로 시작하는 '과일', 그리고 '일'로 시작하는 '일본'처럼 진행됩니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-1",
+            "parent": "v6-1",
+            "timestamp": "2025-11-27T14:37:04.454844",
+            "summary": "사용자가 올바른 단어를 입력했을 때 게임이 정상적으로 다음 단계로 진행되도록 기능을 수정해 주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

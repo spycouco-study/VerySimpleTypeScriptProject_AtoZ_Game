@@ -1,0 +1,20 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-27T14:36:08.825032",
+            "summary": "탭소닉과 유사한 스타일의 게임을 만들어 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-27T14:46:34.662255",
+            "summary": "에셋이 내려오는 모습(혹은 에셋이 사용 가능해지거나 배치되는 모습)을 사용자에게 보여주어, 사용자가 이를 예상하고 적절하게 조작(클릭 등)할 수 있도록 게임의 UI/UX를 개선해 주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}
