@@ -1,0 +1,48 @@
+{
+  "gameSettings": {
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "gridSize": 30,
+    "initialSnakeLength": 4,
+    "gameSpeed": 150,
+    "scorePerFood": 10,
+    "bgmVolume": 0.3,
+    "sfxVolume": 0.5
+  },
+  "colors": {
+    "textColor": "#00FFFF",
+    "gameOverColor": "#FF00FF"
+  },
+  "text": {
+    "title": "네오-서펀트",
+    "titleMessage": "SPACE 키를 눌러 시작",
+    "instructionsTitle": "조작 방법",
+    "instructionsLine1": "화살표 키 (또는 WASD)를 사용하여 네오-서펀트를 움직이세요.",
+    "instructionsLine2": "빛나는 에너지 큐브를 섭취하여 몸집을 키우세요.",
+    "instructionsLine3": "벽과 자신의 꼬리에 부딪히지 마세요.",
+    "instructionsLine4": "살아남아 최고 점수를 달성하세요!",
+    "instructionsMessage": "SPACE 키를 눌러 게임 시작",
+    "gameOver": "전송 실패",
+    "gameOverScorePrefix": "최종 점수: ",
+    "gameOverMessage": "SPACE 키를 눌러 재시작",
+    "scorePrefix": "점수: "
+  },
+  "assets": {
+    "images": [
+      { "name": "titleBackground", "path": "assets/title_background.png", "width": 800, "height": 600 },
+      { "name": "instructionsBackground", "path": "assets/instructions_background.png", "width": 800, "height": 600 },
+      { "name": "gameBackground", "path": "assets/game_background.png", "width": 800, "height": 600 },
+      { "name": "gameOverBackground", "path": "assets/game_over_background.png", "width": 800, "height": 600 },
+      { "name": "snakeHead", "path": "assets/snake_head.png", "width": 64, "height": 64 },
+      { "name": "snakeBody", "path": "assets/snake_body.png", "width": 64, "height": 64 },
+      { "name": "snakeTail", "path": "assets/snake_tail.png", "width": 64, "height": 64 },
+      { "name": "foodItem", "path": "assets/food_item.png", "width": 64, "height": 64 }
+    ],
+    "sounds": [
+      { "name": "bgm", "path": "assets/bgm_sci_fi.mp3", "duration_seconds": 120, "volume": 0.3 },
+      { "name": "eat", "path": "assets/sfx_eat.mp3", "duration_seconds": 0.5, "volume": 0.5 },
+      { "name": "gameOver", "path": "assets/sfx_game_over.mp3", "duration_seconds": 2.0, "volume": 0.5 },
+      { "name": "menuSelect", "path": "assets/sfx_menu_select.mp3", "duration_seconds": 0.2, "volume": 0.5 }
+    ]
+  }
+}

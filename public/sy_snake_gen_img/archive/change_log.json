@@ -1,0 +1,12 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-30T02:04:03.523309",
+            "summary": "간단한 뱀 게임을 만들어주세요.\n게임을 SF(sci-fi) 느낌으로 만들어주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-12-01T18:05:54.760342",
+            "summary": "간단한 뱀 게임을 생성해주세요.\n게임의 분위기를 귀여운 숲속 느낌으로, 그래픽 스타일은 2D 픽셀 아트로 만들어주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-01T18:06:48.655970",
+            "summary": "food_berry.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

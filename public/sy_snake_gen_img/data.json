@@ -1,0 +1,43 @@
+{
+  "canvasWidth": 800,
+  "canvasHeight": 600,
+  "gridSize": 20,
+  "initialSnakeLength": 5,
+  "gameSpeedMs": 100,
+  "scorePerFood": 10,
+  "uiFont": "30px 'Press Start 2P', monospace",
+  "smallUiFont": "20px 'Press Start 2P', monospace",
+  "titleScreenText": {
+    "title": "스네이크: 코스믹 미로",
+    "subtitle": "스페이스바를 눌러 시작",
+    "color": "#00FF00"
+  },
+  "controlsScreenText": {
+    "title": "조작법",
+    "moveText": "이동: WASD 또는 방향키",
+    "objectiveText": "목표: 빛나는 에너지 코어를 섭취하세요.",
+    "warningText": "경고: 벽과 자신의 꼬리에 부딪히지 마세요.",
+    "continueText": "스페이스바를 눌러 계속",
+    "color": "#00FFFF"
+  },
+  "gameOverScreenText": {
+    "title": "전송 실패",
+    "subtitle": "최종 점수:",
+    "restartText": "스페이스바를 눌러 재시작",
+    "color": "#FF0000"
+  },
+  "scoreDisplayColor": "#FFFFFF",
+  "assets": {
+    "images": [
+      { "name": "background", "path": "assets/background.png", "width": 800, "height": 600 },
+      { "name": "snake_head", "path": "assets/snake_head.png", "width": 20, "height": 20 },
+      { "name": "snake_body", "path": "assets/snake_body.png", "width": 20, "height": 20 },
+      { "name": "food", "path": "assets/food.png", "width": 20, "height": 20 }
+    ],
+    "sounds": [
+      { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 120.0, "volume": 0.3 },
+      { "name": "eat_food", "path": "assets/eat_food.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+      { "name": "game_over", "path": "assets/game_over.mp3", "duration_seconds": 2.0, "volume": 0.8 }
+    ]
+  }
+}

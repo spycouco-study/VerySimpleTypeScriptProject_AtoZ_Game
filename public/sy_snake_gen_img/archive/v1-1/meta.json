@@ -1,0 +1,122 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-30T02:04:03.513729",
+    "summary": "간단한 뱀 게임을 만들어주세요.\n게임을 SF(sci-fi) 느낌으로 만들어주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "eat_food.mp3",
+            "path": "assets/eat_food.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "food.png",
+            "path": "assets/food.png",
+            "type": "Add"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "snake_body.png",
+            "path": "assets/snake_body.png",
+            "type": "Add"
+        },
+        {
+            "name": "snake_head.png",
+            "path": "assets/snake_head.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "b4d24e3b8f8b4ffd34ff3b66ef3ddf0e67cd8e159d0073301273777e1e959c25",
+            "size": 1701,
+            "mtime": 1764435723.9585161
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "d5257ebf09d4f356b2ed5fe9c46edc8d0eb018a5036509b908d291756f467190",
+            "size": 36721,
+            "mtime": 1764435843.0875297
+        },
+        "game.ts": {
+            "hash": "1e767b1428c7f7d477c3332cefb124fec97bc183fc315f525102661dc1e421a5",
+            "size": 12917,
+            "mtime": 1764435836.657696
+        },
+        "assets/background.png": {
+            "hash": "0cb0a1d4af86e211d162a4d7b05832a57fa50752ff32cbbc1965c31fa13b9f91",
+            "size": 16780,
+            "mtime": 1764435745.592049
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347007.4590375
+        },
+        "assets/eat_food.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/food.png": {
+            "hash": "4f0e9a654c6abd4b29171a846dd21580944570fc3f02cf46a604a3691bdc6d48",
+            "size": 668,
+            "mtime": 1764435836.1391218
+        },
+        "assets/game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/snake_body.png": {
+            "hash": "c1c2c8ca7995aa5cc4c2bcd8ce47318b239091fb13d70699146bb6a7935d00b6",
+            "size": 999,
+            "mtime": 1764435812.9541194
+        },
+        "assets/snake_head.png": {
+            "hash": "2d1a8a9bc21dadf3e5b456a274fc7467c1a74432f1ac8feb3dc7b6387b1e32d5",
+            "size": 894,
+            "mtime": 1764435776.5746603
+        }
+    }
+}

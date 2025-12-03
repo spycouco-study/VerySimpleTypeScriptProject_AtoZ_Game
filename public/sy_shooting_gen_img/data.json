@@ -1,0 +1,89 @@
+{
+  "gameSettings": {
+    "canvasWidth": 480,
+    "canvasHeight": 640,
+    "gameSpeedMultiplier": 1.0,
+    "titleScreenText": "공중전 에이스: 2차대전",
+    "titleScreenPrompt": "ENTER 키를 눌러 시작",
+    "controlsScreenText": "조작법:\n\n이동: WASD 또는 방향키\n사격: SPACEBAR\n\n목표: 적기를 격추하여 최고 점수 달성!\n체력이 0이 되면 게임 오버 됩니다.",
+    "gameOverText": "GAME OVER!",
+    "gameOverPrompt": "점수: {score}\n\nENTER 키를 눌러 재시작"
+  },
+  "player": {
+    "speed": 200,
+    "fireRate": 160,
+    "health": 100,
+    "bulletSpeed": 350,
+    "bulletDamage": 10,
+    "width": 60,
+    "height": 60
+  },
+  "enemies": [
+    {
+      "name": "fighter_1",
+      "asset": "enemy_plane_1",
+      "speed": 100,
+      "health": 20,
+      "fireRate": 0,
+      "score": 100,
+      "width": 50,
+      "height": 50,
+      "bulletSpeed": 0,
+      "bulletDamage": 0,
+      "dropsPowerup": false
+    },
+    {
+      "name": "fighter_2",
+      "asset": "enemy_plane_2",
+      "speed": 150,
+      "health": 30,
+      "fireRate": 1000,
+      "score": 200,
+      "width": 55,
+      "height": 55,
+      "bulletSpeed": 200,
+      "bulletDamage": 10,
+      "dropsPowerup": false
+    }
+  ],
+  "bullets": {
+    "player": {
+      "asset": "player_bullet",
+      "width": 10,
+      "height": 20
+    },
+    "enemy": {
+      "asset": "enemy_bullet",
+      "width": 10,
+      "height": 20
+    }
+  },
+  "background": {
+    "asset": "background_sky",
+    "scrollSpeed": 50,
+    "width": 480,
+    "height": 1024
+  },
+  "spawner": {
+    "enemySpawnIntervalMs": 1500,
+    "maxEnemiesOnScreen": 10
+  },
+  "assets": {
+    "images": [
+      { "name": "player_plane", "path": "assets/player_plane.png", "width": 60, "height": 60 },
+      { "name": "enemy_plane_1", "path": "assets/enemy_plane_1.png", "width": 50, "height": 50 },
+      { "name": "enemy_plane_2", "path": "assets/enemy_plane_2.png", "width": 55, "height": 55 },
+      { "name": "player_bullet", "path": "assets/player_bullet.png", "width": 10, "height": 20 },
+      { "name": "enemy_bullet", "path": "assets/enemy_bullet.png", "width": 10, "height": 20 },
+      { "name": "explosion", "path": "assets/explosion.png", "width": 64, "height": 64, "frames": 16 },
+      { "name": "background_sky", "path": "assets/background_sky.png", "width": 480, "height": 1024 }
+    ],
+    "sounds": [
+      { "name": "bgm_ww2", "path": "assets/bgm_ww2.mp3", "duration_seconds": 180.0, "volume": 0.3 },
+      { "name": "player_shoot", "path": "assets/player_shoot.mp3", "duration_seconds": 0.2, "volume": 0.5 },
+      { "name": "enemy_shoot", "path": "assets/enemy_shoot.mp3", "duration_seconds": 0.2, "volume": 0.4 },
+      { "name": "explosion_sfx", "path": "assets/explosion_sfx.mp3", "duration_seconds": 1.0, "volume": 0.6 },
+      { "name": "game_over_sfx", "path": "assets/game_over_sfx.mp3", "duration_seconds": 1.5, "volume": 0.7 }
+    ]
+  }
+}

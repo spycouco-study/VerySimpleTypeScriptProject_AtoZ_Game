@@ -1,0 +1,123 @@
+{
+  "gameSettings": {
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "playerSpeed": 350,
+    "playerFireRate": 5,
+    "playerHealth": 3,
+    "playerBulletSpeed": 600,
+    "playerBulletDamage": 1,
+    "enemyBulletSpeed": 250,
+    "explosionParticleCount": 15,
+    "explosionParticleLife": 0.8,
+    "bossSpawnHeight": 120,
+    "scrollSpeed": 100,
+    "backgroundImageName": "background"
+  },
+  "assets": {
+    "images": [
+      { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+      { "name": "player_bullet", "path": "assets/player_bullet.png", "width": 10, "height": 20 },
+      { "name": "enemy1", "path": "assets/enemy1.png", "width": 40, "height": 40 },
+      { "name": "enemy2", "path": "assets/enemy2.png", "width": 50, "height": 50 },
+      { "name": "enemy_bullet", "path": "assets/enemy_bullet.png", "width": 10, "height": 20 },
+      { "name": "boss1", "path": "assets/boss1.png", "width": 120, "height": 120 },
+      { "name": "boss2", "path": "assets/boss2.png", "width": 150, "height": 150 },
+      { "name": "background", "path": "assets/background.png", "width": 800, "height": 600 }
+    ],
+    "sounds": [
+      { "name": "shoot", "path": "assets/shoot.mp3", "volume": 0.3, "duration_seconds": 0.5 },
+      { "name": "enemy_shoot", "path": "assets/enemy_shoot.mp3", "volume": 0.2, "duration_seconds": 0.5 },
+      { "name": "explosion", "path": "assets/explosion.mp3", "volume": 0.6, "duration_seconds": 1.0 },
+      { "name": "hit", "path": "assets/hit.mp3", "volume": 0.2, "duration_seconds": 0.3 },
+      { "name": "bgm_menu", "path": "assets/bgm_menu.mp3", "volume": 0.4, "duration_seconds": 60.0 },
+      { "name": "bgm_game", "path": "assets/bgm_game.mp3", "volume": 0.3, "duration_seconds": 90.0 }
+    ]
+  },
+  "player": {
+    "width": 50,
+    "height": 50,
+    "imageName": "player",
+    "bulletImageName": "playerBullet"
+  },
+  "bulletTypes": {
+    "playerBullet": {
+      "width": 10,
+      "height": 20,
+      "imageName": "player_bullet",
+      "damage": 1,
+      "speed": 600
+    },
+    "enemyBullet": {
+      "width": 10,
+      "height": 20,
+      "imageName": "enemy_bullet",
+      "damage": 1,
+      "speed": 250
+    }
+  },
+  "enemyTypes": {
+    "basic_grunt": {
+      "width": 40, "height": 40, "imageName": "enemy1",
+      "health": 1, "speed": 100, "fireRate": 0.8, "scoreValue": 10,
+      "bulletType": "enemyBullet"
+    },
+    "shooter_drone": {
+      "width": 50, "height": 50, "imageName": "enemy2",
+      "health": 2, "speed": 80, "fireRate": 1.5, "scoreValue": 20,
+      "bulletType": "enemyBullet"
+    },
+    "fast_scout": {
+      "width": 30, "height": 30, "imageName": "enemy1",
+      "health": 1, "speed": 150, "fireRate": 1.0, "scoreValue": 15,
+      "bulletType": "enemyBullet"
+    }
+  },
+  "bossTypes": {
+    "level1Boss": {
+      "width": 100, "height": 100, "imageName": "boss1",
+      "health": 50, "speed": 80, "scoreValue": 500,
+      "bulletType": "enemyBullet",
+      "fireRate": 0.5,
+      "phases": [
+        { "duration": 15, "movementPattern": "hover", "fireRateMultiplier": 1, "bulletSpeedMultiplier": 1 },
+        { "duration": 15, "movementPattern": "zigzag", "fireRateMultiplier": 1.2, "bulletSpeedMultiplier": 1.1 }
+      ]
+    },
+    "level2Boss": {
+      "width": 120, "height": 120, "imageName": "boss2",
+      "health": 100, "speed": 100, "scoreValue": 1000,
+      "bulletType": "enemyBullet",
+      "fireRate": 0.4,
+      "phases": [
+        { "duration": 20, "movementPattern": "zigzag", "fireRateMultiplier": 1, "bulletSpeedMultiplier": 1 },
+        { "duration": 20, "movementPattern": "charge", "fireRateMultiplier": 1.5, "bulletSpeedMultiplier": 1.2 },
+        { "duration": 20, "movementPattern": "sideways", "fireRateMultiplier": 2, "bulletSpeedMultiplier": 1.5 }
+      ]
+    }
+  },
+  "levels": [
+    {
+      "id": 1,
+      "duration": 45,
+      "waves": [
+        { "time": 5, "enemies": [ { "type": "basic_grunt", "count": 3, "spawnDelay": 0.5 } ] },
+        { "time": 15, "enemies": [ { "type": "fast_scout", "count": 4, "spawnDelay": 0.3 } ] },
+        { "time": 25, "enemies": [ { "type": "shooter_drone", "count": 2, "spawnDelay": 1 } ] },
+        { "time": 35, "enemies": [ { "type": "basic_grunt", "count": 4, "spawnDelay": 0.5 }, { "type": "shooter_drone", "count": 1, "spawnDelay": 1 } ] }
+      ],
+      "bossType": "level1Boss"
+    },
+    {
+      "id": 2,
+      "duration": 60,
+      "waves": [
+        { "time": 5, "enemies": [ { "type": "shooter_drone", "count": 3, "spawnDelay": 0.7 } ] },
+        { "time": 15, "enemies": [ { "type": "fast_scout", "count": 5, "spawnDelay": 0.3 }, { "type": "shooter_drone", "count": 2, "spawnDelay": 0.5 } ] },
+        { "time": 30, "enemies": [ { "type": "shooter_drone", "count": 4, "spawnDelay": 0.5 } ] },
+        { "time": 45, "enemies": [ { "type": "basic_grunt", "count": 6, "spawnDelay": 0.2 }, { "type": "fast_scout", "count": 3, "spawnDelay": 0.3 } ] }
+      ],
+      "bossType": "level2Boss"
+    }
+  ]
+}

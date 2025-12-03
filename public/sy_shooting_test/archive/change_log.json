@@ -13,8 +13,104 @@
             "parent": "v1-1",
             "timestamp": "2025-11-19T19:50:28.380883",
             "summary": "game.js 생성",
-            "is_latest": true,
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-11-29T22:21:57.960567",
+            "summary": "배경화면 에셋을 추가해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-2",
+            "parent": "v2-1",
+            "timestamp": "2025-11-29T22:31:54.964117",
+            "summary": "배경화면 에셋을 추가해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-2",
+            "timestamp": "2025-11-29T22:33:01.831672",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-11-29T22:33:22.626580",
+            "summary": "background_starfield.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v6-1",
+            "parent": "v5-1",
+            "timestamp": "2025-11-29T22:38:01.507377",
+            "summary": "게임에 배경화면 이미지가 적용되지 않는 문제를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-1",
+            "parent": "v6-1",
+            "timestamp": "2025-11-29T22:38:53.764741",
+            "summary": "player.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v8-1",
+            "parent": "v7-1",
+            "timestamp": "2025-11-29T22:45:03.489688",
+            "summary": "게임의 배경에 'background_starfield.png' 이미지가 적용되도록 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v9-1",
+            "parent": "v8-1",
+            "timestamp": "2025-11-29T22:57:31.399561",
+            "summary": "게임 배경에 'background_starfield.png' 이미지가 적용되지 않고 회색 배경만 보이는 문제를 수정하여, 'background_starfield.png' 이미지가 배경으로 보이도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v10-1",
+            "parent": "v9-1",
+            "timestamp": "2025-11-29T22:58:25.904782",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v11-1",
+            "parent": "v10-1",
+            "timestamp": "2025-11-29T23:01:14.188131",
+            "summary": "background_starfield.png이 게임의 배경화면으로 적용되지 않고 있습니다. 이 문제를 수정하여 해당 이미지가 게임의 배경화면으로 올바르게 적용되도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v11-2",
+            "parent": "v10-1",
+            "timestamp": "2025-11-29T23:03:49.252010",
+            "summary": "게임의 배경화면으로 'background_starfield.png' 이미지가 정상적으로 적용되지 않고 회색 배경만 보이고 있습니다. 배경 이미지가 올바르게 표시되도록 수정해 주세요.",
+            "is_latest": false,
             "is_current": true
+        },
+        {
+            "version": "v12-1",
+            "parent": "v11-2",
+            "timestamp": "2025-11-29T23:11:47.614336",
+            "summary": "게임 데이터 수정",
+            "is_latest": true,
+            "is_current": false
         }
     ]
 }

@@ -1,0 +1,213 @@
+{
+    "version": "v2-2",
+    "parent": "v1-1",
+    "timestamp": "2025-11-29T15:40:30.403762",
+    "summary": "블록이 바닥을 뚫고 계속 내려가는 문제를 해결해주세요.\n고스트 피스도 계속해서 바닥을 뚫고 내려가는 문제를 해결해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_game.mp3",
+            "path": "assets/bgm_game.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_title.mp3",
+            "path": "assets/bgm_title.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_blue.png",
+            "path": "assets/block_blue.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_green.png",
+            "path": "assets/block_green.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_orange.png",
+            "path": "assets/block_orange.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_purple.png",
+            "path": "assets/block_purple.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_red.png",
+            "path": "assets/block_red.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_teal.png",
+            "path": "assets/block_teal.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_yellow.png",
+            "path": "assets/block_yellow.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "frame_panel.png",
+            "path": "assets/frame_panel.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game_bg.png",
+            "path": "assets/game_bg.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_clear.mp3",
+            "path": "assets/sfx_clear.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_drop.mp3",
+            "path": "assets/sfx_drop.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_gameover.mp3",
+            "path": "assets/sfx_gameover.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_rotate.mp3",
+            "path": "assets/sfx_rotate.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "title_screen_bg.png",
+            "path": "assets/title_screen_bg.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "11d8f830e4bfa1b44680336f3bca66e551362a34553ebe7b6947246cf3aaa66f",
+            "size": 7517,
+            "mtime": 1764430819.8858902
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764430709.1604967
+        },
+        "game.js": {
+            "hash": "2cbd0f096a652f3b8e5f6fbc19afda0a6c57bfd6b26686de4db6285443603215",
+            "size": 92708,
+            "mtime": 1764430828.0156555
+        },
+        "game.ts": {
+            "hash": "1564998a7eb3f6a8677cfa193dcc502f6ae6397c1697ea202e33cba67ddc8e38",
+            "size": 34211,
+            "mtime": 1764430819.9411066
+        },
+        "assets/bgm_game.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764430709.6423833
+        },
+        "assets/bgm_title.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764430709.9598413
+        },
+        "assets/block_blue.png": {
+            "hash": "d9da56995d7df1d66913dde4dc9a11c8dcaa339356263e19a79f0a42b4125491",
+            "size": 703,
+            "mtime": 1764430710.057212
+        },
+        "assets/block_green.png": {
+            "hash": "6c22571b4bc4411a3e5f5bf192ea6135f56da24263a71e42ddb479a73b0ff38f",
+            "size": 808,
+            "mtime": 1764430710.1270094
+        },
+        "assets/block_orange.png": {
+            "hash": "0ec30fbec896f2a9609c2bc46e4670b84a8c6f59efb326081ba136a8bf4ee000",
+            "size": 884,
+            "mtime": 1764430710.1891637
+        },
+        "assets/block_purple.png": {
+            "hash": "435d558311b5728a16e76f57c0aa2c187bdf42b7e651d91c3e016cd7be2831cc",
+            "size": 695,
+            "mtime": 1764430710.2711937
+        },
+        "assets/block_red.png": {
+            "hash": "1711277192cd452ae988df4b1e735b58ec9ed151ec85ad8b74aed84e3e00c507",
+            "size": 714,
+            "mtime": 1764430710.3391576
+        },
+        "assets/block_teal.png": {
+            "hash": "9895ff02653d937965347c990a81e16bfd420b72921cfac5a1d41f301b3bdc4e",
+            "size": 761,
+            "mtime": 1764430710.4063487
+        },
+        "assets/block_yellow.png": {
+            "hash": "2e55281a9e7daf618ca844ae53fb3126b64416980583e557be04e60a7a81cb62",
+            "size": 834,
+            "mtime": 1764430710.472218
+        },
+        "assets/frame_panel.png": {
+            "hash": "6140ce0ca8e6f0010b8c55621e104f44312dc3e33c78bb67f784783f1eeb15b7",
+            "size": 1121,
+            "mtime": 1764430710.540648
+        },
+        "assets/game_bg.png": {
+            "hash": "349e302abbbb6ad93659edc7bcf2341e11815ebb2435b998e5af888d1a4a77cf",
+            "size": 3417,
+            "mtime": 1764430710.6025128
+        },
+        "assets/sfx_clear.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764430710.6732943
+        },
+        "assets/sfx_drop.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764430710.758523
+        },
+        "assets/sfx_gameover.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764430710.8472488
+        },
+        "assets/sfx_rotate.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764430710.922427
+        },
+        "assets/title_screen_bg.png": {
+            "hash": "b324d377c376b2f1d51d3b54b59c812fb593c63554e2f9b85a784f04e512b2e9",
+            "size": 3616,
+            "mtime": 1764430711.0303774
+        }
+    }
+}

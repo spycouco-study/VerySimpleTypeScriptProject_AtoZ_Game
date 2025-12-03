@@ -1,0 +1,234 @@
+{
+    "gameSettings": {
+        "canvasWidth": 800,
+        "canvasHeight": 600,
+        "gridWidth": 10,
+        "gridHeight": 20,
+        "blockSize": 24,
+        "gameBoardOffsetX": 280,
+        "gameBoardOffsetY": 50,
+        "initialFallSpeed": 800,
+        "levelUpLineCount": 10,
+        "levelUpSpeedMultiplier": 0.85,
+        "scorePerLine": 100,
+        "scorePerHardDropBlock": 2,
+        "scorePerSoftDropBlock": 1,
+        "holdPanelOffsetX": 50,
+        "holdPanelOffsetY": 50,
+        "nextPanelOffsetX": 550,
+        "nextPanelOffsetY": 50,
+        "infoPanelOffsetX": 50,
+        "infoPanelOffsetY": 220,
+        "panelWidth": 200,
+        "panelHeight": 150,
+        "textColor": "#00FFFF",
+        "boardBorderColor": "#00FF00",
+        "panelBorderColor": "#00FF00",
+        "ghostPieceAlpha": 0.3
+    },
+    "tetrominoes": [
+        {
+            "name": "I",
+            "id": 1,
+            "textureName": "block_blue",
+            "spawnOffsetX": -2,
+            "spawnOffsetY": -1,
+            "shapes": [
+                [
+                    [0, 0, 0, 0],
+                    [1, 1, 1, 1],
+                    [0, 0, 0, 0],
+                    [0, 0, 0, 0]
+                ],
+                [
+                    [0, 0, 1, 0],
+                    [0, 0, 1, 0],
+                    [0, 0, 1, 0],
+                    [0, 0, 1, 0]
+                ]
+            ]
+        },
+        {
+            "name": "J",
+            "id": 2,
+            "textureName": "block_orange",
+            "spawnOffsetX": -1,
+            "spawnOffsetY": -1,
+            "shapes": [
+                [
+                    [1, 0, 0],
+                    [1, 1, 1],
+                    [0, 0, 0]
+                ],
+                [
+                    [0, 1, 1],
+                    [0, 1, 0],
+                    [0, 1, 0]
+                ],
+                [
+                    [0, 0, 0],
+                    [1, 1, 1],
+                    [0, 0, 1]
+                ],
+                [
+                    [0, 1, 0],
+                    [0, 1, 0],
+                    [1, 1, 0]
+                ]
+            ]
+        },
+        {
+            "name": "L",
+            "id": 3,
+            "textureName": "block_purple",
+            "spawnOffsetX": -1,
+            "spawnOffsetY": -1,
+            "shapes": [
+                [
+                    [0, 0, 1],
+                    [1, 1, 1],
+                    [0, 0, 0]
+                ],
+                [
+                    [0, 1, 0],
+                    [0, 1, 0],
+                    [0, 1, 1]
+                ],
+                [
+                    [0, 0, 0],
+                    [1, 1, 1],
+                    [1, 0, 0]
+                ],
+                [
+                    [1, 1, 0],
+                    [0, 1, 0],
+                    [0, 1, 0]
+                ]
+            ]
+        },
+        {
+            "name": "O",
+            "id": 4,
+            "textureName": "block_yellow",
+            "spawnOffsetX": -1,
+            "spawnOffsetY": -1,
+            "shapes": [
+                [
+                    [1, 1],
+                    [1, 1]
+                ]
+            ]
+        },
+        {
+            "name": "S",
+            "id": 5,
+            "textureName": "block_green",
+            "spawnOffsetX": -1,
+            "spawnOffsetY": -1,
+            "shapes": [
+                [
+                    [0, 1, 1],
+                    [1, 1, 0],
+                    [0, 0, 0]
+                ],
+                [
+                    [0, 1, 0],
+                    [0, 1, 1],
+                    [0, 0, 1]
+                ]
+            ]
+        },
+        {
+            "name": "T",
+            "id": 6,
+            "textureName": "block_red",
+            "spawnOffsetX": -1,
+            "spawnOffsetY": -1,
+            "shapes": [
+                [
+                    [0, 1, 0],
+                    [1, 1, 1],
+                    [0, 0, 0]
+                ],
+                [
+                    [0, 1, 0],
+                    [0, 1, 1],
+                    [0, 1, 0]
+                ],
+                [
+                    [0, 0, 0],
+                    [1, 1, 1],
+                    [0, 1, 0]
+                ],
+                [
+                    [0, 1, 0],
+                    [1, 1, 0],
+                    [0, 1, 0]
+                ]
+            ]
+        },
+        {
+            "name": "Z",
+            "id": 7,
+            "textureName": "block_teal",
+            "spawnOffsetX": -1,
+            "spawnOffsetY": -1,
+            "shapes": [
+                [
+                    [1, 1, 0],
+                    [0, 1, 1],
+                    [0, 0, 0]
+                ],
+                [
+                    [0, 0, 1],
+                    [0, 1, 1],
+                    [0, 1, 0]
+                ]
+            ]
+        }
+    ],
+    "texts": {
+        "title": "NEO BLOCKS",
+        "pressAnyKey": "아무 키나 눌러 시작",
+        "controlsTitle": "조작법",
+        "controlsMoveLeft": "좌우 이동: ←, →",
+        "controlsMoveRight": "좌우 이동: ←, →",
+        "controlsSoftDrop": "소프트 드롭: ↓",
+        "controlsHardDrop": "하드 드롭: Space Bar",
+        "controlsRotate": "회전: ↑",
+        "controlsHold": "홀드: C 또는 Shift",
+        "controlsPause": "일시정지: P",
+        "startText": "계속하려면 아무 키나 누르세요...",
+        "scoreLabel": "점수: ",
+        "levelLabel": "레벨: ",
+        "linesLabel": "라인: ",
+        "nextLabel": "다음 블록",
+        "holdLabel": "홀드 블록",
+        "gameOverTitle": "게임 오버",
+        "gameOverScore": "최종 점수: ",
+        "pressRToRestart": "다시 시작하려면 'R' 키를 누르세요.",
+        "pausedText": "일시정지"
+    },
+    "assets": {
+        "images": [
+            { "name": "title_screen_bg", "path": "assets/title_screen_bg.png", "width": 800, "height": 600 },
+            { "name": "game_bg", "path": "assets/game_bg.png", "width": 800, "height": 600 },
+            { "name": "block_blue", "path": "assets/block_blue.png", "width": 64, "height": 64 },
+            { "name": "block_green", "path": "assets/block_green.png", "width": 64, "height": 64 },
+            { "name": "block_orange", "path": "assets/block_orange.png", "width": 64, "height": 64 },
+            { "name": "block_purple", "path": "assets/block_purple.png", "width": 64, "height": 64 },
+            { "name": "block_red", "path": "assets/block_red.png", "width": 64, "height": 64 },
+            { "name": "block_teal", "path": "assets/block_teal.png", "width": 64, "height": 64 },
+            { "name": "block_yellow", "path": "assets/block_yellow.png", "width": 64, "height": 64 },
+            { "name": "frame_panel", "path": "assets/frame_panel.png", "width": 200, "height": 150 }
+        ],
+        "sounds": [
+            { "name": "sfx_drop", "path": "assets/sfx_drop.mp3", "duration_seconds": 0.3, "volume": 0.7 },
+            { "name": "sfx_clear", "path": "assets/sfx_clear.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+            { "name": "sfx_rotate", "path": "assets/sfx_rotate.mp3", "duration_seconds": 0.2, "volume": 0.7 },
+            { "name": "sfx_gameover", "path": "assets/sfx_gameover.mp3", "duration_seconds": 1.5, "volume": 0.8 },
+            { "name": "bgm_title", "path": "assets/bgm_title.mp3", "duration_seconds": 90.0, "volume": 0.4 },
+            { "name": "bgm_game", "path": "assets/bgm_game.mp3", "duration_seconds": 120.0, "volume": 0.3 }
+        ]
+    }
+}

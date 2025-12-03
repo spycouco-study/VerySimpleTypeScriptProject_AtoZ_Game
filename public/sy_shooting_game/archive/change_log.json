@@ -1,0 +1,12 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-29T23:50:48.603384",
+            "summary": "수직 스크롤 슈팅 게임을 만들어 주세요.\n분위기는 2차대전 분위기로 해주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

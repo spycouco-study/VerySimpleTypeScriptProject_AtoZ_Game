@@ -1,0 +1,60 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-29T15:31:15.626298",
+            "summary": "테트리스 게임을 만들어 주세요.\n게임 분위기를 sci-fi (공상 과학)로 만들어 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-29T15:34:43.079838",
+            "summary": "블록이 바닥을 뚫고 계속 내려가는 문제를 수정해주세요.\n고스트 피스도 계속해서 내려가는 문제를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-2",
+            "parent": "v1-1",
+            "timestamp": "2025-11-29T15:40:30.459586",
+            "summary": "블록이 바닥을 뚫고 계속 내려가는 문제를 해결해주세요.\n고스트 피스도 계속해서 바닥을 뚫고 내려가는 문제를 해결해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-2",
+            "timestamp": "2025-11-29T15:43:34.771832",
+            "summary": "다음 블록이 표시되는 위치를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-2",
+            "parent": "v2-2",
+            "timestamp": "2025-11-29T15:47:15.459050",
+            "summary": "다음 블록이 '다음 블록' 표시 위치에 표시되지 않고 게임 화면 내에 표시되고 있습니다. 제대로 된 위치에 표시되도록 이 문제를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-2",
+            "timestamp": "2025-11-29T15:51:54.081589",
+            "summary": "게임 오버 시 다음 블록이 나타나지 않고 곧바로 게임이 종료되도록 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-11-29T15:55:52.068043",
+            "summary": "게임의 제목을 '네오 블록스'로 변경해 주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}
