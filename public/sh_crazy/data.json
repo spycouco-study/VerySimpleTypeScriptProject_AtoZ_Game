@@ -1,0 +1,87 @@
+{
+  "gameSettings": {
+    "gridWidth": 15,
+    "gridHeight": 11,
+    "tileSize": 2.0,
+    "playerSpeed": 4.0,
+    "bombFuseTime": 3.0,
+    "initialBombRange": 2,
+    "initialBombCount": 1,
+    "explosionDuration": 0.7,
+    "powerUpSpawnChance": 0.4,
+    "playerRespawnDelay": 3.0,
+    "titleScreenText": "CRAZY ARCADE 3D\n\nWASD / Arrow Keys to Move\nSPACE / ENTER to Place Bomb\n\nPress SPACE or ENTER to Start",
+    "gameOverText": "GAME OVER!\nAll players burst!\n\nPress SPACE to Restart",
+    "victoryText": "PLAYER {PLAYER_NUMBER} WINS!\n\nPress SPACE to Restart"
+  },
+  "mapLayout": [
+    "WWWWWWWWWWWWWWW",
+    "W P B   B   B P W",
+    "W W W B W B W W W",
+    "W B           B W",
+    "W W W W W W W W",
+    "W B   B   B   B W",
+    "W W W W W W W W",
+    "W B           B W",
+    "W W W B W B W W W",
+    "W P B   B   B P W",
+    "WWWWWWWWWWWWWWW"
+  ],
+  "tileTypes": {
+    "W": "wall",
+    "B": "destructibleBlock",
+    " ": "floor",
+    "P": "playerStart"
+  },
+  "playerSettings": [
+    {
+      "name": "Player 1",
+      "color": "#ff0000",
+      "controls": {
+        "up": "KeyW",
+        "down": "KeyS",
+        "left": "KeyA",
+        "right": "KeyD",
+        "bomb": "Space"
+      }
+    },
+    {
+      "name": "Player 2",
+      "color": "#0000ff",
+      "controls": {
+        "up": "ArrowUp",
+        "down": "ArrowDown",
+        "left": "ArrowLeft",
+        "right": "ArrowRight",
+        "bomb": "Enter"
+      }
+    }
+  ],
+  "assets": {
+    "images": [
+      { "name": "floor_texture", "path": "assets/floor.png", "width": 128, "height": 128 },
+      { "name": "wall_texture", "path": "assets/wall.png", "width": 64, "height": 64 },
+      { "name": "block_texture", "path": "assets/block.png", "width": 64, "height": 64 },
+      { "name": "player1_texture", "path": "assets/player1.png", "width": 64, "height": 64 },
+      { "name": "player2_texture", "path": "assets/player2.png", "width": 64, "height": 64 },
+      { "name": "bomb_texture", "path": "assets/bomb.png", "width": 64, "height": 64 },
+      { "name": "explosion_center_texture", "path": "assets/explosion_center.png", "width": 64, "height": 64 },
+      { "name": "explosion_horizontal_texture", "path": "assets/explosion_horizontal.png", "width": 64, "height": 64 },
+      { "name": "explosion_vertical_texture", "path": "assets/explosion_vertical.png", "width": 64, "height": 64 },
+      { "name": "explosion_end_up_texture", "path": "assets/explosion_end_up.png", "width": 64, "height": 64 },
+      { "name": "explosion_end_down_texture", "path": "assets/explosion_end_down.png", "width": 64, "height": 64 },
+      { "name": "explosion_end_left_texture", "path": "assets/explosion_end_left.png", "width": 64, "height": 64 },
+      { "name": "explosion_end_right_texture", "path": "assets/explosion_end_right.png", "width": 64, "height": 64 },
+      { "name": "powerup_range_texture", "path": "assets/powerup_range.png", "width": 32, "height": 32 },
+      { "name": "powerup_bomb_texture", "path": "assets/powerup_bomb.png", "width": 32, "height": 32 },
+      { "name": "powerup_speed_texture", "path": "assets/powerup_speed.png", "width": 32, "height": 32 }
+    ],
+    "sounds": [
+      { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 },
+      { "name": "place_bomb", "path": "assets/place_bomb.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+      { "name": "explosion", "path": "assets/explosion.mp3", "duration_seconds": 1.5, "volume": 0.8 },
+      { "name": "powerup_collect", "path": "assets/powerup_collect.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+      { "name": "player_burst", "path": "assets/player_burst.mp3", "duration_seconds": 1.0, "volume": 0.9 }
+    ]
+  }
+}

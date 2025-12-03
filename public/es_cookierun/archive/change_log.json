@@ -29,8 +29,32 @@
             "parent": "v3-1",
             "timestamp": "2025-11-27T15:02:18.935792",
             "summary": "쿠키런 같은 이미지 만들어줘",
-            "is_latest": true,
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-2",
+            "parent": "v3-1",
+            "timestamp": "2025-11-27T19:24:25.300817",
+            "summary": "cookie_jump.png AI 재생성 (쿠키런)",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-2",
+            "timestamp": "2025-11-28T00:43:03.518243",
+            "summary": "cookie_run_1.png 교체",
+            "is_latest": false,
             "is_current": true
+        },
+        {
+            "version": "v6-1",
+            "parent": "v5-1",
+            "timestamp": "2025-11-28T00:53:58.986985",
+            "summary": "game.ts(4,20): error TS2304: Cannot find name 'GameData'.\ngame.ts(5,27): error TS2304: Cannot find name 'AssetManager'.\ngame.ts(5,46): error TS2304: Cannot find name 'AssetManager'.\ngame.ts(6,27): error TS2304: Cannot find name 'InputHandler'.\ngame.ts(6,46): error TS2304: Cannot find name 'InputHandler'.\ngame.ts(8,24): error TS2304: Cannot find name 'GameState'.\ngame.ts(8,36): error TS2304: Cannot find name 'GameState'.\ngame.ts(11,22): error TS2304: Cannot find name 'Player'.\ngame.ts(12,26): error TS2304: Cannot find name 'ParallaxBackground'.\ngame.ts(13,22): error TS2304: Cannot find name 'ParallaxBackground'.\ngame.ts(14,24): error TS2304: Cannot find name 'GameObject'.\ngame.ts(15,27): error TS2304: Cannot find name 'GameObject'.\ngame.ts(41,30): error TS2304: Cannot find name 'GameState'.\ngame.ts(66,26): error TS2304: Cannot find name 'GameState'.\ngame.ts(74,26): error TS2304: Cannot find name 'GameState'.\ngame.ts(84,26): error TS2304: Cannot find name 'GameState'.\ngame.ts(98,27): error TS2304: Cannot find name 'Player'.\ngame.ts(118,24): error TS2304: Cannot find name 'ParallaxBackground'.\ngame.ts(127,27): error TS2304: Cannot find name 'ParallaxBackground'.\ngame.ts(141,32): error TS2304: Cannot find name 'GameState'.\ngame.ts(152,32): error TS2304: Cannot find name 'GameState'.\ngame.ts(209,18): error TS2304: Cannot find name 'GameState'.\ngame.ts(225,18): error TS2304: Cannot find name 'GameState'.\ngame.ts(241,18): error TS2304: Cannot find name 'GameState'.\ngame.ts(290,33): error TS2304: Cannot find name 'GameObject'.\ngame.ts(305,36): error TS2304: Cannot find name 'GameObject'.\n",
+            "is_latest": true,
+            "is_current": false
         }
     ]
 }

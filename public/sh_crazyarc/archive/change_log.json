@@ -1,0 +1,68 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-18T16:31:59.825831",
+            "summary": "'봄버맨'이나 '크레이지아케이드'와 같은 스타일의 게임을 만들어주세요.\n캐릭터 조작은 방향키를 사용하고, 물풍선 발사는 스페이스바를 사용하도록 해주세요.\n물풍선을 사용하여 블록을 제거하고, 제거된 블록에서는 랜덤하게 아이템을 얻을 수 있도록 해주세요.\n물풍선으로 적을 공격하여 처치할 수 있도록 해주세요.\n게임의 승리 조건은 최후의 1인이 되는 것으로 설정해주세요.\n적 캐릭터들도 물풍선을 발사하며 최후의 1인이 되는 것을 목표로 하도록 인공지능을 구현해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-18T16:37:06.120342",
+            "summary": "The game code is encountering a 'ReferenceError: canvas is not defined' at line 1056 in 'game.js' during window.onload. Please correct this issue to ensure the 'canvas' element is properly defined and initialized, allowing the game to run without errors.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-11-18T16:40:54.433443",
+            "summary": "게임은 생성이 되었으나, 현재 물풍선이 쏴지는 구간이 있고, 물풍선을 생성할 수 없는 구간이 있습니다. 모든 빈칸에 물풍선을 쏠 수 있게 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-11-18T16:43:49.125585",
+            "summary": "블록을 깨면 랜덤하게 물풍선 개수를 늘릴 수 있는 아이템을 드롭해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-2",
+            "parent": "v3-1",
+            "timestamp": "2025-11-18T16:47:48.125145",
+            "summary": "블록을 깨면 랜덤하게 물풍선 개수를 늘릴 수 있는 물풍선 아이템을 드롭해주세요.\n물풍선 아이템을 먹으면 사용할 수 있는 물풍선 개수가 하나씩 늘어납니다.\n물풍선의 개수를 화면 우측 상단에 표시해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-2",
+            "timestamp": "2025-11-18T16:52:44.541007",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v6-1",
+            "parent": "v5-1",
+            "timestamp": "2025-11-18T16:53:04.732161",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-1",
+            "parent": "v6-1",
+            "timestamp": "2025-11-18T16:56:48.129004",
+            "summary": "우측 상단에 water balloons의 개수가 뜨기는 하나, water balloons 아이템 (핑크색 사각형)이 block으로부터 드롭되지 않습니다. water balloon이 block에서 일정 확률로 드롭되게 해주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}
