@@ -76,6 +76,18 @@ app.get("/game.js", async (req, res) => {
   }
 });
 
+app.get("/:gameId/game_metadata", (req, res) => {
+  const { gameId } = req.params;
+  const metadataPath = path.join(__endPath, gameId, "game_metadata.json");
+
+  fs.readFile(metadataPath, "utf8", (err, data) => {
+    if (err) {
+      return res.status(404).json({ error: "Metadata not found" });
+    }
+    res.json(JSON.parse(data));
+  });
+});
+
 app.listen(PORT, () =>
   console.log(`✅ Server running on http://localhost:${PORT}`)
 );

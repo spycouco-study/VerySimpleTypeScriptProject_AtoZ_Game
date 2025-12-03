@@ -1,0 +1,69 @@
+{
+  "gameSettings": {
+    "boardWidth": 10,
+    "boardHeight": 10,
+    "numMines": 15,
+    "cellSize": 40,
+    "boardOffsetX": 0,
+    "boardOffsetY": 0
+  },
+  "uiSettings": {
+    "canvasWidth": 600,
+    "canvasHeight": 700,
+    "titleScreenText": "지뢰찾기",
+    "titleScreenInstructions": "마우스 왼쪽 버튼 클릭: 게임 시작",
+    "instructionsText": [
+      "게임 조작법:",
+      "마우스 왼쪽 클릭: 셀 열기",
+      "마우스 오른쪽 클릭: 깃발 꽂기/해제",
+      "목표: 모든 지뢰가 아닌 셀을 찾으세요!",
+      "지뢰를 열면 게임 오버됩니다.",
+      "",
+      "마우스 왼쪽 버튼 클릭: 게임 시작"
+    ],
+    "winMessage": "승리! 모든 지뢰를 피했습니다.",
+    "loseMessage": "패배! 지뢰를 밟았습니다.",
+    "mineCounterPrefix": "남은 지뢰: ",
+    "timerPrefix": "시간: "
+  },
+  "colors": {
+    "backgroundColor": "#282c34",
+    "textColor": "#ffffff",
+    "coveredCellColor": "#cccccc",
+    "revealedCellColor": "#dddddd",
+    "mineTextColor": "#ff0000",
+    "numberColors": {
+      "1": "#0000ff",
+      "2": "#008000",
+      "3": "#ff0000",
+      "4": "#000080",
+      "5": "#800000",
+      "6": "#008080",
+      "7": "#000000",
+      "8": "#808080"
+    }
+  },
+  "assets": {
+    "images": [
+      { "name": "covered", "path": "assets/covered.png", "width": 32, "height": 32 },
+      { "name": "flag", "path": "assets/flag.png", "width": 32, "height": 32 },
+      { "name": "mine", "path": "assets/mine.png", "width": 32, "height": 32 },
+      { "name": "revealed_empty", "path": "assets/revealed_empty.png", "width": 32, "height": 32 },
+      { "name": "number_1", "path": "assets/number_1.png", "width": 32, "height": 32 },
+      { "name": "number_2", "path": "assets/number_2.png", "width": 32, "height": 32 },
+      { "name": "number_3", "path": "assets/number_3.png", "width": 32, "height": 32 },
+      { "name": "number_4", "path": "assets/number_4.png", "width": 32, "height": 32 },
+      { "name": "number_5", "path": "assets/number_5.png", "width": 32, "height": 32 },
+      { "name": "number_6", "path": "assets/number_6.png", "width": 32, "height": 32 },
+      { "name": "number_7", "path": "assets/number_7.png", "width": 32, "height": 32 },
+      { "name": "number_8", "path": "assets/number_8.png", "width": 32, "height": 32 }
+    ],
+    "sounds": [
+      { "name": "click_reveal", "path": "assets/click_reveal.mp3", "duration_seconds": 0.1, "volume": 0.5 },
+      { "name": "click_flag", "path": "assets/click_flag.mp3", "duration_seconds": 0.1, "volume": 0.5 },
+      { "name": "explosion", "path": "assets/explosion.mp3", "duration_seconds": 1.0, "volume": 0.7 },
+      { "name": "win_sound", "path": "assets/win_sound.mp3", "duration_seconds": 1.5, "volume": 0.7 },
+      { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 90.0, "volume": 0.3 }
+    ]
+  }
+}

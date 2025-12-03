@@ -1,0 +1,122 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-12-03T20:13:40.430934",
+    "summary": "간단한 뱀 게임을 만들어 주세요.\n게임에 60초 제한시간 룰을 추가해 주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "eat_sound.mp3",
+            "path": "assets/eat_sound.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "food.png",
+            "path": "assets/food.png",
+            "type": "Add"
+        },
+        {
+            "name": "game_over_sound.mp3",
+            "path": "assets/game_over_sound.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "snake_body.png",
+            "path": "assets/snake_body.png",
+            "type": "Add"
+        },
+        {
+            "name": "snake_head.png",
+            "path": "assets/snake_head.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "ea3a753ae5159f21272352ac63875107e07d7722cff06e2fad4d69870b37d7f7",
+            "size": 1992,
+            "mtime": 1764760297.7206056
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "bc99b2c23ca667b3a4a76f2a8d837b0fe4ebf5e8c7ab0ddc6f4acaa42ec9df32",
+            "size": 41766,
+            "mtime": 1764760420.1893413
+        },
+        "game.ts": {
+            "hash": "dd846f8614a2118c05d0ef4c460f4a5ab416d9ada8cedb24d4b491b19e9ef10c",
+            "size": 14529,
+            "mtime": 1764760415.832396
+        },
+        "assets/background.png": {
+            "hash": "3244efb6f02af7d077643eff2eabbe325b370339d9f07a5d71475de2c08185c1",
+            "size": 22240,
+            "mtime": 1764760309.9370852
+        },
+        "assets/bgm.mp3": {
+            "hash": "a0a9ceed8674519308955ba9e068d4bfc6470845130ee0a32cbbe4a525e02e48",
+            "size": 1482753,
+            "mtime": 1764760415.5245953
+        },
+        "assets/eat_sound.mp3": {
+            "hash": "b8d2ab8f95265b01acd6ddbff256d5dd85f5672d49c51302d76e481c77766c52",
+            "size": 3804,
+            "mtime": 1764760415.532368
+        },
+        "assets/food.png": {
+            "hash": "7d3a0c8693a3f419114ccc0e35b90dfb855dd150df535ea08fd6e6745ca9ac55",
+            "size": 2326,
+            "mtime": 1764760405.7742207
+        },
+        "assets/game_over_sound.mp3": {
+            "hash": "2a64197bec8c98ecf641257f2d021f428ac3ac24939c4d295b950a7ef6025383",
+            "size": 30136,
+            "mtime": 1764760415.5385027
+        },
+        "assets/snake_body.png": {
+            "hash": "a917c5236963b5dc93c8b2fbe651b5fe88c2df470fc7d9beaf20ad1484965629",
+            "size": 142,
+            "mtime": 1764760377.2091856
+        },
+        "assets/snake_head.png": {
+            "hash": "044d55612e01c480d425546dbecbdb30e3960ae49bdf806d5ce3500e62472e12",
+            "size": 2477,
+            "mtime": 1764760347.448913
+        }
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-12-04T02:18:11.345807",
+            "summary": "낚시 게임을 만들어주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-04T02:34:20.374201",
+            "summary": "미니게임이 시작되지 않는 오류를 수정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-12-04T02:39:56.964798",
+            "summary": "물고기 잡기 난이도를 낮춰주세요.\n물고기 잡기를 더 쉽게 만들어주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-12-04T02:44:58.292590",
+            "summary": "물고기들은 낚시배보다 아래쪽에서 돌아다니도록 배치해 주세요.\n낚시줄이 드리워져 있고, '상하' 버튼을 사용하여 낚시 바늘을 위아래로 움직일 수 있도록 해주세요.\n낚시 바늘이 물고기 근처에 위치할 때 미니게임이 시작되도록 구현해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-12-04T02:48:32.930090",
+            "summary": "낚시줄의 시작점을 낚시바늘의 수직하게 윗쪽(낚시배의 중앙)으로 조정해 주세요.\n물고기를 잡으면 해당 물고기를 낚시바늘과 함께 낚시배쪽으로 이동하는 연출을 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v6-1",
+            "parent": "v5-1",
+            "timestamp": "2025-12-04T02:52:15.763774",
+            "summary": "favicon.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-1",
+            "parent": "v6-1",
+            "timestamp": "2025-12-04T02:52:27.671778",
+            "summary": "fish2.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v8-1",
+            "parent": "v7-1",
+            "timestamp": "2025-12-04T02:52:43.903528",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}
