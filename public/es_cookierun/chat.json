@@ -339,6 +339,22 @@
         {
             "from": "bot",
             "text": "✅ 'title_background.png' 변경 완료! (타이틀배경이미지는 조금 더 귀엽고 쿠키런 이미지가 어울리게 그려줘)"
+        },
+        {
+            "from": "bot",
+            "text": "✅ 'game_background_far.png' 변경 완료! (배경 이미질를 우주로 그려줘)"
+        },
+        {
+            "from": "bot",
+            "text": "✅ 'obstacle_spike.png' 변경 완료! (장애물을 선인장으로)"
+        },
+        {
+            "from": "bot",
+            "text": "ParallaxBackground 클래스의 `update` 및 `draw` 메서드를 수정했습니다. 기존 코드는 특정 이미지 크기(캔버스 너비와 같거나 절반인 경우)에서만 제대로 작동하는 경향이 있었지만, 이제는 어떤 이미지 너비라도 캔버스에 걸쳐 배경이 끊김 없이 매끄럽게 타일링되도록 개선했습니다.\n\n**수정 사항 상세:**\n-   `ParallaxBackground.update`: 배경의 X 좌표가 이미지 너비만큼 왼쪽으로 완전히 벗어났을 때, 정확히 이미지 너비만큼 X 좌표를 이동시켜 끊김 없는 루프를 만듭니다. ( `if (this.x <= -this.width)` )\n-   `ParallaxBackground.draw`: `while` 루프를 사용하여 캔버스를 완전히 덮고 다음 타일이 부드럽게 스크롤될 수 있도록 충분한 수의 배경 이미지를 동적으로 그립니다. 이는 이미지의 스케일링된 너비가 캔버스 너비와 관계없이 올바른 타일링을 보장합니다.\n\n`data.json` 파일은 변경된 내용이 없습니다. 현재 게임 로직에 필요한 모든 설정과 에셋 정보가 잘 정의되어 있습니다."
+        },
+        {
+            "from": "bot",
+            "text": "✅ 'game_background_far.png' 변경 완료! (배경이미지를 사막으로)"
         }
     ]
 }

@@ -160,7 +160,7 @@ async function loadGame() {
  */
 async function loadAssets() {
     currentGameState = 'LOADING'; // Indicate loading state
-    drawText('Loading assets...', canvas.width / 2, canvas.height / 2, '24px Arial', '#ffffff');
+    // The loading text is now handled by the draw function when currentGameState is 'LOADING'
 
     const imagePromises = gameData.assets.images.map(img => {
         return new Promise<void>((resolve, reject) => {
@@ -181,7 +181,7 @@ async function loadAssets() {
     const soundPromises = gameData.assets.sounds.map(snd => {
         return new Promise<void>((resolve, reject) => {
             const audio = new Audio(snd.path);
-            audio.volume = snd.volume;
+            audio.volume = snd.volume; // Set volume here during loading
             // Safari and other browsers require user interaction for media playback.
             // oncanplaythrough indicates the browser can play it, but it might not autoplay.
             audio.oncanplaythrough = () => {
@@ -223,12 +223,12 @@ function initGame() {
     backgroundMusic = assets.sounds.get(gameData.gameSettings.bgmSoundName) || null;
     if (backgroundMusic) {
         backgroundMusic.loop = true; // Loop background music
-        backgroundMusic.volume = gameData.assets.sounds.find(s => s.name === gameData.gameSettings.bgmSoundName)?.volume || 0.3;
+        // Volume is already set during loading in loadAssets, no need to set again here.
     }
 
     gameOverEffect = assets.sounds.get(gameData.gameSettings.gameOverSoundName) || null;
     if (gameOverEffect) {
-        gameOverEffect.volume = gameData.assets.sounds.find(s => s.name === gameData.gameSettings.gameOverSoundName)?.volume || 0.7;
+        // Volume is already set during loading in loadAssets, no need to set again here.
     }
 
     currentGameState = 'TITLE'; // Start on the title screen
