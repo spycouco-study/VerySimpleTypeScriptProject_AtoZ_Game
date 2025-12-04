@@ -1,0 +1,41 @@
+{
+  "gameSettings": {
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "titleText": "Space Explorer",
+    "startInstruction": "Press SPACE to Begin Your Journey",
+    "gameOverText": "Game Over!",
+    "restartInstruction": "Press ENTER to Restart",
+    "titleTextColor": "#FFEECC",
+    "backgroundColor": "#1a1a2e",
+    "fontFamily": "Press Start 2P, cursive"
+  },
+  "playerSettings": {
+    "imageName": "player",
+    "initialX": 375,
+    "initialY": 500,
+    "width": 60,
+    "height": 60,
+    "speed": 250
+  },
+  "bulletSettings": {
+    "imageName": "bullet",
+    "width": 10,
+    "height": 20,
+    "speed": 400,
+    "fireRate": 5
+  },
+  "assets": {
+    "images": [
+      { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+      { "name": "enemy", "path": "assets/enemy.png", "width": 64, "height": 64 },
+      { "name": "bullet", "path": "assets/bullet.png", "width": 10, "height": 20 }
+    ],
+    "sounds": [
+      { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 90.0, "volume": 0.4 },
+      { "name": "start_sound", "path": "assets/start_sound.mp3", "duration_seconds": 1.0, "volume": 0.7 },
+      { "name": "shoot_sound", "path": "assets/shoot.mp3", "duration_seconds": 0.5, "volume": 0.5 },
+      { "name": "explosion_sound", "path": "assets/explosion.mp3", "duration_seconds": 1.2, "volume": 0.8 }
+    ]
+  }
+}

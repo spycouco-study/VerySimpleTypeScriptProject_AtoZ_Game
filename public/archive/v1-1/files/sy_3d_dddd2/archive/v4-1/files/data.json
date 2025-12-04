@@ -1,0 +1,22 @@
+{
+  "player": {
+    "speed": 10.0,
+    "sprintSpeedMultiplier": 1.5,
+    "jumpForce": 7.0,
+    "mouseSensitivity": 0.002
+  },
+  "level": {
+    "arenaSize": 30.0,
+    "wallHeight": 4.0
+  },
+  "enemy": {
+    "count": 10,
+    "size": 1.0,
+    "scoreValue": 100,
+    "texturePath": "assets/target_texture.png"
+  },
+  "assets": {
+    "bgmPath": "assets/bgm_loop.mp3",
+    "shootSfxPath": "assets/shoot_sfx.mp3"
+  }
+}

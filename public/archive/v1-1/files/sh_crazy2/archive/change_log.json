@@ -1,0 +1,12 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-24T19:52:26.014404",
+            "summary": "크레이지 아케이드와 유사한 스타일의 게임을 만들어주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

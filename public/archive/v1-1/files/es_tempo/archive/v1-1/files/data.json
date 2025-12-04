@@ -1,0 +1,111 @@
+{
+    "assets": {
+        "images": [
+            { "name": "background_image", "path": "assets/background.png", "width": 1920, "height": 1080 },
+            { "name": "note_blue", "path": "assets/note_blue.png", "width": 128, "height": 32 },
+            { "name": "hit_effect", "path": "assets/hit_effect.png", "width": 128, "height": 64 }
+        ],
+        "sounds": [
+            { "name": "bgm_song1", "path": "assets/bgm_song1.mp3", "duration_seconds": 60.0, "volume": 0.5 },
+            { "name": "hit_effect", "path": "assets/hit_effect.mp3", "duration_seconds": 0.2, "volume": 0.7 },
+            { "name": "miss_effect", "path": "assets/miss_effect.mp3", "duration_seconds": 0.5, "volume": 0.6 }
+        ]
+    },
+    "gameConfig": {
+        "canvasWidth": 1280,
+        "canvasHeight": 720,
+        "hitLineY": 600,
+        "noteFallSpeedPxPerMs": 0.8,
+        "laneCount": 4,
+        "laneWidth": 100,
+        "laneSpacing": 20,
+        "laneStartX": 400,
+        "laneKeys": {
+            "d": 0,
+            "f": 1,
+            "j": 2,
+            "k": 3
+        },
+        "defaultNoteHeight": 30,
+        "hitEffectDurationMs": 200,
+        "judgeTextDurationMs": 700,
+        "initialHealth": 100,
+        "maxHealth": 100,
+        "backgroundScrollSpeedY": 0.05,
+        "perfectHitOffsetMs": 0
+    },
+    "titleScreen": {
+        "titleText": "Rhythm Mania",
+        "startButtonText": "Press Any Key to Start",
+        "titleFont": "80px Arial Black",
+        "startFont": "30px Arial",
+        "titleColor": "#FFD700",
+        "startColor": "#FFFFFF",
+        "backgroundImageName": "background_image"
+    },
+    "gameplayUI": {
+        "scoreFont": "30px Arial",
+        "comboFont": "40px Arial",
+        "healthBarColor": "lime",
+        "judgeTextFont": "30px Arial Black"
+    },
+    "judgeSettings": [
+        { "judgment": "Perfect", "color": "#00FFFF", "timeWindowMs": 50, "scoreMultiplier": 100, "healthChange": 5 },
+        { "judgment": "Good", "color": "#00FF00", "timeWindowMs": 100, "scoreMultiplier": 50, "healthChange": 2 },
+        { "judgment": "Bad", "color": "#FFFF00", "timeWindowMs": 150, "scoreMultiplier": 10, "healthChange": -5 },
+        { "judgment": "Miss", "color": "#FF0000", "timeWindowMs": 200, "scoreMultiplier": 0, "healthChange": -10 }
+    ],
+    "noteTypes": {
+        "normal": { "imageAssetName": "note_blue" }
+    },
+    "songs": [
+        {
+            "name": "Upbeat Rhythm",
+            "artist": "AI Composer",
+            "bgmAssetName": "bgm_song1",
+            "bpm": 120,
+            "notes": [
+                { "time": 2.0, "lane": 0, "type": "normal" },
+                { "time": 2.5, "lane": 1, "type": "normal" },
+                { "time": 3.0, "lane": 2, "type": "normal" },
+                { "time": 3.5, "lane": 3, "type": "normal" },
+                { "time": 4.0, "lane": 0, "type": "normal" },
+                { "time": 4.25, "lane": 1, "type": "normal" },
+                { "time": 4.5, "lane": 2, "type": "normal" },
+                { "time": 4.75, "lane": 3, "type": "normal" },
+                { "time": 5.0, "lane": 0, "type": "normal" },
+                { "time": 5.5, "lane": 1, "type": "normal" },
+                { "time": 6.0, "lane": 2, "type": "normal" },
+                { "time": 6.5, "lane": 3, "type": "normal" },
+                { "time": 7.0, "lane": 0, "type": "normal" },
+                { "time": 7.25, "lane": 1, "type": "normal" },
+                { "time": 7.5, "lane": 2, "type": "normal" },
+                { "time": 7.75, "lane": 3, "type": "normal" },
+                { "time": 8.0, "lane": 0, "type": "normal" },
+                { "time": 8.5, "lane": 1, "type": "normal" },
+                { "time": 9.0, "lane": 2, "type": "normal" },
+                { "time": 9.5, "lane": 3, "type": "normal" },
+                { "time": 10.0, "lane": 0, "type": "normal" },
+                { "time": 10.25, "lane": 1, "type": "normal" },
+                { "time": 10.5, "lane": 2, "type": "normal" },
+                { "time": 10.75, "lane": 3, "type": "normal" },
+                { "time": 11.0, "lane": 0, "type": "normal" },
+                { "time": 11.25, "lane": 1, "type": "normal" },
+                { "time": 11.5, "lane": 2, "type": "normal" },
+                { "time": 11.75, "lane": 3, "type": "normal" },
+                { "time": 12.0, "lane": 0, "type": "normal" },
+                { "time": 12.5, "lane": 1, "type": "normal" },
+                { "time": 13.0, "lane": 2, "type": "normal" },
+                { "time": 13.5, "lane": 3, "type": "normal" },
+                { "time": 14.0, "lane": 0, "type": "normal" },
+                { "time": 14.25, "lane": 1, "type": "normal" },
+                { "time": 14.5, "lane": 2, "type": "normal" },
+                { "time": 14.75, "lane": 3, "type": "normal" },
+                { "time": 15.0, "lane": 0, "type": "normal" },
+                { "time": 15.25, "lane": 1, "type": "normal" },
+                { "time": 15.5, "lane": 2, "type": "normal" },
+                { "time": 15.75, "lane": 3, "type": "normal" }
+            ]
+        }
+    ]
+}

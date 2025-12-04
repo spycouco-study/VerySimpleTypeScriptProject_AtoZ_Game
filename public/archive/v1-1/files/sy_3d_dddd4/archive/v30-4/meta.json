@@ -1,0 +1,113 @@
+{
+    "version": "v30-4",
+    "parent": "v29-1",
+    "timestamp": "2025-11-22T23:51:00.764538",
+    "summary": "플레이어에게 마찰력을 없애주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v27-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "box.png",
+            "path": "assets/box.png",
+            "last_version": "v27-1"
+        },
+        {
+            "name": "ground.png",
+            "path": "assets/ground.png",
+            "last_version": "v28-3"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "last_version": "v29-1"
+        },
+        {
+            "name": "step.mp3",
+            "path": "assets/step.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "af24090b6dfe6d807b7ab0631b653467bde09e3eff60e9d7926c5e936bd15ed2",
+            "size": 4007,
+            "mtime": 1763823054.1783066
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763822969.0063024
+        },
+        "game.js": {
+            "hash": "442bfb03fe1ad98717d2624ca9adae864cbf41761be8097e15d86493e58c9af9",
+            "size": 90065,
+            "mtime": 1763823060.1832628
+        },
+        "game.ts": {
+            "hash": "15847c7b378392bb1a5ae8aaf9295f8b669644dd6a427e39deab0bbcb604d633",
+            "size": 37717,
+            "mtime": 1763823054.1709282
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763822969.0793586
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763822969.1111727
+        },
+        "assets/box.png": {
+            "hash": "694b56f42f944aa461b86d54e4dc36de464219480b8a5cd6b053b2ef07f0032e",
+            "size": 893,
+            "mtime": 1763822969.1111727
+        },
+        "assets/ground.png": {
+            "hash": "e29bbb8e61be3c966a68f9207c6b436bdb694179dcf496a4e024dc072c6e9cee",
+            "size": 1280269,
+            "mtime": 1763822969.127087
+        },
+        "assets/player.png": {
+            "hash": "2d006547b3766926660082a5865b8444c64ed61028a782078d0ad427703e80b6",
+            "size": 112948,
+            "mtime": 1763822969.1429858
+        },
+        "assets/step.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763822969.1729405
+        }
+    }
+}

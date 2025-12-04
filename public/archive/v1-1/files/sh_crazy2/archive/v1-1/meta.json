@@ -1,0 +1,212 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-24T19:52:26.012708",
+    "summary": "크레이지 아케이드와 유사한 스타일의 게임을 만들어주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "bomb.png",
+            "path": "assets/bomb.png",
+            "type": "Add"
+        },
+        {
+            "name": "bomb_explosion.mp3",
+            "path": "assets/bomb_explosion.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "bomb_plant.mp3",
+            "path": "assets/bomb_plant.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "destructible_block.png",
+            "path": "assets/destructible_block.png",
+            "type": "Add"
+        },
+        {
+            "name": "explosion.png",
+            "path": "assets/explosion.png",
+            "type": "Add"
+        },
+        {
+            "name": "game_win.mp3",
+            "path": "assets/game_win.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "ground.png",
+            "path": "assets/ground.png",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_death.mp3",
+            "path": "assets/player_death.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "powerup.mp3",
+            "path": "assets/powerup.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "powerup_bomb.png",
+            "path": "assets/powerup_bomb.png",
+            "type": "Add"
+        },
+        {
+            "name": "powerup_range.png",
+            "path": "assets/powerup_range.png",
+            "type": "Add"
+        },
+        {
+            "name": "powerup_speed.png",
+            "path": "assets/powerup_speed.png",
+            "type": "Add"
+        },
+        {
+            "name": "wall.png",
+            "path": "assets/wall.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "f80888ac87b0cae2c20ae284b476a247a41978ce3dfc6691fe88bc287d94aacc",
+            "size": 2985,
+            "mtime": 1763981542.5493975
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763445575.5299747
+        },
+        "game.js": {
+            "hash": "ce2762dc1d04c496be6cc97fe37a985bee5627df784d146a61d93b20212d1217",
+            "size": 100952,
+            "mtime": 1763981545.882198
+        },
+        "game.ts": {
+            "hash": "1d72fbf48826e43eb4c7e52005a57cfe97bce051e91545dfcc9a81653be6792a",
+            "size": 36133,
+            "mtime": 1763981542.4771352
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763978857.8597615
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763445575.5841365
+        },
+        "assets/bomb.png": {
+            "hash": "12895440ce62251a04ab3aacb32b2efa786dc62254216600d6514f33b5833a36",
+            "size": 392,
+            "mtime": 1763981487.6595278
+        },
+        "assets/bomb_explosion.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/bomb_plant.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/destructible_block.png": {
+            "hash": "625c5218090aedf01c85f229549b22b81c0788d34c963851db33a0fc91abd5c5",
+            "size": 801,
+            "mtime": 1763981487.6568909
+        },
+        "assets/explosion.png": {
+            "hash": "3474e7307d049c4dd0e96c8cb7b62be0f4f42cc99d788921219641b17c19c626",
+            "size": 734,
+            "mtime": 1763981487.6628368
+        },
+        "assets/game_win.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/ground.png": {
+            "hash": "4ff4507349a920bfac22cad1c90fd63861ffcd11f2ac0447f5c1c70cc1efd6e3",
+            "size": 794,
+            "mtime": 1763981487.6780572
+        },
+        "assets/player.png": {
+            "hash": "dff6e6568ffb657eee775f2818bfe18b6a5432ced214f4398a701046e2e07303",
+            "size": 604,
+            "mtime": 1763981487.6508381
+        },
+        "assets/player_death.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/powerup.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/powerup_bomb.png": {
+            "hash": "7f7923a1f33780ed45392fad01f93ae388bcb1933abeafccf2b7507b4c1971fe",
+            "size": 402,
+            "mtime": 1763981487.6709256
+        },
+        "assets/powerup_range.png": {
+            "hash": "4e5bef4c423087187feba4fe0f7b312e2816b44506b4aa21e4b465a1197b2fc2",
+            "size": 417,
+            "mtime": 1763981487.6733763
+        },
+        "assets/powerup_speed.png": {
+            "hash": "6f57dcaf0967f493258758b89ab445ccc29423c9f4135d2ff661433ea75515e5",
+            "size": 458,
+            "mtime": 1763981487.6651838
+        },
+        "assets/wall.png": {
+            "hash": "fc2cdf7b584e24e7fe6fe0ce98c6ad55ea63a66d35d6e518a79ef51d0bf7e3ef",
+            "size": 425,
+            "mtime": 1763981487.6541615
+        }
+    }
+}

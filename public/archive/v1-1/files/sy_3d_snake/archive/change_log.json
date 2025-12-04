@@ -1,0 +1,68 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-22T20:42:30.037899",
+            "summary": "뱀게임을 만들어주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-27T04:27:40.285461",
+            "summary": "게임 제목을 '3D 뱀게임'으로 변경해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-11-27T04:31:30.377366",
+            "summary": "마우스로 카메라 시점을 바꿀 수 있게 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-11-27T04:42:08.029802",
+            "summary": "게임 실행을 방해하는 런타임 오류(http://localhost:8080/sy_3d_snake/game.js 스크립트 로드 실패)를 수정하여 게임이 정상적으로 작동하도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-2",
+            "parent": "v3-1",
+            "timestamp": "2025-11-27T05:24:29.897196",
+            "summary": "게임 제목을 '3D 뱀 겜'으로 변경해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-3",
+            "parent": "v3-1",
+            "timestamp": "2025-11-27T05:34:12.709053",
+            "summary": "게임 제목을 '3D 뱀 겜'으로 변경해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-3",
+            "timestamp": "2025-11-27T05:45:47.392598",
+            "summary": "게임 생성 중 'OrbitControls'에서 'enableDDamping' 속성이 존재하지 않는다는 오류가 발생합니다. 오류 메시지에서 제안하는 대로 'enableDamping'으로 속성 이름을 수정하여 문제를 해결해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v6-1",
+            "parent": "v5-1",
+            "timestamp": "2025-11-27T06:02:32.015061",
+            "summary": "먹이를 두개로 늘려주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

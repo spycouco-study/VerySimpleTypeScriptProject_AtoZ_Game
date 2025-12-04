@@ -1,0 +1,315 @@
+{
+    "canvas": {
+        "width": 1000,
+        "height": 700
+    },
+    "assets": {
+        "images": [
+            {
+                "name": "title_bg",
+                "path": "assets/title_bg.png",
+                "width": 1000,
+                "height": 700
+            },
+            {
+                "name": "stage_bg",
+                "path": "assets/stage_bg.png",
+                "width": 1000,
+                "height": 700
+            },
+            {
+                "name": "kyo_sprites",
+                "path": "assets/kyo_sprites.png",
+                "width": 512,
+                "height": 512
+            },
+            {
+                "name": "iori_sprites",
+                "path": "assets/iori_sprites.png",
+                "width": 512,
+                "height": 512
+            }
+        ],
+        "sounds": [
+            {
+                "name": "bgm_title",
+                "path": "assets/bgm_title.mp3",
+                "volume": 0.5,
+                "loop": true,
+                "duration_seconds": 60.0
+            },
+            {
+                "name": "bgm_game",
+                "path": "assets/bgm_game.mp3",
+                "volume": 0.4,
+                "loop": true,
+                "duration_seconds": 60.0
+            },
+            {
+                "name": "sfx_punch",
+                "path": "assets/sfx_punch.mp3",
+                "volume": 0.8,
+                "loop": false,
+                "duration_seconds": 1.0
+            },
+            {
+                "name": "sfx_kick",
+                "path": "assets/sfx_kick.mp3",
+                "volume": 0.8,
+                "loop": false,
+                "duration_seconds": 1.0
+            },
+            {
+                "name": "sfx_hit",
+                "path": "assets/sfx_hit.mp3",
+                "volume": 0.9,
+                "loop": false,
+                "duration_seconds": 1.0
+            },
+            {
+                "name": "sfx_jump",
+                "path": "assets/sfx_jump.mp3",
+                "volume": 0.7,
+                "loop": false,
+                "duration_seconds": 1.0
+            },
+            {
+                "name": "sfx_game_over",
+                "path": "assets/sfx_game_over.mp3",
+                "volume": 1,
+                "loop": false,
+                "duration_seconds": 3.0
+            },
+            {
+                "name": "sfx_block",
+                "path": "assets/sfx_block.mp3",
+                "volume": 0.7,
+                "loop": false,
+                "duration_seconds": 1.0
+            }
+        ]
+    },
+    "gameSettings": {
+        "gravity": 900,
+        "groundY": 580,
+        "playerStartXOffset": 150,
+        "playerSpacing": 300,
+        "maxHealth": 1000,
+        "walkSpeed": 200,
+        "jumpVelocity": -500,
+        "attackDuration": 0.3,
+        "hitStunDuration": 0.4,
+        "lightPunchDamage": 50,
+        "heavyKickDamage": 120,
+        "blockDamageReduction": 0.0,
+        "player1Controls": {
+            "left": "KeyA",
+            "right": "KeyD",
+            "jump": "KeyW",
+            "lightPunch": "KeyJ",
+            "heavyKick": "KeyK",
+            "block": "KeyL"
+        },
+        "player2Controls": {
+            "left": "ArrowLeft",
+            "right": "ArrowRight",
+            "jump": "ArrowUp",
+            "lightPunch": "KeyN",
+            "heavyKick": "KeyM",
+            "block": "KeyB"
+        }
+    },
+    "characters": [
+        {
+            "name": "Kyo",
+            "spriteSheet": "kyo_sprites",
+            "width": 120,
+            "height": 160,
+            "animations": {
+                "idle": {
+                    "x": 0,
+                    "y": 0,
+                    "frameWidth": 64,
+                    "frameHeight": 80,
+                    "frames": 4,
+                    "frameDelay": 0.15
+                },
+                "walk": {
+                    "x": 0,
+                    "y": 80,
+                    "frameWidth": 64,
+                    "frameHeight": 80,
+                    "frames": 6,
+                    "frameDelay": 0.1
+                },
+                "jump": {
+                    "x": 0,
+                    "y": 160,
+                    "frameWidth": 64,
+                    "frameHeight": 80,
+                    "frames": 4,
+                    "frameDelay": 0.1
+                },
+                "light_punch": {
+                    "x": 0,
+                    "y": 240,
+                    "frameWidth": 96,
+                    "frameHeight": 80,
+                    "frames": 3,
+                    "frameDelay": 0.08,
+                    "hitbox": {
+                        "x": 60,
+                        "y": 50,
+                        "width": 40,
+                        "height": 20
+                    },
+                    "damage": "lightPunchDamage",
+                    "sfx": "sfx_punch"
+                },
+                "heavy_kick": {
+                    "x": 0,
+                    "y": 320,
+                    "frameWidth": 96,
+                    "frameHeight": 80,
+                    "frames": 4,
+                    "frameDelay": 0.1,
+                    "hitbox": {
+                        "x": 70,
+                        "y": 40,
+                        "width": 50,
+                        "height": 30
+                    },
+                    "damage": "heavyKickDamage",
+                    "sfx": "sfx_kick"
+                },
+                "hit": {
+                    "x": 0,
+                    "y": 400,
+                    "frameWidth": 64,
+                    "frameHeight": 80,
+                    "frames": 2,
+                    "frameDelay": 0.1
+                },
+                "block": {
+                    "x": 0,
+                    "y": 0,
+                    "frameWidth": 64,
+                    "frameHeight": 80,
+                    "frames": 1,
+                    "frameDelay": 0.1
+                }
+            }
+        },
+        {
+            "name": "Iori",
+            "spriteSheet": "iori_sprites",
+            "width": 120,
+            "height": 160,
+            "animations": {
+                "idle": {
+                    "x": 0,
+                    "y": 0,
+                    "frameWidth": 64,
+                    "frameHeight": 80,
+                    "frames": 4,
+                    "frameDelay": 0.15
+                },
+                "walk": {
+                    "x": 0,
+                    "y": 80,
+                    "frameWidth": 64,
+                    "frameHeight": 80,
+                    "frames": 6,
+                    "frameDelay": 0.1
+                },
+                "jump": {
+                    "x": 0,
+                    "y": 160,
+                    "frameWidth": 64,
+                    "frameHeight": 80,
+                    "frames": 4,
+                    "frameDelay": 0.1
+                },
+                "light_punch": {
+                    "x": 0,
+                    "y": 240,
+                    "frameWidth": 96,
+                    "frameHeight": 80,
+                    "frames": 3,
+                    "frameDelay": 0.08,
+                    "hitbox": {
+                        "x": 60,
+                        "y": 50,
+                        "width": 40,
+                        "height": 20
+                    },
+                    "damage": "lightPunchDamage",
+                    "sfx": "sfx_punch"
+                },
+                "heavy_kick": {
+                    "x": 0,
+                    "y": 320,
+                    "frameWidth": 96,
+                    "frameHeight": 80,
+                    "frames": 4,
+                    "frameDelay": 0.1,
+                    "hitbox": {
+                        "x": 70,
+                        "y": 40,
+                        "width": 50,
+                        "height": 30
+                    },
+                    "damage": "heavyKickDamage",
+                    "sfx": "sfx_kick"
+                },
+                "hit": {
+                    "x": 0,
+                    "y": 400,
+                    "frameWidth": 64,
+                    "frameHeight": 80,
+                    "frames": 2,
+                    "frameDelay": 0.1
+                },
+                "block": {
+                    "x": 0,
+                    "y": 0,
+                    "frameWidth": 64,
+                    "frameHeight": 80,
+                    "frames": 1,
+                    "frameDelay": 0.1
+                }
+            }
+        }
+    ],
+    "stages": [
+        {
+            "name": "Default Stage",
+            "background": "stage_bg"
+        }
+    ],
+    "ui": {
+        "titleScreen": {
+            "titleText": "THE KING OF FIGHTERS",
+            "subtitleText": "PRESS ENTER TO START",
+            "titleFont": "80px 'Press Start 2P', cursive",
+            "subtitleFont": "30px 'Press Start 2P', cursive",
+            "textColor": "#FFF",
+            "blinkRate": 0.5
+        },
+        "healthBar": {
+            "height": 30,
+            "widthFactor": 0.4,
+            "player1Color": "#00FF00",
+            "player2Color": "#FF0000",
+            "borderColor": "#FFF",
+            "borderThickness": 3,
+            "padding": 20,
+            "offsetX": 50
+        },
+        "gameOverScreen": {
+            "text": "GAME OVER",
+            "font": "80px 'Press Start 2P', cursive",
+            "textColor": "#FF0000"
+        }
+    }
+}

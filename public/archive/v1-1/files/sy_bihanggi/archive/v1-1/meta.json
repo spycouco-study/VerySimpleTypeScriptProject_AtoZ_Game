@@ -1,0 +1,132 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-14T20:48:06.463178",
+    "summary": "",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "enemy.png",
+            "path": "assets/enemy.png",
+            "type": "Add"
+        },
+        {
+            "name": "enemy_bullet.png",
+            "path": "assets/enemy_bullet.png",
+            "type": "Add"
+        },
+        {
+            "name": "enemy_hit.mp3",
+            "path": "assets/enemy_hit.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_bullet.png",
+            "path": "assets/player_bullet.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_shoot.mp3",
+            "path": "assets/player_shoot.mp3",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "2615fc45297da4b91f38abbb50dd581fb985385cbb0d6c819c6749a4167ceeb1",
+            "size": 1516,
+            "mtime": 1762933430.1476607
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1761399375.5725453
+        },
+        "game.ts": {
+            "hash": "edb69b9209f4f08b7d505b673ef992079ae4e76895ef686deac338b564df8360",
+            "size": 22761,
+            "mtime": 1762933430.1416898
+        },
+        "assets/background.png": {
+            "hash": "af95feebe81aa3c4876df9c14d0200b211b2e53c3712bb360b46c2d16e8036fc",
+            "size": 6277,
+            "mtime": 1762933430.110918
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1761211729.270481
+        },
+        "assets/enemy.png": {
+            "hash": "9888a8de5a68a5b311028897dcb65c2cfba1177980eb0ac0e7a87f8c241f56f4",
+            "size": 557,
+            "mtime": 1762933430.100063
+        },
+        "assets/enemy_bullet.png": {
+            "hash": "fd2b122568ee730ed716cf01cec2a3953a52d84810635dfec020e65a1ac87cd0",
+            "size": 212,
+            "mtime": 1762933430.1004853
+        },
+        "assets/enemy_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/player.png": {
+            "hash": "dff6e6568ffb657eee775f2818bfe18b6a5432ced214f4398a701046e2e07303",
+            "size": 604,
+            "mtime": 1762933430.084166
+        },
+        "assets/player_bullet.png": {
+            "hash": "0709d07ae3ed1a4277389ed055ee13dded28a3abd35a9e445186f9d5cab65cbf",
+            "size": 158,
+            "mtime": 1762933430.084166
+        },
+        "assets/player_shoot.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        }
+    }
+}

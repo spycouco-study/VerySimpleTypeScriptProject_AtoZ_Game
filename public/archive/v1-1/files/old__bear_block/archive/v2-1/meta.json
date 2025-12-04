@@ -1,0 +1,102 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-11-19T19:50:26.308777",
+    "summary": "game.js 생성",
+    "chat": {},
+    "changes": [],
+    "no_changes": [
+        {
+            "name": "back.png",
+            "path": "back.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bear.png",
+            "path": "bear.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bubble_effect.png",
+            "path": "bubble_effect.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "eat.mp3",
+            "path": "eat.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "honey.png",
+            "path": "honey.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "back.png": {
+            "hash": "d30cd0b50b7ee188b55550963279accf67a30bcae7e32027b44e8991c035d57b",
+            "size": 1122910,
+            "mtime": 1763347038.917588
+        },
+        "bear.png": {
+            "hash": "4187f5e2eae260ad45c661e0bfdccb30b30764d8b4c9e9cd1439c20f178e7c0a",
+            "size": 178123,
+            "mtime": 1763347038.9205503
+        },
+        "bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347038.9775815
+        },
+        "bubble_effect.png": {
+            "hash": "db0b5f4c9e8a24c00d7fabb3d62a5e34398218883afcb654d67bfe7b01f7b752",
+            "size": 218126,
+            "mtime": 1763347038.9785771
+        },
+        "eat.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347038.9785771
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763347038.9870167
+        },
+        "game.js": {
+            "hash": "3110bd562350fb236cdc09d9776589a552ba94aaf06ffda2d6e20faa805d4756",
+            "size": 15519,
+            "mtime": 1763547951.1794748
+        },
+        "game.ts": {
+            "hash": "743286d6e956c089b2e534c1a03e08c23b30180aef26a2c7f1f651574a8e303e",
+            "size": 16081,
+            "mtime": 1763347038.992822
+        },
+        "honey.png": {
+            "hash": "150888b5703dbbdf874e718c37d1d7f62a37477054065f93eccb0fa006eea523",
+            "size": 30750,
+            "mtime": 1763347038.9958143
+        }
+    }
+}

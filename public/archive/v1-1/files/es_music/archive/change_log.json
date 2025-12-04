@@ -1,0 +1,116 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-26T10:25:20.671242",
+            "summary": "간단한 리듬 게임을 만들어주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-26T10:28:13.342531",
+            "summary": "게임의 템포를 좀 더 신나게 변경해줘",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-11-26T10:30:29.462846",
+            "summary": "golden 노래에 맞춰서 템포를 조정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-11-26T10:32:04.946161",
+            "summary": "bgm.mp3파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-11-26T10:39:44.172403",
+            "summary": "bgm.mp3파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v6-1",
+            "parent": "v5-1",
+            "timestamp": "2025-11-26T10:43:15.789888",
+            "summary": "bgm.mp3파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-1",
+            "parent": "v6-1",
+            "timestamp": "2025-11-26T10:46:11.991497",
+            "summary": "게임의 BPM을 94로 설정해줘.\n게임의 길이를 3분 25초로 설정해줘.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v8-1",
+            "parent": "v7-1",
+            "timestamp": "2025-11-26T10:50:13.883106",
+            "summary": "게임에서 정답을 맞추지 못하면 점수가 차감되도록 해주세요.\n점수가 마이너스가 되면 게임이 종료되도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v9-1",
+            "parent": "v8-1",
+            "timestamp": "2025-11-26T10:57:21.547598",
+            "summary": "note.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v10-1",
+            "parent": "v9-1",
+            "timestamp": "2025-11-26T10:59:13.596885",
+            "summary": "background.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v11-1",
+            "parent": "v10-1",
+            "timestamp": "2025-11-26T11:07:29.152249",
+            "summary": "사용자는 리듬 게임을 만들고자 합니다.\n게임에 사용할 트랙은 '10cm – 봄이 좋냐??'입니다.\n게임의 BPM은 94로 설정합니다.\n게임의 박자표기는 4/4입니다.\n게임의 장르는 팝/어쿠스틱이며, 킥과 스네어가 명확하지 않아 보컬과 기타 스트로크를 주요 판정 기준으로 삼습니다.\n노트 생성 규칙으로 기본 박자는 1/4 비트 단위로 생성합니다.\n후렴구에서는 1/8 및 1/16 subdivision을 사용합니다.\n노트는 보컬의 주요 syllable, 기타 스트로크, 드럼 히트를 우선 매핑합니다.\n판정 기준으로 Perfect는 ±25ms로 설정합니다.\n판정 기준으로 Great는 ±50ms로 설정합니다.\n판정 기준으로 Good은 ±90ms로 설정합니다.\n판정 기준으로 Miss는 90ms 초과 시 발생합니다.\n콤보는 Miss 판정에서만 끊깁니다.\nEasy 난이도는 1/4 비트 위주로 구성하며 보컬 후렴에 집중합니다.\nNormal 난이도는 1/4 비트와 1/8 비트를 섞고 기타 스트럼을 반영합니다.\nHard 난이도는 1/16 비트를 간헐적으로 사용하며 보컬 강세와 악기 싱크를 반영합니다.\n노트 타입으로 탭(Tap)은 단일 입력으로 정의합니다.\n노트 타입으로 홀드(Hold)는 기타 스트로크 지속 구간에 사용합니다.\n노트 타입으로 슬라이드(Slide)는 후렴 멜로디의 상행/하행 파트에 사용합니다.\nUI/UX는 판정선을 하단 중앙에 고정합니다.\n타격 타이밍은 사운드 기준 600ms 이전부터 접근하도록 설정합니다.\n싱크의 첫 downbeat 기준 BeatOffset은 0ms로 설정합니다.\n실제 곡 분석 후 오프셋 보정이 필요합니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v12-1",
+            "parent": "v11-1",
+            "timestamp": "2025-11-26T11:19:18.183298",
+            "summary": "삽입한 노래에 맞춰서 리듬게임을 수정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v13-1",
+            "parent": "v12-1",
+            "timestamp": "2025-11-26T11:20:10.856726",
+            "summary": "new_bgm.mp3파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v14-1",
+            "parent": "v13-1",
+            "timestamp": "2025-11-26T11:25:08.005758",
+            "summary": "bgm.mp3 파일을 분석하여 게임 플레이에 사용될 노트를 자동으로 생성해주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

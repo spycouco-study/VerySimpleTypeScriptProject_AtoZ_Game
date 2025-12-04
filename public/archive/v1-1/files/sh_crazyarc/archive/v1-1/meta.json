@@ -1,0 +1,212 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-18T16:31:59.823577",
+    "summary": "'봄버맨'이나 '크레이지아케이드'와 같은 스타일의 게임을 만들어주세요.\n캐릭터 조작은 방향키를 사용하고, 물풍선 발사는 스페이스바를 사용하도록 해주세요.\n물풍선을 사용하여 블록을 제거하고, 제거된 블록에서는 랜덤하게 아이템을 얻을 수 있도록 해주세요.\n물풍선으로 적을 공격하여 처치할 수 있도록 해주세요.\n게임의 승리 조건은 최후의 1인이 되는 것으로 설정해주세요.\n적 캐릭터들도 물풍선을 발사하며 최후의 1인이 되는 것을 목표로 하도록 인공지능을 구현해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "block.png",
+            "path": "assets/block.png",
+            "type": "Add"
+        },
+        {
+            "name": "bomb.png",
+            "path": "assets/bomb.png",
+            "type": "Add"
+        },
+        {
+            "name": "bomb_drop.mp3",
+            "path": "assets/bomb_drop.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "empty_tile.png",
+            "path": "assets/empty_tile.png",
+            "type": "Add"
+        },
+        {
+            "name": "enemy.png",
+            "path": "assets/enemy.png",
+            "type": "Add"
+        },
+        {
+            "name": "explosion.mp3",
+            "path": "assets/explosion.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "explosion.png",
+            "path": "assets/explosion.png",
+            "type": "Add"
+        },
+        {
+            "name": "item_bomb_up.png",
+            "path": "assets/item_bomb_up.png",
+            "type": "Add"
+        },
+        {
+            "name": "item_collect.mp3",
+            "path": "assets/item_collect.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "item_range_up.png",
+            "path": "assets/item_range_up.png",
+            "type": "Add"
+        },
+        {
+            "name": "item_speed_up.png",
+            "path": "assets/item_speed_up.png",
+            "type": "Add"
+        },
+        {
+            "name": "lose.mp3",
+            "path": "assets/lose.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_die.mp3",
+            "path": "assets/player_die.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "wall.png",
+            "path": "assets/wall.png",
+            "type": "Add"
+        },
+        {
+            "name": "win.mp3",
+            "path": "assets/win.mp3",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "fc3eaaa7c501720221769a09099a7f39efe29d82f16c059e3a74cf94ef11c322",
+            "size": 2473,
+            "mtime": 1763451118.1824472
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763445575.5299747
+        },
+        "game.ts": {
+            "hash": "41183688bc326491e8d938b7c1a2a56caabb913f7bd116c4b9c35e55f776b042",
+            "size": 47976,
+            "mtime": 1763451118.1207097
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763445575.5841365
+        },
+        "assets/block.png": {
+            "hash": "768f6792604aeacf01aff6cacdba0600c537ee19b40ccf6f7f7d6bea8a515add",
+            "size": 436,
+            "mtime": 1763450772.0934536
+        },
+        "assets/bomb.png": {
+            "hash": "d3457232b48949bf9ada40f5cacdac9d01e1e64883be2070ad2fe8de0e33bf92",
+            "size": 470,
+            "mtime": 1763450772.101122
+        },
+        "assets/bomb_drop.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/empty_tile.png": {
+            "hash": "2ea4f782002725395efa991b94a0224f4bda29b72f3be4687641e8389f4555ce",
+            "size": 693,
+            "mtime": 1763450921.911075
+        },
+        "assets/enemy.png": {
+            "hash": "c54e4496833ed2a60be2c9047ee3bf3f8cb4b980201fafd65936760c09f21d3b",
+            "size": 560,
+            "mtime": 1763450772.0681615
+        },
+        "assets/explosion.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/explosion.png": {
+            "hash": "78dcbd092d0509cf6ea942ebee67d96618af434be057f3d5a715fcea61712f5c",
+            "size": 733,
+            "mtime": 1763450772.1071682
+        },
+        "assets/item_bomb_up.png": {
+            "hash": "9dda647b052892fcb04a223ece273fb50db502b99e2044f166a7f9d0939a1593",
+            "size": 646,
+            "mtime": 1763450772.1134667
+        },
+        "assets/item_collect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/item_range_up.png": {
+            "hash": "8753fe4b87f3fa7ff83ad1c55b718efd178cfe37d589a7fdf6e5f9d8be4db3a4",
+            "size": 752,
+            "mtime": 1763450772.1204102
+        },
+        "assets/item_speed_up.png": {
+            "hash": "c9621151caf86c1f61ada8fbe1c72244ce89a3ce7b78519ecd6c5e4697c6a34c",
+            "size": 768,
+            "mtime": 1763450772.124329
+        },
+        "assets/lose.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/player.png": {
+            "hash": "dff6e6568ffb657eee775f2818bfe18b6a5432ced214f4398a701046e2e07303",
+            "size": 604,
+            "mtime": 1763450772.0624943
+        },
+        "assets/player_die.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        },
+        "assets/wall.png": {
+            "hash": "d668628065c5b2b3f2a924e6c6f24fb9a75612a2ee17c382747c6fd3bd6d5d02",
+            "size": 424,
+            "mtime": 1763450772.0750523
+        },
+        "assets/win.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445575.5889366
+        }
+    }
+}

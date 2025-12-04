@@ -1,0 +1,548 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-22T22:39:46.514319",
+            "summary": "3D 공간에서 주인공이 WASD 키를 눌러 움직일 수 있는 간단한 게임을 생성해주세요.\n마우스 움직임에 따라 게임 시점이 변하도록 구현해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-22T22:43:35.173184",
+            "summary": "게임이 화면을 클릭해도 시작되지 않는 문제를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-11-22T22:45:43.038884",
+            "summary": "wasd를 눌러도 플레이어가 움직이지 않는 문제를 수정해주세요.\nesc를 누르면 마우스 커서가 화면 밖으로 나타나도록 해주세요.\n마우스 커서가 나타난 상태에서 화면을 다시 클릭하면 시점을 변경할 수 있도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-11-22T22:48:33.571183",
+            "summary": "a키와 d키가 의도한 방향과 반대로 움직이고 있으니 수정해 주세요.\n마우스를 위로 올리면 하늘을 보고 아래로 내리면 땅을 봐야 하는데 지금은 반대로 움직이고 있으니 수정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-11-22T22:49:04.859852",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v6-1",
+            "parent": "v5-1",
+            "timestamp": "2025-11-22T22:49:17.917580",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-1",
+            "parent": "v6-1",
+            "timestamp": "2025-11-22T22:50:55.389183",
+            "summary": "마우스를 위로 올리면 하늘을 보고 아래로 내리면 땅을 보는 방식으로 카메라 조작을 수정해주세요. 현재는 반대로 움직이고 있습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v8-1",
+            "parent": "v7-1",
+            "timestamp": "2025-11-22T22:54:54.592788",
+            "summary": "마우스를 좌우로 움직일 때, 게임 내 객체 또는 카메라가 바닥면과 평행하게만 회전하도록 수정해 주세요. 현재는 이상하게 회전하여 사용자가 어지러움을 느낍니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v9-1",
+            "parent": "v8-1",
+            "timestamp": "2025-11-22T22:57:44.175090",
+            "summary": "WASD 키 입력 시 캐릭터의 이동 방향이 의도와 반대이므로, 이를 올바르게 수정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v10-1",
+            "parent": "v9-1",
+            "timestamp": "2025-11-22T22:58:20.440878",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v11-1",
+            "parent": "v10-1",
+            "timestamp": "2025-11-22T22:58:41.192485",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v11-2",
+            "parent": "v10-1",
+            "timestamp": "2025-11-22T22:58:59.913063",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v12-1",
+            "parent": "v11-2",
+            "timestamp": "2025-11-22T22:59:35.242320",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v13-1",
+            "parent": "v12-1",
+            "timestamp": "2025-11-22T23:02:54.121026",
+            "summary": "플레이어가 대각선으로 움직일 때 갑자기 느려지는 문제를 수정해주세요.\n마우스로 시점을 좌우 회전할 때 플레이어 오브젝트도 따라서 회전하도록 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v14-1",
+            "parent": "v13-1",
+            "timestamp": "2025-11-22T23:04:53.777172",
+            "summary": "키 배열을 서로 바꿔주세요 w <->s. a<->d",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v15-1",
+            "parent": "v14-1",
+            "timestamp": "2025-11-22T23:06:32.971636",
+            "summary": "키 배열을 서로 바꿔주세요 a<->d",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v15-2",
+            "parent": "v14-1",
+            "timestamp": "2025-11-22T23:07:06.051311",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v16-1",
+            "parent": "v15-2",
+            "timestamp": "2025-11-22T23:07:47.591774",
+            "summary": "좌우 키 컨트롤을 서로 바꿔주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v17-1",
+            "parent": "v16-1",
+            "timestamp": "2025-11-22T23:08:13.641081",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v18-1",
+            "parent": "v17-1",
+            "timestamp": "2025-11-22T23:09:39.645751",
+            "summary": "이동시 카메라가 플레이어보다 조금 늦게 따라갑니다. 플레이어 이동속도와 카메라 속도를 동일하게 맞춰주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v19-1",
+            "parent": "v18-1",
+            "timestamp": "2025-11-22T23:11:20.753072",
+            "summary": "게임에서 '땅끝'이라는 특정 경계를 넘어서는 이동을 불가능하게 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v20-1",
+            "parent": "v19-1",
+            "timestamp": "2025-11-22T23:14:06.256257",
+            "summary": "게임의 기본 화면 비율을 6:4로 설정하고 고정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v21-1",
+            "parent": "v20-1",
+            "timestamp": "2025-11-22T23:15:06.751005",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v22-1",
+            "parent": "v21-1",
+            "timestamp": "2025-11-22T23:16:30.943949",
+            "summary": "스페이스바를 누르면 점프를 하게 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v23-1",
+            "parent": "v22-1",
+            "timestamp": "2025-11-22T23:16:57.648203",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v24-1",
+            "parent": "v23-1",
+            "timestamp": "2025-11-22T23:17:11.064598",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v25-1",
+            "parent": "v24-1",
+            "timestamp": "2025-11-22T23:18:03.404140",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v26-1",
+            "parent": "v25-1",
+            "timestamp": "2025-11-22T23:18:21.190099",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v27-1",
+            "parent": "v26-1",
+            "timestamp": "2025-11-22T23:20:23.101252",
+            "summary": "주변에 사물을 배치해 주세요.\n플레이어는 사물을 뚫고 지나갈 수 없도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v28-1",
+            "parent": "v27-1",
+            "timestamp": "2025-11-22T23:24:38.556444",
+            "summary": "점프했을 때 평소보다 갑자기 이동속도가 빨라지는 문제를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v28-2",
+            "parent": "v27-1",
+            "timestamp": "2025-11-22T23:27:02.830149",
+            "summary": "점프했을 때 지면에서 이동할 때보다 갑자기 이동 속도가 빨라지는 문제를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v28-3",
+            "parent": "v27-1",
+            "timestamp": "2025-11-22T23:29:17.589652",
+            "summary": "ground.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v29-1",
+            "parent": "v28-3",
+            "timestamp": "2025-11-22T23:29:32.531879",
+            "summary": "player.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v30-1",
+            "parent": "v29-1",
+            "timestamp": "2025-11-22T23:32:57.335543",
+            "summary": "플레이어 오브젝트를 구체로 바꿔주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v30-2",
+            "parent": "v29-1",
+            "timestamp": "2025-11-22T23:36:05.914669",
+            "summary": "플레이어가 지면에서 이동할때와 점프해서 공중에서 이동할 때의 속도가 동일하게 설정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v30-3",
+            "parent": "v29-1",
+            "timestamp": "2025-11-22T23:38:52.457036",
+            "summary": "플레이어가 지면에서 이동할 때와 점프해서 공중에서 이동할 때의 속도가 동일하게 적용되도록 수정해 주세요. 현재 공중에서 이동할 때 속도가 갑자기 빨라지는 현상이 있습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v31-1",
+            "parent": "v30-3",
+            "timestamp": "2025-11-22T23:42:33.920226",
+            "summary": "공중에서 플레이어 속도를 지면에서의 이동속도와 같도록 더 줄여주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v32-1",
+            "parent": "v31-1",
+            "timestamp": "2025-11-22T23:45:17.204365",
+            "summary": "지면과의 마찰력을 사용자가 조정할 수 있게 해주세요.\n공중에서의 이동 감속율을 사용자가 조정할 수 있게 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v33-1",
+            "parent": "v32-1",
+            "timestamp": "2025-11-22T23:46:20.824322",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v34-1",
+            "parent": "v33-1",
+            "timestamp": "2025-11-22T23:47:06.140379",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v35-1",
+            "parent": "v34-1",
+            "timestamp": "2025-11-22T23:47:44.068798",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v30-4",
+            "parent": "v29-1",
+            "timestamp": "2025-11-22T23:51:00.769349",
+            "summary": "플레이어에게 마찰력을 없애주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v36-1",
+            "parent": "v35-1",
+            "timestamp": "2025-11-22T23:52:07.302472",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v37-1",
+            "parent": "v36-1",
+            "timestamp": "2025-11-22T23:52:53.943046",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v38-1",
+            "parent": "v37-1",
+            "timestamp": "2025-11-22T23:55:39.806119",
+            "summary": "사물들과의 마찰력이 지면과의 마찰력과 동일하게 설정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v39-1",
+            "parent": "v38-1",
+            "timestamp": "2025-11-22T23:56:58.109387",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v39-2",
+            "parent": "v38-1",
+            "timestamp": "2025-11-22T23:57:27.791056",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v40-1",
+            "parent": "v39-2",
+            "timestamp": "2025-11-22T23:59:35.850592",
+            "summary": "플레이어가 사물 위에 올라가 있을 때의 이동 방식이 지면에서 이동할 때와 동일하게 해주세요.\n플레이어가 사물 위에서도 지면에서와 동일한 이동 속도를 가지도록 해주세요.\n플레이어가 사물 위에서 점프할 수 있도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v41-1",
+            "parent": "v40-1",
+            "timestamp": "2025-11-23T00:03:30.198567",
+            "summary": "적들이 나타나서 총싸움을 했으면 좋겠어.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v42-1",
+            "parent": "v41-1",
+            "timestamp": "2025-11-23T00:06:15.840165",
+            "summary": "총알을 하나 발사하면 게임이 멈춰버리는 문제를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v41-2",
+            "parent": "v40-1",
+            "timestamp": "2025-11-23T00:12:00.071265",
+            "summary": "플레이어가 마우스 클릭으로 총알을 발사할 수 있도록 해주세요.\n총알은 일직선으로 나가야 합니다.\n총알은 맵을 벗어나거나 사물에 맞으면 사라져야 합니다.\n총알은 공중으로 발사되었을 때 특정 범위를 벗어나면 사라져야 합니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v42-2",
+            "parent": "v41-2",
+            "timestamp": "2025-11-23T00:16:20.727739",
+            "summary": "게임에서 'Uncaught TypeError: Cannot read properties of undefined (reading 'wakeUpAfterNarrowphase')' 런타임 에러가 발생하고 있습니다. 이 오류는 'cannon-es' 라이브러리의 물리 시뮬레이션 과정에서 발생한 것으로 보입니다. 이 문제를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v43-1",
+            "parent": "v42-2",
+            "timestamp": "2025-11-23T00:20:01.588113",
+            "summary": "움직이는 적을 생성해주세요.\n적이 총알에 맞으면 점수가 증가하도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v44-1",
+            "parent": "v43-1",
+            "timestamp": "2025-11-23T00:23:14.774284",
+            "summary": "화면을 클릭해서 게임을 시작하면 게임 화면이 아주 약간 우측으로 밀리는 문제를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v44-2",
+            "parent": "v43-1",
+            "timestamp": "2025-11-23T00:24:43.113921",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v45-1",
+            "parent": "v44-2",
+            "timestamp": "2025-11-23T02:38:45.340336",
+            "summary": "총알이 어디로 발사되는지 알 수 있도록 과녁을 그려주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v46-1",
+            "parent": "v45-1",
+            "timestamp": "2025-11-23T02:46:09.916239",
+            "summary": "현재 게임 화면 바깥쪽에 좌측에 약간의 여백이 보이니, 좌우 여백이 같거나 없도록 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v46-2",
+            "parent": "v45-1",
+            "timestamp": "2025-11-23T02:52:08.210919",
+            "summary": "적이 플레이어와 접촉한 상태에서 총알로 죽일 때 런타임 에러가 발생하지 않도록 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v47-1",
+            "parent": "v46-2",
+            "timestamp": "2025-11-23T03:01:01.193763",
+            "summary": "게임 실행 중 'Uncaught TypeError: Cannot read properties of undefined (reading 'mass')' 오류가 발생하고 있습니다. 이 오류를 해결하여 게임이 정상적으로 동작하도록 수정해주세요. (관련 버전: 1.0.1, 오류 발생 위치: http://localhost:8080/sy_3d_dddd4/game.js:195:23)",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v47-2",
+            "parent": "v46-2",
+            "timestamp": "2025-11-23T11:08:32.707811",
+            "summary": "게임에서 'Cannot read properties of undefined (reading 'mass')' 오류가 발생하고 있습니다. 다음은 전체 오류 로그입니다: [2025-11-23T02:05:07.414Z] 💥 CLIENT ERROR (raf-error) Version: 1.0.1 Message: Cannot read properties of undefined (reading 'mass') Stack Trace: TypeError: Cannot read properties of undefined (reading 'mass') at World.<anonymous> (http://localhost:8080/sy_3d_dddd4/game.js:195:23) at World.dispatchEvent (https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js:1454:26) at World.emitContactEvents (https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js:12897:14) at World.internalStep (https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js:12771:10) ... (Full stack trace truncated)",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v48-1",
+            "parent": "v47-2",
+            "timestamp": "2025-11-24T15:09:46.852934",
+            "summary": "enemy.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v47-3",
+            "parent": "v46-2",
+            "timestamp": "2025-11-25T14:22:56.607323",
+            "summary": "런타임 오류 'Uncaught TypeError: Cannot read properties of undefined (reading 'mass')'를 수정해주세요. 이 오류는 'http://localhost:8080/sy_3d_dddd4/game.js' 파일의 207번째 줄에서 발생했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v48-2",
+            "parent": "v47-3",
+            "timestamp": "2025-11-26T16:50:01.334764",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v49-1",
+            "parent": "v48-2",
+            "timestamp": "2025-11-26T16:52:08.603782",
+            "summary": "게임 화면이 현재 우측 하단으로 밀려있으니, 화면 중앙에 위치하도록 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v50-1",
+            "parent": "v49-1",
+            "timestamp": "2025-11-26T16:56:25.879975",
+            "summary": "처음 나오는 타이틀 화면(wasd+mouse look 3d game 메시지가 써있는)은 화면 중앙에 위치해 있는데, 게임 화면은 거기에서 살짝 벗어나서 우측 하단으로 살짝 밀려있습니다. 게임 화면의 배치를 수정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v48-3",
+            "parent": "v47-3",
+            "timestamp": "2025-11-26T17:02:18.337857",
+            "summary": "enemy.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v49-2",
+            "parent": "v48-3",
+            "timestamp": "2025-11-26T19:00:30.666888",
+            "summary": "box.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v50-2",
+            "parent": "v49-2",
+            "timestamp": "2025-11-26T14:56:55.867169",
+            "summary": "bullet.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

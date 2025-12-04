@@ -1,0 +1,20 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-19T19:43:00.131960",
+            "summary": "game.js 생성",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-19T19:50:26.655308",
+            "summary": "game.js 생성",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

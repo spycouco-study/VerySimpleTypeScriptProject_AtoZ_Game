@@ -1,0 +1,68 @@
+{
+  "title": "Mini 3D Kart",
+  "track": {
+    "radius": 20,
+    "length": 1,
+    "lanes": 2
+  },
+  "kart": {
+    "mass": 8,
+    "maxSpeed": 12,
+    "accel": 50,
+    "turnSpeed": 0.2,
+    "width": 1.2,
+    "length": 2.2
+  },
+  "ui": {
+    "titleText": "Fly Me To LUCY - Mini Kart",
+    "startHint": "Click or press Enter to Start"
+  },
+  "assets": {
+    "images": [
+      {
+        "name": "player",
+        "path": "assets/player_kart.png",
+        "width": 128,
+        "height": 64
+      },
+      {
+        "name": "track",
+        "path": "assets/track_tile.png",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "grass",
+        "path": "assets/grass_tile.png",
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "ui_button",
+        "path": "assets/ui_button.png",
+        "width": 200,
+        "height": 60
+      }
+    ],
+    "sounds": [
+      {
+        "name": "engine",
+        "path": "assets/engine_loop.mp3",
+        "duration_seconds": 10.0,
+        "volume": 0.8
+      },
+      {
+        "name": "crash",
+        "path": "assets/crash.mp3",
+        "duration_seconds": 1.2,
+        "volume": 1.0
+      },
+      {
+        "name": "bgm",
+        "path": "assets/bgm_loop.mp3",
+        "duration_seconds": 120.0,
+        "volume": 0.5
+      }
+    ]
+  }
+}

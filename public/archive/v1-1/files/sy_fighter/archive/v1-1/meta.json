@@ -1,0 +1,112 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-16T00:38:17.978473",
+    "summary": "킹오파(The King of Fighters)와 같은 스타일의 격투 게임을 만들어주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "bgm_game.mp3",
+            "path": "assets/bgm_game.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "bgm_title.mp3",
+            "path": "assets/bgm_title.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_game_over.mp3",
+            "path": "assets/sfx_game_over.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_hit.mp3",
+            "path": "assets/sfx_hit.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_jump.mp3",
+            "path": "assets/sfx_jump.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_kick.mp3",
+            "path": "assets/sfx_kick.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_punch.mp3",
+            "path": "assets/sfx_punch.mp3",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "ed85bddccd69b8a0e3e453f179e6a86527b906f88e1967d32919c56890f46666",
+            "size": 4560,
+            "mtime": 1763221093.2423306
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1761399375.5725453
+        },
+        "game.ts": {
+            "hash": "ce6630d5cec269479a8fcc3db08cc62aecf46349b85164bf0358a9d9c54b1e39",
+            "size": 32538,
+            "mtime": 1763221093.2222836
+        },
+        "assets/bgm_game.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1761211729.270481
+        },
+        "assets/bgm_title.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1761211729.270481
+        },
+        "assets/sfx_game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/sfx_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/sfx_jump.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/sfx_kick.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/sfx_punch.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        }
+    }
+}

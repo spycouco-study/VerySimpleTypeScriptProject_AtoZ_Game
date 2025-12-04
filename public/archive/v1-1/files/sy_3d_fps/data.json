@@ -1,0 +1,51 @@
+{
+  "gameSettings": {
+    "title": "Simple FPS Game",
+    "playerSpeed": 5,
+    "playerJumpForce": 20,
+    "playerHealth": 100,
+    "bulletSpeed": 50,
+    "bulletDamage": 25,
+    "bulletLifetime": 2,
+    "enemyCount": 5,
+    "enemySpeed": 3,
+    "enemyHealth": 50,
+    "enemyDamage": 10,
+    "enemyAttackCooldown": 1.5,
+    "gravity": -9.82,
+    "floorSize": 50,
+    "wallHeight": 10,
+    "initialSpawnArea": 10,
+    "musicVolume": 0.3,
+    "effectVolume": 0.5
+  },
+  "colors": {
+    "skyColor": "#87CEEB",
+    "floorColor": "#7CFC00",
+    "wallColor": "#A9A9A9",
+    "playerColor": "#0000FF",
+    "enemyColor": "#FF0000",
+    "bulletColor": "#FFFF00"
+  },
+  "assets": {
+    "images": [
+      { "name": "floorTexture", "path": "assets/floor.png", "width": 512, "height": 512 },
+      { "name": "wallTexture", "path": "assets/wall.png", "width": 256, "height": 256 },
+      { "name": "enemyTexture", "path": "assets/enemy.png", "width": 64, "height": 64 },
+      { "name": "bulletTexture", "path": "assets/bullet.png", "width": 16, "height": 16 },
+      { "name": "skybox_px", "path": "assets/skybox_px.png", "width": 1024, "height": 1024 },
+      { "name": "skybox_nx", "path": "assets/skybox_nx.png", "width": 1024, "height": 1024 },
+      { "name": "skybox_py", "path": "assets/skybox_py.png", "width": 1024, "height": 1024 },
+      { "name": "skybox_ny", "path": "assets/skybox_ny.png", "width": 1024, "height": 1024 },
+      { "name": "skybox_pz", "path": "assets/skybox_pz.png", "width": 1024, "height": 1024 },
+      { "name": "skybox_nz", "path": "assets/skybox_nz.png", "width": 1024, "height": 1024 }
+    ],
+    "sounds": [
+      { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 120.0, "volume": 0.3 },
+      { "name": "shoot", "path": "assets/shoot.mp3", "duration_seconds": 0.5, "volume": 0.6 },
+      { "name": "hit", "path": "assets/hit.mp3", "duration_seconds": 0.3, "volume": 0.7 },
+      { "name": "enemyDie", "path": "assets/enemy_die.mp3", "duration_seconds": 0.8, "volume": 0.8 },
+      { "name": "playerHurt", "path": "assets/player_hurt.mp3", "duration_seconds": 0.6, "volume": 0.7 }
+    ]
+  }
+}

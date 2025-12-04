@@ -1,0 +1,103 @@
+{
+    "version": "v18-1",
+    "parent": "v17-1",
+    "timestamp": "2025-11-22T23:09:39.637631",
+    "summary": "이동시 카메라가 플레이어보다 조금 늦게 따라갑니다. 플레이어 이동속도와 카메라 속도를 동일하게 맞춰주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v17-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "ground.png",
+            "path": "assets/ground.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "step.mp3",
+            "path": "assets/step.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "8323847595b0e5d8276479cdf9430f01140b51fbb5e48c4f575dc7a2282ef36f",
+            "size": 1252,
+            "mtime": 1763820570.444577
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763820414.1033485
+        },
+        "game.js": {
+            "hash": "5c0301f959a6f6aa52713ca59fb7a38365065a837144bd2bce12813ba4c436fc",
+            "size": 61190,
+            "mtime": 1763820579.1006715
+        },
+        "game.ts": {
+            "hash": "784bfb048349fc113485e65a2a4ac4f19481ad3c01476196a6d02863cd50c8fc",
+            "size": 25490,
+            "mtime": 1763820570.4295418
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763820414.1737678
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763820414.197411
+        },
+        "assets/ground.png": {
+            "hash": "2e10b226de2b517e9472846a97cd3f17ddf83e6363692ba596216b6746cd5299",
+            "size": 1490,
+            "mtime": 1763820414.202939
+        },
+        "assets/player.png": {
+            "hash": "ffcd252a24829dcf49f1ed8c046f0e241e605817e4a9d335e0f955249f120fc1",
+            "size": 788,
+            "mtime": 1763820414.207939
+        },
+        "assets/step.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763820414.2226062
+        }
+    }
+}

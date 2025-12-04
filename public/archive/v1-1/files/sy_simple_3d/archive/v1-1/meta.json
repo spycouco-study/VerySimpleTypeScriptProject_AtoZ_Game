@@ -1,0 +1,122 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-22T19:30:02.955365",
+    "summary": "간단한 3D 게임을 만들어주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "collectible_texture.png",
+            "path": "assets/collectible_texture.png",
+            "type": "Add"
+        },
+        {
+            "name": "collect_sfx.mp3",
+            "path": "assets/collect_sfx.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "ground_texture.png",
+            "path": "assets/ground_texture.png",
+            "type": "Add"
+        },
+        {
+            "name": "obstacle_texture.png",
+            "path": "assets/obstacle_texture.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_texture.png",
+            "path": "assets/player_texture.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "3cee4ea8ec33a6e9481a6cdc5fc69dc0a2c3120f0f7c0836792675584544fc27",
+            "size": 1361,
+            "mtime": 1763807395.321085
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "b7f157808ee5136bf65d555fb7587f1b65c7f30535474247227e8a5977e26eeb",
+            "size": 71655,
+            "mtime": 1763807402.5822444
+        },
+        "game.ts": {
+            "hash": "9aa1534109f7b466f62cc3473870ab5a16b125dd778bebda886cd8c4e14133a7",
+            "size": 25367,
+            "mtime": 1763807395.301083
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763796545.4310448
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347007.4590375
+        },
+        "assets/collectible_texture.png": {
+            "hash": "8311b501bff1d6c9135872949133f472d4ce0a59a28572e17f5df44290062b1f",
+            "size": 411,
+            "mtime": 1763807314.5254438
+        },
+        "assets/collect_sfx.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/ground_texture.png": {
+            "hash": "d534e241bae9bd6c419c5928fc2d2fb7bce99991e68e1cb12f59cccee8e3a6b5",
+            "size": 1025,
+            "mtime": 1763807314.5308402
+        },
+        "assets/obstacle_texture.png": {
+            "hash": "af839c73d9556850e36f7dc27b6f9ea3bf6dbefd5400de2ae5e50b47197ed8e8",
+            "size": 881,
+            "mtime": 1763807314.535807
+        },
+        "assets/player_texture.png": {
+            "hash": "ffcd252a24829dcf49f1ed8c046f0e241e605817e4a9d335e0f955249f120fc1",
+            "size": 788,
+            "mtime": 1763807314.52149
+        }
+    }
+}

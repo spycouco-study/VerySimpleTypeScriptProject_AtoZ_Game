@@ -1,0 +1,62 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-22T21:30:49.359564",
+    "summary": "간단한 3d fps 게임을 만들어주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "8ffa3ff764bea05a2c2c5e4468fa59d782822ef0cbc69cae004effb401a2b8cc",
+            "size": 1357,
+            "mtime": 1763814580.0718935
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "d9c5848213b4de0765e2225f0ac1feee9191b53250ec7cdb88c899ef8e101661",
+            "size": 99784,
+            "mtime": 1763814649.178311
+        },
+        "game.ts": {
+            "hash": "e14975d945eb5d9d981339c854746f26af1998ef3bd50f54ac06558a9737cc6c",
+            "size": 37454,
+            "mtime": 1763814642.0980835
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763796545.4310448
+        }
+    }
+}

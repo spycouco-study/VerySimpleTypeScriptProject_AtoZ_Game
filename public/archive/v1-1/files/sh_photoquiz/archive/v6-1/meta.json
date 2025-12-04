@@ -1,0 +1,173 @@
+{
+    "version": "v6-1",
+    "parent": "v5-1",
+    "timestamp": "2025-11-14T17:44:10.580098",
+    "summary": "",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        },
+        {
+            "name": "song_hye_kyo.png",
+            "path": "assets/song_hye_kyo.png",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "blackpink_jennie.png",
+            "path": "assets/blackpink_jennie.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bong_joon_ho.png",
+            "path": "assets/bong_joon_ho.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bts_jungkook.png",
+            "path": "assets/bts_jungkook.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "correct.mp3",
+            "path": "assets/correct.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "iu.png",
+            "path": "assets/iu.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "kim_yuna.png",
+            "path": "assets/kim_yuna.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "lee_jung_jae.png",
+            "path": "assets/lee_jung_jae.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "park_seo_joon.png",
+            "path": "assets/park_seo_joon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "son_heung_min.png",
+            "path": "assets/son_heung_min.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "timeout.mp3",
+            "path": "assets/timeout.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "wrong.mp3",
+            "path": "assets/wrong.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "youn_yuh_jung.png",
+            "path": "assets/youn_yuh_jung.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "766c1436cb6990c77d6902599d5585118a77ae5cf0d10dc4c61377d45cd5f8a3",
+            "size": 4389,
+            "mtime": 1763109848.3921583
+        },
+        "game.ts": {
+            "hash": "4d9ccc1e21abcae0f5e5b8aa88f3bfe37c6a5423f72f3b41a137e50e9fd03cc0",
+            "size": 15979,
+            "mtime": 1763109848.3630245
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763108235.1554654
+        },
+        "assets/blackpink_jennie.png": {
+            "hash": "d00e0de6e528b661e8fee27e0fefe1df8e35ae655c349047449a48501399746f",
+            "size": 2623,
+            "mtime": 1763108235.2273612
+        },
+        "assets/bong_joon_ho.png": {
+            "hash": "df12809b157c8c9701e352e28c5d41aecd517cab0b3ffa1d6287100042723620",
+            "size": 2455,
+            "mtime": 1763108235.229383
+        },
+        "assets/bts_jungkook.png": {
+            "hash": "2f9b00a512ee426d0b24665b525027475d39f602772234ca0e0d76922e232927",
+            "size": 2623,
+            "mtime": 1763108235.231388
+        },
+        "assets/correct.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763108235.233135
+        },
+        "assets/iu.png": {
+            "hash": "2617df123347e4c0f77b5baf01de9cf9c561a3d28bb67ce2da3a9f387c6c8460",
+            "size": 1936,
+            "mtime": 1763108235.2341402
+        },
+        "assets/kim_yuna.png": {
+            "hash": "ccda95bf7e3b3e27bf07946acccf1f7cd77f8ae6e217c3f1e4f1b6cdcd46bcbc",
+            "size": 2410,
+            "mtime": 1763108235.239697
+        },
+        "assets/lee_jung_jae.png": {
+            "hash": "8bdfedf98d6c179f34cdcfc6b73a5c96772e8850c7381db60fbbe925667cf5c5",
+            "size": 2458,
+            "mtime": 1763108235.2417033
+        },
+        "assets/park_seo_joon.png": {
+            "hash": "b19b0ea668e0cc33fbafddc9d3260803d4cc27249e25e6db118ffccc161cc861",
+            "size": 2686,
+            "mtime": 1763108235.243709
+        },
+        "assets/song_hye_kyo.png": {
+            "hash": "cfad39b4f62911b2b7fadae989c237227cf7e5db9f01815d18c66c84cfbee9b4",
+            "size": 1225585,
+            "mtime": 1763107821.8417652
+        },
+        "assets/son_heung_min.png": {
+            "hash": "36996bc6d224273ec9a2b1b8caea141baf1054346c83826369185aad0128b793",
+            "size": 2576,
+            "mtime": 1763108235.2457147
+        },
+        "assets/timeout.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763108235.2492497
+        },
+        "assets/wrong.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763108235.251259
+        },
+        "assets/youn_yuh_jung.png": {
+            "hash": "f0f82dbd942adc046be4dec3069e54500a66bab90483faccdbde00c3c681955d",
+            "size": 2466,
+            "mtime": 1763108235.2532651
+        }
+    }
+}

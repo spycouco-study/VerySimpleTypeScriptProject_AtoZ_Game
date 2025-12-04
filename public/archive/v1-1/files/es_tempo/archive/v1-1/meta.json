@@ -1,0 +1,112 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-27T14:36:08.822254",
+    "summary": "탭소닉과 유사한 스타일의 게임을 만들어 주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "type": "Add"
+        },
+        {
+            "name": "bgm_song1.mp3",
+            "path": "assets/bgm_song1.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "hit_effect.mp3",
+            "path": "assets/hit_effect.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "hit_effect.png",
+            "path": "assets/hit_effect.png",
+            "type": "Add"
+        },
+        {
+            "name": "miss_effect.mp3",
+            "path": "assets/miss_effect.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "note_blue.png",
+            "path": "assets/note_blue.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "460833cec85252d16905d34e487f85068f5cba29a6aa279776ace8160d8a9bde",
+            "size": 5213,
+            "mtime": 1764221764.6323524
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "6dc4c534fe73135c3fef9f5c6c4f42ca9b1d775568ce012c617b909d2f371d09",
+            "size": 74698,
+            "mtime": 1764221768.5608997
+        },
+        "game.ts": {
+            "hash": "392d7f004782d2d7e9ea5f341220e2ded720479fa17901d7b11cd6905a9679ae",
+            "size": 27474,
+            "mtime": 1764221764.4152882
+        },
+        "assets/background.png": {
+            "hash": "68d2f59728c4d5793688b318188db2178052c8a28ed534c47b62c84401542e2a",
+            "size": 9694,
+            "mtime": 1764221764.5949538
+        },
+        "assets/bgm_song1.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/hit_effect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/hit_effect.png": {
+            "hash": "d98b78e3eeaab8c99c8faa9bc96750e4243ab1468a1fea4bcffdd9910a8e9e71",
+            "size": 646,
+            "mtime": 1764221764.6036966
+        },
+        "assets/miss_effect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/note_blue.png": {
+            "hash": "c63b54f567b2cc14ccc52cc4577f65b4ad86d2d0102ad05b39369d288c087dad",
+            "size": 511,
+            "mtime": 1764221764.5997279
+        }
+    }
+}

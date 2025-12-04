@@ -1,0 +1,93 @@
+{
+    "version": "v5-1",
+    "parent": "v4-1",
+    "timestamp": "2025-11-27T14:26:55.650137",
+    "summary": "알맞은 단어를 입력해도 게임오버가 되지 않도록 게임의 로직을 수정해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "correct.mp3",
+            "path": "assets/correct.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "incorrect.mp3",
+            "path": "assets/incorrect.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "53ffeab9b8ad5c29acc8a2fcf26138df5f9ac151794947714cac73e3dfc96569",
+            "size": 1712,
+            "mtime": 1764221211.798659
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "51b0dc7ff27d3e7a1b16a0af216c40e3865048774a2c9375b23ddbac03abf5af",
+            "size": 49727,
+            "mtime": 1764221215.5301254
+        },
+        "game.ts": {
+            "hash": "d57b4c05258e2e66e098e4f47d2d5444bae9cda21b9682ef5d20e6696fe5a16b",
+            "size": 17231,
+            "mtime": 1764221211.7890835
+        },
+        "assets/background.png": {
+            "hash": "c92f9192cc136ed856cb232b2195625b98c31c2b64af59fbfcaf25e2f95dce90",
+            "size": 3590,
+            "mtime": 1764210183.61508
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/correct.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/incorrect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        }
+    }
+}

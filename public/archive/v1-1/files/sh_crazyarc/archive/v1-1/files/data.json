@@ -1,0 +1,48 @@
+{
+    "gameSettings": {
+        "tileSize": 50,
+        "playerSpeed": 150,
+        "bombTimer": 3000,
+        "initialBombRange": 1,
+        "initialMaxBombs": 1,
+        "enemyCount": 3,
+        "aiSpeedMultiplier": 0.8,
+        "aiBombDropChance": 0.005,
+        "maxMapWidthTiles": 15,
+        "maxMapHeightTiles": 11,
+        "titleScreenText": "BOMBERMAN JS",
+        "pressKeyToStartText": "Press SPACE to Start",
+        "explosionDuration": 500,
+        "itemLifespan": 8000,
+        "blockDropRate": 0.5
+    },
+    "assets": {
+        "images": [
+            { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+            { "name": "enemy", "path": "assets/enemy.png", "width": 64, "height": 64 },
+            { "name": "wall", "path": "assets/wall.png", "width": 64, "height": 64 },
+            { "name": "block", "path": "assets/block.png", "width": 64, "height": 64 },
+            { "name": "bomb", "path": "assets/bomb.png", "width": 64, "height": 64 },
+            { "name": "explosion", "path": "assets/explosion.png", "width": 64, "height": 64 },
+            { "name": "empty_tile", "path": "assets/empty_tile.png", "width": 64, "height": 64 },
+            { "name": "item_bomb_up", "path": "assets/item_bomb_up.png", "width": 64, "height": 64 },
+            { "name": "item_range_up", "path": "assets/item_range_up.png", "width": 64, "height": 64 },
+            { "name": "item_speed_up", "path": "assets/item_speed_up.png", "width": 64, "height": 64 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 180.0, "volume": 0.2 },
+            { "name": "bomb_drop", "path": "assets/bomb_drop.mp3", "duration_seconds": 0.5, "volume": 0.5 },
+            { "name": "explosion", "path": "assets/explosion.mp3", "duration_seconds": 1.0, "volume": 0.7 },
+            { "name": "item_collect", "path": "assets/item_collect.mp3", "duration_seconds": 0.5, "volume": 0.6 },
+            { "name": "player_die", "path": "assets/player_die.mp3", "duration_seconds": 1.0, "volume": 0.8 },
+            { "name": "win", "path": "assets/win.mp3", "duration_seconds": 2.0, "volume": 0.8 },
+            { "name": "lose", "path": "assets/lose.mp3", "duration_seconds": 2.0, "volume": 0.8 }
+        ]
+    },
+    "itemDropRates": {
+        "item_bomb_up": 0.3,
+        "item_range_up": 0.3,
+        "item_speed_up": 0.3,
+        "no_item": 0.1
+    }
+}
