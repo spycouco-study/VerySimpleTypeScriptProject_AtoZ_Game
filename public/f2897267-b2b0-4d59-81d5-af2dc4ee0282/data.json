@@ -1,0 +1,54 @@
+{
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "playerSpeed": 250,
+    "playerShootInterval": 300,
+    "projectileSpeed": 400,
+    "enemySpeed": 80,
+    "enemySpawnInterval": 2000,
+    "enemyHealth": 1,
+    "scorePerEnemy": 100,
+    "player": {
+        "width": 64,
+        "height": 64
+    },
+    "projectile": {
+        "width": 16,
+        "height": 32
+    },
+    "enemy": {
+        "width": 64,
+        "height": 64
+    },
+    "assets": {
+        "images": [
+            { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+            { "name": "enemy", "path": "assets/enemy.png", "width": 64, "height": 64 },
+            { "name": "projectile", "path": "assets/projectile.png", "width": 16, "height": 32 },
+            { "name": "background", "path": "assets/background.png", "width": 800, "height": 600 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm_8bit_fantasy.mp3", "duration_seconds": 60.0, "volume": 0.5 },
+            { "name": "shoot_effect", "path": "assets/shoot_effect.mp3", "duration_seconds": 0.3, "volume": 0.7 },
+            { "name": "hit_effect", "path": "assets/hit_effect.mp3", "duration_seconds": 0.2, "volume": 0.8 }
+        ]
+    },
+    "colors": {
+        "background": "#222222",
+        "text": "#EEEEEE"
+    },
+    "text": {
+        "title": "환상의 8비트 모험",
+        "startPrompt": "시작하려면 스페이스바를 누르세요",
+        "instructions": [
+            "A / 왼쪽 화살표: 왼쪽으로 이동",
+            "D / 오른쪽 화살표: 오른쪽으로 이동",
+            "스페이스바: 발사",
+            "적들을 물리치고 최고 점수를 기록하세요!",
+            "적이 화면 아래로 내려오면 게임 오버!"
+        ],
+        "gameOver": "게임 오버!",
+        "restartPrompt": "다시 시작하려면 R키를 누르세요",
+        "scoreLabel": "점수"
+    }
+}

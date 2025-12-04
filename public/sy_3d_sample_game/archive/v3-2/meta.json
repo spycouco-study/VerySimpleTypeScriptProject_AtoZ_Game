@@ -1,0 +1,73 @@
+{
+    "version": "v3-2",
+    "parent": "v2-3",
+    "timestamp": "2025-12-04T22:59:53.278057",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Delete"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "type": "Delete"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v2-3"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "83cc9e80e86acbe4e999862d4dc2458fec19ec8dc5a28e59c80fe2e9cc0ec75c",
+            "size": 235,
+            "mtime": 1763978777.8534453
+        },
+        "game.js": {
+            "hash": "055e13e7184acc1b3cf5dcea112f5e3aace204a94e2ecf672b99c1ce88efe2d9",
+            "size": 28441,
+            "mtime": 1763978777.856533
+        },
+        "game.ts": {
+            "hash": "cca27389abbc860063d67edc8537ec366647df0e23144ce5a957d55bc0796edc",
+            "size": 9335,
+            "mtime": 1763978777.8572495
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826741.865764
+        },
+        "assets/thumbnail.png": {
+            "hash": "5d89da61b70f32fa006b5d502828fdf1010de54b91ca64c1486d34497386c723",
+            "size": 22016,
+            "mtime": 1764856793.2443988
+        }
+    }
+}

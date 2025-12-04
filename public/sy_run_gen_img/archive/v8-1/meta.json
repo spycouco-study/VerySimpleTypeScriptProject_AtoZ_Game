@@ -1,0 +1,738 @@
+{
+    "version": "v8-1",
+    "parent": "v7-1",
+    "timestamp": "2025-12-04T23:11:26.767371",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        },
+        {
+            "name": "background_far.png",
+            "path": "assets5/background_far.png",
+            "type": "Add"
+        },
+        {
+            "name": "background_mid.png",
+            "path": "assets5/background_mid.png",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets5/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "collectible_jelly.png",
+            "path": "assets5/collectible_jelly.png",
+            "type": "Add"
+        },
+        {
+            "name": "ground.png",
+            "path": "assets5/ground.png",
+            "type": "Add"
+        },
+        {
+            "name": "obstacle_floating.png",
+            "path": "assets5/obstacle_floating.png",
+            "type": "Add"
+        },
+        {
+            "name": "obstacle_high copy.png",
+            "path": "assets5/obstacle_high copy.png",
+            "type": "Add"
+        },
+        {
+            "name": "obstacle_high.png",
+            "path": "assets5/obstacle_high.png",
+            "type": "Add"
+        },
+        {
+            "name": "obstacle_low.png",
+            "path": "assets5/obstacle_low.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_jump.png",
+            "path": "assets5/player_jump.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_run_1.png",
+            "path": "assets5/player_run_1.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_run_2.png",
+            "path": "assets5/player_run_2.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_run_3.png",
+            "path": "assets5/player_run_3.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_run_4.png",
+            "path": "assets5/player_run_4.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_slide.png",
+            "path": "assets5/player_slide.png",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_collect.mp3",
+            "path": "assets5/sfx_collect.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_game_over.mp3",
+            "path": "assets5/sfx_game_over.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_hit.mp3",
+            "path": "assets5/sfx_hit.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_jump.mp3",
+            "path": "assets5/sfx_jump.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "sfx_slide.mp3",
+            "path": "assets5/sfx_slide.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Delete"
+        },
+        {
+            "name": "background_far.png",
+            "path": "assets3/background_far.png",
+            "type": "Delete"
+        },
+        {
+            "name": "background_mid.png",
+            "path": "assets3/background_mid.png",
+            "type": "Delete"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets3/bgm.mp3",
+            "type": "Delete"
+        },
+        {
+            "name": "collectible_jelly.png",
+            "path": "assets3/collectible_jelly.png",
+            "type": "Delete"
+        },
+        {
+            "name": "ground.png",
+            "path": "assets3/ground.png",
+            "type": "Delete"
+        },
+        {
+            "name": "obstacle_high.png",
+            "path": "assets3/obstacle_high.png",
+            "type": "Delete"
+        },
+        {
+            "name": "obstacle_low.png",
+            "path": "assets3/obstacle_low.png",
+            "type": "Delete"
+        },
+        {
+            "name": "player_jump.png",
+            "path": "assets3/player_jump.png",
+            "type": "Delete"
+        },
+        {
+            "name": "player_run_1.png",
+            "path": "assets3/player_run_1.png",
+            "type": "Delete"
+        },
+        {
+            "name": "player_run_2.png",
+            "path": "assets3/player_run_2.png",
+            "type": "Delete"
+        },
+        {
+            "name": "player_run_3.png",
+            "path": "assets3/player_run_3.png",
+            "type": "Delete"
+        },
+        {
+            "name": "player_run_4.png",
+            "path": "assets3/player_run_4.png",
+            "type": "Delete"
+        },
+        {
+            "name": "player_slide.png",
+            "path": "assets3/player_slide.png",
+            "type": "Delete"
+        },
+        {
+            "name": "sfx_collect.mp3",
+            "path": "assets3/sfx_collect.mp3",
+            "type": "Delete"
+        },
+        {
+            "name": "sfx_game_over.mp3",
+            "path": "assets3/sfx_game_over.mp3",
+            "type": "Delete"
+        },
+        {
+            "name": "sfx_hit.mp3",
+            "path": "assets3/sfx_hit.mp3",
+            "type": "Delete"
+        },
+        {
+            "name": "sfx_jump.mp3",
+            "path": "assets3/sfx_jump.mp3",
+            "type": "Delete"
+        },
+        {
+            "name": "sfx_slide.mp3",
+            "path": "assets3/sfx_slide.mp3",
+            "type": "Delete"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v7-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v6-1"
+        },
+        {
+            "name": "background_far.png",
+            "path": "assets/background_far.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "background_mid.png",
+            "path": "assets/background_mid.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "collectible_jelly.png",
+            "path": "assets/collectible_jelly.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "ground.png",
+            "path": "assets/ground.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "obstacle_floating.png",
+            "path": "assets/obstacle_floating.png",
+            "last_version": "v7-1"
+        },
+        {
+            "name": "obstacle_high.png",
+            "path": "assets/obstacle_high.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "obstacle_low.png",
+            "path": "assets/obstacle_low.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "player_jump.png",
+            "path": "assets/player_jump.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "player_run_1.png",
+            "path": "assets/player_run_1.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "player_run_2.png",
+            "path": "assets/player_run_2.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "player_run_3.png",
+            "path": "assets/player_run_3.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "player_run_4.png",
+            "path": "assets/player_run_4.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "player_slide.png",
+            "path": "assets/player_slide.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "sfx_collect.mp3",
+            "path": "assets/sfx_collect.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_game_over.mp3",
+            "path": "assets/sfx_game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_hit.mp3",
+            "path": "assets/sfx_hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_jump.mp3",
+            "path": "assets/sfx_jump.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_slide.mp3",
+            "path": "assets/sfx_slide.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background_far.png",
+            "path": "assets2/background_far.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "background_mid.png",
+            "path": "assets2/background_mid.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets2/bgm.mp3",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "collectible_jelly.png",
+            "path": "assets2/collectible_jelly.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "ground.png",
+            "path": "assets2/ground.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "obstacle_high copy.png",
+            "path": "assets2/obstacle_high copy.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "obstacle_high.png",
+            "path": "assets2/obstacle_high.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "obstacle_low.png",
+            "path": "assets2/obstacle_low.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "player_jump.png",
+            "path": "assets2/player_jump.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "player_run_1.png",
+            "path": "assets2/player_run_1.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "player_run_2.png",
+            "path": "assets2/player_run_2.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "player_run_3.png",
+            "path": "assets2/player_run_3.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "player_run_4.png",
+            "path": "assets2/player_run_4.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "player_slide.png",
+            "path": "assets2/player_slide.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "sfx_collect.mp3",
+            "path": "assets2/sfx_collect.mp3",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "sfx_game_over.mp3",
+            "path": "assets2/sfx_game_over.mp3",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "sfx_hit.mp3",
+            "path": "assets2/sfx_hit.mp3",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "sfx_jump.mp3",
+            "path": "assets2/sfx_jump.mp3",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "sfx_slide.mp3",
+            "path": "assets2/sfx_slide.mp3",
+            "last_version": "v4-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "370e608408c62021f66910138354fe6a15d32c9e64d9ee03c86ec5da84a283ad",
+            "size": 6500,
+            "mtime": 1764826742.976103
+        },
+        "game.js": {
+            "hash": "883077d4bba910a728c9b9b6af0c37b088c8acc405cacd121fd7234943f440da",
+            "size": 125465,
+            "mtime": 1764826742.978645
+        },
+        "game.ts": {
+            "hash": "fc2f9594d3171f21d8daa84888a399c0a876ea166331c2dcb80751fb6bc55084",
+            "size": 46935,
+            "mtime": 1764826742.979758
+        },
+        "assets/background_far.png": {
+            "hash": "cb5bc22348251435b5652192282fe05a0aa86b025db274a9b1facdb4b927194d",
+            "size": 226027,
+            "mtime": 1764826742.7284958
+        },
+        "assets/background_mid.png": {
+            "hash": "7a1597a832a5bec5f133fa6d4295dbcf818bdb1734660647ff07f0f55ecd437e",
+            "size": 236630,
+            "mtime": 1764826742.7305105
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764826742.7846384
+        },
+        "assets/collectible_jelly.png": {
+            "hash": "f9ef1e236664de669b6ee6e6898af781ef14dabc756dd4302a8a9256ffc1f32c",
+            "size": 1206,
+            "mtime": 1764826742.7846384
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826742.7915356
+        },
+        "assets/ground.png": {
+            "hash": "474da46921225aa49466165523eac93f14dffba60306fa65a9c3d8b353ca6a80",
+            "size": 133678,
+            "mtime": 1764826742.7935438
+        },
+        "assets/obstacle_floating.png": {
+            "hash": "1b8679666f906a07318a56efd6f5fda9d996a6492a45b9deefd7e3cbbc33ddde",
+            "size": 3297,
+            "mtime": 1764826742.7935438
+        },
+        "assets/obstacle_high.png": {
+            "hash": "28c63d3fc4198c11fc6a7d7f329bc54b65d118c2b8d28819862212aa124fa0a2",
+            "size": 10526,
+            "mtime": 1764826742.7935438
+        },
+        "assets/obstacle_low.png": {
+            "hash": "dd72759056fea27f84a375cf45fcdfcc80cf51485f04ec84f5eb0132e1738cca",
+            "size": 3618,
+            "mtime": 1764826742.7935438
+        },
+        "assets/player_jump.png": {
+            "hash": "f8145df9b6117c66f691917f8d457a2417b2ec473bc643a7a6cdd0cd8c5ba2b8",
+            "size": 4442,
+            "mtime": 1764826742.7935438
+        },
+        "assets/player_run_1.png": {
+            "hash": "48d577d43b08ded10f42d38e388466e6233075d8c28e455697116959d04de861",
+            "size": 5207,
+            "mtime": 1764826742.7935438
+        },
+        "assets/player_run_2.png": {
+            "hash": "55a52732d451100d83fb43d8cced5dfebb09fc550471b21bd8bf548648b63c51",
+            "size": 6100,
+            "mtime": 1764826742.7972045
+        },
+        "assets/player_run_3.png": {
+            "hash": "103c6c2757277fada74f1ac990231d108cefecf4b6a3a59e8303239067594123",
+            "size": 5642,
+            "mtime": 1764826742.7972045
+        },
+        "assets/player_run_4.png": {
+            "hash": "d6f1be14f30e2ff281fac805d7b44a6df8e628486dc00b57f4cd9cf7063b77af",
+            "size": 4344,
+            "mtime": 1764826742.7972045
+        },
+        "assets/player_slide.png": {
+            "hash": "ca90b056b10862419eb1b0ae5af550ba32c7f872bf35027e962367f3db3b5eab",
+            "size": 2279,
+            "mtime": 1764826742.7972045
+        },
+        "assets/sfx_collect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.7972045
+        },
+        "assets/sfx_game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.8020039
+        },
+        "assets/sfx_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.8020039
+        },
+        "assets/sfx_jump.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.8020039
+        },
+        "assets/sfx_slide.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.8020039
+        },
+        "assets/thumbnail.png": {
+            "hash": "770b4382c3f2f9269bf830c54caddb98c729c5c1ce8c248d34f58a8af7cd56f5",
+            "size": 824274,
+            "mtime": 1764857486.4460387
+        },
+        "assets2/background_far.png": {
+            "hash": "cb5bc22348251435b5652192282fe05a0aa86b025db274a9b1facdb4b927194d",
+            "size": 226027,
+            "mtime": 1764826742.807656
+        },
+        "assets2/background_mid.png": {
+            "hash": "7a1597a832a5bec5f133fa6d4295dbcf818bdb1734660647ff07f0f55ecd437e",
+            "size": 236630,
+            "mtime": 1764826742.8096664
+        },
+        "assets2/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764826742.8676999
+        },
+        "assets2/collectible_jelly.png": {
+            "hash": "b71ca04e375d89bb91a684015b4e15926d0a86d28b5525715e738076c88e0381",
+            "size": 1210,
+            "mtime": 1764826742.8686924
+        },
+        "assets2/ground.png": {
+            "hash": "474da46921225aa49466165523eac93f14dffba60306fa65a9c3d8b353ca6a80",
+            "size": 133678,
+            "mtime": 1764826742.8701966
+        },
+        "assets2/obstacle_high copy.png": {
+            "hash": "6cec439a209778fe0c74552e5ae6d0319da6f92865fc1ccbf95a0b5c1256844f",
+            "size": 10635,
+            "mtime": 1764826742.8722038
+        },
+        "assets2/obstacle_high.png": {
+            "hash": "6cec439a209778fe0c74552e5ae6d0319da6f92865fc1ccbf95a0b5c1256844f",
+            "size": 10635,
+            "mtime": 1764826742.8722038
+        },
+        "assets2/obstacle_low.png": {
+            "hash": "35a6625da3ae8b78d329a68c6d2da2add76354ac034b1512b8a7dfc9b857dc2e",
+            "size": 3655,
+            "mtime": 1764826742.8732038
+        },
+        "assets2/player_jump.png": {
+            "hash": "295245a4b4d539ebe12b4d4521e24f0a6c842726501a7510af3af74ffd605f57",
+            "size": 4481,
+            "mtime": 1764826742.8742042
+        },
+        "assets2/player_run_1.png": {
+            "hash": "5c35424f2ed92ec1f9f9f3abc21d74afefb08e0a9e09ed74502c74fd5356820e",
+            "size": 5245,
+            "mtime": 1764826742.8742042
+        },
+        "assets2/player_run_2.png": {
+            "hash": "c37ee2c22aa6e1307ab506e64da175c7ea7d46b2541b676a9f83ff9ea0d2d273",
+            "size": 6103,
+            "mtime": 1764826742.8754842
+        },
+        "assets2/player_run_3.png": {
+            "hash": "cd8ec9feff0eda24c633d102dd4b9e431d414c3dba5acaa676d73a44eeb4af43",
+            "size": 5683,
+            "mtime": 1764826742.8754842
+        },
+        "assets2/player_run_4.png": {
+            "hash": "692574ce97a7579272b526d00b12d844b1bbde8a999935a0da16c2476feea7d7",
+            "size": 4380,
+            "mtime": 1764826742.8764844
+        },
+        "assets2/player_slide.png": {
+            "hash": "4dc1ac8993be729657986e66115d3a1f472a4bc1616b5a1efb05b7beef13e978",
+            "size": 2283,
+            "mtime": 1764826742.8764844
+        },
+        "assets2/sfx_collect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.8774862
+        },
+        "assets2/sfx_game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.8784876
+        },
+        "assets2/sfx_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.8784876
+        },
+        "assets2/sfx_jump.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.8794825
+        },
+        "assets2/sfx_slide.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.8834026
+        },
+        "assets5/background_far.png": {
+            "hash": "89d09c14cb4f9211d0a3c56e0c18c1195e44b5b8373413467f7d9c68035b5427",
+            "size": 23039,
+            "mtime": 1764826742.8854108
+        },
+        "assets5/background_mid.png": {
+            "hash": "4dff45f0cdc164fb4041ce362cac8792991cd6017c7642ef4249805b322c5666",
+            "size": 23218,
+            "mtime": 1764826742.885916
+        },
+        "assets5/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764826742.9500792
+        },
+        "assets5/collectible_jelly.png": {
+            "hash": "8aada31690e8b737a3e81060b869c0182d63ec9e6fd88e522dff9cef299e5c1d",
+            "size": 1247,
+            "mtime": 1764826742.9525826
+        },
+        "assets5/ground.png": {
+            "hash": "79a36a69e1f7df508cf2f48fe8ce0c5033c3352d5b7ba56a3b94551fd1cebee5",
+            "size": 20572,
+            "mtime": 1764826742.9525826
+        },
+        "assets5/obstacle_floating.png": {
+            "hash": "1b8679666f906a07318a56efd6f5fda9d996a6492a45b9deefd7e3cbbc33ddde",
+            "size": 3297,
+            "mtime": 1764826742.9661243
+        },
+        "assets5/obstacle_high copy.png": {
+            "hash": "28c63d3fc4198c11fc6a7d7f329bc54b65d118c2b8d28819862212aa124fa0a2",
+            "size": 10526,
+            "mtime": 1764826742.9661243
+        },
+        "assets5/obstacle_high.png": {
+            "hash": "8178c4f9f26b0a3daf7cc700c0808c1610b18c3162e000dd274c97e634be8998",
+            "size": 10651,
+            "mtime": 1764826742.967123
+        },
+        "assets5/obstacle_low.png": {
+            "hash": "60ae42d486fec6a9ec31a74c6bf284545c81f04f6ebe54eb295fc6734f6c522f",
+            "size": 3707,
+            "mtime": 1764826742.9681237
+        },
+        "assets5/player_jump.png": {
+            "hash": "25a80e7ba899b7f5479a906f06c5aeb986f4f58fda63c4dacac98392fe2faa23",
+            "size": 4587,
+            "mtime": 1764826742.9681237
+        },
+        "assets5/player_run_1.png": {
+            "hash": "52c6670c282a5f24ec87fb16391bb671adb07fade1c3d9c779edd99c49c1b66b",
+            "size": 5320,
+            "mtime": 1764826742.969123
+        },
+        "assets5/player_run_2.png": {
+            "hash": "95a0bb21ce9c1ee942881d211f8300957243d9dc19d81319e73ecc2e423f77c1",
+            "size": 6156,
+            "mtime": 1764826742.969123
+        },
+        "assets5/player_run_3.png": {
+            "hash": "a486e400ea1b2eee6ec04f5b65605387a5b89908c98b62a59f83618d889e95e5",
+            "size": 5758,
+            "mtime": 1764826742.970451
+        },
+        "assets5/player_run_4.png": {
+            "hash": "b06630eb3d6f0c9f36064c61721cb40d50f86657fbb8fd3012d5579f69fec690",
+            "size": 4474,
+            "mtime": 1764826742.9710932
+        },
+        "assets5/player_slide.png": {
+            "hash": "f33e013eed57ed59e579ddb0a4b0e3b3801007ae77705bb6bac407b0ef1d9369",
+            "size": 2343,
+            "mtime": 1764826742.9710932
+        },
+        "assets5/sfx_collect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.9720998
+        },
+        "assets5/sfx_game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.9730995
+        },
+        "assets5/sfx_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.9730995
+        },
+        "assets5/sfx_jump.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.974101
+        },
+        "assets5/sfx_slide.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.9750998
+        }
+    }
+}

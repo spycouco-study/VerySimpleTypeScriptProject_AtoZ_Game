@@ -1,0 +1,71 @@
+{
+  "player": {
+    "speed": 10,
+    "height": 1.8,
+    "jumpForce": 8,
+    "mouseSensitivity": 0.002,
+    "health": 100,
+    "gunDamage": 25,
+    "fireRate": 3
+  },
+  "enemies": {
+    "count": 10,
+    "speed": 3,
+    "health": 75,
+    "spawnRadius": 30,
+    "damage": 5
+  },
+  "level": {
+    "groundSize": 100,
+    "wallHeight": 10,
+    "gravity": -20
+  },
+  "assets": {
+    "images": [
+      {
+        "name": "enemy",
+        "path": "assets/enemy.png",
+        "width": 64,
+        "height": 64
+      },
+      {
+        "name": "bullet",
+        "path": "assets/bullet.png",
+        "width": 32,
+        "height": 32
+      }
+    ],
+    "sounds": [
+      {
+        "name": "shoot",
+        "path": "assets/shoot.mp3",
+        "duration_seconds": 0.5,
+        "volume": 0.3
+      },
+      {
+        "name": "hit",
+        "path": "assets/hit.mp3",
+        "duration_seconds": 0.3,
+        "volume": 0.5
+      },
+      {
+        "name": "kill",
+        "path": "assets/kill.mp3",
+        "duration_seconds": 0.7,
+        "volume": 0.4
+      },
+      {
+        "name": "bgm",
+        "path": "assets/bgm.mp3",
+        "duration_seconds": 120.0,
+        "volume": 0.2
+      },
+      {
+        "name": "gameover",
+        "path": "assets/gameover.mp3",
+        "duration_seconds": 2.0,
+        "volume": 0.6
+      }
+    ]
+  }
+}

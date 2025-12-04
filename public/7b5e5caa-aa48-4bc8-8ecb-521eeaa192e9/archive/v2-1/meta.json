@@ -1,0 +1,193 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-12-04T23:23:21.363158",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_0.png",
+            "path": "assets/block_0.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_1.png",
+            "path": "assets/block_1.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_2.png",
+            "path": "assets/block_2.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_3.png",
+            "path": "assets/block_3.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_4.png",
+            "path": "assets/block_4.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_5.png",
+            "path": "assets/block_5.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "click.mp3",
+            "path": "assets/click.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "match.mp3",
+            "path": "assets/match.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "selection.png",
+            "path": "assets/selection.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "swap.mp3",
+            "path": "assets/swap.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "b2758a1b3d5df9c0a325442462b69154e2fd75f48d7a5507fbdc5ae8963d2f5e",
+            "size": 2770,
+            "mtime": 1764826740.8372178
+        },
+        "game.js": {
+            "hash": "6f1cee8cf034d088f09b08f35aca63c5fa60c50263b3fa4ddf9e964505d53ce9",
+            "size": 91755,
+            "mtime": 1764826740.8372178
+        },
+        "game.ts": {
+            "hash": "7d3fe2d9da3d9440d90becf5c1317c42130a36fe5fd8c835b76bce121103f53b",
+            "size": 33639,
+            "mtime": 1764826740.8437338
+        },
+        "assets/background.png": {
+            "hash": "f2f37e105d92c21aa1c400a6fd21a178fc57bb19990fb0d3d38ab727a85e5a54",
+            "size": 11726,
+            "mtime": 1764826740.8100195
+        },
+        "assets/bgm.mp3": {
+            "hash": "a0a9ceed8674519308955ba9e068d4bfc6470845130ee0a32cbbe4a525e02e48",
+            "size": 1482753,
+            "mtime": 1764826740.8187249
+        },
+        "assets/block_0.png": {
+            "hash": "d5740e755132ac639302f082ff240d8ea670725cdd173a76c363e98cb70a859e",
+            "size": 1568,
+            "mtime": 1764826740.8187249
+        },
+        "assets/block_1.png": {
+            "hash": "6e1970cc4ab2e39069c587d7d639335777042661ab3f79db834dde36b3ebbbb8",
+            "size": 759,
+            "mtime": 1764826740.8187249
+        },
+        "assets/block_2.png": {
+            "hash": "12ad9c9fa25ae432633ef3f0242b58c21abaaacf5b68b4f65396404488d5035e",
+            "size": 1656,
+            "mtime": 1764826740.8187249
+        },
+        "assets/block_3.png": {
+            "hash": "51cf0998a45568d8371ce954a563f047404ac116e652e6dba23a928bf45d2950",
+            "size": 1262,
+            "mtime": 1764826740.8259282
+        },
+        "assets/block_4.png": {
+            "hash": "154c760a7e74078d6898d26bb903c05d9371e9655efa296ecac269e0606dd9dc",
+            "size": 2156,
+            "mtime": 1764826740.8259282
+        },
+        "assets/block_5.png": {
+            "hash": "56a0aa8b322b68d320e7b163073a4312d8a04e0e93052b66199ffdc9d2c71c7e",
+            "size": 4938,
+            "mtime": 1764826740.8279371
+        },
+        "assets/click.mp3": {
+            "hash": "9f7a8b6dcb7947856fccaf93b14ed73e0ab47a4ecf22605bc6a3d02f0f8c5538",
+            "size": 16343,
+            "mtime": 1764826740.8279371
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826740.8332057
+        },
+        "assets/game_over.mp3": {
+            "hash": "410d9af4e470598102043d4894c1443c8c867f18d21f761f91bccaa051e15a87",
+            "size": 34524,
+            "mtime": 1764826740.8352125
+        },
+        "assets/match.mp3": {
+            "hash": "8e1346a4dc2cee809efa6c690f8f920abe77e8c0968998230b6810e9f39b50a9",
+            "size": 24493,
+            "mtime": 1764826740.8352125
+        },
+        "assets/selection.png": {
+            "hash": "71021aaf6e6a4d6218bea3b2ed1f61842628f1a3ebdbf87abc5e8f89e6bd4d9a",
+            "size": 4854,
+            "mtime": 1764826740.8352125
+        },
+        "assets/swap.mp3": {
+            "hash": "23629e80ccce5bb84b6b9ca35ab9902181324552c365b442992f5f3eaeb4ea11",
+            "size": 13835,
+            "mtime": 1764826740.8372178
+        },
+        "assets/thumbnail.png": {
+            "hash": "005bd36d32844aaed2af2d684606b287c15499e6fe842780e44659c87c6931f4",
+            "size": 204086,
+            "mtime": 1764858201.3191102
+        }
+    }
+}

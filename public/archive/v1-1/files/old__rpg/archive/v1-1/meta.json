@@ -1,0 +1,142 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-19T19:43:00.128741",
+    "summary": "game.js 생성",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "enemy.png",
+            "path": "enemy.png",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "item_potion.png",
+            "path": "item_potion.png",
+            "type": "Add"
+        },
+        {
+            "name": "item_sword.png",
+            "path": "item_sword.png",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "player.png",
+            "type": "Add"
+        },
+        {
+            "name": "tile_outside_grass.png",
+            "path": "tile_outside_grass.png",
+            "type": "Add"
+        },
+        {
+            "name": "tile_outside_tree.png",
+            "path": "tile_outside_tree.png",
+            "type": "Add"
+        },
+        {
+            "name": "tile_village_grass.png",
+            "path": "tile_village_grass.png",
+            "type": "Add"
+        },
+        {
+            "name": "tile_village_house.png",
+            "path": "tile_village_house.png",
+            "type": "Add"
+        },
+        {
+            "name": "tile_village_road.png",
+            "path": "tile_village_road.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "46961900b6d6be4d08f6fb31d61782df198db288e78f55882f3fc7dcddffd5a8",
+            "size": 20945,
+            "mtime": 1763347039.228789
+        },
+        "enemy.png": {
+            "hash": "6e76131c57ea4a40d79a6f7b005a7c5dac72133e6aa6536b791e6a082e62e83c",
+            "size": 251,
+            "mtime": 1763347039.2297857
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763347039.2347858
+        },
+        "game.js": {
+            "hash": "015791c7ecaa1008f00573ca251558f886b6c4d3dd2135d36dde4b008ad328d8",
+            "size": 30547,
+            "mtime": 1763547958.15564
+        },
+        "game.ts": {
+            "hash": "4535c9db76d2886becd9ac35ebc4a07ac4ba2f58eefe34e02b55bfafc58c8188",
+            "size": 35739,
+            "mtime": 1763347039.2367861
+        },
+        "item_potion.png": {
+            "hash": "8666061c819f61296a113452928dbedac2ca50bd8ddb0e2316fb37809483b478",
+            "size": 250,
+            "mtime": 1763347039.2397861
+        },
+        "item_sword.png": {
+            "hash": "d78fc8e90beff254aae416065ef116bfd56dc9c9773f31877a5d339f20b25a34",
+            "size": 247,
+            "mtime": 1763347039.241809
+        },
+        "player.png": {
+            "hash": "5c323a8a6783ce74e8c1d877de36bbd8ccd836e7f330b14079cd6f8e33130c67",
+            "size": 251,
+            "mtime": 1763347039.2439127
+        },
+        "tile_outside_grass.png": {
+            "hash": "43adb4ec6231697540509d72c715fa2dcf7a9fe7360e925589ea5ca90c5194ed",
+            "size": 248,
+            "mtime": 1763347039.245913
+        },
+        "tile_outside_tree.png": {
+            "hash": "7bd07c06a6c5180ed498525aaf0927426250a49012019f29e74e425007bab171",
+            "size": 250,
+            "mtime": 1763347039.2469118
+        },
+        "tile_village_grass.png": {
+            "hash": "cbe49d6cc3bfd621d5faa44206163e8357795373a6dff98c09193a483fe298ff",
+            "size": 247,
+            "mtime": 1763347039.2489161
+        },
+        "tile_village_house.png": {
+            "hash": "48c985bc54c97fb4de4c82431876b7c61e503bd0fdc43f1bfe35ad969cf51914",
+            "size": 252,
+            "mtime": 1763347039.2499163
+        },
+        "tile_village_road.png": {
+            "hash": "fbcbdbd2922f210969dafd7c401395d222bd715a30e79f1f01247c9d60f3d330",
+            "size": 251,
+            "mtime": 1763347039.2509162
+        }
+    }
+}

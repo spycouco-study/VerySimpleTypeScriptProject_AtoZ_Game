@@ -29,6 +29,14 @@
             "parent": "v2-2",
             "timestamp": "2025-11-26T19:28:38.887447",
             "summary": "무엇인가를 500으로 늘려줘.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-12-04T15:54:21.408212",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

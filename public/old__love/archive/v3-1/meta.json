@@ -1,0 +1,148 @@
+{
+    "version": "v3-1",
+    "parent": "v2-1",
+    "timestamp": "2025-12-04T22:47:58.376615",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Delete"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "back.png",
+            "path": "back.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background_cafe.png",
+            "path": "background_cafe.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background_exhibition.png",
+            "path": "background_exhibition.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background_park.png",
+            "path": "background_park.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background_park_evening.png",
+            "path": "background_park_evening.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "girl.png",
+            "path": "girl.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "Pop.mp3",
+            "path": "Pop.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "back.png": {
+            "hash": "d30cd0b50b7ee188b55550963279accf67a30bcae7e32027b44e8991c035d57b",
+            "size": 1122910,
+            "mtime": 1763445633.5752344
+        },
+        "background_cafe.png": {
+            "hash": "4187f5e2eae260ad45c661e0bfdccb30b30764d8b4c9e9cd1439c20f178e7c0a",
+            "size": 178123,
+            "mtime": 1763445633.576226
+        },
+        "background_exhibition.png": {
+            "hash": "150888b5703dbbdf874e718c37d1d7f62a37477054065f93eccb0fa006eea523",
+            "size": 30750,
+            "mtime": 1763445633.57717
+        },
+        "background_park.png": {
+            "hash": "d30cd0b50b7ee188b55550963279accf67a30bcae7e32027b44e8991c035d57b",
+            "size": 1122910,
+            "mtime": 1763445633.583321
+        },
+        "background_park_evening.png": {
+            "hash": "098c4dfb225a66a7ce32b05075151a1db41e3b23630743e4e9ae2270a34129d0",
+            "size": 1157593,
+            "mtime": 1763445633.5893874
+        },
+        "bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763445633.646507
+        },
+        "data.json": {
+            "hash": "49f36f695d032459f062384e75003dcc22e8de6456523d0ed3c3ae9c6c38f745",
+            "size": 15072,
+            "mtime": 1763445633.648494
+        },
+        "game.js": {
+            "hash": "996cca7d6e491f4ecda786b3b3a8af71904e1c3776032e61fc65713bc1c17111",
+            "size": 17499,
+            "mtime": 1763978774.9333322
+        },
+        "game.ts": {
+            "hash": "722e4ef642973aa82cf21825deab5dd31a6503df05c94591e77c07210ee9e77e",
+            "size": 18634,
+            "mtime": 1763445633.651503
+        },
+        "girl.png": {
+            "hash": "02e030422bf7d6890141d46dce3d1c74e7d2e812b3bfa28affecd1d18108e20d",
+            "size": 133536,
+            "mtime": 1763445633.6542346
+        },
+        "Pop.mp3": {
+            "hash": "55b11a9db569c7b8aed8e339ff0186b33157f947e1437f4ec198e2837938feeb",
+            "size": 112970,
+            "mtime": 1763445633.569233
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826741.4546843
+        },
+        "assets/thumbnail.png": {
+            "hash": "256ddd72e1dc53c52062f1ce65e3b564a53deb7e48f0d214decd25841225d355",
+            "size": 610421,
+            "mtime": 1764856078.3032289
+        }
+    }
+}

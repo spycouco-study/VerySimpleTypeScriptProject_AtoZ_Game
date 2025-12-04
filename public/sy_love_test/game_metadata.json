@@ -1,10 +1,10 @@
 {
-    "id": "sy_love_test",
-    "game_title": "sy_love_test",
-    "author": "sy",
-    "category": "etc",
-    "thumbnail": "/static/sy_love_test/assets/thumbnail.png",
-    "plays": 913,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 109
+  "id": "sy_love_test",
+  "game_title": "나만의 아이돌 키우기",
+  "author": "sy",
+  "category": "etc",
+  "thumbnail": "/static/sy_love_test/assets/thumbnail.png",
+  "plays": 913,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 109
 }

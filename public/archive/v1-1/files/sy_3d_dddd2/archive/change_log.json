@@ -1,0 +1,44 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-22T21:30:49.366935",
+            "summary": "간단한 3d fps 게임을 만들어주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-22T21:36:25.284646",
+            "summary": "게임이 클릭해도 시작되지 않는 문제를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-11-22T21:45:30.762634",
+            "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-11-22T21:47:42.536596",
+            "summary": "wasd를 눌렀을 때 이동 속도를 더 빠르게 해주세요.\n게임에서 스페이스바를 눌렀을 때 점프 기능이 작동하도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-11-22T21:51:09.907317",
+            "summary": "게임 데이터 수정",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

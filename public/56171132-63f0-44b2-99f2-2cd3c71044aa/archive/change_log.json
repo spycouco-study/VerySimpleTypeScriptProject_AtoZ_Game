@@ -13,6 +13,14 @@
             "parent": "v1-1",
             "timestamp": "2025-12-03T21:06:31.148617",
             "summary": "snake_body.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-12-04T15:12:21.805943",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

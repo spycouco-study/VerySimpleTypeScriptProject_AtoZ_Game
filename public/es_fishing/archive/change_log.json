@@ -13,6 +13,14 @@
             "parent": "v1-1",
             "timestamp": "2025-11-28T01:16:51.971638",
             "summary": "obstacle1.png 파일을 사용하여 게임에 장애물을 생성해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-12-04T15:58:35.642008",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

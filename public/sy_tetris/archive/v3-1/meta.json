@@ -1,0 +1,228 @@
+{
+    "version": "v3-1",
+    "parent": "v2-1",
+    "timestamp": "2025-12-04T23:20:32.126401",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Delete"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "spec.md",
+            "path": "spec.md",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_blue.png",
+            "path": "assets/block_blue.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_cyan.png",
+            "path": "assets/block_cyan.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_green.png",
+            "path": "assets/block_green.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_orange.png",
+            "path": "assets/block_orange.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_purple.png",
+            "path": "assets/block_purple.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_red.png",
+            "path": "assets/block_red.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_yellow.png",
+            "path": "assets/block_yellow.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "drop.mp3",
+            "path": "assets/drop.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "grid_tile.png",
+            "path": "assets/grid_tile.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "line_clear.mp3",
+            "path": "assets/line_clear.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "rotate.mp3",
+            "path": "assets/rotate.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "title_logo.png",
+            "path": "assets/title_logo.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "4be753696660d0c0effaf67e7ae3456c063000a4c68e05adbf8d597b10cfc95d",
+            "size": 3477,
+            "mtime": 1763445636.2206733
+        },
+        "game.js": {
+            "hash": "db985de18d74ea7a58baedc44ea647434bf670671c3855ed100ea7f6515ac011",
+            "size": 28571,
+            "mtime": 1763978778.5168307
+        },
+        "game.ts": {
+            "hash": "a00e7a6a79399fcee684bfa3ab21c570cf39af016ed6662537d8fde195c27bb5",
+            "size": 31164,
+            "mtime": 1763445636.224676
+        },
+        "spec.md": {
+            "hash": "57180150b53b5baa9dc49c941b561792be51841bd6559d3b54932c1fb4476f78",
+            "size": 1995,
+            "mtime": 1763445636.2262628
+        },
+        "assets/background.png": {
+            "hash": "c92f9192cc136ed856cb232b2195625b98c31c2b64af59fbfcaf25e2f95dce90",
+            "size": 3590,
+            "mtime": 1763445636.137047
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763445636.2129056
+        },
+        "assets/block_blue.png": {
+            "hash": "eb5c960b4d9d048cec7c606597f774b4cf4bc5d13e46c83067ccad232cbb9c60",
+            "size": 445,
+            "mtime": 1763445636.2139034
+        },
+        "assets/block_cyan.png": {
+            "hash": "dbfcc691c3f980acd1a8d7b47c70980d53d40e719de0fc906326d34d03b66268",
+            "size": 493,
+            "mtime": 1763445636.2149093
+        },
+        "assets/block_green.png": {
+            "hash": "5de6417b4023fb486da18db9356fe247993706b7c2a83e2bf6fe362ec11c4c9c",
+            "size": 528,
+            "mtime": 1763445636.2149093
+        },
+        "assets/block_orange.png": {
+            "hash": "2f5f2785d3c617510ae76d044d4187af44170e57750d48bb6ebf9accf634a1e2",
+            "size": 458,
+            "mtime": 1763445636.2149093
+        },
+        "assets/block_purple.png": {
+            "hash": "3fced34434f69ef3f00e8f6dfc7ce1eb914cd508bd745a9c9920efb90fa92baa",
+            "size": 428,
+            "mtime": 1763445636.2166655
+        },
+        "assets/block_red.png": {
+            "hash": "63d6ce7c34d62c1f4d054c45bc371f350c35342ecf5cb482763d5b9a97e07382",
+            "size": 471,
+            "mtime": 1763445636.2166655
+        },
+        "assets/block_yellow.png": {
+            "hash": "a6e044b871d8435034bef39c67532ded10820d7c6e54534e749b32570a23e2ba",
+            "size": 436,
+            "mtime": 1763445636.2166655
+        },
+        "assets/drop.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445636.2176733
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826744.2074172
+        },
+        "assets/game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445636.2186735
+        },
+        "assets/grid_tile.png": {
+            "hash": "0d82489a901677bad5ac722c7a5ea35153b81cdb821a3762244c3b7ee25d13ba",
+            "size": 369,
+            "mtime": 1763445636.2186735
+        },
+        "assets/line_clear.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445636.2196736
+        },
+        "assets/rotate.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445636.2206733
+        },
+        "assets/thumbnail.png": {
+            "hash": "f5002aca9b7b1ee8620a78046bd6ec2e14504ff573acadeed565e7d1ece33094",
+            "size": 118242,
+            "mtime": 1764858032.0143006
+        },
+        "assets/title_logo.png": {
+            "hash": "fa48a230752032d6d8b8eeaae814644201af912a7bb59db633e4237aaded05d4",
+            "size": 1102,
+            "mtime": 1763445636.2206733
+        }
+    }
+}

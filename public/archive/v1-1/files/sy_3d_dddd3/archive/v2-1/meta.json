@@ -1,0 +1,63 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-11-22T22:34:39.509970",
+    "summary": "ESC 키를 누르면 마우스 커서가 화면에서 벗어나 나타나도록 수정해주세요.\n화면을 다시 클릭하면 화면 시점을 조정할 수 있도록 수정해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "b0ef5f49430afdbcf1d1cc228e43a0a59f121dc3a42029031b70cfef88817ca2",
+            "size": 924,
+            "mtime": 1763818472.0578418
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "50669074e17691663f06b61b13ebe4b220ecd0afd58387ddc8c1e73a3bc69bb2",
+            "size": 48563,
+            "mtime": 1763818479.2714405
+        },
+        "game.ts": {
+            "hash": "7dc7ef01d54a1d31b8d0895e69ea5c90b38e4f289d7ef3e58133dc485f898a59",
+            "size": 18360,
+            "mtime": 1763818472.0533264
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763796545.4310448
+        }
+    }
+}

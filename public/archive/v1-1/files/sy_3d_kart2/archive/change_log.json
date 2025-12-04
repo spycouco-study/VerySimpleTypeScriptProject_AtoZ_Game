@@ -1,0 +1,12 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-22T20:15:23.961278",
+            "summary": "3D 카트라이더 스타일의 레이싱 게임을 만들어주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

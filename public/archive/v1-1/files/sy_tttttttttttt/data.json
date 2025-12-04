@@ -1,0 +1,24 @@
+{
+  "canvasWidth": 800,
+  "canvasHeight": 600,
+  "gridSize": 20,
+  "initialSnakeLength": 3,
+  "snakeSpeedInitialMs": 200,
+  "snakeSpeedDecreaseMs": 10,
+  "minSnakeSpeedMs": 80,
+  "titleScreenText": "SNAKE GAME - Press SPACE to Start",
+  "gameOverText": "Game Over! Score: ",
+  "backgroundColor": "gray",
+  "assets": {
+    "images": [
+      { "name": "snakeHead", "path": "assets/snake_head.png", "width": 20, "height": 20 },
+      { "name": "snakeBody", "path": "assets/snake_body.png", "width": 20, "height": 20 },
+      { "name": "food", "path": "assets/food.png", "width": 20, "height": 20 }
+    ],
+    "sounds": [
+      { "name": "eatFood", "path": "assets/eat_food.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+      { "name": "gameOver", "path": "assets/game_over.mp3", "duration_seconds": 1.5, "volume": 0.8 },
+      { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 }
+    ]
+  }
+}

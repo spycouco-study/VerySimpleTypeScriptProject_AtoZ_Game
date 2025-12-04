@@ -1,0 +1,243 @@
+{
+    "version": "v7-1",
+    "parent": "v6-2",
+    "timestamp": "2025-12-04T23:29:47.786387",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v3-1"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "last_version": "v6-2"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v6-2"
+        },
+        {
+            "name": "bgm_game.mp3",
+            "path": "assets/bgm_game.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_title.mp3",
+            "path": "assets/bgm_title.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "cookie_jump.png",
+            "path": "assets/cookie_jump.png",
+            "last_version": "v6-2"
+        },
+        {
+            "name": "cookie_run_1.png",
+            "path": "assets/cookie_run_1.png",
+            "last_version": "v6-2"
+        },
+        {
+            "name": "cookie_run_2.png",
+            "path": "assets/cookie_run_2.png",
+            "last_version": "v6-2"
+        },
+        {
+            "name": "cookie_slide.png",
+            "path": "assets/cookie_slide.png",
+            "last_version": "v6-2"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "last_version": "v6-2"
+        },
+        {
+            "name": "game_background_far.png",
+            "path": "assets/game_background_far.png",
+            "last_version": "v6-2"
+        },
+        {
+            "name": "game_background_near.png",
+            "path": "assets/game_background_near.png",
+            "last_version": "v6-2"
+        },
+        {
+            "name": "game_ground.png",
+            "path": "assets/game_ground.png",
+            "last_version": "v6-2"
+        },
+        {
+            "name": "game_over_background.png",
+            "path": "assets/game_over_background.png",
+            "last_version": "v6-2"
+        },
+        {
+            "name": "jelly_basic.png",
+            "path": "assets/jelly_basic.png",
+            "last_version": "v6-2"
+        },
+        {
+            "name": "obstacle_spike.png",
+            "path": "assets/obstacle_spike.png",
+            "last_version": "v6-2"
+        },
+        {
+            "name": "sfx_collect.mp3",
+            "path": "assets/sfx_collect.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_game_over.mp3",
+            "path": "assets/sfx_game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_hit.mp3",
+            "path": "assets/sfx_hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_jump.mp3",
+            "path": "assets/sfx_jump.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_slide.mp3",
+            "path": "assets/sfx_slide.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "title_background.png",
+            "path": "assets/title_background.png",
+            "last_version": "v6-2"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "cd32334776f4c2673359c21b96370ed2bfb088e63df85f944931df563ff791bb",
+            "size": 3474,
+            "mtime": 1764568574.7549698
+        },
+        "game.js": {
+            "hash": "5d1f4cf8193ba721568988d76e2ed789eccd009c29a4fbb22e36164e8112fb6d",
+            "size": 5756,
+            "mtime": 1764858486.5724902
+        },
+        "game.ts": {
+            "hash": "f4679b29b594c804edb8d4396c356876f380523b764885f818d29c4ab84644f6",
+            "size": 2335,
+            "mtime": 1764858482.7554286
+        },
+        "assets/bgm_game.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764568574.6381638
+        },
+        "assets/bgm_title.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764568574.7196345
+        },
+        "assets/cookie_jump.png": {
+            "hash": "4c1c487a45c61d78707b1c8d10dbb6bd0f028a417cc3dbcc80e1ac80b3ab5aee",
+            "size": 2655,
+            "mtime": 1764826740.9881425
+        },
+        "assets/cookie_run_1.png": {
+            "hash": "591f0d47e313b8c47796ca35f3f068e2043e1e810fd7819581857d6adea94b92",
+            "size": 2452,
+            "mtime": 1764826740.9901476
+        },
+        "assets/cookie_run_2.png": {
+            "hash": "e741c212455e043fdc7bff4076281950fe6915985782754bd0258cf79d80033f",
+            "size": 2519,
+            "mtime": 1764826740.9941623
+        },
+        "assets/cookie_slide.png": {
+            "hash": "db2cc53d60647f76ac75ba173c79567737b2637db85dca4785f84d3a5404acdd",
+            "size": 2775,
+            "mtime": 1764826740.9997275
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826741.0026026
+        },
+        "assets/game_background_far.png": {
+            "hash": "796eef7de027f592d0bfe521cb1ee1c167451362fc16cd9e5adde32ae6853994",
+            "size": 24885,
+            "mtime": 1764826741.006616
+        },
+        "assets/game_background_near.png": {
+            "hash": "8ce667ff85e65368231f3886fd7f12bfebccdc81492071edbc1776bc8125cc70",
+            "size": 9288,
+            "mtime": 1764826741.0086215
+        },
+        "assets/game_ground.png": {
+            "hash": "cb1792c4cd59243c20df35a61307d543a82756760a4d9922c2761a2ba9f7a3a2",
+            "size": 4613,
+            "mtime": 1764826741.0126345
+        },
+        "assets/game_over_background.png": {
+            "hash": "855a25a0c52d38b010e65729a9a32f1da30c234676dcf5f6c5c843e9fc3dcd6e",
+            "size": 9033,
+            "mtime": 1764826741.0150075
+        },
+        "assets/jelly_basic.png": {
+            "hash": "3f5666010bd50623ae653619cef1fee3465176d8548b52f4a540f76bb43c48d2",
+            "size": 921,
+            "mtime": 1764826741.0182252
+        },
+        "assets/obstacle_spike.png": {
+            "hash": "83da5bdaa3b79a0b2cb27b53a9916ddc22b72ad98f9f3ec8335b33f182f63752",
+            "size": 1992,
+            "mtime": 1764826741.021224
+        },
+        "assets/sfx_collect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764568574.7430534
+        },
+        "assets/sfx_game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764568574.7450624
+        },
+        "assets/sfx_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764568574.7470744
+        },
+        "assets/sfx_jump.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764568574.7491748
+        },
+        "assets/sfx_slide.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764568574.7511976
+        },
+        "assets/thumbnail.png": {
+            "hash": "52181e92cde46f223c65506f500a55274c4c91b94d321b27ec4ce9f523950ebf",
+            "size": 58507,
+            "mtime": 1764858587.6747599
+        },
+        "assets/title_background.png": {
+            "hash": "db4c8d5c7fea8db732209ed8222ce039cb3c259274e951449738346d361fedda",
+            "size": 9066,
+            "mtime": 1764826741.02726
+        }
+    }
+}

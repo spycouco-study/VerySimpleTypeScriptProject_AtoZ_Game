@@ -1,0 +1,178 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-12-04T23:14:55.799028",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Delete"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background_sky_tile.png",
+            "path": "assets/background_sky_tile.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_ww2.mp3",
+            "path": "assets/bgm_ww2.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy_bullet.png",
+            "path": "assets/enemy_bullet.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy_plane_1.png",
+            "path": "assets/enemy_plane_1.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy_plane_2.png",
+            "path": "assets/enemy_plane_2.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy_shoot_sfx.mp3",
+            "path": "assets/enemy_shoot_sfx.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "explosion.png",
+            "path": "assets/explosion.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "explosion_sfx.mp3",
+            "path": "assets/explosion_sfx.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player_bullet.png",
+            "path": "assets/player_bullet.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player_plane.png",
+            "path": "assets/player_plane.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player_shoot_sfx.mp3",
+            "path": "assets/player_shoot_sfx.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "3affe687d0de53d5dc8228fd5bd1c458d91e260623f69c813dcba3aae4a7d4f2",
+            "size": 4339,
+            "mtime": 1764826743.254322
+        },
+        "game.js": {
+            "hash": "6fd42a3607605b7f2dce525ccd8d36e690d0cdebe5f4bdf53553f5afdfa517ff",
+            "size": 74636,
+            "mtime": 1764826743.2553232
+        },
+        "game.ts": {
+            "hash": "07e7b9c1d0d37ecc4177ad639536b4a910252b90df9332990477ed981bf63801",
+            "size": 26403,
+            "mtime": 1764826743.2563226
+        },
+        "assets/background_sky_tile.png": {
+            "hash": "f9584777e467c81eae23e56af93877001b35af5b346b79572a781635cf7f1793",
+            "size": 2370,
+            "mtime": 1764826743.1559558
+        },
+        "assets/bgm_ww2.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764826743.2389889
+        },
+        "assets/enemy_bullet.png": {
+            "hash": "69e8d691c1bdd9bebf4508c41cd3ca9afdae584870ef67076e92dedabd39a7c1",
+            "size": 184,
+            "mtime": 1764826743.2399876
+        },
+        "assets/enemy_plane_1.png": {
+            "hash": "8def0d5357098a48a8ccb42594ca8570e72d1ac06bee0b4748874f368c18096c",
+            "size": 720,
+            "mtime": 1764826743.2409883
+        },
+        "assets/enemy_plane_2.png": {
+            "hash": "a808877897677816612b1b8f76783e5d90a27cd362777d718d1d9843d24d881f",
+            "size": 941,
+            "mtime": 1764826743.2409883
+        },
+        "assets/enemy_shoot_sfx.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826743.24199
+        },
+        "assets/explosion.png": {
+            "hash": "5e34ae6bceba6f2e5edcb05aeaad490881326d51c8e87be464d7f926a80ad5e4",
+            "size": 728,
+            "mtime": 1764826743.2429893
+        },
+        "assets/explosion_sfx.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826743.2439885
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826743.2478807
+        },
+        "assets/player_bullet.png": {
+            "hash": "4dc6f1e2ab5c08f0d5b43c033af3986f44983f06594bfd1d020a21353a999c33",
+            "size": 121,
+            "mtime": 1764826743.2482834
+        },
+        "assets/player_plane.png": {
+            "hash": "150f50ce9ddca7996e605887a9403a5879f22ee2422bd696b82d6aba0bcea0c2",
+            "size": 752,
+            "mtime": 1764826743.2493174
+        },
+        "assets/player_shoot_sfx.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826743.2503166
+        },
+        "assets/thumbnail.png": {
+            "hash": "5478d8faf862cbeffa1166fc46cdb0acd21631a2028d700e676c85c2b62b833e",
+            "size": 15373,
+            "mtime": 1764857695.7379477
+        }
+    }
+}

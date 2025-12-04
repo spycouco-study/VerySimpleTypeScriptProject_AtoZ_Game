@@ -1,0 +1,189 @@
+{
+  "canvasWidth": 1000,
+  "canvasHeight": 600,
+  "grid": {
+    "rows": 5,
+    "cols": 9,
+    "cellSize": 100
+  },
+  "initialSun": 300,
+  "sunDropInterval": {
+    "min": 5000,
+    "max": 15000
+  },
+  "sunValue": 25,
+  "plantCosts": {
+    "SUN_PRODUCER": 50,
+    "PEA_SHOOTER": 100
+  },
+  "plantStats": {
+    "SUN_PRODUCER": {
+      "health": 100,
+      "productionRate": 7000,
+      "asset": "sun_producer_plant"
+    },
+    "PEA_SHOOTER": {
+      "health": 150,
+      "attackDamage": 20,
+      "attackSpeed": 2000,
+      "asset": "pea_shooter_plant",
+      "projectileAsset": "pea_projectile"
+    }
+  },
+  "zombieStats": {
+    "BASIC_ZOMBIE": {
+      "health": 200,
+      "speed": 30,
+      "attackDamage": 20,
+      "attackSpeed": 1500,
+      "asset": "basic_zombie"
+    }
+  },
+  "projectileStats": {
+    "PEA": {
+      "speed": 200,
+      "damage": 20,
+      "asset": "pea_projectile"
+    }
+  },
+  "colors": {
+    "background": "#228B22",
+    "gridLine": "#556B2F",
+    "uiBackground": "#8B4513",
+    "textColor": "#FFFFFF"
+  },
+  "texts": {
+    "title": "PLANT DEFENSE",
+    "clickToStart": "Click to Start",
+    "gameOver": "GAME OVER!",
+    "clickToRestart": "Click to return to Title",
+    "sunCounter": "Sun",
+    "plantSelection": "Plants"
+  },
+  "assets": {
+    "images": [
+      {
+        "name": "title_background",
+        "path": "assets/title_background.png",
+        "width": 1000,
+        "height": 600
+      },
+      {
+        "name": "game_over_background",
+        "path": "assets/game_over_background.png",
+        "width": 1000,
+        "height": 600
+      },
+      {
+        "name": "background",
+        "path": "assets/game_background.png",
+        "width": 1000,
+        "height": 600
+      },
+      {
+        "name": "sun_icon",
+        "path": "assets/sun_icon.png",
+        "width": 50,
+        "height": 50
+      },
+      {
+        "name": "sun_producer_plant",
+        "path": "assets/sun_producer_plant.png",
+        "width": 70,
+        "height": 70
+      },
+      {
+        "name": "pea_shooter_plant",
+        "path": "assets/pea_shooter_plant.png",
+        "width": 70,
+        "height": 70
+      },
+      {
+        "name": "basic_zombie",
+        "path": "assets/basic_zombie.png",
+        "width": 90,
+        "height": 90
+      },
+      {
+        "name": "pea_projectile",
+        "path": "assets/pea_projectile.png",
+        "width": 20,
+        "height": 20
+      }
+    ],
+    "sounds": [
+      {
+        "name": "bgm_title",
+        "path": "assets/bgm_title.mp3",
+        "duration_seconds": 60.0,
+        "volume": 0.5
+      },
+      {
+        "name": "bgm_game",
+        "path": "assets/bgm_game.mp3",
+        "duration_seconds": 120.0,
+        "volume": 0.4
+      },
+      {
+        "name": "bgm_game_over",
+        "path": "assets/bgm_game_over.mp3",
+        "duration_seconds": 30.0,
+        "volume": 0.5
+      },
+      {
+        "name": "plant_place_sfx",
+        "path": "assets/plant_place.mp3",
+        "duration_seconds": 1.0,
+        "volume": 0.8
+      },
+      {
+        "name": "sun_collect_sfx",
+        "path": "assets/sun_collect.mp3",
+        "duration_seconds": 1.0,
+        "volume": 0.8
+      },
+      {
+        "name": "shoot_sfx",
+        "path": "assets/shoot.mp3",
+        "duration_seconds": 0.5,
+        "volume": 0.6
+      },
+      {
+        "name": "zombie_hit_sfx",
+        "path": "assets/zombie_hit.mp3",
+        "duration_seconds": 0.5,
+        "volume": 0.7
+      },
+      {
+        "name": "zombie_die_sfx",
+        "path": "assets/zombie_die.mp3",
+        "duration_seconds": 1.0,
+        "volume": 0.7
+      },
+      {
+        "name": "zombie_attack_sfx",
+        "path": "assets/zombie_attack.mp3",
+        "duration_seconds": 0.5,
+        "volume": 0.7
+      },
+      {
+        "name": "game_over_sfx",
+        "path": "assets/game_over.mp3",
+        "duration_seconds": 2.0,
+        "volume": 0.9
+      },
+      {
+        "name": "ui_click_sfx",
+        "path": "assets/ui_click.mp3",
+        "duration_seconds": 0.2,
+        "volume": 0.7
+      },
+      {
+        "name": "error_sfx",
+        "path": "assets/error.mp3",
+        "duration_seconds": 0.5,
+        "volume": 0.7
+      }
+    ]
+  }
+}

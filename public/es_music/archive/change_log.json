@@ -109,6 +109,14 @@
             "parent": "v13-1",
             "timestamp": "2025-11-26T11:25:08.005758",
             "summary": "bgm.mp3 파일을 분석하여 게임 플레이에 사용될 노트를 자동으로 생성해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v15-1",
+            "parent": "v14-1",
+            "timestamp": "2025-12-04T15:53:19.631727",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

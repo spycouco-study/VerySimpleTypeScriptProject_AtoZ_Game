@@ -102,15 +102,23 @@
             "timestamp": "2025-11-29T23:03:49.252010",
             "summary": "게임의 배경화면으로 'background_starfield.png' 이미지가 정상적으로 적용되지 않고 회색 배경만 보이고 있습니다. 배경 이미지가 올바르게 표시되도록 수정해 주세요.",
             "is_latest": false,
-            "is_current": true
+            "is_current": false
         },
         {
             "version": "v12-1",
             "parent": "v11-2",
             "timestamp": "2025-11-29T23:11:47.614336",
             "summary": "게임 데이터 수정",
-            "is_latest": true,
+            "is_latest": false,
             "is_current": false
+        },
+        {
+            "version": "v12-2",
+            "parent": "v11-2",
+            "timestamp": "2025-12-04T23:16:52.611132",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": true,
+            "is_current": true
         }
     ]
 }

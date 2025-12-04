@@ -1,0 +1,15 @@
+{
+    "name": "Sample 3D Game",
+    "type": "3d",
+    "description": "A 3D game with physics and collectibles",
+    "author": "System",
+    "createdAt": "2025-11-21T00:00:00.000Z",
+    "playerSettings": {
+        "movementSpeed": 20,
+        "jumpStrength": 8
+    },
+    "assets": {
+        "images": [],
+        "sounds": []
+    }
+}

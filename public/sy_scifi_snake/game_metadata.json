@@ -1,10 +1,10 @@
 {
-    "id": "sy_scifi_snake",
-    "game_title": "sy_scifi_snake",
-    "author": "sy",
-    "category": "etc",
-    "thumbnail": "/static/sy_scifi_snake/assets/thumbnail.png",
-    "plays": 851,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 805
+  "id": "sy_scifi_snake",
+  "game_title": "네오 서펀트",
+  "author": "sy",
+  "category": "etc",
+  "thumbnail": "/static/sy_scifi_snake/assets/thumbnail.png",
+  "plays": 851,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 805
 }

@@ -1,0 +1,62 @@
+{
+  "player": {
+    "speed": 5,
+    "jumpForce": 6,
+    "health": 100,
+    "radius": 0.3,
+    "height": 1.7,
+    "mass": 70,
+    "friction": 0.5,
+    "angularDamping": 0.9,
+    "cameraOffset": { "x": 0, "y": 0.6, "z": 0 }
+  },
+  "bullet": {
+    "speed": 60,
+    "radius": 0.1,
+    "mass": 0.1,
+    "lifetime": 2,
+    "damage": 10
+  },
+  "enemy": {
+    "count": 5,
+    "radius": 0.4,
+    "height": 1.5,
+    "mass": 50,
+    "health": 30,
+    "speed": 3,
+    "spawnRadius": 10,
+    "damage": 5,
+    "attackInterval": 1
+  },
+  "game": {
+    "gravity": 9.82,
+    "floorSize": 30,
+    "wallHeight": 5,
+    "maxScore": 500,
+    "targetFPS": 60
+  },
+  "ui": {
+    "fontSize": 48,
+    "fontFamily": "Arial",
+    "fontColor": "#FFFFFF",
+    "crosshairSize": 0.1,
+    "titleScreenText": "Simple FPS Game",
+    "gameOverText": "GAME OVER",
+    "pressToStartText": "Click to Start / Restart"
+  },
+  "assets": {
+    "images": [
+      { "name": "player_bullet", "path": "assets/player_bullet.png", "width": 10, "height": 20 },
+      { "name": "enemy", "path": "assets/enemy.png", "width": 64, "height": 64 },
+      { "name": "player_crosshair", "path": "assets/crosshair.png", "width": 32, "height": 32 },
+      { "name": "floor_texture", "path": "assets/floor_texture.png", "width": 512, "height": 512 },
+      { "name": "wall_texture", "path": "assets/wall_texture.png", "width": 512, "height": 512 }
+    ],
+    "sounds": [
+      { "name": "shoot", "path": "assets/shoot.mp3", "duration_seconds": 0.5, "volume": 0.5 },
+      { "name": "hit", "path": "assets/hit.mp3", "duration_seconds": 0.3, "volume": 0.6 },
+      { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 },
+      { "name": "game_over", "path": "assets/game_over.mp3", "duration_seconds": 2.0, "volume": 0.8 }
+    ]
+  }
+}

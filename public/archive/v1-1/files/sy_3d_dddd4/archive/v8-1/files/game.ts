@@ -1,0 +1,530 @@
+// Import Three.js and Cannon-es libraries
+import * as THREE from 'three';
+import * as CANNON from 'cannon-es';
+
+// Enum to define the possible states of the game
+enum GameState {
+    TITLE,   // Title screen, waiting for user input
+    PLAYING  // Game is active, user can move and look around
+}
+
+// Interface to type-check the game configuration loaded from data.json
+interface GameConfig {
+    gameSettings: {
+        titleScreenText: string;
+        startGamePrompt: string;
+        playerSpeed: number;
+        mouseSensitivity: number;
+        cameraHeightOffset: number; // Vertical offset of the camera from the player's physics body center
+        cameraNear: number;         // Near clipping plane for the camera
+        cameraFar: number;          // Far clipping plane for the camera
+        playerMass: number;         // Mass of the player's physics body
+        groundSize: number;         // Size (width/depth) of the square ground plane
+        maxPhysicsSubSteps: number; // Maximum number of physics substeps per frame to maintain stability
+    };
+    assets: {
+        images: { name: string; path: string; width: number; height: number }[];
+        sounds: { name: string; path: string; duration_seconds: number; volume: number }[];
+    };
+}
+
+/**
+ * Main Game class responsible for initializing and running the 3D game.
+ * It handles Three.js rendering, Cannon-es physics, input, and game state.
+ */
+class Game {
+    private config!: GameConfig; // Game configuration loaded from data.json
+    private state: GameState = GameState.TITLE; // Current state of the game
+
+    // Three.js elements for rendering
+    private scene!: THREE.Scene;
+    private camera!: THREE.PerspectiveCamera;
+    private renderer!: THREE.WebGLRenderer;
+    private canvas!: HTMLCanvasElement; // The HTML canvas element for rendering
+
+    // New: A container object for the camera to handle horizontal rotation separately from vertical pitch.
+    private cameraContainer!: THREE.Object3D; 
+
+    // Cannon-es elements for physics
+    private world!: CANNON.World;
+    private playerBody!: CANNON.Body; // Physics body for the player
+    private groundBody!: CANNON.Body; // Physics body for the ground
+
+    // Visual meshes (Three.js) for game objects
+    private playerMesh!: THREE.Mesh;
+    private groundMesh!: THREE.Mesh;
+
+    // Input handling state
+    private keys: { [key: string]: boolean } = {}; // Tracks currently pressed keys
+    private isPointerLocked: boolean = false; // True if mouse pointer is locked
+    private cameraPitch: number = 0; // Vertical rotation (pitch) of the camera
+
+    // Asset management
+    private textures: Map<string, THREE.Texture> = new Map(); // Stores loaded textures
+    private sounds: Map<string, HTMLAudioElement> = new Map(); // Stores loaded audio elements
+
+    // UI elements (dynamically created for the title screen)
+    private titleScreenOverlay!: HTMLDivElement;
+    private titleText!: HTMLDivElement;
+    private promptText!: HTMLDivElement;
+
+    // For calculating delta time between frames
+    private lastTime: DOMHighResTimeStamp = 0;
+
+    constructor() {
+        // Get the canvas element from index.html
+        this.canvas = document.getElementById('gameCanvas') as HTMLCanvasElement;
+        if (!this.canvas) {
+            console.error('Canvas element with ID "gameCanvas" not found!');
+            return; // Cannot proceed without a canvas
+        }
+        this.init(); // Start the asynchronous initialization process
+    }
+
+    /**
+     * Asynchronously initializes the game, loading config, assets, and setting up systems.
+     */
+    private async init() {
+        // 1. Load game configuration from data.json
+        try {
+            const response = await fetch('data.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            this.config = await response.json();
+            console.log('Game configuration loaded:', this.config);
+        } catch (error) {
+            console.error('Failed to load game configuration:', error);
+            // If configuration fails to load, display an error message and stop.
+            const errorDiv = document.createElement('div');
+            errorDiv.style.position = 'absolute';
+            errorDiv.style.top = '50%';
+            errorDiv.style.left = '50%';
+            errorDiv.style.transform = 'translate(-50%, -50%)';
+            errorDiv.style.color = 'red';
+            errorDiv.style.fontSize = '24px';
+            errorDiv.textContent = 'Error: Failed to load game configuration. Check console for details.';
+            document.body.appendChild(errorDiv);
+            return;
+        }
+
+        // 2. Initialize Three.js (scene, camera, renderer)
+        this.scene = new THREE.Scene();
+        this.camera = new THREE.PerspectiveCamera(
+            75, // Field of View (FOV)
+            window.innerWidth / window.innerHeight, // Aspect ratio
+            this.config.gameSettings.cameraNear, // Near clipping plane
+            this.config.gameSettings.cameraFar   // Far clipping plane
+        );
+        this.renderer = new THREE.WebGLRenderer({ canvas: this.canvas, antialias: true });
+        this.renderer.setSize(window.innerWidth, window.innerHeight);
+        this.renderer.setPixelRatio(window.devicePixelRatio);
+        this.renderer.shadowMap.enabled = true; // Enable shadows for better realism
+        this.renderer.shadowMap.type = THREE.PCFSoftShadowMap; // Use soft shadows
+
+        // Camera setup for decoupled yaw and pitch:
+        // cameraContainer handles yaw (horizontal rotation) and follows the player's position.
+        // The camera itself is a child of cameraContainer and handles pitch (vertical rotation).
+        this.cameraContainer = new THREE.Object3D();
+        this.scene.add(this.cameraContainer);
+        this.cameraContainer.add(this.camera);
+        // Position the camera relative to the cameraContainer (at eye level)
+        this.camera.position.y = this.config.gameSettings.cameraHeightOffset;
+
+
+        // 3. Initialize Cannon-es (physics world)
+        this.world = new CANNON.World();
+        this.world.gravity.set(0, -9.82, 0); // Set standard Earth gravity (Y-axis down)
+        this.world.broadphase = new CANNON.SAPBroadphase(this.world); // Use an efficient broadphase algorithm
+        // Fix: Cast this.world.solver to CANNON.GSSolver to access the 'iterations' property
+        // The default solver in Cannon.js (and Cannon-es) is GSSolver, which has this property.
+        (this.world.solver as CANNON.GSSolver).iterations = 10; // Increase solver iterations for better stability
+
+        // 4. Load assets (textures and sounds)
+        await this.loadAssets();
+
+        // 5. Setup event listeners for user input and window resizing
+        window.addEventListener('resize', this.onWindowResize.bind(this));
+        document.addEventListener('keydown', this.onKeyDown.bind(this));
+        document.addEventListener('keyup', this.onKeyUp.bind(this));
+        document.addEventListener('mousemove', this.onMouseMove.bind(this)); // For mouse look
+        document.addEventListener('pointerlockchange', this.onPointerLockChange.bind(this)); // For pointer lock status
+        document.addEventListener('mozpointerlockchange', this.onPointerLockChange.bind(this)); // Firefox compatibility
+        document.addEventListener('webkitpointerlockchange', this.onPointerLockChange.bind(this)); // Webkit compatibility
+
+        // 6. Create game objects (player, ground) and lighting
+        this.createGround();
+        this.createPlayer();
+        this.setupLighting();
+
+        // 7. Setup the title screen UI
+        this.setupTitleScreen();
+
+        // Start the main game loop
+        this.animate(0); // Pass initial time 0
+    }
+
+    /**
+     * Loads all textures and sounds defined in the game configuration.
+     */
+    private async loadAssets() {
+        const textureLoader = new THREE.TextureLoader();
+        const imagePromises = this.config.assets.images.map(img => {
+            return textureLoader.loadAsync(img.path)
+                .then(texture => {
+                    this.textures.set(img.name, texture);
+                    texture.wrapS = THREE.RepeatWrapping; // Repeat texture horizontally
+                    texture.wrapT = THREE.RepeatWrapping; // Repeat texture vertically
+                    // Adjust texture repetition for the ground to avoid stretching
+                    if (img.name === 'ground_texture') {
+                         texture.repeat.set(this.config.gameSettings.groundSize / 5, this.config.gameSettings.groundSize / 5);
+                    }
+                })
+                .catch(error => {
+                    console.error(`Failed to load texture: ${img.path}`, error);
+                    // Continue even if an asset fails to load; fallbacks (solid colors) are used.
+                });
+        });
+
+        const soundPromises = this.config.assets.sounds.map(sound => {
+            return new Promise<void>((resolve) => {
+                const audio = new Audio(sound.path);
+                audio.volume = sound.volume;
+                audio.loop = (sound.name === 'background_music'); // Loop background music
+                audio.oncanplaythrough = () => {
+                    this.sounds.set(sound.name, audio);
+                    resolve();
+                };
+                audio.onerror = () => {
+                    console.error(`Failed to load sound: ${sound.path}`);
+                    resolve(); // Resolve even on error to not block Promise.all
+                };
+            });
+        });
+
+        await Promise.all([...imagePromises, ...soundPromises]);
+        console.log(`Assets loaded: ${this.textures.size} textures, ${this.sounds.size} sounds.`);
+    }
+
+    /**
+     * Creates and displays the title screen UI dynamically.
+     */
+    private setupTitleScreen() {
+        this.titleScreenOverlay = document.createElement('div');
+        Object.assign(this.titleScreenOverlay.style, {
+            position: 'absolute', top: '0', left: '0',
+            width: '100%', height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            display: 'flex', flexDirection: 'column',
+            justifyContent: 'center', alignItems: 'center',
+            color: 'white', fontFamily: 'Arial, sans-serif',
+            fontSize: '48px', textAlign: 'center', zIndex: '1000'
+        });
+        document.body.appendChild(this.titleScreenOverlay);
+
+        this.titleText = document.createElement('div');
+        this.titleText.textContent = this.config.gameSettings.titleScreenText;
+        this.titleScreenOverlay.appendChild(this.titleText);
+
+        this.promptText = document.createElement('div');
+        this.promptText.textContent = this.config.gameSettings.startGamePrompt;
+        Object.assign(this.promptText.style, {
+            marginTop: '20px', fontSize: '24px'
+        });
+        this.titleScreenOverlay.appendChild(this.promptText);
+
+        // Add event listener directly to the overlay to capture clicks and start the game
+        this.titleScreenOverlay.addEventListener('click', () => this.startGame());
+
+        // Attempt to play background music. It might be blocked by browsers if no user gesture has occurred yet.
+        this.sounds.get('background_music')?.play().catch(e => console.log("BGM play denied (requires user gesture):", e));
+    }
+
+    /**
+     * Transitions the game from the title screen to the playing state.
+     */
+    private startGame() {
+        this.state = GameState.PLAYING;
+        // Remove the title screen overlay
+        if (this.titleScreenOverlay && this.titleScreenOverlay.parentNode) {
+            document.body.removeChild(this.titleScreenOverlay);
+        }
+        // Add event listener to canvas for re-locking pointer after title screen is gone
+        this.canvas.addEventListener('click', this.handleCanvasReLockPointer.bind(this));
+
+        // Request pointer lock for immersive mouse control
+        this.canvas.requestPointerLock();
+        // Ensure background music plays now that a user gesture has occurred
+        this.sounds.get('background_music')?.play().catch(e => console.log("BGM play failed after user gesture:", e));
+    }
+
+    /**
+     * Handles clicks on the canvas to re-lock the pointer if the game is playing and unlocked.
+     */
+    private handleCanvasReLockPointer() {
+        if (this.state === GameState.PLAYING && !this.isPointerLocked) {
+            this.canvas.requestPointerLock();
+        }
+    }
+
+    /**
+     * Creates the player's visual mesh and physics body.
+     */
+    private createPlayer() {
+        // Player visual mesh (a simple box)
+        const playerTexture = this.textures.get('player_texture');
+        const playerMaterial = new THREE.MeshLambertMaterial({
+            map: playerTexture,
+            color: playerTexture ? 0xffffff : 0x0077ff // Use white with texture, or blue if no texture
+        });
+        const playerGeometry = new THREE.BoxGeometry(1, 2, 1); // Player dimensions
+        this.playerMesh = new THREE.Mesh(playerGeometry, playerMaterial);
+        this.playerMesh.position.y = 5; // Start player slightly above the ground
+        this.playerMesh.castShadow = true; // Player casts a shadow
+        this.scene.add(this.playerMesh);
+
+        // Player physics body (Cannon.js box shape)
+        const playerShape = new CANNON.Box(new CANNON.Vec3(0.5, 1, 0.5)); // Half extents of the box for collision
+        this.playerBody = new CANNON.Body({
+            mass: this.config.gameSettings.playerMass, // Player's mass
+            position: new CANNON.Vec3(this.playerMesh.position.x, this.playerMesh.position.y, this.playerMesh.position.z),
+            shape: playerShape,
+            fixedRotation: true // Prevent the player from falling over (simulates a capsule/cylinder character)
+        });
+        this.world.addBody(this.playerBody);
+
+        // Set initial cameraContainer position to player's physics body position.
+        // The camera itself is a child of cameraContainer and has its own local Y offset.
+        this.cameraContainer.position.copy(this.playerBody.position as unknown as THREE.Vector3);
+    }
+
+    /**
+     * Creates the ground's visual mesh and physics body.
+     */
+    private createGround() {
+        // Ground visual mesh (a large plane)
+        const groundTexture = this.textures.get('ground_texture');
+        const groundMaterial = new THREE.MeshLambertMaterial({
+            map: groundTexture,
+            color: groundTexture ? 0xffffff : 0x888888 // Use white with texture, or grey if no texture
+        });
+        const groundGeometry = new THREE.PlaneGeometry(this.config.gameSettings.groundSize, this.config.gameSettings.groundSize);
+        this.groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
+        this.groundMesh.rotation.x = -Math.PI / 2; // Rotate to lay flat on the XZ plane
+        this.groundMesh.receiveShadow = true; // Ground receives shadows
+        this.scene.add(this.groundMesh);
+
+        // Ground physics body (Cannon.js plane shape)
+        const groundShape = new CANNON.Plane();
+        this.groundBody = new CANNON.Body({
+            mass: 0, // A mass of 0 makes it a static (immovable) body
+            shape: groundShape
+        });
+        // Rotate the Cannon.js plane body to match the Three.js plane orientation (flat)
+        this.groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1, 0, 0), -Math.PI / 2);
+        this.world.addBody(this.groundBody);
+    }
+
+    /**
+     * Sets up ambient and directional lighting in the scene.
+     */
+    private setupLighting() {
+        const ambientLight = new THREE.AmbientLight(0x404040, 1.0); // Soft white ambient light
+        this.scene.add(ambientLight);
+
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8); // Brighter directional light
+        directionalLight.position.set(5, 10, 5); // Position the light source
+        directionalLight.castShadow = true; // Enable shadows from this light source
+        // Configure shadow properties for the directional light
+        directionalLight.shadow.mapSize.width = 1024;
+        directionalLight.shadow.mapSize.height = 1024;
+        directionalLight.shadow.camera.near = 0.5;
+        directionalLight.shadow.camera.far = 50;
+        directionalLight.shadow.camera.left = -10;
+        directionalLight.shadow.camera.right = 10;
+        directionalLight.shadow.camera.top = 10;
+        directionalLight.shadow.camera.bottom = -10;
+        this.scene.add(directionalLight);
+    }
+
+    /**
+     * Handles window resizing to keep the camera aspect ratio and renderer size correct.
+     */
+    private onWindowResize() {
+        this.camera.aspect = window.innerWidth / window.innerHeight;
+        this.camera.updateProjectionMatrix();
+        this.renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+
+    /**
+     * Records which keys are currently pressed down.
+     */
+    private onKeyDown(event: KeyboardEvent) {
+        this.keys[event.key.toLowerCase()] = true;
+    }
+
+    /**
+     * Records which keys are currently released.
+     */
+    private onKeyUp(event: KeyboardEvent) {
+        this.keys[event.key.toLowerCase()] = false;
+    }
+
+    /**
+     * Handles mouse movement for camera rotation (mouse look).
+     */
+    private onMouseMove(event: MouseEvent) {
+        // Only process mouse movement if the game is playing and pointer is locked
+        if (this.state === GameState.PLAYING && this.isPointerLocked) {
+            const movementX = event.movementX || 0;
+            const movementY = event.movementY || 0;
+
+            // Apply horizontal rotation (yaw) to the cameraContainer around its local Y-axis (which is global Y)
+            this.cameraContainer.rotation.y -= movementX * this.config.gameSettings.mouseSensitivity;
+
+            // Apply vertical rotation (pitch) to the camera itself and clamp it
+            // Mouse UP (movementY < 0) now increases cameraPitch -> looks up.
+            // Mouse DOWN (movementY > 0) now decreases cameraPitch -> looks down.
+            this.cameraPitch -= movementY * this.config.gameSettings.mouseSensitivity; 
+            this.cameraPitch = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, this.cameraPitch)); // Clamp to -90 to +90 degrees
+            this.camera.rotation.x = this.cameraPitch;
+        }
+    }
+
+    /**
+     * Updates the pointer lock status when it changes (e.g., user presses Esc).
+     */
+    private onPointerLockChange() {
+        if (document.pointerLockElement === this.canvas ||
+            (document as any).mozPointerLockElement === this.canvas ||
+            (document as any).webkitPointerLockElement === this.canvas) {
+            this.isPointerLocked = true;
+            console.log('Pointer locked');
+        } else {
+            this.isPointerLocked = false;
+            console.log('Pointer unlocked');
+            // When pointer is unlocked by user (e.g., pressing Esc), cursor appears automatically.
+            // Mouse look stops due to `isPointerLocked` check in onMouseMove.
+        }
+    }
+
+    /**
+     * The main game loop, called on every animation frame.
+     */
+    private animate(time: DOMHighResTimeStamp) {
+        requestAnimationFrame(this.animate.bind(this)); // Request next frame
+
+        const deltaTime = (time - this.lastTime) / 1000; // Calculate delta time in seconds
+        this.lastTime = time;
+
+        if (this.state === GameState.PLAYING) {
+            this.updatePlayerMovement(); // Update player's velocity based on input
+            this.updatePhysics(deltaTime); // Step the physics world
+            this.syncMeshesWithBodies(); // Synchronize visual meshes with physics bodies
+        }
+
+        this.renderer.render(this.scene, this.camera); // Render the scene
+    }
+
+    /**
+     * Steps the Cannon.js physics world forward.
+     */
+    private updatePhysics(deltaTime: number) {
+        // world.step(fixedTimeStep, deltaTime, maxSubSteps)
+        // 1/60: A fixed time step of 60 physics updates per second (standard).
+        // deltaTime: The actual time elapsed since the last render frame.
+        // maxPhysicsSubSteps: Limits the number of physics steps in one render frame
+        // to prevent instabilities if rendering slows down significantly.
+        this.world.step(1 / 60, deltaTime, this.config.gameSettings.maxPhysicsSubSteps);
+    }
+
+    /**
+     * Updates the player's velocity based on WASD input and camera orientation.
+     */
+    private updatePlayerMovement() {
+        // Player movement should only happen when the pointer is locked
+        if (!this.isPointerLocked) {
+            // If pointer is not locked, stop horizontal movement immediately
+            this.playerBody.velocity.x = 0;
+            this.playerBody.velocity.z = 0;
+            return; // Exit early as no movement input should be processed
+        }
+
+        const playerSpeed = this.config.gameSettings.playerSpeed;
+        const currentVelocity = this.playerBody.velocity;
+        const desiredHorizontalVelocity = new CANNON.Vec3(0, 0, 0);
+
+        // Get cameraContainer's forward and right vectors to determine movement direction relative to view
+        // cameraContainer represents the player's horizontal facing
+        const cameraDirection = new THREE.Vector3();
+        this.cameraContainer.getWorldDirection(cameraDirection); // Get forward vector of cameraContainer
+        cameraDirection.y = 0; // Flatten the vector to restrict movement to the horizontal plane
+        cameraDirection.normalize();
+
+        const cameraRight = new THREE.Vector3();
+        // Calculate the 'right' vector from the flattened cameraDirection and global Y-up vector (forward cross up = right)
+        cameraRight.crossVectors(cameraDirection, new THREE.Vector3(0, 1, 0)).normalize();
+
+
+        let moving = false;
+        if (this.keys['w']) { // Forward
+            desiredHorizontalVelocity.x += cameraDirection.x;
+            desiredHorizontalVelocity.z += cameraDirection.z;
+            moving = true;
+        }
+        if (this.keys['s']) { // Backward
+            desiredHorizontalVelocity.x -= cameraDirection.x;
+            desiredHorizontalVelocity.z -= cameraDirection.z;
+            moving = true;
+        }
+        if (this.keys['a']) { // Strafe left (subtract the 'right' vector)
+            desiredHorizontalVelocity.x -= cameraRight.x; 
+            desiredHorizontalVelocity.z -= cameraRight.z;
+            moving = true;
+        }
+        if (this.keys['d']) { // Strafe right (add the 'right' vector)
+            desiredHorizontalVelocity.x += cameraRight.x;
+            desiredHorizontalVelocity.z += cameraRight.z;
+            moving = true;
+        }
+
+        if (moving) {
+            // Normalize the combined direction vector and scale by player speed
+            desiredHorizontalVelocity.normalize();
+            desiredHorizontalVelocity.x *= playerSpeed;
+            desiredHorizontalVelocity.z *= playerSpeed;
+
+            // Smoothly accelerate player's horizontal velocity towards the desired velocity
+            const accelerationFactor = 0.2; // Adjust for desired acceleration feel
+            this.playerBody.velocity.x = currentVelocity.x + (desiredHorizontalVelocity.x - currentVelocity.x) * accelerationFactor;
+            this.playerBody.velocity.z = currentVelocity.z + (desiredHorizontalVelocity.z - currentVelocity.z) * accelerationFactor;
+        } else {
+            // If no movement keys are pressed, apply horizontal friction to smoothly decelerate
+            const frictionFactor = 0.8; // Adjust for desired deceleration feel (e.g., 0.9 for slow, 0.5 for fast)
+            this.playerBody.velocity.x *= frictionFactor;
+            this.playerBody.velocity.z *= frictionFactor;
+        }
+
+        // Update cameraContainer position to follow the player's physics body.
+        // The camera itself is a child of cameraContainer and maintains its local offset.
+        this.cameraContainer.position.copy(this.playerBody.position as unknown as THREE.Vector3);
+    }
+
+    /**
+     * Synchronizes the visual meshes with their corresponding physics bodies.
+     */
+    private syncMeshesWithBodies() {
+        // Synchronize player's visual mesh position with its physics body's position
+        this.playerMesh.position.copy(this.playerBody.position as unknown as THREE.Vector3);
+        // Player body has fixed rotation, so its rotation does not need to be copied.
+        // If the player could rotate (e.g., from impacts), its quaternion would also be copied here:
+        // this.playerMesh.quaternion.copy(this.playerBody.quaternion as unknown as THREE.Quaternion);
+
+        // The ground is static, so its position and rotation do not change after initial setup.
+    }
+}
+
+// Start the game when the DOM content is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    new Game();
+});

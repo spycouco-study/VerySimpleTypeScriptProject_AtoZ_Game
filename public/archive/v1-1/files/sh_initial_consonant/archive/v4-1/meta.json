@@ -1,0 +1,113 @@
+{
+    "version": "v4-1",
+    "parent": "v3-1",
+    "timestamp": "2025-11-15T14:19:31.692327",
+    "summary": "단어 리스트를 100개정도 더 늘려줘. 그리고 지금 이미 나왔던 단어는 안나오게 되어있는거야 아니면 이미 나왔던 단어도 다시나오게 되어 있는거야? 그리고 모든 단어를 맞추면 게임이 종료되게 되어 있는거야? 알려줘.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "gameWin.mp3",
+            "path": "assets/gameWin.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "correct.mp3",
+            "path": "assets/correct.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "gameOver.mp3",
+            "path": "assets/gameOver.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "heart.png",
+            "path": "assets/heart.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "wrong.mp3",
+            "path": "assets/wrong.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "a6e9781bd07502ce8bd9c1cedd27c0d82ddcad156bf827267b0a922787ed5878",
+            "size": 5287,
+            "mtime": 1763183966.8214028
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763183267.1763046
+        },
+        "game.ts": {
+            "hash": "cbdcd6f96c5ce358fa4c04a6d950fb0fd2d9d6e4027c5be361f245fbbf736842",
+            "size": 22226,
+            "mtime": 1763183966.7998185
+        },
+        "assets/background.png": {
+            "hash": "5499d20d88cefba20c9776cdb0b4e1068840976ecaf30f134f3f34d5dae7cb7b",
+            "size": 3572,
+            "mtime": 1763183267.1828668
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763183267.1949322
+        },
+        "assets/correct.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763183267.1969385
+        },
+        "assets/gameOver.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763183267.2009509
+        },
+        "assets/gameWin.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1761210852.268536
+        },
+        "assets/heart.png": {
+            "hash": "cfd1bdd9f8e9b320de67299fdaa7e68a88139839b26269b1e9a338da273c43bb",
+            "size": 436,
+            "mtime": 1763183267.20498
+        },
+        "assets/wrong.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763183267.2064867
+        }
+    }
+}

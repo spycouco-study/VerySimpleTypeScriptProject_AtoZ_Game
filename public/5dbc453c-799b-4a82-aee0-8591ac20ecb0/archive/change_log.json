@@ -1,0 +1,20 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-12-04T22:39:28.491127",
+            "summary": "랭킹 시스템(또는 랭킹 기능)을 추가해 주세요.\n랭킹 시스템에 60초 제한시간 규칙을 추가해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-04T23:26:16.712006",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

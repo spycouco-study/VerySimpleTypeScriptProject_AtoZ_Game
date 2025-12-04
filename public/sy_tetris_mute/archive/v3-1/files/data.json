@@ -1,0 +1,64 @@
+{
+  "gameSettings": {
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "boardWidth": 10,
+    "boardHeight": 20,
+    "blockSize": 30,
+    "initialFallSpeed": 500,
+    "speedIncreaseRate": 0.85,
+    "levelUpLines": 10,
+    "scorePerLine": 100,
+    "scorePerTetris": 800,
+    "boardOffsetX": 200,
+    "boardOffsetY": 30,
+    "nextPieceOffsetX": 550,
+    "nextPieceOffsetY": 100,
+    "scoreTextOffsetX": 550,
+    "scoreTextOffsetY": 300,
+    "levelTextOffsetX": 550,
+    "levelTextOffsetY": 350,
+    "linesTextOffsetX": 550,
+    "linesTextOffsetY": 400
+  },
+  "colors": {
+    "boardBackground": "#000000",
+    "gridLine": "#222222",
+    "textPrimary": "#FFFFFF",
+    "textSecondary": "#CCCCCC",
+    "i_piece": "#00FFFF",
+    "o_piece": "#FFFF00",
+    "t_piece": "#800080",
+    "s_piece": "#00FF00",
+    "z_piece": "#FF0000",
+    "j_piece": "#0000FF",
+    "l_piece": "#FFA500",
+    "outline": "#555555"
+  },
+  "tetrominoes": [
+    { "name": "I", "color": "i_piece", "shape": [ [0,0,0,0], [1,1,1,1], [0,0,0,0], [0,0,0,0] ] },
+    { "name": "O", "color": "o_piece", "shape": [ [1,1], [1,1] ] },
+    { "name": "T", "color": "t_piece", "shape": [ [0,1,0], [1,1,1], [0,0,0] ] },
+    { "name": "S", "color": "s_piece", "shape": [ [0,1,1], [1,1,0], [0,0,0] ] },
+    { "name": "Z", "color": "z_piece", "shape": [ [1,1,0], [0,1,1], [0,0,0] ] },
+    { "name": "J", "color": "j_piece", "shape": [ [1,0,0], [1,1,1], [0,0,0] ] },
+    { "name": "L", "color": "l_piece", "shape": [ [0,0,1], [1,1,1], [0,0,0] ] }
+  ],
+  "assets": {
+    "images": [
+      { "name": "block", "path": "assets/block.png", "width": 32, "height": 32 },
+      { "name": "background", "path": "assets/background.png", "width": 800, "height": 600 },
+      { "name": "title_screen_bg", "path": "assets/title_screen_bg.png", "width": 800, "height": 600 },
+      { "name": "sound_on_icon", "path": "assets/sound_on.png", "width": 32, "height": 32 },
+      { "name": "sound_off_icon", "path": "assets/sound_off.png", "width": 32, "height": 32 }
+    ],
+    "sounds": [
+      { "name": "bgm", "path": "assets/tetris_bgm.mp3", "duration_seconds": 180.0, "volume": 0.3 },
+      { "name": "line_clear", "path": "assets/line_clear.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+      { "name": "rotate", "path": "assets/rotate.mp3", "duration_seconds": 0.2, "volume": 0.5 },
+      { "name": "move", "path": "assets/move.mp3", "duration_seconds": 0.1, "volume": 0.4 },
+      { "name": "land", "path": "assets/land.mp3", "duration_seconds": 0.3, "volume": 0.6 },
+      { "name": "game_over", "path": "assets/game_over.mp3", "duration_seconds": 2.0, "volume": 0.8 }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "canvas": {
+    "width": 800,
+    "height": 600
+  },
+  "game": {
+    "gravity": 0.5,
+    "player_flap_strength": -10,
+    "player_max_fall_speed": 10,
+    "player_bounce_strength": -5,
+    "obstacle_speed": 4,
+    "obstacle_interval_min": 1500,
+    "obstacle_interval_max": 2500,
+    "obstacle_gap_height": 180,
+    "obstacle_width": 70,
+    "background_scroll_speed": 1,
+    "initial_player_y_velocity": 0,
+    "game_over_delay_ms": 1000
+  },
+  "player": {
+    "start_x": 100,
+    "start_y": 250,
+    "width": 80,
+    "height": 60,
+    "image": "player_fish"
+  },
+  "obstacles": [
+    {
+      "name": "rock_obstacle",
+      "image_top": "obstacle_rock_top",
+      "image_bottom": "obstacle_rock_bottom"
+    },
+    {
+      "name": "fish_obstacle_1",
+      "image_top": "fish_obstacle_1_top",
+      "image_bottom": "fish_obstacle_1_bottom"
+    },
+    {
+      "name": "fish_obstacle_2",
+      "image_top": "fish_obstacle_2_top",
+      "image_bottom": "fish_obstacle_2_bottom"
+    }
+  ],
+  "text": {
+    "title_main": "Fishy Dash!",
+    "title_sub": "Press SPACE to Start",
+    "instructions_title": "조작 방법",
+    "instructions_line1": "SPACE 키: 헤엄쳐 오르기",
+    "instructions_line2": "장애물을 피하세요!",
+    "instructions_line3": "최고 점수를 획득하세요!",
+    "instructions_continue": "SPACE 키를 눌러 게임 시작",
+    "game_over_main": "게임 오버",
+    "game_over_score": "점수: ",
+    "game_over_restart": "SPACE 키를 눌러 다시 시작"
+  },
+  "assets": {
+    "images": [
+      { "name": "player_fish", "path": "assets/player_fish.png", "width": 128, "height": 96 },
+      { "name": "background_ocean", "path": "assets/background_ocean.png", "width": 800, "height": 600 },
+      { "name": "obstacle_rock_top", "path": "assets/obstacle_rock_top.png", "width": 100, "height": 300 },
+      { "name": "obstacle_rock_bottom", "path": "assets/obstacle_rock_bottom.png", "width": 100, "height": 300 },
+      { "name": "fish_obstacle_1_top", "path": "assets/fish_obstacle_1_top.png", "width": 100, "height": 300 },
+      { "name": "fish_obstacle_1_bottom", "path": "assets/fish_obstacle_1_bottom.png", "width": 100, "height": 300 },
+      { "name": "fish_obstacle_2_top", "path": "assets/fish_obstacle_2_top.png", "width": 100, "height": 300 },
+      { "name": "fish_obstacle_2_bottom", "path": "assets/fish_obstacle_2_bottom.png", "width": 100, "height": 300 }
+    ],
+    "sounds": [
+      { "name": "flap_sound", "path": "assets/flap_sound.mp3", "duration_seconds": 0.2, "volume": 0.5 },
+      { "name": "hit_sound", "path": "assets/hit_sound.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+      { "name": "bg_music", "path": "assets/bg_music.mp3", "duration_seconds": 90.0, "volume": 0.3 }
+    ]
+  }
+}

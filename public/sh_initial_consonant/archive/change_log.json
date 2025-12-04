@@ -61,6 +61,14 @@
             "parent": "v4-1",
             "timestamp": "2025-11-19T19:50:26.994013",
             "summary": "game.js 생성",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v6-1",
+            "parent": "v5-1",
+            "timestamp": "2025-12-04T22:55:02.342605",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

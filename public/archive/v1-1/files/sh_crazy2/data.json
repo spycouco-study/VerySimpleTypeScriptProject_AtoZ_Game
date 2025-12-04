@@ -1,0 +1,69 @@
+{
+    "assets": {
+        "images": [
+            { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+            { "name": "wall", "path": "assets/wall.png", "width": 64, "height": 64 },
+            { "name": "destructible_block", "path": "assets/destructible_block.png", "width": 64, "height": 64 },
+            { "name": "bomb", "path": "assets/bomb.png", "width": 64, "height": 64 },
+            { "name": "explosion", "path": "assets/explosion.png", "width": 64, "height": 64 },
+            { "name": "powerup_speed", "path": "assets/powerup_speed.png", "width": 32, "height": 32 },
+            { "name": "powerup_bomb", "path": "assets/powerup_bomb.png", "width": 32, "height": 32 },
+            { "name": "powerup_range", "path": "assets/powerup_range.png", "width": 32, "height": 32 },
+            { "name": "ground", "path": "assets/ground.png", "width": 128, "height": 128 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 },
+            { "name": "bomb_plant_sound", "path": "assets/bomb_plant.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+            { "name": "bomb_explosion_sound", "path": "assets/bomb_explosion.mp3", "duration_seconds": 1.0, "volume": 0.8 },
+            { "name": "powerup_sound", "path": "assets/powerup.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+            { "name": "player_death_sound", "path": "assets/player_death.mp3", "duration_seconds": 1.5, "volume": 0.9 },
+            { "name": "game_win_sound", "path": "assets/game_win.mp3", "duration_seconds": 2.0, "volume": 0.9 }
+        ]
+    },
+    "gameConfig": {
+        "tileSize": 2,
+        "mapWidth": 11,
+        "mapHeight": 11,
+        "playerSpeed": 2.5,
+        "bombFuseTime": 2.5,
+        "explosionRange": 1,
+        "maxBombs": 1,
+        "powerUpSpawnChance": 0.4,
+        "initialMap": [
+            "WWWWWWWWWWW",
+            "WDPDPDPDPDW",
+            "WDWDWDWDWDW",
+            "WDPDPDPDPDW",
+            "WDWDWDWDWDW",
+            "WDPDPDPDPDW",
+            "WDWDWDWDWDW",
+            "WDPDPDPDPDW",
+            "WDWDWDWDWDW",
+            "WDPDPDPDPDW",
+            "WWWWWWWWWWW"
+        ],
+        "colors": {
+            "player": "#0099FF",
+            "wall": "#808080",
+            "destructible": "#A0522D",
+            "bomb": "#FF0000",
+            "explosion": "#FF8C00",
+            "ground": "#556B2F",
+            "background": "#87CEEB",
+            "uiText": "#FFFFFF",
+            "speed": "#00FF00",
+            "bomb": "#0000FF",
+            "range": "#FFFF00"
+        },
+        "camera": {
+            "position": [0, -15, 15],
+            "lookAt": [0, 0, 0]
+        },
+        "ui": {
+            "titleText": "CRAZY 3D BOMBER!",
+            "startButtonText": "Press SPACE to Start",
+            "gameOverText": "GAME OVER",
+            "winText": "YOU WIN!"
+        }
+    }
+}

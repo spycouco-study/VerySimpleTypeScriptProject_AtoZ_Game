@@ -1,10 +1,10 @@
 {
-    "id": "sy_ww2_shooting",
-    "game_title": "sy_ww2_shooting",
-    "author": "sy",
-    "category": "etc",
-    "thumbnail": "/static/sy_ww2_shooting/assets/thumbnail.png",
-    "plays": 337,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 55
+  "id": "sy_ww2_shooting",
+  "game_title": "스카이 레이더스",
+  "author": "sy",
+  "category": "etc",
+  "thumbnail": "/static/sy_ww2_shooting/assets/thumbnail.png",
+  "plays": 337,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 55
 }

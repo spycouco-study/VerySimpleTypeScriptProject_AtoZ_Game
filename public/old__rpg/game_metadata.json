@@ -1,10 +1,10 @@
 {
-    "id": "old__rpg",
-    "game_title": "old__rpg",
-    "author": "sy",
-    "category": "etc",
-    "thumbnail": "/static/old__rpg/assets/thumbnail.png",
-    "plays": 6,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 2
+  "id": "old__rpg",
+  "game_title": "RPG 게임",
+  "author": "sy",
+  "category": "etc",
+  "thumbnail": "/static/old__rpg/assets/thumbnail.png",
+  "plays": 6,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 2
 }

@@ -21,6 +21,14 @@
             "parent": "v2-1",
             "timestamp": "2025-11-27T06:51:41.220362",
             "summary": "마우스클릭으로 사운드 on/off 기능이 동작하도록 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-12-04T23:03:06.187072",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

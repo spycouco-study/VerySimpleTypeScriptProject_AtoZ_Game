@@ -1,10 +1,10 @@
 {
-    "id": "old__snake",
-    "game_title": "old__snake",
-    "author": "sy",
-    "category": "etc",
-    "thumbnail": "/static/old__snake/assets/thumbnail.png",
-    "plays": 665,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 200
+  "id": "old__snake",
+  "game_title": "사과를 찾아서",
+  "author": "sy",
+  "category": "etc",
+  "thumbnail": "/static/old__snake/assets/thumbnail.png",
+  "plays": 665,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 200
 }

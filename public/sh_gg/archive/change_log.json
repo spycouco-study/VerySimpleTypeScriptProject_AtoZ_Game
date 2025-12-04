@@ -21,6 +21,14 @@
             "parent": "v2-1",
             "timestamp": "2025-11-18T16:22:14.692796",
             "summary": "게임이 아직도 실행되지 않고, 빈 화면만 계속 뜹니다. 게임을 실행할 수 있게 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-12-04T23:34:44.089670",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

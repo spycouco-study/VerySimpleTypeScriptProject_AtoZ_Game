@@ -5,6 +5,14 @@
             "parent": null,
             "timestamp": "2025-11-29T23:50:48.603384",
             "summary": "수직 스크롤 슈팅 게임을 만들어 주세요.\n분위기는 2차대전 분위기로 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-04T23:14:55.801029",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

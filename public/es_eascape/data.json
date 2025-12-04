@@ -1,0 +1,49 @@
+{
+  "assets": {
+    "images": [
+      { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+      { "name": "enemy", "path": "assets/enemy.png", "width": 64, "height": 64 },
+      { "name": "bullet", "path": "assets/bullet.png", "width": 10, "height": 20 },
+      { "name": "background", "path": "assets/background.png", "width": 800, "height": 600 }
+    ],
+    "sounds": [
+      { "name": "shoot", "path": "assets/shoot.mp3", "duration_seconds": 0.2, "volume": 0.5 },
+      { "name": "explosion", "path": "assets/explosion.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+      { "name": "player_hit", "path": "assets/player_hit.mp3", "duration_seconds": 0.3, "volume": 0.8 },
+      { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 120.0, "volume": 0.3 }
+    ]
+  },
+  "gameSettings": {
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "player": {
+      "speed": 200,
+      "health": 3,
+      "width": 50,
+      "height": 50,
+      "fireCooldown": 0.3
+    },
+    "bullet": {
+      "speed": 400,
+      "width": 10,
+      "height": 20,
+      "damage": 1
+    },
+    "enemy": {
+      "speedMin": 80,
+      "speedMax": 150,
+      "health": 1,
+      "width": 40,
+      "height": 40,
+      "scoreValue": 10
+    },
+    "enemySpawnInterval": 1.5,
+    "initialScore": 0,
+    "titleScreenText": "SPACE SHOOTER",
+    "gameOverScreenText": "GAME OVER! Score: ",
+    "restartScreenText": "Press any key to restart",
+    "fontFamily": "Arial",
+    "fontSize": 40,
+    "textColor": "#FFFFFF"
+  }
+}

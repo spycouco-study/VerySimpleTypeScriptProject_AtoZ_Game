@@ -1,10 +1,10 @@
 {
-    "id": "3c4f120a-df6a-4242-b5db-359e1aecd39b",
-    "game_title": "3c4f120a-df6a-4242-b5db-359e1aecd39b",
-    "author": "sy",
-    "category": "etc",
-    "thumbnail": "/static/3c4f120a-df6a-4242-b5db-359e1aecd39b/assets/thumbnail.png",
-    "plays": 655,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 614
+  "id": "3c4f120a-df6a-4242-b5db-359e1aecd39b",
+  "game_title": "지뢰 찾기",
+  "author": "sy",
+  "category": "etc",
+  "thumbnail": "/static/3c4f120a-df6a-4242-b5db-359e1aecd39b/assets/thumbnail.png",
+  "plays": 655,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 614
 }

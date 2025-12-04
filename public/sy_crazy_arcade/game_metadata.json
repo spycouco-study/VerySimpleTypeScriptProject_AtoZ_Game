@@ -1,10 +1,10 @@
 {
-    "id": "sy_crazy_arcade",
-    "game_title": "sy_crazy_arcade",
-    "author": "sy",
-    "category": "etc",
-    "thumbnail": "/static/sy_crazy_arcade/assets/thumbnail.png",
-    "plays": 617,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 112
+  "id": "sy_crazy_arcade",
+  "game_title": "물풍선을 터뜨려라!",
+  "author": "sy",
+  "category": "etc",
+  "thumbnail": "/static/sy_crazy_arcade/assets/thumbnail.png",
+  "plays": 617,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 112
 }

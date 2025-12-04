@@ -1,0 +1,20 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-12-04T15:35:33.349917",
+            "summary": "obstacle2와 3을 각각 다른 종류의 물고기 이미지로 변경해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-04T23:24:34.694485",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

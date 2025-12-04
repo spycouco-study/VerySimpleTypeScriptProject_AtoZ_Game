@@ -1,0 +1,92 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-20T22:59:36.186950",
+    "summary": "공을 튀길 수도 있고 굴릴 수도 있는 간단한 3D 게임을 만들어주세요.\n물리적인 충돌과 탄성을 구현해주세요.\n마우스로 카메라 시점을 조정할 수 있게 해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "ball.png",
+            "path": "assets/ball.png",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "bounce.mp3",
+            "path": "assets/bounce.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "ground.png",
+            "path": "assets/ground.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "94e8241b3406698fc2459a8f89998f7c644e96ac99acb74f5835b619942ef2a4",
+            "size": 1355,
+            "mtime": 1763647172.4199922
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763347007.4116573
+        },
+        "game.js": {
+            "hash": "b7b779e2259a498b3c25341746b2b11e48c83dc83fe0f29865bff058951f5cbd",
+            "size": 29274,
+            "mtime": 1763647175.700644
+        },
+        "game.ts": {
+            "hash": "fc38e67cacf93d02436d63bfa5d004256679d6e2324dcc614a5bb949c3facffc",
+            "size": 33001,
+            "mtime": 1763647172.331853
+        },
+        "assets/ball.png": {
+            "hash": "e81f7e4845aa807e7c176adecf27ba378f30c64de912d9f43d94a6242177e3ad",
+            "size": 900,
+            "mtime": 1763647172.388254
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347007.4590375
+        },
+        "assets/bounce.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/ground.png": {
+            "hash": "2e10b226de2b517e9472846a97cd3f17ddf83e6363692ba596216b6746cd5299",
+            "size": 1490,
+            "mtime": 1763647172.388254
+        }
+    }
+}

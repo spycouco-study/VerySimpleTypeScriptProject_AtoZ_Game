@@ -53,6 +53,14 @@
             "parent": "v6-1",
             "timestamp": "2025-11-30T10:09:06.478454",
             "summary": "플레이어가 슬라이드 동작을 사용할 수 있도록 공중에 떠있는 형태의 방해물을 게임 내에 생성해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v8-1",
+            "parent": "v7-1",
+            "timestamp": "2025-12-04T23:11:26.769368",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

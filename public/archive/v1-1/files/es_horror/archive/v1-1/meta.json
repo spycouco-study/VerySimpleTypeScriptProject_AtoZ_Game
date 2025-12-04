@@ -1,0 +1,92 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-27T16:01:34.400926",
+    "summary": "공포 게임을 만들어주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "gameOver.mp3",
+            "path": "assets/gameOver.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "obstacle.png",
+            "path": "assets/obstacle.png",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "53cc791379d50b97cb511cd1eb4f47bd70d4f3f7c59e8eeeb147baa421d9fcf4",
+            "size": 1448,
+            "mtime": 1764226888.6758854
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "d3bdfdd2a33f64437d3befd0824deda766e1617b96c041c0fd2337668dafa33d",
+            "size": 43093,
+            "mtime": 1764226894.1610765
+        },
+        "game.ts": {
+            "hash": "1e3711a71ea52e5d0a013026647ec53f259ab3aa87f3562ed1da24ecb7859e87",
+            "size": 18055,
+            "mtime": 1764226888.4221144
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/gameOver.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/obstacle.png": {
+            "hash": "1f5dfa3855511f49a8e35c443c3d36365aa381cda790c63dc2097b8a81934443",
+            "size": 520,
+            "mtime": 1764226888.6554594
+        },
+        "assets/player.png": {
+            "hash": "dff6e6568ffb657eee775f2818bfe18b6a5432ced214f4398a701046e2e07303",
+            "size": 604,
+            "mtime": 1764226888.6482246
+        }
+    }
+}

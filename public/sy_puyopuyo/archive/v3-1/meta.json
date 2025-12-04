@@ -1,0 +1,178 @@
+{
+    "version": "v3-1",
+    "parent": "v2-1",
+    "timestamp": "2025-12-04T23:09:55.242175",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Delete"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "spec.md",
+            "path": "spec.md",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "chain_sfx.mp3",
+            "path": "assets/chain_sfx.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "match_sfx.mp3",
+            "path": "assets/match_sfx.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "match_sfx.mpm3",
+            "path": "assets/match_sfx.mpm3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "puyo_blue.png",
+            "path": "assets/puyo_blue.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "puyo_green.png",
+            "path": "assets/puyo_green.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "puyo_purple.png",
+            "path": "assets/puyo_purple.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "puyo_red.png",
+            "path": "assets/puyo_red.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "puyo_yellow.png",
+            "path": "assets/puyo_yellow.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "0f9da37dc357c0cce27cd65d761ef266e48ccf184292f85e1b2ed2f0029e1dcc",
+            "size": 1873,
+            "mtime": 1763445635.0658386
+        },
+        "game.js": {
+            "hash": "062a3cdaeec5f41523a9eac0075c9ce565601dd9b2f33ed44fe72fe53e87eab6",
+            "size": 31587,
+            "mtime": 1763978778.322151
+        },
+        "game.ts": {
+            "hash": "15681356b437456b497d8205ce61cbcc127a03af7a027b7a0c801be6faa36463",
+            "size": 34072,
+            "mtime": 1763445635.0703785
+        },
+        "spec.md": {
+            "hash": "a8a9d29c78d7c80bb08baa55fe96dcc4447d9fc05af04700ea44054b834d4f4f",
+            "size": 2197,
+            "mtime": 1763445635.0730028
+        },
+        "assets/background.png": {
+            "hash": "da0fde4799da612af2e358a3275dcc530bbb6595548cbedd8a5e71706e81fdea",
+            "size": 3384,
+            "mtime": 1763445635.0017662
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763445635.059055
+        },
+        "assets/chain_sfx.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445635.0605228
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826742.4484317
+        },
+        "assets/match_sfx.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445635.0618305
+        },
+        "assets/match_sfx.mpm3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763445635.0628295
+        },
+        "assets/puyo_blue.png": {
+            "hash": "53d3d0d36250d01da598f93aca16df5b4b178ef8ec977b2cca2feced839b9b99",
+            "size": 497,
+            "mtime": 1763445635.0628295
+        },
+        "assets/puyo_green.png": {
+            "hash": "3935190f0e9f491e6359e5e2a7739b7f600565fb8bc9b53ec58f331e96000a98",
+            "size": 465,
+            "mtime": 1763445635.0638301
+        },
+        "assets/puyo_purple.png": {
+            "hash": "e09e24d85621ff21004b1299bf1d0fe6755377ad84ff32febc3e5138421da1a7",
+            "size": 431,
+            "mtime": 1763445635.0638301
+        },
+        "assets/puyo_red.png": {
+            "hash": "397a76446889fc8f430bead372137e03cdd3134e9f7e574e9c73d26cd53e54bf",
+            "size": 577,
+            "mtime": 1763445635.064839
+        },
+        "assets/puyo_yellow.png": {
+            "hash": "41bdd1240fae4a0d8b49e2413047093cef9217e71458c93d5ecfe6b0bdb1ba5c",
+            "size": 490,
+            "mtime": 1763445635.064839
+        },
+        "assets/thumbnail.png": {
+            "hash": "be3eeac0f23531d0b7a369feb32fbe2df2a967fb4305cebee5143b53002fad0e",
+            "size": 28040,
+            "mtime": 1764857395.1445937
+        }
+    }
+}

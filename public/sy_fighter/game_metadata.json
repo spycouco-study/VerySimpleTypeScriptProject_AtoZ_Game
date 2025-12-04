@@ -1,10 +1,10 @@
 {
-    "id": "sy_fighter",
-    "game_title": "sy_fighter",
-    "author": "sy",
-    "category": "etc",
-    "thumbnail": "/static/sy_fighter/assets/thumbnail.png",
-    "plays": 177,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 76
+  "id": "sy_fighter",
+  "game_title": "철권",
+  "author": "sy",
+  "category": "etc",
+  "thumbnail": "/static/sy_fighter/assets/thumbnail.png",
+  "plays": 177,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 76
 }

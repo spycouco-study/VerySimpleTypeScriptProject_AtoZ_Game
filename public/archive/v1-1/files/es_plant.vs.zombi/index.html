@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alparka!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+  </head>
+  <body>
+    <div id="gameContainer">
+      <h2>알아서 만들어 주는 AI 놀이공원, Alparka!</h2>
+      <canvas id="gameCanvas" width="1080" height="720"></canvas>
+    </div>
+    <script defer>
+      const SERVER_URL = "http://localhost:8000/client-error";
+
+      // 🌟 1. 원래 함수들을 전역적으로 백업
+      const originalConsoleLog = window.console.log;
+      const originalConsoleError = window.console.error;
+      const originalConsoleWarn = window.console.warn;
+
+      // 🔥 2. 중복 방지를 위한 에러 캐시 (해시맵)
+      const errorCache = new Map();
+      const ERROR_CACHE_LIMIT = 100; // 최대 캐시 개수
+      const ERROR_DEDUPE_WINDOW = 5000; // 5초 내 동일 에러는 무시
+
+      // 🔥 추가: 초고속 에러 폭주 방어 (Circuit Breaker)
+      let errorCount = 0;
+      let errorCountResetTimer = null;
+      const MAX_ERRORS_PER_SECOND = 50; // 초당 최대 50개까지만 처리
+
+      function isErrorFlood() {
+        errorCount++;
+
+        // 타이머 초기화
+        if (errorCountResetTimer) {
+          clearTimeout(errorCountResetTimer);
+        }
+
+        errorCountResetTimer = setTimeout(() => {
+          errorCount = 0;
+        }, 1000);
+
+        // 임계값 초과 시 차단
+        if (errorCount > MAX_ERRORS_PER_SECOND) {
+          if (errorCount === MAX_ERRORS_PER_SECOND + 1) {
+            originalConsoleError.call(
+              window.console,
+              "🚨 에러 폭주 감지! 일부 에러 무시 중..."
+            );
+          }
+          return true;
+        }
+
+        return false;
+      }
+
+      // 🔥 3. 에러 고유 키 생성 함수
+      function getErrorKey(errorData) {
+        const { type, message, source, lineno, colno, stack } = errorData;
+
+        // 옵션 1: 기본 - 같은 위치 + 같은 메시지 = 동일 에러
+        // return `${type}:${message}:${source || ''}:${lineno || ''}:${colno || ''}`;
+
+        // 옵션 2: 스택 트레이스 포함 - 더 정확한 식별
+        // (스택의 첫 3줄만 사용해서 키 길이 제한)
+        const stackHash =
+          stack && stack !== "N/A"
+            ? stack.split("\n").slice(0, 3).join("|")
+            : "";
+        return `${type}:${message}:${stackHash}`;
+
+        // 옵션 3: 완전히 모든 에러 전송 (중복 제거 안함)
+        // return `${type}:${message}:${Date.now()}:${Math.random()}`;
+      }
+
+      // 🔥 4. 중복 체크 함수 (Race condition 방지)
+      function isDuplicateError(errorData) {
+        const key = getErrorKey(errorData);
+
+        // ⚡ 즉시 캐시 확인 및 등록 (원자적 연산)
+        if (errorCache.has(key)) {
+          return true; // 중복!
+        }
+
+        // 🔥 즉시 캐시에 등록 (다음 에러가 오기 전에!)
+        errorCache.set(key, true);
+
+        // 캐시 크기 제한 (오래된 항목 삭제)
+        if (errorCache.size > ERROR_CACHE_LIMIT) {
+          const firstKey = errorCache.keys().next().value;
+          errorCache.delete(firstKey);
+        }
+
+        return false;
+      }
+
+      // 공통 전송 + 콘솔 출력 함수
+      function sendError(data) {
+        // 🔥 1단계: 에러 폭주 체크 (Circuit Breaker)
+        if (isErrorFlood()) {
+          return; // 초당 50개 초과 시 무시
+        }
+
+        // 🔥 2단계: 중복 체크를 맨 먼저 실행 (다른 작업보다 우선)
+        if (isDuplicateError(data)) {
+          originalConsoleLog.call(
+            window.console,
+            "%c🔄 중복 에러 무시",
+            "color: gray; font-style: italic;",
+            data.type,
+            data.message
+          );
+          return; // 즉시 종료
+        }
+
+        // 이제 안전하게 나머지 작업 수행
+        data.game_version = "1.0.1";
+        data.time = new Date().toISOString();
+
+        // 부모 페이지로 오류 데이터 전달 (postMessage)
+        try {
+          window.parent.postMessage(
+            {
+              source: "alparka-game-iframe",
+              type: "error-report",
+              payload: data,
+            },
+            "*"
+          );
+        } catch (e) {
+          originalConsoleWarn.call(
+            window.console,
+            "🚨 부모 창으로 메시지 전송 실패:",
+            e
+          );
+        }
+
+        // 타입별 콘솔 출력
+        switch (data.type) {
+          case "console-error":
+            originalConsoleError.call(
+              window.console,
+              "%c📥 콘솔 에러",
+              "color: green; font-weight: bold;",
+              data
+            );
+            break;
+          case "console-warn":
+            originalConsoleWarn.call(
+              window.console,
+              "%c⚠️ 콘솔 경고",
+              "color: orange; font-weight: bold;",
+              data
+            );
+            break;
+          case "page-load":
+            originalConsoleLog.call(
+              window.console,
+              "%c📥 페이지 접속 완료",
+              "color: green; font-weight: bold;",
+              data
+            );
+            break;
+          case "js-error":
+            originalConsoleError.call(
+              window.console,
+              "%c💥 JS 런타임 에러",
+              "color: red; font-weight: bold;",
+              data
+            );
+            break;
+          case "unhandledrejection":
+            originalConsoleError.call(
+              window.console,
+              "%c⚠️ Promise 비동기 에러",
+              "color: orange; font-weight: bold;",
+              data
+            );
+            break;
+          case "resource-error":
+            originalConsoleWarn.call(
+              window.console,
+              "%c🖼️ 리소스 로드 실패",
+              "color: purple; font-weight: bold;",
+              data
+            );
+            break;
+          case "fetch-failed":
+            originalConsoleError.call(
+              window.console,
+              "%c📡 서버 전송 실패",
+              "color: darkred; font-weight: bold;",
+              data
+            );
+            break;
+          case "media-error":
+            originalConsoleError.call(
+              window.console,
+              "%c🔊 미디어 재생 실패",
+              "color: darkorange; font-weight: bold;",
+              data
+            );
+            break;
+          case "game-loop-error":
+            originalConsoleError.call(
+              window.console,
+              "%c🎮 게임 루프 에러",
+              "color: crimson; font-weight: bold;",
+              data
+            );
+            break;
+          default:
+            originalConsoleLog.call(
+              window.console,
+              "%cℹ️ 기타 이벤트",
+              "color: blue;",
+              data
+            );
+            break;
+        }
+
+        // 서버 전송
+        fetch(SERVER_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        }).catch((err) => {
+          originalConsoleError.call(
+            window.console,
+            "❌ 서버 전송 실패 (fetch catch):",
+            err
+          );
+          const failData = {
+            type: "fetch-failed",
+            original: data,
+            reason: err.message,
+          };
+          originalConsoleLog.call(
+            window.console,
+            "📡 fetch 실패 로그:",
+            failData
+          );
+        });
+      }
+
+      // 🔥 1️⃣ JS 런타임 에러 (window.onerror)
+      window.onerror = function (message, source, lineno, colno, error) {
+        sendError({
+          type: "js-error",
+          message: String(message),
+          source: source || "unknown",
+          lineno: lineno || 0,
+          colno: colno || 0,
+          stack: error ? error.stack : "N/A",
+        });
+        return false; // 브라우저 기본 에러 처리도 실행
+      };
+
+      // 🔥 2️⃣ Promise rejection 에러 (unhandledrejection)
+      window.addEventListener("unhandledrejection", function (event) {
+        sendError({
+          type: "unhandledrejection",
+          message: event.reason ? String(event.reason) : "Promise rejected",
+          source: "promise",
+          lineno: 0,
+          colno: 0,
+          stack:
+            event.reason && event.reason.stack ? event.reason.stack : "N/A",
+        });
+      });
+
+      // 🔥 3️⃣ 리소스 로드 에러 (error 이벤트 캡처)
+      window.addEventListener(
+        "error",
+        function (event) {
+          if (event.target !== window) {
+            // img, script, link 등의 리소스 로드 실패
+            sendError({
+              type: "resource-error",
+              message: `Failed to load: ${event.target.tagName}`,
+              source: event.target.src || event.target.href || "unknown",
+              lineno: 0,
+              colno: 0,
+              stack: "N/A",
+            });
+          }
+        },
+        true // 캡처 단계에서 이벤트 감지
+      );
+
+      // 🔥 4️⃣ console.error 오버라이드
+      window.console.error = function (...args) {
+        originalConsoleError.apply(window.console, args);
+
+        const message = args
+          .map((arg) => {
+            if (typeof arg === "object" && arg !== null) {
+              try {
+                return JSON.stringify(arg);
+              } catch {
+                return String(arg);
+              }
+            }
+            return String(arg);
+          })
+          .join(" ");
+
+        sendError({
+          type: "console-error",
+          message: message,
+          source: "console.error",
+          lineno: 0,
+          colno: 0,
+          detail: args.length > 0 ? args[0] : null,
+        });
+      };
+
+      // 🔥 5️⃣ console.warn 오버라이드 (선택사항)
+      // 💡 warn은 코드 실행에 치명적이지 않으므로 필요시에만 활성화
+      // 개발 단계에서는 유용하지만, 프로덕션에서는 너무 많은 로그 발생 가능
+
+      // 옵션 1: warn도 모두 전송 (개발 환경 추천)
+      /*
+      window.console.warn = function (...args) {
+        originalConsoleWarn.apply(window.console, args);
+
+        const message = args
+          .map((arg) => {
+            if (typeof arg === "object" && arg !== null) {
+              try {
+                return JSON.stringify(arg);
+              } catch {
+                return String(arg);
+              }
+            }
+            return String(arg);
+          })
+          .join(" ");
+
+        sendError({
+          type: "console-warn",
+          message: message,
+          source: "console.warn",
+          lineno: 0,
+          colno: 0,
+          detail: args.length > 0 ? args[0] : null,
+        });
+      };
+      */
+
+      // 옵션 2: 중요한 warn만 필터링해서 전송 (프로덕션 추천)
+      window.console.warn = function (...args) {
+        originalConsoleWarn.apply(window.console, args);
+
+        const message = args
+          .map((arg) => {
+            if (typeof arg === "object" && arg !== null) {
+              try {
+                return JSON.stringify(arg);
+              } catch {
+                return String(arg);
+              }
+            }
+            return String(arg);
+          })
+          .join(" ");
+
+        // 🎯 특정 키워드가 포함된 경우만 전송
+        const criticalKeywords = [
+          "deprecated",
+          "memory",
+          "performance",
+          "leak",
+          "failed",
+        ];
+        const isCritical = criticalKeywords.some((keyword) =>
+          message.toLowerCase().includes(keyword)
+        );
+
+        if (isCritical) {
+          sendError({
+            type: "console-warn-critical",
+            message: message,
+            source: "console.warn",
+            lineno: 0,
+            colno: 0,
+            detail: args.length > 0 ? args[0] : null,
+          });
+        }
+      };
+
+      // // 🔥 6️⃣ 페이지 로드 완료 (선택사항)
+      // window.addEventListener("load", function () {
+      //   sendError({
+      //     type: "page-load",
+      //     message: "Page loaded successfully",
+      //     source: window.location.href,
+      //     lineno: 0,
+      //     colno: 0,
+      //   });
+      // });
+
+      // 🔥 7️⃣ SecurityError, CORS 등 특수 에러 감지
+      window.addEventListener("securitypolicyviolation", function (event) {
+        sendError({
+          type: "security-error",
+          message: `CSP violation: ${event.violatedDirective}`,
+          source: event.sourceFile || "unknown",
+          lineno: event.lineNumber || 0,
+          colno: event.columnNumber || 0,
+          stack: "N/A",
+        });
+      });
+
+      // 🔥 8️⃣ requestAnimationFrame 에러 감지
+      // 참고: game.js에서 게임 루프를 try-catch로 감싸는 것 권장
+      const originalRAF = window.requestAnimationFrame;
+      // const IS_DEVELOPMENT =
+      //   window.location.hostname === "localhost" ||
+      //   window.location.hostname === "127.0.0.1";
+
+      window.requestAnimationFrame = function (callback) {
+        return originalRAF.call(window, function (time) {
+          try {
+            callback(time);
+          } catch (error) {
+            sendError({
+              type: "raf-error",
+              message: error.message || String(error),
+              source: "requestAnimationFrame",
+              lineno: 0,
+              colno: 0,
+              stack: error.stack || "N/A",
+            });
+
+            // // 🎯 개발 환경에서만 에러를 다시 던져서 디버깅 용이하게
+            // // 프로덕션에서는 던지지 않아서 중복 전송 방지
+            // if (IS_DEVELOPMENT) {
+            //   throw error;
+            // }
+          }
+        });
+      };
+    </script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+          "three/": "https://cdn.jsdelivr.net/npm/three@0.160.0/",
+          "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+          "cannon-es": "https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js"
+        }
+      }
+    </script>
+
+    <script type="module" src="game.js"></script>
+  </body>
+</html>

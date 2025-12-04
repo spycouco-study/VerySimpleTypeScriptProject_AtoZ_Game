@@ -21,6 +21,14 @@
             "parent": "v2-1",
             "timestamp": "2025-11-22T18:25:28.823923",
             "summary": "UI 관련 기능들이 HTML을 직접 건드리지 않고, 전적으로 TypeScript 쪽에서 처리되도록 앱을 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-12-04T22:56:43.813261",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

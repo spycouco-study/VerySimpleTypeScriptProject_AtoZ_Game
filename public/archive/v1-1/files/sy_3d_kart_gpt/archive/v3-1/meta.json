@@ -1,0 +1,153 @@
+{
+    "version": "v3-1",
+    "parent": "v2-1",
+    "timestamp": "2025-11-22T20:38:54.581626",
+    "summary": "차를 움직이려고 w를 누르면 차가 앞으로 스무스하게 나가는게 아니라 공중에서 이상하게 빙글빙글 도는 문제를 수정해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_loop.mp3",
+            "path": "assets/bgm_loop.mp3",
+            "last_version": "v2-1"
+        },
+        {
+            "name": "crash.mp3",
+            "path": "assets/crash.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "engine_loop.mp3",
+            "path": "assets/engine_loop.mp3",
+            "last_version": "v2-1"
+        },
+        {
+            "name": "finish_line.png",
+            "path": "assets/finish_line.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "grass_tile.png",
+            "path": "assets/grass_tile.png",
+            "last_version": "v2-1"
+        },
+        {
+            "name": "player_kart.png",
+            "path": "assets/player_kart.png",
+            "last_version": "v2-1"
+        },
+        {
+            "name": "sky.png",
+            "path": "assets/sky.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "track_tile.png",
+            "path": "assets/track_tile.png",
+            "last_version": "v2-1"
+        },
+        {
+            "name": "ui_button.png",
+            "path": "assets/ui_button.png",
+            "last_version": "v2-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "17faffeaa9a28b3fc29abefc3f61f1e58d720cc685f701c8f1fad3996b3fda7e",
+            "size": 1385,
+            "mtime": 1763811523.6745882
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "ac0bde61c08147bb842befcd16dae1927a1899235cc4c9caa509df27450adddd",
+            "size": 62001,
+            "mtime": 1763811534.2621999
+        },
+        "game.ts": {
+            "hash": "4bc02871e8c359338f95c80fff3be84ab113e9dc36aa0e8c8e5bead4436f5aaf",
+            "size": 20917,
+            "mtime": 1763811523.63054
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763796545.4310448
+        },
+        "assets/bgm_loop.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347007.4590375
+        },
+        "assets/crash.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/engine_loop.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/finish_line.png": {
+            "hash": "0f0dcdbd39cca557412e10362d2ef6be1830b069600ccfdfe6a50dcac9141407",
+            "size": 689,
+            "mtime": 1763810040.9183137
+        },
+        "assets/grass_tile.png": {
+            "hash": "85deccaf669ea03b4e93a27b05ceb232ec47954665528b1f45ac6fdd2777283c",
+            "size": 2196,
+            "mtime": 1763810040.909772
+        },
+        "assets/player_kart.png": {
+            "hash": "216e2b1c521763ba4a6853f963fb15b2248110df6a94819a87e599cf3784fae0",
+            "size": 622,
+            "mtime": 1763810040.8981712
+        },
+        "assets/sky.png": {
+            "hash": "8e969a9986e1f7e2914213a591b42cbca14e224a17eb7e550f01d0c20e4849ff",
+            "size": 5602,
+            "mtime": 1763810040.9381785
+        },
+        "assets/track_tile.png": {
+            "hash": "2c8d1b6be11a9366d7eaf832f4f29c3fc1aeb3ef1dc2b2bfc6757aeff7103970",
+            "size": 1021,
+            "mtime": 1763810040.912745
+        },
+        "assets/ui_button.png": {
+            "hash": "09918bacd629fe894c5ce2523f4d28d9a9549d09bf6a3664b235212898137777",
+            "size": 508,
+            "mtime": 1763810040.8990023
+        }
+    }
+}

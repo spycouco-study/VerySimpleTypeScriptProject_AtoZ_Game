@@ -13,6 +13,22 @@
             "parent": "v1-1",
             "timestamp": "2025-11-28T02:48:00.920167",
             "summary": "좀비가 한 방향에서만 오는 것이 아니라 여러 방향에서 달려들도록 해주세요.\n플레이어가 여러 방향으로 도망갈 수 있도록 해주세요.\n게임을 1인칭 시점으로 실행할 수 있도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-12-04T22:43:58.101035",
+            "summary": "background.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-12-04T22:44:54.761818",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

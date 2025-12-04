@@ -1,0 +1,156 @@
+{
+    "celebrities": [
+        {
+            "name": "손흥민",
+            "image": "son_heung_min"
+        },
+        {
+            "name": "BTS 정국",
+            "image": "bts_jungkook"
+        },
+        {
+            "name": "제니",
+            "image": "blackpink_jennie"
+        },
+        {
+            "name": "아이유",
+            "image": "iu"
+        },
+        {
+            "name": "이정재",
+            "image": "lee_jung_jae"
+        },
+        {
+            "name": "윤여정",
+            "image": "youn_yuh_jung"
+        },
+        {
+            "name": "송혜교",
+            "image": "song_hye_kyo"
+        },
+        {
+            "name": "박서준",
+            "image": "park_seo_joon"
+        },
+        {
+            "name": "김연아",
+            "image": "kim_yuna"
+        },
+        {
+            "name": "봉준호",
+            "image": "bong_joon_ho"
+        }
+    ],
+    "gameSettings": {
+        "initialLives": 3,
+        "roundTimeSeconds": 5,
+        "canvasWidth": 750,
+        "canvasHeight": 600,
+        "titleScreenText": "연예인 이름 맞추기!\nPress Enter to Start",
+        "gameOverScreenText": "GAME OVER",
+        "celebrityImageDisplayWidth": 400,
+        "celebrityImageDisplayHeight": 400,
+        "inputBoxHeight": 40,
+        "inputBoxWidth": 300,
+        "inputBoxBottomMargin": 50,
+        "scorePerCorrect": 200,
+        "messageDisplayDuration": 1.5,
+        "fontFamily": "Arial, sans-serif",
+        "fontSizeTitle": "48px",
+        "fontSizeUI": "24px",
+        "fontSizeMessage": "36px",
+        "textColor": "#F0F0F0",
+        "backgroundColor": "#282C34",
+        "messageCorrectColor": "#4CAF50",
+        "messageWrongColor": "#F44336",
+        "messageTimeUpColor": "#FFC107",
+        "uiTopY": 25
+    },
+    "assets": {
+        "images": [
+            {
+                "name": "son_heung_min",
+                "path": "assets/son_heung_min.png",
+                "width": 500,
+                "height": 500
+            },
+            {
+                "name": "bts_jungkook",
+                "path": "assets/bts_jungkook.png",
+                "width": 500,
+                "height": 500
+            },
+            {
+                "name": "blackpink_jennie",
+                "path": "assets/blackpink_jennie.png",
+                "width": 500,
+                "height": 500
+            },
+            {
+                "name": "iu",
+                "path": "assets/iu.png",
+                "width": 500,
+                "height": 500
+            },
+            {
+                "name": "lee_jung_jae",
+                "path": "assets/lee_jung_jae.png",
+                "width": 500,
+                "height": 500
+            },
+            {
+                "name": "youn_yuh_jung",
+                "path": "assets/youn_yuh_jung.png",
+                "width": 500,
+                "height": 500
+            },
+            {
+                "name": "song_hye_kyo",
+                "path": "assets/song_hye_kyo.png",
+                "width": 500,
+                "height": 500
+            },
+            {
+                "name": "park_seo_joon",
+                "path": "assets/park_seo_joon.png",
+                "width": 500,
+                "height": 500
+            },
+            {
+                "name": "kim_yuna",
+                "path": "assets/kim_yuna.png",
+                "width": 500,
+                "height": 500
+            },
+            {
+                "name": "bong_joon_ho",
+                "path": "assets/bong_joon_ho.png",
+                "width": 500,
+                "height": 500
+            }
+        ],
+        "sounds": [
+            {
+                "name": "bgm",
+                "path": "assets/bgm.mp3",
+                "volume": 0.3,
+                "loop": true
+            },
+            {
+                "name": "correct",
+                "path": "assets/correct.mp3",
+                "volume": 0.8
+            },
+            {
+                "name": "wrong",
+                "path": "assets/wrong.mp3",
+                "volume": 0.8
+            },
+            {
+                "name": "timeout",
+                "path": "assets/timeout.mp3",
+                "volume": 0.8
+            }
+        ]
+    }
+}

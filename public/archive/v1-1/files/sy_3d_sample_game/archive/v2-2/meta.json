@@ -1,0 +1,63 @@
+{
+    "version": "v2-2",
+    "parent": "v1-1",
+    "timestamp": "2025-11-22T21:14:18.374811",
+    "summary": "플레이어가 보통 상태일 때 이동 속도가 너무 느리니, 이 속도를 조정해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "5451586a2c897894e1825c6f05bbe4d632cd6ed3901c73e9c57b40696393c646",
+            "size": 312,
+            "mtime": 1763813652.2199001
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763812216.2223108
+        },
+        "game.js": {
+            "hash": "4a4160c9f92a7af36f78f05b2c703d76f26068e425dcc997a7f3b788582f03ae",
+            "size": 30137,
+            "mtime": 1763813658.2164557
+        },
+        "game.ts": {
+            "hash": "556b97b41dc4bd7eca0bbb4406f8e9659ddaf569229a5fd6fdd7d60caf6af504",
+            "size": 10137,
+            "mtime": 1763813652.2158957
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763812216.2867644
+        }
+    }
+}

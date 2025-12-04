@@ -1,10 +1,10 @@
 {
-    "id": "56171132-63f0-44b2-99f2-2cd3c71044aa",
-    "game_title": "간단한 뱀게임",
-    "author": "sy",
-    "category": "etc",
-    "thumbnail": "/static/56171132-63f0-44b2-99f2-2cd3c71044aa/assets/thumbnail.png",
-    "plays": 471,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 349
+  "id": "56171132-63f0-44b2-99f2-2cd3c71044aa",
+  "game_title": "간단한 뱀 게임",
+  "author": "sy",
+  "category": "etc",
+  "thumbnail": "/static/56171132-63f0-44b2-99f2-2cd3c71044aa/assets/thumbnail.png",
+  "plays": 471,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 349
 }

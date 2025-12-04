@@ -1,10 +1,10 @@
 {
-    "id": "sh_photoquiz",
-    "game_title": "sh_photoquiz",
-    "author": "sh",
-    "category": "etc",
-    "thumbnail": "/static/sh_photoquiz/assets/thumbnail.png",
-    "plays": 729,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 572
+  "id": "sh_photoquiz",
+  "game_title": "연예인 이름 맞히기",
+  "author": "sh",
+  "category": "etc",
+  "thumbnail": "/static/sh_photoquiz/assets/thumbnail.png",
+  "plays": 729,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 572
 }

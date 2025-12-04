@@ -1,10 +1,10 @@
 {
-    "id": "sy_3d_2",
-    "game_title": "sy_3d_2",
-    "author": "sy",
-    "category": "etc",
-    "thumbnail": "/static/sy_3d_2/assets/thumbnail.png",
-    "plays": 254,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 31
+  "id": "sy_3d_2",
+  "game_title": "라스트 맨 스탠딩",
+  "author": "sy",
+  "category": "etc",
+  "thumbnail": "/static/sy_3d_2/assets/thumbnail.png",
+  "plays": 254,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 31
 }

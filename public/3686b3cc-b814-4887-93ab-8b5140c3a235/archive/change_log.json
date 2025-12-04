@@ -1,0 +1,44 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-12-04T12:59:58.933541",
+            "summary": "크리스마스 테마의 리듬/음악 게임을 생성해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-04T13:20:16.665081",
+            "summary": "게임의 런타임 오류를 수정해주세요. 다음 두 가지 `TypeError`를 해결해야 합니다: 1. `http://localhost:8080/3686b3cc-b814-4887-93ab-8b5140c3a235/game.js` 파일의 130번째 줄에서 `undefined`에서 'bgmSound' 속성을 읽으려 할 때 발생하는 오류. 2. 동일 파일의 218번째 줄에서 `undefined`에서 'notes' 속성을 읽으려 할 때 발생하는 오류.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-12-04T13:23:07.098163",
+            "summary": "게임에서 시간 제한 요소를 제거해주세요.\n게임이 노래가 끝날 때까지 플레이되도록 설정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-12-04T13:42:16.331955",
+            "summary": "게임 그림에 크리스마스 트리와 산타를 추가해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-12-04T14:28:55.719032",
+            "summary": "사용자에게 디즈니 스타일의 시각적 요소를 게임에 적용해달라는 요청입니다. 게임 내 캐릭터, 배경, 또는 전반적인 시각적 스타일을 디즈니 스타일로 생성하거나 변경해달라는 의도로 해석됩니다.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

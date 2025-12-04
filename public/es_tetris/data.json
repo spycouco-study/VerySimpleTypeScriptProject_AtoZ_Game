@@ -1,0 +1,56 @@
+{
+    "gameSettings": {
+        "canvasWidth": 800,
+        "canvasHeight": 600,
+        "playerBulletCooldown": 200,
+        "enemySpawnRate": 1500,
+        "enemyMoveSpeedMin": 50,
+        "enemyMoveSpeedMax": 150,
+        "enemyHealth": 2,
+        "playerSpeed": 250,
+        "playerHealth": 3,
+        "playerBulletSpeed": 500,
+        "playerBulletDamage": 1,
+        "gameOverDelay": 1000
+    },
+    "player": {
+        "width": 64,
+        "height": 64,
+        "imageKey": "player"
+    },
+    "enemy": {
+        "width": 48,
+        "height": 48,
+        "imageKey": "enemy",
+        "scoreValue": 100
+    },
+    "playerBullet": {
+        "width": 10,
+        "height": 30,
+        "imageKey": "player_bullet"
+    },
+    "uiText": {
+        "title": "SPACE SHOOTER",
+        "pressToStart": "Press ENTER to Start",
+        "gameOver": "GAME OVER!",
+        "pressToRetry": "Press ENTER to Retry",
+        "scorePrefix": "Score: ",
+        "healthPrefix": "Health: "
+    },
+    "assets": {
+        "images": [
+            { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+            { "name": "enemy", "path": "assets/enemy.png", "width": 48, "height": 48 },
+            { "name": "player_bullet", "path": "assets/player_bullet.png", "width": 10, "height": 30 }
+        ],
+        "sounds": [
+            { "name": "player_shoot_effect", "path": "assets/laser.mp3", "duration_seconds": 0.5, "volume": 0.5 },
+            { "name": "enemy_hit_effect", "path": "assets/hit.mp3", "duration_seconds": 0.3, "volume": 0.5 },
+            { "name": "enemy_destroy_effect", "path": "assets/explosion.mp3", "duration_seconds": 1.0, "volume": 0.7 },
+            { "name": "player_hit_effect", "path": "assets/player_hit.mp3", "duration_seconds": 0.7, "volume": 0.8 },
+            { "name": "bgm", "path": "assets/game_bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 },
+            { "name": "title_bgm", "path": "assets/title_bgm.mp3", "duration_seconds": 60.0, "volume": 0.4 },
+            { "name": "game_over_bgm", "path": "assets/game_over.mp3", "duration_seconds": 5.0, "volume": 0.6 }
+        ]
+    }
+}

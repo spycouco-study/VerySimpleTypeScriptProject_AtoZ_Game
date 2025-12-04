@@ -1,10 +1,10 @@
 {
-    "id": "sy_3d_dddd",
-    "game_title": "sy_3d_dddd",
-    "author": "sy",
-    "category": "etc",
-    "thumbnail": "/static/sy_3d_dddd/assets/thumbnail.png",
-    "plays": 77,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 72
+  "id": "sy_3d_dddd",
+  "game_title": "입체기동장치",
+  "author": "sy",
+  "category": "etc",
+  "thumbnail": "/static/sy_3d_dddd/assets/thumbnail.png",
+  "plays": 77,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 72
 }

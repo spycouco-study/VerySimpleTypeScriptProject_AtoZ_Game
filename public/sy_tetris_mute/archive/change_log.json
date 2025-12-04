@@ -13,6 +13,14 @@
             "parent": "v1-1",
             "timestamp": "2025-11-27T07:00:27.421293",
             "summary": "마우스 클릭해도 사운드를 on/off 가 동작을 안합니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-12-04T23:21:22.778043",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

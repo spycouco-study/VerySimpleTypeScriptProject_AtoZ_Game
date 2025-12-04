@@ -1,0 +1,173 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-12-04T22:59:10.036585",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Delete"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "type": "Delete"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "crash.mp3",
+            "path": "assets/crash.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "engine_driving.mp3",
+            "path": "assets/engine_driving.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "engine_idle.mp3",
+            "path": "assets/engine_idle.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "finish_line.png",
+            "path": "assets/finish_line.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "kart.png",
+            "path": "assets/kart.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sky.png",
+            "path": "assets/sky.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "track.png",
+            "path": "assets/track.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "wall.png",
+            "path": "assets/wall.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "wheel.png",
+            "path": "assets/wheel.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "ebfd07e650448cb10c34604d35a68c4294ab523087057de2df29db93d4edfc9c",
+            "size": 2055,
+            "mtime": 1763978777.5592644
+        },
+        "game.js": {
+            "hash": "d790883bce3e75fcd1756b6201fba329a1a9248bc396a5207d5583b5d4c1cd04",
+            "size": 65028,
+            "mtime": 1763978777.5627635
+        },
+        "game.ts": {
+            "hash": "df2da7b58bcf97dd8c614dded067665553b2e7ca115bab29d984d635df1cdfe0",
+            "size": 22469,
+            "mtime": 1763978777.5639353
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763978777.5011668
+        },
+        "assets/crash.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763978777.502462
+        },
+        "assets/engine_driving.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763978777.5035892
+        },
+        "assets/engine_idle.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763978777.5042138
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826741.849993
+        },
+        "assets/finish_line.png": {
+            "hash": "0f0dcdbd39cca557412e10362d2ef6be1830b069600ccfdfe6a50dcac9141407",
+            "size": 689,
+            "mtime": 1763978777.5042138
+        },
+        "assets/kart.png": {
+            "hash": "216e2b1c521763ba4a6853f963fb15b2248110df6a94819a87e599cf3784fae0",
+            "size": 622,
+            "mtime": 1763978777.5047696
+        },
+        "assets/sky.png": {
+            "hash": "8e969a9986e1f7e2914213a591b42cbca14e224a17eb7e550f01d0c20e4849ff",
+            "size": 5602,
+            "mtime": 1763978777.5575008
+        },
+        "assets/thumbnail.png": {
+            "hash": "f52bd27a881f79dab8a32643472c783dfd39757911a501ab8da254827446dfe5",
+            "size": 16450,
+            "mtime": 1764856749.978039
+        },
+        "assets/track.png": {
+            "hash": "85deccaf669ea03b4e93a27b05ceb232ec47954665528b1f45ac6fdd2777283c",
+            "size": 2196,
+            "mtime": 1763978777.5581317
+        },
+        "assets/wall.png": {
+            "hash": "2c8d1b6be11a9366d7eaf832f4f29c3fc1aeb3ef1dc2b2bfc6757aeff7103970",
+            "size": 1021,
+            "mtime": 1763978777.5581317
+        },
+        "assets/wheel.png": {
+            "hash": "09918bacd629fe894c5ce2523f4d28d9a9549d09bf6a3664b235212898137777",
+            "size": 508,
+            "mtime": 1763978777.5586946
+        }
+    }
+}

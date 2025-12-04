@@ -61,6 +61,14 @@
             "parent": "v5-1",
             "timestamp": "2025-11-27T06:02:32.015061",
             "summary": "먹이를 두개로 늘려주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-1",
+            "parent": "v6-1",
+            "timestamp": "2025-12-04T23:00:38.880216",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

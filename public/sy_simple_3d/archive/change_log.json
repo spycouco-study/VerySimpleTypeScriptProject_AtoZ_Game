@@ -5,6 +5,14 @@
             "parent": null,
             "timestamp": "2025-11-22T19:30:02.960214",
             "summary": "간단한 3D 게임을 만들어주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-04T23:17:47.387871",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

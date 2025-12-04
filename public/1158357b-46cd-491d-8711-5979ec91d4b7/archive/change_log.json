@@ -1,0 +1,28 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-12-04T17:43:40.926492",
+            "summary": "단순 클릭 게임을 만들어 주세요.\n게임에 타임어택 요소를 추가해 주세요.\n게임의 분위기를 비 내리는 배경으로 변경해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-04T18:00:38.058547",
+            "summary": "구름이 클릭 가능하도록 수정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-12-04T23:25:09.800163",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}
