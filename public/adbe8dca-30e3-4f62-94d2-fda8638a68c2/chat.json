@@ -1,0 +1,12 @@
+{
+    "chat": [
+        {
+            "from": "user",
+            "text": "귀여운 뱀게임을 만들어주세요."
+        },
+        {
+            "from": "bot",
+            "text": "요청:\n귀여운 뱀게임을 만들어주세요.\n질문:\n\n부적절:\n\n< game.ts : 수정 O >   < data.json : 수정 O >\n이 게임은 귀여운 뱀이 되어 먹이를 먹으며 몸집을 키우고, 벽이나 자신의 몸에 부딪히지 않도록 조작하는 캐주얼 액션 게임입니다. 타이틀 화면과 조작법 설명을 거쳐 게임을 시작하며, 점수를 기록하고 게임 오버 시 다시 시작할 수 있습니다. 모든 설정과 에셋 정보는 data.json에 있어 비개발자도 쉽게 수정할 수 있습니다.\n\n\n\n\n========Compile Error========\ngame.ts(29,5): error TS2687: All declarations of 'width' must have identical modifiers.\ngame.ts(30,5): error TS2687: All declarations of 'height' must have identical modifiers.\n\n=============================\n\n\n\n\n< game.ts : 수정 O >   < data.json : 수정 O >\nTypeScript 컴파일 오류 `TS2687`을 해결하기 위해 `ImageData` 인터페이스의 이름을 `GameImageData`로 변경했습니다. 이는 웹 표준 `ImageData` 클래스와의 잠재적인 이름 충돌을 피하기 위함입니다.\n\n"
+        }
+    ]
+}

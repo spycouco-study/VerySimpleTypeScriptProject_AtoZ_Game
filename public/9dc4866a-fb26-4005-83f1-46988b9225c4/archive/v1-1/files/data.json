@@ -1,0 +1,54 @@
+{
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "grid": {
+        "rows": 8,
+        "cols": 8,
+        "blockSize": 70
+    },
+    "gameplay": {
+        "timeLimitSeconds": 90,
+        "minMatch": 3,
+        "scorePerMatch": 10,
+        "initialScore": 0
+    },
+    "colors": {
+        "background": "#87CEEB",
+        "gridLine": "#FFFFFF",
+        "text": "#FFFFFF",
+        "selection": "#FFFF00",
+        "overlay": "rgba(0, 0, 0, 0.7)"
+    },
+    "text": {
+        "title": "애니팡!",
+        "clickToStart": "클릭하여 시작",
+        "instructionsTitle": "게임 방법",
+        "instructions": [
+            "인접한 블록을 클릭하여 서로 위치를 바꿉니다.",
+            "같은 종류의 블록 3개 이상을 가로 또는 세로로 맞추면 사라집니다.",
+            "사라진 블록은 새로운 블록으로 채워집니다.",
+            "시간 제한 내에 최대한 많은 점수를 획득하세요!"
+        ],
+        "gameOverTitle": "게임 오버",
+        "timeUp": "시간 초과!",
+        "scoreLabel": "점수:",
+        "timeLabel": "시간:",
+        "restartGame": "다시 시작하려면 클릭하세요"
+    },
+    "assets": {
+        "images": [
+            { "name": "title_bg", "path": "assets/title_bg.png", "width": 800, "height": 600 },
+            { "name": "game_bg", "path": "assets/game_bg.png", "width": 800, "height": 600 },
+            { "name": "block_dog", "path": "assets/block_dog.png", "width": 64, "height": 64 },
+            { "name": "block_cat", "path": "assets/block_cat.png", "width": 64, "height": 64 },
+            { "name": "block_rabbit", "path": "assets/block_rabbit.png", "width": 64, "height": 64 },
+            { "name": "block_pig", "path": "assets/block_pig.png", "width": 64, "height": 64 },
+            { "name": "block_bear", "path": "assets/block_bear.png", "width": 64, "height": 64 },
+            { "name": "block_bird", "path": "assets/block_bird.png", "width": 64, "height": 64 }
+        ],
+        "sounds": [
+            { "name": "match_sound", "path": "assets/match_sound.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+            { "name": "bgm_loop", "path": "assets/bgm_loop.mp3", "duration_seconds": 60.0, "volume": 0.3 }
+        ]
+    }
+}

@@ -1,0 +1,133 @@
+{
+    "version": "v7-1",
+    "parent": "v6-1",
+    "timestamp": "2025-12-04T23:28:02.836584",
+    "summary": "게임 내 뱀 캐릭터의 머리 정수리 부분이 뱀의 진행 방향을 향하도록 시각적으로 구현해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        },
+        {
+            "name": "snake_head.png",
+            "path": "assets/snake_head.png",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background_tile.png",
+            "path": "assets/background_tile.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "eat.mp3",
+            "path": "assets/eat.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "last_version": "v3-1"
+        },
+        {
+            "name": "food_berry.png",
+            "path": "assets/food_berry.png",
+            "last_version": "v4-1"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_body.png",
+            "path": "assets/snake_body.png",
+            "last_version": "v6-1"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "last_version": "v3-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "4c10656f5bcb9f0b32a60e1d0bb107c23e8700b56595d4496611d2a2657d20f7",
+            "size": 1570,
+            "mtime": 1764579794.4491184
+        },
+        "game.js": {
+            "hash": "b27e1401f622f956e37204ccf364d2700ce5bf35dbe05dd26a0be7154609478a",
+            "size": 59873,
+            "mtime": 1764858482.6370234
+        },
+        "game.ts": {
+            "hash": "f0d507793d0fc3a0b5e2b2b45321d013ccb6d787c077bfa162386f7796bb0711",
+            "size": 21510,
+            "mtime": 1764858477.7747066
+        },
+        "assets/background_tile.png": {
+            "hash": "38a7c285ff0e807bc01658dd8e3da76ab75a39430d7552d395f58b7494cbada1",
+            "size": 2164,
+            "mtime": 1764579907.8088238
+        },
+        "assets/bgm.mp3": {
+            "hash": "a0a9ceed8674519308955ba9e068d4bfc6470845130ee0a32cbbe4a525e02e48",
+            "size": 1482753,
+            "mtime": 1764579918.047717
+        },
+        "assets/eat.mp3": {
+            "hash": "b8d2ab8f95265b01acd6ddbff256d5dd85f5672d49c51302d76e481c77766c52",
+            "size": 3804,
+            "mtime": 1764579918.1080124
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "assets/food_berry.png": {
+            "hash": "c19508ee31f2617d753364e44da6ab6164c1c2db0125a492c00b82edc7745ad8",
+            "size": 37804,
+            "mtime": 1764857975.9746642
+        },
+        "assets/game_over.mp3": {
+            "hash": "2a64197bec8c98ecf641257f2d021f428ac3ac24939c4d295b950a7ef6025383",
+            "size": 30136,
+            "mtime": 1764579918.1080124
+        },
+        "assets/snake_body.png": {
+            "hash": "2da37e5c21046e2ddfdaee555df3070150f81be429d1fc3f3b1fe7ad54bddd60",
+            "size": 342721,
+            "mtime": 1764858340.4659142
+        },
+        "assets/snake_head.png": {
+            "hash": "2deecb00bdb1d8d2215989e89968ab5763611b9df86b3625aa93ed84d34b9f61",
+            "size": 292862,
+            "mtime": 1764858475.3964767
+        },
+        "assets/thumbnail.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        }
+    }
+}

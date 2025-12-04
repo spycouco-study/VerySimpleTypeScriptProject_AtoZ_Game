@@ -1,0 +1,73 @@
+{
+    "gameSettings": {
+        "canvasWidth": 600,
+        "canvasHeight": 600,
+        "gridSize": 50,
+        "initialSnakeLength": 3,
+        "snakeSpeedMs": 150,
+        "foodCount": 1,
+        "backgroundColor": "#6B8E23",
+        "scorePerFood": 10,
+        "wallColor": "#8B4513"
+    },
+    "text": {
+        "title": "Pixel Forest Snake",
+        "pressSpace": "SPACE를 눌러 시작",
+        "instructionsTitle": "조작법",
+        "instructions1": "방향키(↑↓←→)로 뱀을 움직이세요.",
+        "instructions2": "열매를 먹으면 뱀이 길어지고 점수를 얻습니다.",
+        "instructions3": "벽이나 자신의 꼬리에 부딪히지 마세요.",
+        "instructionsContinue": "SPACE를 눌러 계속",
+        "gameOver": "게임 오버!",
+        "yourScore": "최종 점수: ",
+        "pressSpaceRestart": "SPACE를 눌러 재시작"
+    },
+    "assets": {
+        "images": [
+            {
+                "name": "snake_head",
+                "path": "assets/snake_head.png",
+                "width": 16,
+                "height": 16
+            },
+            {
+                "name": "snake_body",
+                "path": "assets/snake_body.png",
+                "width": 16,
+                "height": 16
+            },
+            {
+                "name": "food_berry",
+                "path": "assets/food_berry.png",
+                "width": 16,
+                "height": 16
+            },
+            {
+                "name": "background_tile",
+                "path": "assets/background_tile.png",
+                "width": 32,
+                "height": 32
+            }
+        ],
+        "sounds": [
+            {
+                "name": "bgm",
+                "path": "assets/bgm.mp3",
+                "duration_seconds": 60,
+                "volume": 0.3
+            },
+            {
+                "name": "eat",
+                "path": "assets/eat.mp3",
+                "duration_seconds": 0.5,
+                "volume": 0.7
+            },
+            {
+                "name": "game_over",
+                "path": "assets/game_over.mp3",
+                "duration_seconds": 2,
+                "volume": 0.8
+            }
+        ]
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "canvas": {
+        "width": 600,
+        "height": 600
+    },
+    "grid": {
+        "size": 30
+    },
+    "game": {
+        "initialSnakeLength": 4,
+        "initialSpeed": 200,
+        "speedIncreaseInterval": 3,
+        "foodScoreValue": 10
+    },
+    "colors": {
+        "background": "#A7D948",
+        "wallOutline": "#6B8E23",
+        "uiText": "#4A4A4A"
+    },
+    "uiText": {
+        "title": "귀여운 뱀 게임",
+        "startPrompt": "아무 키나 눌러 시작",
+        "controlsTitle": "조작법",
+        "controlsInstructions": [
+            "WASD 또는 화살표 키로 뱀을 이동시키세요.",
+            "빨간 사과를 먹고 점수를 얻고 몸집을 키우세요!",
+            "벽이나 자신의 몸에 부딪히면 게임 끝!",
+            "점수가 높아질수록 뱀이 더 빨라져요.",
+            "즐거운 게임 되세요!"
+        ],
+        "gameOverTitle": "게임 오버!",
+        "scorePrefix": "점수: ",
+        "restartPrompt": "R 키를 눌러 다시 시작"
+    },
+    "assets": {
+        "images": [
+            { "name": "snake_head", "path": "assets/snake_head.png", "width": 30, "height": 30 },
+            { "name": "snake_body", "path": "assets/snake_body.png", "width": 30, "height": 30 },
+            { "name": "food_apple", "path": "assets/food_apple.png", "width": 30, "height": 30 },
+            { "name": "wall_tile", "path": "assets/wall_tile.png", "width": 30, "height": 30 }
+        ],
+        "sounds": [
+            { "name": "eat_sound", "path": "assets/eat_sound.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+            { "name": "game_over_sound", "path": "assets/game_over_sound.mp3", "duration_seconds": 1.5, "volume": 0.8 },
+            { "name": "bgm_cute", "path": "assets/bgm_cute.mp3", "duration_seconds": 60.0, "volume": 0.4 }
+        ]
+    }
+}

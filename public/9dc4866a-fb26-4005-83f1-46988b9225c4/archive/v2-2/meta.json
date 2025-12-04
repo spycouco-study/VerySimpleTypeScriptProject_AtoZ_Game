@@ -1,0 +1,163 @@
+{
+    "version": "v2-2",
+    "parent": "v1-1",
+    "timestamp": "2025-12-04T17:54:06.592151",
+    "summary": "게임 격자가 현재 화면 좌측 상단에 위치해 있으니, 화면 중앙에 오도록 위치를 수정해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_loop.mp3",
+            "path": "assets/bgm_loop.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_bear.png",
+            "path": "assets/block_bear.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_bird.png",
+            "path": "assets/block_bird.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_cat.png",
+            "path": "assets/block_cat.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_dog.png",
+            "path": "assets/block_dog.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_pig.png",
+            "path": "assets/block_pig.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_rabbit.png",
+            "path": "assets/block_rabbit.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game_bg.png",
+            "path": "assets/game_bg.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "match_sound.mp3",
+            "path": "assets/match_sound.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "title_bg.png",
+            "path": "assets/title_bg.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "60af1f1dd870897b34a5d619cbab8329e7ae2e7ef63f0314b40166fdf3cc973b",
+            "size": 2314,
+            "mtime": 1764838372.7292204
+        },
+        "game.js": {
+            "hash": "2a3bd50f196b8f6cdb1230def90844bfa6e4e52e1d30b679c7ef789e6545cd8f",
+            "size": 61420,
+            "mtime": 1764838446.4360886
+        },
+        "game.ts": {
+            "hash": "1b9472accf8c178ef4eb5fb90513291fad87999a1b901ef8e98f34ad829acf2e",
+            "size": 21752,
+            "mtime": 1764838441.569441
+        },
+        "assets/bgm_loop.mp3": {
+            "hash": "a0a9ceed8674519308955ba9e068d4bfc6470845130ee0a32cbbe4a525e02e48",
+            "size": 1482753,
+            "mtime": 1764838372.8393624
+        },
+        "assets/block_bear.png": {
+            "hash": "b5723960794c268d2c5e07a35f5e3d9f1531ff268500665baf95d4f6bfd4b21d",
+            "size": 496703,
+            "mtime": 1764838372.8690627
+        },
+        "assets/block_bird.png": {
+            "hash": "d998394b89d6d7a5af2ba684ce298d4bb526662976f9f67c46f609bdcfb88064",
+            "size": 489482,
+            "mtime": 1764838372.8795855
+        },
+        "assets/block_cat.png": {
+            "hash": "521e1197b4d02cf667b1dac5c6a4a65b4caa851e156671a950cbd90cdbe4976f",
+            "size": 516312,
+            "mtime": 1764838372.899356
+        },
+        "assets/block_dog.png": {
+            "hash": "793b7b652c0e6b21b796b5be5817c56c8769b736b2dad79513a8c5b87f93b745",
+            "size": 372101,
+            "mtime": 1764838372.9254415
+        },
+        "assets/block_pig.png": {
+            "hash": "a4adff51d4a7c3705ba58c0fd920d96273377e2272d46130368779171ca0c76a",
+            "size": 445928,
+            "mtime": 1764838372.9415977
+        },
+        "assets/block_rabbit.png": {
+            "hash": "f9b2474309226c5ef7a259da57d1075888e810d3247dd61b798f9098507e44ca",
+            "size": 364038,
+            "mtime": 1764838372.956352
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764838372.9733083
+        },
+        "assets/game_bg.png": {
+            "hash": "f417facccf38260155c19ffee5de0c6fff0a757d42e4fa780b3695d3d3cb131d",
+            "size": 1116635,
+            "mtime": 1764838372.9901474
+        },
+        "assets/match_sound.mp3": {
+            "hash": "8e1346a4dc2cee809efa6c690f8f920abe77e8c0968998230b6810e9f39b50a9",
+            "size": 24493,
+            "mtime": 1764838373.0030859
+        },
+        "assets/thumbnail.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764838373.0176992
+        },
+        "assets/title_bg.png": {
+            "hash": "65a1858f0307096f1c561bc5753c0a4dccbcb0a4712513103ea3e7fc5142e02a",
+            "size": 1369946,
+            "mtime": 1764838373.0296946
+        }
+    }
+}

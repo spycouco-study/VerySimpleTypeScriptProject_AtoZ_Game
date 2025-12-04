@@ -1,0 +1,132 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-12-04T17:41:43.451632",
+    "summary": "귀여운 뱀게임을 만들어주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "bgm_cute.mp3",
+            "path": "assets/bgm_cute.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "eat_sound.mp3",
+            "path": "assets/eat_sound.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "food_apple.png",
+            "path": "assets/food_apple.png",
+            "type": "Add"
+        },
+        {
+            "name": "game_over_sound.mp3",
+            "path": "assets/game_over_sound.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "snake_body.png",
+            "path": "assets/snake_body.png",
+            "type": "Add"
+        },
+        {
+            "name": "snake_head.png",
+            "path": "assets/snake_head.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        },
+        {
+            "name": "wall_tile.png",
+            "path": "assets/wall_tile.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "47fbd2705219ced87b32bfe21ac366b47434a560f3f8b52b5909a27f6b093b2f",
+            "size": 1894,
+            "mtime": 1764837605.321339
+        },
+        "game.js": {
+            "hash": "0b1a99118be2164ae8b344f8af6a8fc73318334d135d844a5147b3047a134e27",
+            "size": 47711,
+            "mtime": 1764837703.1633365
+        },
+        "game.ts": {
+            "hash": "7804fa8317e71a7bce70fc15fa56ccb02fbef25030b3f7330eacaa924a352967",
+            "size": 17581,
+            "mtime": 1764837698.5864818
+        },
+        "assets/bgm_cute.mp3": {
+            "hash": "a0a9ceed8674519308955ba9e068d4bfc6470845130ee0a32cbbe4a525e02e48",
+            "size": 1482753,
+            "mtime": 1764837698.4032393
+        },
+        "assets/eat_sound.mp3": {
+            "hash": "b8d2ab8f95265b01acd6ddbff256d5dd85f5672d49c51302d76e481c77766c52",
+            "size": 3804,
+            "mtime": 1764837698.3827
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "assets/food_apple.png": {
+            "hash": "b59f009e14ba9a0619daf2356d61bbf24981ccee789822324def3297b1e51ee8",
+            "size": 393140,
+            "mtime": 1764837652.8109286
+        },
+        "assets/game_over_sound.mp3": {
+            "hash": "410d9af4e470598102043d4894c1443c8c867f18d21f761f91bccaa051e15a87",
+            "size": 34524,
+            "mtime": 1764837698.39605
+        },
+        "assets/snake_body.png": {
+            "hash": "a65b6cf771f56cbf67d6e49bfe063c79cad2797f6d995a6f633ec5ce53a79273",
+            "size": 172898,
+            "mtime": 1764837638.3799183
+        },
+        "assets/snake_head.png": {
+            "hash": "215db5026ef64f3fb73457a6eae24c8d2cf13c48d058ea40d1f53de6106a7458",
+            "size": 368909,
+            "mtime": 1764837624.533637
+        },
+        "assets/thumbnail.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "assets/wall_tile.png": {
+            "hash": "9095b6e9fa67d1bac3875bb64d69fab711a677a866f832da95b54a3eb4bbb286",
+            "size": 219643,
+            "mtime": 1764837688.7335365
+        }
+    }
+}

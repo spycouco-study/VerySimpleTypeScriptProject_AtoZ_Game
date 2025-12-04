@@ -1,0 +1,68 @@
+{
+    "canvasWidth": 1280,
+    "canvasHeight": 720,
+    "gameDurationSeconds": 180,
+    "initialBobberX": 0.5,
+    "initialBobberY": 0.4,
+    "bobberMoveSpeed": 150,
+    "minBobberYRatio": 0.35,
+    "maxBobberYRatio": 0.75,
+    "fishingLineOffsetY": 30,
+    "fishSpawnIntervalSeconds": 3.5,
+    "fishSwimSpeedMultiplier": 0.7,
+    "maxFishOnScreen": 6,
+    "bobberWidth": 32,
+    "bobberHeight": 64,
+    "fishDefaultWidth": 80,
+    "fishDefaultHeight": 40,
+    "biteTriggerRadius": 60,
+    "biteHoldDurationSeconds": 2.5,
+    "miniGameDurationSeconds": 10,
+    "miniGameSuccessTarget": 150,
+    "miniGameFailureThreshold": 8,
+    "miniGamePressEffect": 25,
+    "miniGameDecayRate": 15,
+    "miniGameTargetZoneWidth": 0.2,
+    "miniGameBasePointerSpeed": 0.7,
+    "reelingUpDurationSeconds": 1.5,
+    "assets": {
+        "images": [
+            { "name": "background", "path": "assets/background.png", "width": 1280, "height": 720 },
+            { "name": "boat", "path": "assets/boat.png", "width": 250, "height": 120 },
+            { "name": "bobber", "path": "assets/bobber.png", "width": 32, "height": 64 },
+            { "name": "fish1", "path": "assets/fish1.png", "width": 70, "height": 35 },
+            { "name": "fish2", "path": "assets/fish2.png", "width": 90, "height": 45 },
+            { "name": "fish3", "path": "assets/fish3.png", "width": 110, "height": 55 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.5 },
+            { "name": "select", "path": "assets/select.mp3", "duration_seconds": 0.5, "volume": 0.8 },
+            { "name": "bite", "path": "assets/bite.mp3", "duration_seconds": 1.0, "volume": 1.0 },
+            { "name": "reel", "path": "assets/reel.mp3", "duration_seconds": 0.8, "volume": 0.7 },
+            { "name": "catch", "path": "assets/catch.mp3", "duration_seconds": 1.5, "volume": 1.0 },
+            { "name": "fail", "path": "assets/fail.mp3", "duration_seconds": 1.0, "volume": 1.0 },
+            { "name": "gameOverSound", "path": "assets/gameOverSound.mp3", "duration_seconds": 2.0, "volume": 0.8 }
+        ]
+    },
+    "fishes": [
+        { "name": "작은 물고기", "score": 100, "image": "fish1", "speed": 80, "miniGameDifficulty": 1.0 },
+        { "name": "중간 물고기", "score": 250, "image": "fish2", "speed": 100, "miniGameDifficulty": 1.5 },
+        { "name": "큰 물고기", "score": 500, "image": "fish3", "speed": 120, "miniGameDifficulty": 2.0 }
+    ],
+    "ui": {
+        "title": "신나는 낚시 게임!",
+        "pressSpace": "스페이스 바를 눌러 시작하세요",
+        "tutorialLine1": "↑ ↓ 키로 찌를 움직여 물고기를 유인하세요.",
+        "tutorialLine2": "찌 근처에 물고기가 오면 입질이 옵니다.",
+        "tutorialLine3": "미니게임 중에는 스페이스 바를 눌러 게이지를 채우세요.",
+        "tutorialLine4": "초록색 구간에서 누르면 성공률이 올라갑니다!",
+        "fishCaught": "낚시 성공!",
+        "fishLost": "아쉽게 놓쳤습니다...",
+        "scorePrefix": "점수: ",
+        "timeRemainingPrefix": "남은 시간: ",
+        "gameOver": "게임 오버!",
+        "loading": "로딩 중...",
+        "reelInstruction": "스페이스 바를 연타하여 릴을 감으세요!",
+        "reelTime": "남은 시간: "
+    }
+}

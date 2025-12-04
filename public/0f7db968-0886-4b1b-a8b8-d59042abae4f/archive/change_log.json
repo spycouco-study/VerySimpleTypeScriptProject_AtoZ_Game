@@ -1,0 +1,12 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-12-04T17:41:43.455311",
+            "summary": "귀여운 뱀게임을 만들어주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

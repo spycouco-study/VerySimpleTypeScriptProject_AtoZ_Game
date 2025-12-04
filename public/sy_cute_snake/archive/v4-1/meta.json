@@ -1,0 +1,133 @@
+{
+    "version": "v4-1",
+    "parent": "v3-1",
+    "timestamp": "2025-12-04T23:19:36.064914",
+    "summary": "food_berry.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "food_berry.png",
+            "path": "assets/food_berry.png",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background_tile.png",
+            "path": "assets/background_tile.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "eat.mp3",
+            "path": "assets/eat.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "last_version": "v3-1"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_body.png",
+            "path": "assets/snake_body.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_head.png",
+            "path": "assets/snake_head.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "last_version": "v3-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "4c10656f5bcb9f0b32a60e1d0bb107c23e8700b56595d4496611d2a2657d20f7",
+            "size": 1570,
+            "mtime": 1764579794.4491184
+        },
+        "game.js": {
+            "hash": "69177293f56b7703549992b3f653684db81d74be415195729471c6a8fa3c8282",
+            "size": 59426,
+            "mtime": 1764579954.5103953
+        },
+        "game.ts": {
+            "hash": "424e77d69f8f9e84a65422f7495c3eb4687ff088e0fec8c9400da49716666cf2",
+            "size": 21186,
+            "mtime": 1764579951.0688956
+        },
+        "assets/background_tile.png": {
+            "hash": "38a7c285ff0e807bc01658dd8e3da76ab75a39430d7552d395f58b7494cbada1",
+            "size": 2164,
+            "mtime": 1764579907.8088238
+        },
+        "assets/bgm.mp3": {
+            "hash": "a0a9ceed8674519308955ba9e068d4bfc6470845130ee0a32cbbe4a525e02e48",
+            "size": 1482753,
+            "mtime": 1764579918.047717
+        },
+        "assets/eat.mp3": {
+            "hash": "b8d2ab8f95265b01acd6ddbff256d5dd85f5672d49c51302d76e481c77766c52",
+            "size": 3804,
+            "mtime": 1764579918.1080124
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "assets/food_berry.png": {
+            "hash": "c19508ee31f2617d753364e44da6ab6164c1c2db0125a492c00b82edc7745ad8",
+            "size": 37804,
+            "mtime": 1764857975.9746642
+        },
+        "assets/game_over.mp3": {
+            "hash": "2a64197bec8c98ecf641257f2d021f428ac3ac24939c4d295b950a7ef6025383",
+            "size": 30136,
+            "mtime": 1764579918.1080124
+        },
+        "assets/snake_body.png": {
+            "hash": "5d1e0a4de95a4f4b749ce155c69717049511216771631f7784ac1a8659ae0e01",
+            "size": 461,
+            "mtime": 1764579850.7396474
+        },
+        "assets/snake_head.png": {
+            "hash": "2c2509f9788e58eeb5770dba42ae585b593e646eae54a9165d22ba1cd62ebdf6",
+            "size": 789,
+            "mtime": 1764579824.6594696
+        },
+        "assets/thumbnail.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        }
+    }
+}

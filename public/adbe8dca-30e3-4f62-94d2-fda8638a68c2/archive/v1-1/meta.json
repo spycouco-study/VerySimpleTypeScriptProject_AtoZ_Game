@@ -1,0 +1,132 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-12-04T17:18:00.784743",
+    "summary": "귀여운 뱀게임을 만들어주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "eat.mp3",
+            "path": "assets/eat.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "food.png",
+            "path": "assets/food.png",
+            "type": "Add"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "snake_body.png",
+            "path": "assets/snake_body.png",
+            "type": "Add"
+        },
+        {
+            "name": "snake_head.png",
+            "path": "assets/snake_head.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "ddb60f8246563654852096424e75a8095126eca897972e794c66ed4af7abec78",
+            "size": 1673,
+            "mtime": 1764836277.0345523
+        },
+        "game.js": {
+            "hash": "b047b4c5fba166a1cdc252befa35bd3c0a78d2efdcb80275bd5314dc5bd377c5",
+            "size": 54752,
+            "mtime": 1764836280.5165489
+        },
+        "game.ts": {
+            "hash": "e946c5022c184e54fe5a14ea1c67abbf434c7c8dcf202cdba1e39c3956e7c1e7",
+            "size": 19594,
+            "mtime": 1764836277.0690289
+        },
+        "assets/background.png": {
+            "hash": "55455ecbbd746ccba6cbf5d12907b4662111b752e2311eab047ce14ce0e05509",
+            "size": 639581,
+            "mtime": 1764836169.5360994
+        },
+        "assets/bgm.mp3": {
+            "hash": "a0a9ceed8674519308955ba9e068d4bfc6470845130ee0a32cbbe4a525e02e48",
+            "size": 1482753,
+            "mtime": 1764836220.1087484
+        },
+        "assets/eat.mp3": {
+            "hash": "8e1346a4dc2cee809efa6c690f8f920abe77e8c0968998230b6810e9f39b50a9",
+            "size": 24493,
+            "mtime": 1764836220.0793612
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "assets/food.png": {
+            "hash": "398391d874eb4776f7dec2314e5ef183024c8c63d34998bf9e14e279cba5d7d2",
+            "size": 281019,
+            "mtime": 1764836210.3335743
+        },
+        "assets/game_over.mp3": {
+            "hash": "410d9af4e470598102043d4894c1443c8c867f18d21f761f91bccaa051e15a87",
+            "size": 34524,
+            "mtime": 1764836220.0950277
+        },
+        "assets/snake_body.png": {
+            "hash": "cf33d4ab6eaee3e2aebd6e496c0d10219718d655028a6f2209be1aff59492b83",
+            "size": 524,
+            "mtime": 1764836152.659374
+        },
+        "assets/snake_head.png": {
+            "hash": "6849beeb6caf2313986775e0d99deab0d2e671c8ccdda2f874591d7d72b7de1b",
+            "size": 392182,
+            "mtime": 1764836182.5854309
+        },
+        "assets/thumbnail.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        }
+    }
+}

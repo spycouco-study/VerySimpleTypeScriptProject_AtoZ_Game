@@ -541,8 +541,16 @@
             "parent": "v49-2",
             "timestamp": "2025-11-26T14:56:55.867169",
             "summary": "bullet.png파일을 다른 파일로 교체 했습니다.",
-            "is_latest": true,
+            "is_latest": false,
             "is_current": true
+        },
+        {
+            "version": "v47-4",
+            "parent": "v46-2",
+            "timestamp": "2025-12-04T23:08:22.789580",
+            "summary": "런타임 에러 'TypeError: Cannot read properties of undefined (reading 'mass')'를 수정해주세요. 이 에러는 'http://localhost:8080/sy_3d_dddd4/game.js' 파일의 195번째 줄 23번째 열에서 발생하고 있습니다. 'mass' 속성을 읽으려고 할 때 'undefined'에서 읽을 수 없다는 오류 메시지를 통해 해당 위치에서 'mass' 속성을 가진 객체가 올바르게 초기화되거나 정의되지 않았음을 알 수 있습니다. 게임이 정상적으로 실행되도록 이 오류를 해결해주십시오.",
+            "is_latest": true,
+            "is_current": false
         }
     ]
 }

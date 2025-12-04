@@ -1,0 +1,198 @@
+{
+  "gameConfig": {
+    "canvasWidth": 1280,
+    "canvasHeight": 720,
+    "initialMoney": 50,
+    "initialEnergy": 200,
+    "maxEnergy": 200,
+    "energyRegenRate": 2.0,
+    "initialStress": 0,
+    "maxStress": 100,
+    "stressDecayRate": 0.8,
+    "focusPointsPerClick": 20,
+    "taskSpawnIntervalMin": 2000,
+    "taskSpawnIntervalMax": 5000,
+    "maxActiveTasks": 3,
+    "earlyLeaveScoreTarget": 1500,
+    "earlyLeaveMoneyBonus": 200,
+    "gameDayDurationSeconds": 180,
+    "uiPanelColor": "#333333",
+    "textColor": "#FFFFFF",
+    "accentColor": "#FFAA00"
+  },
+  "tasks": [
+    {
+      "id": "report",
+      "name": "주간 보고서 작성",
+      "description": "이번 주 업무 성과를 보고서로 정리합니다.",
+      "baseDuration": 300,
+      "moneyReward": 20,
+      "performanceReward": 15,
+      "stressCost": 10,
+      "icon": "task_icon_report"
+    },
+    {
+      "id": "meeting",
+      "name": "팀 회의 참석",
+      "description": "팀 회의에 참석하여 의견을 공유합니다.",
+      "baseDuration": 200,
+      "moneyReward": 10,
+      "performanceReward": 10,
+      "stressCost": 5,
+      "icon": "task_icon_meeting"
+    },
+    {
+      "id": "email",
+      "name": "밀린 이메일 처리",
+      "description": "받은 이메일을 확인하고 답변합니다.",
+      "baseDuration": 150,
+      "moneyReward": 5,
+      "performanceReward": 5,
+      "stressCost": 3,
+      "icon": "task_icon_email"
+    },
+    {
+      "id": "planning",
+      "name": "프로젝트 계획 수립",
+      "description": "새로운 프로젝트의 세부 계획을 세웁니다.",
+      "baseDuration": 400,
+      "moneyReward": 30,
+      "performanceReward": 20,
+      "stressCost": 15,
+      "icon": "task_icon_planning"
+    },
+    {
+      "id": "data_analysis",
+      "name": "데이터 분석",
+      "description": "수집된 데이터를 분석하여 의미있는 통찰을 얻습니다.",
+      "baseDuration": 350,
+      "moneyReward": 25,
+      "performanceReward": 18,
+      "stressCost": 12,
+      "icon": "task_icon_data"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "faster_typing",
+      "name": "쾌속 타이핑 스킬",
+      "description": "타이핑 속도가 증가하여 보고서 작성 효율이 높아집니다.",
+      "cost": 100,
+      "effectType": "taskSpeedMultiplier",
+      "effectValue": 1.1,
+      "icon": "upgrade_icon_typing"
+    },
+    {
+      "id": "ergonomic_chair",
+      "name": "인체공학 의자",
+      "description": "휴식 시 스트레스 감소 효과가 개선됩니다.",
+      "cost": 150,
+      "effectType": "stressDecayRate",
+      "effectValue": 0.5,
+      "icon": "upgrade_icon_chair"
+    },
+    {
+      "id": "auto_coffee_machine",
+      "name": "자동 커피 머신",
+      "description": "에너지 재생 속도가 빨라집니다.",
+      "cost": 200,
+      "effectType": "energyRegenRate",
+      "effectValue": 1.0,
+      "icon": "upgrade_icon_coffee"
+    },
+    {
+      "id": "better_monitor",
+      "name": "듀얼 모니터",
+      "description": "한 번에 처리할 수 있는 업무의 양이 늘어납니다. (동시 작업 수 +1)",
+      "cost": 250,
+      "effectType": "maxActiveTasks",
+      "effectValue": 1,
+      "icon": "upgrade_icon_monitor"
+    }
+  ],
+  "events": [
+    {
+      "id": "urgent_meeting",
+      "name": "갑작스러운 긴급 회의",
+      "description": "예고 없이 긴급 회의에 소집됩니다. 스트레스가 20 증가합니다.",
+      "triggerChance": 0.1,
+      "effectType": "stressBoost",
+      "effectValue": 20,
+      "delaySeconds": 0
+    },
+    {
+      "id": "colleague_help",
+      "name": "동료의 도움 요청",
+      "description": "동료가 업무를 도와달라고 합니다. 거절하면 평판이 나빠지지만, 수락하면 보너스 업무 하나가 생성됩니다.",
+      "triggerChance": 0.05,
+      "effectType": "bonusTask",
+      "effectValue": 1,
+      "delaySeconds": 0
+    },
+    {
+      "id": "bonus_task",
+      "name": "깜짝 보너스 업무",
+      "description": "예상치 못한 보너스 업무로 추가 급여를 얻을 수 있습니다.",
+      "triggerChance": 0.15,
+      "effectType": "bonusTask",
+      "effectValue": 1,
+      "delaySeconds": 0
+    }
+  ],
+  "texts": {
+    "title": "사무실 타이쿤: 칼퇴를 향한 여정",
+    "clickToStart": "클릭하여 시작",
+    "instructionsTitle": "게임 조작법",
+    "instructionsText": [
+      "당신은 평범한 직장인입니다. 주어진 업무를 효율적으로 처리하고 '칼퇴'를 쟁취하세요!",
+      "업무: 화면 왼쪽 패널에 나타나는 업무를 마우스로 클릭(누르고 있으면 계속 진행)하여 진행도를 높이세요.",
+      "에너지: 업무를 진행하면 에너지가 소모됩니다. 에너지가 없으면 업무를 할 수 없습니다. 시간이 지나면 회복됩니다.",
+      "스트레스: 업무를 처리하면 스트레스가 쌓입니다. 스트레스가 너무 높으면 쓰러집니다. 휴식하거나 커피를 마시면 감소합니다.",
+      "급여: 업무를 완료하면 급여와 성과를 얻습니다.",
+      "업그레이드: 모은 급여로 스킬을 올리거나 사무용품을 업그레이드하여 업무 효율을 높일 수 있습니다.",
+      "목표: 주어진 시간(오후 6시) 안에 '칼퇴 점수'를 달성하여 일찍 퇴근하세요!",
+      "클릭하여 게임 시작"
+    ],
+    "moneyLabel": "급여: ₩",
+    "energyLabel": "에너지:",
+    "stressLabel": "스트레스:",
+    "performanceLabel": "칼퇴 점수:",
+    "timeLabel": "남은 시간: ",
+    "taskInProgress": "업무 진행 중...",
+    "taskComplete": "업무 완료!",
+    "upgradePanelTitle": "업그레이드",
+    "gameOverTitle": "게임 오버",
+    "gameOverStress": "스트레스 과다로 쓰러졌습니다...",
+    "gameOverEnergy": "에너지가 고갈되어 업무 불가...",
+    "gameWinTitle": "칼퇴 성공!",
+    "gameWinMessage": "축하합니다! 오늘 하루도 무사히 칼퇴에 성공했습니다! 보너스 급여 +₩"
+  },
+  "assets": {
+    "images": [
+      { "name": "title_bg", "path": "assets/title_bg.png", "width": 1280, "height": 720 },
+      { "name": "office_bg", "path": "assets/office_bg.png", "width": 1280, "height": 720 },
+      { "name": "player_avatar", "path": "assets/player_avatar.png", "width": 64, "height": 64 },
+      { "name": "task_icon_report", "path": "assets/task_icon_report.png", "width": 48, "height": 48 },
+      { "name": "task_icon_meeting", "path": "assets/task_icon_meeting.png", "width": 48, "height": 48 },
+      { "name": "task_icon_email", "path": "assets/task_icon_email.png", "width": 48, "height": 48 },
+      { "name": "task_icon_planning", "path": "assets/task_icon_planning.png", "width": 48, "height": 48 },
+      { "name": "task_icon_data", "path": "assets/task_icon_data.png", "width": 48, "height": 48 },
+      { "name": "upgrade_icon_typing", "path": "assets/upgrade_icon_typing.png", "width": 48, "height": 48 },
+      { "name": "upgrade_icon_chair", "path": "assets/upgrade_icon_chair.png", "width": 48, "height": 48 },
+      { "name": "upgrade_icon_coffee", "path": "assets/upgrade_icon_coffee.png", "width": 48, "height": 48 },
+      { "name": "upgrade_icon_monitor", "path": "assets/upgrade_icon_monitor.png", "width": 48, "height": 48 },
+      { "name": "energy_bar_fill", "path": "assets/energy_bar_fill.png", "width": 1, "height": 1 },
+      { "name": "stress_bar_fill", "path": "assets/stress_bar_fill.png", "width": 1, "height": 1 },
+      { "name": "button_normal", "path": "assets/button_normal.png", "width": 10, "height": 10 },
+      { "name": "button_hover", "path": "assets/button_hover.png", "width": 10, "height": 10 },
+      { "name": "task_slot_bg", "path": "assets/task_slot_bg.png", "width": 10, "height": 10 }
+    ],
+    "sounds": [
+      { "name": "bgm_office", "path": "assets/bgm_office.mp3", "duration_seconds": 120.0, "volume": 0.3 },
+      { "name": "sfx_click", "path": "assets/sfx_click.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+      { "name": "sfx_task_complete", "path": "assets/sfx_task_complete.mp3", "duration_seconds": 1.0, "volume": 0.6 },
+      { "name": "sfx_upgrade", "path": "assets/sfx_upgrade.mp3", "duration_seconds": 1.0, "volume": 0.6 },
+      { "name": "sfx_event", "path": "assets/sfx_event.mp3", "duration_seconds": 1.5, "volume": 0.7 }
+    ]
+  }
+}

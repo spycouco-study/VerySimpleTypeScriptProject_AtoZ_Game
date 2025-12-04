@@ -316,12 +316,13 @@
     },
     {
         "id": "sy_3d_dddd4",
-        "game_title": "sy_3d_dddd4",
+        "game_title": "3D FPS 게임",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_3d_dddd4/assets/thumbnail.png",
         "plays": 92,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 37
     },
     {
         "id": "sy_3d_fps",
@@ -420,7 +421,8 @@
         "category": "etc",
         "thumbnail": "/static/sy_cute_snake/assets/thumbnail.png",
         "plays": 658,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 358
     },
     {
         "id": "sy_dt",
@@ -618,6 +620,46 @@
         "author": "unknown",
         "category": "etc",
         "thumbnail": "/static/17e7bf02-c67e-4ec5-9df2-55244223bc78/assets/thumbnail.png",
+        "plays": 0,
+        "description": "내가 만든 나만의 게임",
+        "likes": 0
+    },
+    {
+        "id": "9f498191-4d62-4925-aada-c4857d123cfc",
+        "game_title": "직장인 게임",
+        "author": "unknown",
+        "category": "tycoon",
+        "thumbnail": "/static/9f498191-4d62-4925-aada-c4857d123cfc/assets/thumbnail.png",
+        "plays": 0,
+        "description": "내가 만든 나만의 게임",
+        "likes": 0
+    },
+    {
+        "id": "adbe8dca-30e3-4f62-94d2-fda8638a68c2",
+        "game_title": "내가 만든 게임",
+        "author": "unknown",
+        "category": "action",
+        "thumbnail": "/static/adbe8dca-30e3-4f62-94d2-fda8638a68c2/assets/thumbnail.png",
+        "plays": 0,
+        "description": "내가 만든 나만의 게임",
+        "likes": 0
+    },
+    {
+        "id": "0f7db968-0886-4b1b-a8b8-d59042abae4f",
+        "game_title": "내가 만든 게임",
+        "author": "unknown",
+        "category": "puzzle",
+        "thumbnail": "/static/0f7db968-0886-4b1b-a8b8-d59042abae4f/assets/thumbnail.png",
+        "plays": 0,
+        "description": "내가 만든 나만의 게임",
+        "likes": 0
+    },
+    {
+        "id": "9dc4866a-fb26-4005-83f1-46988b9225c4",
+        "game_title": "내가 만든 게임",
+        "author": "unknown",
+        "category": "puzzle",
+        "thumbnail": "/static/9dc4866a-fb26-4005-83f1-46988b9225c4/assets/thumbnail.png",
         "plays": 0,
         "description": "내가 만든 나만의 게임",
         "likes": 0
