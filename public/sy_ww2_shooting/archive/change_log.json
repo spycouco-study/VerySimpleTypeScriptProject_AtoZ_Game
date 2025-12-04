@@ -1,0 +1,116 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-12-01T17:35:00.871812",
+            "summary": "세계 2차 대전 분위기의 수평 스크롤 비행기 슈팅 게임을 만들어 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-01T17:40:17.160089",
+            "summary": "게임의 폰트를 기본 폰트로 설정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-12-01T17:41:52.837818",
+            "summary": "enemy_bullet.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-12-01T17:41:57.826258",
+            "summary": "player_bullet.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-12-01T17:45:19.210434",
+            "summary": "적들이 플레이어의 위치를 향해 총알을 발사하도록 게임을 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v6-1",
+            "parent": "v5-1",
+            "timestamp": "2025-12-01T17:52:19.843466",
+            "summary": "게임 시작에 실패했습니다. `TypeError: Cannot read properties of undefined (reading 'canvasWidth')` 런타임 오류가 발생했습니다. 이 오류를 수정하여 게임이 정상적으로 시작되도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-2",
+            "parent": "v4-1",
+            "timestamp": "2025-12-01T17:55:33.446420",
+            "summary": "적들이 플레이어의 현재 위치를 조준하여 총알을 발사하도록 게임을 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v6-2",
+            "parent": "v5-2",
+            "timestamp": "2025-12-01T17:56:47.756532",
+            "summary": "background.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-1",
+            "parent": "v6-2",
+            "timestamp": "2025-12-01T17:59:22.156851",
+            "summary": "사용자가 변경한 배경 이미지가 가끔 잘려 보이는 문제가 있습니다. 배경 이미지를 화면(배경)에 맞게 스케일하여 이미지가 잘려 보이지 않도록 수정해주세요. 이미지 스케일링 방식을 '전체 보기' 또는 '화면 맞춤' 방식으로 변경하여 모든 내용이 표시되도록 처리해야 합니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v8-1",
+            "parent": "v7-1",
+            "timestamp": "2025-12-01T18:16:13.081644",
+            "summary": "적들이 미사일을 너무 자주 발사해서 피하기 어렵습니다. 미사일 발사 빈도를 줄여주시거나 피할 수 있도록 난이도를 조절해주세요.\n게임이 너무 어렵습니다. 전체적인 난이도를 낮춰주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v9-1",
+            "parent": "v8-1",
+            "timestamp": "2025-12-01T18:19:08.448954",
+            "summary": "적들이 미사일을 발사하는 빈도를 현재보다 더 낮게 설정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v10-1",
+            "parent": "v9-1",
+            "timestamp": "2025-12-01T18:31:44.478561",
+            "summary": "게임 화면 비율의 가로 길이를 더 길게 변경해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v11-1",
+            "parent": "v10-1",
+            "timestamp": "2025-12-01T18:32:14.755627",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v12-1",
+            "parent": "v11-1",
+            "timestamp": "2025-12-01T18:33:35.247089",
+            "summary": "게임 타이틀 화면을 게임 화면에 맞게 스케일 해주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

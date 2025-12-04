@@ -1,0 +1,108 @@
+{
+    "canvasWidth": 600,
+    "canvasHeight": 800,
+    "playerConfig": {
+        "spriteName": "player_plane",
+        "width": 64,
+        "height": 64,
+        "speed": 250,
+        "fireRate": 5,
+        "bulletSpriteName": "player_bullet",
+        "bulletWidth": 8,
+        "bulletHeight": 20,
+        "bulletSpeed": 300,
+        "bulletDamage": 1,
+        "initialHealth": 3
+    },
+    "enemyConfigs": {
+        "fighter1": {
+            "spriteName": "enemy_plane_1",
+            "width": 50,
+            "height": 50,
+            "speed": 80,
+            "fireRate": 1.5,
+            "bulletSpriteName": "enemy_bullet",
+            "bulletWidth": 8,
+            "bulletHeight": 16,
+            "bulletSpeed": 150,
+            "bulletDamage": 1,
+            "initialHealth": 2,
+            "scoreValue": 100
+        },
+        "bomber1": {
+            "spriteName": "enemy_plane_2",
+            "width": 90,
+            "height": 90,
+            "speed": 50,
+            "fireRate": 0.5,
+            "bulletSpriteName": "enemy_bullet",
+            "bulletWidth": 10,
+            "bulletHeight": 20,
+            "bulletSpeed": 120,
+            "bulletDamage": 2,
+            "initialHealth": 5,
+            "scoreValue": 300
+        }
+    },
+    "waveConfig": [
+        {
+            "waveDelay": 3,
+            "enemies": [
+                { "enemyType": "fighter1", "count": 3, "spawnInterval": 0.8, "spawnXOffset": 0.2 },
+                { "enemyType": "fighter1", "count": 2, "spawnInterval": 0.5, "spawnXOffset": 0.8 }
+            ]
+        },
+        {
+            "waveDelay": 5,
+            "enemies": [
+                { "enemyType": "bomber1", "count": 1, "spawnInterval": 0, "spawnXOffset": 0.5 },
+                { "enemyType": "fighter1", "count": 4, "spawnInterval": 0.6, "spawnXOffset": 0.3 }
+            ]
+        },
+        {
+            "waveDelay": 7,
+            "enemies": [
+                { "enemyType": "fighter1", "count": 5, "spawnInterval": 0.5, "spawnXOffset": 0.5 },
+                { "enemyType": "bomber1", "count": 2, "spawnInterval": 2.0, "spawnXOffset": 0.2 },
+                { "enemyType": "bomber1", "count": 2, "spawnInterval": 2.0, "spawnXOffset": 0.8 }
+            ]
+        }
+    ],
+    "backgroundConfig": {
+        "spriteName": "background_sky_tile",
+        "scrollSpeed": 50
+    },
+    "uiText": {
+        "title": "2차 세계대전 공중전",
+        "instructions": "화살표 키 또는 WASD: 이동\n스페이스바 또는 J: 발사\n적기를 격추하고 생존하세요!",
+        "gameOver": "게임 오버",
+        "pressAnyKey": "아무 키나 클릭하여 진행",
+        "scoreLabel": "점수:",
+        "healthLabel": "체력:",
+        "startText": "게임 시작!",
+        "continueText": "계속하기"
+    },
+    "assets": {
+        "images": [
+            { "name": "background_sky_tile", "path": "assets/background_sky_tile.png", "width": 600, "height": 300 },
+            { "name": "player_plane", "path": "assets/player_plane.png", "width": 64, "height": 64 },
+            { "name": "player_bullet", "path": "assets/player_bullet.png", "width": 8, "height": 20 },
+            { "name": "enemy_plane_1", "path": "assets/enemy_plane_1.png", "width": 50, "height": 50 },
+            { "name": "enemy_plane_2", "path": "assets/enemy_plane_2.png", "width": 90, "height": 90 },
+            { "name": "enemy_bullet", "path": "assets/enemy_bullet.png", "width": 8, "height": 16 },
+            { "name": "explosion", "path": "assets/explosion.png", "width": 64, "height": 64 }
+        ],
+        "sounds": [
+            { "name": "bgm_ww2", "path": "assets/bgm_ww2.mp3", "duration_seconds": 90, "volume": 0.4 },
+            { "name": "player_shoot_sfx", "path": "assets/player_shoot_sfx.mp3", "duration_seconds": 0.5, "volume": 0.6 },
+            { "name": "enemy_shoot_sfx", "path": "assets/enemy_shoot_sfx.mp3", "duration_seconds": 0.5, "volume": 0.3 },
+            { "name": "explosion_sfx", "path": "assets/explosion_sfx.mp3", "duration_seconds": 1.0, "volume": 0.8 }
+        ]
+    },
+    "soundConfig": {
+        "bgm": "bgm_ww2",
+        "playerShoot": "player_shoot_sfx",
+        "enemyShoot": "enemy_shoot_sfx",
+        "explosion": "explosion_sfx"
+    }
+}

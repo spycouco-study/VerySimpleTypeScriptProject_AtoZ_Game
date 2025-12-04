@@ -1,0 +1,85 @@
+{
+    "canvas": {
+        "width": 960,
+        "height": 540
+    },
+    "player": {
+        "x": 80,
+        "y": 380,
+        "width": 64,
+        "height": 90,
+        "jumpHeight": 150,
+        "slideHeight": 45,
+        "gravity": 1200,
+        "jumpForce": 600,
+        "slideDuration": 0.8,
+        "animationSpeed": 0.15,
+        "runningFrames": ["player_run_1", "player_run_2", "player_run_3", "player_run_4"],
+        "jumpingFrame": "player_jump",
+        "slidingFrame": "player_slide",
+        "invincibilityDuration": 2.0,
+        "blinkFrequency": 8,
+        "lives": 3
+    },
+    "gameplay": {
+        "initialGameSpeed": 200,
+        "maxGameSpeed": 400,
+        "speedIncreaseRate": 10,
+        "obstacleSpawnIntervalMin": 1.5,
+        "obstacleSpawnIntervalMax": 2.5,
+        "collectibleSpawnChance": 0.7,
+        "collectibleSpawnOffsetMin": 50,
+        "collectibleSpawnOffsetMax": 150,
+        "scorePerSecond": 10,
+        "obstacleDamage": 1
+    },
+    "parallax": [
+        { "image": "background_far", "speedMultiplier": 0.2, "yOffset": 0, "height": 300 },
+        { "image": "background_mid", "speedMultiplier": 0.5, "yOffset": 270, "height": 200 }
+    ],
+    "ground": {
+        "image": "ground",
+        "y": 470,
+        "height": 70
+    },
+    "obstacles": [
+        { "name": "low_obstacle", "image": "obstacle_low", "width": 60, "height": 60, "yOffset": 0 },
+        { "name": "high_obstacle", "image": "obstacle_high", "width": 80, "height": 100, "yOffset": 0 }
+    ],
+    "collectibles": [
+        { "name": "jelly_coin", "image": "collectible_jelly", "width": 32, "height": 32, "scoreValue": 50 }
+    ],
+    "ui": {
+        "font": "36px Pretendard, Arial",
+        "textColor": "#FFFFFF",
+        "titleMessage": "쿠키런 러닝 게임",
+        "controlsMessage": "조작법: Spacebar - 점프, ↓ - 슬라이드",
+        "startMessage": "아무 키나 누르거나 클릭하여 시작",
+        "gameOverMessage": "게임 오버!",
+        "restartMessage": "아무 키나 누르거나 클릭하여 타이틀로"
+    },
+    "assets": {
+        "images": [
+            { "name": "player_run_1", "path": "assets/player_run_1.png", "width": 64, "height": 90 },
+            { "name": "player_run_2", "path": "assets/player_run_2.png", "width": 64, "height": 90 },
+            { "name": "player_run_3", "path": "assets/player_run_3.png", "width": 64, "height": 90 },
+            { "name": "player_run_4", "path": "assets/player_run_4.png", "width": 64, "height": 90 },
+            { "name": "player_jump", "path": "assets/player_jump.png", "width": 64, "height": 90 },
+            { "name": "player_slide", "path": "assets/player_slide.png", "width": 64, "height": 45 },
+            { "name": "background_far", "path": "assets/background_far.png", "width": 960, "height": 300 },
+            { "name": "background_mid", "path": "assets/background_mid.png", "width": 960, "height": 200 },
+            { "name": "ground", "path": "assets/ground.png", "width": 960, "height": 70 },
+            { "name": "obstacle_low", "path": "assets/obstacle_low.png", "width": 60, "height": 60 },
+            { "name": "obstacle_high", "path": "assets/obstacle_high.png", "width": 80, "height": 100 },
+            { "name": "collectible_jelly", "path": "assets/collectible_jelly.png", "width": 32, "height": 32 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 120.0, "volume": 0.3 },
+            { "name": "sfx_jump", "path": "assets/sfx_jump.mp3", "duration_seconds": 0.5, "volume": 0.8 },
+            { "name": "sfx_slide", "path": "assets/sfx_slide.mp3", "duration_seconds": 0.5, "volume": 0.8 },
+            { "name": "sfx_collect", "path": "assets/sfx_collect.mp3", "duration_seconds": 0.3, "volume": 0.7 },
+            { "name": "sfx_hit", "path": "assets/sfx_hit.mp3", "duration_seconds": 0.6, "volume": 0.9 },
+            { "name": "sfx_game_over", "path": "assets/sfx_game_over.mp3", "duration_seconds": 2.0, "volume": 0.8 }
+        ]
+    }
+}

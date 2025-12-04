@@ -1,0 +1,69 @@
+{
+    "gameSettings": {
+        "canvasWidth": 960,
+        "canvasHeight": 720,
+        "tileSize": 60,
+        "playerSpeed": 200,
+        "bombFuseTime": 2.0,
+        "explosionDuration": 0.5,
+        "initialBombRange": 2,
+        "initialMaxBombs": 1,
+        "initialLives": 3,
+        "aiCount": 3,
+        "breakableBlockDensity": 0.5,
+        "powerUpDropChance": 0.3
+    },
+    "mapSettings": {
+        "mapWidth": 16,
+        "mapHeight": 12
+    },
+    "assets": {
+        "images": [
+            { "name": "player1", "path": "assets/player1.png", "width": 60, "height": 60 },
+            { "name": "player2", "path": "assets/player2.png", "width": 60, "height": 60 },
+            { "name": "player3", "path": "assets/player3.png", "width": 60, "height": 60 },
+            { "name": "player4", "path": "assets/player4.png", "width": 60, "height": 60 },
+            { "name": "bomb", "path": "assets/bomb.png", "width": 60, "height": 60 },
+            { "name": "solid_block", "path": "assets/solid_block.png", "width": 60, "height": 60 },
+            { "name": "breakable_block", "path": "assets/breakable_block.png", "width": 60, "height": 60 },
+            { "name": "empty_tile", "path": "assets/empty_tile.png", "width": 60, "height": 60 },
+            { "name": "explosion_center", "path": "assets/explosion_center.png", "width": 60, "height": 60 },
+            { "name": "explosion_horizontal", "path": "assets/explosion_horizontal.png", "width": 60, "height": 60 },
+            { "name": "explosion_vertical", "path": "assets/explosion_vertical.png", "width": 60, "height": 60 },
+            { "name": "explosion_end_horizontal", "path": "assets/explosion_end_horizontal.png", "width": 60, "height": 60 },
+            { "name": "explosion_end_vertical", "path": "assets/explosion_end_vertical.png", "width": 60, "height": 60 },
+            { "name": "powerup_bomb", "path": "assets/powerup_bomb.png", "width": 60, "height": 60 },
+            { "name": "powerup_range", "path": "assets/powerup_range.png", "width": 60, "height": 60 },
+            { "name": "powerup_speed", "path": "assets/powerup_speed.png", "width": 60, "height": 60 },
+            { "name": "icon_sound_on", "path": "assets/icon_sound_on.png", "width": 30, "height": 30 },
+            { "name": "icon_sound_off", "path": "assets/icon_sound_off.png", "width": 30, "height": 30 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.5 },
+            { "name": "bomb_place", "path": "assets/bomb_place.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+            { "name": "explosion", "path": "assets/explosion.mp3", "duration_seconds": 1.0, "volume": 0.8 },
+            { "name": "block_break", "path": "assets/block_break.mp3", "duration_seconds": 0.5, "volume": 0.6 },
+            { "name": "powerup_collect", "path": "assets/powerup_collect.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+            { "name": "player_hit", "path": "assets/player_hit.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+            { "name": "player_die", "path": "assets/player_die.mp3", "duration_seconds": 1.0, "volume": 0.8 },
+            { "name": "player_move", "path": "assets/player_move.mp3", "duration_seconds": 0.1, "volume": 0.3 }
+        ]
+    },
+    "text": {
+        "titleScreen": ["CRAZY BOMBER"],
+        "instructionsScreen": [
+            "Instructions:",
+            "  Player 1: Use WASD or Arrow Keys to move.",
+            "  Press Spacebar to place a bomb.",
+            "",
+            "Game Goal:",
+            "  Destroy all enemy AI players!",
+            "  Collect power-ups to increase bomb capacity, range, and speed.",
+            "  Avoid enemy bombs and get caught in your own explosions!",
+            "",
+            "Note: AI players will also try to defeat you and break blocks."
+        ],
+        "gameOverWin": ["YOU WIN!", "All AI enemies defeated!"],
+        "gameOverLose": ["GAME OVER", "You were defeated!"]
+    }
+}

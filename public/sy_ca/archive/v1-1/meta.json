@@ -1,0 +1,312 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-27T06:40:34.266214",
+    "summary": "크레이지 아케이드와 유사한 스타일의 게임을 만들어 주세요.\n게임 내 적군은 컴퓨터(AI) 플레이어로 구성해 주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "block_break.mp3",
+            "path": "assets/block_break.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "bomb.png",
+            "path": "assets/bomb.png",
+            "type": "Add"
+        },
+        {
+            "name": "bomb_place.mp3",
+            "path": "assets/bomb_place.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "breakable_block.png",
+            "path": "assets/breakable_block.png",
+            "type": "Add"
+        },
+        {
+            "name": "empty_tile.png",
+            "path": "assets/empty_tile.png",
+            "type": "Add"
+        },
+        {
+            "name": "explosion.mp3",
+            "path": "assets/explosion.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "explosion_center.png",
+            "path": "assets/explosion_center.png",
+            "type": "Add"
+        },
+        {
+            "name": "explosion_end_horizontal.png",
+            "path": "assets/explosion_end_horizontal.png",
+            "type": "Add"
+        },
+        {
+            "name": "explosion_end_vertical.png",
+            "path": "assets/explosion_end_vertical.png",
+            "type": "Add"
+        },
+        {
+            "name": "explosion_horizontal.png",
+            "path": "assets/explosion_horizontal.png",
+            "type": "Add"
+        },
+        {
+            "name": "explosion_vertical.png",
+            "path": "assets/explosion_vertical.png",
+            "type": "Add"
+        },
+        {
+            "name": "icon_sound_off.png",
+            "path": "assets/icon_sound_off.png",
+            "type": "Add"
+        },
+        {
+            "name": "icon_sound_on.png",
+            "path": "assets/icon_sound_on.png",
+            "type": "Add"
+        },
+        {
+            "name": "player1.png",
+            "path": "assets/player1.png",
+            "type": "Add"
+        },
+        {
+            "name": "player2.png",
+            "path": "assets/player2.png",
+            "type": "Add"
+        },
+        {
+            "name": "player3.png",
+            "path": "assets/player3.png",
+            "type": "Add"
+        },
+        {
+            "name": "player4.png",
+            "path": "assets/player4.png",
+            "type": "Add"
+        },
+        {
+            "name": "player_die.mp3",
+            "path": "assets/player_die.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "player_hit.mp3",
+            "path": "assets/player_hit.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "player_move.mp3",
+            "path": "assets/player_move.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "powerup_bomb.png",
+            "path": "assets/powerup_bomb.png",
+            "type": "Add"
+        },
+        {
+            "name": "powerup_collect.mp3",
+            "path": "assets/powerup_collect.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "powerup_range.png",
+            "path": "assets/powerup_range.png",
+            "type": "Add"
+        },
+        {
+            "name": "powerup_speed.png",
+            "path": "assets/powerup_speed.png",
+            "type": "Add"
+        },
+        {
+            "name": "solid_block.png",
+            "path": "assets/solid_block.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "b69c146dc8de20b31936c2a4bf1888046c9a01a280c4f0c43f6525ebee4f3103",
+            "size": 4002,
+            "mtime": 1764225624.5499942
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.0
+        },
+        "game.js": {
+            "hash": "02bb77c938af571f4fc2d254833bffe5427e7329e0c88b669e4cade166b6de8a",
+            "size": 163257,
+            "mtime": 1764225630.2444224
+        },
+        "game.ts": {
+            "hash": "887eb8a5fa8b4b28d1c7bafe43f2effc634f773c95ab8de80427d6d2f11445a4",
+            "size": 60792,
+            "mtime": 1764225624.6243484
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347007.0
+        },
+        "assets/block_break.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.0
+        },
+        "assets/bomb.png": {
+            "hash": "51f860ae481dfe805f4e4ccfd58123679bf5ac2ec9878327aa340269e1fad950",
+            "size": 431,
+            "mtime": 1764225623.2830794
+        },
+        "assets/bomb_place.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.0
+        },
+        "assets/breakable_block.png": {
+            "hash": "4d670de845a9ad4b02200c08a66083611f3a8083d075c87b41403c11e27b2f21",
+            "size": 545,
+            "mtime": 1764225623.3245373
+        },
+        "assets/empty_tile.png": {
+            "hash": "40d5cdf45464fb3bb4cd608294fb358a9c55ffbe357e24b1fddf52d3e442634b",
+            "size": 646,
+            "mtime": 1764225623.3476896
+        },
+        "assets/explosion.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.0
+        },
+        "assets/explosion_center.png": {
+            "hash": "3fb0f057880e2f9f39947c161657ab1c76403f9b7daafeb7b3af0eeb4aaa8d50",
+            "size": 767,
+            "mtime": 1764225623.3698578
+        },
+        "assets/explosion_end_horizontal.png": {
+            "hash": "5cbcbc468e7d7c05109dedcba73d0eb8ea12a9cd75403fcef727d3e3a38c492c",
+            "size": 640,
+            "mtime": 1764225623.445187
+        },
+        "assets/explosion_end_vertical.png": {
+            "hash": "5b4ff67e8ba18c5df2e2fa47c626c99a4bf42d145b1de5335f8fbda2e9729fa8",
+            "size": 678,
+            "mtime": 1764225623.4728515
+        },
+        "assets/explosion_horizontal.png": {
+            "hash": "ee6abe7ca49da3bdcb84cca48adcbed38e6a88ecd285c2fc5bc8fbd332402043",
+            "size": 587,
+            "mtime": 1764225623.392649
+        },
+        "assets/explosion_vertical.png": {
+            "hash": "6ffa3b64dcf4ba2ede6002a37a9b700e03100d0f60a7fe3f3fe455cf8a2e82fd",
+            "size": 789,
+            "mtime": 1764225623.4160233
+        },
+        "assets/icon_sound_off.png": {
+            "hash": "a53a00730e0c8f0f59b6558effb576fefbb601ad8c8bf4b8950c66cc94ac5729",
+            "size": 421,
+            "mtime": 1764225623.6126719
+        },
+        "assets/icon_sound_on.png": {
+            "hash": "e18a4b97b2e3a8e85328de778a6bdd4f9f43d48b73bfddbc28bc868b6c3f0e5e",
+            "size": 416,
+            "mtime": 1764225623.5847232
+        },
+        "assets/player1.png": {
+            "hash": "7403b299aa66e346ccf5f2e7210ba8f3aff44457a4b9e128312c9f5840e498df",
+            "size": 599,
+            "mtime": 1764225623.1965122
+        },
+        "assets/player2.png": {
+            "hash": "8120b693c4a4af1e057b698e73147eee2a81fcfe417d48f005b663d40e220be8",
+            "size": 686,
+            "mtime": 1764225623.2227957
+        },
+        "assets/player3.png": {
+            "hash": "29f82d50fdcad1dea62d7a89a99d25c1635858d23ca8789dde079c4e3bf432bd",
+            "size": 703,
+            "mtime": 1764225623.2426777
+        },
+        "assets/player4.png": {
+            "hash": "a30f59e5e0c31a3b7d1587da59288c575e5acf61af67ca3441342786bb0e1882",
+            "size": 626,
+            "mtime": 1764225623.2635238
+        },
+        "assets/player_die.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.0
+        },
+        "assets/player_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.0
+        },
+        "assets/player_move.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.0
+        },
+        "assets/powerup_bomb.png": {
+            "hash": "deb5d31eb65e7db158689359fd70a2959cd0704357da6d22ba666e1a7f552bb2",
+            "size": 755,
+            "mtime": 1764225623.503271
+        },
+        "assets/powerup_collect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.0
+        },
+        "assets/powerup_range.png": {
+            "hash": "6bd2be2fbce988fb8d5ff0a3646e4dd0732a563e2d03806cdc39d43315834f71",
+            "size": 811,
+            "mtime": 1764225623.5335736
+        },
+        "assets/powerup_speed.png": {
+            "hash": "92d259e81d68b8bf2dc7a1cbf5551a5d47946b5f69e979d853da54509d6996f4",
+            "size": 608,
+            "mtime": 1764225623.5593352
+        },
+        "assets/solid_block.png": {
+            "hash": "366878597f4225149bafe214afe5036e92e4c544af3bc68c41ca5c95b001293b",
+            "size": 725,
+            "mtime": 1764225623.3031685
+        }
+    }
+}

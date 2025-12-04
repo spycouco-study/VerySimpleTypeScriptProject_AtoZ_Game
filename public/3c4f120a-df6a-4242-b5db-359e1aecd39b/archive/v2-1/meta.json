@@ -1,0 +1,223 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-12-03T21:21:39.537282",
+    "summary": "마우스 클릭 위치와 게임 내 셀의 위치가 일치하지 않는 문제를 수정해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "click_flag.mp3",
+            "path": "assets/click_flag.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "click_reveal.mp3",
+            "path": "assets/click_reveal.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "covered.png",
+            "path": "assets/covered.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "explosion.mp3",
+            "path": "assets/explosion.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "flag.png",
+            "path": "assets/flag.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "mine.png",
+            "path": "assets/mine.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "number_1.png",
+            "path": "assets/number_1.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "number_2.png",
+            "path": "assets/number_2.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "number_3.png",
+            "path": "assets/number_3.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "number_4.png",
+            "path": "assets/number_4.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "number_5.png",
+            "path": "assets/number_5.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "number_6.png",
+            "path": "assets/number_6.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "number_7.png",
+            "path": "assets/number_7.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "number_8.png",
+            "path": "assets/number_8.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "revealed_empty.png",
+            "path": "assets/revealed_empty.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "win_sound.mp3",
+            "path": "assets/win_sound.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "3bbca1e61898efce9811d0b724b2ee72e05cfaae91e59ff0982d27a926a2388f",
+            "size": 2963,
+            "mtime": 1764763908.1045356
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "cff464d9739a47ceee6b40d6be721435c7fa3b69634a84eaa7e8581f0ab36d8e",
+            "size": 46481,
+            "mtime": 1764764499.2742736
+        },
+        "game.ts": {
+            "hash": "8c905e9bcdfcc7244e4f6360312f9f55802542f277037338b13b32fb77b08183",
+            "size": 15795,
+            "mtime": 1764764494.878437
+        },
+        "assets/bgm.mp3": {
+            "hash": "22620c1fe1416b51e6dff3abe3be44a23e52cc9e91ab0ed8a8ed852f0b476002",
+            "size": 1797476,
+            "mtime": 1764764353.5476089
+        },
+        "assets/click_flag.mp3": {
+            "hash": "f24cceab596f8f2fc1d7214c134e635460cc94446ac427f711755742480cc52c",
+            "size": 16343,
+            "mtime": 1764764353.4829333
+        },
+        "assets/click_reveal.mp3": {
+            "hash": "b8d2ab8f95265b01acd6ddbff256d5dd85f5672d49c51302d76e481c77766c52",
+            "size": 3804,
+            "mtime": 1764764353.4487035
+        },
+        "assets/covered.png": {
+            "hash": "e6358081254bfec2974d0b05c5560804aae8ff4fe3a17e824395f838514df380",
+            "size": 604,
+            "mtime": 1764763914.2470477
+        },
+        "assets/explosion.mp3": {
+            "hash": "1355598bcd9ecf1fb5cd71f9ace68fb5fa32e6567aaf1b4407aeb61349bb9e90",
+            "size": 23866,
+            "mtime": 1764764353.508072
+        },
+        "assets/flag.png": {
+            "hash": "9306c696bf8118c3e6fea2c1af10616f30a86b442753c27926816f982a9c0cb7",
+            "size": 504,
+            "mtime": 1764763948.9195943
+        },
+        "assets/mine.png": {
+            "hash": "90768c6f82d7c18b37559697aa90899bd0ad14a531f1be74eeee8a306b75ae18",
+            "size": 2294,
+            "mtime": 1764763986.7953365
+        },
+        "assets/number_1.png": {
+            "hash": "467899f3b8f9c4efa79e7db9120df7f3f0568d8aee3c990daadcede5e9a41405",
+            "size": 1181,
+            "mtime": 1764764045.455392
+        },
+        "assets/number_2.png": {
+            "hash": "1daf841f1f8809f2bb4d8313ee18f22d42a95274d1fc6d0b6cd81ba811f07096",
+            "size": 1107,
+            "mtime": 1764764074.344984
+        },
+        "assets/number_3.png": {
+            "hash": "0fda2e1464a9c96b54befb75600c3722578dbe6a885fdb91b83bd59e5b698b27",
+            "size": 421,
+            "mtime": 1764763908.0505593
+        },
+        "assets/number_4.png": {
+            "hash": "c150d12b7b84038af9a1220f33d8c90553782213013e828c957fca548f759a4a",
+            "size": 446,
+            "mtime": 1764763908.0542216
+        },
+        "assets/number_5.png": {
+            "hash": "3e7925d07276d58d8026ff97abf0fd1c5b7ea95bd3edecdc3768c9356849639c",
+            "size": 1136,
+            "mtime": 1764764275.7363753
+        },
+        "assets/number_6.png": {
+            "hash": "859f0830f7f77749c5415fd3982148015b52f7ff504270cd88dfb584d5a67154",
+            "size": 1145,
+            "mtime": 1764764306.8636174
+        },
+        "assets/number_7.png": {
+            "hash": "0d322f72d170e56fc26ed33aeaafb41deababea13b3eeaf30e1665abfcb50f85",
+            "size": 1222,
+            "mtime": 1764764336.4131503
+        },
+        "assets/number_8.png": {
+            "hash": "5b20fcc840e17cb5b243fa94d750dc70ca82376804389b0060d791ec0d74671d",
+            "size": 449,
+            "mtime": 1764763908.07268
+        },
+        "assets/revealed_empty.png": {
+            "hash": "009a8fd94ca3b3ad13c41fd0c43266af8e5139484f2ed65f2a6660c87acba790",
+            "size": 1113,
+            "mtime": 1764764014.9620395
+        },
+        "assets/win_sound.mp3": {
+            "hash": "5037cae6f7c411a23c404e62cb7023ae49f6c55932c223959b197cb3e47fb8e7",
+            "size": 33897,
+            "mtime": 1764764353.5257292
+        }
+    }
+}

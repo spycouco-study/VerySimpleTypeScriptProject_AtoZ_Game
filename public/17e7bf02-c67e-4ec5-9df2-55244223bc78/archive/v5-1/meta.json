@@ -1,0 +1,193 @@
+{
+    "version": "v5-1",
+    "parent": "v4-1",
+    "timestamp": "2025-12-04T02:48:32.921592",
+    "summary": "낚시줄의 시작점을 낚시바늘의 수직하게 윗쪽(낚시배의 중앙)으로 조정해 주세요.\n물고기를 잡으면 해당 물고기를 낚시바늘과 함께 낚시배쪽으로 이동하는 연출을 해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bite.mp3",
+            "path": "assets/bite.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "boat.png",
+            "path": "assets/boat.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bobber.png",
+            "path": "assets/bobber.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "catch.mp3",
+            "path": "assets/catch.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "fail.mp3",
+            "path": "assets/fail.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "fish1.png",
+            "path": "assets/fish1.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "fish2.png",
+            "path": "assets/fish2.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "fish3.png",
+            "path": "assets/fish3.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "gameover.mp3",
+            "path": "assets/gameover.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "reel.mp3",
+            "path": "assets/reel.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "select.mp3",
+            "path": "assets/select.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "ebb9906275fd7beb49bcb1ae53bdee370785fbfc8a6319102b8c17c2234b12c4",
+            "size": 3439,
+            "mtime": 1764784105.4044192
+        },
+        "game.js": {
+            "hash": "5c0019c054b204339669a866bd4cf3423e00b02a87b4c43ec585d2bbd4ef967b",
+            "size": 105627,
+            "mtime": 1764784112.564178
+        },
+        "game.ts": {
+            "hash": "9d9398d24cb80a28f3e49e4f6fcbed362b935be07ccccd0959b7a4eed3660912",
+            "size": 40956,
+            "mtime": 1764784105.7747571
+        },
+        "assets/background.png": {
+            "hash": "80df5728fbe59532acd3d425cf59af7172430d391deac82529e19f0a4e6ef2c6",
+            "size": 46296,
+            "mtime": 1764782107.5132926
+        },
+        "assets/bgm.mp3": {
+            "hash": "db12803db39f31da76bbc27bf771b55e45c89e4105001fee4ad2e34374d77f1e",
+            "size": 2800578,
+            "mtime": 1764782283.6421318
+        },
+        "assets/bite.mp3": {
+            "hash": "47f3fc8fb978fb88311be2d8810ab0713a635aa44f703dcb1141de4a97bd402f",
+            "size": 14462,
+            "mtime": 1764782283.7144258
+        },
+        "assets/boat.png": {
+            "hash": "e3879dfeac16e1cdff5a20ed22e1a4281dd6eb15344d2cecbc7b06314a63eb5a",
+            "size": 10713,
+            "mtime": 1764782136.5211017
+        },
+        "assets/bobber.png": {
+            "hash": "9603270c21a11242d3e5bb6d052e9ef981fc0001c2b897678cd6fd4f6ac3f6eb",
+            "size": 2505,
+            "mtime": 1764782162.7728074
+        },
+        "assets/catch.mp3": {
+            "hash": "8e1346a4dc2cee809efa6c690f8f920abe77e8c0968998230b6810e9f39b50a9",
+            "size": 24493,
+            "mtime": 1764782283.768664
+        },
+        "assets/fail.mp3": {
+            "hash": "e3e005b42ac5bb20a1f3e8a736f21aef23cdd729241fef277cc35a1cff66496d",
+            "size": 16970,
+            "mtime": 1764782283.7765617
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "assets/fish1.png": {
+            "hash": "2c22ee19b8eeebaed5a06dd510e142ebd0d217b4c8e470452ba270e3f4e82d00",
+            "size": 4981,
+            "mtime": 1764782197.1279585
+        },
+        "assets/fish2.png": {
+            "hash": "137a31348834ee37eba1279f805879106b12d8568c80c2e561f8679f45f125b3",
+            "size": 470,
+            "mtime": 1764782047.1066186
+        },
+        "assets/fish3.png": {
+            "hash": "c3527b94031aa5234314aa42fade58d4eef5b6d7c7005548b2138b3552e5a116",
+            "size": 4883,
+            "mtime": 1764782265.324756
+        },
+        "assets/gameover.mp3": {
+            "hash": "410d9af4e470598102043d4894c1443c8c867f18d21f761f91bccaa051e15a87",
+            "size": 34524,
+            "mtime": 1764782283.784391
+        },
+        "assets/reel.mp3": {
+            "hash": "650d53a17bd00ca6df6ca2d38cb9d07f74c1dfe9703e99dffa966ca9d6c3cef0",
+            "size": 15020,
+            "mtime": 1764782283.7224185
+        },
+        "assets/select.mp3": {
+            "hash": "9f7a8b6dcb7947856fccaf93b14ed73e0ab47a4ecf22605bc6a3d02f0f8c5538",
+            "size": 16343,
+            "mtime": 1764782283.6987698
+        },
+        "assets/thumbnail.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "gameSettings": {
+        "canvasWidth": 800,
+        "canvasHeight": 600,
+        "gridSize": 20,
+        "snakeInitialLength": 5,
+        "snakeSpeedMillis": 150,
+        "foodScoreIncrement": 10,
+        "gameDurationSeconds": 60,
+        "backgroundColor": "#2c3e50",
+        "snakeColor": "#27ae60",
+        "foodColor": "#e74c3c",
+        "textColor": "#ecf0f1"
+    },
+    "textContent": {
+        "title": "간단 뱀 게임",
+        "pressAnyKey": "아무 키나 눌러 시작",
+        "instructionsTitle": "게임 조작법",
+        "instructionsText": [
+            "화살표 키로 뱀을 움직이세요.",
+            "빨간 과일을 먹으면 뱀이 길어지고 점수를 얻습니다.",
+            "벽이나 자기 자신에게 부딪히면 게임 오버!",
+            "제한 시간 60초 안에 최대한 많은 점수를 얻으세요.",
+            "",
+            "아무 키나 눌러 계속"
+        ],
+        "gameOver": "게임 오버!",
+        "timeUp": "시간 초과!",
+        "scorePrefix": "점수:",
+        "timePrefix": "남은 시간:",
+        "restartGame": "아무 키나 눌러 다시 시작"
+    },
+    "assets": {
+        "images": [
+            { "name": "background", "path": "assets/background.png", "width": 800, "height": 600 },
+            { "name": "snake_head", "path": "assets/snake_head.png", "width": 64, "height": 64 },
+            { "name": "snake_body", "path": "assets/snake_body.png", "width": 64, "height": 64 },
+            { "name": "food", "path": "assets/food.png", "width": 64, "height": 64 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 },
+            { "name": "eat_sound", "path": "assets/eat_sound.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+            { "name": "game_over_sound", "path": "assets/game_over_sound.mp3", "duration_seconds": 1.5, "volume": 0.7 }
+        ]
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "gameSettings": {
+        "canvasWidth": 960,
+        "canvasHeight": 540,
+        "scrollSpeed": 100,
+        "playerInitialHealth": 100,
+        "explosionDuration": 0.5,
+        "titleScreenText": "우주 슈팅 게임",
+        "instructionsText": [
+            "이동: WASD 또는 방향키",
+            "발사: J 또는 Space",
+            "목표: 적들을 물리치고 최고 점수를 획득하세요!",
+            "충돌 또는 적 탄알에 맞으면 체력이 감소합니다."
+        ],
+        "gameOverText": "게임 오버",
+        "loadingText": "로딩 중..."
+    },
+    "player": {
+        "image": "player",
+        "width": 60,
+        "height": 60,
+        "speed": 200,
+        "fireRate": 5,
+        "bulletType": "player_bullet",
+        "hitSound": "player_hit"
+    },
+    "enemyTypes": [
+        {
+            "name": "basic_enemy",
+            "image": "enemy1",
+            "width": 50,
+            "height": 50,
+            "health": 30,
+            "speed": 100,
+            "scoreValue": 10,
+            "fireRate": 0.5,
+            "bulletType": "enemy_bullet",
+            "movementPattern": "straight",
+            "shootSound": "enemy_shoot"
+        },
+        {
+            "name": "sine_enemy",
+            "image": "enemy2",
+            "width": 55,
+            "height": 55,
+            "health": 40,
+            "speed": 80,
+            "scoreValue": 20,
+            "fireRate": 0.8,
+            "bulletType": "enemy_bullet",
+            "movementPattern": "sine",
+            "shootSound": "enemy_shoot"
+        },
+        {
+            "name": "diagonal_enemy",
+            "image": "enemy3",
+            "width": 60,
+            "height": 60,
+            "health": 50,
+            "speed": 90,
+            "scoreValue": 30,
+            "fireRate": 0.6,
+            "bulletType": "enemy_bullet",
+            "movementPattern": "diagonal",
+            "shootSound": "enemy_shoot"
+        }
+    ],
+    "bulletTypes": [
+        {
+            "name": "player_bullet",
+            "image": "player_bullet",
+            "width": 15,
+            "height": 30,
+            "speed": 400,
+            "damage": 10,
+            "sound": "player_shoot"
+        },
+        {
+            "name": "enemy_bullet",
+            "image": "enemy_bullet",
+            "width": 20,
+            "height": 20,
+            "speed": 250,
+            "damage": 20,
+            "sound": "enemy_shoot"
+        }
+    ],
+    "levels": [
+        {
+            "duration": 60,
+            "spawnEvents": [
+                { "time": 2, "enemyName": "basic_enemy", "startX": "rightEdge", "startY": "random" },
+                { "time": 5, "enemyName": "sine_enemy", "startX": "rightEdge", "startY": 100 },
+                { "time": 8, "enemyName": "diagonal_enemy", "startX": "rightEdge", "startY": "random" },
+                { "time": 12, "enemyName": "basic_enemy", "startX": "rightEdge", "startY": "random", "count": 3, "interval": 1.5 },
+                { "time": 18, "enemyName": "sine_enemy", "startX": "rightEdge", "startY": 300, "count": 2, "interval": 2 },
+                { "time": 25, "enemyName": "diagonal_enemy", "startX": "rightEdge", "startY": "top", "count": 2, "interval": 1.5 },
+                { "time": 30, "enemyName": "basic_enemy", "startX": "rightEdge", "startY": "random", "count": 5, "interval": 1 },
+                { "time": 40, "enemyName": "sine_enemy", "startX": "rightEdge", "startY": 200, "count": 3, "interval": 1.5 },
+                { "time": 45, "enemyName": "diagonal_enemy", "startX": "rightEdge", "startY": "bottom", "count": 2, "interval": 2 }
+            ]
+        },
+        {
+            "duration": 90,
+            "spawnEvents": [
+                { "time": 3, "enemyName": "diagonal_enemy", "startX": "rightEdge", "startY": "random", "count": 3, "interval": 1 },
+                { "time": 7, "enemyName": "basic_enemy", "startX": "rightEdge", "startY": "random", "count": 5, "interval": 0.8 },
+                { "time": 15, "enemyName": "sine_enemy", "startX": "rightEdge", "startY": 150, "count": 4, "interval": 1.2 },
+                { "time": 25, "enemyName": "diagonal_enemy", "startX": "rightEdge", "startY": "top", "count": 3, "interval": 1.5 },
+                { "time": 35, "enemyName": "basic_enemy", "startX": "rightEdge", "startY": "random", "count": 7, "interval": 0.7 },
+                { "time": 50, "enemyName": "sine_enemy", "startX": "rightEdge", "startY": 350, "count": 4, "interval": 1.0 },
+                { "time": 60, "enemyName": "diagonal_enemy", "startX": "rightEdge", "startY": "bottom", "count": 3, "interval": 1.5 },
+                { "time": 70, "enemyName": "basic_enemy", "startX": "rightEdge", "startY": "random", "count": 10, "interval": 0.5 }
+            ]
+        }
+    ],
+    "assets": {
+        "images": [
+            { "name": "background", "path": "assets/background.png", "width": 1000, "height": 540 },
+            { "name": "title_background", "path": "assets/title_background.png", "width": 960, "height": 540 },
+            { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+            { "name": "player_bullet", "path": "assets/player_bullet.png", "width": 10, "height": 20 },
+            { "name": "enemy1", "path": "assets/enemy1.png", "width": 50, "height": 50 },
+            { "name": "enemy2", "path": "assets/enemy2.png", "width": 55, "height": 55 },
+            { "name": "enemy3", "path": "assets/enemy3.png", "width": 60, "height": 60 },
+            { "name": "explosion", "path": "assets/explosion.png", "width": 70, "height": 70 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 120.0, "volume": 0.3 },
+            { "name": "player_shoot", "path": "assets/player_shoot.mp3", "duration_seconds": 0.5, "volume": 0.4 },
+            { "name": "enemy_shoot", "path": "assets/enemy_shoot.mp3", "duration_seconds": 0.5, "volume": 0.3 },
+            { "name": "explosion_sound", "path": "assets/explosion.mp3", "duration_seconds": 1.0, "volume": 0.6 },
+            { "name": "player_hit", "path": "assets/player_hit.mp3", "duration_seconds": 0.8, "volume": 0.7 },
+            { "name": "game_over", "path": "assets/game_over.mp3", "duration_seconds": 2.0, "volume": 0.8 }
+        ]
+    }
+}

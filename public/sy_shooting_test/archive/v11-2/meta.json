@@ -1,0 +1,193 @@
+{
+    "version": "v11-2",
+    "parent": "v10-1",
+    "timestamp": "2025-11-29T23:03:49.247669",
+    "summary": "게임의 배경화면으로 'background_starfield.png' 이미지가 정상적으로 적용되지 않고 회색 배경만 보이고 있습니다. 배경 이미지가 올바르게 표시되도록 수정해 주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v10-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "last_version": "v2-1"
+        },
+        {
+            "name": "background_starfield.png",
+            "path": "assets/background_starfield.png",
+            "last_version": "v5-1"
+        },
+        {
+            "name": "bgm_game.mp3",
+            "path": "assets/bgm_game.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_menu.mp3",
+            "path": "assets/bgm_menu.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "boss1.png",
+            "path": "assets/boss1.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "boss2.png",
+            "path": "assets/boss2.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy1.png",
+            "path": "assets/enemy1.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy2.png",
+            "path": "assets/enemy2.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy_bullet.png",
+            "path": "assets/enemy_bullet.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy_shoot.mp3",
+            "path": "assets/enemy_shoot.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "explosion.mp3",
+            "path": "assets/explosion.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "hit.mp3",
+            "path": "assets/hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "last_version": "v7-1"
+        },
+        {
+            "name": "player_bullet.png",
+            "path": "assets/player_bullet.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "shoot.mp3",
+            "path": "assets/shoot.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "d255cce241effbefe9087b6fdcc0f26686899375de1940e3aae769bc821c3958",
+            "size": 9831,
+            "mtime": 1764424899.246346
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764424899.3077106
+        },
+        "game.js": {
+            "hash": "7f271d2002e49e87093d88fc5c18b5622e89e5cb9bbd70facc21859527a91406",
+            "size": 32328,
+            "mtime": 1764424899.525625
+        },
+        "game.ts": {
+            "hash": "60b9d611c60bc60774a8def7303f0dbae16fa209bd4279e58f1f00caa13d77b0",
+            "size": 44604,
+            "mtime": 1764425025.219867
+        },
+        "assets/background_starfield.png": {
+            "hash": "816b36dc461eb5ce2f494c82395bcbade5e2c48aa17de6eb9c6e257959754450",
+            "size": 1843602,
+            "mtime": 1764424899.592704
+        },
+        "assets/bgm_game.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764424899.618886
+        },
+        "assets/bgm_menu.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764424899.6372838
+        },
+        "assets/boss1.png": {
+            "hash": "06f515ae68b60ad9a432100b298ced1a3b4b42af8cd6722b5c757213649c6a7b",
+            "size": 4072,
+            "mtime": 1764424899.6438859
+        },
+        "assets/boss2.png": {
+            "hash": "f44dd9eefbc55262449fa6cdd11b0cb0f2a34a0622ed464723801d5679bceca2",
+            "size": 425,
+            "mtime": 1764424899.6495662
+        },
+        "assets/enemy1.png": {
+            "hash": "fe49636e2e9c7e28555578ed961ad915c6aacf98fa4a0812ac1ca61fee3013f8",
+            "size": 356,
+            "mtime": 1764424899.6700501
+        },
+        "assets/enemy2.png": {
+            "hash": "f44dd9eefbc55262449fa6cdd11b0cb0f2a34a0622ed464723801d5679bceca2",
+            "size": 425,
+            "mtime": 1764424899.6732154
+        },
+        "assets/enemy_bullet.png": {
+            "hash": "74f98c6f8afad43c17d307de57c5c42e2904405c4b73cf2e6569f0ed9e22bb11",
+            "size": 191,
+            "mtime": 1764424899.6804864
+        },
+        "assets/enemy_shoot.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764424899.705655
+        },
+        "assets/explosion.mp3": {
+            "hash": "55b11a9db569c7b8aed8e339ff0186b33157f947e1437f4ec198e2837938feeb",
+            "size": 112970,
+            "mtime": 1764424899.7180917
+        },
+        "assets/hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764424899.7352693
+        },
+        "assets/player.png": {
+            "hash": "0f4256b4b08346da535264f26312b069c11952f374e79831b038395495b68516",
+            "size": 205449,
+            "mtime": 1764424899.7536273
+        },
+        "assets/player_bullet.png": {
+            "hash": "4e66eadeae9cb2d22a4cf166e77e2e79406ce978c2b962979124a408316f7bc8",
+            "size": 155,
+            "mtime": 1764424899.759906
+        },
+        "assets/shoot.mp3": {
+            "hash": "55b11a9db569c7b8aed8e339ff0186b33157f947e1437f4ec198e2837938feeb",
+            "size": 112970,
+            "mtime": 1764424899.775988
+        }
+    }
+}

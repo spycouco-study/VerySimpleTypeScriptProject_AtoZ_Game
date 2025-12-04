@@ -1,0 +1,233 @@
+{
+    "version": "v6-1",
+    "parent": "v5-1",
+    "timestamp": "2025-12-01T17:52:19.837235",
+    "summary": "게임 시작에 실패했습니다. `TypeError: Cannot read properties of undefined (reading 'canvasWidth')` 런타임 오류가 발생했습니다. 이 오류를 수정하여 게임이 정상적으로 시작되도록 해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "enemy1.png",
+            "path": "assets/enemy1.png",
+            "type": "Add"
+        },
+        {
+            "name": "enemy2.png",
+            "path": "assets/enemy2.png",
+            "type": "Add"
+        },
+        {
+            "name": "enemy3.png",
+            "path": "assets/enemy3.png",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        },
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "type": "Change"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Change"
+        },
+        {
+            "name": "enemy_shoot.mp3",
+            "path": "assets/enemy_shoot.mp3",
+            "type": "Change"
+        },
+        {
+            "name": "explosion.png",
+            "path": "assets/explosion.png",
+            "type": "Change"
+        },
+        {
+            "name": "player_bullet.png",
+            "path": "assets/player_bullet.png",
+            "type": "Change"
+        },
+        {
+            "name": "title_background.png",
+            "path": "assets/title_background.png",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy_bomber.png",
+            "path": "assets/enemy_bomber.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy_bullet.png",
+            "path": "assets/enemy_bullet.png",
+            "last_version": "v3-1"
+        },
+        {
+            "name": "enemy_fighter.png",
+            "path": "assets/enemy_fighter.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "explosion.mp3",
+            "path": "assets/explosion.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player_hit.mp3",
+            "path": "assets/player_hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player_plane.png",
+            "path": "assets/player_plane.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player_shoot.mp3",
+            "path": "assets/player_shoot.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "76fcb992fe9ec40adcf1f29623945610d2231e68cd3b2fd56f5857d5d842856f",
+            "size": 6432,
+            "mtime": 1764578803.5363095
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "e9342738f2716d0f2e65af4956e9639a8536c4c0854bc40287421d3194276b45",
+            "size": 94678,
+            "mtime": 1764579139.3883612
+        },
+        "game.ts": {
+            "hash": "66959b59cbb47bf9ad8474f79690cc8c9ee496943ea4fa9543dce9beb723c121",
+            "size": 35545,
+            "mtime": 1764579134.607728
+        },
+        "assets/background.png": {
+            "hash": "4c55c5f0bfd155aa5cd9064b28cc51d0da63ace55c8f671796f8fcd51ed78e2c",
+            "size": 30548,
+            "mtime": 1764578816.1664903
+        },
+        "assets/bgm.mp3": {
+            "hash": "eb66e731589da7e8a57d66220d92ee5b08055937bfef44b74190063522b3a43a",
+            "size": 3062012,
+            "mtime": 1764579134.394037
+        },
+        "assets/enemy1.png": {
+            "hash": "6a0b6c6a4341d61415aa897da3f2e19e7291c7e577f87364619c62372fbdc774",
+            "size": 1833,
+            "mtime": 1764578936.373352
+        },
+        "assets/enemy2.png": {
+            "hash": "ddef33ac585705ecafae4542a190be37f893978d702345ecc4f8a5dbed06d51a",
+            "size": 1995,
+            "mtime": 1764579056.604783
+        },
+        "assets/enemy3.png": {
+            "hash": "d41b3134cd681dc203cce5c5868780f85c2786ad643979d4d0a281ddfcd199c4",
+            "size": 4169,
+            "mtime": 1764579088.3962195
+        },
+        "assets/enemy_bomber.png": {
+            "hash": "f455d0fd8b195437f940b7562d934e777a76baa5484480eb23213bfb320e7639",
+            "size": 10013,
+            "mtime": 1764577780.045424
+        },
+        "assets/enemy_bullet.png": {
+            "hash": "cfd1bdd9f8e9b320de67299fdaa7e68a88139839b26269b1e9a338da273c43bb",
+            "size": 436,
+            "mtime": 1764578512.7554862
+        },
+        "assets/enemy_fighter.png": {
+            "hash": "8074728d5c5ecc2f45b6d56b84538b339cd640053d5bcf23aee450432fe95241",
+            "size": 2400,
+            "mtime": 1764577751.7576995
+        },
+        "assets/enemy_shoot.mp3": {
+            "hash": "4724e9887d881f4ef0314beb034d1503a97e33a2bb2e4be6e031dcdae9b9a9d2",
+            "size": 47852,
+            "mtime": 1764579134.4456458
+        },
+        "assets/explosion.mp3": {
+            "hash": "89de54b384dc6a730c71d9d7e29d40092d43c73b2f93f68ae07e18c59a3c85fb",
+            "size": 44396,
+            "mtime": 1764579134.4456458
+        },
+        "assets/explosion.png": {
+            "hash": "e997e5580bec37a070fd9c6d55e23b9936fecb58feec114c02cef1e0ed529dce",
+            "size": 7958,
+            "mtime": 1764579116.0648801
+        },
+        "assets/game_over.mp3": {
+            "hash": "2a64197bec8c98ecf641257f2d021f428ac3ac24939c4d295b950a7ef6025383",
+            "size": 30136,
+            "mtime": 1764579134.4616578
+        },
+        "assets/player.png": {
+            "hash": "3dd3a784f3e10259f79079bdad818b8ca71e04865c424bb57292dbf29a92194a",
+            "size": 5601,
+            "mtime": 1764578877.0122273
+        },
+        "assets/player_bullet.png": {
+            "hash": "c93d6f224293b6286aa7a2c874387251f7294b476229a231d992172064a274bf",
+            "size": 109,
+            "mtime": 1764578909.429035
+        },
+        "assets/player_hit.mp3": {
+            "hash": "f24cceab596f8f2fc1d7214c134e635460cc94446ac427f711755742480cc52c",
+            "size": 16343,
+            "mtime": 1764579134.4580672
+        },
+        "assets/player_plane.png": {
+            "hash": "c2ba467a04acd04e40adc38ac53ea1442bc93b928c2532baef8cf65430a4ec8b",
+            "size": 5873,
+            "mtime": 1764577694.3945954
+        },
+        "assets/player_shoot.mp3": {
+            "hash": "c35121dc516e950ad27dd18490ecf3033bbd18351110ed19d9f7b0842110e500",
+            "size": 26374,
+            "mtime": 1764579134.394037
+        },
+        "assets/title_background.png": {
+            "hash": "4984b9b7becf92fc7e6b793bbaffe1896bc75d8c7c9bae6836a114ac3587e6b1",
+            "size": 24520,
+            "mtime": 1764578845.5045962
+        }
+    }
+}

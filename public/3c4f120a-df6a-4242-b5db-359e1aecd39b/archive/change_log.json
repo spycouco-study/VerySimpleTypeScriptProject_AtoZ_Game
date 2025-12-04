@@ -1,0 +1,36 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-12-03T21:19:19.000538",
+            "summary": "지뢰찾기 게임을 만들어 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-03T21:21:39.542409",
+            "summary": "마우스 클릭 위치와 게임 내 셀의 위치가 일치하지 않는 문제를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-12-03T21:24:06.093388",
+            "summary": "게임 셀들이 화면의 중앙에 배치되도록 수정해 주세요.\n게임이 시작될 때 배경음악이 자동으로 재생되도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-12-03T21:25:19.602930",
+            "summary": "게임 데이터 수정",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+  "canvasWidth": 1000,
+  "canvasHeight": 700,
+  "gameDurationSeconds": 60,
+  "initialBobberX": 0.5,
+  "initialBobberY": 0.6,
+  "fishSpawnIntervalSeconds": 3,
+  "fishSwimSpeedMultiplier": 0.5,
+  "maxFishOnScreen": 5,
+  "bobberWidth": 50,
+  "bobberHeight": 50,
+  "fishDefaultWidth": 80,
+  "fishDefaultHeight": 40,
+  "miniGameDurationSeconds": 5,
+  "miniGameSuccessTarget": 10,
+  "miniGameFailureThreshold": 5,
+  "miniGamePressEffect": 1,
+  "miniGameDecayRate": 0.8,
+  "miniGameTargetZoneWidth": 0.3,
+  "miniGameBasePointerSpeed": 1.0,
+  "assets": {
+    "images": [
+      { "name": "background", "path": "assets/background.png", "width": 1000, "height": 700 },
+      { "name": "boat", "path": "assets/boat.png", "width": 200, "height": 100 },
+      { "name": "bobber", "path": "assets/bobber.png", "width": 50, "height": 50 },
+      { "name": "fish1", "path": "assets/fish1.png", "width": 80, "height": 40 },
+      { "name": "fish2", "path": "assets/fish2.png", "width": 90, "height": 45 },
+      { "name": "fish3", "path": "assets/fish3.png", "width": 100, "height": 50 }
+    ],
+    "sounds": [
+      { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 120.0, "volume": 0.3 },
+      { "name": "select", "path": "assets/select.mp3", "duration_seconds": 0.5, "volume": 0.8 },
+      { "name": "bite", "path": "assets/bite.mp3", "duration_seconds": 1.0, "volume": 0.9 },
+      { "name": "reel", "path": "assets/reel.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+      { "name": "catch", "path": "assets/catch.mp3", "duration_seconds": 1.5, "volume": 1.0 },
+      { "name": "fail", "path": "assets/fail.mp3", "duration_seconds": 1.0, "volume": 0.9 },
+      { "name": "gameOverSound", "path": "assets/gameover.mp3", "duration_seconds": 2.0, "volume": 0.8 }
+    ]
+  },
+  "fishes": [
+    { "name": "작은 물고기", "score": 10, "image": "fish1", "speed": 50, "miniGameDifficulty": 0.5 },
+    { "name": "중간 물고기", "score": 20, "image": "fish2", "speed": 70, "miniGameDifficulty": 1.0 },
+    { "name": "큰 물고기", "score": 40, "image": "fish3", "speed": 90, "miniGameDifficulty": 1.5 }
+  ],
+  "ui": {
+    "title": "즐거운 낚시 게임!",
+    "pressSpace": "SPACE 키를 눌러 시작하세요!",
+    "tutorialLine1": "이 게임은 낚시 게임입니다.",
+    "tutorialLine2": "낚싯줄을 드리운 후 물고기가 입질하기를 기다리세요.",
+    "tutorialLine3": "물고기가 입질하면, 미니게임이 시작됩니다. SPACE 키를 눌러 노란색 포인터를 녹색 구역 안에 유지하며 릴을 감으세요.",
+    "tutorialLine4": "릴을 성공적으로 감으면 물고기를 낚을 수 있습니다! 제한 시간 내에 가장 많은 물고기를 낚으세요.",
+    "fishCaught": "물고기를 잡았습니다!",
+    "fishLost": "물고기를 놓쳤습니다...",
+    "scorePrefix": "점수: ",
+    "timeRemainingPrefix": "남은 시간: ",
+    "gameOver": "게임 오버!",
+    "loading": "로딩 중...",
+    "reelInstruction": "릴을 감으세요!",
+    "reelTime": "시간: "
+  }
+}
