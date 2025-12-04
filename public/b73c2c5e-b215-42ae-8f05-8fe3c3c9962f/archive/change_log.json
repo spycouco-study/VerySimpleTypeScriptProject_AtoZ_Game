@@ -21,6 +21,14 @@
             "parent": "v2-1",
             "timestamp": "2025-12-04T11:42:14.370642",
             "summary": "게임 시작 버튼을 눌렀을 때 게임이 정상적으로 실행되지 않는 문제를 해결해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-12-04T12:49:44.860299",
+            "summary": "사용자가 게임을 플레이할 수 있도록 게임을 생성하거나 수정해 주세요.",
             "is_latest": true,
             "is_current": true
         }
