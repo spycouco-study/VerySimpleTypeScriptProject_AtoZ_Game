@@ -1,0 +1,57 @@
+{
+  "gameSettings": {
+    "title": "3D Kart Racer",
+    "instructions": "Use Arrow Keys or WASD to drive. Space to brake. Press ENTER to Start.",
+    "finishMessage": "FINISH!",
+    "gravity": -9.82,
+    "laps": 1
+  },
+  "camera": {
+    "fov": 75,
+    "near": 0.1,
+    "far": 1000,
+    "offset": { "x": 0, "y": 4, "z": 8 },
+    "lookAtOffset": { "x": 0, "y": 2, "z": 0 },
+    "lerpFactor": 0.08
+  },
+  "playerKart": {
+    "chassisSize": { "width": 1.2, "height": 0.8, "depth": 2.4 },
+    "mass": 150,
+    "wheelRadius": 0.4,
+    "wheelThickness": 0.3,
+    "engineForce": 1000,
+    "brakeForce": 10,
+    "maxSteer": 0.5,
+    "suspension": {
+      "stiffness": 30,
+      "restLength": 0.3,
+      "damping": 2.3,
+      "compression": 4.4
+    },
+    "friction": 5,
+    "rollInfluence": 0.01
+  },
+  "track": {
+    "groundSize": { "width": 80, "height": 150 },
+    "wallHeight": 3,
+    "wallThickness": 2,
+    "finishLinePosition": { "x": 0, "y": 0.1, "z": -65 },
+    "finishLineSize": { "width": 20, "height": 0.1, "depth": 4 }
+  },
+  "assets": {
+    "images": [
+      { "name": "kart", "path": "assets/kart.png", "width": 128, "height": 128 },
+      { "name": "wheel", "path": "assets/wheel.png", "width": 64, "height": 64 },
+      { "name": "track", "path": "assets/track.png", "width": 512, "height": 512 },
+      { "name": "wall", "path": "assets/wall.png", "width": 256, "height": 256 },
+      { "name": "finish_line", "path": "assets/finish_line.png", "width": 256, "height": 64 },
+      { "name": "sky", "path": "assets/sky.png", "width": 1024, "height": 1024 }
+    ],
+    "sounds": [
+      { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 120, "volume": 0.2 },
+      { "name": "engine_idle", "path": "assets/engine_idle.mp3", "duration_seconds": 5, "volume": 0.3 },
+      { "name": "engine_driving", "path": "assets/engine_driving.mp3", "duration_seconds": 5, "volume": 0.5 },
+      { "name": "crash", "path": "assets/crash.mp3", "duration_seconds": 1.5, "volume": 0.7 }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+    "chat": [
+        {
+            "from": "user",
+            "text": "크레이지 아케이드와 유사한 특징을 가진 게임을 만들어주세요."
+        },
+        {
+            "from": "bot",
+            "text": "요청:\n크레이지 아케이드와 유사한 특징을 가진 게임을 만들어주세요.\n질문:\n\n부적절:\n\n❌ 에러 발생: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}\n\n"
+        },
+        {
+            "from": "user",
+            "text": "크레이지 아케이드와 유사한 게임을 만들어주세요."
+        },
+        {
+            "from": "bot",
+            "text": "요청:\n크레이지 아케이드와 유사한 게임을 만들어주세요.\n질문:\n\n부적절:\n\n❌ 에러 발생: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}\n\n"
+        },
+        {
+            "from": "user",
+            "text": "크레이지 아케이드와 유사한 게임을 만들어주세요."
+        },
+        {
+            "from": "bot",
+            "text": "요청:\n크레이지 아케이드와 유사한 게임을 만들어주세요.\n질문:\n\n부적절:\n\n❌ 에러 발생: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}\n\n"
+        },
+        {
+            "from": "user",
+            "text": "크레이지 아케이드와 유사한 스타일의 게임을 만들어주세요."
+        },
+        {
+            "from": "bot",
+            "text": "요청:\n크레이지 아케이드와 유사한 스타일의 게임을 만들어주세요.\n질문:\n\n부적절:\n\n❌ 에러 발생: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}\n\n"
+        }
+    ]
+}

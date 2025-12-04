@@ -1,0 +1,52 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-22T18:17:41.665318",
+            "summary": "",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-22T20:49:39.236825",
+            "summary": "플레이어가 바닥에서 움직일때 속도를 조절해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-2",
+            "parent": "v1-1",
+            "timestamp": "2025-11-22T21:14:18.378931",
+            "summary": "플레이어가 보통 상태일 때 이동 속도가 너무 느리니, 이 속도를 조정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-2",
+            "timestamp": "2025-11-22T21:15:05.896787",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-11-22T21:15:21.137080",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-3",
+            "parent": "v1-1",
+            "timestamp": "2025-11-22T21:17:26.245337",
+            "summary": "게임 내의 모든 사물들의(바닥 포함) 마찰력을 현재보다 낮게 조절해 주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

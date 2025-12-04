@@ -1,0 +1,173 @@
+{
+    "version": "v21-1",
+    "parent": "v20-1",
+    "timestamp": "2025-11-16T15:39:28.680602",
+    "summary": "player_bullet.png파일을 다른 파일로 교체 했씁니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "player_bullet.png",
+            "path": "assets/player_bullet.png",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v19-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v17-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v17-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy_bat.png",
+            "path": "assets/enemy_bat.png",
+            "last_version": "v18-1"
+        },
+        {
+            "name": "enemy_golem.png",
+            "path": "assets/enemy_golem.png",
+            "last_version": "v18-1"
+        },
+        {
+            "name": "enemy_hit.mp3",
+            "path": "assets/enemy_hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy_slime.png",
+            "path": "assets/enemy_slime.png",
+            "last_version": "v18-1"
+        },
+        {
+            "name": "exp_gem.png",
+            "path": "assets/exp_gem.png",
+            "last_version": "v20-1"
+        },
+        {
+            "name": "gem_collect.mp3",
+            "path": "assets/gem_collect.mp3",
+            "last_version": "v20-1"
+        },
+        {
+            "name": "level_up.mp3",
+            "path": "assets/level_up.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "last_version": "v19-1"
+        },
+        {
+            "name": "player_hit.mp3",
+            "path": "assets/player_hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "shoot.mp3",
+            "path": "assets/shoot.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "215d31d53994bdf88aa4b764b9fcdccdc074ea059c034b81a24429d852e75c8a",
+            "size": 5810,
+            "mtime": 1763270101.3431475
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763270101.3483186
+        },
+        "game.ts": {
+            "hash": "8354c9ece46fae4f96a75606a2cf8fba8b61ebdb5af7e66dea01edc2520b0564",
+            "size": 36991,
+            "mtime": 1763270101.3508232
+        },
+        "assets/background.png": {
+            "hash": "5d6d4f17e53649ed4fef8a731d51a87e83391f93720a462a1e2ebd9fd91c657b",
+            "size": 3887022,
+            "mtime": 1763270101.35483
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763270101.363912
+        },
+        "assets/enemy_bat.png": {
+            "hash": "b010327997e0c8df52d29829211fdf985fb9c66d1c813b49de8ba467134f514b",
+            "size": 464049,
+            "mtime": 1763270101.3671002
+        },
+        "assets/enemy_golem.png": {
+            "hash": "3c5593e3c3f3ca26b24bd1f1503a61fecc5a621e4bb0f7fcefe0bc506f533b19",
+            "size": 125699,
+            "mtime": 1763270101.369099
+        },
+        "assets/enemy_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763270101.3711007
+        },
+        "assets/enemy_slime.png": {
+            "hash": "565d963e148a1e8dd79cd6e93fdf73d1b7c04f9d5eff71b9f2501d7768dc7c46",
+            "size": 83576,
+            "mtime": 1763270101.3735468
+        },
+        "assets/exp_gem.png": {
+            "hash": "8e15f54e85c88276097e50bcda84b54ca721c50fad7a94d67816272fa10e456d",
+            "size": 811393,
+            "mtime": 1763275091.361114
+        },
+        "assets/gem_collect.mp3": {
+            "hash": "55b11a9db569c7b8aed8e339ff0186b33157f947e1437f4ec198e2837938feeb",
+            "size": 112970,
+            "mtime": 1763274732.0769598
+        },
+        "assets/level_up.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763270101.3812559
+        },
+        "assets/player.png": {
+            "hash": "b09fd126fb0afb219986592cc306b402584e139cd9ab3dec4645c59f9b6c84d8",
+            "size": 474755,
+            "mtime": 1763270101.384271
+        },
+        "assets/player_bullet.png": {
+            "hash": "7028d0d55266202811a7c9384f74a0715cc92f10e9dc72c0f8da1263216e6455",
+            "size": 698500,
+            "mtime": 1763275168.508392
+        },
+        "assets/player_hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763270101.387272
+        },
+        "assets/shoot.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763270101.3892717
+        }
+    }
+}

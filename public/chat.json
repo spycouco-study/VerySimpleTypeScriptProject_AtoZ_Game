@@ -1,0 +1,12 @@
+{
+    "chat": [
+        {
+            "from": "user",
+            "text": "가위바위보 게임을 만들어주세요.\n화면 중앙에 가위/바위/보 중 한 개의 아이콘이 띄워지고, 플레이어는 하단의 가위/바위/보 아이콘 중 중앙에 띄워진 것을 이길 수 있는 아이콘을 제한 시간 내에 클릭해야 합니다.\n제한 시간은 3초로 설정해주세요.\n목숨은 3개가 주어집니다."
+        },
+        {
+            "from": "bot",
+            "text": "요청:\n가위바위보 게임을 만들어주세요.\n화면 중앙에 가위/바위/보 중 한 개의 아이콘이 띄워지고, 플레이어는 하단의 가위/바위/보 아이콘 중 중앙에 띄워진 것을 이길 수 있는 아이콘을 제한 시간 내에 클릭해야 합니다.\n제한 시간은 3초로 설정해주세요.\n목숨은 3개가 주어집니다.\n질문:\n\n부적절:\n\n< game.ts : 수정 O >   < data.json : 수정 O >\nI've implemented a Rock-Paper-Scissors game in TypeScript, following all the specified requirements.\n\n**Key features include:**\n\n1.  **Single TypeScript file (`game.ts`):** Contains all game logic, rendering, and input handling.\n2.  **External JSON data (`data.json`):** Configures game settings, asset paths, and balances for easy modification by non-developers.\n3.  **Canvas Rendering:** The game renders within an HTML `<canvas id=\"gameCanvas\">`.\n4.  **Asset Loading and Scaling:** Images (PNG) are loaded from the `assets` folder and scaled to fit defined object sizes, independent of their original dimensions. Sounds (MP3) are also loaded and played.\n5.  **Game States:**\n    *   **Title Screen:** Displays \"가위 바위 보!\" and prompts for a click to start.\n    *   **Instruction Screen:** Explains game rules in Korean (\"화면 중앙의 아이콘을 이길 수 있는 아이콘을 하단에서 3초 안에 클릭하세요. 목숨은 3개 주어집니다.\") and prompts to start the game.\n    *   **Playing State:**\n        *   Displays a random AI choice (Rock, Paper, or Scissors) in the center.\n        *   Player has 3 interactive buttons (Rock, Paper, Scissors) at the bottom.\n        *   A 3-second timer counts down.\n        *   Player must click an icon that beats the AI's choice within the time limit.\n        *   Correct choice: Score increases.\n        *   Incorrect choice / Timeout: Lose a life.\n        *   Score, lives, and timer are displayed.\n    *   **Game Over Screen:** Displays \"게임 오버!\", final score, and reason for game over, prompting for a restart.\n6.  **Game Mechanics:**\n    *   **Lives System:** Starts with 3 lives.\n    *   **Time Limit:** 3 seconds per round.\n    *   **Winning Logic:** Standard Rock-Paper-Scissors rules are implemented.\n7.  **Audio:** Background music plays during the game, and sound effects are triggered for button clicks, wins, and losses/timeouts.\n\n"
+        }
+    ]
+}

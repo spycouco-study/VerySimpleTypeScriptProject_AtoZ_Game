@@ -1,0 +1,20 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-22T22:30:48.914891",
+            "summary": "3D 공간에서 주인공이 WASD 키를 눌러 움직일 수 있는 간단한 게임을 만들어 주세요.\n마우스 움직임에 따라 게임의 시점이 변하도록 구현해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-22T22:34:39.518186",
+            "summary": "ESC 키를 누르면 마우스 커서가 화면에서 벗어나 나타나도록 수정해주세요.\n화면을 다시 클릭하면 화면 시점을 조정할 수 있도록 수정해주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

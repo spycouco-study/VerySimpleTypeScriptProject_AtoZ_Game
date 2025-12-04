@@ -1,0 +1,123 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-11-22T20:49:39.231780",
+    "summary": "플레이어가 바닥에서 움직일때 속도를 조절해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "collectible.png",
+            "path": "assets/collectible.png",
+            "type": "Add"
+        },
+        {
+            "name": "effect.mp3",
+            "path": "assets/effect.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "ground.png",
+            "path": "assets/ground.png",
+            "type": "Add"
+        },
+        {
+            "name": "obstacle.png",
+            "path": "assets/obstacle.png",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        },
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "a1420c456a4bb65a17f34200b9f5f088f89ec3d0840ee177362abf41deafe543",
+            "size": 966,
+            "mtime": 1763812174.47703
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "68bd2af19c8c8cd6c0fde36b2f19bd594497147a1a9dd714f5a2a9919ea61f7b",
+            "size": 51541,
+            "mtime": 1763812178.9229088
+        },
+        "game.ts": {
+            "hash": "85a897a6edb335d0d6343594eb75c5c8e7ba99b6a53ca82dc04a176fa1eb5f6f",
+            "size": 17561,
+            "mtime": 1763812174.41593
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763796545.4310448
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347007.4590375
+        },
+        "assets/collectible.png": {
+            "hash": "e609663588972b761933046829510cd7bb3347653e544c82c7e7f6d77ed381e3",
+            "size": 700,
+            "mtime": 1763812174.4545543
+        },
+        "assets/effect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/ground.png": {
+            "hash": "4a36ba07056c1fad4cfb60a7cda61cfbff6baccc9eebd6286ac7d9d6ce5ca066",
+            "size": 6142,
+            "mtime": 1763812174.4454486
+        },
+        "assets/obstacle.png": {
+            "hash": "1d453681fca5990ba796ec05600986f5d2b861fbb207b3b11f53f5824a57078c",
+            "size": 1205,
+            "mtime": 1763812174.4583704
+        },
+        "assets/player.png": {
+            "hash": "a3a522225fbf59d23021a260bc436502930cc1d00f77b564848a4cb08899d42d",
+            "size": 1368,
+            "mtime": 1763812174.4474611
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+  "game": {
+    "titleText": "Simple 3D FPS",
+    "clickToStartText": "Click to Start",
+    "gameOverText": "Game Over! Score ",
+    "winText": "You Win! Score ",
+    "scoreToWin": 10,
+    "enemySpawnInterval": 3000,
+    "maxEnemies": 5,
+    "gameDuration": 300000
+  },
+  "player": {
+    "speed": 8,
+    "jumpForce": 15,
+    "maxHealth": 100,
+    "bulletDamage": 20,
+    "fireRate": 300,
+    "bodyWidth": 0.8,
+    "bodyHeight": 1.8,
+    "bodyDepth": 0.8,
+    "initialSpawnY": 1.0,
+    "cameraHeightOffset": 0.6
+  },
+  "enemy": {
+    "speed": 4,
+    "maxHealth": 60,
+    "bulletDamage": 10,
+    "fireRate": 1500,
+    "spawnRadius": 20,
+    "bodyWidth": 0.8,
+    "bodyHeight": 1.8,
+    "bodyDepth": 0.8,
+    "points": 10
+  },
+  "bullet": {
+    "playerBulletSpeed": 50,
+    "enemyBulletSpeed": 30,
+    "size": 0.2,
+    "lifetime": 2000
+  },
+  "environment": {
+    "groundSize": 50,
+    "gravity": [0, -9.82, 0],
+    "groundTexturePath": "assets/ground.png",
+    "wallTexturePath": "assets/wall.png"
+  },
+  "assets": {
+    "playerTexture": "assets/player.png",
+    "enemyTexture": "assets/enemy.png",
+    "bulletTexture": "assets/bullet.png",
+    "shootSound": "assets/shoot.mp3",
+    "hitSound": "assets/hit.mp3",
+    "gameOverSound": "assets/gameover.mp3",
+    "backgroundMusic": "assets/bgm.mp3"
+  }
+}

@@ -1,0 +1,212 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-22T18:17:25.610408",
+    "summary": "",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "bullet.png",
+            "path": "assets/bullet.png",
+            "type": "Add"
+        },
+        {
+            "name": "enemy.png",
+            "path": "assets/enemy.png",
+            "type": "Add"
+        },
+        {
+            "name": "enemy_die.mp3",
+            "path": "assets/enemy_die.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "floor.png",
+            "path": "assets/floor.png",
+            "type": "Add"
+        },
+        {
+            "name": "hit.mp3",
+            "path": "assets/hit.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "player_hurt.mp3",
+            "path": "assets/player_hurt.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "shoot.mp3",
+            "path": "assets/shoot.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "skybox_nx.png",
+            "path": "assets/skybox_nx.png",
+            "type": "Add"
+        },
+        {
+            "name": "skybox_ny.png",
+            "path": "assets/skybox_ny.png",
+            "type": "Add"
+        },
+        {
+            "name": "skybox_nz.png",
+            "path": "assets/skybox_nz.png",
+            "type": "Add"
+        },
+        {
+            "name": "skybox_px.png",
+            "path": "assets/skybox_px.png",
+            "type": "Add"
+        },
+        {
+            "name": "skybox_py.png",
+            "path": "assets/skybox_py.png",
+            "type": "Add"
+        },
+        {
+            "name": "skybox_pz.png",
+            "path": "assets/skybox_pz.png",
+            "type": "Add"
+        },
+        {
+            "name": "wall.png",
+            "path": "assets/wall.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "63d5ec4411bb124019cb958995e7e99844448d06d2335d51e15982a74a2a07f0",
+            "size": 2180,
+            "mtime": 1763802958.9703977
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "be588a77777ef0316d895ffe955251b269e5ebe02baf46ab7bbc7ec098be7af9",
+            "size": 99806,
+            "mtime": 1763802964.4544704
+        },
+        "game.ts": {
+            "hash": "1f97b6a9f513f8ce1ad0b1971631abef346bc0a7e66756984721062d4a759ad9",
+            "size": 36658,
+            "mtime": 1763802958.9500763
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763796545.4310448
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347007.4590375
+        },
+        "assets/bullet.png": {
+            "hash": "be50c401832466237056bfbb516fee5073c5b2c80131b141771fb6973a1f708a",
+            "size": 261,
+            "mtime": 1763802525.5450256
+        },
+        "assets/enemy.png": {
+            "hash": "c64c42e37c151219b7d08a0b3252f2ae8840e01a55e26419e9fbcdad477033a2",
+            "size": 773,
+            "mtime": 1763802525.5427864
+        },
+        "assets/enemy_die.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/floor.png": {
+            "hash": "c2b6fe200cbfdc8ee75f2fe4ea0b465a4d72a1584b18d7fa99962e9e1e00962d",
+            "size": 2488,
+            "mtime": 1763802525.533717
+        },
+        "assets/hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/player_hurt.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/shoot.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/skybox_nx.png": {
+            "hash": "4abc2941f1842f1f6c4b49302d348e7d8c87703fac86d7199e6a1e1cf862d3d0",
+            "size": 6035,
+            "mtime": 1763802525.5788918
+        },
+        "assets/skybox_ny.png": {
+            "hash": "fc78db968de8a3f44efd003e148a578f5e7a805dd900666f37b9d9f9a732d20b",
+            "size": 6049,
+            "mtime": 1763802525.61152
+        },
+        "assets/skybox_nz.png": {
+            "hash": "b04da49354f45494d71e7482f7cee0878c3e396ccfbc50079bc3290fe36947d9",
+            "size": 6117,
+            "mtime": 1763802525.6438096
+        },
+        "assets/skybox_px.png": {
+            "hash": "d6aff75140fc24f31c1a90ad429ffb714b4a8d61f3b3730f14d0401152becb44",
+            "size": 6022,
+            "mtime": 1763802525.5625174
+        },
+        "assets/skybox_py.png": {
+            "hash": "aa9aa41791a4fd9e943211084dfc4398c7e87e1009324f59e038cefbd2121aae",
+            "size": 6018,
+            "mtime": 1763802525.592869
+        },
+        "assets/skybox_pz.png": {
+            "hash": "90b03c4a9b0614f6df1374e227b4b0997fec1bc922723dbc0793ddb40c493049",
+            "size": 6072,
+            "mtime": 1763802525.6262088
+        },
+        "assets/wall.png": {
+            "hash": "51e5ce0115481452857c6f5d73f302a9e3040a6c819b4c1f3e8169923fd0e7d7",
+            "size": 1436,
+            "mtime": 1763802525.538256
+        }
+    }
+}

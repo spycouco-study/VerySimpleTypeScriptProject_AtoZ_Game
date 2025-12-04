@@ -1,0 +1,162 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-22T20:15:23.957497",
+    "summary": "3D 카트라이더 스타일의 레이싱 게임을 만들어주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "crash.mp3",
+            "path": "assets/crash.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "engine_driving.mp3",
+            "path": "assets/engine_driving.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "engine_idle.mp3",
+            "path": "assets/engine_idle.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "finish_line.png",
+            "path": "assets/finish_line.png",
+            "type": "Add"
+        },
+        {
+            "name": "kart.png",
+            "path": "assets/kart.png",
+            "type": "Add"
+        },
+        {
+            "name": "sky.png",
+            "path": "assets/sky.png",
+            "type": "Add"
+        },
+        {
+            "name": "track.png",
+            "path": "assets/track.png",
+            "type": "Add"
+        },
+        {
+            "name": "wall.png",
+            "path": "assets/wall.png",
+            "type": "Add"
+        },
+        {
+            "name": "wheel.png",
+            "path": "assets/wheel.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "ebfd07e650448cb10c34604d35a68c4294ab523087057de2df29db93d4edfc9c",
+            "size": 2055,
+            "mtime": 1763810119.0957823
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "c8abf72f84e019c572f572a4a3a3728611f49f62101ebe2b63e4eb9a1ec8d9a7",
+            "size": 64591,
+            "mtime": 1763810123.5788631
+        },
+        "game.ts": {
+            "hash": "df2da7b58bcf97dd8c614dded067665553b2e7ca115bab29d984d635df1cdfe0",
+            "size": 22469,
+            "mtime": 1763810119.0861804
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763796545.4310448
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347007.4590375
+        },
+        "assets/crash.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/engine_driving.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/engine_idle.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/finish_line.png": {
+            "hash": "0f0dcdbd39cca557412e10362d2ef6be1830b069600ccfdfe6a50dcac9141407",
+            "size": 689,
+            "mtime": 1763810040.9183137
+        },
+        "assets/kart.png": {
+            "hash": "216e2b1c521763ba4a6853f963fb15b2248110df6a94819a87e599cf3784fae0",
+            "size": 622,
+            "mtime": 1763810040.8981712
+        },
+        "assets/sky.png": {
+            "hash": "8e969a9986e1f7e2914213a591b42cbca14e224a17eb7e550f01d0c20e4849ff",
+            "size": 5602,
+            "mtime": 1763810040.9381785
+        },
+        "assets/track.png": {
+            "hash": "85deccaf669ea03b4e93a27b05ceb232ec47954665528b1f45ac6fdd2777283c",
+            "size": 2196,
+            "mtime": 1763810040.909772
+        },
+        "assets/wall.png": {
+            "hash": "2c8d1b6be11a9366d7eaf832f4f29c3fc1aeb3ef1dc2b2bfc6757aeff7103970",
+            "size": 1021,
+            "mtime": 1763810040.912745
+        },
+        "assets/wheel.png": {
+            "hash": "09918bacd629fe894c5ce2523f4d28d9a9549d09bf6a3664b235212898137777",
+            "size": 508,
+            "mtime": 1763810040.8990023
+        }
+    }
+}

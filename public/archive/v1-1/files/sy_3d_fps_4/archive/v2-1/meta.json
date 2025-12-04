@@ -1,0 +1,153 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-11-22T19:16:44.283835",
+    "summary": "런타임 오류가 발생했습니다. 다음 오류를 수정해 주세요: [2025-11-22T10:13:42.285Z] 💥 CLIENT ERROR (console-error) Version: 1.0.1 Message: Explicit console.error call: THREE.Object3D.add: object not an instance of THREE.Object3D. undefined",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "crosshair.png",
+            "path": "assets/crosshair.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy.png",
+            "path": "assets/enemy.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "floor_texture.png",
+            "path": "assets/floor_texture.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "hit.mp3",
+            "path": "assets/hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player_bullet.png",
+            "path": "assets/player_bullet.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "shoot.mp3",
+            "path": "assets/shoot.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "wall_texture.png",
+            "path": "assets/wall_texture.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "8810e82ae438ce81ec0682d7532ae6eb2c8f50cd7f860211c644d8acb765ed34",
+            "size": 1863,
+            "mtime": 1763806597.7074306
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "226a28e0cd0907f14f208cd3a95719ace3973cbd6c8a3f7da0e6f323ad3c31af",
+            "size": 119270,
+            "mtime": 1763806604.1006649
+        },
+        "game.ts": {
+            "hash": "8340d61b396ba0c86a146394a6dd9b388f3beb2fc631808c68c78ffe7b25a477",
+            "size": 43520,
+            "mtime": 1763806597.6964638
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763796545.4310448
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347007.4590375
+        },
+        "assets/crosshair.png": {
+            "hash": "c5d8aea1d78deddd623dabfba5b1a72639cfdb4a212322152f8dfe31dc7a5d4c",
+            "size": 508,
+            "mtime": 1763805887.712919
+        },
+        "assets/enemy.png": {
+            "hash": "393f3b4e203c16538e01f00c2acb7fa76409c1a19a7a3a049949f52fe37b32a6",
+            "size": 578,
+            "mtime": 1763805887.7042046
+        },
+        "assets/floor_texture.png": {
+            "hash": "91f6b9babca87b7eea77a0a325c687916e74b3862c670e0b0da2ab1da5c827bb",
+            "size": 2521,
+            "mtime": 1763805887.7274628
+        },
+        "assets/game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/player_bullet.png": {
+            "hash": "b97090bdc5393426c5df8c654d942364eac675c05668a047c3178bd0bfbcfe93",
+            "size": 154,
+            "mtime": 1763805887.697749
+        },
+        "assets/shoot.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/wall_texture.png": {
+            "hash": "c5f07923169b438023961f18c6f058247eb4d90d432c48b703a34443c238431e",
+            "size": 2545,
+            "mtime": 1763805887.7470088
+        }
+    }
+}

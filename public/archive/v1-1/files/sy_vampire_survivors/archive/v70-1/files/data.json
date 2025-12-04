@@ -1,0 +1,303 @@
+{
+    "canvas": {
+        "width": 900,
+        "height": 640,
+        "mapWidth": 1800,
+        "mapHeight": 1200,
+        "backgroundImage": "background"
+    },
+    "player": {
+        "speed": 90,
+        "maxHealth": 100,
+        "baseDamage": 10,
+        "attackCooldown": 0.5,
+        "projectileSpeed": 300,
+        "projectileLifetime": 3,
+        "assetName": "player",
+        "weaponAsset": "player_bullet",
+        "expGemAttractRadius": 100,
+        "playerDrawWidth": 40,
+        "playerDrawHeight": 60,
+        "baseNumberOfAttacks": 1,
+        "attackSpreadAngle": 30,
+        "specialAttackBaseFireRate": 0.2,
+        "hitSoundCooldownDuration": 0.5
+    },
+    "enemies": [
+        {
+            "name": "slime",
+            "assetName": "enemy_slime",
+            "maxHealth": 30,
+            "speed": 50,
+            "damage": 5,
+            "expReward": 10,
+            "spawnRateWeight": 0.6,
+            "size": 40
+        },
+        {
+            "name": "bat",
+            "assetName": "enemy_bat",
+            "maxHealth": 50,
+            "speed": 70,
+            "damage": 7,
+            "expReward": 15,
+            "spawnRateWeight": 0.3,
+            "size": 50
+        },
+        {
+            "name": "golem",
+            "assetName": "enemy_golem",
+            "maxHealth": 150,
+            "speed": 30,
+            "damage": 10,
+            "expReward": 50,
+            "spawnRateWeight": 0.1,
+            "size": 70
+        }
+    ],
+    "projectiles": {
+        "assetName": "player_bullet",
+        "size": 30
+    },
+    "experienceGems": {
+        "assetName": "exp_gem",
+        "baseValue": 10,
+        "size": 30,
+        "totalLifetime": 10,
+        "blinkThresholdSeconds": 3,
+        "blinkFrequency": 5
+    },
+    "items": [
+        {
+            "name": "magnet",
+            "assetName": "item_magnet",
+            "size": 30,
+            "effectDuration": 30,
+            "effectValue": 250,
+            "spawnRateWeight": 0.08,
+            "totalLifetime": 15
+        },
+        {
+            "name": "special_attack",
+            "assetName": "item_special_attack",
+            "size": 30,
+            "effectDuration": 4,
+            "effectValue": 15,
+            "spawnRateWeight": 0.08,
+            "totalLifetime": 15
+        },
+        {
+            "name": "health_potion",
+            "assetName": "item_health_potion",
+            "size": 30,
+            "effectDuration": 0,
+            "effectValue": 30,
+            "spawnRateWeight": 0.08,
+            "totalLifetime": 15
+        }
+    ],
+    "gameplay": {
+        "baseEnemySpawnInterval": 2,
+        "spawnIntervalReductionFactorPerLevel": 0.92,
+        "minEnemySpawnInterval": 0.5,
+        "initialEnemyCount": 5,
+        "baseMaxEnemies": 30,
+        "maxEnemiesIncreasePerLevel": 10,
+        "enemyHealthScalePerLevel": 0.1,
+        "enemySpeedScalePerLevel": 0.03,
+        "enemyDamageScalePerLevel": 0.07,
+        "levelUpExpMultiplier": 1.5,
+        "attackSpeedIncreasePerLevel": 0.03,
+        "itemDropChanceOnEnemyDefeat": 0.03,
+        "maxSimultaneousItems": 3
+    },
+    "ui": {
+        "font": "Arial",
+        "textColor": "white",
+        "gameTitleText": "",
+        "titleScreenText": "Press any key to start",
+        "gameOverText": "GAME OVER!",
+        "levelUpText": "LEVEL UP!",
+        "levelUpOptions": [
+            {
+                "name": "Increase Speed",
+                "description": "Moves 5 units faster",
+                "effect": "player.speed += 4;"
+            },
+            {
+                "name": "Increase Damage",
+                "description": "Deals 5 more damage",
+                "effect": "player.damage += 5;"
+            },
+            {
+                "name": "Heal & Max HP",
+                "description": "Restores health and increases max HP by 10",
+                "effect": "player.maxHealth += 10; player.health = player.maxHealth;"
+            },
+            {
+                "name": "Faster Attacks",
+                "description": "Attack cooldown reduced by 10%",
+                "effect": "player.attackCooldown *= 0.9;"
+            }
+        ],
+        "titleScreenImage": "title_screen_image",
+        "titleScreenTextYOffsetFromBottom": 80,
+        "titleScreenBlinkFrequency": 2,
+        "healthBar": {
+            "width": 150,
+            "height": 20,
+            "fillColor": "#FF5733",
+            "backgroundColor": "#333333",
+            "borderColor": "#FFFFFF",
+            "labelColor": "#FFFFFF",
+            "labelShadowColor": "rgba(0,0,0,0.8)",
+            "cornerRadius": 5,
+            "labelYOffset": 15
+        },
+        "expBar": {
+            "width": 200,
+            "height": 15,
+            "fillColor": "#33FF57",
+            "backgroundColor": "#333333",
+            "borderColor": "#FFFFFF",
+            "labelColor": "#FFFFFF",
+            "labelShadowColor": "rgba(0,0,0,0.8)",
+            "cornerRadius": 5,
+            "labelYOffset": 15
+        },
+        "barLabelFont": "bold 16px Arial"
+    },
+    "assets": {
+        "images": [
+            {
+                "name": "player",
+                "path": "assets/player.png",
+                "width": 64,
+                "height": 64
+            },
+            {
+                "name": "enemy_slime",
+                "path": "assets/enemy_slime.png",
+                "width": 64,
+                "height": 64
+            },
+            {
+                "name": "enemy_bat",
+                "path": "assets/enemy_bat.png",
+                "width": 64,
+                "height": 64
+            },
+            {
+                "name": "enemy_golem",
+                "path": "assets/enemy_golem.png",
+                "width": 64,
+                "height": 64
+            },
+            {
+                "name": "player_bullet",
+                "path": "assets/player_bullet.png",
+                "width": 10,
+                "height": 20
+            },
+            {
+                "name": "exp_gem",
+                "path": "assets/exp_gem.png",
+                "width": 16,
+                "height": 16
+            },
+            {
+                "name": "item_magnet",
+                "path": "assets/item_magnet.png",
+                "width": 32,
+                "height": 32
+            },
+            {
+                "name": "item_special_attack",
+                "path": "assets/item_special_attack.png",
+                "width": 32,
+                "height": 32
+            },
+            {
+                "name": "item_health_potion",
+                "path": "assets/item_health_potion.png",
+                "width": 32,
+                "height": 32
+            },
+            {
+                "name": "background",
+                "path": "assets/background.png",
+                "width": 1800,
+                "height": 1200
+            },
+            {
+                "name": "title_screen_image",
+                "path": "assets/title_screen_image.png",
+                "width": 800,
+                "height": 640
+            }
+        ],
+        "sounds": [
+            {
+                "name": "bgm",
+                "path": "assets/bgm.mp3",
+                "duration_seconds": 60,
+                "volume": 0.3
+            },
+            {
+                "name": "shoot",
+                "path": "assets/shoot.mp3",
+                "duration_seconds": 0.5,
+                "volume": 0.7
+            },
+            {
+                "name": "enemy_hit",
+                "path": "assets/enemy_hit.mp3",
+                "duration_seconds": 0.3,
+                "volume": 0.5
+            },
+            {
+                "name": "player_hit",
+                "path": "assets/player_hit.mp3",
+                "duration_seconds": 0.3,
+                "volume": 0.7
+            },
+            {
+                "name": "level_up",
+                "path": "assets/level_up.mp3",
+                "duration_seconds": 1,
+                "volume": 0.8
+            },
+            {
+                "name": "gem_collect",
+                "path": "assets/gem_collect.mp3",
+                "duration_seconds": 0.2,
+                "volume": 0.6
+            },
+            {
+                "name": "item_collect",
+                "path": "assets/item_collect.mp3",
+                "duration_seconds": 0.5,
+                "volume": 0.8
+            },
+            {
+                "name": "special_attack_activate",
+                "path": "assets/special_attack_activate.mp3",
+                "duration_seconds": 0.5,
+                "volume": 0.8
+            },
+            {
+                "name": "game_over_music",
+                "path": "assets/game_over.mp3",
+                "duration_seconds": 10,
+                "volume": 0.4
+            }
+        ]
+    },
+    "graphics": {
+        "shadowEnabled": true,
+        "shadowColor": "rgba(0, 0, 0, 0.7)",
+        "shadowOffsetX": 5,
+        "shadowOffsetY": 5,
+        "shadowBlur": 5
+    }
+}

@@ -1,0 +1,113 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-11-27T14:46:34.657244",
+    "summary": "에셋이 내려오는 모습(혹은 에셋이 사용 가능해지거나 배치되는 모습)을 사용자에게 보여주어, 사용자가 이를 예상하고 적절하게 조작(클릭 등)할 수 있도록 게임의 UI/UX를 개선해 주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_song1.mp3",
+            "path": "assets/bgm_song1.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "hit_effect.mp3",
+            "path": "assets/hit_effect.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "hit_effect.png",
+            "path": "assets/hit_effect.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "miss_effect.mp3",
+            "path": "assets/miss_effect.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "note_blue.png",
+            "path": "assets/note_blue.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "460833cec85252d16905d34e487f85068f5cba29a6aa279776ace8160d8a9bde",
+            "size": 5213,
+            "mtime": 1764222389.7833557
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "6bab7ee664f83a0ad879ea1c4fb7201fdef0f8b7ca2f3e5738605ca44b76d4a4",
+            "size": 76495,
+            "mtime": 1764222394.425412
+        },
+        "game.ts": {
+            "hash": "e06d86d4270346516dd6934ad95d7f618c7ccc6d57b721f57a47a4e2e68035bd",
+            "size": 28405,
+            "mtime": 1764222389.7757764
+        },
+        "assets/background.png": {
+            "hash": "68d2f59728c4d5793688b318188db2178052c8a28ed534c47b62c84401542e2a",
+            "size": 9694,
+            "mtime": 1764221764.5949538
+        },
+        "assets/bgm_song1.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/hit_effect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/hit_effect.png": {
+            "hash": "d98b78e3eeaab8c99c8faa9bc96750e4243ab1468a1fea4bcffdd9910a8e9e71",
+            "size": 646,
+            "mtime": 1764221764.6036966
+        },
+        "assets/miss_effect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/note_blue.png": {
+            "hash": "c63b54f567b2cc14ccc52cc4577f65b4ad86d2d0102ad05b39369d288c087dad",
+            "size": 511,
+            "mtime": 1764221764.5997279
+        }
+    }
+}

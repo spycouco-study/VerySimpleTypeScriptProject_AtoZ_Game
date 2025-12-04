@@ -1,0 +1,54 @@
+{
+    "canvas": {
+        "width": 800,
+        "height": 600
+    },
+    "gameplay": {
+        "player": {
+            "speed": 200,
+            "fireRate": 0.3,
+            "health": 3,
+            "width": 50,
+            "height": 50
+        },
+        "enemy": {
+            "speed": 100,
+            "fireRate": 2.0,
+            "health": 1,
+            "spawnInterval": 2.0,
+            "width": 50,
+            "height": 50
+        },
+        "playerBullet": {
+            "speed": 400,
+            "damage": 1,
+            "width": 10,
+            "height": 20
+        },
+        "enemyBullet": {
+            "speed": 200,
+            "damage": 1,
+            "width": 10,
+            "height": 20
+        }
+    },
+    "text": {
+        "titleScreen": "Simple Shooter Game\n\n[ Press any key or click to start ]",
+        "gameOver": "GAME OVER!\nScore: ",
+        "loading": "Loading Game..."
+    },
+    "assets": {
+        "images": [
+            { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+            { "name": "enemy", "path": "assets/enemy.png", "width": 64, "height": 64 },
+            { "name": "playerBullet", "path": "assets/player_bullet.png", "width": 10, "height": 20 },
+            { "name": "enemyBullet", "path": "assets/enemy_bullet.png", "width": 10, "height": 20 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 },
+            { "name": "playerShoot", "path": "assets/player_shoot.mp3", "duration_seconds": 0.5, "volume": 0.5 },
+            { "name": "enemyHit", "path": "assets/enemy_hit.mp3", "duration_seconds": 0.3, "volume": 0.7 },
+            { "name": "playerHit", "path": "assets/player_hit.mp3", "duration_seconds": 0.3, "volume": 1.0 }
+        ]
+    }
+}

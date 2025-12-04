@@ -1,0 +1,33 @@
+{
+  "canvasWidth": 800,
+  "canvasHeight": 600,
+  "gridSize": 1,
+  "snakeSpeed": 5,
+  "initialSnakeLength": 3,
+  "wallThickness": 0.5,
+  "cameraFOV": 75,
+  "cameraNear": 0.1,
+  "cameraFar": 100,
+  "cameraPosition": { "x": 0, "y": 15, "z": 15 },
+  "lightPosition": { "x": 10, "y": 20, "z": 10 },
+  "colors": {
+    "background": 4473924,
+    "titleText": "#FFFFFF",
+    "scoreText": "#FFFFFF",
+    "gameOverText": "#FF0000"
+  },
+  "assets": {
+    "images": [
+      { "name": "snake_head", "path": "assets/snake_head.png", "width": 64, "height": 64 },
+      { "name": "snake_body", "path": "assets/snake_body.png", "width": 64, "height": 64 },
+      { "name": "food", "path": "assets/food.png", "width": 64, "height": 64 },
+      { "name": "wall_texture", "path": "assets/wall_texture.png", "width": 128, "height": 128 }
+    ],
+    "sounds": [
+      { "name": "eat_food", "path": "assets/eat.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+      { "name": "game_over", "path": "assets/game_over.mp3", "duration_seconds": 2.0, "volume": 0.8 },
+      { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 },
+      { "name": "start_game", "path": "assets/start_game.mp3", "duration_seconds": 0.5, "volume": 0.7 }
+    ]
+  }
+}

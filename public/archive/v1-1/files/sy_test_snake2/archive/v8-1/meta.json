@@ -1,0 +1,123 @@
+{
+    "version": "v8-1",
+    "parent": "v7-1",
+    "timestamp": "2025-11-14T19:08:05.130300",
+    "summary": "",
+    "chat": {},
+    "changes": [
+        {
+            "name": "spec.md",
+            "path": "spec.md",
+            "type": "Add"
+        },
+        {
+            "name": "title_bg.png",
+            "path": "assets/title_bg.png",
+            "type": "Add"
+        },
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v2-1"
+        },
+        {
+            "name": "apple.png",
+            "path": "assets/apple.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "eat.mp3",
+            "path": "assets/eat.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "gameover.mp3",
+            "path": "assets/gameover.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_body.png",
+            "path": "assets/snake_body.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "snake_head.png",
+            "path": "assets/snake_head.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "8b77bab4950d4d01fe8727d654304d7526d4877f682731c959002dd21ff16bad",
+            "size": 1880,
+            "mtime": 1763114879.3337922
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763083448.631395
+        },
+        "game.ts": {
+            "hash": "3f8b17d4ffb7722ebc0f6fa652f0729cae05f0cf52992e6eb305d4f1047cc9e3",
+            "size": 16676,
+            "mtime": 1763114879.325765
+        },
+        "spec.md": {
+            "hash": "32ab58a9b3f44558dd31c839cd3328f308e745f39a415f8d31fb7f296dd2965b",
+            "size": 2840,
+            "mtime": 1763099242.8734622
+        },
+        "assets/apple.png": {
+            "hash": "02abf825094daac0672dacbcd3722f272eb9c8354bc43c5e1e85b13b490fd21f",
+            "size": 331,
+            "mtime": 1763083448.6319027
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763083448.637741
+        },
+        "assets/eat.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763083448.6422482
+        },
+        "assets/gameover.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763083448.6460452
+        },
+        "assets/snake_body.png": {
+            "hash": "5cfc89eafc8952e1970f7428b910c271689fa9d8423cbc4501e8a5d1fb999be8",
+            "size": 406,
+            "mtime": 1763083448.6480298
+        },
+        "assets/snake_head.png": {
+            "hash": "5582eea52da29f6baa15508daab4e337ec5cd6f721e90353a625d52f7b1a5675",
+            "size": 404,
+            "mtime": 1763083448.6480298
+        },
+        "assets/title_bg.png": {
+            "hash": "8bd768a39e072c9be8b958c53e98b16a369b1dea86755ca5ff4f02d20af62f48",
+            "size": 2345,
+            "mtime": 1763114811.0555365
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "gameSettings": {
+        "gameTitle": "Ball Bounce & Roll",
+        "titleText": "화면을 클릭하여 시작하세요! WASD 또는 방향키로 굴리고, 스페이스바로 튀기세요.",
+        "gravity": [0, -9.82, 0],
+        "ballRadius": 1.0,
+        "ballMass": 5.0,
+        "ballFriction": 0.7,
+        "ballRestitution": 0.9,
+        "groundSize": 50.0,
+        "groundFriction": 0.7,
+        "groundRestitution": 0.5,
+        "cameraPosition": [0, 10, 20],
+        "cameraTarget": [0, 0, 0],
+        "bounceForce": 300,
+        "rollForce": 50,
+        "collisionSoundThreshold": 0.5
+    },
+    "assets": {
+        "images": [
+            { "name": "ball", "path": "assets/ball.png", "width": 256, "height": 256 },
+            { "name": "ground", "path": "assets/ground.png", "width": 512, "height": 512 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 },
+            { "name": "bounce", "path": "assets/bounce.mp3", "duration_seconds": 1.0, "volume": 0.8 }
+        ]
+    }
+}

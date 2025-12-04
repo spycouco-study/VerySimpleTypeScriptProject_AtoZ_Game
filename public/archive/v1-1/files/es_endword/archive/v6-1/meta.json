@@ -1,0 +1,93 @@
+{
+    "version": "v6-1",
+    "parent": "v5-1",
+    "timestamp": "2025-11-27T14:29:24.725404",
+    "summary": "끝말잇기는 단어의 마지막 글자를 이어서 다음 단어를 만드는 게임입니다.\n예시로, '사과'의 마지막 글자인 '과'로 시작하는 '과일', 그리고 '일'로 시작하는 '일본'처럼 진행됩니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "correct.mp3",
+            "path": "assets/correct.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "incorrect.mp3",
+            "path": "assets/incorrect.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "53ffeab9b8ad5c29acc8a2fcf26138df5f9ac151794947714cac73e3dfc96569",
+            "size": 1712,
+            "mtime": 1764221211.798659
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "a8b8622db10190cbb0a721bb7de349917d629c34280406eecce63a76f691ea0c",
+            "size": 49283,
+            "mtime": 1764221362.1772776
+        },
+        "game.ts": {
+            "hash": "e4c11441ac3c5f1f8e8f26a2c62326c5a2ceaf608350692036295bbecefbc460",
+            "size": 16976,
+            "mtime": 1764221356.8895924
+        },
+        "assets/background.png": {
+            "hash": "c92f9192cc136ed856cb232b2195625b98c31c2b64af59fbfcaf25e2f95dce90",
+            "size": 3590,
+            "mtime": 1764210183.61508
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/correct.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/incorrect.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        }
+    }
+}

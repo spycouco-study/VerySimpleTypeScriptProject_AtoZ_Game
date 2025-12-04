@@ -1,0 +1,133 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-11-28T02:08:09.365653",
+    "summary": "게임의 이름을 '스도쿠 (Sudoku)'로 설정합니다.\n게임 목표는 9x9 격자판의 모든 빈칸에 1부터 9까지의 숫자를 채워 넣는 것으로 설정합니다.\n게임 규칙은 각 가로줄, 세로줄, 그리고 3x3 작은 격자 안에는 1부터 9까지의 숫자가 중복 없이 한 번씩만 들어가도록 합니다.\n게임판은 표준 9x9 격자판으로 구성합니다.\n게임 시작 시, 일부 칸에는 미리 숫자가 채워져 있도록 게임판을 초기 설정합니다.\n플레이어가 빈칸을 클릭(또는 탭)하여 선택할 수 있도록 숫자 입력 방식을 구현합니다.\n선택된 칸에 숫자를 입력하기 위해 화면에 1부터 9까지의 숫자 버튼 패드를 표시하고, 플레이어가 해당 버튼을 클릭하여 숫자를 입력할 수 있도록 합니다.\n오답 처리 방식으로, 플레이어가 스도쿠 규칙(가로줄, 세로줄, 3x3 격자 내 중복)에 맞지 않는 숫자를 입력했을 때, 해당 칸 또는 관련된 칸들이 시각적으로 즉시 강조되어 잘못된 입력임을 알리도록 구현합니다.\n게임 시작 전 '쉬움', '보통', '어려움' 등의 난이도를 선택할 수 있는 난이도 설정 기능을 제공합니다.\n난이도에 따라 게임 시작 시 미리 채워져 있는 숫자의 개수를 조절합니다. '쉬움' 난이도에서는 많은 숫자가 채워져 있도록 하고, '어려움' 난이도에서는 적은 숫자가 채워져 더 많은 추론을 요구하도록 합니다.\n플레이어가 막혔을 때 올바른 숫자를 하나의 빈칸에 채워주는 힌트 기능을 제공합니다.\n직전의 입력 상태로 되돌릴 수 있는 실수 되돌리기 (Undo) 기능을 제공합니다.\n현재 진행 중인 게임을 처음 시작 상태로 되돌릴 수 있는 현재 게임 초기화 (Reset) 기능을 제공합니다.\n현재 게임을 종료하고 새로운 스도쿠 게임을 시작할 수 있는 새 게임 시작 (New Game) 기능을 제공합니다.\n빈칸에 작은 글씨로 여러 개의 임시 숫자를 메모할 수 있는 연필 메모 (Pencil Marks) 기능을 제공합니다.\n모든 칸에 올바른 숫자가 채워져 게임이 성공적으로 완료되면, '축하합니다! 스도쿠를 해결했습니다!'와 같은 성공 메시지가 화면 중앙에 표시되도록 게임 성공 화면을 구현합니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "spec.md",
+            "path": "spec.md",
+            "type": "Add"
+        },
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bullet.png",
+            "path": "assets/bullet.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy.png",
+            "path": "assets/enemy.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "explosion.mp3",
+            "path": "assets/explosion.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "shoot.mp3",
+            "path": "assets/shoot.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "start_sound.mp3",
+            "path": "assets/start_sound.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "58d4d39d813f21784bc66484ba6f5c8fe457c07d5c7dda0a08bb497f908a3040",
+            "size": 1350,
+            "mtime": 1764263285.6893806
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "53c5952f9800a558a9d9ede5ba1675b7f51684cd5fc35210220230cb71150693",
+            "size": 32947,
+            "mtime": 1764263289.1658225
+        },
+        "game.ts": {
+            "hash": "b9d33312ea398abff9aebe13873f4bf9062ecd8c893576c2779ac90d7aa13fea",
+            "size": 12499,
+            "mtime": 1764263285.6813414
+        },
+        "spec.md": {
+            "hash": "5b87336273a7fcb02e7bdb9254d20fa9769099dfa33a3784470269b92b26b2a7",
+            "size": 3004,
+            "mtime": 1764263185.3011546
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/bullet.png": {
+            "hash": "6baed517ebeac60ff87e96fa9afc443b57118bc58e852b521bf2e43c9dad2b81",
+            "size": 86,
+            "mtime": 1764262934.899772
+        },
+        "assets/enemy.png": {
+            "hash": "b57e82e6a6e84a9d2f4b374a34d303634d3c5ee67e7476e542517d364a58dc2f",
+            "size": 655,
+            "mtime": 1764262871.334632
+        },
+        "assets/explosion.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/player.png": {
+            "hash": "56973c3a9d9b8e8af26a892dc621a0730841ace6dfe2dcd2524f800a6a257258",
+            "size": 732,
+            "mtime": 1764262807.7602193
+        },
+        "assets/shoot.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/start_sound.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        }
+    }
+}

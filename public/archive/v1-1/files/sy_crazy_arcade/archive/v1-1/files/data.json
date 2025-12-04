@@ -1,0 +1,68 @@
+{
+  "gameSettings": {
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "gridSize": 15,
+    "tileSize": 40,
+    "playerSpeed": 120,
+    "bombFuseTime": 3000,
+    "explosionDuration": 500,
+    "initialBombRange": 1,
+    "initialMaxBombs": 1,
+    "breakableBlockDensity": 0.6,
+    "powerUpDropChance": 0.3,
+    "invulnerabilityTime": 1500
+  },
+  "playerSettings": {
+    "startX": 1,
+    "startY": 1
+  },
+  "enemySettings": [
+    {
+      "startX": 13,
+      "startY": 13,
+      "speed": 100
+    },
+    {
+      "startX": 1,
+      "startY": 13,
+      "speed": 100
+    },
+    {
+      "startX": 13,
+      "startY": 1,
+      "speed": 100
+    }
+  ],
+  "assets": {
+    "images": [
+      { "name": "title_screen", "path": "assets/title_screen.png", "width": 800, "height": 600 },
+      { "name": "game_over", "path": "assets/game_over.png", "width": 800, "height": 600 },
+      { "name": "game_win", "path": "assets/game_win.png", "width": 800, "height": 600 },
+      { "name": "floor_tile", "path": "assets/floor_tile.png", "width": 40, "height": 40 },
+      { "name": "wall_solid", "path": "assets/wall_solid.png", "width": 40, "height": 40 },
+      { "name": "wall_breakable", "path": "assets/wall_breakable.png", "width": 40, "height": 40 },
+      { "name": "player", "path": "assets/player.png", "width": 32, "height": 32 },
+      { "name": "enemy", "path": "assets/enemy.png", "width": 32, "height": 32 },
+      { "name": "bomb", "path": "assets/bomb.png", "width": 32, "height": 32 },
+      { "name": "explosion_center", "path": "assets/explosion_center.png", "width": 40, "height": 40 },
+      { "name": "explosion_horizontal", "path": "assets/explosion_horizontal.png", "width": 40, "height": 40 },
+      { "name": "explosion_vertical", "path": "assets/explosion_vertical.png", "width": 40, "height": 40 },
+      { "name": "explosion_end_up", "path": "assets/explosion_end_up.png", "width": 40, "height": 40 },
+      { "name": "explosion_end_down", "path": "assets/explosion_end_down.png", "width": 40, "height": 40 },
+      { "name": "explosion_end_left", "path": "assets/explosion_end_left.png", "width": 40, "height": 40 },
+      { "name": "explosion_end_right", "path": "assets/explosion_end_right.png", "width": 40, "height": 40 },
+      { "name": "powerup_bomb_range", "path": "assets/powerup_bomb_range.png", "width": 32, "height": 32 },
+      { "name": "powerup_bomb_count", "path": "assets/powerup_bomb_count.png", "width": 32, "height": 32 }
+    ],
+    "sounds": [
+      { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 180.0, "volume": 0.3 },
+      { "name": "bomb_place", "path": "assets/bomb_place.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+      { "name": "explosion", "path": "assets/explosion.mp3", "duration_seconds": 1.0, "volume": 0.8 },
+      { "name": "powerup_pickup", "path": "assets/powerup_pickup.mp3", "duration_seconds": 0.5, "volume": 0.7 },
+      { "name": "player_hit", "path": "assets/player_hit.mp3", "duration_seconds": 0.8, "volume": 0.9 },
+      { "name": "game_over_sound", "path": "assets/game_over_sound.mp3", "duration_seconds": 2.0, "volume": 0.7 },
+      { "name": "game_win_sound", "path": "assets/game_win_sound.mp3", "duration_seconds": 2.0, "volume": 0.7 }
+    ]
+  }
+}

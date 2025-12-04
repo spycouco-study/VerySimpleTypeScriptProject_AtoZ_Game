@@ -1,0 +1,133 @@
+{
+    "version": "v41-2",
+    "parent": "v40-1",
+    "timestamp": "2025-11-23T00:12:00.063434",
+    "summary": "플레이어가 마우스 클릭으로 총알을 발사할 수 있도록 해주세요.\n총알은 일직선으로 나가야 합니다.\n총알은 맵을 벗어나거나 사물에 맞으면 사라져야 합니다.\n총알은 공중으로 발사되었을 때 특정 범위를 벗어나면 사라져야 합니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "bullet.png",
+            "path": "assets/bullet.png",
+            "type": "Add"
+        },
+        {
+            "name": "shoot.mp3",
+            "path": "assets/shoot.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "box.png",
+            "path": "assets/box.png",
+            "last_version": "v27-1"
+        },
+        {
+            "name": "ground.png",
+            "path": "assets/ground.png",
+            "last_version": "v28-3"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "last_version": "v29-1"
+        },
+        {
+            "name": "step.mp3",
+            "path": "assets/step.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "63709687fafda7400a6f3ffc777ba10d8c4582f371f755595693913035d056d7",
+            "size": 5898,
+            "mtime": 1763824242.0146506
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763824000.6987598
+        },
+        "game.js": {
+            "hash": "91f2d7a42bc3b6718b764639e4010f255e555168d5b4a515e0d77430906b885b",
+            "size": 116502,
+            "mtime": 1763824319.0540564
+        },
+        "game.ts": {
+            "hash": "b9e323e452add8506cc90719a292c1a2490df7b65b8d5edf82fc4e1a9e938ff4",
+            "size": 48691,
+            "mtime": 1763824311.824916
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763824000.78219
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763824000.8140292
+        },
+        "assets/box.png": {
+            "hash": "694b56f42f944aa461b86d54e4dc36de464219480b8a5cd6b053b2ef07f0032e",
+            "size": 893,
+            "mtime": 1763824000.8140292
+        },
+        "assets/bullet.png": {
+            "hash": "41093834946245a4f3a3dd49902f6f2d69d56647014b544620e330d334a84abf",
+            "size": 247,
+            "mtime": 1763824242.0050304
+        },
+        "assets/ground.png": {
+            "hash": "e29bbb8e61be3c966a68f9207c6b436bdb694179dcf496a4e024dc072c6e9cee",
+            "size": 1280269,
+            "mtime": 1763824000.8296976
+        },
+        "assets/player.png": {
+            "hash": "2d006547b3766926660082a5865b8444c64ed61028a782078d0ad427703e80b6",
+            "size": 112948,
+            "mtime": 1763824000.8577528
+        },
+        "assets/shoot.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        },
+        "assets/step.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763824000.874958
+        }
+    }
+}

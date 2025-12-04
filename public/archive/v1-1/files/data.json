@@ -1,0 +1,33 @@
+{
+  "gameSettings": {
+    "initialLives": 3,
+    "roundTimeLimit": 3.0,
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "choiceIconSize": 150,
+    "playerButtonWidth": 120,
+    "playerButtonHeight": 120,
+    "playerButtonSpacing": 30,
+    "fontSizeTitle": "60px Arial",
+    "fontSizeInstructions": "30px Arial",
+    "fontSizeUI": "30px Arial",
+    "fontSizeLarge": "40px Arial",
+    "fontColorDefault": "#FFFFFF",
+    "fontColorHighlight": "#FFFF00"
+  },
+  "assets": {
+    "images": [
+      { "name": "rock", "path": "assets/rock.png", "width": 256, "height": 256 },
+      { "name": "paper", "path": "assets/paper.png", "width": 256, "height": 256 },
+      { "name": "scissors", "path": "assets/scissors.png", "width": 256, "height": 256 },
+      { "name": "title_background", "path": "assets/title_background.png", "width": 800, "height": 600 },
+      { "name": "game_background", "path": "assets/game_background.png", "width": 800, "height": 600 }
+    ],
+    "sounds": [
+      { "name": "game_bgm", "path": "assets/game_bgm.mp3", "duration_seconds": 120.0, "volume": 0.5 },
+      { "name": "win_sound", "path": "assets/win_sound.mp3", "duration_seconds": 1.0, "volume": 0.7 },
+      { "name": "lose_sound", "path": "assets/lose_sound.mp3", "duration_seconds": 1.0, "volume": 0.7 },
+      { "name": "button_click", "path": "assets/button_click.mp3", "duration_seconds": 0.2, "volume": 0.6 }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-11-22T19:07:05.039217",
+            "summary": "간단한 3D FPS 게임을 만들어주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-11-22T19:16:44.288866",
+            "summary": "런타임 오류가 발생했습니다. 다음 오류를 수정해 주세요: [2025-11-22T10:13:42.285Z] 💥 CLIENT ERROR (console-error) Version: 1.0.1 Message: Explicit console.error call: THREE.Object3D.add: object not an instance of THREE.Object3D. undefined",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

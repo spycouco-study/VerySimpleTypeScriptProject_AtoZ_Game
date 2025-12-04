@@ -1,0 +1,70 @@
+{
+    "canvas": {
+        "width": 800,
+        "height": 600
+    },
+    "gameSettings": {
+        "initialLives": 3,
+        "roundTimeLimitSeconds": 3,
+        "roundResultDisplayDurationSeconds": 1.5,
+        "iconSize": 100,
+        "centralIconSize": 200,
+        "playerIconOffset": 150,
+        "spacing": 40
+    },
+    "texts": {
+        "titleScreen": {
+            "title": "가위바위보 게임",
+            "subtitle": "클릭하여 시작",
+            "titleFontSize": "48px",
+            "subtitleFontSize": "24px",
+            "fontColor": "#FFFFFF"
+        },
+        "instructionsScreen": {
+            "title": "게임 조작법",
+            "line1": "하단의 가위바위보 아이콘 중",
+            "line2": "중앙 아이콘에 이기는 아이콘을",
+            "line3": "3초 안에 선택하세요.",
+            "line4": "목숨 3개, 모두 소진 시 게임 오버.",
+            "line5": "클릭하여 게임 시작",
+            "titleFontSize": "36px",
+            "lineFontSize": "20px",
+            "fontColor": "#FFFFFF"
+        },
+        "playingScreen": {
+            "livesLabel": "목숨: ",
+            "timerLabel": "남은 시간: ",
+            "livesFontSize": "24px",
+            "timerFontSize": "24px",
+            "fontColor": "#FFFFFF"
+        },
+        "roundResult": {
+            "win": "승리!",
+            "lose": "패배!",
+            "timeout": "시간 초과!",
+            "fontSize": "48px",
+            "winColor": "#00FF00",
+            "loseColor": "#FF0000"
+        },
+        "gameOverScreen": {
+            "title": "게임 오버",
+            "subtitle": "클릭하여 다시 시작",
+            "titleFontSize": "48px",
+            "subtitleFontSize": "24px",
+            "fontColor": "#FFFFFF"
+        }
+    },
+    "assets": {
+        "images": [
+            { "name": "rock", "path": "assets/rock.png", "width": 100, "height": 100 },
+            { "name": "paper", "path": "assets/paper.png", "width": 100, "height": 100 },
+            { "name": "scissors", "path": "assets/scissors.png", "width": 100, "height": 100 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 },
+            { "name": "win_sound", "path": "assets/win.mp3", "duration_seconds": 1.5, "volume": 0.8 },
+            { "name": "lose_sound", "path": "assets/lose.mp3", "duration_seconds": 1.5, "volume": 0.8 },
+            { "name": "click_sound", "path": "assets/click.mp3", "duration_seconds": 0.5, "volume": 0.7 }
+        ]
+    }
+}

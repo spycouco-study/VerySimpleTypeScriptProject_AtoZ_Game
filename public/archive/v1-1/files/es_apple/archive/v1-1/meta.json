@@ -1,0 +1,102 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-28T14:27:36.245157",
+    "summary": "사과게임을 만들어줘",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "enemy.png",
+            "path": "assets/enemy.png",
+            "type": "Add"
+        },
+        {
+            "name": "hit.mp3",
+            "path": "assets/hit.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        },
+        {
+            "name": "start.mp3",
+            "path": "assets/start.mp3",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "4460fbaa2bb271219e986485505a0a32194dd3cc61a2437ab433667dcc23c354",
+            "size": 1298,
+            "mtime": 1764307650.1225162
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "game.js": {
+            "hash": "f9baf464df65376535b0defb3eccc21f6f5d825d72e77189d03e6a183a4c715d",
+            "size": 47362,
+            "mtime": 1764307656.1060307
+        },
+        "game.ts": {
+            "hash": "b00f8b43325bd9ddf1fa51538c2876fd925fc53b4a2ae25184fd4eef67437af7",
+            "size": 16824,
+            "mtime": 1764307601.5861588
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763979623.3790512
+        },
+        "assets/enemy.png": {
+            "hash": "2c4d8cbb4b59df1674e8ec7e674d33993312a63a73b070ca7ef3afc06d01728e",
+            "size": 168452,
+            "mtime": 1764307650.080696
+        },
+        "assets/hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        },
+        "assets/player.png": {
+            "hash": "eaf89bbd390ceb32ed53c08cd31a7e84d80f35c6bd1d736b6ae4cafe904916ca",
+            "size": 182916,
+            "mtime": 1764307620.9617965
+        },
+        "assets/start.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763979623.3828135
+        }
+    }
+}

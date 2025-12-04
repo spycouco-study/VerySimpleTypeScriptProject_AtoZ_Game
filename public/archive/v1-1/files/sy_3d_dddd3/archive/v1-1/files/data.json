@@ -1,0 +1,44 @@
+{
+  "gameTitle": "WASD 3D Adventure",
+  "titleScreen": {
+    "message": "Click to Start",
+    "fontSize": "48px",
+    "fontColor": "#ffffff",
+    "backgroundColor": "rgba(0, 0, 0, 0.7)"
+  },
+  "player": {
+    "radius": 0.5,
+    "height": 1.8,
+    "speed": 6.0,
+    "mass": 70.0,
+    "assetPath": "assets/player.png"
+  },
+  "camera": {
+    "fov": 75,
+    "near": 0.1,
+    "far": 1000,
+    "offsetX": 0,
+    "offsetY": 1.5,
+    "offsetZ": 4,
+    "sensitivity": 0.002,
+    "minPitch": -80,
+    "maxPitch": 80
+  },
+  "world": {
+    "gravityY": -15.0,
+    "ground": {
+      "size": 200,
+      "assetPath": "assets/grass_texture.png"
+    }
+  },
+  "lighting": {
+    "ambientColor": "#404040",
+    "directionalColor": "#ffffff",
+    "directionalIntensity": 1.5,
+    "directionalPosition": [10, 20, 15]
+  },
+  "audio": {
+    "backgroundMusic": "assets/bg_music.mp3",
+    "volume": 0.3
+  }
+}

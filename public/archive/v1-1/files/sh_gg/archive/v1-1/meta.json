@@ -1,0 +1,42 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-18T15:43:44.620364",
+    "summary": "게임 장르는 '봄버맨' 또는 '크레이지아케이드'와 유사하게 만들어주세요.\n캐릭터 조작은 방향키를 사용해주세요.\n물풍선 발사는 스페이스바를 사용해주세요.\n물풍선으로 블록을 제거하여 아이템을 랜덤하게 획득할 수 있도록 해주세요.\n물풍선을 사용하여 적을 처치할 수 있도록 해주세요.\n게임의 승리 조건은 최후의 1인이 되는 것입니다.\n적 캐릭터들도 물풍선을 발사하며 최후의 1인이 되는 것을 목표로 하도록 구현해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "f54e462bbc24faa69d5cfd748442ebe4dbf095a99abf870d73ec755b705365b7",
+            "size": 4308,
+            "mtime": 1763448224.5648427
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763445575.5299747
+        },
+        "game.ts": {
+            "hash": "d3ae1c952f079bee435063bdaf4d4e49153c8bcaeba8dfc1db15d1639217f869",
+            "size": 54963,
+            "mtime": 1763448224.5551586
+        }
+    }
+}

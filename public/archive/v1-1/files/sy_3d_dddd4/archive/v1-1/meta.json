@@ -1,0 +1,102 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-11-22T22:39:46.509998",
+    "summary": "3D 공간에서 주인공이 WASD 키를 눌러 움직일 수 있는 간단한 게임을 생성해주세요.\n마우스 움직임에 따라 게임 시점이 변하도록 구현해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "ground.png",
+            "path": "assets/ground.png",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        },
+        {
+            "name": "step.mp3",
+            "path": "assets/step.mp3",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "8924caf9193c27dda98933eb1986c4ede597487733bf7f7991372d110c747f66",
+            "size": 842,
+            "mtime": 1763818780.8781362
+        },
+        "favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763549745.053005
+        },
+        "game.js": {
+            "hash": "85c358b2f0dcbd2c2a9bf30ae50e09897a49e35e3ca871e48fe40d726a947a99",
+            "size": 57238,
+            "mtime": 1763818786.1353118
+        },
+        "game.ts": {
+            "hash": "188b22dab6bdd169e7ceeaf68e0ed657e34c303fad866742311504fff1501f59",
+            "size": 23159,
+            "mtime": 1763818780.8736377
+        },
+        "tsconfig.json": {
+            "hash": "41c281d54bb1c21470b4c74a214fd3240ad5cbd93252cb896c40d10c97388dd2",
+            "size": 524,
+            "mtime": 1763796545.4310448
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763347007.4590375
+        },
+        "assets/ground.png": {
+            "hash": "2e10b226de2b517e9472846a97cd3f17ddf83e6363692ba596216b6746cd5299",
+            "size": 1490,
+            "mtime": 1763818747.734558
+        },
+        "assets/player.png": {
+            "hash": "ffcd252a24829dcf49f1ed8c046f0e241e605817e4a9d335e0f955249f120fc1",
+            "size": 788,
+            "mtime": 1763818747.7230942
+        },
+        "assets/step.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763347007.4590375
+        }
+    }
+}

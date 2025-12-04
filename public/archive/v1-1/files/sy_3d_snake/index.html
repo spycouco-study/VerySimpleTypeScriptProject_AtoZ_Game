@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alparka!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+  </head>
+  <body>
+    <div id="gameContainer">
+      <h2>알아서 만들어 주는 AI 놀이공원, Alparka!</h2>
+      <canvas id="gameCanvas" width="1080" height="720"></canvas>
+    </div>
+    <script defer>
+      const SERVER_URL = "http://localhost:8000/client-error";
+
+      // 🌟 원래 함수들을 전역적으로 백업
+      const originalConsoleLog = window.console.log;
+      const originalConsoleError = window.console.error;
+      const originalConsoleWarn = window.console.warn;
+
+      // 🔥 배치 수집 설정
+      const BATCH_CONFIG = {
+        collectionWindow: 5000, // 첫 에러 발생 후 5초 동안 수집하고 전송
+      };
+
+      // 📦 에러 수집 상태
+      // [수정됨] sentErrorHistory: 한 번이라도 발생한 에러의 키를 영구 저장 (중복 방지)
+      const sentErrorHistory = new Set();
+      let pendingErrors = []; // 현재 전송 대기 중인 에러 리스트
+      let collectionTimer = null; // 수집 종료 타이머
+      let isCollecting = false; // 현재 수집 사이클이 돌고 있는지 여부
+
+      // 🔥 에러 고유 키 생성 (동일 에러 판별용)
+      function getErrorKey(errorData) {
+        const { type, message, source, lineno, colno, stack } = errorData;
+        // 스택의 앞부분 5줄만 사용하여 해시 생성 (요청에 맞춰 5줄로 변경)
+        const stackHash =
+          stack && stack !== "N/A"
+            ? stack.split("\n").slice(0, 5).join("|")
+            : "";
+        return `${type}:${message}:${stackHash}`;
+      }
+
+      // 📝 에러 하나를 요청하신 보고 형식으로 포맷
+      function formatErrorForReport(errorData, index) {
+        const { type, message, source, lineno, colno, stack } = errorData;
+
+        // 위치 정보 (source가 'unknown'이나 'promise'가 아닐 경우만 표시)
+        const location =
+          source && source !== "unknown" && source !== "promise"
+            ? `\n\t위치: ${source}:${lineno}:${colno}`
+            : "";
+
+        // 스택 트레이스 (최대 5줄)
+        const stackLines = stack && stack !== "N/A" ? stack.split("\n") : [];
+        const truncatedStack = stackLines.slice(0, 5).join("\n\t ");
+        const stackTrace =
+          stackLines.length > 0
+            ? `\n\tStack Trace:\n\t${truncatedStack}\n... (Full stack trace truncated)`
+            : "";
+
+        return `${index + 1}. [${type}] ${message}${location}${stackTrace}`;
+      }
+
+      // 📤 수집 완료 후 전송
+      function sendCollectedErrors() {
+        if (pendingErrors.length === 0) {
+          isCollecting = false;
+          collectionTimer = null;
+          return;
+        }
+
+        // 전송할 목록 복사
+        const errorsToSend = [...pendingErrors];
+
+        // 대기 목록만 초기화
+        pendingErrors = [];
+        isCollecting = false;
+        collectionTimer = null;
+
+        // 📊 최종 보고서 문자열 생성
+        const errorReportBody = errorsToSend
+          .map((error, index) => formatErrorForReport(error, index))
+          .join("\n\n");
+
+        const header = `==================================================
+런타임 에러가 발생했습니다!: ${errorsToSend.length}개 에러
+==================================================`;
+
+        const finalReport = `${header}\n\n${errorReportBody}`;
+
+        // 📦 전송 데이터 구조 변경 (report 문자열 포함)
+        const batchData = {
+          type: "error-batch",
+          game_version: "1.0.1",
+          collected_at: new Date().toISOString(),
+          error_count: errorsToSend.length,
+          // 요청하신 단일 보고서 형식으로 전송
+          error_report: finalReport,
+          // 원본 에러 목록도 디버깅용으로 유지
+          errors: errorsToSend,
+        };
+
+        originalConsoleLog.call(
+          window.console,
+          `%c📦 에러 수집 완료 - ${errorsToSend.length}건 전송 (중복 제외됨)`,
+          "color: blue; font-weight: bold; font-size: 14px;",
+          batchData
+        );
+        originalConsoleLog.call(window.console, finalReport); // 콘솔에 최종 보고서 출력
+
+        // 1. 부모 페이지로 전송 (payload에 finalReport 포함)
+        try {
+          window.parent.postMessage(
+            {
+              source: "alparka-game-iframe",
+              type: "error-batch",
+              // 요청하신 형식의 문자열을 직접 전송
+              payload: {
+                error_report: finalReport,
+                error_count: errorsToSend.length,
+              },
+            },
+            "*"
+          );
+
+          originalConsoleWarn.call(
+            window.console,
+            "부모 창으로 메시지 전송 성공!!:"
+          );
+        } catch (e) {
+          originalConsoleWarn.call(
+            window.console,
+            "🚨 부모 창으로 메시지 전송 실패:",
+            e
+          );
+        }
+
+        // // 2. 서버 전송
+        // fetch(SERVER_URL, {
+        //   method: "POST",
+        //   headers: { "Content-Type": "application/json" },
+        //   body: JSON.stringify(batchData),
+        // }).catch((err) => {
+        //   originalConsoleError.call(window.console, "❌ 배치 전송 실패:", err);
+        // });
+      }
+
+      // 📝 에러 수집 함수 (나머지는 동일)
+      function collectError(data) {
+        data.time = new Date().toISOString();
+        data.game_version = "1.0.1";
+
+        const errorKey = getErrorKey(data);
+
+        // [수정됨] 이전에 한 번이라도 발생했던 에러인지 확인
+        if (sentErrorHistory.has(errorKey)) {
+          /*
+          originalConsoleLog.call(
+            window.console,
+            `%c🔄 이미 전송된 에러 무시: ${data.message}`,
+            "color: gray; font-size: 10px;"
+          );
+          */
+          return;
+        }
+
+        // 새로운 종류의 에러임!
+        sentErrorHistory.add(errorKey); // 영구 기록에 추가
+        pendingErrors.push(data); // 이번 전송 대기열에 추가
+
+        // 타입별 콘솔 출력 (최초 1회만 출력됨)
+        const style = "color: orange; font-weight: bold;";
+        originalConsoleLog.call(
+          window.console,
+          `%c🆕 새 에러 감지: ${data.message}`,
+          style
+        );
+
+        // 🎯 수집 타이머가 안 돌고 있다면 시작 (첫 에러 발생 시점)
+        if (!isCollecting) {
+          isCollecting = true;
+          originalConsoleLog.call(
+            window.console,
+            `%c⏱️ 배치 수집 시작 (${
+              BATCH_CONFIG.collectionWindow / 1000
+            }초 뒤 전송)`,
+            "color: green;"
+          );
+
+          collectionTimer = setTimeout(() => {
+            sendCollectedErrors();
+          }, BATCH_CONFIG.collectionWindow);
+        }
+      }
+
+      // --- 기존의 window.onerror, unhandledrejection, error, console.error/warn 오버라이드는 동일하게 유지 ---
+
+      // 🔥 JS 런타임 에러
+      window.onerror = function (message, source, lineno, colno, error) {
+        collectError({
+          type: "js-error",
+          message: String(message),
+          source: source || "unknown",
+          lineno: lineno || 0,
+          colno: colno || 0,
+          stack: error ? error.stack : "N/A",
+        });
+        return false;
+      };
+
+      // 🔥 Promise rejection 에러
+      window.addEventListener("unhandledrejection", function (event) {
+        collectError({
+          type: "unhandledrejection",
+          message: event.reason ? String(event.reason) : "Promise rejected",
+          source: "promise",
+          lineno: 0,
+          colno: 0,
+          stack:
+            event.reason && event.reason.stack ? event.reason.stack : "N/A",
+        });
+      });
+
+      // 🔥 리소스 로드 에러
+      window.addEventListener(
+        "error",
+        function (event) {
+          if (event.target !== window) {
+            collectError({
+              type: "resource-error",
+              message: `Failed to load: ${event.target.tagName}`,
+              source: event.target.src || event.target.href || "unknown",
+              lineno: 0,
+              colno: 0,
+              stack: "N/A",
+            });
+          }
+        },
+        true
+      );
+
+      // 🔥 console.error 오버라이드
+      window.console.error = function (...args) {
+        originalConsoleError.apply(window.console, args);
+        const message = args.map((arg) => String(arg)).join(" ");
+        collectError({
+          type: "console-error",
+          message: message,
+          source: "console.error",
+          lineno: 0,
+          colno: 0,
+          stack: "N/A",
+        });
+      };
+
+      // 🔥 console.warn 오버라이드
+      window.console.warn = function (...args) {
+        originalConsoleWarn.apply(window.console, args);
+        const message = args.map((arg) => String(arg)).join(" ");
+        const criticalKeywords = [
+          "deprecated",
+          "memory",
+          "performance",
+          "leak",
+          "failed",
+        ];
+        if (criticalKeywords.some((k) => message.toLowerCase().includes(k))) {
+          collectError({
+            type: "console-warn-critical",
+            message: message,
+            source: "console.warn",
+            lineno: 0,
+            colno: 0,
+            stack: "N/A",
+          });
+        }
+      };
+
+      // 🚪 페이지 언로드 시 남은 에러 전송 (sendBeacon)
+      window.addEventListener("beforeunload", function () {
+        if (pendingErrors.length > 0) {
+          const errorReportBody = pendingErrors
+            .map((error, index) => formatErrorForReport(error, index))
+            .join("\n\n");
+
+          const header = `==================================================
+런타임 에러가 발생했습니다!: ${pendingErrors.length}개 에러
+==================================================`;
+
+          const finalReport = `${header}\n\n${errorReportBody}`;
+
+          const batchData = {
+            type: "error-batch-final",
+            game_version: "1.0.1",
+            collected_at: new Date().toISOString(),
+            error_count: pendingErrors.length,
+            // sendBeacon에도 보고서 형식 포함
+            error_report: finalReport,
+            errors: pendingErrors,
+          };
+          // sendBeacon은 텍스트/데이터만 전송하므로 JSON.stringify를 사용
+          navigator.sendBeacon(SERVER_URL, JSON.stringify(batchData));
+        }
+      });
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.hidden && pendingErrors.length > 0) {
+          sendCollectedErrors();
+        }
+      });
+    </script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+          "three/": "https://cdn.jsdelivr.net/npm/three@0.160.0/",
+          "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+          "cannon-es": "https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.js"
+        }
+      }
+    </script>
+
+    <script type="module" src="game.js"></script>
+  </body>
+</html>

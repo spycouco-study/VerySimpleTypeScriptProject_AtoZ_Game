@@ -1,0 +1,64 @@
+{
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "titleScreen": {
+        "text": "DODGE THE FALLING",
+        "font": "Press Start 2P",
+        "color": "#FFD700",
+        "pressKeyText": "PRESS ENTER TO START"
+    },
+    "gameOverScreen": {
+        "text": "GAME OVER",
+        "font": "Press Start 2P",
+        "color": "#FF4500",
+        "pressKeyText": "PRESS ENTER TO RESTART",
+        "scoreText": "FINAL SCORE:"
+    },
+    "player": {
+        "imageName": "player",
+        "width": 64,
+        "height": 64,
+        "speed": 200
+    },
+    "fallingObjects": {
+        "spawnInterval": 1000,
+        "minSpeed": 100,
+        "maxSpeed": 250,
+        "types": [
+            {
+                "imageName": "obstacle1",
+                "width": 40,
+                "height": 40
+            },
+            {
+                "imageName": "obstacle2",
+                "width": 50,
+                "height": 50
+            },
+            {
+                "imageName": "obstacle3",
+                "width": 30,
+                "height": 60
+            }
+        ]
+    },
+    "gameplay": {
+        "scoreIncrementPerSecond": 10,
+        "bgmName": "bgm",
+        "hitSoundName": "hit_sound",
+        "gameOverSoundName": "game_over_sound"
+    },
+    "assets": {
+        "images": [
+            { "name": "player", "path": "assets/player.png", "width": 64, "height": 64 },
+            { "name": "obstacle1", "path": "assets/obstacle1.png", "width": 64, "height": 64 },
+            { "name": "obstacle2", "path": "assets/obstacle2.png", "width": 64, "height": 64 },
+            { "name": "obstacle3", "path": "assets/obstacle3.png", "width": 64, "height": 64 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.3 },
+            { "name": "hit_sound", "path": "assets/hit.mp3", "duration_seconds": 0.5, "volume": 0.8 },
+            { "name": "game_over_sound", "path": "assets/game_over.mp3", "duration_seconds": 2.0, "volume": 0.7 }
+        ]
+    }
+}
