@@ -1,0 +1,28 @@
+{
+    "versions": [
+        {
+            "version": "v1-1",
+            "parent": null,
+            "timestamp": "2025-12-04T11:35:58.784291",
+            "summary": "게임의 테마는 귀여운 동물로 해주세요.\n게임 장르는 두뇌 퍼즐 게임으로 만들어 주세요.\n게임에 배경음악을 넣어주세요.\n게임 난이도를 어렵게 설정해 주세요.\n게임에 타임어택 요소를 추가해 주세요.\n게임의 난이도가 갈수록 매우 어려워지도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-04T11:38:38.693769",
+            "summary": "생성된 게임의 실행 문제를 해결해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-12-04T11:42:14.370642",
+            "summary": "게임 시작 버튼을 눌렀을 때 게임이 정상적으로 실행되지 않는 문제를 해결해 주세요.",
+            "is_latest": true,
+            "is_current": true
+        }
+    ]
+}

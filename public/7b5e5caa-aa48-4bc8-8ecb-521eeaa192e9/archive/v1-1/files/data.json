@@ -1,0 +1,52 @@
+{
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "gridSizeX": 8,
+    "gridSizeY": 8,
+    "blockSize": 64,
+    "numBlockTypes": 6,
+    "matchLength": 3,
+    "gameDurationSeconds": 60,
+    "gravitySpeed": 400,
+    "initialBlockTypes": 3,
+    "difficultySettings": [
+        { "scoreThreshold": 0, "newBlockTypeChance": 0.0, "gravityModifier": 1.0 },
+        { "scoreThreshold": 150, "newBlockTypeChance": 0.5, "gravityModifier": 1.2 },
+        { "scoreThreshold": 350, "newBlockTypeChance": 0.7, "gravityModifier": 1.5 },
+        { "scoreThreshold": 600, "newBlockTypeChance": 0.9, "gravityModifier": 2.0 },
+        { "scoreThreshold": 1000, "newBlockTypeChance": 1.0, "gravityModifier": 2.5 }
+    ],
+    "texts": {
+        "title": "블록 퍼즐 타임어택",
+        "instructions": [
+            "두 개의 인접한 블록을 클릭하여 위치를 바꿀 수 있습니다.",
+            "같은 종류의 블록 3개 이상을 가로 또는 세로로 맞춰서 블록을 제거하세요.",
+            "제한 시간 60초 안에 최대한 높은 점수를 얻으세요!",
+            "점수가 높아질수록 게임 난이도가 어려워집니다."
+        ],
+        "gameOver": "게임 오버!",
+        "playButton": "게임 시작",
+        "instructionsButton": "조작법",
+        "backButton": "뒤로 가기",
+        "retryButton": "다시 시작"
+    },
+    "assets": {
+        "images": [
+            { "name": "background", "path": "assets/background.png", "width": 800, "height": 600 },
+            { "name": "block_0", "path": "assets/block_0.png", "width": 64, "height": 64 },
+            { "name": "block_1", "path": "assets/block_1.png", "width": 64, "height": 64 },
+            { "name": "block_2", "path": "assets/block_2.png", "width": 64, "height": 64 },
+            { "name": "block_3", "path": "assets/block_3.png", "width": 64, "height": 64 },
+            { "name": "block_4", "path": "assets/block_4.png", "width": 64, "height": 64 },
+            { "name": "block_5", "path": "assets/block_5.png", "width": 64, "height": 64 },
+            { "name": "selection", "path": "assets/selection.png", "width": 64, "height": 64 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 60.0, "volume": 0.5 },
+            { "name": "swap", "path": "assets/swap.mp3", "duration_seconds": 0.3, "volume": 0.7 },
+            { "name": "match", "path": "assets/match.mp3", "duration_seconds": 0.5, "volume": 0.8 },
+            { "name": "game_over", "path": "assets/game_over.mp3", "duration_seconds": 1.0, "volume": 0.8 },
+            { "name": "click", "path": "assets/click.mp3", "duration_seconds": 0.2, "volume": 0.6 }
+        ]
+    }
+}

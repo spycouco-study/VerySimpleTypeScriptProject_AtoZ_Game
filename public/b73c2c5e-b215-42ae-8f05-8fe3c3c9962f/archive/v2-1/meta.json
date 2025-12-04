@@ -1,0 +1,253 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-12-04T11:38:38.690312",
+    "summary": "생성된 게임의 실행 문제를 해결해 주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "animal_1.png",
+            "path": "assets/animal_1.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "animal_10.png",
+            "path": "assets/animal_10.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "animal_11.png",
+            "path": "assets/animal_11.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "animal_12.png",
+            "path": "assets/animal_12.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "animal_2.png",
+            "path": "assets/animal_2.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "animal_3.png",
+            "path": "assets/animal_3.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "animal_4.png",
+            "path": "assets/animal_4.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "animal_5.png",
+            "path": "assets/animal_5.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "animal_6.png",
+            "path": "assets/animal_6.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "animal_7.png",
+            "path": "assets/animal_7.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "animal_8.png",
+            "path": "assets/animal_8.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "animal_9.png",
+            "path": "assets/animal_9.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_loop.mp3",
+            "path": "assets/bgm_loop.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "level_complete.mp3",
+            "path": "assets/level_complete.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "tile_match.mp3",
+            "path": "assets/tile_match.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "tile_select.mp3",
+            "path": "assets/tile_select.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "wrong_match.mp3",
+            "path": "assets/wrong_match.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "30b5b9b4f45c1f0e4944474da2986ffa775b8682e8ce3f45026c26b788e7712e",
+            "size": 4833,
+            "mtime": 1764815914.712902
+        },
+        "game.js": {
+            "hash": "7d5f3f97cc9cfcb62bd95d0a6cad1096d58d53eef8b1aad6b46ca9498aaeb93b",
+            "size": 104140,
+            "mtime": 1764815918.5661273
+        },
+        "game.ts": {
+            "hash": "17eaff1cbd9d7ba9d00af3195cfa3e805d0088da6f147888f2c4101c12442cb5",
+            "size": 37327,
+            "mtime": 1764815914.7187946
+        },
+        "assets/animal_1.png": {
+            "hash": "0c2c12d0cc71846b5355a30bd8c09b1ec87c07f69eb9e26e2382d974fca00472",
+            "size": 5309,
+            "mtime": 1764815223.2530532
+        },
+        "assets/animal_10.png": {
+            "hash": "326ba77000b7665951795fd0871aeaf913b344da2854e08594d54c279e3829b4",
+            "size": 617,
+            "mtime": 1764815181.1697392
+        },
+        "assets/animal_11.png": {
+            "hash": "07cad0f4380baa0ce7a449ecacb560062aac84e81d26faf055ef91dcdc0b608f",
+            "size": 3872,
+            "mtime": 1764815741.6887078
+        },
+        "assets/animal_12.png": {
+            "hash": "bfd796b394a42e7da7469985c1e8356b367bb235b7745a5753644887d9681b45",
+            "size": 629,
+            "mtime": 1764815181.177437
+        },
+        "assets/animal_2.png": {
+            "hash": "f6ba98b8a4741b009bdb0b9c058b734acddef75494c5e6c8ed1a20d84e563008",
+            "size": 6822,
+            "mtime": 1764815255.4718547
+        },
+        "assets/animal_3.png": {
+            "hash": "a6a1e7d381f4cf91f5c5c156b9fd70e9a2bb17830274d15fb619ce9e39834a4c",
+            "size": 5758,
+            "mtime": 1764815287.892088
+        },
+        "assets/animal_4.png": {
+            "hash": "32acaced4f8dcdebbc176f87003bd830dc64142f99b75929d0c7dbb13315f94c",
+            "size": 7112,
+            "mtime": 1764815312.9854255
+        },
+        "assets/animal_5.png": {
+            "hash": "3e3f39d298b95f0e63ffbf31f994046745a85f13d8fc37ecbc5d6599a0f86f1b",
+            "size": 4990,
+            "mtime": 1764815355.1947935
+        },
+        "assets/animal_6.png": {
+            "hash": "954604538ee3a6b831d92422584a5ddce73e3087c1455d5f5852388182aa3124",
+            "size": 5013,
+            "mtime": 1764815704.993451
+        },
+        "assets/animal_7.png": {
+            "hash": "d9f6f82a24a7fe3fa5186b82b84d7b2308c1e470c93bb6ea0a8314968ba6fda4",
+            "size": 593,
+            "mtime": 1764815181.156443
+        },
+        "assets/animal_8.png": {
+            "hash": "6abcc7f0b810e4031ef595cc2a8a6e9e10b697e88cabe92a2d1df0f310c3bd46",
+            "size": 636,
+            "mtime": 1764815181.160637
+        },
+        "assets/animal_9.png": {
+            "hash": "637cf8e2936cc8013e78772a2c669d1376003484063bf67a389f0d7150778c47",
+            "size": 5994,
+            "mtime": 1764815677.87396
+        },
+        "assets/background.png": {
+            "hash": "902977757075a21c9ead7ac7be3a8545d1fe8068aceccb653c5663043e443017",
+            "size": 98922,
+            "mtime": 1764815194.6349385
+        },
+        "assets/bgm_loop.mp3": {
+            "hash": "a0a9ceed8674519308955ba9e068d4bfc6470845130ee0a32cbbe4a525e02e48",
+            "size": 1482753,
+            "mtime": 1764815754.0961785
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "assets/game_over.mp3": {
+            "hash": "410d9af4e470598102043d4894c1443c8c867f18d21f761f91bccaa051e15a87",
+            "size": 34524,
+            "mtime": 1764815754.10622
+        },
+        "assets/level_complete.mp3": {
+            "hash": "5037cae6f7c411a23c404e62cb7023ae49f6c55932c223959b197cb3e47fb8e7",
+            "size": 33897,
+            "mtime": 1764815754.109318
+        },
+        "assets/thumbnail.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764814027.9976237
+        },
+        "assets/tile_match.mp3": {
+            "hash": "8e1346a4dc2cee809efa6c690f8f920abe77e8c0968998230b6810e9f39b50a9",
+            "size": 24493,
+            "mtime": 1764815754.1012025
+        },
+        "assets/tile_select.mp3": {
+            "hash": "b8d2ab8f95265b01acd6ddbff256d5dd85f5672d49c51302d76e481c77766c52",
+            "size": 3804,
+            "mtime": 1764815754.0992167
+        },
+        "assets/wrong_match.mp3": {
+            "hash": "e3e005b42ac5bb20a1f3e8a736f21aef23cdd729241fef277cc35a1cff66496d",
+            "size": 16970,
+            "mtime": 1764815754.1042118
+        }
+    }
+}
