@@ -641,5 +641,15 @@
         "plays": 0,
         "description": "내가 만든 나만의 게임",
         "likes": 0
+    },
+    {
+        "id": "3686b3cc-b814-4887-93ab-8b5140c3a235",
+        "game_title": "크리스마스 리듬게임",
+        "author": "unknown",
+        "category": "music",
+        "thumbnail": "/static/3686b3cc-b814-4887-93ab-8b5140c3a235/assets/thumbnail.png",
+        "plays": 0,
+        "description": "내가 만든 나만의 게임",
+        "likes": 0
     }
 ]

@@ -1,0 +1,153 @@
+{
+    "version": "v3-1",
+    "parent": "v2-1",
+    "timestamp": "2025-12-04T13:23:07.079712",
+    "summary": "게임에서 시간 제한 요소를 제거해주세요.\n게임이 노래가 끝날 때까지 플레이되도록 설정해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v2-1"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_christmas.mp3",
+            "path": "assets/bgm_christmas.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "hit_indicator.png",
+            "path": "assets/hit_indicator.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "note_gift.png",
+            "path": "assets/note_gift.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "note_ornament.png",
+            "path": "assets/note_ornament.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "perfect_effect.png",
+            "path": "assets/perfect_effect.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_button.mp3",
+            "path": "assets/sfx_button.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_hit.mp3",
+            "path": "assets/sfx_hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_miss.mp3",
+            "path": "assets/sfx_miss.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "c7a4febe905c3e33f1b38ceb4f01f7ff402fd2d5aa24ec969e51cfc4540a987e",
+            "size": 3746,
+            "mtime": 1764822009.2512195
+        },
+        "game.js": {
+            "hash": "aba24462e5f6b54e8cb9437f7e4cf073e8fc5788df2caf50cff3ae9b4053edd2",
+            "size": 66061,
+            "mtime": 1764822186.6485097
+        },
+        "game.ts": {
+            "hash": "565a27c774553f8ae9d4479c86c22e364066fb51b8cc57c2d7b647620dd445e0",
+            "size": 25156,
+            "mtime": 1764822181.6743345
+        },
+        "assets/background.png": {
+            "hash": "db0e1dce264e8dfa0c77963fd94cd6cf90a1a8cc5411be41c1b3c1782e6b1dcd",
+            "size": 70923,
+            "mtime": 1764820623.501362
+        },
+        "assets/bgm_christmas.mp3": {
+            "hash": "cbd8ebd4ec231a3424ff4322d8ec6a677c817536bddf4e23ce21770fbd4b9458",
+            "size": 7264556,
+            "mtime": 1764820793.0049284
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "assets/hit_indicator.png": {
+            "hash": "c0216f91b1ae80a811f21e33c594d6557c2a70abe6ff966d85aa0575ccddc184",
+            "size": 4547,
+            "mtime": 1764820717.9322767
+        },
+        "assets/note_gift.png": {
+            "hash": "62b73409db24ba6c311aec526dd8f8dd0b4f25f68793ff278201e6735c6f80e4",
+            "size": 3042,
+            "mtime": 1764820661.3468487
+        },
+        "assets/note_ornament.png": {
+            "hash": "364c10e9cb48f99d40571f7a561dcfee3b260dbe42f6c1a0165d903020fe279e",
+            "size": 4310,
+            "mtime": 1764820778.90571
+        },
+        "assets/perfect_effect.png": {
+            "hash": "538d0567a32bb001daab41c64ab96f7825ad9f1e014a2bc184692f9febb3a556",
+            "size": 1174,
+            "mtime": 1764820747.6524265
+        },
+        "assets/sfx_button.mp3": {
+            "hash": "9f7a8b6dcb7947856fccaf93b14ed73e0ab47a4ecf22605bc6a3d02f0f8c5538",
+            "size": 16343,
+            "mtime": 1764820793.0298908
+        },
+        "assets/sfx_hit.mp3": {
+            "hash": "8e1346a4dc2cee809efa6c690f8f920abe77e8c0968998230b6810e9f39b50a9",
+            "size": 24493,
+            "mtime": 1764820793.0148754
+        },
+        "assets/sfx_miss.mp3": {
+            "hash": "e3e005b42ac5bb20a1f3e8a736f21aef23cdd729241fef277cc35a1cff66496d",
+            "size": 16970,
+            "mtime": 1764820793.0238812
+        },
+        "assets/thumbnail.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764814027.9976237
+        }
+    }
+}
