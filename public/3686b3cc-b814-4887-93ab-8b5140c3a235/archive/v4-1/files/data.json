@@ -1,0 +1,96 @@
+{
+    "config": {
+        "canvasWidth": 1280,
+        "canvasHeight": 720,
+        "backgroundColor": "#1a1a2e",
+        "textColor": "#ffffff",
+        "titleScreen": {
+            "title": "🎅 크리스마스 리듬 게임 🎄",
+            "startButtonText": "시작하려면 클릭하세요!"
+        },
+        "instructionScreen": {
+            "title": "게임 방법",
+            "instructions": [
+                "떨어지는 선물과 장식품이 아래의 선물 상자 라인에",
+                "닿는 순간 해당 라인에 할당된 키를 누르세요.",
+                "",
+                "키 설정: A(왼쪽 끝), S, D, F(오른쪽 끝)",
+                "",
+                "정확하게 누를수록 높은 점수를 얻고 콤보를 이어갑니다.",
+                "놓치면 체력이 감소하고 콤보가 끊어집니다.",
+                "체력이 0이 되면 게임 오버!",
+                "",
+                "즐거운 크리스마스 되세요!"
+            ],
+            "continueButtonText": "계속하려면 클릭하세요!"
+        },
+        "gameOverScreen": {
+            "title": "게임 오버!",
+            "restartButtonText": "다시 시작하려면 클릭하세요!"
+        },
+        "noteSpeed": 300,
+        "initialHealth": 100,
+        "healthPenaltyOnMiss": -10,
+        "healthGainOnHit": 2,
+        "hitZoneY": 550,
+        "hitZoneHeight": 100,
+        "hitZoneColor": "#88888888",
+        "hitTolerance": 60,
+        "perfectTimingThreshold": 20,
+        "goodTimingThreshold": 40,
+        "noteMissOffset": 30,
+        "numLanes": 4,
+        "laneWidth": 100,
+        "laneGap": 40,
+        "laneStartX": 370,
+        "noteWidth": 70,
+        "noteHeight": 70,
+        "noteImageNames": [
+            "note_gift",
+            "note_ornament"
+        ],
+        "keyBindings": [
+            "KeyA",
+            "KeyS",
+            "KeyD",
+            "KeyF"
+        ],
+        "scorePerHit": 100,
+        "perfectBonus": 50,
+        "noteFallDurationMs": 2000,
+        "perfectColor": "#ffe600",
+        "goodColor": "#6ee80f"
+    },
+    "assets": {
+        "images": [
+            { "name": "background", "path": "assets/background.png", "width": 1280, "height": 720 },
+            { "name": "note_gift", "path": "assets/note_gift.png", "width": 64, "height": 64 },
+            { "name": "note_ornament", "path": "assets/note_ornament.png", "width": 64, "height": 64 },
+            { "name": "hit_indicator", "path": "assets/hit_indicator.png", "width": 100, "height": 100 },
+            { "name": "perfect_effect", "path": "assets/perfect_effect.png", "width": 32, "height": 32 },
+            { "name": "christmas_tree", "path": "assets/christmas_tree.png", "width": 280, "height": 400 },
+            { "name": "santa_claus", "path": "assets/santa_claus.png", "width": 200, "height": 250 }
+        ],
+        "sounds": [
+            { "name": "bgm_christmas", "path": "assets/bgm_christmas.mp3", "duration_seconds": 30.0, "volume": 0.5 },
+            { "name": "sfx_hit", "path": "assets/sfx_hit.mp3", "duration_seconds": 0.2, "volume": 0.7 },
+            { "name": "sfx_miss", "path": "assets/sfx_miss.mp3", "duration_seconds": 0.3, "volume": 0.7 },
+            { "name": "sfx_button", "path": "assets/sfx_button.mp3", "duration_seconds": 0.1, "volume": 0.8 }
+        ]
+    }
+    ,
+    "beatmap": {
+        "songName": "Christmas Joy",
+        "bpm": 120,
+        "offset": 0,
+        "bgmSound": "bgm_christmas",
+        "notes": [
+            [500, 0], [1000, 1], [1500, 2], [2000, 3],
+            [2500, 0], [3000, 1], [3500, 2], [4000, 3],
+            [4500, 0], [5000, 1], [5500, 2], [6000, 3],
+            [6500, 0], [7000, 1], [7500, 2], [8000, 3],
+            [8500, 0], [9000, 1], [9500, 2], [10000, 3],
+            [10500, 0], [11000, 1], [11500, 2], [12000, 3]
+        ]
+    }
+}

@@ -1,0 +1,173 @@
+{
+    "version": "v4-1",
+    "parent": "v3-1",
+    "timestamp": "2025-12-04T13:42:16.323434",
+    "summary": "게임 그림에 크리스마스 트리와 산타를 추가해 주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "christmas_tree.png",
+            "path": "assets/christmas_tree.png",
+            "type": "Add"
+        },
+        {
+            "name": "santa_claus.png",
+            "path": "assets/santa_claus.png",
+            "type": "Add"
+        },
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_christmas.mp3",
+            "path": "assets/bgm_christmas.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "hit_indicator.png",
+            "path": "assets/hit_indicator.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "note_gift.png",
+            "path": "assets/note_gift.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "note_ornament.png",
+            "path": "assets/note_ornament.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "perfect_effect.png",
+            "path": "assets/perfect_effect.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_button.mp3",
+            "path": "assets/sfx_button.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_hit.mp3",
+            "path": "assets/sfx_hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_miss.mp3",
+            "path": "assets/sfx_miss.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "a28b40e3fb29341f58fd1b9598e011c628ebe497a4752ba4fc25f3e3c9c735d4",
+            "size": 3964,
+            "mtime": 1764823282.3453386
+        },
+        "game.js": {
+            "hash": "c788bd67329182b48b4249daa0dbec3720cddd11b47723bddab5cc80b5421b3a",
+            "size": 68381,
+            "mtime": 1764823335.7511847
+        },
+        "game.ts": {
+            "hash": "8eeb25261cb865a6be6ac4067e33558ef1c336b2f295e622981c36d4bc2ca27d",
+            "size": 26042,
+            "mtime": 1764823330.5868866
+        },
+        "assets/background.png": {
+            "hash": "db0e1dce264e8dfa0c77963fd94cd6cf90a1a8cc5411be41c1b3c1782e6b1dcd",
+            "size": 70923,
+            "mtime": 1764820623.501362
+        },
+        "assets/bgm_christmas.mp3": {
+            "hash": "cbd8ebd4ec231a3424ff4322d8ec6a677c817536bddf4e23ce21770fbd4b9458",
+            "size": 7264556,
+            "mtime": 1764820793.0049284
+        },
+        "assets/christmas_tree.png": {
+            "hash": "e4f1b05ce3535ce136a26b8ee8eba1a6f38442ebe05c44bdccb8ec1ad4628534",
+            "size": 104972,
+            "mtime": 1764823298.5964353
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763979623.237085
+        },
+        "assets/hit_indicator.png": {
+            "hash": "c0216f91b1ae80a811f21e33c594d6557c2a70abe6ff966d85aa0575ccddc184",
+            "size": 4547,
+            "mtime": 1764820717.9322767
+        },
+        "assets/note_gift.png": {
+            "hash": "62b73409db24ba6c311aec526dd8f8dd0b4f25f68793ff278201e6735c6f80e4",
+            "size": 3042,
+            "mtime": 1764820661.3468487
+        },
+        "assets/note_ornament.png": {
+            "hash": "364c10e9cb48f99d40571f7a561dcfee3b260dbe42f6c1a0165d903020fe279e",
+            "size": 4310,
+            "mtime": 1764820778.90571
+        },
+        "assets/perfect_effect.png": {
+            "hash": "538d0567a32bb001daab41c64ab96f7825ad9f1e014a2bc184692f9febb3a556",
+            "size": 1174,
+            "mtime": 1764820747.6524265
+        },
+        "assets/santa_claus.png": {
+            "hash": "0369d6273ba919b3c283c7226fa150aa45043551e0669b49f7be75199f566ab4",
+            "size": 44072,
+            "mtime": 1764823326.348052
+        },
+        "assets/sfx_button.mp3": {
+            "hash": "9f7a8b6dcb7947856fccaf93b14ed73e0ab47a4ecf22605bc6a3d02f0f8c5538",
+            "size": 16343,
+            "mtime": 1764820793.0298908
+        },
+        "assets/sfx_hit.mp3": {
+            "hash": "8e1346a4dc2cee809efa6c690f8f920abe77e8c0968998230b6810e9f39b50a9",
+            "size": 24493,
+            "mtime": 1764820793.0148754
+        },
+        "assets/sfx_miss.mp3": {
+            "hash": "e3e005b42ac5bb20a1f3e8a736f21aef23cdd729241fef277cc35a1cff66496d",
+            "size": 16970,
+            "mtime": 1764820793.0238812
+        },
+        "assets/thumbnail.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764814027.9976237
+        }
+    }
+}
