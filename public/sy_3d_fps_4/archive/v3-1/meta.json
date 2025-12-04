@@ -1,0 +1,163 @@
+{
+    "version": "v3-1",
+    "parent": "v2-1",
+    "timestamp": "2025-12-04T22:57:47.105272",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "bullet.png",
+            "path": "assets/bullet.png",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "kill.mp3",
+            "path": "assets/kill.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        },
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Delete"
+        },
+        {
+            "name": "tsconfig.json",
+            "path": "tsconfig.json",
+            "type": "Delete"
+        },
+        {
+            "name": "crosshair.png",
+            "path": "assets/crosshair.png",
+            "type": "Delete"
+        },
+        {
+            "name": "floor_texture.png",
+            "path": "assets/floor_texture.png",
+            "type": "Delete"
+        },
+        {
+            "name": "player_bullet.png",
+            "path": "assets/player_bullet.png",
+            "type": "Delete"
+        },
+        {
+            "name": "wall_texture.png",
+            "path": "assets/wall_texture.png",
+            "type": "Delete"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy.png",
+            "path": "assets/enemy.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game_over.mp3",
+            "path": "assets/game_over.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "hit.mp3",
+            "path": "assets/hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "shoot.mp3",
+            "path": "assets/shoot.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "2413d5b1b5dd9ae9b9db6b635a9c870ea4e3cd8784cacc8ddad403f86eaf5032",
+            "size": 1397,
+            "mtime": 1763978777.179511
+        },
+        "game.js": {
+            "hash": "c08cb3f8ca4ed1a264c8a60f470dc5e8400ce98fa296a85af4e9e084602f3502",
+            "size": 65465,
+            "mtime": 1763978777.183862
+        },
+        "game.ts": {
+            "hash": "986e5c4638b72c731b5fa4a3c9956e540da09d6c9664f8000f6571215ec03823",
+            "size": 20049,
+            "mtime": 1763978777.237804
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763978777.1730278
+        },
+        "assets/bullet.png": {
+            "hash": "c5d8aea1d78deddd623dabfba5b1a72639cfdb4a212322152f8dfe31dc7a5d4c",
+            "size": 508,
+            "mtime": 1763978777.174296
+        },
+        "assets/enemy.png": {
+            "hash": "393f3b4e203c16538e01f00c2acb7fa76409c1a19a7a3a049949f52fe37b32a6",
+            "size": 578,
+            "mtime": 1763978777.174296
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826741.8321693
+        },
+        "assets/game_over.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763978777.1754425
+        },
+        "assets/hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763978777.1760328
+        },
+        "assets/kill.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763978777.1766524
+        },
+        "assets/shoot.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763978777.178437
+        },
+        "assets/thumbnail.png": {
+            "hash": "efacdb77500220835a0e4150e862ec2faf727d0e7d27fd04d5255ac3ecbeaca1",
+            "size": 20873,
+            "mtime": 1764856667.039739
+        }
+    }
+}

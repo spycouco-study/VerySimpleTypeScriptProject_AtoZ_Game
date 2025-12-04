@@ -13,6 +13,14 @@
             "parent": "v1-1",
             "timestamp": "2025-12-01T18:06:48.655970",
             "summary": "food_berry.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-12-04T23:04:27.022231",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

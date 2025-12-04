@@ -1,0 +1,64 @@
+{
+    "canvasWidth": 2560,
+    "canvasHeight": 1440,
+    "gameTitle": "Dodge the Apples!",
+    "titleScreenInstruction": "Click or Press SPACE to Start",
+    "instructionText": "Use Arrow Keys or A/D to Move. Dodge the falling apples!",
+    "instructionProceedText": "Click or Press SPACE to Continue",
+    "gameOverMessage": "GAME OVER!",
+    "restartInstruction": "Click or Press SPACE to Restart",
+    "player": {
+        "speed": 200,
+        "width": 64,
+        "height": 64,
+        "imageName": "player"
+    },
+    "enemy": {
+        "spawnInterval": 1.5,
+        "speedMin": 50,
+        "speedMax": 150,
+        "width": 48,
+        "height": 48,
+        "imageName": "apple",
+        "initialCount": 3
+    },
+    "scoreIncrementPerSecond": 10,
+    "backgroundColor": "#222222",
+    "fontFamily": "Verdana, sans-serif",
+    "assets": {
+        "images": [
+            {
+                "name": "player",
+                "path": "assets/player.png",
+                "width": 64,
+                "height": 64
+            },
+            {
+                "name": "apple",
+                "path": "assets/apple.png",
+                "width": 48,
+                "height": 48
+            }
+        ],
+        "sounds": [
+            {
+                "name": "bgm",
+                "path": "assets/bgm.mp3",
+                "duration_seconds": 60,
+                "volume": 0.3
+            },
+            {
+                "name": "hit_sound",
+                "path": "assets/hit.mp3",
+                "duration_seconds": 0.5,
+                "volume": 0.7
+            },
+            {
+                "name": "game_start",
+                "path": "assets/start.mp3",
+                "duration_seconds": 0.5,
+                "volume": 0.8
+            }
+        ]
+    }
+}

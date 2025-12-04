@@ -1,0 +1,112 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-12-04T17:43:40.920104",
+    "summary": "단순 클릭 게임을 만들어 주세요.\n게임에 타임어택 요소를 추가해 주세요.\n게임의 분위기를 비 내리는 배경으로 변경해 주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "background_rain_sound.mp3",
+            "path": "assets/background_rain_sound.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "click_sound.mp3",
+            "path": "assets/click_sound.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "lose_sound.mp3",
+            "path": "assets/lose_sound.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "rain_cloud.png",
+            "path": "assets/rain_cloud.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        },
+        {
+            "name": "win_sound.mp3",
+            "path": "assets/win_sound.mp3",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "d75eb81183dc89a4ae553dc98dd83b8247612e62b1c0587a38693359e9bc6807",
+            "size": 2489,
+            "mtime": 1764837728.8120468
+        },
+        "game.js": {
+            "hash": "3df00e8d48235a23d5500698c807df43f64058d9bf2e2ad702048d6b2d88947b",
+            "size": 43437,
+            "mtime": 1764837820.7318516
+        },
+        "game.ts": {
+            "hash": "3ed64529ad8ff4cac934d5284dad56670d5318a09bb2351e37b8187af5f6f3fd",
+            "size": 16131,
+            "mtime": 1764837813.7727423
+        },
+        "assets/background_rain_sound.mp3": {
+            "hash": "789d04ec84faf234dd0304070984a2d49dbf3856659a0bd50b15f51dd9dda669",
+            "size": 2367363,
+            "mtime": 1764837759.9690125
+        },
+        "assets/click_sound.mp3": {
+            "hash": "b8d2ab8f95265b01acd6ddbff256d5dd85f5672d49c51302d76e481c77766c52",
+            "size": 3804,
+            "mtime": 1764837759.9742606
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763445575.5299747
+        },
+        "assets/lose_sound.mp3": {
+            "hash": "2a64197bec8c98ecf641257f2d021f428ac3ac24939c4d295b950a7ef6025383",
+            "size": 30136,
+            "mtime": 1764837759.9892547
+        },
+        "assets/rain_cloud.png": {
+            "hash": "02591c1ff156f88ea09aa17ea49ce7fce9a31c6fd6fc338438eb952763307929",
+            "size": 10158,
+            "mtime": 1764837745.3661027
+        },
+        "assets/thumbnail.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826890.2915854
+        },
+        "assets/win_sound.mp3": {
+            "hash": "5037cae6f7c411a23c404e62cb7023ae49f6c55932c223959b197cb3e47fb8e7",
+            "size": 33897,
+            "mtime": 1764837759.9822633
+        }
+    }
+}

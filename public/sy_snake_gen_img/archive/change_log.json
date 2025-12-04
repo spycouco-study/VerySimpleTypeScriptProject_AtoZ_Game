@@ -5,6 +5,22 @@
             "parent": null,
             "timestamp": "2025-11-30T02:04:03.523309",
             "summary": "간단한 뱀 게임을 만들어주세요.\n게임을 SF(sci-fi) 느낌으로 만들어주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-04T15:01:07.356222",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-12-04T23:18:31.088986",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

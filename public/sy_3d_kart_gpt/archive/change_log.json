@@ -21,6 +21,14 @@
             "parent": "v2-1",
             "timestamp": "2025-11-22T20:38:54.590573",
             "summary": "차를 움직이려고 w를 누르면 차가 앞으로 스무스하게 나가는게 아니라 공중에서 이상하게 빙글빙글 도는 문제를 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-12-04T23:43:08.948496",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

@@ -53,6 +53,14 @@
             "parent": "v6-1",
             "timestamp": "2025-11-27T14:37:04.454844",
             "summary": "사용자가 올바른 단어를 입력했을 때 게임이 정상적으로 다음 단계로 진행되도록 기능을 수정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v8-1",
+            "parent": "v7-1",
+            "timestamp": "2025-12-04T15:19:35.828107",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

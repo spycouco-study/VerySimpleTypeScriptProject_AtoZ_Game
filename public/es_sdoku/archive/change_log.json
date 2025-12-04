@@ -21,6 +21,22 @@
             "parent": "v2-1",
             "timestamp": "2025-11-28T02:09:48.543318",
             "summary": "격자판이 보이도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-12-04T16:02:22.920818",
+            "summary": "수도쿠 게임을 만들어주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-12-04T22:42:29.384858",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

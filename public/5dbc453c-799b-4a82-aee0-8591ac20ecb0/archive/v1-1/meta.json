@@ -1,0 +1,112 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-12-04T22:39:28.487129",
+    "summary": "랭킹 시스템(또는 랭킹 기능)을 추가해 주세요.\n랭킹 시스템에 60초 제한시간 규칙을 추가해 주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "type": "Add"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "collect.mp3",
+            "path": "assets/collect.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "collectible.png",
+            "path": "assets/collectible.png",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "70f4b40a37aada66386826388736cb1c6ea2bfc5d9465ea82c6198241eab4dc0",
+            "size": 1256,
+            "mtime": 1764855457.2672336
+        },
+        "game.js": {
+            "hash": "8530d97fcaa09f7ef497d751dc817ab7981fcb824da0ae7d00fea4ec5c06c0cf",
+            "size": 46446,
+            "mtime": 1764855568.3573985
+        },
+        "game.ts": {
+            "hash": "940d868ed2e2b34b3b6c7551bb5ca98209a9f2cbcd635e9f6b504c1c6cdaefb5",
+            "size": 15675,
+            "mtime": 1764855563.8653023
+        },
+        "assets/background.png": {
+            "hash": "74ba77750606e681e88fdcbf562726a25ab572db5082b951f068600e03e2bc98",
+            "size": 25968,
+            "mtime": 1764855487.5665615
+        },
+        "assets/bgm.mp3": {
+            "hash": "cbd8ebd4ec231a3424ff4322d8ec6a677c817536bddf4e23ce21770fbd4b9458",
+            "size": 7264556,
+            "mtime": 1764855563.8557758
+        },
+        "assets/collect.mp3": {
+            "hash": "b8d2ab8f95265b01acd6ddbff256d5dd85f5672d49c51302d76e481c77766c52",
+            "size": 3804,
+            "mtime": 1764855563.8579798
+        },
+        "assets/collectible.png": {
+            "hash": "0913eb841109b7bfa326b49eb51c65d8c31660274fdec601744a7ece515f189a",
+            "size": 1510,
+            "mtime": 1764855552.720715
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763445575.5299747
+        },
+        "assets/player.png": {
+            "hash": "4873fa1f3fc71557709f923c0479af58f64b38cf1cf132efc2289096a57aaff2",
+            "size": 1324,
+            "mtime": 1764855527.1006827
+        },
+        "assets/thumbnail.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826890.2915854
+        }
+    }
+}

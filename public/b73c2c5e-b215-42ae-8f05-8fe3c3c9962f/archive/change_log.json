@@ -29,6 +29,14 @@
             "parent": "v3-1",
             "timestamp": "2025-12-04T12:49:44.860299",
             "summary": "사용자가 게임을 플레이할 수 있도록 게임을 생성하거나 수정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-12-04T23:23:56.029246",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

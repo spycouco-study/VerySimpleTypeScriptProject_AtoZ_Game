@@ -1,0 +1,132 @@
+{
+    "version": "v1-1",
+    "parent": null,
+    "timestamp": "2025-12-05T00:10:18.985118",
+    "summary": "판타지 게임에 신나는 8비트 배경음악을 추가해주세요.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Add"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Add"
+        },
+        {
+            "name": "background.png",
+            "path": "assets/background.png",
+            "type": "Add"
+        },
+        {
+            "name": "bgm_8bit_fantasy.mp3",
+            "path": "assets/bgm_8bit_fantasy.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "enemy.png",
+            "path": "assets/enemy.png",
+            "type": "Add"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "hit_effect.mp3",
+            "path": "assets/hit_effect.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "type": "Add"
+        },
+        {
+            "name": "projectile.png",
+            "path": "assets/projectile.png",
+            "type": "Add"
+        },
+        {
+            "name": "shoot_effect.mp3",
+            "path": "assets/shoot_effect.mp3",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        }
+    ],
+    "no_changes": [],
+    "file_index": {
+        "data.json": {
+            "hash": "b0e6fcf945b7e8ae4eb68849de5d4e354f8591be72aa0bc6981dd4231945c134",
+            "size": 1980,
+            "mtime": 1764860876.959199
+        },
+        "game.js": {
+            "hash": "cddb2820e5d0ec2821e5748b4f1a70707ee0948b3872f811937c86533d18664b",
+            "size": 42113,
+            "mtime": 1764861018.881508
+        },
+        "game.ts": {
+            "hash": "62e8f431fea47dc9fb4fd2662ad084276d897ef4e738e3083267e68b1d0f854a",
+            "size": 14572,
+            "mtime": 1764861015.191518
+        },
+        "assets/background.png": {
+            "hash": "77bed3dc68c4307c8672f8211a7176a12197072f79a4476ecf09d854fd7220d8",
+            "size": 44077,
+            "mtime": 1764861006.1519282
+        },
+        "assets/bgm_8bit_fantasy.mp3": {
+            "hash": "a0a9ceed8674519308955ba9e068d4bfc6470845130ee0a32cbbe4a525e02e48",
+            "size": 1482753,
+            "mtime": 1764861015.1777136
+        },
+        "assets/enemy.png": {
+            "hash": "664afd097d073a44d76330ef423110c27d8c2e096147be505ebb554f7a19c45c",
+            "size": 5100,
+            "mtime": 1764860939.503888
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763445575.5299747
+        },
+        "assets/hit_effect.mp3": {
+            "hash": "1355598bcd9ecf1fb5cd71f9ace68fb5fa32e6567aaf1b4407aeb61349bb9e90",
+            "size": 23866,
+            "mtime": 1764861015.1825085
+        },
+        "assets/player.png": {
+            "hash": "a4979803d17f85ce2fc730937fd7a5477295c0fb0605334d9e7015cff189fbe5",
+            "size": 3856,
+            "mtime": 1764860905.0048127
+        },
+        "assets/projectile.png": {
+            "hash": "3ca4704523a30ef25e109d31037ae0c4df945c5722c4d6211c1f007d04bb0b8a",
+            "size": 865,
+            "mtime": 1764860976.305168
+        },
+        "assets/shoot_effect.mp3": {
+            "hash": "c35121dc516e950ad27dd18490ecf3033bbd18351110ed19d9f7b0842110e500",
+            "size": 26374,
+            "mtime": 1764861015.179685
+        },
+        "assets/thumbnail.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826890.2915854
+        }
+    }
+}

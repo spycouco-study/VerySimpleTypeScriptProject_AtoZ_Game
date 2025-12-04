@@ -1,0 +1,228 @@
+{
+    "version": "v6-1",
+    "parent": "v5-1",
+    "timestamp": "2025-12-04T23:05:31.422417",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        },
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Delete"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "bgm_game.mp3",
+            "path": "assets/bgm_game.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm_title.mp3",
+            "path": "assets/bgm_title.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_blue.png",
+            "path": "assets/block_blue.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_green.png",
+            "path": "assets/block_green.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_orange.png",
+            "path": "assets/block_orange.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_purple.png",
+            "path": "assets/block_purple.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_red.png",
+            "path": "assets/block_red.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_teal.png",
+            "path": "assets/block_teal.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "block_yellow.png",
+            "path": "assets/block_yellow.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "frame_panel.png",
+            "path": "assets/frame_panel.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game_bg.png",
+            "path": "assets/game_bg.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_clear.mp3",
+            "path": "assets/sfx_clear.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_drop.mp3",
+            "path": "assets/sfx_drop.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_gameover.mp3",
+            "path": "assets/sfx_gameover.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "sfx_rotate.mp3",
+            "path": "assets/sfx_rotate.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "title_screen_bg.png",
+            "path": "assets/title_screen_bg.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "dcbe3e3a98f3043baf1f702ce98f8d52bee387dcc125fdae9fc7ecb0fa19e5d3",
+            "size": 7756,
+            "mtime": 1764826742.418993
+        },
+        "game.js": {
+            "hash": "a89b9563381cea1fb6a77300a52daff7dc5dc9232fcae895f4b063a1fc0a7a48",
+            "size": 97447,
+            "mtime": 1764826742.418993
+        },
+        "game.ts": {
+            "hash": "90a0e61a308a84ab13108cfe9e63904e293ecf322fb501a7eaa74f4e60f07afd",
+            "size": 37032,
+            "mtime": 1764826742.419994
+        },
+        "assets/bgm_game.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764826742.3425543
+        },
+        "assets/bgm_title.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764826742.4022796
+        },
+        "assets/block_blue.png": {
+            "hash": "d9da56995d7df1d66913dde4dc9a11c8dcaa339356263e19a79f0a42b4125491",
+            "size": 703,
+            "mtime": 1764826742.403278
+        },
+        "assets/block_green.png": {
+            "hash": "6c22571b4bc4411a3e5f5bf192ea6135f56da24263a71e42ddb479a73b0ff38f",
+            "size": 808,
+            "mtime": 1764826742.403278
+        },
+        "assets/block_orange.png": {
+            "hash": "0ec30fbec896f2a9609c2bc46e4670b84a8c6f59efb326081ba136a8bf4ee000",
+            "size": 884,
+            "mtime": 1764826742.4042783
+        },
+        "assets/block_purple.png": {
+            "hash": "435d558311b5728a16e76f57c0aa2c187bdf42b7e651d91c3e016cd7be2831cc",
+            "size": 695,
+            "mtime": 1764826742.4042783
+        },
+        "assets/block_red.png": {
+            "hash": "1711277192cd452ae988df4b1e735b58ec9ed151ec85ad8b74aed84e3e00c507",
+            "size": 714,
+            "mtime": 1764826742.4052794
+        },
+        "assets/block_teal.png": {
+            "hash": "9895ff02653d937965347c990a81e16bfd420b72921cfac5a1d41f301b3bdc4e",
+            "size": 761,
+            "mtime": 1764826742.4052794
+        },
+        "assets/block_yellow.png": {
+            "hash": "2e55281a9e7daf618ca844ae53fb3126b64416980583e557be04e60a7a81cb62",
+            "size": 834,
+            "mtime": 1764826742.4062803
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826742.408278
+        },
+        "assets/frame_panel.png": {
+            "hash": "6140ce0ca8e6f0010b8c55621e104f44312dc3e33c78bb67f784783f1eeb15b7",
+            "size": 1121,
+            "mtime": 1764826742.4092796
+        },
+        "assets/game_bg.png": {
+            "hash": "349e302abbbb6ad93659edc7bcf2341e11815ebb2435b998e5af888d1a4a77cf",
+            "size": 3417,
+            "mtime": 1764826742.4092796
+        },
+        "assets/sfx_clear.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.4102798
+        },
+        "assets/sfx_drop.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.41128
+        },
+        "assets/sfx_gameover.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.4122796
+        },
+        "assets/sfx_rotate.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764826742.4122796
+        },
+        "assets/thumbnail.png": {
+            "hash": "1ed9b61a4a4548171a46344cbea43bee16b2c13e2e136a7e29bf93a406fc5dbc",
+            "size": 39572,
+            "mtime": 1764857131.308695
+        },
+        "assets/title_screen_bg.png": {
+            "hash": "b324d377c376b2f1d51d3b54b59c812fb593c63554e2f9b85a784f04e512b2e9",
+            "size": 3616,
+            "mtime": 1764826742.416987
+        }
+    }
+}

@@ -7,6 +7,10 @@
         {
             "from": "bot",
             "text": "요청:\n공을 튀길수도 있고 굴릴수도 있는 간단한 3D게임을 만들어줘.\n물리적인 충돌이나 탄성도 구현이 되어있어야 해.\n마우스로 카메라 시점을 조정할 수 있게 해줘.\n질문:\n\n부적절:\n\n❌ 에러 발생: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}\n\n"
+        },
+        {
+            "from": "bot",
+            "text": "==================================================\n런타임 에러가 발생했습니다!: 1개 에러\n==================================================\n\n1. [js-error] Uncaught ReferenceError: exports is not defined\n\t위치: http://localhost:8080/sy_3d_2/game.js:35:23\n\tStack Trace:\n\tReferenceError: exports is not defined\n\t     at http://localhost:8080/sy_3d_2/game.js:35:23\n... (Full stack trace truncated)"
         }
     ]
 }

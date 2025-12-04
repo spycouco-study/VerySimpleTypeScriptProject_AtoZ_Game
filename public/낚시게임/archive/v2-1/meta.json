@@ -1,0 +1,173 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-12-04T23:24:34.691970",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "background_ocean.png",
+            "path": "assets/background_ocean.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bg_music.mp3",
+            "path": "assets/bg_music.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "fish_obstacle_1_bottom.png",
+            "path": "assets/fish_obstacle_1_bottom.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "fish_obstacle_1_top.png",
+            "path": "assets/fish_obstacle_1_top.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "fish_obstacle_2_bottom.png",
+            "path": "assets/fish_obstacle_2_bottom.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "fish_obstacle_2_top.png",
+            "path": "assets/fish_obstacle_2_top.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "flap_sound.mp3",
+            "path": "assets/flap_sound.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "hit_sound.mp3",
+            "path": "assets/hit_sound.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "obstacle_rock_bottom.png",
+            "path": "assets/obstacle_rock_bottom.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "obstacle_rock_top.png",
+            "path": "assets/obstacle_rock_top.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player_fish.png",
+            "path": "assets/player_fish.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "ed31cf3efb89e6a94cc6fd53cf6921ce8804e1a9f99c698d0c8e1cee4f5b2e8f",
+            "size": 2830,
+            "mtime": 1764829720.5115602
+        },
+        "game.js": {
+            "hash": "5398e55905ff61e2db3dd100b111d4fc543324d856d593004f8382f4c9940153",
+            "size": 54357,
+            "mtime": 1764830133.2155843
+        },
+        "game.ts": {
+            "hash": "b88e0943b9c8b188b95d68afebd5b660c65307218b67d4e1ab46327ef99582b0",
+            "size": 20495,
+            "mtime": 1764830130.2446504
+        },
+        "assets/background_ocean.png": {
+            "hash": "e2af8926e910c9acc186778b9d1366365a7d82ef89f9045fbcfdf5925f902a28",
+            "size": 35290,
+            "mtime": 1764829766.940765
+        },
+        "assets/bg_music.mp3": {
+            "hash": "22620c1fe1416b51e6dff3abe3be44a23e52cc9e91ab0ed8a8ed852f0b476002",
+            "size": 1797476,
+            "mtime": 1764830056.6245477
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1763445575.5299747
+        },
+        "assets/fish_obstacle_1_bottom.png": {
+            "hash": "5d4e649cbb4e8911e3c37df8d1546d2c76c337201f28513646159b5c545898a2",
+            "size": 14133,
+            "mtime": 1764829979.490393
+        },
+        "assets/fish_obstacle_1_top.png": {
+            "hash": "f9205e1df543ee95c14814944962cce8aac04fd81cbf1b1f348185d74c97ee3a",
+            "size": 17041,
+            "mtime": 1764829863.1573963
+        },
+        "assets/fish_obstacle_2_bottom.png": {
+            "hash": "40cef8a146171685899c5aa78e8af6654672fce76915fc336877f7e2c73769be",
+            "size": 6948,
+            "mtime": 1764830038.985192
+        },
+        "assets/fish_obstacle_2_top.png": {
+            "hash": "22e0072019e4ee2f6696b7eaae4548a1cbc989bd7a01c1191c9533c48dbbddb1",
+            "size": 10026,
+            "mtime": 1764830006.3363218
+        },
+        "assets/flap_sound.mp3": {
+            "hash": "c35121dc516e950ad27dd18490ecf3033bbd18351110ed19d9f7b0842110e500",
+            "size": 26374,
+            "mtime": 1764830056.331864
+        },
+        "assets/hit_sound.mp3": {
+            "hash": "47f3fc8fb978fb88311be2d8810ab0713a635aa44f703dcb1141de4a97bd402f",
+            "size": 14462,
+            "mtime": 1764830056.497126
+        },
+        "assets/obstacle_rock_bottom.png": {
+            "hash": "74a5c260bdef7970dad8070a74d56e8a7a5f744b8d5757e2817b74cde7a27025",
+            "size": 16903,
+            "mtime": 1764829830.1927373
+        },
+        "assets/obstacle_rock_top.png": {
+            "hash": "fcaa53ccf822a69ea76b5d0a520dcd7183e3bae53b5dfcfa44cfe1d940b86686",
+            "size": 14436,
+            "mtime": 1764829793.3657448
+        },
+        "assets/player_fish.png": {
+            "hash": "736445ab877f968fb2ea8b2af460c91d5588f93c6cc3f2090231c3706082f851",
+            "size": 7308,
+            "mtime": 1764829735.5761952
+        },
+        "assets/thumbnail.png": {
+            "hash": "0fefd486ca964a4f3a82d437da3afa975a75e1a2f911580915da55403ed8b719",
+            "size": 453317,
+            "mtime": 1764858274.6409159
+        }
+    }
+}

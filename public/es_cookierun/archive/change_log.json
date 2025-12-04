@@ -46,15 +46,31 @@
             "timestamp": "2025-11-28T00:43:03.518243",
             "summary": "cookie_run_1.png 교체",
             "is_latest": false,
-            "is_current": true
+            "is_current": false
         },
         {
             "version": "v6-1",
             "parent": "v5-1",
             "timestamp": "2025-11-28T00:53:58.986985",
             "summary": "game.ts(4,20): error TS2304: Cannot find name 'GameData'.\ngame.ts(5,27): error TS2304: Cannot find name 'AssetManager'.\ngame.ts(5,46): error TS2304: Cannot find name 'AssetManager'.\ngame.ts(6,27): error TS2304: Cannot find name 'InputHandler'.\ngame.ts(6,46): error TS2304: Cannot find name 'InputHandler'.\ngame.ts(8,24): error TS2304: Cannot find name 'GameState'.\ngame.ts(8,36): error TS2304: Cannot find name 'GameState'.\ngame.ts(11,22): error TS2304: Cannot find name 'Player'.\ngame.ts(12,26): error TS2304: Cannot find name 'ParallaxBackground'.\ngame.ts(13,22): error TS2304: Cannot find name 'ParallaxBackground'.\ngame.ts(14,24): error TS2304: Cannot find name 'GameObject'.\ngame.ts(15,27): error TS2304: Cannot find name 'GameObject'.\ngame.ts(41,30): error TS2304: Cannot find name 'GameState'.\ngame.ts(66,26): error TS2304: Cannot find name 'GameState'.\ngame.ts(74,26): error TS2304: Cannot find name 'GameState'.\ngame.ts(84,26): error TS2304: Cannot find name 'GameState'.\ngame.ts(98,27): error TS2304: Cannot find name 'Player'.\ngame.ts(118,24): error TS2304: Cannot find name 'ParallaxBackground'.\ngame.ts(127,27): error TS2304: Cannot find name 'ParallaxBackground'.\ngame.ts(141,32): error TS2304: Cannot find name 'GameState'.\ngame.ts(152,32): error TS2304: Cannot find name 'GameState'.\ngame.ts(209,18): error TS2304: Cannot find name 'GameState'.\ngame.ts(225,18): error TS2304: Cannot find name 'GameState'.\ngame.ts(241,18): error TS2304: Cannot find name 'GameState'.\ngame.ts(290,33): error TS2304: Cannot find name 'GameObject'.\ngame.ts(305,36): error TS2304: Cannot find name 'GameObject'.\n",
-            "is_latest": true,
+            "is_latest": false,
             "is_current": false
+        },
+        {
+            "version": "v6-2",
+            "parent": "v5-1",
+            "timestamp": "2025-12-04T23:28:06.752165",
+            "summary": "사용자가 런타임 오류 수정을 요청했습니다. 오류 내용은 'Uncaught ReferenceError: GameObject is not defined'이며, 'http://localhost:8080/es_cookierun/game.js:1:34'에서 발생했습니다. 'GameObject is not defined' 오류를 해결할 수 있도록 game.js 파일을 수정해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v7-1",
+            "parent": "v6-2",
+            "timestamp": "2025-12-04T23:29:47.789386",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": true,
+            "is_current": true
         }
     ]
 }

@@ -1,0 +1,123 @@
+{
+    "version": "v4-1",
+    "parent": "v3-1",
+    "timestamp": "2025-12-04T15:16:54.406559",
+    "summary": "게임 데이터 수정",
+    "chat": {},
+    "changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "type": "Change"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "last_version": "v3-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v3-1"
+        },
+        {
+            "name": "apple.png",
+            "path": "assets/apple.png",
+            "last_version": "v3-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "enemy.png",
+            "path": "assets/enemy.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "last_version": "v2-1"
+        },
+        {
+            "name": "hit.mp3",
+            "path": "assets/hit.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "player.png",
+            "path": "assets/player.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "start.mp3",
+            "path": "assets/start.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "last_version": "v2-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "8f6fd51967e70dea42c55a38a22a689552bcbf7248a0ffe5d35aa3f8b0b542d5",
+            "size": 1704,
+            "mtime": 1764829014.315894
+        },
+        "game.js": {
+            "hash": "a03cd89b5bc6745ea397c91b2225b28a8e1caecf9c7e4312e3e7088d3cbf999b",
+            "size": 47370,
+            "mtime": 1764828957.6386304
+        },
+        "game.ts": {
+            "hash": "d6fb48eb03c53e480bad162da538c3cfe52683c0183f57a812e965d92b6fd749",
+            "size": 16826,
+            "mtime": 1764828954.146562
+        },
+        "assets/apple.png": {
+            "hash": "6c7a579ac156c256ad10dab72673a4470901f37f5e5bad84af494cf84b11942d",
+            "size": 1785,
+            "mtime": 1764828952.0849752
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1764568574.1185684
+        },
+        "assets/enemy.png": {
+            "hash": "2c4d8cbb4b59df1674e8ec7e674d33993312a63a73b070ca7ef3afc06d01728e",
+            "size": 168452,
+            "mtime": 1764568574.1205776
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826740.971965
+        },
+        "assets/hit.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764568574.122586
+        },
+        "assets/player.png": {
+            "hash": "eaf89bbd390ceb32ed53c08cd31a7e84d80f35c6bd1d736b6ae4cafe904916ca",
+            "size": 182916,
+            "mtime": 1764568574.126608
+        },
+        "assets/start.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1764568574.1286151
+        },
+        "assets/thumbnail.png": {
+            "hash": "bfe0b563c42ad325f9184fc477ec935c190ff6268ab2fd9d537db52822dd0a78",
+            "size": 16410,
+            "mtime": 1764828856.506187
+        }
+    }
+}

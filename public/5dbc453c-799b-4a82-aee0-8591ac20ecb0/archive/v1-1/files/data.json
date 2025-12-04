@@ -1,0 +1,27 @@
+{
+    "gameSettings": {
+        "gameDurationSeconds": 60,
+        "playerSpeed": 250,
+        "collectibleScore": 10,
+        "collectibleSpawnInterval": 1.5,
+        "maxCollectibles": 8,
+        "rankingSize": 5,
+        "playerSize": 50,
+        "collectibleSize": 30
+    },
+    "titleScreenText": "아이템 수집 챌린지",
+    "instructionsText": "제한 시간 60초 안에 최대한 많은 아이템을 수집하여 점수를 올리세요!\n높은 점수를 기록하고 랭킹에 도전하세요.\n\n이동: WASD 또는 방향키",
+    "gameOverText": "게임 오버! 최종 점수: ",
+    "rankingScreenText": "⭐ 최고 점수 랭킹 ⭐",
+    "assets": {
+        "images": [
+            { "name": "background", "path": "assets/background.png", "width": 800, "height": 600 },
+            { "name": "player", "path": "assets/player.png", "width": 50, "height": 50 },
+            { "name": "collectible", "path": "assets/collectible.png", "width": 30, "height": 30 }
+        ],
+        "sounds": [
+            { "name": "bgm", "path": "assets/bgm.mp3", "duration_seconds": 65.0, "volume": 0.3 },
+            { "name": "collect", "path": "assets/collect.mp3", "duration_seconds": 0.5, "volume": 0.8 }
+        ]
+    }
+}

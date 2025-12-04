@@ -5,8 +5,40 @@
             "parent": null,
             "timestamp": "2025-11-28T14:27:36.249171",
             "summary": "사과게임을 만들어줘",
-            "is_latest": true,
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-04T15:14:16.562230",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-1",
+            "parent": "v2-1",
+            "timestamp": "2025-12-04T15:15:57.734053",
+            "summary": "떨어지는 적을 사과 이미지로 그려주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-12-04T15:16:54.407567",
+            "summary": "게임 데이터 수정",
+            "is_latest": false,
             "is_current": true
+        },
+        {
+            "version": "v5-1",
+            "parent": "v4-1",
+            "timestamp": "2025-12-04T15:18:07.731510",
+            "summary": "게임 화면의 캔버스(Canvas) 크기를 증가시켜 주세요.\n게임 화면을 가운데로 중앙 정렬해 주세요.",
+            "is_latest": true,
+            "is_current": false
         }
     ]
 }

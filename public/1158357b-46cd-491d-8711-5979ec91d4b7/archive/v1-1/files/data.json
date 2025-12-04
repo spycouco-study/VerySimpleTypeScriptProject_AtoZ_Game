@@ -1,0 +1,68 @@
+{
+  "gameSettings": {
+    "canvasWidth": 800,
+    "canvasHeight": 600,
+    "gameDurationSeconds": 30,
+    "targetClicks": 50,
+    "rainSettings": {
+      "maxRaindrops": 150,
+      "minRainSpeed": 5,
+      "maxRainSpeed": 15,
+      "minRainLength": 10,
+      "maxRainLength": 25,
+      "rainColor": "rgba(170, 200, 255, 0.6)",
+      "rainSpawnRateMs": 50
+    },
+    "clickableObject": {
+      "imageName": "rain_cloud",
+      "defaultWidth": 120,
+      "defaultHeight": 80,
+      "minScale": 0.8,
+      "maxScale": 1.2,
+      "spawnPadding": 50
+    },
+    "fontSettings": {
+      "titleFontSize": "48px sans-serif",
+      "instructionFontSize": "24px sans-serif",
+      "gameUiFontSize": "36px sans-serif",
+      "gameOverFontSize": "48px sans-serif",
+      "textColor": "#FFFFFF"
+    }
+  },
+  "texts": {
+    "loading": "로딩 중...",
+    "titleScreen": {
+      "title": "비 내리는 클릭 게임",
+      "startPrompt": "화면을 클릭하여 시작"
+    },
+    "instructionsScreen": {
+      "instructions": "내리는 구름을 클릭하여 점수를 얻으세요!\n제한 시간 안에 목표 클릭 수를 달성해야 합니다.\n\n목표: {TARGET_CLICKS}회 클릭\n시간: {GAME_DURATION}초\n\n화면을 클릭하여 게임 시작",
+      "startPrompt": "화면을 클릭하여 게임 시작"
+    },
+    "playingScreen": {
+      "clicksLabel": "클릭: ",
+      "timeLabel": "남은 시간: "
+    },
+    "winScreen": {
+      "message": "성공! 축하합니다!",
+      "clicksAchieved": "클릭: ",
+      "restartPrompt": "다시 시작하려면 클릭하세요."
+    },
+    "loseScreen": {
+      "message": "실패! 다음 기회에...",
+      "clicksAchieved": "클릭: ",
+      "restartPrompt": "다시 시작하려면 클릭하세요."
+    }
+  },
+  "assets": {
+    "images": [
+      { "name": "rain_cloud", "path": "assets/rain_cloud.png", "width": 120, "height": 80 }
+    ],
+    "sounds": [
+      { "name": "background_rain_sound", "path": "assets/background_rain_sound.mp3", "duration_seconds": 60.0, "volume": 0.3, "loop": true },
+      { "name": "click_sound", "path": "assets/click_sound.mp3", "duration_seconds": 0.5, "volume": 0.7, "loop": false },
+      { "name": "win_sound", "path": "assets/win_sound.mp3", "duration_seconds": 2.0, "volume": 0.8, "loop": false },
+      { "name": "lose_sound", "path": "assets/lose_sound.mp3", "duration_seconds": 2.0, "volume": 0.8, "loop": false }
+    ]
+  }
+}

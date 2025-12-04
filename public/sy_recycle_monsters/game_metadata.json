@@ -1,10 +1,10 @@
 {
-    "id": "sy_recycle_monsters",
-    "game_title": "sy_recycle_monsters",
-    "author": "sy",
-    "category": "etc",
-    "thumbnail": "/static/sy_recycle_monsters/assets/thumbnail.png",
-    "plays": 165,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 147
+  "id": "sy_recycle_monsters",
+  "game_title": "리사이클 몬스터즈",
+  "author": "sy",
+  "category": "etc",
+  "thumbnail": "/static/sy_recycle_monsters/assets/thumbnail.png",
+  "plays": 165,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 147
 }

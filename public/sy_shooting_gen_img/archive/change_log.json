@@ -21,6 +21,14 @@
             "parent": "v2-1",
             "timestamp": "2025-11-30T10:34:00.774527",
             "summary": "적기가 현재 진행 방향과 반대 방향을 향하고 있으니, 진행 방향을 바라보도록 수정해주세요.\n적기가 총알을 발사할 때 플레이어가 위치한 방향으로 총알을 발사하도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v4-1",
+            "parent": "v3-1",
+            "timestamp": "2025-12-04T23:15:47.693480",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

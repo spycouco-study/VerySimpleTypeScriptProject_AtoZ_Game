@@ -1,597 +1,663 @@
 [
     {
         "id": "3c4f120a-df6a-4242-b5db-359e1aecd39b",
-        "game_title": "3c4f120a-df6a-4242-b5db-359e1aecd39b",
+        "game_title": "지뢰 찾기",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/3c4f120a-df6a-4242-b5db-359e1aecd39b/assets/thumbnail.png",
         "plays": 655,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 614
     },
     {
         "id": "56171132-63f0-44b2-99f2-2cd3c71044aa",
-        "game_title": "간단한 뱀게임",
+        "game_title": "간단한 뱀 게임",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/56171132-63f0-44b2-99f2-2cd3c71044aa/assets/thumbnail.png",
         "plays": 471,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 349
     },
     {
         "id": "es_apple",
-        "game_title": "es_apple",
+        "game_title": "사과 게임",
         "author": "es",
         "category": "etc",
         "thumbnail": "/static/es_apple/assets/thumbnail.png",
         "plays": 195,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 126
     },
     {
         "id": "es_cookierun",
-        "game_title": "es_cookierun",
+        "game_title": "쿠키런",
         "author": "es",
         "category": "etc",
         "thumbnail": "/static/es_cookierun/assets/thumbnail.png",
         "plays": 256,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 11
     },
     {
         "id": "es_crazyacade",
-        "game_title": "es_crazyacade",
+        "game_title": "물풍선을 터뜨리자!",
         "author": "es",
         "category": "etc",
         "thumbnail": "/static/es_crazyacade/assets/thumbnail.png",
         "plays": 803,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 140
     },
     {
         "id": "es_endword",
-        "game_title": "es_endword",
+        "game_title": "끝말잇기",
         "author": "es",
         "category": "etc",
         "thumbnail": "/static/es_endword/assets/thumbnail.png",
         "plays": 992,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 256
     },
     {
         "id": "es_fishing",
-        "game_title": "es_fishing",
+        "game_title": "낚시 게임",
         "author": "es",
         "category": "etc",
         "thumbnail": "/static/es_fishing/assets/thumbnail.png",
         "plays": 8,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 2
     },
     {
         "id": "es_hidepicture",
-        "game_title": "es_hidepicture",
+        "game_title": "숨은 그림 찾기 2",
         "author": "es",
         "category": "etc",
         "thumbnail": "/static/es_hidepicture/assets/thumbnail.png",
         "plays": 304,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 250
     },
     {
         "id": "es_horror",
-        "game_title": "es_horror",
+        "game_title": "공포 게임",
         "author": "es",
         "category": "etc",
         "thumbnail": "/static/es_horror/assets/thumbnail.png",
         "plays": 921,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 554
     },
     {
         "id": "es_music",
-        "game_title": "es_music",
+        "game_title": "리듬 월드",
         "author": "es",
         "category": "etc",
         "thumbnail": "/static/es_music/assets/thumbnail.png",
         "plays": 73,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 72
     },
     {
         "id": "es_plant.vs.zombi",
-        "game_title": "es_plant.vs.zombi",
+        "game_title": "식물 vs 좀비",
         "author": "es",
         "category": "etc",
         "thumbnail": "/static/es_plant.vs.zombi/assets/thumbnail.png",
         "plays": 285,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 268
     },
     {
         "id": "es_rabbit.vs.turtle",
-        "game_title": "es_rabbit.vs.turtle",
+        "game_title": "토끼와 거북이",
         "author": "es",
         "category": "etc",
         "thumbnail": "/static/es_rabbit.vs.turtle/assets/thumbnail.png",
         "plays": 840,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 252
     },
     {
         "id": "es_sdoku",
-        "game_title": "es_sdoku",
+        "game_title": "스도쿠",
         "author": "es",
         "category": "etc",
         "thumbnail": "/static/es_sdoku/assets/thumbnail.png",
         "plays": 866,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 164
     },
     {
         "id": "es_tempo",
-        "game_title": "es_tempo",
+        "game_title": "리듬 마니아",
         "author": "es",
         "category": "etc",
         "thumbnail": "/static/es_tempo/assets/thumbnail.png",
         "plays": 530,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 74
     },
     {
         "id": "es_zombi",
-        "game_title": "es_zombi",
+        "game_title": "슈팅 게임",
         "author": "es",
         "category": "etc",
         "thumbnail": "/static/es_zombi/assets/thumbnail.png",
         "plays": 19,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 1
     },
     {
         "id": "old__bear_block",
-        "game_title": "old__bear_block",
+        "game_title": "벽돌 깨기",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/old__bear_block/assets/thumbnail.png",
         "plays": 935,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 331
     },
     {
         "id": "old__bubble",
-        "game_title": "old__bubble",
+        "game_title": "버블 매치!",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/old__bubble/assets/thumbnail.png",
         "plays": 762,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 312
     },
     {
         "id": "old__kart",
-        "game_title": "old__kart",
+        "game_title": "카트 라이딩",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/old__kart/assets/thumbnail.png",
         "plays": 858,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 65
     },
     {
         "id": "old__love",
-        "game_title": "old__love",
+        "game_title": "미소녀 연애 시뮬레이션",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/old__love/assets/thumbnail.png",
         "plays": 274,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 211
     },
     {
         "id": "old__rpg",
-        "game_title": "old__rpg",
+        "game_title": "RPG 게임",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/old__rpg/assets/thumbnail.png",
         "plays": 6,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 2
     },
     {
         "id": "old__run",
-        "game_title": "old__run",
+        "game_title": "점프킹",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/old__run/assets/thumbnail.png",
         "plays": 594,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 219
     },
     {
         "id": "old__shooting",
-        "game_title": "old__shooting",
+        "game_title": "슈팅 게임 3",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/old__shooting/assets/thumbnail.png",
         "plays": 902,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 853
     },
     {
         "id": "old__snake",
-        "game_title": "old__snake",
+        "game_title": "사과를 찾아서",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/old__snake/assets/thumbnail.png",
         "plays": 665,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 200
     },
     {
         "id": "old__tetris",
-        "game_title": "old__tetris",
+        "game_title": "테트리스",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/old__tetris/assets/thumbnail.png",
         "plays": 581,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 484
     },
     {
         "id": "sh_crazy",
-        "game_title": "sh_crazy",
+        "game_title": "대폭발",
         "author": "sh",
         "category": "etc",
         "thumbnail": "/static/sh_crazy/assets/thumbnail.png",
         "plays": 5,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 5
     },
     {
         "id": "sh_crazy2",
-        "game_title": "sh_crazy2",
+        "game_title": "폭탄 게임",
         "author": "sh",
         "category": "etc",
         "thumbnail": "/static/sh_crazy2/assets/thumbnail.png",
         "plays": 418,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 213
     },
     {
         "id": "sh_crazyarc",
-        "game_title": "sh_crazyarc",
+        "game_title": "어메이징 아케이드",
         "author": "sh",
         "category": "etc",
         "thumbnail": "/static/sh_crazyarc/assets/thumbnail.png",
         "plays": 273,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 75
     },
     {
         "id": "sh_gg",
-        "game_title": "sh_gg",
+        "game_title": "가위바위보",
         "author": "sh",
         "category": "etc",
         "thumbnail": "/static/sh_gg/assets/thumbnail.png",
         "plays": 362,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 355
     },
     {
         "id": "sh_initial_consonant",
-        "game_title": "sh_initial_consonant",
+        "game_title": "초성 게임",
         "author": "sh",
         "category": "etc",
         "thumbnail": "/static/sh_initial_consonant/assets/thumbnail.png",
         "plays": 581,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 529
     },
     {
         "id": "sh_photoquiz",
-        "game_title": "sh_photoquiz",
+        "game_title": "연예인 이름 맞히기",
         "author": "sh",
         "category": "etc",
         "thumbnail": "/static/sh_photoquiz/assets/thumbnail.png",
         "plays": 729,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 572
     },
     {
         "id": "sy_3d",
-        "game_title": "sy_3d",
+        "game_title": "맹수들의 싸움",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_3d/assets/thumbnail.png",
         "plays": 759,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 378
     },
     {
         "id": "sy_3d_2",
-        "game_title": "sy_3d_2",
+        "game_title": "라스트 맨 스탠딩",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_3d_2/assets/thumbnail.png",
         "plays": 254,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 31
     },
     {
         "id": "sy_3d_dddd",
-        "game_title": "sy_3d_dddd",
+        "game_title": "입체기동장치",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_3d_dddd/assets/thumbnail.png",
         "plays": 77,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 72
     },
     {
         "id": "sy_3d_dddd2",
-        "game_title": "sy_3d_dddd2",
+        "game_title": "3D로 즐기는 FPS",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_3d_dddd2/assets/thumbnail.png",
         "plays": 422,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 265
     },
     {
         "id": "sy_3d_dddd3",
-        "game_title": "sy_3d_dddd3",
+        "game_title": "3D 어드벤쳐",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_3d_dddd3/assets/thumbnail.png",
         "plays": 501,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 210
     },
     {
         "id": "sy_3d_dddd4",
-        "game_title": "sy_3d_dddd4",
+        "game_title": "3D 게임",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_3d_dddd4/assets/thumbnail.png",
         "plays": 92,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 37
     },
     {
         "id": "sy_3d_fps",
-        "game_title": "sy_3d_fps",
+        "game_title": "FPS",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_3d_fps/assets/thumbnail.png",
         "plays": 66,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 8
     },
     {
         "id": "sy_3d_fps_4",
-        "game_title": "sy_3d_fps_4",
+        "game_title": "총 게임",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_3d_fps_4/assets/thumbnail.png",
         "plays": 167,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 130
     },
     {
         "id": "sy_3d_kart2",
-        "game_title": "sy_3d_kart2",
+        "game_title": "라이더",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_3d_kart2/assets/thumbnail.png",
         "plays": 434,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 250
     },
     {
         "id": "sy_3d_kart_gpt",
-        "game_title": "sy_3d_kart_gpt",
+        "game_title": "3D 레이싱",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_3d_kart_gpt/assets/thumbnail.png",
         "plays": 320,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 212
     },
     {
         "id": "sy_3d_sample_game",
-        "game_title": "sy_3d_sample_game",
+        "game_title": "3D 게임",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_3d_sample_game/assets/thumbnail.png",
         "plays": 680,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 474
     },
     {
         "id": "sy_3d_snake",
-        "game_title": "sy_3d_snake",
+        "game_title": "3D 뱀 게임",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_3d_snake/assets/thumbnail.png",
         "plays": 523,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 15
     },
     {
         "id": "sy_bihanggi",
-        "game_title": "sy_bihanggi",
+        "game_title": "슈팅스타",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_bihanggi/assets/thumbnail.png",
         "plays": 658,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 332
     },
     {
         "id": "sy_block",
-        "game_title": "sy_block",
+        "game_title": "벽돌 깨부수기",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_block/assets/thumbnail.png",
         "plays": 323,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 83
     },
     {
         "id": "sy_ca",
-        "game_title": "sy_ca",
+        "game_title": "봄버맨",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_ca/assets/thumbnail.png",
         "plays": 356,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 100
     },
     {
         "id": "sy_crazy_arcade",
-        "game_title": "sy_crazy_arcade",
+        "game_title": "물풍선을 터뜨려라!",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_crazy_arcade/assets/thumbnail.png",
         "plays": 617,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 112
     },
     {
         "id": "sy_cute_snake",
-        "game_title": "sy_cute_snake",
+        "game_title": "뱀과 사과 2",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_cute_snake/assets/thumbnail.png",
         "plays": 658,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 358
     },
     {
         "id": "sy_dt",
-        "game_title": "sy_dt",
+        "game_title": "테트리스 2",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_dt/assets/thumbnail.png",
         "plays": 377,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 244
     },
     {
         "id": "sy_fighter",
-        "game_title": "sy_fighter",
+        "game_title": "철권",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_fighter/assets/thumbnail.png",
         "plays": 177,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 76
     },
     {
         "id": "sy_love_test",
-        "game_title": "sy_love_test",
+        "game_title": "나만의 아이돌 키우기",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_love_test/assets/thumbnail.png",
         "plays": 913,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 109
     },
     {
         "id": "sy_ppt",
-        "game_title": "sy_ppt",
+        "game_title": "기획서를 만들어요!",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_ppt/assets/thumbnail.png",
         "plays": 313,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 219
     },
     {
         "id": "sy_puyopuyo",
-        "game_title": "sy_puyopuyo",
+        "game_title": "뿌요뿌요",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_puyopuyo/assets/thumbnail.png",
         "plays": 693,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 266
     },
     {
         "id": "sy_recycle_monsters",
-        "game_title": "sy_recycle_monsters",
+        "game_title": "리사이클 몬스터즈",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_recycle_monsters/assets/thumbnail.png",
         "plays": 165,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 147
     },
     {
         "id": "sy_run_gen_img",
-        "game_title": "sy_run_gen_img",
+        "game_title": "쿠키 점프",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_run_gen_img/assets/thumbnail.png",
         "plays": 292,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 63
     },
     {
         "id": "sy_run_test",
-        "game_title": "sy_run_test",
+        "game_title": "런닝맨",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_run_test/assets/thumbnail.png",
         "plays": 34,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 0
     },
     {
         "id": "sy_scifi_snake",
-        "game_title": "sy_scifi_snake",
+        "game_title": "네오 서펀트",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_scifi_snake/assets/thumbnail.png",
         "plays": 851,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 805
     },
     {
         "id": "sy_shooting_game",
-        "game_title": "sy_shooting_game",
+        "game_title": "2차 세계대전",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_shooting_game/assets/thumbnail.png",
         "plays": 589,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 267
     },
     {
         "id": "sy_shooting_gen_img",
-        "game_title": "sy_shooting_gen_img",
+        "game_title": "공중에서 살아남기",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_shooting_gen_img/assets/thumbnail.png",
         "plays": 296,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 41
     },
     {
         "id": "sy_shooting_test",
-        "game_title": "sy_shooting_test",
+        "game_title": "슈팅 게임 2",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_shooting_test/assets/thumbnail.png",
         "plays": 210,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 21
     },
     {
         "id": "sy_simple_3d",
-        "game_title": "sy_simple_3d",
+        "game_title": "3D로 보는 세상",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_simple_3d/assets/thumbnail.png",
         "plays": 903,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 729
     },
     {
         "id": "sy_snake_gen_img",
-        "game_title": "sy_snake_gen_img",
+        "game_title": "코스믹 미로",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_snake_gen_img/assets/thumbnail.png",
         "plays": 674,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 36
     },
     {
         "id": "sy_test_snake",
-        "game_title": "sy_test_snake",
+        "game_title": "먹이를 찾아서",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_test_snake/assets/thumbnail.png",
         "plays": 773,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 671
     },
     {
         "id": "sy_test_snake2",
-        "game_title": "sy_test_snake2",
+        "game_title": "먹이를 찾아서 2",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_test_snake2/assets/thumbnail.png",
         "plays": 130,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 0
     },
     {
         "id": "sy_tetris",
-        "game_title": "sy_tetris",
+        "game_title": "테트리스 3",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_tetris/assets/thumbnail.png",
         "plays": 524,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 347
     },
     {
         "id": "sy_tetris_mute",
-        "game_title": "sy_tetris_mute",
+        "game_title": "테트리스 4",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_tetris_mute/assets/thumbnail.png",
         "plays": 164,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 42
     },
     {
         "id": "sy_tttttttttttt",
-        "game_title": "sy_tttttttttttt",
+        "game_title": "모험을 떠나요!",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_tttttttttttt/assets/thumbnail.png",
         "plays": 143,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 40
     },
     {
         "id": "sy_vampire_survivors",
@@ -605,12 +671,13 @@
     },
     {
         "id": "sy_ww2_shooting",
-        "game_title": "sy_ww2_shooting",
+        "game_title": "스카이 레이더스",
         "author": "sy",
         "category": "etc",
         "thumbnail": "/static/sy_ww2_shooting/assets/thumbnail.png",
         "plays": 337,
-        "description": "내가 만든 나만의 재미있는 게임"
+        "description": "내가 만든 나만의 재미있는 게임",
+        "likes": 55
     },
     {
         "id": "17e7bf02-c67e-4ec5-9df2-55244223bc78",
@@ -624,7 +691,7 @@
     },
     {
         "id": "7b5e5caa-aa48-4bc8-8ecb-521eeaa192e9",
-        "game_title": "내가 만든 게임",
+        "game_title": "블록 퍼즐 타임 어택",
         "author": "unknown",
         "category": "puzzle",
         "thumbnail": "/static/7b5e5caa-aa48-4bc8-8ecb-521eeaa192e9/assets/thumbnail.png",
@@ -634,10 +701,50 @@
     },
     {
         "id": "b73c2c5e-b215-42ae-8f05-8fe3c3c9962f",
-        "game_title": "es_puzzle",
+        "game_title": "귀여운 동물 퍼즐",
         "author": "unknown",
         "category": "puzzle",
         "thumbnail": "/static/b73c2c5e-b215-42ae-8f05-8fe3c3c9962f/assets/thumbnail.png",
+        "plays": 0,
+        "description": "내가 만든 나만의 게임",
+        "likes": 0
+    },
+    {
+        "id": "낚시게임",
+        "game_title": "상어를 피해라!",
+        "author": "unknown",
+        "category": "action",
+        "thumbnail": "/static/낚시게임/assets/thumbnail.png",
+        "plays": 0,
+        "description": "내가 만든 나만의 게임",
+        "likes": 0
+    },
+    {
+        "id": "1158357b-46cd-491d-8711-5979ec91d4b7",
+        "game_title": "먹구름을 제거해요!",
+        "author": "unknown",
+        "category": "click",
+        "thumbnail": "/static/1158357b-46cd-491d-8711-5979ec91d4b7/assets/thumbnail.png",
+        "plays": 0,
+        "description": "내가 만든 나만의 게임",
+        "likes": 0
+    },
+    {
+        "id": "5dbc453c-799b-4a82-aee0-8591ac20ecb0",
+        "game_title": "보물 찾기",
+        "author": "unknown",
+        "category": "action",
+        "thumbnail": "/static/5dbc453c-799b-4a82-aee0-8591ac20ecb0/assets/thumbnail.png",
+        "plays": 0,
+        "description": "내가 만든 나만의 게임",
+        "likes": 0
+    },
+    {
+        "id": "f2897267-b2b0-4d59-81d5-af2dc4ee0282",
+        "game_title": "내가 만든 게임",
+        "author": "unknown",
+        "category": "shooting",
+        "thumbnail": "/static/f2897267-b2b0-4d59-81d5-af2dc4ee0282/assets/thumbnail.png",
         "plays": 0,
         "description": "내가 만든 나만의 게임",
         "likes": 0

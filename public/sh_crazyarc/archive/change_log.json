@@ -61,6 +61,14 @@
             "parent": "v6-1",
             "timestamp": "2025-11-18T16:56:48.129004",
             "summary": "우측 상단에 water balloons의 개수가 뜨기는 하나, water balloons 아이템 (핑크색 사각형)이 block으로부터 드롭되지 않습니다. water balloon이 block에서 일정 확률로 드롭되게 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v8-1",
+            "parent": "v7-1",
+            "timestamp": "2025-12-04T23:35:37.693499",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

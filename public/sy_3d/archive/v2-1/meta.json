@@ -1,0 +1,108 @@
+{
+    "version": "v2-1",
+    "parent": "v1-1",
+    "timestamp": "2025-12-04T23:37:25.780868",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "type": "Change"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Delete"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "ball.png",
+            "path": "assets/ball.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "assets/bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bounce.mp3",
+            "path": "assets/bounce.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "ground.png",
+            "path": "assets/ground.png",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "94e8241b3406698fc2459a8f89998f7c644e96ac99acb74f5835b619942ef2a4",
+            "size": 1355,
+            "mtime": 1763978775.442857
+        },
+        "game.js": {
+            "hash": "ee06da0892dbb6fe1143dffb8d55be8e4818c7f218d08c36f663320ffe1f5c9e",
+            "size": 5177,
+            "mtime": 1763978775.4489183
+        },
+        "game.ts": {
+            "hash": "4dce82bc1a0e0ad6df960ef2a9d5a965ef4e1f142bc40d178408de7d7e15753c",
+            "size": 3514,
+            "mtime": 1763978775.4500554
+        },
+        "assets/ball.png": {
+            "hash": "e81f7e4845aa807e7c176adecf27ba378f30c64de912d9f43d94a6242177e3ad",
+            "size": 900,
+            "mtime": 1763978775.2976398
+        },
+        "assets/bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763978775.4388535
+        },
+        "assets/bounce.mp3": {
+            "hash": "24aca4509bc0a267333a6929f6aa6a98898e42b1282a907cfc5cf3d1092904c4",
+            "size": 19853,
+            "mtime": 1763978775.4411302
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826741.781587
+        },
+        "assets/ground.png": {
+            "hash": "2e10b226de2b517e9472846a97cd3f17ddf83e6363692ba596216b6746cd5299",
+            "size": 1490,
+            "mtime": 1763978775.4416945
+        },
+        "assets/thumbnail.png": {
+            "hash": "f6efd7deb21c7a2888d959d4481f50c57de4f22aceea6006810e7260ea30d991",
+            "size": 1348762,
+            "mtime": 1764859045.7223363
+        }
+    }
+}

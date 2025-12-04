@@ -5,6 +5,14 @@
             "parent": null,
             "timestamp": "2025-12-04T11:20:56.776317",
             "summary": "퍼즐 게임을 만들어 주세요.\n타임어택 규칙을 추가하고 제한시간은 60초로 설정해 주세요.\n신나는 8비트 배경음악을 넣어 주세요.\n게임 난이도가 점진적으로 매우 어려워지도록 해주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-04T23:23:21.365165",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

@@ -1,10 +1,10 @@
 {
-    "id": "es_rabbit.vs.turtle",
-    "game_title": "es_rabbit.vs.turtle",
-    "author": "es",
-    "category": "etc",
-    "thumbnail": "/static/es_rabbit.vs.turtle/assets/thumbnail.png",
-    "plays": 840,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 252
+  "id": "es_rabbit.vs.turtle",
+  "game_title": "토끼와 거북이",
+  "author": "es",
+  "category": "etc",
+  "thumbnail": "/static/es_rabbit.vs.turtle/assets/thumbnail.png",
+  "plays": 840,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 252
 }

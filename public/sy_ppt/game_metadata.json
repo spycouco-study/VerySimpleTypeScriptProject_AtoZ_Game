@@ -1,10 +1,10 @@
 {
-    "id": "sy_ppt",
-    "game_title": "sy_ppt",
-    "author": "sy",
-    "category": "etc",
-    "thumbnail": "/static/sy_ppt/assets/thumbnail.png",
-    "plays": 313,
-    "description": "내가 만든 나만의 재미있는 게임",
-    "likes": 219
+  "id": "sy_ppt",
+  "game_title": "기획서를 만들어요!",
+  "author": "sy",
+  "category": "etc",
+  "thumbnail": "/static/sy_ppt/assets/thumbnail.png",
+  "plays": 313,
+  "description": "내가 만든 나만의 재미있는 게임",
+  "likes": 219
 }

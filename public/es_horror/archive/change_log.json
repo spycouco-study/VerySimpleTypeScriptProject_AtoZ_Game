@@ -5,6 +5,14 @@
             "parent": null,
             "timestamp": "2025-11-27T16:01:34.400926",
             "summary": "공포 게임을 만들어주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-04T15:24:13.832984",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

@@ -1,0 +1,108 @@
+{
+    "version": "v3-1",
+    "parent": "v2-1",
+    "timestamp": "2025-12-04T22:46:39.979584",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Delete"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "animals.png",
+            "path": "animals.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "back.png",
+            "path": "back.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bgm.mp3",
+            "path": "bgm.mp3",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "bubble_effect.png",
+            "path": "bubble_effect.png",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "Pop.mp3",
+            "path": "Pop.mp3",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "animals.png": {
+            "hash": "62c5e93a1d699a1199f0c038666da91544e0b92fdb92f75fff0755f40655e3af",
+            "size": 290259,
+            "mtime": 1763445633.4873512
+        },
+        "back.png": {
+            "hash": "d30cd0b50b7ee188b55550963279accf67a30bcae7e32027b44e8991c035d57b",
+            "size": 1122910,
+            "mtime": 1763445633.49443
+        },
+        "bgm.mp3": {
+            "hash": "cd5d5d5b29c8c0b3f4b3c6d386db59bb9dbb5cc86b59cd69782592fd25b5c4ba",
+            "size": 6289278,
+            "mtime": 1763445633.5514712
+        },
+        "bubble_effect.png": {
+            "hash": "db0b5f4c9e8a24c00d7fabb3d62a5e34398218883afcb654d67bfe7b01f7b752",
+            "size": 218126,
+            "mtime": 1763445633.5534601
+        },
+        "game.js": {
+            "hash": "da36c44bce52425d9bda42a5ba16b166feb4ddddc42cfba678ed3886a2a63666",
+            "size": 51606,
+            "mtime": 1763978774.8358023
+        },
+        "game.ts": {
+            "hash": "98e8cfa03c46905d73ec5dbde617a9ec70bb2670a43d776536d4a807d241623f",
+            "size": 54470,
+            "mtime": 1763445633.5589392
+        },
+        "Pop.mp3": {
+            "hash": "55b11a9db569c7b8aed8e339ff0186b33157f947e1437f4ec198e2837938feeb",
+            "size": 112970,
+            "mtime": 1763445633.485347
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826741.438628
+        },
+        "assets/thumbnail.png": {
+            "hash": "f885e6de67a2903d600260026025e58a84ddc722e993ae42617c65e65ae758d9",
+            "size": 521994,
+            "mtime": 1764855999.9209194
+        }
+    }
+}

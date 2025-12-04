@@ -1,0 +1,78 @@
+{
+    "version": "v3-1",
+    "parent": "v2-1",
+    "timestamp": "2025-12-04T22:50:27.575021",
+    "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
+    "chat": {},
+    "changes": [
+        {
+            "name": "favicon.png",
+            "path": "assets/favicon.png",
+            "type": "Add"
+        },
+        {
+            "name": "thumbnail.png",
+            "path": "assets/thumbnail.png",
+            "type": "Add"
+        },
+        {
+            "name": "game.js",
+            "path": "game.js",
+            "type": "Change"
+        },
+        {
+            "name": "favicon.png",
+            "path": "favicon.png",
+            "type": "Delete"
+        }
+    ],
+    "no_changes": [
+        {
+            "name": "data.json",
+            "path": "data.json",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "game.ts",
+            "path": "game.ts",
+            "last_version": "v1-1"
+        },
+        {
+            "name": "spec.md",
+            "path": "spec.md",
+            "last_version": "v1-1"
+        }
+    ],
+    "file_index": {
+        "data.json": {
+            "hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+            "size": 2,
+            "mtime": 1763445633.6794574
+        },
+        "game.js": {
+            "hash": "9a7256bff24e685db4241ac42c54d392573c689b09f403625c846dda88ddaf99",
+            "size": 24039,
+            "mtime": 1763978774.963276
+        },
+        "game.ts": {
+            "hash": "481e7e7cefaf8b4c5b0ac294bf985993148004825073befbaf0443b3920b348a",
+            "size": 26273,
+            "mtime": 1763445633.683488
+        },
+        "spec.md": {
+            "hash": "63bb1873f5cc461c3ae408a0ed9767e363373827b28d21371b10af9dce463b20",
+            "size": 5696,
+            "mtime": 1763445633.683488
+        },
+        "assets/favicon.png": {
+            "hash": "087a434caa0e35830ea86fa29211e85c27995a51635e2c3ea0d4b023360d333f",
+            "size": 263844,
+            "mtime": 1764826741.5218287
+        },
+        "assets/thumbnail.png": {
+            "hash": "a42e236c331c6e73962585ce54a99a145f2097eb51882e58b21e37199bdf19f0",
+            "size": 9662,
+            "mtime": 1764856227.546499
+        }
+    }
+}

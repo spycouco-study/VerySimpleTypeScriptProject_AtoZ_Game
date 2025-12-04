@@ -5,6 +5,14 @@
             "parent": null,
             "timestamp": "2025-11-28T02:24:10.888767",
             "summary": "토끼와 거북이가 경주하는 게임을 만들어 주세요.\n사용자의 캐릭터는 거북이가 되게 해주세요.\n게임의 목표는 토끼와 경주하여 이기는 것으로 설정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v2-1",
+            "parent": "v1-1",
+            "timestamp": "2025-12-04T15:44:04.909533",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

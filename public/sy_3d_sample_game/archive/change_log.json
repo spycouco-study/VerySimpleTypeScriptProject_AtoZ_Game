@@ -45,6 +45,14 @@
             "parent": "v1-1",
             "timestamp": "2025-11-22T21:17:26.245337",
             "summary": "게임 내의 모든 사물들의(바닥 포함) 마찰력을 현재보다 낮게 조절해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v3-2",
+            "parent": "v2-3",
+            "timestamp": "2025-12-04T22:59:53.281058",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }

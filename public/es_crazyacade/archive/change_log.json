@@ -229,6 +229,14 @@
             "parent": "v20-1",
             "timestamp": "2025-11-20T18:20:24.504580",
             "summary": "물풍선을 쏜 후 움직일 수 없는 현재 문제에 대한 해결책으로, 다른 유사한 게임의 코드를 참고하여 게임을 수정해 주세요.",
+            "is_latest": false,
+            "is_current": false
+        },
+        {
+            "version": "v22-1",
+            "parent": "v21-1",
+            "timestamp": "2025-12-04T23:29:06.124184",
+            "summary": "thumbnail.png파일을 다른 파일로 교체 했습니다.",
             "is_latest": true,
             "is_current": true
         }
